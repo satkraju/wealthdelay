@@ -716,6 +716,34 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 36
   nav .nav-pill { display: none; }
   .hero { padding: 56px 22px 48px; }
 }
+
+/* ── Editable field-val ─────────────────────── */
+.field-val {
+  cursor: text;
+  transition: background .15s, box-shadow .15s;
+}
+.field-val:hover {
+  background: var(--bg2);
+  box-shadow: 0 0 0 1px var(--border-strong);
+}
+.field-val-input {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--white);
+  border: 1.5px solid var(--green);
+  border-radius: 6px;
+  padding: 1px 7px;
+  min-width: 60px;
+  max-width: 90px;
+  width: auto;
+  text-align: center;
+  letter-spacing: -0.01em;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(29,185,84,.15);
+  font-family: var(--font);
+}
+
 </style>
 </head>
 <body>
@@ -1126,7 +1154,69 @@ function initSliders(){
 }
 
 window.addEventListener('resize',calc);
-window.addEventListener('DOMContentLoaded',()=>{initSliders();calc();});
+window.addEventListener('DOMContentLoaded',()=>{initSliders();calc();makeEditable();});
+
+
+/* ── Click-to-edit for all slider value pills ── */
+function makeEditable() {
+  document.querySelectorAll('.field-val').forEach(function(span) {
+    span.setAttribute('title', 'Click to type an exact value');
+    span.addEventListener('click', function() {
+      if (span.querySelector('input')) return; // already editing
+      // Extract the numeric part — strip pre/suf characters like $, %, /mo etc.
+      var raw = span.textContent.trim();
+      // Pull just the number: remove $, commas, K/M suffix, and any non-numeric suffix
+      var numeric = raw.replace(/[$,]/g,'');
+      // Handle K/M abbreviations
+      if (/[\d.]+K$/.test(numeric)) numeric = String(parseFloat(numeric)*1000);
+      else if (/[\d.]+M$/.test(numeric)) numeric = String(parseFloat(numeric)*1000000);
+      // Strip any remaining non-numeric trailing/leading chars
+      numeric = numeric.replace(/[^0-9.]/g,'').replace(/^\./, '0.');
+      if (!numeric || isNaN(parseFloat(numeric))) numeric = '0';
+
+      // Find the paired slider (id="s-X" where span id="v-X")
+      var sid = span.id ? span.id.replace('v-', 's-') : null;
+      var slider = sid ? document.getElementById(sid) : null;
+
+      // Build inline input
+      var inp = document.createElement('input');
+      inp.type = 'text';
+      inp.inputMode = 'decimal';
+      inp.value = numeric;
+      inp.className = 'field-val-input';
+      inp.style.width = Math.max(60, numeric.length * 10 + 20) + 'px';
+
+      span.innerHTML = '';
+      span.appendChild(inp);
+      inp.focus();
+      inp.select();
+
+      function commit() {
+        var v = parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
+        if (isNaN(v)) v = slider ? parseFloat(slider.value) : 0;
+        if (slider) {
+          var mn = parseFloat(slider.min), mx = parseFloat(slider.max);
+          var st = parseFloat(slider.step) || 1;
+          // Clamp to min/max
+          v = Math.min(mx, Math.max(mn, v));
+          // Round to nearest step
+          v = Math.round((v - mn) / st) * st + mn;
+          v = parseFloat(v.toFixed(10)); // floating point cleanup
+          slider.value = v;
+          // Fire oninput to trigger sync + calc
+          slider.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+      }
+
+      inp.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') { e.preventDefault(); commit(); inp.blur(); }
+        if (e.key === 'Escape') { inp.blur(); }
+      });
+      inp.addEventListener('blur', commit);
+    });
+  });
+}
+
 </script>
 </body>
 </html>

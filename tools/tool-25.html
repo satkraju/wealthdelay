@@ -177,12 +177,12 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
-    [('How much emergency fund do I need?', '3-6 months of essential expenses. Self-employed or single income: aim for 6-12 months. Keep it in a high-yield savings account — accessible but separate from spending money.'), ('Where should I keep my emergency fund?', 'High-yield savings account (HYSA). Current rates 4-5% APY. Liquid within 1-2 business days. Never in the stock market — you may need it during a market crash, which is also when job losses spike.')]
+    
     <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Emergency amount</div><div class="bd-val red" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Credit card APR</div><div class="bd-val red" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Payoff time</div><div class="bd-val amber" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">CC interest paid</div><div class="bd-val red" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Wealth comparison</div><div class="bd-val green" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Wealth lost to delay</div><div class="bd-val red" id="r-b6">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">True cost of no e-fund</div><div class="bd-val red" id="r-b7">&#8212;</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px">GOOGLE ADSENSE &#8212; Replace after approval</div>
   </div>
 </div>
-
+<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How much emergency fund do I need?<div class="faq-ico">+</div></div><div class="faq-a">3-6 months of essential expenses. Self-employed or single income: aim for 6-12 months. Keep it in a high-yield savings account — accessible but separate from spending money.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Where should I keep my emergency fund?<div class="faq-ico">+</div></div><div class="faq-a">High-yield savings account (HYSA). Current rates 4-5% APY. Liquid within 1-2 business days. Never in the stock market — you may need it during a market crash, which is also when job losses spike.</div></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
@@ -351,9 +351,7 @@ function calc(){
   var annR=parseFloat(document.getElementById('s-r').value)/100;
   var years=Math.max(1,ret-age);
   var mRate=apr/12;
-  // If they had an e-fund: no CC debt, $200/mo goes to investing immediately
   var fvWithFund=fvAnnuity(pay,annR,years);
-  // If no e-fund: pay off CC debt first, then invest
   if(pay<=em*mRate){
     document.getElementById('r-hero').textContent='Never paid off';
     document.getElementById('r-hero').style.color='var(--red)';
@@ -368,7 +366,6 @@ function calc(){
   var fvNoFund=fvAnnuity(pay,annR,remainYrs);
   var wealthLost=fvWithFund-fvNoFund;
   var trueCost=interest+wealthLost;
-  var efundReturn=fvAnnuity(efund/12/12,annR,years); // if e-fund itself was invested
   document.getElementById('r-hero').textContent=fmt(trueCost);
   document.getElementById('r-hero').style.color='var(--red)';
   document.getElementById('r-sub').textContent=fmtFull(interest)+' CC interest + '+fmt(wealthLost)+' opportunity cost';

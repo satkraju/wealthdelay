@@ -177,12 +177,12 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
-    [('Is buying always better long-term?', 'Not necessarily. It depends on appreciation rate, how long you stay, mortgage rate vs rent, and opportunity cost of the down payment. This tool models all of these factors together.'), ("What is the 'break-even horizon'?", 'The number of years you need to stay for buying to beat renting. Typical rule of thumb is 5-7 years, but it varies widely with local market conditions.')]
+    
     <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Home price / down</div><div class="bd-val ink" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Monthly mortgage</div><div class="bd-val ink" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Monthly rent</div><div class="bd-val ink" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Monthly cost comparison</div><div class="bd-val amber" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Home value after appreciation</div><div class="bd-val green" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Equity built</div><div class="bd-val green" id="r-b6">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Opportunity cost of down payment</div><div class="bd-val red" id="r-b7">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Verdict</div><div class="bd-val green" id="r-b8">&#8212;</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px">GOOGLE ADSENSE &#8212; Replace after approval</div>
   </div>
 </div>
-
+<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is buying always better long-term?<div class="faq-ico">+</div></div><div class="faq-a">Not necessarily. It depends on appreciation rate, how long you stay, mortgage rate vs rent, and opportunity cost of the down payment. This tool models all of these factors together.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the 'break-even horizon'?<div class="faq-ico">+</div></div><div class="faq-a">The number of years you need to stay for buying to beat renting. Typical rule of thumb is 5-7 years, but it varies widely with local market conditions.</div></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
@@ -354,24 +354,18 @@ function calc(){
   var mRate=rate/12; var n=360;
   var loan=price*(1-down);
   var mp=loan*(mRate*Math.pow(1+mRate,n))/(Math.pow(1+mRate,n)-1);
-  // Remaining balance after horizon years
   var bal=loan;
   for(var m=0;m<horizon*12;m++) bal=bal*(1+mRate)-mp;
   bal=Math.max(0,bal);
-  // Home value after appreciation
   var homeVal=fvLump(price,appR,horizon);
   var equity=homeVal-bal;
   var downPmt=price*down;
-  // Annual buy costs: mortgage + tax + maintenance
   var annBuy=mp*12+price*taxR+price*maintR;
   var annRent=rent*12;
-  var rentVsBuy=annBuy-annRent; // positive = buy costs more annually
-  // Opportunity cost of down payment
+  var rentVsBuy=annBuy-annRent;
   var oppDown=fvLump(downPmt,annR,horizon)-downPmt;
-  // Net buy advantage: equity gained - opportunity cost of down - extra annual costs
   var extraCost=Math.max(0,rentVsBuy)*horizon;
   var buyAdvantage=equity-downPmt-oppDown-extraCost;
-
   var winner=buyAdvantage>0?'Buying':'Renting';
   document.getElementById('r-hero').textContent=fmt(Math.abs(buyAdvantage));
   document.getElementById('r-hero').style.color=buyAdvantage>0?'var(--green)':'var(--red)';

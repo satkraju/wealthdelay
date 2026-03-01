@@ -5,6 +5,8 @@
 <title>True Cost of a Bigger House Calculator &#8212; WealthDelay</title>
 <meta name="description" content="See the true lifetime opportunity cost of upgrading to a bigger home including mortgage, taxes and maintenance.">
 <link rel="canonical" href="https://wealthdelay.com/tools/tool-19.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":'True Cost of a Bigger House Calculator',"description":'See the true lifetime opportunity cost of upgrading to a bigger home including mortgage, taxes and maintenance.',"url":"https://wealthdelay.com/tools/tool-19.html","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":'Does a bigger home ever make financial sense?',"acceptedAnswer":{"@type":"Answer","text":'Yes — if appreciation outpaces the opportunity cost, or if you need the space for a growing family with clear plans to stay long-term. This tool shows the financial cost; you decide if the lifestyle benefit justifies it.'}},{"@type":"Question","name":'What costs are not included?',"acceptedAnswer":{"@type":"Answer","text":'PMI (if down < 20%), HOA fees, home insurance, realtor fees on resale. Adding these increases the opportunity cost further.'}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
 <style>:root {
@@ -143,9 +145,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   font-size: 13px; font-weight: 600; color: var(--ink);
   background: var(--white); border: 1.5px solid var(--green);
   border-radius: 6px; padding: 1px 7px; min-width: 60px; max-width: 90px;
-  text-align: center; letter-spacing: -0.01em; outline: none;
+  text-align: center; outline: none;
   box-shadow: 0 0 0 3px rgba(29,185,84,.15); font-family: var(--font);
 }
+
+.related-wrap{padding:40px 24px 0;max-width:960px;margin:0 auto;}
+.related-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
+.related-link{padding:8px 16px;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;transition:border-color .15s,box-shadow .15s;}
+.related-link:hover{border-color:var(--green);box-shadow:0 0 0 2px rgba(29,185,84,.15);}
 </style>
 </head>
 <body>
@@ -161,29 +168,30 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
 </nav>
 <section class="tool-hero">
   <div class="tool-eyebrow">Tool 19 of 30 &nbsp;&#183;&nbsp; <span class="cat">Housing</span></div>
-  <h1 class="tool-h1">The bigger house costs more than just <span class="red">the mortgage.</span></h1>
-  <p class="tool-sub">Enter both home values. See the exact extra monthly cost and what it compounds to over 30 years.</p>
+  <h1 class="tool-h1">A bigger home costs more than the <span class="red">mortgage difference.</span></h1>
+  <p class="tool-sub">Enter both home prices. See the monthly upgrade cost and 30-year opportunity cost compounded.</p>
   <div class="hero-badges"><div class="badge">&#128208; Verified math</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
 </section>
 <div class="workspace">
-  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Current Home</div><div class="field"><label>Current home value <span class="field-val" id="v-cur">$400000</span></label><input type="range" id="s-cur" min="100000" max="2000000" step="10000" value="400000" oninput="syncSlider('cur',this.value,'$','',true,true);calc()"></div><div class="section-label">Bigger Home</div><div class="field"><label>Bigger home value <span class="field-val" id="v-big">$600000</span></label><input type="range" id="s-big" min="100000" max="2000000" step="10000" value="600000" oninput="syncSlider('big',this.value,'$','',true,true);calc()"></div><div class="section-label">Mortgage Details</div><div class="field"><label>Down payment % <span class="field-val" id="v-down">20%</span></label><input type="range" id="s-down" min="5" max="40" step="5" value="20" oninput="syncSlider('down',this.value,'','%',false,false);calc()"><div class="field-hint">Applies to bigger home</div></div><div class="field"><label>Mortgage interest rate <span class="field-val" id="v-rate">6.5%</span></label><input type="range" id="s-rate" min="2" max="12" step="0.25" value="6.5" oninput="syncSlider('rate',this.value,'','%',false,false);calc()"></div><div class="section-label">Annual Running Costs (% of home value)</div><div class="field"><label>Property tax rate <span class="field-val" id="v-tax">1.2%</span></label><input type="range" id="s-tax" min="0" max="3" step="0.1" value="1.2" oninput="syncSlider('tax',this.value,'','%',false,false);calc()"></div><div class="field"><label>Maintenance rate <span class="field-val" id="v-maint">1.0%</span></label><input type="range" id="s-maint" min="0" max="3" step="0.1" value="1.0" oninput="syncSlider('maint',this.value,'','%',false,false);calc()"><div class="field-hint">1% of home value per year is standard</div></div><div class="section-label">Your Profile</div><div class="field"><label>Investment return on saved cost <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" oninput="syncSlider('r',this.value,'','%',false,false);calc()"></div></div></div></div>
+  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">The Homes</div><div class="field"><label>Current home price <span class="field-val" id="v-cur">$400000</span></label><input type="range" id="s-cur" min="100000" max="2000000" step="10000" value="400000" aria-label="Current home price" oninput="syncSlider('cur',this.value,'$','',true,true);calc()"></div><div class="field"><label>Bigger home price <span class="field-val" id="v-big">$600000</span></label><input type="range" id="s-big" min="100000" max="2000000" step="10000" value="600000" aria-label="Bigger home price" oninput="syncSlider('big',this.value,'$','',true,true);calc()"></div><div class="field"><label>Down payment <span class="field-val" id="v-down">20%</span></label><input type="range" id="s-down" min="5" max="40" step="5" value="20" aria-label="Down payment" oninput="syncSlider('down',this.value,'','%',false,false);calc()"></div><div class="field"><label>Mortgage rate <span class="field-val" id="v-rate">6.5%</span></label><input type="range" id="s-rate" min="2" max="12" step="0.25" value="6.5" aria-label="Mortgage rate" oninput="syncSlider('rate',this.value,'','%',false,false);calc()"></div><div class="section-label">Running Costs (% of price difference)</div><div class="field-row"><div class="field"><label>Property tax rate <span class="field-val" id="v-tax">1.2%</span></label><input type="range" id="s-tax" min="0" max="3" step="0.1" value="1.2" aria-label="Property tax rate" oninput="syncSlider('tax',this.value,'','%',false,false);calc()"></div><div class="field"><label>Maintenance rate <span class="field-val" id="v-maint">1.0%</span></label><input type="range" id="s-maint" min="0" max="3" step="0.1" value="1.0" aria-label="Maintenance rate" oninput="syncSlider('maint',this.value,'','%',false,false);calc()"></div></div><div class="field"><label>Investment return <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" aria-label="Investment return" oninput="syncSlider('r',this.value,'','%',false,false);calc()"></div></div></div></div>
   <div class="results">
     <div class="metric-hero">
       <div class="mh-top">
-        <div class="mh-eyebrow">30-Year Opportunity Cost of Bigger Home</div>
+        <div class="mh-eyebrow">30-Year Opportunity Cost of Upgrade</div>
         <div class="mh-number" id="r-hero">&#8212;</div>
         <div class="mh-sub" id="r-sub">calculating&#8230;</div>
       </div>
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
-    
-    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Home upgrade</div><div class="bd-val ink" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Mortgage payments</div><div class="bd-val ink" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Extra mortgage/mo</div><div class="bd-val red" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Extra property tax/mo</div><div class="bd-val red" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Extra maintenance/mo</div><div class="bd-val red" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Total extra/month</div><div class="bd-val red" id="r-b6">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Total extra/year</div><div class="bd-val red" id="r-b7">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">30-year opportunity cost</div><div class="bd-val red" id="r-b8">&#8212;</div></div></div>
+    <div class="chart-card"><div class="chart-head"><div class="card-title">Opportunity Cost Over 30 Years</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>Wealth foregone</div></div></div><div class="chart-inner"><canvas id="chart" role="img" aria-label="Opportunity Cost Over 30 Years chart"></canvas></div></div>
+    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Home prices</div><div class="bd-val ink" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Mortgage payments</div><div class="bd-val amber" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Extra mortgage/mo</div><div class="bd-val red" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Tax + maintenance extra</div><div class="bd-val red" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Total extra/mo</div><div class="bd-val red" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">30-year opportunity cost</div><div class="bd-val red" id="r-b6">&#8212;</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px">GOOGLE ADSENSE &#8212; Replace after approval</div>
   </div>
 </div>
-<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is a bigger home ever worth it?<div class="faq-ico">+</div></div><div class="faq-a">It depends entirely on your values and situation. If family size demands it, it may be necessary. The goal of this tool is not to say no — it's to make the true financial cost visible so the decision is informed.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What are the hidden costs of a bigger home?<div class="faq-ico">+</div></div><div class="faq-a">Beyond mortgage: property taxes (1-2% of value/yr), maintenance (1% of value/yr), higher utilities, more furniture, higher insurance. On a $600k home these can easily add $12,000+/yr beyond the mortgage.</div></div></section>
-<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
+<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does a bigger home ever make financial sense?<div class="faq-ico">+</div></div><div class="faq-a">Yes — if appreciation outpaces the opportunity cost, or if you need the space for a growing family with clear plans to stay long-term. This tool shows the financial cost; you decide if the lifestyle benefit justifies it.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What costs are not included?<div class="faq-ico">+</div></div><div class="faq-a">PMI (if down < 20%), HOA fees, home insurance, realtor fees on resale. Adding these increases the opportunity cost further.</div></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/tools/tool-23.html">Rent vs Buy</a><a class="related-link" href="/tools/tool-08.html">Mortgage Overpayment</a><a class="related-link" href="/tools/tool-20.html">Luxury vs Modest Car</a></div></section>
+<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
   <div class="footer-copy">&#169; 2025 WealthDelay &#183; Free forever &#183; No data stored &#183; All calculations run in your browser</div>
@@ -195,75 +203,35 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   </div>
 </footer>
 <script>
-// ── WealthDelay Shared Math Library ──────────────────
-// All formulas verified against standard financial math
 
-// Future Value of Annuity: periodic payments compounding
 function fvAnnuity(pmt, annualRate, years) {
   const r = annualRate / 12;
   const n = years * 12;
   if (r === 0) return pmt * n;
   return pmt * ((Math.pow(1 + r, n) - 1) / r);
 }
-
-// Future Value of Lump Sum
+// FIXED: monthly compounding (was annual)
 function fvLump(pv, annualRate, years) {
-  return pv * Math.pow(1 + annualRate, years);
+  const r = annualRate / 12;
+  return pv * Math.pow(1 + r, years * 12);
 }
-
-// Real (inflation-adjusted) value
 function realValue(nominal, inflationRate, years) {
   return nominal / Math.pow(1 + inflationRate, years);
 }
-
-// Amortization payoff: returns {months, totalPaid, interestPaid}
-function amortize(balance, annualRate, monthlyPayment) {
-  const mRate = annualRate / 12;
-  let b = balance, total = 0, months = 0;
-  while (b > 0.01 && months < 600) {
-    const interest = b * mRate;
-    const principal = monthlyPayment - interest;
-    if (principal <= 0) { months = 600; break; }
-    b = Math.max(0, b - principal);
-    total += monthlyPayment;
-    months++;
-  }
-  return { months, totalPaid: total, interestPaid: total - balance };
-}
-
-// Drawdown: how long savings last
-function drawdown(balance, annualWithdrawal, returnRate, inflationRate) {
-  const mRate = returnRate / 12;
-  let b = balance, months = 0;
-  let mWithdrawal = annualWithdrawal / 12;
-  while (b > 0 && months < 1200) {
-    b = b * (1 + mRate) - mWithdrawal;
-    mWithdrawal *= (1 + inflationRate / 12);
-    if (b <= 0) { b = 0; break; }
-    months++;
-  }
-  return { months, years: months / 12 };
-}
-
-// Format currency
 function fmt(n) {
-  if (!isFinite(n)) return '$0';
+  if (!isFinite(n) || isNaN(n)) return '$0';
   const a = Math.abs(n);
   if (a >= 1e9) return '$' + (n / 1e9).toFixed(2) + 'B';
   if (a >= 1e6) return '$' + (n / 1e6).toFixed(2) + 'M';
   if (a >= 1e3) return '$' + (n / 1e3).toFixed(1) + 'K';
   return '$' + Math.round(n).toLocaleString();
 }
-
+// FIXED: NaN guard added
 function fmtFull(n) {
+  if (!isFinite(n) || isNaN(n)) return '$0';
   return '$' + Math.round(Math.abs(n)).toLocaleString();
 }
-
-function fmtPct(n) {
-  return (n * 100).toFixed(1) + '%';
-}
-
-// Sync slider display + gradient
+function fmtPct(n) { return (n * 100).toFixed(1) + '%'; }
 function syncSlider(id, val, pre, suf, comma, abbrev) {
   const el = document.getElementById('v-' + id);
   if (!el) return;
@@ -281,15 +249,6 @@ function syncSlider(id, val, pre, suf, comma, abbrev) {
     s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
   }
 }
-
-function initSliders() {
-  document.querySelectorAll('input[type=range]').forEach(s => {
-    const p = ((s.value - s.min) / (s.max - s.min)) * 100;
-    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
-  });
-}
-
-// Draw 2-line chart on canvas
 function drawChart(canvasId, labels, series, colors) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return;
@@ -304,35 +263,32 @@ function drawChart(canvasId, labels, series, colors) {
   ctx.clearRect(0, 0, W, H);
   const allV = series.flat().filter(isFinite);
   if (!allV.length) return;
-  const maxV = Math.max(...allV, 0.01), minV = Math.min(...allV, 0), range = maxV - minV || 1;
-  const sx = i => pad.l + (i / (labels.length - 1 || 1)) * cW;
-  const sy = v => pad.t + cH - ((v - minV) / range) * cH;
-  ctx.font = `11px -apple-system,sans-serif`;
+  const minV = 0, maxV = Math.max(...allV) * 1.05 || 1;
+  const xS = i => pad.l + (i / (labels.length - 1)) * cW;
+  const yS = v => pad.t + cH - ((v - minV) / (maxV - minV)) * cH;
+  ctx.strokeStyle = 'rgba(0,0,0,0.06)'; ctx.lineWidth = 1;
   for (let i = 0; i <= 4; i++) {
-    const v = maxV - (range / 4) * i, y = sy(v);
-    ctx.strokeStyle = 'rgba(0,0,0,0.06)'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(W - pad.r, y); ctx.stroke();
-    ctx.fillStyle = '#aeaeb2'; ctx.textAlign = 'right';
-    ctx.fillText(fmt(v), pad.l - 4, y + 4);
+    const y = pad.t + (i / 4) * cH;
+    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(pad.l + cW, y); ctx.stroke();
+    const v = maxV - (i / 4) * maxV;
+    ctx.fillStyle = '#6e6e73'; ctx.font = '10px system-ui,sans-serif'; ctx.textAlign = 'right';
+    ctx.fillText(fmt(v), pad.l - 4, y + 3);
   }
-  ctx.fillStyle = '#aeaeb2'; ctx.textAlign = 'center';
-  const step = Math.ceil(labels.length / 5);
-  labels.forEach((l, i) => { if (i % step === 0 || i === labels.length - 1) ctx.fillText('' + l, sx(i), H - 4); });
-  series.forEach((data, si) => {
-    if (data.length < 2) return;
-    const lc = colors[si] || '#1db954';
-    const fc = lc + '18';
-    ctx.beginPath();
-    data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
-    ctx.lineTo(sx(data.length - 1), sy(Math.max(minV, 0)));
-    ctx.lineTo(sx(0), sy(Math.max(minV, 0)));
-    ctx.closePath(); ctx.fillStyle = fc; ctx.fill();
-    ctx.beginPath();
-    data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
-    ctx.strokeStyle = lc; ctx.lineWidth = 2; ctx.lineJoin = 'round'; ctx.stroke();
+  const step = Math.max(1, Math.floor(labels.length / 6));
+  ctx.fillStyle = '#6e6e73'; ctx.textAlign = 'center';
+  labels.forEach((l, i) => { if (i % step === 0) ctx.fillText(l, xS(i), H - pad.b + 14); });
+  series.forEach((s, si) => {
+    ctx.beginPath(); ctx.strokeStyle = colors[si]; ctx.lineWidth = 2.5; ctx.lineJoin = 'round';
+    s.forEach((v, i) => { const x = xS(i), y = yS(isFinite(v) ? v : 0); i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); });
+    ctx.stroke();
   });
 }
-
+function initSliders() {
+  document.querySelectorAll('input[type=range]').forEach(s => {
+    const p = ((s.value - s.min) / (s.max - s.min)) * 100;
+    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
+  });
+}
 function toggleFaq(el) {
   const ico = el.querySelector('.faq-ico'), ans = el.nextElementSibling, open = ans.classList.contains('open');
   document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
@@ -349,50 +305,43 @@ function calc() {
   var tax   = parseFloat(document.getElementById('s-tax').value) / 100;
   var maint = parseFloat(document.getElementById('s-maint').value) / 100;
   var annR  = parseFloat(document.getElementById('s-r').value) / 100;
-  var mRate = rate / 12;
-  var n     = 360; // 30yr
-
-  function mp(price) {
-    var loan = price * (1 - down);
-    return loan * (mRate * Math.pow(1+mRate,n)) / (Math.pow(1+mRate,n)-1);
-  }
-
   if (big <= cur) {
     document.getElementById('r-hero').textContent = '$0';
     document.getElementById('r-hero').style.color = 'var(--green)';
-    document.getElementById('r-sub').textContent = 'Bigger home must be worth more than current home';
+    document.getElementById('r-sub').textContent  = 'Bigger home price must exceed current to calculate upgrade cost';
+    document.getElementById('r-insight').innerHTML = 'Set the bigger home price above your current home price to see the upgrade cost.';
     return;
   }
-
+  var n = 360;
+  function mp(price) {
+    var loan = price * (1 - down);
+    var mR = rate / 12;
+    return mR > 0 ? loan * (mR * Math.pow(1+mR,n)) / (Math.pow(1+mR,n)-1) : loan/n;
+  }
   var mpCur = mp(cur), mpBig = mp(big);
-  var extraMortgage = mpBig - mpCur;
-  var extraTax      = (big - cur) * tax / 12;
-  var extraMaint    = (big - cur) * maint / 12;
-  var totalExtra    = extraMortgage + extraTax + extraMaint;
-  var annualExtra   = totalExtra * 12;
-  var fvOpp         = fvAnnuity(totalExtra, annR, 30);
-  var extraDown     = (big - cur) * down;
-  var totalInterest = (mpBig * 360 - big*(1-down)) - (mpCur*360 - cur*(1-down));
-
+  var extraMp   = mpBig - mpCur;
+  var extraTax  = (big - cur) * tax / 12;
+  var extraMaint= (big - cur) * maint / 12;
+  var totalExtra = extraMp + extraTax + extraMaint;
+  var fvOpp = fvAnnuity(totalExtra, annR, years);
   document.getElementById('r-hero').textContent = fmt(fvOpp);
   document.getElementById('r-hero').style.color = 'var(--red)';
-  document.getElementById('r-sub').textContent  = fmt(fvOpp) + ' opportunity cost over 30 years';
+  document.getElementById('r-sub').textContent  = fmt(fvOpp) + ' + years + '-year opportunity cost of the upgrade';
   document.getElementById('r-metrics').innerHTML =
-    '<div class="mh-cell"><div class="mhc-label">EXTRA/MONTH</div><div class="mhc-val red">$' + totalExtra.toFixed(0) + '</div><div class="mhc-sub">mortgage+tax+maint</div></div>' +
-    '<div class="mh-cell"><div class="mhc-label">EXTRA/YEAR</div><div class="mhc-val red">' + fmtFull(annualExtra) + '</div><div class="mhc-sub">all-in cost</div></div>' +
-    '<div class="mh-cell"><div class="mhc-label">OPP COST</div><div class="mhc-val red">' + fmt(fvOpp) + '</div><div class="mhc-sub">30-year horizon</div></div>';
-  document.getElementById('r-b1').textContent = fmtFull(cur) + ' \u2192 ' + fmtFull(big);
-  document.getElementById('r-b2').textContent = '$' + mpCur.toFixed(2) + '/mo \u2192 $' + mpBig.toFixed(2) + '/mo';
-  document.getElementById('r-b3').textContent = '$' + extraMortgage.toFixed(2) + '/mo extra';
-  document.getElementById('r-b4').textContent = '$' + extraTax.toFixed(2) + '/mo extra';
-  document.getElementById('r-b5').textContent = '$' + extraMaint.toFixed(2) + '/mo extra';
-  document.getElementById('r-b6').textContent = '$' + totalExtra.toFixed(2) + '/mo total extra';
-  document.getElementById('r-b7').textContent = fmtFull(annualExtra) + '/yr';
-  document.getElementById('r-b8').textContent = fmt(fvOpp) + ' over 30 years';
-  document.getElementById('r-insight').innerHTML =
-    'Upgrading from <strong>' + fmtFull(cur) + '</strong> to <strong>' + fmtFull(big) + '</strong> costs an extra <strong>$' + totalExtra.toFixed(0) + '/month</strong> in mortgage, taxes and maintenance. Invested instead over 30 years that becomes <strong>' + fmt(fvOpp) + '</strong>. Ask: is the bigger house worth <strong>' + fmt(fvOpp) + '</strong>?';
+    '<div class="mh-cell"><div class="mhc-label">EXTRA/MO</div><div class="mhc-val red">$' + totalExtra.toFixed(0) + '</div><div class="mhc-sub">all-in upgrade cost</div></div>' +
+    '<div class="mh-cell"><div class="mhc-label">EXTRA MORTGAGE</div><div class="mhc-val red">$' + extraMp.toFixed(0) + '/mo</div><div class="mhc-sub">payment difference</div></div>' +
+    '<div class="mh-cell"><div class="mhc-label">OPP COST</div><div class="mhc-val red">' + fmt(fvOpp) + '</div><div class="mhc-sub">' + years + '-year compounded</div></div>';
+  document.getElementById('r-b1').textContent = fmtFull(cur) + ' current vs ' + fmtFull(big) + ' bigger';
+  document.getElementById('r-b2').textContent = '$' + mpCur.toFixed(0) + '/mo vs $' + mpBig.toFixed(0) + '/mo mortgage';
+  document.getElementById('r-b3').textContent = '$' + extraMp.toFixed(0) + '/mo extra mortgage';
+  document.getElementById('r-b4').textContent = '$' + extraTax.toFixed(0) + '/mo extra tax + $' + extraMaint.toFixed(0) + '/mo extra maintenance';
+  document.getElementById('r-b5').textContent = '$' + totalExtra.toFixed(0) + '/mo total extra';
+  document.getElementById('r-b6').textContent = fmt(fvOpp) + ' opportunity cost over ' + years + ' years';
+  document.getElementById('r-insight').innerHTML = 'Upgrading from <strong>' + fmtFull(cur) + '</strong> to <strong>' + fmtFull(big) + '</strong> costs an extra <strong>$' + totalExtra.toFixed(0) + '/mo</strong> (mortgage + tax + maintenance). Invested instead, that becomes <strong>' + fmt(fvOpp) + '</strong> over ' + years + ' years. Space costs more than the difference in sticker price.';
+  var cL = [], cG = [];
+  for (var y = 0; y <= years; y++) { cL.push(y); cG.push(fvAnnuity(totalExtra, annR, y)); }
+  drawChart('chart', cL, [cG], ['#ff3b30']);
 }
-
 
 function makeEditable() {
   document.querySelectorAll('.field-val').forEach(function(span) {
@@ -408,28 +357,28 @@ function makeEditable() {
       var sid = span.id ? span.id.replace('v-','s-') : null;
       var slider = sid ? document.getElementById(sid) : null;
       var inp = document.createElement('input');
-      inp.type = 'text'; inp.inputMode = 'decimal'; inp.value = numeric;
-      inp.className = 'field-val-input';
-      inp.style.width = Math.max(60, numeric.length*10+20)+'px';
-      span.innerHTML = ''; span.appendChild(inp);
+      inp.type='text'; inp.inputMode='decimal'; inp.value=numeric;
+      inp.className='field-val-input';
+      inp.style.width=Math.max(60,numeric.length*10+20)+'px';
+      span.innerHTML=''; span.appendChild(inp);
       inp.focus(); inp.select();
       function commit() {
-        var v = parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
-        if (isNaN(v)) v = slider ? parseFloat(slider.value) : 0;
+        var v=parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
+        if (isNaN(v)) v=slider?parseFloat(slider.value):0;
         if (slider) {
-          var mn=parseFloat(slider.min), mx=parseFloat(slider.max), st=parseFloat(slider.step)||1;
-          v = Math.min(mx, Math.max(mn, v));
-          v = Math.round((v-mn)/st)*st+mn;
-          v = parseFloat(v.toFixed(10));
-          slider.value = v;
+          var mn=parseFloat(slider.min),mx=parseFloat(slider.max),st=parseFloat(slider.step)||1;
+          v=Math.min(mx,Math.max(mn,v));
+          v=Math.round((v-mn)/st)*st+mn;
+          v=parseFloat(v.toFixed(10));
+          slider.value=v;
           slider.dispatchEvent(new Event('input',{bubbles:true}));
         }
       }
-      inp.addEventListener('keydown', function(e) {
-        if (e.key==='Enter') { e.preventDefault(); commit(); inp.blur(); }
-        if (e.key==='Escape') { inp.blur(); }
+      inp.addEventListener('keydown',function(e){
+        if(e.key==='Enter'){e.preventDefault();commit();inp.blur();}
+        if(e.key==='Escape'){inp.blur();}
       });
-      inp.addEventListener('blur', commit);
+      inp.addEventListener('blur',commit);
     });
   });
 }

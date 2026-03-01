@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>FIRE Number Calculator &#8212; WealthDelay</title>
-<meta name="description" content="Calculate your FIRE number, years to financial independence, and monthly income from your portfolio.">
+<meta name="description" content="Calculate your FIRE number, inflation-adjusted years to financial independence, and monthly income from your portfolio.">
 <link rel="canonical" href="https://wealthdelay.com/tools/tool-15.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":'FIRE Number Calculator',"description":'Calculate your FIRE number, inflation-adjusted years to financial independence, and monthly income from your portfolio.',"url":"https://wealthdelay.com/tools/tool-15.html","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":'What is the 4% rule?',"acceptedAnswer":{"@type":"Answer","text":"The Trinity Study (1998) found that a 4% annual withdrawal from a diversified portfolio has historically survived 30-year retirements ~95% of the time. It's a starting point, not a guarantee."}},{"@type":"Question","name":'Why does this show more years than other calculators?',"acceptedAnswer":{"@type":"Answer","text":'This tool correctly accounts for inflation: your FIRE number grows in nominal terms during accumulation (because your future expenses will be higher). Many calculators use a fixed target, which understates the timeline by several years.'}},{"@type":"Question","name":"What isn't modelled here?","acceptedAnswer":{"@type":"Answer","text":'Sequence-of-returns risk, Social Security income, healthcare costs in early retirement, and taxes on traditional 401k/IRA withdrawals. Use this as a directional guide, not a financial plan.'}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
 <style>:root {
@@ -143,9 +145,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   font-size: 13px; font-weight: 600; color: var(--ink);
   background: var(--white); border: 1.5px solid var(--green);
   border-radius: 6px; padding: 1px 7px; min-width: 60px; max-width: 90px;
-  text-align: center; letter-spacing: -0.01em; outline: none;
+  text-align: center; outline: none;
   box-shadow: 0 0 0 3px rgba(29,185,84,.15); font-family: var(--font);
 }
+
+.related-wrap{padding:40px 24px 0;max-width:960px;margin:0 auto;}
+.related-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
+.related-link{padding:8px 16px;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;transition:border-color .15s,box-shadow .15s;}
+.related-link:hover{border-color:var(--green);box-shadow:0 0 0 2px rgba(29,185,84,.15);}
 </style>
 </head>
 <body>
@@ -160,30 +167,31 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   <div class="nav-pill">Live Calculator</div>
 </nav>
 <section class="tool-hero">
-  <div class="tool-eyebrow">Tool 15 of 30 &nbsp;&#183;&nbsp; <span class="cat">Retirement</span></div>
-  <h1 class="tool-h1">Financial independence is a number. <span class="green">Here is yours.</span></h1>
-  <p class="tool-sub">Enter your expenses and savings rate. See your FIRE number, years away, and monthly FI income.</p>
+  <div class="tool-eyebrow">Tool 15 of 30 &nbsp;&#183;&nbsp; <span class="cat">Investing</span></div>
+  <h1 class="tool-h1">Your FIRE number is a <span class="green">specific, reachable target.</span></h1>
+  <p class="tool-sub">Enter your expenses, savings and return. See your FIRE number and inflation-adjusted timeline.</p>
   <div class="hero-badges"><div class="badge">&#128208; Verified math</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
 </section>
 <div class="workspace">
-  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Your Expenses</div><div class="field"><label>Annual expenses in retirement <span class="field-val" id="v-exp">$50000</span></label><input type="range" id="s-exp" min="10000" max="300000" step="5000" value="50000" oninput="syncSlider('exp',this.value,'$','',true,true);calc()"><div class="field-hint">What you need to live on per year</div></div><div class="section-label">Current Savings</div><div class="field"><label>Current invested savings <span class="field-val" id="v-saved">$200000</span></label><input type="range" id="s-saved" min="0" max="2000000" step="5000" value="200000" oninput="syncSlider('saved',this.value,'$','',true,true);calc()"></div><div class="field"><label>Monthly savings / investment rate <span class="field-val" id="v-monthly">$3000/mo</span></label><input type="range" id="s-monthly" min="100" max="10000" step="100" value="3000" oninput="syncSlider('monthly',this.value,'$','/mo',true,false);calc()"></div><div class="section-label">Assumptions</div><div class="field"><label>Annual portfolio return <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" oninput="syncSlider('r',this.value,'','%',false,false);calc()"><div class="field-hint">Historical S&P 500 inflation-adj avg</div></div><div class="field"><label>Inflation rate <span class="field-val" id="v-inf">3%</span></label><input type="range" id="s-inf" min="0" max="8" step="0.5" value="3" oninput="syncSlider('inf',this.value,'','%',false,false);calc()"></div><div class="field"><label>Safe withdrawal rate <span class="field-val" id="v-swr">4%</span></label><input type="range" id="s-swr" min="2" max="8" step="0.25" value="4" oninput="syncSlider('swr',this.value,'','%',false,false);calc()"><div class="field-hint">4% rule: proven sustainable for 30+ years</div></div></div></div></div>
+  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Your Finances</div><div class="field"><label>Annual living expenses <span class="field-val" id="v-exp">$50000/yr</span></label><input type="range" id="s-exp" min="10000" max="300000" step="5000" value="50000" aria-label="Annual living expenses" oninput="syncSlider('exp',this.value,'$','/yr',true,true);calc()"></div><div class="field"><label>Current savings / investments <span class="field-val" id="v-saved">$200000</span></label><input type="range" id="s-saved" min="0" max="2000000" step="5000" value="200000" aria-label="Current savings / investments" oninput="syncSlider('saved',this.value,'$','',true,true);calc()"></div><div class="field"><label>Monthly savings / investment <span class="field-val" id="v-monthly">$3000/mo</span></label><input type="range" id="s-monthly" min="100" max="10000" step="100" value="3000" aria-label="Monthly savings / investment" oninput="syncSlider('monthly',this.value,'$','/mo',true,false);calc()"></div><div class="section-label">Assumptions</div><div class="field"><label>Annual portfolio return <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" aria-label="Annual portfolio return" oninput="syncSlider('r',this.value,'','%',false,false);calc()"></div><div class="field"><label>Inflation rate <span class="field-val" id="v-inf">3%</span></label><input type="range" id="s-inf" min="0" max="8" step="0.5" value="3" aria-label="Inflation rate" oninput="syncSlider('inf',this.value,'','%',false,false);calc()"></div><div class="field"><label>Safe withdrawal rate <span class="field-val" id="v-swr">4%</span></label><input type="range" id="s-swr" min="2" max="8" step="0.25" value="4" aria-label="Safe withdrawal rate" oninput="syncSlider('swr',this.value,'','%',false,false);calc()"><div class="field-hint">4% = Trinity Study benchmark</div></div></div></div></div>
   <div class="results">
     <div class="metric-hero">
       <div class="mh-top">
         <div class="mh-eyebrow">Your FIRE Number</div>
-        <div class="mh-number red" id="r-hero">&#8212;</div>
+        <div class="mh-number" id="r-hero">&#8212;</div>
         <div class="mh-sub" id="r-sub">calculating&#8230;</div>
       </div>
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
-    <div class="chart-card"><div class="chart-head"><div class="card-title">Your Balance vs FIRE Number</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#1db954"></div>Portfolio</div><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>FIRE Target</div></div></div><div class="chart-inner"><canvas id="chart"></canvas></div></div>
-    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Annual expenses in retirement</div><div class="bd-val ink" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Safe withdrawal rate</div><div class="bd-val ink" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Your FIRE number</div><div class="bd-val green" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Current savings (progress)</div><div class="bd-val amber" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Gap remaining</div><div class="bd-val red" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Years to FIRE</div><div class="bd-val green" id="r-b6">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Monthly income at FIRE</div><div class="bd-val green" id="r-b7">&#8212;</div></div></div>
+    <div class="chart-card"><div class="chart-head"><div class="card-title">Balance vs FIRE Target</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#1db954"></div>Your balance</div><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>FIRE target</div></div></div><div class="chart-inner"><canvas id="chart" role="img" aria-label="Balance vs FIRE Target chart"></canvas></div></div>
+    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Annual expenses</div><div class="bd-val ink" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Safe withdrawal rate</div><div class="bd-val ink" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">FIRE number</div><div class="bd-val green" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Current savings (progress)</div><div class="bd-val amber" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Gap remaining</div><div class="bd-val red" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Time to FIRE (inflation-adjusted)</div><div class="bd-val green" id="r-b6">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Nominal FIRE target at arrival</div><div class="bd-val amber" id="r-b7">&#8212;</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px">GOOGLE ADSENSE &#8212; Replace after approval</div>
   </div>
 </div>
-<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the 4% rule?<div class="faq-ico">+</div></div><div class="faq-a">The Trinity Study found that withdrawing 4% of your portfolio per year has historically sustained a 30-year retirement through all market conditions. It means your FIRE number is 25x your annual expenses.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is the 4% rule still valid?<div class="faq-ico">+</div></div><div class="faq-a">Most financial researchers still consider it a reasonable baseline. Some advocate 3-3.5% for early retirees with 40+ year horizons. This tool lets you adjust the withdrawal rate to model different scenarios.</div></div></section>
-<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
+<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the 4% rule?<div class="faq-ico">+</div></div><div class="faq-a">The Trinity Study (1998) found that a 4% annual withdrawal from a diversified portfolio has historically survived 30-year retirements ~95% of the time. It's a starting point, not a guarantee.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why does this show more years than other calculators?<div class="faq-ico">+</div></div><div class="faq-a">This tool correctly accounts for inflation: your FIRE number grows in nominal terms during accumulation (because your future expenses will be higher). Many calculators use a fixed target, which understates the timeline by several years.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What isn't modelled here?<div class="faq-ico">+</div></div><div class="faq-a">Sequence-of-returns risk, Social Security income, healthcare costs in early retirement, and taxes on traditional 401k/IRA withdrawals. Use this as a directional guide, not a financial plan.</div></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/tools/tool-17.html">Savings Drawdown</a><a class="related-link" href="/tools/tool-29.html">Net Worth Timeline</a><a class="related-link" href="/tools/tool-30.html">Retirement Estimator</a></div></section>
+<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
   <div class="footer-copy">&#169; 2025 WealthDelay &#183; Free forever &#183; No data stored &#183; All calculations run in your browser</div>
@@ -195,75 +203,35 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   </div>
 </footer>
 <script>
-// ── WealthDelay Shared Math Library ──────────────────
-// All formulas verified against standard financial math
 
-// Future Value of Annuity: periodic payments compounding
 function fvAnnuity(pmt, annualRate, years) {
   const r = annualRate / 12;
   const n = years * 12;
   if (r === 0) return pmt * n;
   return pmt * ((Math.pow(1 + r, n) - 1) / r);
 }
-
-// Future Value of Lump Sum
+// FIXED: monthly compounding (was annual)
 function fvLump(pv, annualRate, years) {
-  return pv * Math.pow(1 + annualRate, years);
+  const r = annualRate / 12;
+  return pv * Math.pow(1 + r, years * 12);
 }
-
-// Real (inflation-adjusted) value
 function realValue(nominal, inflationRate, years) {
   return nominal / Math.pow(1 + inflationRate, years);
 }
-
-// Amortization payoff: returns {months, totalPaid, interestPaid}
-function amortize(balance, annualRate, monthlyPayment) {
-  const mRate = annualRate / 12;
-  let b = balance, total = 0, months = 0;
-  while (b > 0.01 && months < 600) {
-    const interest = b * mRate;
-    const principal = monthlyPayment - interest;
-    if (principal <= 0) { months = 600; break; }
-    b = Math.max(0, b - principal);
-    total += monthlyPayment;
-    months++;
-  }
-  return { months, totalPaid: total, interestPaid: total - balance };
-}
-
-// Drawdown: how long savings last
-function drawdown(balance, annualWithdrawal, returnRate, inflationRate) {
-  const mRate = returnRate / 12;
-  let b = balance, months = 0;
-  let mWithdrawal = annualWithdrawal / 12;
-  while (b > 0 && months < 1200) {
-    b = b * (1 + mRate) - mWithdrawal;
-    mWithdrawal *= (1 + inflationRate / 12);
-    if (b <= 0) { b = 0; break; }
-    months++;
-  }
-  return { months, years: months / 12 };
-}
-
-// Format currency
 function fmt(n) {
-  if (!isFinite(n)) return '$0';
+  if (!isFinite(n) || isNaN(n)) return '$0';
   const a = Math.abs(n);
   if (a >= 1e9) return '$' + (n / 1e9).toFixed(2) + 'B';
   if (a >= 1e6) return '$' + (n / 1e6).toFixed(2) + 'M';
   if (a >= 1e3) return '$' + (n / 1e3).toFixed(1) + 'K';
   return '$' + Math.round(n).toLocaleString();
 }
-
+// FIXED: NaN guard added
 function fmtFull(n) {
+  if (!isFinite(n) || isNaN(n)) return '$0';
   return '$' + Math.round(Math.abs(n)).toLocaleString();
 }
-
-function fmtPct(n) {
-  return (n * 100).toFixed(1) + '%';
-}
-
-// Sync slider display + gradient
+function fmtPct(n) { return (n * 100).toFixed(1) + '%'; }
 function syncSlider(id, val, pre, suf, comma, abbrev) {
   const el = document.getElementById('v-' + id);
   if (!el) return;
@@ -281,15 +249,6 @@ function syncSlider(id, val, pre, suf, comma, abbrev) {
     s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
   }
 }
-
-function initSliders() {
-  document.querySelectorAll('input[type=range]').forEach(s => {
-    const p = ((s.value - s.min) / (s.max - s.min)) * 100;
-    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
-  });
-}
-
-// Draw 2-line chart on canvas
 function drawChart(canvasId, labels, series, colors) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return;
@@ -304,35 +263,32 @@ function drawChart(canvasId, labels, series, colors) {
   ctx.clearRect(0, 0, W, H);
   const allV = series.flat().filter(isFinite);
   if (!allV.length) return;
-  const maxV = Math.max(...allV, 0.01), minV = Math.min(...allV, 0), range = maxV - minV || 1;
-  const sx = i => pad.l + (i / (labels.length - 1 || 1)) * cW;
-  const sy = v => pad.t + cH - ((v - minV) / range) * cH;
-  ctx.font = `11px -apple-system,sans-serif`;
+  const minV = 0, maxV = Math.max(...allV) * 1.05 || 1;
+  const xS = i => pad.l + (i / (labels.length - 1)) * cW;
+  const yS = v => pad.t + cH - ((v - minV) / (maxV - minV)) * cH;
+  ctx.strokeStyle = 'rgba(0,0,0,0.06)'; ctx.lineWidth = 1;
   for (let i = 0; i <= 4; i++) {
-    const v = maxV - (range / 4) * i, y = sy(v);
-    ctx.strokeStyle = 'rgba(0,0,0,0.06)'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(W - pad.r, y); ctx.stroke();
-    ctx.fillStyle = '#aeaeb2'; ctx.textAlign = 'right';
-    ctx.fillText(fmt(v), pad.l - 4, y + 4);
+    const y = pad.t + (i / 4) * cH;
+    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(pad.l + cW, y); ctx.stroke();
+    const v = maxV - (i / 4) * maxV;
+    ctx.fillStyle = '#6e6e73'; ctx.font = '10px system-ui,sans-serif'; ctx.textAlign = 'right';
+    ctx.fillText(fmt(v), pad.l - 4, y + 3);
   }
-  ctx.fillStyle = '#aeaeb2'; ctx.textAlign = 'center';
-  const step = Math.ceil(labels.length / 5);
-  labels.forEach((l, i) => { if (i % step === 0 || i === labels.length - 1) ctx.fillText('' + l, sx(i), H - 4); });
-  series.forEach((data, si) => {
-    if (data.length < 2) return;
-    const lc = colors[si] || '#1db954';
-    const fc = lc + '18';
-    ctx.beginPath();
-    data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
-    ctx.lineTo(sx(data.length - 1), sy(Math.max(minV, 0)));
-    ctx.lineTo(sx(0), sy(Math.max(minV, 0)));
-    ctx.closePath(); ctx.fillStyle = fc; ctx.fill();
-    ctx.beginPath();
-    data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
-    ctx.strokeStyle = lc; ctx.lineWidth = 2; ctx.lineJoin = 'round'; ctx.stroke();
+  const step = Math.max(1, Math.floor(labels.length / 6));
+  ctx.fillStyle = '#6e6e73'; ctx.textAlign = 'center';
+  labels.forEach((l, i) => { if (i % step === 0) ctx.fillText(l, xS(i), H - pad.b + 14); });
+  series.forEach((s, si) => {
+    ctx.beginPath(); ctx.strokeStyle = colors[si]; ctx.lineWidth = 2.5; ctx.lineJoin = 'round';
+    s.forEach((v, i) => { const x = xS(i), y = yS(isFinite(v) ? v : 0); i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); });
+    ctx.stroke();
   });
 }
-
+function initSliders() {
+  document.querySelectorAll('input[type=range]').forEach(s => {
+    const p = ((s.value - s.min) / (s.max - s.min)) * 100;
+    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
+  });
+}
 function toggleFaq(el) {
   const ico = el.querySelector('.faq-ico'), ans = el.nextElementSibling, open = ans.classList.contains('open');
   document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
@@ -348,54 +304,46 @@ function calc() {
   var annR    = parseFloat(document.getElementById('s-r').value) / 100;
   var inf     = parseFloat(document.getElementById('s-inf').value) / 100;
   var swr     = parseFloat(document.getElementById('s-swr').value) / 100;
-
-  // FIRE number: annual expenses / SWR
-  var fireNum      = exp / swr;
-  // Progress: current savings as % of FIRE number
-  var progressPct  = Math.min(100, (saved / fireNum) * 100);
-  // Monthly income from FIRE portfolio
-  var monthlyFI    = fireNum * swr / 12;
-  // Real (inflation-adjusted) expenses
-  var realExpenses = exp;
-
-  // Years to FIRE: simulate month-by-month
-  var balance = saved;
-  var months  = 0;
-  var mRate   = annR / 12;
-  while (balance < fireNum && months < 1200) {
+  var fireNum     = exp / swr;
+  var progressPct = Math.min(100, (saved / fireNum) * 100);
+  var mRate = annR / 12;
+  // FIXED: inflate the FIRE target each month during simulation
+  var balance = saved, months = 0;
+  while (months < 1200) {
+    var realFireNum = (exp * Math.pow(1 + inf / 12, months)) / swr;
+    if (balance >= realFireNum) break;
     balance = balance * (1 + mRate) + monthly;
     months++;
   }
   var yearsToFire = months / 12;
+  var finalFireNum = (exp * Math.pow(1 + inf, yearsToFire)) / swr;
   var gap = Math.max(0, fireNum - saved);
-
-  document.getElementById('r-hero').textContent = fmt(fireNum);
-  document.getElementById('r-sub').textContent  = fmt(fireNum) + ' FIRE number \u00b7 ' + (months < 1200 ? yearsToFire.toFixed(1) + ' years away' : 'increase savings rate');
+  var achieved = months < 1200;
+  document.getElementById('r-hero').textContent = fmtFull(fireNum);
+  document.getElementById('r-hero').style.color = 'var(--green)';
+  document.getElementById('r-sub').textContent  = fmtFull(fireNum) + ' FIRE number \u00b7 ' + (achieved ? yearsToFire.toFixed(1) + ' years away' : 'not reached in 100 years \u2014 increase savings');
   document.getElementById('r-metrics').innerHTML =
-    '<div class="mh-cell"><div class="mhc-label">YEARS TO FIRE</div><div class="mhc-val green">' + (months<1200 ? yearsToFire.toFixed(1) : '40+') + '</div><div class="mhc-sub">at current rate</div></div>' +
-    '<div class="mh-cell"><div class="mhc-label">PROGRESS</div><div class="mhc-val amber">' + progressPct.toFixed(1) + '%</div><div class="mhc-sub">of FIRE number</div></div>' +
-    '<div class="mh-cell"><div class="mhc-label">MONTHLY FI</div><div class="mhc-val green">' + fmtFull(monthlyFI) + '</div><div class="mhc-sub">from portfolio at FIRE</div></div>';
-  document.getElementById('r-b1').textContent = fmtFull(exp) + '/yr';
-  document.getElementById('r-b2').textContent = (swr*100).toFixed(2) + '%';
-  document.getElementById('r-b3').textContent = fmt(fireNum);
-  document.getElementById('r-b4').textContent = fmt(saved) + ' (' + progressPct.toFixed(1) + '%)';
-  document.getElementById('r-b5').textContent = fmt(gap) + ' remaining';
-  document.getElementById('r-b6').textContent = months < 1200 ? yearsToFire.toFixed(1) + ' years' : 'Increase savings rate';
-  document.getElementById('r-b7').textContent = fmtFull(monthlyFI) + '/mo';
-  document.getElementById('r-insight').innerHTML = months < 1200
-    ? 'Your FIRE number is <strong>' + fmt(fireNum) + '</strong> (' + (swr*100).toFixed(1) + '% withdrawal on your expenses). You\'re <strong>' + progressPct.toFixed(1) + '% of the way there</strong>. At $' + monthly + '/mo invested, you reach financial independence in <strong>' + yearsToFire.toFixed(1) + ' years</strong>.'
-    : 'At your current savings rate, FIRE takes a very long time. Increase your monthly savings rate to accelerate. Even $500/mo more makes a dramatic difference.';
-  // Chart: balance vs FIRE number over time
-  var cB=[],cF=[],cL=[];
-  var b2=saved;
-  var displayYrs = Math.min(months<1200?Math.ceil(yearsToFire)+5:40, 50);
-  for(var y=0;y<=displayYrs;y++){
+    '<div class="mh-cell"><div class="mhc-label">FIRE NUMBER</div><div class="mhc-val green">' + fmtFull(fireNum) + '</div><div class="mhc-sub">' + (swr*100).toFixed(2) + '% SWR on expenses</div></div>' +
+    '<div class="mh-cell"><div class="mhc-label">YEARS AWAY</div><div class="mhc-val ' + (achieved?'amber':'red') + '">' + (achieved ? yearsToFire.toFixed(1) : '>100') + '</div><div class="mhc-sub">inflation-adjusted</div></div>' +
+    '<div class="mh-cell"><div class="mhc-label">PROGRESS</div><div class="mhc-val amber">' + progressPct.toFixed(1) + '%</div><div class="mhc-sub">of today\'s FIRE number</div></div>';
+  document.getElementById('r-b1').textContent = fmtFull(exp) + '/yr expenses';
+  document.getElementById('r-b2').textContent = (swr*100).toFixed(2) + '% SWR';
+  document.getElementById('r-b3').textContent = fmtFull(fireNum) + ' FIRE number (today\'s dollars)';
+  document.getElementById('r-b4').textContent = fmtFull(saved) + ' saved (' + progressPct.toFixed(1) + '%)';
+  document.getElementById('r-b5').textContent = fmtFull(gap) + ' remaining';
+  document.getElementById('r-b6').textContent = achieved ? yearsToFire.toFixed(1) + ' years (inflation-adjusted timeline)' : 'Not achievable at current savings rate';
+  document.getElementById('r-b7').textContent = achieved ? fmtFull(finalFireNum) + ' nominal FIRE target at retirement (inflation-grown)' : '\u2014';
+  document.getElementById('r-insight').innerHTML = achieved
+    ? 'Your FIRE number is <strong>' + fmtFull(fireNum) + '</strong> (' + (swr*100).toFixed(1) + '% withdrawal on your expenses). At <strong>$' + monthly.toLocaleString() + '/mo saved</strong>, you reach it in <strong>' + yearsToFire.toFixed(1) + ' years</strong> (inflation-adjusted \u2014 the target grows with inflation during accumulation). Note: This is a deterministic model \u2014 actual returns vary. Sequence-of-returns risk and healthcare costs are not modelled.'
+    : 'At <strong>$' + monthly.toLocaleString() + '/mo</strong>, your FIRE number is not reachable in 100 years. Increase your monthly savings or reduce expenses.';
+  var cB = [], cF = [], cL = [], b2 = saved;
+  var displayYrs = achieved ? Math.ceil(yearsToFire) + 3 : 40;
+  for (var y = 0; y <= displayYrs; y++) {
     cL.push(y); cB.push(b2); cF.push(fireNum);
-    for(var m=0;m<12;m++) b2=b2*(1+mRate)+monthly;
+    for (var m = 0; m < 12; m++) b2 = b2 * (1 + mRate) + monthly;
   }
-  drawChart('chart',cL,[cB,cF],['#1db954','#ff3b30']);
+  drawChart('chart', cL, [cB, cF], ['#1db954', '#ff3b30']);
 }
-
 
 function makeEditable() {
   document.querySelectorAll('.field-val').forEach(function(span) {
@@ -411,28 +359,28 @@ function makeEditable() {
       var sid = span.id ? span.id.replace('v-','s-') : null;
       var slider = sid ? document.getElementById(sid) : null;
       var inp = document.createElement('input');
-      inp.type = 'text'; inp.inputMode = 'decimal'; inp.value = numeric;
-      inp.className = 'field-val-input';
-      inp.style.width = Math.max(60, numeric.length*10+20)+'px';
-      span.innerHTML = ''; span.appendChild(inp);
+      inp.type='text'; inp.inputMode='decimal'; inp.value=numeric;
+      inp.className='field-val-input';
+      inp.style.width=Math.max(60,numeric.length*10+20)+'px';
+      span.innerHTML=''; span.appendChild(inp);
       inp.focus(); inp.select();
       function commit() {
-        var v = parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
-        if (isNaN(v)) v = slider ? parseFloat(slider.value) : 0;
+        var v=parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
+        if (isNaN(v)) v=slider?parseFloat(slider.value):0;
         if (slider) {
-          var mn=parseFloat(slider.min), mx=parseFloat(slider.max), st=parseFloat(slider.step)||1;
-          v = Math.min(mx, Math.max(mn, v));
-          v = Math.round((v-mn)/st)*st+mn;
-          v = parseFloat(v.toFixed(10));
-          slider.value = v;
+          var mn=parseFloat(slider.min),mx=parseFloat(slider.max),st=parseFloat(slider.step)||1;
+          v=Math.min(mx,Math.max(mn,v));
+          v=Math.round((v-mn)/st)*st+mn;
+          v=parseFloat(v.toFixed(10));
+          slider.value=v;
           slider.dispatchEvent(new Event('input',{bubbles:true}));
         }
       }
-      inp.addEventListener('keydown', function(e) {
-        if (e.key==='Enter') { e.preventDefault(); commit(); inp.blur(); }
-        if (e.key==='Escape') { inp.blur(); }
+      inp.addEventListener('keydown',function(e){
+        if(e.key==='Enter'){e.preventDefault();commit();inp.blur();}
+        if(e.key==='Escape'){inp.blur();}
       });
-      inp.addEventListener('blur', commit);
+      inp.addEventListener('blur',commit);
     });
   });
 }

@@ -208,7 +208,8 @@ function fvAnnuity(pmt, annualRate, years) {
 
 // Future Value of Lump Sum
 function fvLump(pv, annualRate, years) {
-  return pv * Math.pow(1 + annualRate, years);
+  const r = annualRate / 12;
+  return pv * Math.pow(1 + r, years * 12);
 }
 
 // Real (inflation-adjusted) value
@@ -365,7 +366,7 @@ function calc(){
   document.getElementById('r-b3').textContent=fmt(fvIdx)+' @ '+(idxR*100).toFixed(1)+'%';
   document.getElementById('r-b4').textContent=fmt(fvPick)+' @ '+(pickR*100).toFixed(1)+'%';
   document.getElementById('r-b5').textContent=fmt(gap)+' index advantage';
-  document.getElementById('r-b6').textContent=(gap/fvPick*100).toFixed(1)+'% more wealth with index';
+  document.getElementById('r-b6').textContent=(fvPick>0?(gap/fvPick*100).toFixed(1)+'% more wealth with index':'N/A — no picking value');
   document.getElementById('r-insight').innerHTML='A <strong>'+(idxR*100-pickR*100).toFixed(1)+'% annual return gap</strong> between index investing and stock picking compounds to <strong>'+fmt(gap)+'</strong> more wealth over '+years+' years. Most active fund managers underperform the index after fees. The gap is not about skill — it is about compounding small differences over decades.';
   var cI=[],cP=[],cL=[];
   for(var y=0;y<=years;y++){cL.push(age+y);cI.push(fvLump(lump,idxR,y)+fvAnnuity(monthly,idxR,y));cP.push(fvLump(lump,pickR,y)+fvAnnuity(monthly,pickR,y));}

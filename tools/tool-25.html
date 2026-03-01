@@ -208,7 +208,8 @@ function fvAnnuity(pmt, annualRate, years) {
 
 // Future Value of Lump Sum
 function fvLump(pv, annualRate, years) {
-  return pv * Math.pow(1 + annualRate, years);
+  const r = annualRate / 12;
+  return pv * Math.pow(1 + r, years * 12);
 }
 
 // Real (inflation-adjusted) value
@@ -351,17 +352,28 @@ function calc(){
   var annR=parseFloat(document.getElementById('s-r').value)/100;
   var years=Math.max(1,ret-age);
   var mRate=apr/12;
+  // efund slider: months of e-fund coverage (0=none, 1-12=partial to full)
+  // Fraction of emergency covered by savings; remainder goes on CC
+  var efundCover=Math.min(1,efund/12);
+  var ccAmount=em*Math.max(0,1-efundCover); // amount that hits CC
   var fvWithFund=fvAnnuity(pay,annR,years);
-  if(pay<=em*mRate){
+  if(ccAmount<=0){
+    document.getElementById('r-hero').textContent='$0';
+    document.getElementById('r-hero').style.color='var(--green)';
+    document.getElementById('r-sub').textContent='Emergency fully covered — no CC debt incurred';
+    document.getElementById('r-insight').innerHTML='Your e-fund fully covers this <strong>'+fmtFull(em)+'</strong> emergency. No credit card debt, no interest, no wealth delay. The e-fund pays for itself in full.';
+    return;
+  }
+  if(pay<=ccAmount*mRate){
     document.getElementById('r-hero').textContent='Never paid off';
     document.getElementById('r-hero').style.color='var(--red)';
     document.getElementById('r-sub').textContent='Payment too low to cover interest';
     document.getElementById('r-insight').innerHTML='Your payment of $'+pay+'/mo does not cover the monthly interest of $'+(em*mRate).toFixed(0)+'. Increase the payment.';
     return;
   }
-  var b=em,total=0,months=0;
+  var b=ccAmount,total=0,months=0;
   while(b>0.01&&months<600){var i=b*mRate;b=Math.max(0,b-(pay-i));total+=pay;months++;}
-  var interest=total-em;
+  var interest=total-ccAmount;
   var remainYrs=Math.max(0,years-months/12);
   var fvNoFund=fvAnnuity(pay,annR,remainYrs);
   var wealthLost=fvWithFund-fvNoFund;
@@ -373,14 +385,14 @@ function calc(){
     '<div class="mh-cell"><div class="mhc-label">CC INTEREST</div><div class="mhc-val red">'+fmtFull(interest)+'</div><div class="mhc-sub">paid to credit card</div></div>'+
     '<div class="mh-cell"><div class="mhc-label">PAYOFF TIME</div><div class="mhc-val amber">'+months+' months</div><div class="mhc-sub">before investing</div></div>'+
     '<div class="mh-cell"><div class="mhc-label">WEALTH LOST</div><div class="mhc-val red">'+fmt(wealthLost)+'</div><div class="mhc-sub">delayed investing</div></div>';
-  document.getElementById('r-b1').textContent=fmtFull(em)+' emergency';
+  document.getElementById('r-b1').textContent=fmtFull(em)+' emergency ('+fmtFull(ccAmount)+' on CC, '+fmtFull(em-ccAmount)+' covered by e-fund)';
   document.getElementById('r-b2').textContent=(apr*100).toFixed(0)+'% APR credit card';
   document.getElementById('r-b3').textContent=months+' months to pay off';
   document.getElementById('r-b4').textContent=fmtFull(interest)+' CC interest paid';
   document.getElementById('r-b5').textContent=fmt(fvWithFund)+' (with e-fund) vs '+fmt(fvNoFund)+' (without)';
   document.getElementById('r-b6').textContent=fmt(wealthLost)+' wealth lost to delay';
   document.getElementById('r-b7').textContent=fmt(trueCost)+' true cost of no e-fund';
-  document.getElementById('r-insight').innerHTML='A <strong>'+fmtFull(em)+' emergency</strong> without a fund costs <strong>'+fmtFull(interest)+'</strong> in credit card interest and delays investing by <strong>'+months+' months</strong>. That delay costs <strong>'+fmt(wealthLost)+'</strong> in future wealth. Total true cost: <strong>'+fmt(trueCost)+'</strong>. The emergency fund pays for itself many times over.';
+  document.getElementById('r-insight').innerHTML='A <strong>'+fmtFull(em)+'</strong> emergency ('+fmtFull(ccAmount)+' on CC with your current e-fund) costs <strong>'+fmtFull(interest)+'</strong> in credit card interest and delays investing by <strong>'+months+' months</strong>. That delay costs <strong>'+fmt(wealthLost)+'</strong> in future wealth. Total true cost: <strong>'+fmt(trueCost)+'</strong>. The emergency fund pays for itself many times over.';
 }
 
 function makeEditable() {

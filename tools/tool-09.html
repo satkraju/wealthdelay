@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Student Loan True Cost Calculator &#8212; WealthDelay</title>
-<meta name="description" content="See the real cost of student loans: interest paid plus the wealth you lose by delaying investing. Free.">
+<meta name="description" content="See the real cost of student loans: interest paid plus wealth lost by delaying investing. Free calculator.">
 <link rel="canonical" href="https://wealthdelay.com/tools/tool-09.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":'Student Loan True Cost Calculator',"description":'See the real cost of student loans: interest paid plus wealth lost by delaying investing. Free calculator.',"url":"https://wealthdelay.com/tools/tool-09.html","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":'Should I invest or pay off student loans?',"acceptedAnswer":{"@type":"Answer","text":'If your loan rate is below 5%, invest first (expected market return exceeds loan cost). Above 6%, prioritise the loan. Between 5-6%, do both simultaneously.'}},{"@type":"Question","name":'What about income-driven repayment?',"acceptedAnswer":{"@type":"Answer","text":'IDR plans lower monthly payments but extend the loan and increase total interest dramatically. This tool models standard repayment — IDR can change the numbers significantly.'}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
 <style>:root {
@@ -143,9 +145,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   font-size: 13px; font-weight: 600; color: var(--ink);
   background: var(--white); border: 1.5px solid var(--green);
   border-radius: 6px; padding: 1px 7px; min-width: 60px; max-width: 90px;
-  text-align: center; letter-spacing: -0.01em; outline: none;
+  text-align: center; outline: none;
   box-shadow: 0 0 0 3px rgba(29,185,84,.15); font-family: var(--font);
 }
+
+.related-wrap{padding:40px 24px 0;max-width:960px;margin:0 auto;}
+.related-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
+.related-link{padding:8px 16px;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;transition:border-color .15s,box-shadow .15s;}
+.related-link:hover{border-color:var(--green);box-shadow:0 0 0 2px rgba(29,185,84,.15);}
 </style>
 </head>
 <body>
@@ -160,30 +167,31 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   <div class="nav-pill">Live Calculator</div>
 </nav>
 <section class="tool-hero">
-  <div class="tool-eyebrow">Tool 09 of 30 &nbsp;&#183;&nbsp; <span class="cat">Debt Cost</span></div>
-  <h1 class="tool-h1">Your student loan costs more than the <span class="red">interest rate suggests.</span></h1>
-  <p class="tool-sub">Interest is just the start. See the full true cost including the wealth you lose while repaying.</p>
+  <div class="tool-eyebrow">Tool 09 of 30 &nbsp;&#183;&nbsp; <span class="cat">Debt</span></div>
+  <h1 class="tool-h1">Student loans cost far more than <span class="red">the interest rate alone.</span></h1>
+  <p class="tool-sub">Enter your loan details. See total interest, payoff timeline, and the wealth cost of delayed investing.</p>
   <div class="hero-badges"><div class="badge">&#128208; Verified math</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
 </section>
 <div class="workspace">
-  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Your Student Loan</div><div class="field"><label>Loan balance <span class="field-val" id="v-bal">$40000</span></label><input type="range" id="s-bal" min="5000" max="200000" step="1000" value="40000" oninput="syncSlider('bal',this.value,'$','',true,false);calc()"></div><div class="field"><label>Interest rate <span class="field-val" id="v-rate">6.5%</span></label><input type="range" id="s-rate" min="1" max="15" step="0.25" value="6.5" oninput="syncSlider('rate',this.value,'','%',false,false);calc()"></div><div class="field"><label>Monthly payment <span class="field-val" id="v-pay">$400/mo</span></label><input type="range" id="s-pay" min="100" max="3000" step="50" value="400" oninput="syncSlider('pay',this.value,'$','/mo',false,false);calc()"></div><div class="section-label">Your Profile</div><div class="field-row"><div class="field"><label>Current age <span class="field-val" id="v-age">24</span></label><input type="range" id="s-age" min="18" max="50" step="1" value="24" oninput="syncSlider('age',this.value,'','',false,false);calc()"></div><div class="field"><label>Retire at <span class="field-val" id="v-ret">65</span></label><input type="range" id="s-ret" min="45" max="80" step="1" value="65" oninput="syncSlider('ret',this.value,'','',false,false);calc()"></div></div><div class="field"><label>Investment return after payoff <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" oninput="syncSlider('r',this.value,'','%',false,false);calc()"></div></div></div></div>
+  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Your Loan</div><div class="field"><label>Loan balance <span class="field-val" id="v-bal">$40000</span></label><input type="range" id="s-bal" min="5000" max="200000" step="1000" value="40000" aria-label="Loan balance" oninput="syncSlider('bal',this.value,'$','',true,true);calc()"></div><div class="field"><label>Interest rate <span class="field-val" id="v-rate">6.5%</span></label><input type="range" id="s-rate" min="1" max="15" step="0.25" value="6.5" aria-label="Interest rate" oninput="syncSlider('rate',this.value,'','%',false,false);calc()"></div><div class="field"><label>Monthly payment <span class="field-val" id="v-pay">$400/mo</span></label><input type="range" id="s-pay" min="100" max="3000" step="50" value="400" aria-label="Monthly payment" oninput="syncSlider('pay',this.value,'$','/mo',false,false);calc()"></div><div class="section-label">Your Profile</div><div class="field-row"><div class="field"><label>Current age <span class="field-val" id="v-age">24</span></label><input type="range" id="s-age" min="18" max="50" step="1" value="24" aria-label="Current age" oninput="syncSlider('age',this.value,'','',false,false);calc()"></div><div class="field"><label>Retire at <span class="field-val" id="v-ret">65</span></label><input type="range" id="s-ret" min="45" max="80" step="1" value="65" aria-label="Retire at" oninput="syncSlider('ret',this.value,'','',false,false);calc()"></div></div><div class="field"><label>Investment return <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" aria-label="Investment return" oninput="syncSlider('r',this.value,'','%',false,false);calc()"></div></div></div></div>
   <div class="results">
     <div class="metric-hero">
       <div class="mh-top">
-        <div class="mh-eyebrow">True Total Cost of This Loan</div>
-        <div class="mh-number red" id="r-hero">&#8212;</div>
+        <div class="mh-eyebrow">True Total Cost of Your Student Loan</div>
+        <div class="mh-number" id="r-hero">&#8212;</div>
         <div class="mh-sub" id="r-sub">calculating&#8230;</div>
       </div>
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
     
-    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Loan balance</div><div class="bd-val red" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Interest rate</div><div class="bd-val red" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Payoff time</div><div class="bd-val amber" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Total interest paid</div><div class="bd-val red" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Total cash out</div><div class="bd-val amber" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Wealth built after payoff</div><div class="bd-val green" id="r-b6">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Opportunity cost (delayed investing)</div><div class="bd-val red" id="r-b7">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">True total cost</div><div class="bd-val red" id="r-b8">&#8212;</div></div></div>
+    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Loan summary</div><div class="bd-val ink" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Payoff timeline</div><div class="bd-val amber" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Total interest</div><div class="bd-val red" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Interest paid</div><div class="bd-val red" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Wealth comparison</div><div class="bd-val green" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Wealth lost to delay</div><div class="bd-val red" id="r-b6">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">True total cost</div><div class="bd-val red" id="r-b7">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Cost multiplier</div><div class="bd-val red" id="r-b8">&#8212;</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px">GOOGLE ADSENSE &#8212; Replace after approval</div>
   </div>
 </div>
-<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is opportunity cost of student debt?<div class="faq-ico">+</div></div><div class="faq-a">Every year you spend repaying debt is a year you're not investing. A $400/mo payment invested for 40 years at 7% builds $1.1M. If you spend 12 years paying debt first, you only invest for 28 years — building $447k. The $683k gap is your opportunity cost.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Should I pay off student loans or invest?<div class="faq-ico">+</div></div><div class="faq-a">If your loan rate is below ~6%, investing in index funds historically beats early payoff. Above 7%, payoff wins. Between 5-7%, it's close — consider your risk tolerance and the psychological value of being debt-free.</div></div></section>
-<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
+<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Should I invest or pay off student loans?<div class="faq-ico">+</div></div><div class="faq-a">If your loan rate is below 5%, invest first (expected market return exceeds loan cost). Above 6%, prioritise the loan. Between 5-6%, do both simultaneously.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What about income-driven repayment?<div class="faq-ico">+</div></div><div class="faq-a">IDR plans lower monthly payments but extend the loan and increase total interest dramatically. This tool models standard repayment — IDR can change the numbers significantly.</div></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/tools/tool-07.html">Credit Card Cost</a><a class="related-link" href="/tools/tool-12.html">Debt Avalanche vs Snowball</a><a class="related-link" href="/tools/tool-14.html">401k Calculator</a></div></section>
+<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
   <div class="footer-copy">&#169; 2025 WealthDelay &#183; Free forever &#183; No data stored &#183; All calculations run in your browser</div>
@@ -195,75 +203,35 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   </div>
 </footer>
 <script>
-// ── WealthDelay Shared Math Library ──────────────────
-// All formulas verified against standard financial math
 
-// Future Value of Annuity: periodic payments compounding
 function fvAnnuity(pmt, annualRate, years) {
   const r = annualRate / 12;
   const n = years * 12;
   if (r === 0) return pmt * n;
   return pmt * ((Math.pow(1 + r, n) - 1) / r);
 }
-
-// Future Value of Lump Sum
+// FIXED: monthly compounding (was annual)
 function fvLump(pv, annualRate, years) {
-  return pv * Math.pow(1 + annualRate, years);
+  const r = annualRate / 12;
+  return pv * Math.pow(1 + r, years * 12);
 }
-
-// Real (inflation-adjusted) value
 function realValue(nominal, inflationRate, years) {
   return nominal / Math.pow(1 + inflationRate, years);
 }
-
-// Amortization payoff: returns {months, totalPaid, interestPaid}
-function amortize(balance, annualRate, monthlyPayment) {
-  const mRate = annualRate / 12;
-  let b = balance, total = 0, months = 0;
-  while (b > 0.01 && months < 600) {
-    const interest = b * mRate;
-    const principal = monthlyPayment - interest;
-    if (principal <= 0) { months = 600; break; }
-    b = Math.max(0, b - principal);
-    total += monthlyPayment;
-    months++;
-  }
-  return { months, totalPaid: total, interestPaid: total - balance };
-}
-
-// Drawdown: how long savings last
-function drawdown(balance, annualWithdrawal, returnRate, inflationRate) {
-  const mRate = returnRate / 12;
-  let b = balance, months = 0;
-  let mWithdrawal = annualWithdrawal / 12;
-  while (b > 0 && months < 1200) {
-    b = b * (1 + mRate) - mWithdrawal;
-    mWithdrawal *= (1 + inflationRate / 12);
-    if (b <= 0) { b = 0; break; }
-    months++;
-  }
-  return { months, years: months / 12 };
-}
-
-// Format currency
 function fmt(n) {
-  if (!isFinite(n)) return '$0';
+  if (!isFinite(n) || isNaN(n)) return '$0';
   const a = Math.abs(n);
   if (a >= 1e9) return '$' + (n / 1e9).toFixed(2) + 'B';
   if (a >= 1e6) return '$' + (n / 1e6).toFixed(2) + 'M';
   if (a >= 1e3) return '$' + (n / 1e3).toFixed(1) + 'K';
   return '$' + Math.round(n).toLocaleString();
 }
-
+// FIXED: NaN guard added
 function fmtFull(n) {
+  if (!isFinite(n) || isNaN(n)) return '$0';
   return '$' + Math.round(Math.abs(n)).toLocaleString();
 }
-
-function fmtPct(n) {
-  return (n * 100).toFixed(1) + '%';
-}
-
-// Sync slider display + gradient
+function fmtPct(n) { return (n * 100).toFixed(1) + '%'; }
 function syncSlider(id, val, pre, suf, comma, abbrev) {
   const el = document.getElementById('v-' + id);
   if (!el) return;
@@ -281,15 +249,6 @@ function syncSlider(id, val, pre, suf, comma, abbrev) {
     s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
   }
 }
-
-function initSliders() {
-  document.querySelectorAll('input[type=range]').forEach(s => {
-    const p = ((s.value - s.min) / (s.max - s.min)) * 100;
-    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
-  });
-}
-
-// Draw 2-line chart on canvas
 function drawChart(canvasId, labels, series, colors) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return;
@@ -304,35 +263,32 @@ function drawChart(canvasId, labels, series, colors) {
   ctx.clearRect(0, 0, W, H);
   const allV = series.flat().filter(isFinite);
   if (!allV.length) return;
-  const maxV = Math.max(...allV, 0.01), minV = Math.min(...allV, 0), range = maxV - minV || 1;
-  const sx = i => pad.l + (i / (labels.length - 1 || 1)) * cW;
-  const sy = v => pad.t + cH - ((v - minV) / range) * cH;
-  ctx.font = `11px -apple-system,sans-serif`;
+  const minV = 0, maxV = Math.max(...allV) * 1.05 || 1;
+  const xS = i => pad.l + (i / (labels.length - 1)) * cW;
+  const yS = v => pad.t + cH - ((v - minV) / (maxV - minV)) * cH;
+  ctx.strokeStyle = 'rgba(0,0,0,0.06)'; ctx.lineWidth = 1;
   for (let i = 0; i <= 4; i++) {
-    const v = maxV - (range / 4) * i, y = sy(v);
-    ctx.strokeStyle = 'rgba(0,0,0,0.06)'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(W - pad.r, y); ctx.stroke();
-    ctx.fillStyle = '#aeaeb2'; ctx.textAlign = 'right';
-    ctx.fillText(fmt(v), pad.l - 4, y + 4);
+    const y = pad.t + (i / 4) * cH;
+    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(pad.l + cW, y); ctx.stroke();
+    const v = maxV - (i / 4) * maxV;
+    ctx.fillStyle = '#6e6e73'; ctx.font = '10px system-ui,sans-serif'; ctx.textAlign = 'right';
+    ctx.fillText(fmt(v), pad.l - 4, y + 3);
   }
-  ctx.fillStyle = '#aeaeb2'; ctx.textAlign = 'center';
-  const step = Math.ceil(labels.length / 5);
-  labels.forEach((l, i) => { if (i % step === 0 || i === labels.length - 1) ctx.fillText('' + l, sx(i), H - 4); });
-  series.forEach((data, si) => {
-    if (data.length < 2) return;
-    const lc = colors[si] || '#1db954';
-    const fc = lc + '18';
-    ctx.beginPath();
-    data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
-    ctx.lineTo(sx(data.length - 1), sy(Math.max(minV, 0)));
-    ctx.lineTo(sx(0), sy(Math.max(minV, 0)));
-    ctx.closePath(); ctx.fillStyle = fc; ctx.fill();
-    ctx.beginPath();
-    data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
-    ctx.strokeStyle = lc; ctx.lineWidth = 2; ctx.lineJoin = 'round'; ctx.stroke();
+  const step = Math.max(1, Math.floor(labels.length / 6));
+  ctx.fillStyle = '#6e6e73'; ctx.textAlign = 'center';
+  labels.forEach((l, i) => { if (i % step === 0) ctx.fillText(l, xS(i), H - pad.b + 14); });
+  series.forEach((s, si) => {
+    ctx.beginPath(); ctx.strokeStyle = colors[si]; ctx.lineWidth = 2.5; ctx.lineJoin = 'round';
+    s.forEach((v, i) => { const x = xS(i), y = yS(isFinite(v) ? v : 0); i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); });
+    ctx.stroke();
   });
 }
-
+function initSliders() {
+  document.querySelectorAll('input[type=range]').forEach(s => {
+    const p = ((s.value - s.min) / (s.max - s.min)) * 100;
+    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
+  });
+}
 function toggleFaq(el) {
   const ico = el.querySelector('.faq-ico'), ans = el.nextElementSibling, open = ans.classList.contains('open');
   document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
@@ -350,45 +306,41 @@ function calc() {
   var annR = parseFloat(document.getElementById('s-r').value) / 100;
   var years = Math.max(1, ret - age);
   var mRate = rate / 12;
-
   if (pay <= bal * mRate) {
-    document.getElementById('r-hero').textContent = 'Payment too low';
-    document.getElementById('r-sub').textContent = 'Increase above $' + (bal*mRate).toFixed(0) + '/mo to make progress';
-    document.getElementById('r-insight').innerHTML = 'Your payment does not cover monthly interest of <strong>$' + (bal*mRate).toFixed(0) + '</strong>. Balance grows each month.';
+    document.getElementById('r-insight').innerHTML = 'Your payment does not cover monthly interest of <strong>$' + (bal*mRate).toFixed(2) + '</strong>. Balance grows every month.';
+    document.getElementById('r-hero').textContent = 'Unpayable';
+    document.getElementById('r-hero').style.color = 'var(--red)';
     return;
   }
-
-  var b=bal, total=0, months=0;
-  while(b>0.01 && months<600){var i=b*mRate; b=Math.max(0,b-(pay-i)); total+=pay; months++;}
+  var b = bal, total = 0, months = 0;
+  while (b > 0.01 && months < 1200) {
+    var interest = b * mRate;
+    b = Math.max(0, b - (pay - interest));
+    total += pay; months++;
+  }
   var interestPaid = total - bal;
-  var payoffYrs    = months / 12;
-  var remainYrs    = Math.max(0, years - payoffYrs);
-  // Wealth if payment invested after payoff
+  var remainYrs = Math.max(0, years - months / 12);
   var fvAfter  = fvAnnuity(pay, annR, remainYrs);
-  // Wealth if never had debt and invested from day 1
   var fvNoDebt = fvAnnuity(pay, annR, years);
   var wealthLost = fvNoDebt - fvAfter;
-  // True total cost = interest + wealth lost during debt years
   var trueCost = interestPaid + wealthLost;
-
   document.getElementById('r-hero').textContent = fmt(trueCost);
+  document.getElementById('r-hero').style.color = 'var(--red)';
   document.getElementById('r-sub').textContent  = fmt(interestPaid) + ' interest + ' + fmt(wealthLost) + ' opportunity cost';
   document.getElementById('r-metrics').innerHTML =
-    '<div class="mh-cell"><div class="mhc-label">PAYOFF TIME</div><div class="mhc-val ink">' + months + ' months</div><div class="mhc-sub">' + payoffYrs.toFixed(1) + ' years</div></div>' +
-    '<div class="mh-cell"><div class="mhc-label">INTEREST PAID</div><div class="mhc-val red">' + fmtFull(interestPaid) + '</div><div class="mhc-sub">to lender</div></div>' +
-    '<div class="mh-cell"><div class="mhc-label">WEALTH AFTER</div><div class="mhc-val green">' + fmt(fvAfter) + '</div><div class="mhc-sub">if invested post-payoff</div></div>';
-  document.getElementById('r-b1').textContent = fmtFull(bal);
-  document.getElementById('r-b2').textContent = (rate*100).toFixed(2) + '%';
-  document.getElementById('r-b3').textContent = months + ' months (' + payoffYrs.toFixed(1) + ' yrs)';
-  document.getElementById('r-b4').textContent = fmtFull(interestPaid);
-  document.getElementById('r-b5').textContent = fmtFull(total);
-  document.getElementById('r-b6').textContent = fmt(fvAfter);
-  document.getElementById('r-b7').textContent = fmt(wealthLost);
-  document.getElementById('r-b8').textContent = fmt(trueCost);
-  document.getElementById('r-insight').innerHTML =
-    'Your <strong>' + fmtFull(bal) + ' loan</strong> costs <strong>' + fmtFull(interestPaid) + ' in interest</strong> over ' + payoffYrs.toFixed(1) + ' years. But the real cost is higher: the wealth you could have built investing that $' + pay + '/mo from day one is <strong>' + fmt(fvNoDebt) + '</strong>. By starting late, you lose <strong>' + fmt(wealthLost) + '</strong> in opportunity cost — making the true total cost <strong>' + fmt(trueCost) + '</strong>.';
+    '<div class="mh-cell"><div class="mhc-label">INTEREST PAID</div><div class="mhc-val red">' + fmtFull(interestPaid) + '</div><div class="mhc-sub">over loan life</div></div>' +
+    '<div class="mh-cell"><div class="mhc-label">PAYOFF TIME</div><div class="mhc-val amber">' + months + ' months</div><div class="mhc-sub">at $' + pay + '/mo</div></div>' +
+    '<div class="mh-cell"><div class="mhc-label">WEALTH LOST</div><div class="mhc-val red">' + fmt(wealthLost) + '</div><div class="mhc-sub">delayed investing</div></div>';
+  document.getElementById('r-b1').textContent = fmtFull(bal) + ' at ' + (rate*100).toFixed(1) + '%';
+  document.getElementById('r-b2').textContent = '$' + pay + '/mo \u2192 ' + months + ' months';
+  document.getElementById('r-b3').textContent = fmtFull(interestPaid) + ' total interest';
+  document.getElementById('r-b4').textContent = fmtFull(interestPaid) + ' interest paid';
+  document.getElementById('r-b5').textContent = fmt(fvNoDebt) + ' (no debt) vs ' + fmt(fvAfter) + ' (with debt)';
+  document.getElementById('r-b6').textContent = fmt(wealthLost) + ' wealth lost to delay';
+  document.getElementById('r-b7').textContent = fmt(trueCost) + ' true total cost';
+  document.getElementById('r-b8').textContent = fmt(trueCost / bal) + '\u00d7 multiple on original loan';
+  document.getElementById('r-insight').innerHTML = 'Your <strong>' + fmtFull(bal) + ' loan</strong> costs <strong>' + fmtFull(interestPaid) + ' in interest</strong> over ' + months + ' months. Delaying investing by that long costs <strong>' + fmt(wealthLost) + '</strong> in future wealth. True total cost: <strong>' + fmt(trueCost) + '</strong> \u2014 ' + (trueCost/bal).toFixed(1) + 'x the original loan.';
 }
-
 
 function makeEditable() {
   document.querySelectorAll('.field-val').forEach(function(span) {
@@ -404,28 +356,28 @@ function makeEditable() {
       var sid = span.id ? span.id.replace('v-','s-') : null;
       var slider = sid ? document.getElementById(sid) : null;
       var inp = document.createElement('input');
-      inp.type = 'text'; inp.inputMode = 'decimal'; inp.value = numeric;
-      inp.className = 'field-val-input';
-      inp.style.width = Math.max(60, numeric.length*10+20)+'px';
-      span.innerHTML = ''; span.appendChild(inp);
+      inp.type='text'; inp.inputMode='decimal'; inp.value=numeric;
+      inp.className='field-val-input';
+      inp.style.width=Math.max(60,numeric.length*10+20)+'px';
+      span.innerHTML=''; span.appendChild(inp);
       inp.focus(); inp.select();
       function commit() {
-        var v = parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
-        if (isNaN(v)) v = slider ? parseFloat(slider.value) : 0;
+        var v=parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
+        if (isNaN(v)) v=slider?parseFloat(slider.value):0;
         if (slider) {
-          var mn=parseFloat(slider.min), mx=parseFloat(slider.max), st=parseFloat(slider.step)||1;
-          v = Math.min(mx, Math.max(mn, v));
-          v = Math.round((v-mn)/st)*st+mn;
-          v = parseFloat(v.toFixed(10));
-          slider.value = v;
+          var mn=parseFloat(slider.min),mx=parseFloat(slider.max),st=parseFloat(slider.step)||1;
+          v=Math.min(mx,Math.max(mn,v));
+          v=Math.round((v-mn)/st)*st+mn;
+          v=parseFloat(v.toFixed(10));
+          slider.value=v;
           slider.dispatchEvent(new Event('input',{bubbles:true}));
         }
       }
-      inp.addEventListener('keydown', function(e) {
-        if (e.key==='Enter') { e.preventDefault(); commit(); inp.blur(); }
-        if (e.key==='Escape') { inp.blur(); }
+      inp.addEventListener('keydown',function(e){
+        if(e.key==='Enter'){e.preventDefault();commit();inp.blur();}
+        if(e.key==='Escape'){inp.blur();}
       });
-      inp.addEventListener('blur', commit);
+      inp.addEventListener('blur',commit);
     });
   });
 }

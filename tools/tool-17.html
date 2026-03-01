@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>How Long Will My Savings Last Calculator &#8212; WealthDelay</title>
-<meta name="description" content="Find out how long your retirement savings will last based on withdrawal rate, return and inflation.">
+<meta name="description" content="Find out how long your retirement savings will last based on withdrawal rate, return and inflation. Free.">
 <link rel="canonical" href="https://wealthdelay.com/tools/tool-17.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":'How Long Will My Savings Last Calculator',"description":'Find out how long your retirement savings will last based on withdrawal rate, return and inflation. Free.',"url":"https://wealthdelay.com/tools/tool-17.html","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":'What is a safe withdrawal rate?',"acceptedAnswer":{"@type":"Answer","text":'The 4% rule (Trinity Study, 1998) found that withdrawing 4% of your initial portfolio per year has historically lasted 30yr retirements ~95% of the time with a diversified portfolio.'}},{"@type":"Question","name":'Does this account for inflation?',"acceptedAnswer":{"@type":"Answer","text":"The tax gross-up is modelled. Inflation on the withdrawal amount is not dynamically adjusted — for a conservative estimate, set your withdrawal 20-30% higher than today's expenses."}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
 <style>:root {
@@ -143,9 +145,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   font-size: 13px; font-weight: 600; color: var(--ink);
   background: var(--white); border: 1.5px solid var(--green);
   border-radius: 6px; padding: 1px 7px; min-width: 60px; max-width: 90px;
-  text-align: center; letter-spacing: -0.01em; outline: none;
+  text-align: center; outline: none;
   box-shadow: 0 0 0 3px rgba(29,185,84,.15); font-family: var(--font);
 }
+
+.related-wrap{padding:40px 24px 0;max-width:960px;margin:0 auto;}
+.related-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
+.related-link{padding:8px 16px;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;transition:border-color .15s,box-shadow .15s;}
+.related-link:hover{border-color:var(--green);box-shadow:0 0 0 2px rgba(29,185,84,.15);}
 </style>
 </head>
 <body>
@@ -160,30 +167,31 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   <div class="nav-pill">Live Calculator</div>
 </nav>
 <section class="tool-hero">
-  <div class="tool-eyebrow">Tool 17 of 30 &nbsp;&#183;&nbsp; <span class="cat">Retirement</span></div>
-  <h1 class="tool-h1">Will your savings outlast <span class="red">you?</span></h1>
-  <p class="tool-sub">Enter your nest egg and spending. Instantly see how many years your savings will last — or if they're sustainable forever.</p>
+  <div class="tool-eyebrow">Tool 17 of 30 &nbsp;&#183;&nbsp; <span class="cat">Investing</span></div>
+  <h1 class="tool-h1">Will your retirement savings <span class="green">last long enough?</span></h1>
+  <p class="tool-sub">Enter your portfolio, annual withdrawal and return. See if your savings are sustainable.</p>
   <div class="hero-badges"><div class="badge">&#128208; Verified math</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
 </section>
 <div class="workspace">
-  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Your Nest Egg</div><div class="field"><label>Total retirement savings <span class="field-val" id="v-nest">$1000000</span></label><input type="range" id="s-nest" min="50000" max="5000000" step="10000" value="1000000" oninput="syncSlider('nest',this.value,'$','',true,true);calc()"></div><div class="field"><label>Annual withdrawal amount <span class="field-val" id="v-withdraw">$80000/yr</span></label><input type="range" id="s-withdraw" min="10000" max="300000" step="1000" value="80000" oninput="syncSlider('withdraw',this.value,'$','/yr',true,false);calc()"><div class="field-hint">How much you need to live on</div></div><div class="section-label">Assumptions</div><div class="field"><label>Portfolio annual return <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" oninput="syncSlider('r',this.value,'','%',false,false);calc()"><div class="field-hint">Historical balanced portfolio avg</div></div><div class="field"><label>Inflation rate <span class="field-val" id="v-inf">3%</span></label><input type="range" id="s-inf" min="0" max="8" step="0.5" value="3" oninput="syncSlider('inf',this.value,'','%',false,false);calc()"></div><div class="field"><label>Withdrawal tax rate <span class="field-val" id="v-tax">20%</span></label><input type="range" id="s-tax" min="0" max="40" step="1" value="20" oninput="syncSlider('tax',this.value,'','%',false,false);calc()"><div class="field-hint">Taxes on 401k / traditional IRA withdrawals</div></div></div></div></div>
+  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Your Retirement Portfolio</div><div class="field"><label>Total portfolio value <span class="field-val" id="v-nest">$1000000</span></label><input type="range" id="s-nest" min="50000" max="5000000" step="10000" value="1000000" aria-label="Total portfolio value" oninput="syncSlider('nest',this.value,'$','',true,true);calc()"></div><div class="field"><label>Annual withdrawal (after-tax) <span class="field-val" id="v-withdraw">$40000/yr</span></label><input type="range" id="s-withdraw" min="10000" max="300000" step="1000" value="40000" aria-label="Annual withdrawal (after-tax)" oninput="syncSlider('withdraw',this.value,'$','/yr',true,false);calc()"></div><div class="field"><label>Annual return assumption <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" aria-label="Annual return assumption" oninput="syncSlider('r',this.value,'','%',false,false);calc()"></div><div class="field"><label>Inflation rate <span class="field-val" id="v-inf">3%</span></label><input type="range" id="s-inf" min="0" max="8" step="0.5" value="3" aria-label="Inflation rate" oninput="syncSlider('inf',this.value,'','%',false,false);calc()"></div><div class="field"><label>Effective withdrawal tax rate <span class="field-val" id="v-tax">20%</span></label><input type="range" id="s-tax" min="0" max="40" step="1" value="20" aria-label="Effective withdrawal tax rate" oninput="syncSlider('tax',this.value,'','%',false,false);calc()"><div class="field-hint">Tax on 401k/IRA withdrawals</div></div></div></div></div>
   <div class="results">
     <div class="metric-hero">
       <div class="mh-top">
-        <div class="mh-eyebrow">Estimated Duration of Savings</div>
+        <div class="mh-eyebrow">Portfolio Sustainability</div>
         <div class="mh-number" id="r-hero">&#8212;</div>
         <div class="mh-sub" id="r-sub">calculating&#8230;</div>
       </div>
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
-    <div class="chart-card"><div class="chart-head"><div class="card-title">Portfolio Balance Over Time</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#1db954"></div>Balance</div></div></div><div class="chart-inner"><canvas id="chart"></canvas></div></div>
-    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Nest egg / savings</div><div class="bd-val ink" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Annual withdrawal</div><div class="bd-val ink" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Withdrawal rate (SWR)</div><div class="bd-val amber" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Portfolio return</div><div class="bd-val ink" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Estimated duration</div><div class="bd-val green" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">4% rule safe annual</div><div class="bd-val green" id="r-b6">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">3.5% conservative safe annual</div><div class="bd-val green" id="r-b7">&#8212;</div></div></div>
+    <div class="chart-card"><div class="chart-head"><div class="card-title">Portfolio Balance Over Time</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>Balance</div></div></div><div class="chart-inner"><canvas id="chart" role="img" aria-label="Portfolio Balance Over Time chart"></canvas></div></div>
+    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Portfolio value</div><div class="bd-val ink" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Annual withdrawal</div><div class="bd-val amber" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Safe withdrawal rate</div><div class="bd-val amber" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Tax gross-up</div><div class="bd-val red" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Monthly after-tax income</div><div class="bd-val green" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Verdict</div><div class="bd-val green" id="r-b6">&#8212;</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px">GOOGLE ADSENSE &#8212; Replace after approval</div>
   </div>
 </div>
-<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is a safe withdrawal rate?<div class="faq-ico">+</div></div><div class="faq-a">The 4% rule (Trinity Study) suggests withdrawing 4% of your portfolio per year has historically lasted 30+ years through all market cycles. For early retirement (40+ year horizon), 3-3.5% is more conservative.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What if my portfolio return is higher than my withdrawal rate?<div class="faq-ico">+</div></div><div class="faq-a">Your savings grow indefinitely — this is the goal of true financial independence. The portfolio produces more income than you spend each year.</div></div></section>
-<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
+<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is a safe withdrawal rate?<div class="faq-ico">+</div></div><div class="faq-a">The 4% rule (Trinity Study, 1998) found that withdrawing 4% of your initial portfolio per year has historically lasted 30yr retirements ~95% of the time with a diversified portfolio.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does this account for inflation?<div class="faq-ico">+</div></div><div class="faq-a">The tax gross-up is modelled. Inflation on the withdrawal amount is not dynamically adjusted — for a conservative estimate, set your withdrawal 20-30% higher than today's expenses.</div></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/tools/tool-15.html">FIRE Calculator</a><a class="related-link" href="/tools/tool-29.html">Net Worth Timeline</a><a class="related-link" href="/tools/tool-30.html">Retirement Estimator</a></div></section>
+<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
   <div class="footer-copy">&#169; 2025 WealthDelay &#183; Free forever &#183; No data stored &#183; All calculations run in your browser</div>
@@ -195,75 +203,35 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   </div>
 </footer>
 <script>
-// ── WealthDelay Shared Math Library ──────────────────
-// All formulas verified against standard financial math
 
-// Future Value of Annuity: periodic payments compounding
 function fvAnnuity(pmt, annualRate, years) {
   const r = annualRate / 12;
   const n = years * 12;
   if (r === 0) return pmt * n;
   return pmt * ((Math.pow(1 + r, n) - 1) / r);
 }
-
-// Future Value of Lump Sum
+// FIXED: monthly compounding (was annual)
 function fvLump(pv, annualRate, years) {
-  return pv * Math.pow(1 + annualRate, years);
+  const r = annualRate / 12;
+  return pv * Math.pow(1 + r, years * 12);
 }
-
-// Real (inflation-adjusted) value
 function realValue(nominal, inflationRate, years) {
   return nominal / Math.pow(1 + inflationRate, years);
 }
-
-// Amortization payoff: returns {months, totalPaid, interestPaid}
-function amortize(balance, annualRate, monthlyPayment) {
-  const mRate = annualRate / 12;
-  let b = balance, total = 0, months = 0;
-  while (b > 0.01 && months < 600) {
-    const interest = b * mRate;
-    const principal = monthlyPayment - interest;
-    if (principal <= 0) { months = 600; break; }
-    b = Math.max(0, b - principal);
-    total += monthlyPayment;
-    months++;
-  }
-  return { months, totalPaid: total, interestPaid: total - balance };
-}
-
-// Drawdown: how long savings last
-function drawdown(balance, annualWithdrawal, returnRate, inflationRate) {
-  const mRate = returnRate / 12;
-  let b = balance, months = 0;
-  let mWithdrawal = annualWithdrawal / 12;
-  while (b > 0 && months < 1200) {
-    b = b * (1 + mRate) - mWithdrawal;
-    mWithdrawal *= (1 + inflationRate / 12);
-    if (b <= 0) { b = 0; break; }
-    months++;
-  }
-  return { months, years: months / 12 };
-}
-
-// Format currency
 function fmt(n) {
-  if (!isFinite(n)) return '$0';
+  if (!isFinite(n) || isNaN(n)) return '$0';
   const a = Math.abs(n);
   if (a >= 1e9) return '$' + (n / 1e9).toFixed(2) + 'B';
   if (a >= 1e6) return '$' + (n / 1e6).toFixed(2) + 'M';
   if (a >= 1e3) return '$' + (n / 1e3).toFixed(1) + 'K';
   return '$' + Math.round(n).toLocaleString();
 }
-
+// FIXED: NaN guard added
 function fmtFull(n) {
+  if (!isFinite(n) || isNaN(n)) return '$0';
   return '$' + Math.round(Math.abs(n)).toLocaleString();
 }
-
-function fmtPct(n) {
-  return (n * 100).toFixed(1) + '%';
-}
-
-// Sync slider display + gradient
+function fmtPct(n) { return (n * 100).toFixed(1) + '%'; }
 function syncSlider(id, val, pre, suf, comma, abbrev) {
   const el = document.getElementById('v-' + id);
   if (!el) return;
@@ -281,15 +249,6 @@ function syncSlider(id, val, pre, suf, comma, abbrev) {
     s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
   }
 }
-
-function initSliders() {
-  document.querySelectorAll('input[type=range]').forEach(s => {
-    const p = ((s.value - s.min) / (s.max - s.min)) * 100;
-    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
-  });
-}
-
-// Draw 2-line chart on canvas
 function drawChart(canvasId, labels, series, colors) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return;
@@ -304,35 +263,32 @@ function drawChart(canvasId, labels, series, colors) {
   ctx.clearRect(0, 0, W, H);
   const allV = series.flat().filter(isFinite);
   if (!allV.length) return;
-  const maxV = Math.max(...allV, 0.01), minV = Math.min(...allV, 0), range = maxV - minV || 1;
-  const sx = i => pad.l + (i / (labels.length - 1 || 1)) * cW;
-  const sy = v => pad.t + cH - ((v - minV) / range) * cH;
-  ctx.font = `11px -apple-system,sans-serif`;
+  const minV = 0, maxV = Math.max(...allV) * 1.05 || 1;
+  const xS = i => pad.l + (i / (labels.length - 1)) * cW;
+  const yS = v => pad.t + cH - ((v - minV) / (maxV - minV)) * cH;
+  ctx.strokeStyle = 'rgba(0,0,0,0.06)'; ctx.lineWidth = 1;
   for (let i = 0; i <= 4; i++) {
-    const v = maxV - (range / 4) * i, y = sy(v);
-    ctx.strokeStyle = 'rgba(0,0,0,0.06)'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(W - pad.r, y); ctx.stroke();
-    ctx.fillStyle = '#aeaeb2'; ctx.textAlign = 'right';
-    ctx.fillText(fmt(v), pad.l - 4, y + 4);
+    const y = pad.t + (i / 4) * cH;
+    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(pad.l + cW, y); ctx.stroke();
+    const v = maxV - (i / 4) * maxV;
+    ctx.fillStyle = '#6e6e73'; ctx.font = '10px system-ui,sans-serif'; ctx.textAlign = 'right';
+    ctx.fillText(fmt(v), pad.l - 4, y + 3);
   }
-  ctx.fillStyle = '#aeaeb2'; ctx.textAlign = 'center';
-  const step = Math.ceil(labels.length / 5);
-  labels.forEach((l, i) => { if (i % step === 0 || i === labels.length - 1) ctx.fillText('' + l, sx(i), H - 4); });
-  series.forEach((data, si) => {
-    if (data.length < 2) return;
-    const lc = colors[si] || '#1db954';
-    const fc = lc + '18';
-    ctx.beginPath();
-    data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
-    ctx.lineTo(sx(data.length - 1), sy(Math.max(minV, 0)));
-    ctx.lineTo(sx(0), sy(Math.max(minV, 0)));
-    ctx.closePath(); ctx.fillStyle = fc; ctx.fill();
-    ctx.beginPath();
-    data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
-    ctx.strokeStyle = lc; ctx.lineWidth = 2; ctx.lineJoin = 'round'; ctx.stroke();
+  const step = Math.max(1, Math.floor(labels.length / 6));
+  ctx.fillStyle = '#6e6e73'; ctx.textAlign = 'center';
+  labels.forEach((l, i) => { if (i % step === 0) ctx.fillText(l, xS(i), H - pad.b + 14); });
+  series.forEach((s, si) => {
+    ctx.beginPath(); ctx.strokeStyle = colors[si]; ctx.lineWidth = 2.5; ctx.lineJoin = 'round';
+    s.forEach((v, i) => { const x = xS(i), y = yS(isFinite(v) ? v : 0); i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); });
+    ctx.stroke();
   });
 }
-
+function initSliders() {
+  document.querySelectorAll('input[type=range]').forEach(s => {
+    const p = ((s.value - s.min) / (s.max - s.min)) * 100;
+    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
+  });
+}
 function toggleFaq(el) {
   const ico = el.querySelector('.faq-ico'), ans = el.nextElementSibling, open = ans.classList.contains('open');
   document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
@@ -348,61 +304,51 @@ function calc() {
   var inf      = parseFloat(document.getElementById('s-inf').value) / 100;
   var tax      = parseFloat(document.getElementById('s-tax').value) / 100;
   var mRate    = annR / 12;
-  // After-tax annual withdrawal
-  var netAnnual = withdraw / (1 - tax);
-  var mWithdraw = netAnnual / 12;
-  // SWR check: if withdrawal rate < return rate, sustainable
-  var swr = withdraw / nest;
-  var sustainable = swr < annR;
-  // Simulate drawdown
-  var b = nest, months = 0;
-  while (b > 0.01 && months < 1800) {
-    b = b * (1 + mRate) - mWithdraw;
-    months++;
-  }
-  var yrsLeft = months / 12;
-  // Inflation-adjusted: what is the spending worth in today's dollars at midpoint
-  var realWithdraw = withdraw / Math.pow(1 + inf, yrsLeft / 2);
-  var swr_pct = (swr * 100).toFixed(1);
-
-  if (sustainable && months >= 1800) {
-    document.getElementById('r-hero').textContent = '\u221e Sustainable';
+  var netAnnual   = withdraw / (1 - tax);
+  var mWithdraw   = netAnnual / 12;
+  var swr         = withdraw / nest;
+  // FIXED: sustainable check uses grossed-up withdrawal vs portfolio income
+  var sustainable = netAnnual < nest * annR;
+  var swr_pct     = (swr * 100).toFixed(1);
+  if (sustainable) {
+    document.getElementById('r-hero').textContent = 'Historically sustainable';
     document.getElementById('r-hero').style.color = 'var(--green)';
-    document.getElementById('r-sub').textContent = swr_pct + '% withdrawal rate \u00b7 portfolio grows indefinitely';
+    document.getElementById('r-sub').textContent  = swr_pct + '% withdrawal rate \u00b7 portfolio likely grows indefinitely at this rate';
     document.getElementById('r-metrics').innerHTML =
-      '<div class="mh-cell"><div class="mhc-label">DURATION</div><div class="mhc-val green">Forever</div><div class="mhc-sub">self-sustaining</div></div>' +
-      '<div class="mh-cell"><div class="mhc-label">SWR</div><div class="mhc-val green">' + swr_pct + '%</div><div class="mhc-sub">below ' + (annR*100).toFixed(0) + '% return</div></div>' +
-      '<div class="mh-cell"><div class="mhc-label">ANNUAL INCOME</div><div class="mhc-val green">$' + withdraw.toLocaleString() + '</div><div class="mhc-sub">indefinitely</div></div>';
-    document.getElementById('r-insight').innerHTML =
-      'Your <strong>' + swr_pct + '% withdrawal rate</strong> is below your <strong>' + (annR*100).toFixed(0) + '% portfolio return</strong>. Your savings will sustain your lifestyle indefinitely — and likely grow. This is the gold standard of retirement security.';
+      '<div class="mh-cell"><div class="mhc-label">SWR</div><div class="mhc-val green">' + swr_pct + '%</div><div class="mhc-sub">safe withdrawal rate</div></div>' +
+      '<div class="mh-cell"><div class="mhc-label">AFTER-TAX</div><div class="mhc-val green">$' + Math.round(withdraw/12).toLocaleString() + '/mo</div><div class="mhc-sub">net monthly income</div></div>' +
+      '<div class="mh-cell"><div class="mhc-label">PORTFOLIO GROWS</div><div class="mhc-val green">Yes</div><div class="mhc-sub">at this withdrawal rate</div></div>';
+    document.getElementById('r-insight').innerHTML = 'Your <strong>' + swr_pct + '% withdrawal rate</strong> is within a sustainable range based on your <strong>' + (annR*100).toFixed(0) + '% assumed return</strong>. The Trinity Study (1998) found 4% SWR has ~95% success over 30yr retirements. This is a deterministic model — actual markets fluctuate and sequence-of-returns risk is not modelled.';
   } else {
+    var b = nest, months = 0;
+    while (b > 0.01 && months < 1800) {
+      b = b * (1 + mRate) - mWithdraw;
+      if (b < 0) b = 0;
+      months++;
+    }
+    var yrsLeft = months / 12;
     document.getElementById('r-hero').textContent = yrsLeft.toFixed(1) + ' years';
     document.getElementById('r-hero').style.color = yrsLeft < 20 ? 'var(--red)' : 'var(--amber)';
-    document.getElementById('r-sub').textContent = 'savings depleted in ' + yrsLeft.toFixed(1) + ' years \u00b7 ' + swr_pct + '% withdrawal rate';
+    document.getElementById('r-sub').textContent  = 'savings depleted in ' + yrsLeft.toFixed(1) + ' years \u00b7 ' + swr_pct + '% withdrawal rate';
     document.getElementById('r-metrics').innerHTML =
-      '<div class="mh-cell"><div class="mhc-label">YEARS LEFT</div><div class="mhc-val ' + (yrsLeft<20?'red':'amber') + '">' + yrsLeft.toFixed(1) + '</div><div class="mhc-sub">at current spend</div></div>' +
-      '<div class="mh-cell"><div class="mhc-label">SWR</div><div class="mhc-val red">' + swr_pct + '%</div><div class="mhc-sub">above safe 4%</div></div>' +
-      '<div class="mh-cell"><div class="mhc-label">SAFE ANNUAL</div><div class="mhc-val green">$' + (nest*0.04).toLocaleString(undefined,{maximumFractionDigits:0}) + '</div><div class="mhc-sub">4% sustainable spend</div></div>';
-    document.getElementById('r-insight').innerHTML =
-      'At <strong>$' + withdraw.toLocaleString() + '/yr</strong> (' + swr_pct + '% SWR), your savings deplete in <strong>' + yrsLeft.toFixed(1) + ' years</strong>. To make it last indefinitely at 4% SWR, keep annual spending under <strong>$' + (nest*0.04).toLocaleString(undefined,{maximumFractionDigits:0}) + '</strong>.';
+      '<div class="mh-cell"><div class="mhc-label">SWR</div><div class="mhc-val red">' + swr_pct + '%</div><div class="mhc-sub">withdrawal rate</div></div>' +
+      '<div class="mh-cell"><div class="mhc-label">DEPLETES IN</div><div class="mhc-val red">' + yrsLeft.toFixed(1) + ' yrs</div><div class="mhc-sub">at this spend rate</div></div>' +
+      '<div class="mh-cell"><div class="mhc-label">SAFE AMOUNT</div><div class="mhc-val amber">$' + Math.round(nest*0.04/12).toLocaleString() + '/mo</div><div class="mhc-sub">at 4% SWR</div></div>';
+    document.getElementById('r-insight').innerHTML = 'At <strong>$' + withdraw.toLocaleString() + '/yr</strong> (' + swr_pct + '% SWR), your savings deplete in <strong>' + yrsLeft.toFixed(1) + ' years</strong>. The 4% safe withdrawal rate for your portfolio is <strong>$' + Math.round(nest*0.04).toLocaleString() + '/yr</strong> ($' + Math.round(nest*0.04/12).toLocaleString() + '/mo). This model assumes fixed returns — actual longevity depends on market sequence.';
+    var cB = [], cL = [], b2 = nest, displayYrs = Math.ceil(yrsLeft) + 2;
+    for (var y = 0; y <= displayYrs; y++) {
+      cL.push(y); cB.push(Math.max(0, b2));
+      for (var m = 0; m < 12; m++) { if (b2 > 0.01) b2 = b2 * (1 + mRate) - mWithdraw; if (b2 < 0) b2 = 0; }
+    }
+    drawChart('chart', cL, [cB], ['#ff3b30']);
   }
-  document.getElementById('r-b1').textContent = '$' + nest.toLocaleString();
-  document.getElementById('r-b2').textContent = '$' + withdraw.toLocaleString() + '/yr';
+  document.getElementById('r-b1').textContent = fmtFull(nest) + ' portfolio';
+  document.getElementById('r-b2').textContent = '$' + withdraw.toLocaleString() + '/yr withdrawal';
   document.getElementById('r-b3').textContent = swr_pct + '% SWR';
-  document.getElementById('r-b4').textContent = (annR*100).toFixed(1) + '% portfolio return';
-  document.getElementById('r-b5').textContent = months < 1800 ? yrsLeft.toFixed(1) + ' years' : 'Indefinitely';
-  document.getElementById('r-b6').textContent = '$' + (nest*0.04).toLocaleString(undefined,{maximumFractionDigits:0}) + '/yr (4% rule)';
-  document.getElementById('r-b7').textContent = '$' + (nest*0.035).toLocaleString(undefined,{maximumFractionDigits:0}) + '/yr (3.5% conservative)';
-  // Chart: balance over time
-  var cB=[], cL=[], b2=nest;
-  var displayYrs = months < 1800 ? Math.ceil(yrsLeft)+2 : 40;
-  for (var y=0;y<=displayYrs;y++) {
-    cL.push(y); cB.push(Math.max(0,b2));
-    for (var m=0;m<12;m++) { if(b2>0.01) b2=b2*(1+mRate)-mWithdraw; }
-  }
-  drawChart('chart',cL,[cB],['#1db954']);
+  document.getElementById('r-b4').textContent = (tax*100).toFixed(0) + '% tax \u2192 gross ' + fmtFull(netAnnual) + '/yr needed';
+  document.getElementById('r-b5').textContent = '$' + Math.round(withdraw/12).toLocaleString() + '/mo after-tax income';
+  document.getElementById('r-b6').textContent = sustainable ? 'Portfolio likely grows at this rate' : 'Portfolio depletes — reduce withdrawals or grow nest egg';
 }
-
 
 function makeEditable() {
   document.querySelectorAll('.field-val').forEach(function(span) {
@@ -418,28 +364,28 @@ function makeEditable() {
       var sid = span.id ? span.id.replace('v-','s-') : null;
       var slider = sid ? document.getElementById(sid) : null;
       var inp = document.createElement('input');
-      inp.type = 'text'; inp.inputMode = 'decimal'; inp.value = numeric;
-      inp.className = 'field-val-input';
-      inp.style.width = Math.max(60, numeric.length*10+20)+'px';
-      span.innerHTML = ''; span.appendChild(inp);
+      inp.type='text'; inp.inputMode='decimal'; inp.value=numeric;
+      inp.className='field-val-input';
+      inp.style.width=Math.max(60,numeric.length*10+20)+'px';
+      span.innerHTML=''; span.appendChild(inp);
       inp.focus(); inp.select();
       function commit() {
-        var v = parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
-        if (isNaN(v)) v = slider ? parseFloat(slider.value) : 0;
+        var v=parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
+        if (isNaN(v)) v=slider?parseFloat(slider.value):0;
         if (slider) {
-          var mn=parseFloat(slider.min), mx=parseFloat(slider.max), st=parseFloat(slider.step)||1;
-          v = Math.min(mx, Math.max(mn, v));
-          v = Math.round((v-mn)/st)*st+mn;
-          v = parseFloat(v.toFixed(10));
-          slider.value = v;
+          var mn=parseFloat(slider.min),mx=parseFloat(slider.max),st=parseFloat(slider.step)||1;
+          v=Math.min(mx,Math.max(mn,v));
+          v=Math.round((v-mn)/st)*st+mn;
+          v=parseFloat(v.toFixed(10));
+          slider.value=v;
           slider.dispatchEvent(new Event('input',{bubbles:true}));
         }
       }
-      inp.addEventListener('keydown', function(e) {
-        if (e.key==='Enter') { e.preventDefault(); commit(); inp.blur(); }
-        if (e.key==='Escape') { inp.blur(); }
+      inp.addEventListener('keydown',function(e){
+        if(e.key==='Enter'){e.preventDefault();commit();inp.blur();}
+        if(e.key==='Escape'){inp.blur();}
       });
-      inp.addEventListener('blur', commit);
+      inp.addEventListener('blur',commit);
     });
   });
 }

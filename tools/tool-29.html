@@ -208,7 +208,8 @@ function fvAnnuity(pmt, annualRate, years) {
 
 // Future Value of Lump Sum
 function fvLump(pv, annualRate, years) {
-  return pv * Math.pow(1 + annualRate, years);
+  const r = annualRate / 12;
+  return pv * Math.pow(1 + r, years * 12);
 }
 
 // Real (inflation-adjusted) value

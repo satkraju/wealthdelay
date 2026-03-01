@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Inflation vs Savings Erosion Calculator &#8212; WealthDelay</title>
-<meta name="description" content="See how inflation erodes your savings account in real purchasing power over time. Compare to market returns.">
+<meta name="description" content="See how inflation erodes your savings account in real purchasing power over time. Compare to market returns. Free.">
 <link rel="canonical" href="https://wealthdelay.com/tools/tool-16.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":'Inflation vs Savings Erosion Calculator',"description":'See how inflation erodes your savings account in real purchasing power over time. Compare to market returns. Free.',"url":"https://wealthdelay.com/tools/tool-16.html","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":'What is the Fisher equation?',"acceptedAnswer":{"@type":"Answer","text":'The exact real return formula: (1 + nominal rate) / (1 + inflation rate) - 1. The approximation (nominal - inflation) underestimates the erosion at high inflation rates.'}},{"@type":"Question","name":'Should I move savings to a market account?',"acceptedAnswer":{"@type":"Answer","text":'Emergency fund (3-6 months expenses): keep in a HYSA — you need it liquid. Beyond that: investing long-term (5yr+) has historically beaten inflation far better than savings accounts.'}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
 <style>:root {
@@ -143,9 +145,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   font-size: 13px; font-weight: 600; color: var(--ink);
   background: var(--white); border: 1.5px solid var(--green);
   border-radius: 6px; padding: 1px 7px; min-width: 60px; max-width: 90px;
-  text-align: center; letter-spacing: -0.01em; outline: none;
+  text-align: center; outline: none;
   box-shadow: 0 0 0 3px rgba(29,185,84,.15); font-family: var(--font);
 }
+
+.related-wrap{padding:40px 24px 0;max-width:960px;margin:0 auto;}
+.related-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
+.related-link{padding:8px 16px;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;transition:border-color .15s,box-shadow .15s;}
+.related-link:hover{border-color:var(--green);box-shadow:0 0 0 2px rgba(29,185,84,.15);}
 </style>
 </head>
 <body>
@@ -160,30 +167,31 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   <div class="nav-pill">Live Calculator</div>
 </nav>
 <section class="tool-hero">
-  <div class="tool-eyebrow">Tool 16 of 30 &nbsp;&#183;&nbsp; <span class="cat">Inflation</span></div>
-  <h1 class="tool-h1">Your savings account might be <span class="red">losing you money.</span></h1>
-  <p class="tool-sub">Enter your savings and interest rate. See real purchasing power after inflation and the cost of not investing.</p>
+  <div class="tool-eyebrow">Tool 16 of 30 &nbsp;&#183;&nbsp; <span class="cat">Investing</span></div>
+  <h1 class="tool-h1">Your savings account may be <span class="red">losing purchasing power.</span></h1>
+  <p class="tool-sub">Enter your savings balance, rates and inflation. See the real return and what investing would build.</p>
   <div class="hero-badges"><div class="badge">&#128208; Verified math</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
 </section>
 <div class="workspace">
-  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Your Savings</div><div class="field"><label>Current savings amount <span class="field-val" id="v-savings">$50000</span></label><input type="range" id="s-savings" min="1000" max="1000000" step="1000" value="50000" oninput="syncSlider('savings',this.value,'$','',true,true);calc()"></div><div class="field"><label>Inflation rate <span class="field-val" id="v-inf">3%</span></label><input type="range" id="s-inf" min="0" max="15" step="0.25" value="3" oninput="syncSlider('inf',this.value,'','%',false,false);calc()"><div class="field-hint">US long-run average ~3%</div></div><div class="field"><label>Savings account interest rate <span class="field-val" id="v-srate">1.5%</span></label><input type="range" id="s-srate" min="0" max="8" step="0.25" value="1.5" oninput="syncSlider('srate',this.value,'','%',false,false);calc()"><div class="field-hint">Current HYSA rates: 4-5%</div></div><div class="field-row"><div class="field"><label>Current age <span class="field-val" id="v-age">30</span></label><input type="range" id="s-age" min="18" max="65" step="1" value="30" oninput="syncSlider('age',this.value,'','',false,false);calc()"></div><div class="field"><label>Retire at <span class="field-val" id="v-ret">65</span></label><input type="range" id="s-ret" min="45" max="80" step="1" value="65" oninput="syncSlider('ret',this.value,'','',false,false);calc()"></div></div><div class="section-label">Compare: What If Invested?</div><div class="field"><label>Market investment return <span class="field-val" id="v-invest">7%</span></label><input type="range" id="s-invest" min="2" max="14" step="0.5" value="7" oninput="syncSlider('invest',this.value,'','%',false,false);calc()"><div class="field-hint">S&P 500 avg for comparison</div></div></div></div></div>
+  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Your Savings</div><div class="field"><label>Current savings balance <span class="field-val" id="v-savings">$50000</span></label><input type="range" id="s-savings" min="1000" max="1000000" step="1000" value="50000" aria-label="Current savings balance" oninput="syncSlider('savings',this.value,'$','',true,true);calc()"></div><div class="field"><label>Inflation rate <span class="field-val" id="v-inf">3%</span></label><input type="range" id="s-inf" min="0" max="15" step="0.25" value="3" aria-label="Inflation rate" oninput="syncSlider('inf',this.value,'','%',false,false);calc()"></div><div class="field"><label>Savings account rate <span class="field-val" id="v-srate">1.5%</span></label><input type="range" id="s-srate" min="0" max="8" step="0.25" value="1.5" aria-label="Savings account rate" oninput="syncSlider('srate',this.value,'','%',false,false);calc()"><div class="field-hint">Current HYSA rates: 4-5%</div></div><div class="section-label">Your Profile</div><div class="field-row"><div class="field"><label>Current age <span class="field-val" id="v-age">30</span></label><input type="range" id="s-age" min="18" max="65" step="1" value="30" aria-label="Current age" oninput="syncSlider('age',this.value,'','',false,false);calc()"></div><div class="field"><label>Retire at <span class="field-val" id="v-ret">65</span></label><input type="range" id="s-ret" min="45" max="80" step="1" value="65" aria-label="Retire at" oninput="syncSlider('ret',this.value,'','',false,false);calc()"></div></div><div class="field"><label>Market return (comparison) <span class="field-val" id="v-invest">7%</span></label><input type="range" id="s-invest" min="2" max="14" step="0.5" value="7" aria-label="Market return (comparison)" oninput="syncSlider('invest',this.value,'','%',false,false);calc()"></div></div></div></div>
   <div class="results">
     <div class="metric-hero">
       <div class="mh-top">
-        <div class="mh-eyebrow">Real Purchasing Power After Inflation</div>
-        <div class="mh-number red" id="r-hero">&#8212;</div>
+        <div class="mh-eyebrow">Real Purchasing Power in Future</div>
+        <div class="mh-number" id="r-hero">&#8212;</div>
         <div class="mh-sub" id="r-sub">calculating&#8230;</div>
       </div>
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
-    <div class="chart-card"><div class="chart-head"><div class="card-title">Nominal vs Real vs Market Value</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#6e6e73"></div>Nominal (savings)</div><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>Real value</div><div class="leg"><div class="leg-dot" style="background:#1db954"></div>If invested</div></div></div><div class="chart-inner"><canvas id="chart"></canvas></div></div>
-    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Savings amount</div><div class="bd-val ink" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Savings account rate</div><div class="bd-val ink" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Inflation rate</div><div class="bd-val red" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Real (effective) return</div><div class="bd-val amber" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Nominal value (on paper)</div><div class="bd-val ink" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Real value (purchasing power)</div><div class="bd-val red" id="r-b6">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Purchasing power lost</div><div class="bd-val red" id="r-b7">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Market comparison</div><div class="bd-val green" id="r-b8">&#8212;</div></div></div>
+    <div class="chart-card"><div class="chart-head"><div class="card-title">Nominal vs Real vs Market</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#1db954"></div>Market (invested)</div><div class="leg"><div class="leg-dot" style="background:#ff9500"></div>Savings (nominal)</div><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>Savings (real)</div></div></div><div class="chart-inner"><canvas id="chart" role="img" aria-label="Nominal vs Real vs Market chart"></canvas></div></div>
+    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Starting balance</div><div class="bd-val ink" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Rate vs inflation</div><div class="bd-val amber" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Nominal vs real value</div><div class="bd-val amber" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Real return (Fisher equation)</div><div class="bd-val red" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Purchasing power change</div><div class="bd-val red" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Savings vs market (real)</div><div class="bd-val green" id="r-b6">&#8212;</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px">GOOGLE ADSENSE &#8212; Replace after approval</div>
   </div>
 </div>
-<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the real return on my savings?<div class="faq-ico">+</div></div><div class="faq-a">Real return = savings rate minus inflation. If your HYSA pays 4.5% and inflation is 3%, your real return is 1.5% — you're gaining purchasing power, but slowly.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Should I keep any money in savings?<div class="faq-ico">+</div></div><div class="faq-a">Yes — 3-6 months of expenses as an emergency fund should stay in a high-yield savings account for liquidity. Beyond that, long-term money should be invested to beat inflation.</div></div></section>
-<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
+<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the Fisher equation?<div class="faq-ico">+</div></div><div class="faq-a">The exact real return formula: (1 + nominal rate) / (1 + inflation rate) - 1. The approximation (nominal - inflation) underestimates the erosion at high inflation rates.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Should I move savings to a market account?<div class="faq-ico">+</div></div><div class="faq-a">Emergency fund (3-6 months expenses): keep in a HYSA — you need it liquid. Beyond that: investing long-term (5yr+) has historically beaten inflation far better than savings accounts.</div></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/tools/tool-15.html">FIRE Calculator</a><a class="related-link" href="/tools/tool-29.html">Net Worth Timeline</a><a class="related-link" href="/tools/tool-26.html">Investment Fee Drag</a></div></section>
+<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
   <div class="footer-copy">&#169; 2025 WealthDelay &#183; Free forever &#183; No data stored &#183; All calculations run in your browser</div>
@@ -195,75 +203,35 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   </div>
 </footer>
 <script>
-// ── WealthDelay Shared Math Library ──────────────────
-// All formulas verified against standard financial math
 
-// Future Value of Annuity: periodic payments compounding
 function fvAnnuity(pmt, annualRate, years) {
   const r = annualRate / 12;
   const n = years * 12;
   if (r === 0) return pmt * n;
   return pmt * ((Math.pow(1 + r, n) - 1) / r);
 }
-
-// Future Value of Lump Sum
+// FIXED: monthly compounding (was annual)
 function fvLump(pv, annualRate, years) {
-  return pv * Math.pow(1 + annualRate, years);
+  const r = annualRate / 12;
+  return pv * Math.pow(1 + r, years * 12);
 }
-
-// Real (inflation-adjusted) value
 function realValue(nominal, inflationRate, years) {
   return nominal / Math.pow(1 + inflationRate, years);
 }
-
-// Amortization payoff: returns {months, totalPaid, interestPaid}
-function amortize(balance, annualRate, monthlyPayment) {
-  const mRate = annualRate / 12;
-  let b = balance, total = 0, months = 0;
-  while (b > 0.01 && months < 600) {
-    const interest = b * mRate;
-    const principal = monthlyPayment - interest;
-    if (principal <= 0) { months = 600; break; }
-    b = Math.max(0, b - principal);
-    total += monthlyPayment;
-    months++;
-  }
-  return { months, totalPaid: total, interestPaid: total - balance };
-}
-
-// Drawdown: how long savings last
-function drawdown(balance, annualWithdrawal, returnRate, inflationRate) {
-  const mRate = returnRate / 12;
-  let b = balance, months = 0;
-  let mWithdrawal = annualWithdrawal / 12;
-  while (b > 0 && months < 1200) {
-    b = b * (1 + mRate) - mWithdrawal;
-    mWithdrawal *= (1 + inflationRate / 12);
-    if (b <= 0) { b = 0; break; }
-    months++;
-  }
-  return { months, years: months / 12 };
-}
-
-// Format currency
 function fmt(n) {
-  if (!isFinite(n)) return '$0';
+  if (!isFinite(n) || isNaN(n)) return '$0';
   const a = Math.abs(n);
   if (a >= 1e9) return '$' + (n / 1e9).toFixed(2) + 'B';
   if (a >= 1e6) return '$' + (n / 1e6).toFixed(2) + 'M';
   if (a >= 1e3) return '$' + (n / 1e3).toFixed(1) + 'K';
   return '$' + Math.round(n).toLocaleString();
 }
-
+// FIXED: NaN guard added
 function fmtFull(n) {
+  if (!isFinite(n) || isNaN(n)) return '$0';
   return '$' + Math.round(Math.abs(n)).toLocaleString();
 }
-
-function fmtPct(n) {
-  return (n * 100).toFixed(1) + '%';
-}
-
-// Sync slider display + gradient
+function fmtPct(n) { return (n * 100).toFixed(1) + '%'; }
 function syncSlider(id, val, pre, suf, comma, abbrev) {
   const el = document.getElementById('v-' + id);
   if (!el) return;
@@ -281,15 +249,6 @@ function syncSlider(id, val, pre, suf, comma, abbrev) {
     s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
   }
 }
-
-function initSliders() {
-  document.querySelectorAll('input[type=range]').forEach(s => {
-    const p = ((s.value - s.min) / (s.max - s.min)) * 100;
-    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
-  });
-}
-
-// Draw 2-line chart on canvas
 function drawChart(canvasId, labels, series, colors) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return;
@@ -304,35 +263,32 @@ function drawChart(canvasId, labels, series, colors) {
   ctx.clearRect(0, 0, W, H);
   const allV = series.flat().filter(isFinite);
   if (!allV.length) return;
-  const maxV = Math.max(...allV, 0.01), minV = Math.min(...allV, 0), range = maxV - minV || 1;
-  const sx = i => pad.l + (i / (labels.length - 1 || 1)) * cW;
-  const sy = v => pad.t + cH - ((v - minV) / range) * cH;
-  ctx.font = `11px -apple-system,sans-serif`;
+  const minV = 0, maxV = Math.max(...allV) * 1.05 || 1;
+  const xS = i => pad.l + (i / (labels.length - 1)) * cW;
+  const yS = v => pad.t + cH - ((v - minV) / (maxV - minV)) * cH;
+  ctx.strokeStyle = 'rgba(0,0,0,0.06)'; ctx.lineWidth = 1;
   for (let i = 0; i <= 4; i++) {
-    const v = maxV - (range / 4) * i, y = sy(v);
-    ctx.strokeStyle = 'rgba(0,0,0,0.06)'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(W - pad.r, y); ctx.stroke();
-    ctx.fillStyle = '#aeaeb2'; ctx.textAlign = 'right';
-    ctx.fillText(fmt(v), pad.l - 4, y + 4);
+    const y = pad.t + (i / 4) * cH;
+    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(pad.l + cW, y); ctx.stroke();
+    const v = maxV - (i / 4) * maxV;
+    ctx.fillStyle = '#6e6e73'; ctx.font = '10px system-ui,sans-serif'; ctx.textAlign = 'right';
+    ctx.fillText(fmt(v), pad.l - 4, y + 3);
   }
-  ctx.fillStyle = '#aeaeb2'; ctx.textAlign = 'center';
-  const step = Math.ceil(labels.length / 5);
-  labels.forEach((l, i) => { if (i % step === 0 || i === labels.length - 1) ctx.fillText('' + l, sx(i), H - 4); });
-  series.forEach((data, si) => {
-    if (data.length < 2) return;
-    const lc = colors[si] || '#1db954';
-    const fc = lc + '18';
-    ctx.beginPath();
-    data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
-    ctx.lineTo(sx(data.length - 1), sy(Math.max(minV, 0)));
-    ctx.lineTo(sx(0), sy(Math.max(minV, 0)));
-    ctx.closePath(); ctx.fillStyle = fc; ctx.fill();
-    ctx.beginPath();
-    data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
-    ctx.strokeStyle = lc; ctx.lineWidth = 2; ctx.lineJoin = 'round'; ctx.stroke();
+  const step = Math.max(1, Math.floor(labels.length / 6));
+  ctx.fillStyle = '#6e6e73'; ctx.textAlign = 'center';
+  labels.forEach((l, i) => { if (i % step === 0) ctx.fillText(l, xS(i), H - pad.b + 14); });
+  series.forEach((s, si) => {
+    ctx.beginPath(); ctx.strokeStyle = colors[si]; ctx.lineWidth = 2.5; ctx.lineJoin = 'round';
+    s.forEach((v, i) => { const x = xS(i), y = yS(isFinite(v) ? v : 0); i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); });
+    ctx.stroke();
   });
 }
-
+function initSliders() {
+  document.querySelectorAll('input[type=range]').forEach(s => {
+    const p = ((s.value - s.min) / (s.max - s.min)) * 100;
+    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
+  });
+}
 function toggleFaq(el) {
   const ico = el.querySelector('.faq-ico'), ans = el.nextElementSibling, open = ans.classList.contains('open');
   document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
@@ -342,61 +298,47 @@ function toggleFaq(el) {
 
 
 function calc() {
-  var savings  = parseFloat(document.getElementById('s-savings').value);
-  var inf      = parseFloat(document.getElementById('s-inf').value) / 100;
-  var srate    = parseFloat(document.getElementById('s-srate').value) / 100;
-  var age      = parseFloat(document.getElementById('s-age').value);
-  var ret      = parseFloat(document.getElementById('s-ret').value);
-  var invest   = parseFloat(document.getElementById('s-invest').value) / 100;
-  var years    = Math.max(1, ret - age);
-
-  // Nominal value in savings account
+  var savings = parseFloat(document.getElementById('s-savings').value);
+  var inf     = parseFloat(document.getElementById('s-inf').value) / 100;
+  var srate   = parseFloat(document.getElementById('s-srate').value) / 100;
+  var age     = parseFloat(document.getElementById('s-age').value);
+  var ret     = parseFloat(document.getElementById('s-ret').value);
+  var invest  = parseFloat(document.getElementById('s-invest').value) / 100;
+  var years   = Math.max(1, ret - age);
   var nominal      = savings * Math.pow(1 + srate, years);
-  // Real (inflation-adjusted) value of savings account
   var realSavings  = nominal / Math.pow(1 + inf, years);
-  // Purchasing power lost vs original amount
   var ppLost       = savings - realSavings;
-  // Effective real return
-  var effectiveReturn = srate - inf;
-  // Breakeven rate needed to preserve purchasing power
-  var breakeven    = inf;
-  // What the same money invested in market would be
+  // FIXED: Fisher equation for real return
+  var effectiveReturn = (1 + srate) / (1 + inf) - 1;
   var fvMarket     = fvLump(savings, invest, years);
   var realMarket   = fvMarket / Math.pow(1 + inf, years);
-  // Opportunity cost of keeping in savings vs investing
-  var oppCost      = fvMarket - nominal;
-
+  var marketReal   = (1 + invest) / (1 + inf) - 1;
   document.getElementById('r-hero').textContent = fmtFull(realSavings);
-  document.getElementById('r-sub').textContent  = 'real purchasing power in ' + years + ' years \u00b7 lost ' + fmtFull(ppLost);
-  var heroEl = document.getElementById('r-hero');
-  heroEl.style.color = effectiveReturn < 0 ? 'var(--red)' : 'var(--green)';
+  document.getElementById('r-hero').style.color = effectiveReturn < 0 ? 'var(--red)' : 'var(--amber)';
+  document.getElementById('r-sub').textContent  = 'real purchasing power in ' + years + ' years \u00b7 lost ' + fmtFull(Math.abs(ppLost));
   document.getElementById('r-metrics').innerHTML =
-    '<div class="mh-cell"><div class="mhc-label">NOMINAL VALUE</div><div class="mhc-val ink">' + fmtFull(nominal) + '</div><div class="mhc-sub">balance on paper</div></div>' +
-    '<div class="mh-cell"><div class="mhc-label">REAL VALUE</div><div class="mhc-val ' + (effectiveReturn<0?'red':'green') + '">' + fmtFull(realSavings) + '</div><div class="mhc-sub">today\'s purchasing power</div></div>' +
-    '<div class="mh-cell"><div class="mhc-label">IF INVESTED</div><div class="mhc-val green">' + fmt(fvMarket) + '</div><div class="mhc-sub">market comparison</div></div>';
-  document.getElementById('r-b1').textContent = fmtFull(savings);
-  document.getElementById('r-b2').textContent = (srate*100).toFixed(2) + '%';
-  document.getElementById('r-b3').textContent = (inf*100).toFixed(2) + '%';
-  document.getElementById('r-b4').textContent = (effectiveReturn*100).toFixed(2) + '% real return';
-  document.getElementById('r-b5').textContent = fmtFull(nominal) + ' (nominal)';
-  document.getElementById('r-b6').textContent = fmtFull(realSavings) + ' (real)';
-  document.getElementById('r-b7').textContent = fmtFull(ppLost) + ' purchasing power lost';
-  document.getElementById('r-b8').textContent = fmt(fvMarket) + ' vs ' + fmt(oppCost) + ' extra if invested';
+    '<div class="mh-cell"><div class="mhc-label">REAL VALUE</div><div class="mhc-val ' + (effectiveReturn<0?'red':'green') + '">' + fmtFull(realSavings) + '</div><div class="mhc-sub">in today\'s dollars</div></div>' +
+    '<div class="mh-cell"><div class="mhc-label">PURCHASING POWER LOST</div><div class="mhc-val red">' + fmtFull(Math.abs(ppLost)) + '</div><div class="mhc-sub">eroded by inflation</div></div>' +
+    '<div class="mh-cell"><div class="mhc-label">MARKET REAL VALUE</div><div class="mhc-val green">' + fmt(realMarket) + '</div><div class="mhc-sub">if invested instead</div></div>';
+  document.getElementById('r-b1').textContent = fmtFull(savings) + ' today';
+  document.getElementById('r-b2').textContent = (srate*100).toFixed(2) + '% savings rate vs ' + (inf*100).toFixed(2) + '% inflation';
+  document.getElementById('r-b3').textContent = fmtFull(nominal) + ' nominal \u2192 ' + fmtFull(realSavings) + ' real';
+  document.getElementById('r-b4').textContent = (effectiveReturn*100).toFixed(3) + '% real return (Fisher equation)';
+  document.getElementById('r-b5').textContent = fmtFull(Math.abs(ppLost)) + ' purchasing power ' + (ppLost>0?'lost':'gained');
+  document.getElementById('r-b6').textContent = fmtFull(realSavings) + ' (savings) vs ' + fmt(realMarket) + ' (market, real)';
   document.getElementById('r-insight').innerHTML = effectiveReturn < 0
-    ? 'Your savings account rate of <strong>' + (srate*100).toFixed(2) + '%</strong> is below inflation at <strong>' + (inf*100).toFixed(1) + '%</strong>. In real terms you\'re losing <strong>' + Math.abs(effectiveReturn*100).toFixed(2) + '% per year</strong>. Your <strong>' + fmtFull(savings) + '</strong> will only buy <strong>' + fmtFull(realSavings) + '</strong> worth of goods in ' + years + ' years. Invested in the market instead: <strong>' + fmt(fvMarket) + '</strong>.'
-    : 'Your savings rate of <strong>' + (srate*100).toFixed(2) + '%</strong> exceeds inflation — you\'re preserving purchasing power. Real value in ' + years + ' years: <strong>' + fmtFull(realSavings) + '</strong>. Market investment comparison: <strong>' + fmt(fvMarket) + '</strong>.';
-  // Chart: nominal vs real vs market
-  var cN=[],cR=[],cM=[],cL=[];
-  for(var y=0;y<=years;y++){
-    cL.push(age+y);
-    var nom=savings*Math.pow(1+srate,y);
+    ? 'Your savings account rate of <strong>' + (srate*100).toFixed(2) + '%</strong> is below inflation at <strong>' + (inf*100).toFixed(2) + '%</strong>. Your real return is <strong>' + (effectiveReturn*100).toFixed(3) + '%/yr</strong> (Fisher equation). In ' + years + ' years, your <strong>' + fmtFull(savings) + '</strong> loses <strong>' + fmtFull(Math.abs(ppLost)) + '</strong> in purchasing power. Invested in the market instead, it grows to <strong>' + fmt(realMarket) + '</strong> in today\'s dollars.'
+    : 'Your savings rate of <strong>' + (srate*100).toFixed(2) + '%</strong> exceeds inflation \u2014 you\'re preserving purchasing power (real return: ' + (effectiveReturn*100).toFixed(3) + '%). But compared to market investing (' + (invest*100).toFixed(1) + '%), you forgo <strong>' + fmt(realMarket - realSavings) + '</strong> in real wealth.';
+  var cN = [], cR = [], cM = [], cL = [];
+  for (var y = 0; y <= years; y++) {
+    cL.push(age + y);
+    var nom = savings * Math.pow(1 + srate, y);
     cN.push(nom);
-    cR.push(nom/Math.pow(1+inf,y));
-    cM.push(fvLump(savings,invest,y));
+    cR.push(nom / Math.pow(1 + inf, y));
+    cM.push(fvLump(savings, invest, y));
   }
-  drawChart('chart',cL,[cN,cR,cM],['#6e6e73','#ff3b30','#1db954']);
+  drawChart('chart', cL, [cM, cN, cR], ['#1db954', '#ff9500', '#ff3b30']);
 }
-
 
 function makeEditable() {
   document.querySelectorAll('.field-val').forEach(function(span) {
@@ -412,28 +354,28 @@ function makeEditable() {
       var sid = span.id ? span.id.replace('v-','s-') : null;
       var slider = sid ? document.getElementById(sid) : null;
       var inp = document.createElement('input');
-      inp.type = 'text'; inp.inputMode = 'decimal'; inp.value = numeric;
-      inp.className = 'field-val-input';
-      inp.style.width = Math.max(60, numeric.length*10+20)+'px';
-      span.innerHTML = ''; span.appendChild(inp);
+      inp.type='text'; inp.inputMode='decimal'; inp.value=numeric;
+      inp.className='field-val-input';
+      inp.style.width=Math.max(60,numeric.length*10+20)+'px';
+      span.innerHTML=''; span.appendChild(inp);
       inp.focus(); inp.select();
       function commit() {
-        var v = parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
-        if (isNaN(v)) v = slider ? parseFloat(slider.value) : 0;
+        var v=parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
+        if (isNaN(v)) v=slider?parseFloat(slider.value):0;
         if (slider) {
-          var mn=parseFloat(slider.min), mx=parseFloat(slider.max), st=parseFloat(slider.step)||1;
-          v = Math.min(mx, Math.max(mn, v));
-          v = Math.round((v-mn)/st)*st+mn;
-          v = parseFloat(v.toFixed(10));
-          slider.value = v;
+          var mn=parseFloat(slider.min),mx=parseFloat(slider.max),st=parseFloat(slider.step)||1;
+          v=Math.min(mx,Math.max(mn,v));
+          v=Math.round((v-mn)/st)*st+mn;
+          v=parseFloat(v.toFixed(10));
+          slider.value=v;
           slider.dispatchEvent(new Event('input',{bubbles:true}));
         }
       }
-      inp.addEventListener('keydown', function(e) {
-        if (e.key==='Enter') { e.preventDefault(); commit(); inp.blur(); }
-        if (e.key==='Escape') { inp.blur(); }
+      inp.addEventListener('keydown',function(e){
+        if(e.key==='Enter'){e.preventDefault();commit();inp.blur();}
+        if(e.key==='Escape'){inp.blur();}
       });
-      inp.addEventListener('blur', commit);
+      inp.addEventListener('blur',commit);
     });
   });
 }

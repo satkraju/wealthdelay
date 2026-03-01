@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Coffee Lifetime Cost Calculator &#8212; WealthDelay</title>
-<meta name="description" content="See exactly how much your daily coffee habit costs in lifetime wealth. Compound math, instant results. Free.">
+<meta name="description" content="See exactly how much your daily coffee habit costs in lifetime wealth. Compound math, instant results, free.">
 <link rel="canonical" href="https://wealthdelay.com/tools/tool-02.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":'Coffee Lifetime Cost Calculator',"description":'See exactly how much your daily coffee habit costs in lifetime wealth. Compound math, instant results, free.',"url":"https://wealthdelay.com/tools/tool-02.html","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":'Why does a coffee habit cost so much?',"acceptedAnswer":{"@type":"Answer","text":"The issue isn't the $5 — it's $5/day × 365 × 35 years of compound interest. Small amounts invested consistently become large sums through compounding."}},{"@type":"Question","name":'Should I never buy coffee?',"acceptedAnswer":{"@type":"Answer","text":'This tool shows the cost, not the verdict. A $5 coffee you value highly may be worth $300K to you. The goal is conscious spending, not deprivation.'}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
 <style>:root {
@@ -137,33 +139,20 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   nav .nav-pill{display:none;}
 }
 
-/* ── Editable field-val ─────────────────────── */
-.field-val {
-  cursor: text;
-  transition: background .15s, box-shadow .15s;
-}
-.field-val:hover {
-  background: var(--bg2);
-  box-shadow: 0 0 0 1px var(--border-strong);
-}
+.field-val { cursor: text; transition: background .15s, box-shadow .15s; }
+.field-val:hover { background: var(--bg2); box-shadow: 0 0 0 1px var(--border-strong); }
 .field-val-input {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--ink);
-  background: var(--white);
-  border: 1.5px solid var(--green);
-  border-radius: 6px;
-  padding: 1px 7px;
-  min-width: 60px;
-  max-width: 90px;
-  width: auto;
-  text-align: center;
-  letter-spacing: -0.01em;
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(29,185,84,.15);
-  font-family: var(--font);
+  font-size: 13px; font-weight: 600; color: var(--ink);
+  background: var(--white); border: 1.5px solid var(--green);
+  border-radius: 6px; padding: 1px 7px; min-width: 60px; max-width: 90px;
+  text-align: center; outline: none;
+  box-shadow: 0 0 0 3px rgba(29,185,84,.15); font-family: var(--font);
 }
 
+.related-wrap{padding:40px 24px 0;max-width:960px;margin:0 auto;}
+.related-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
+.related-link{padding:8px 16px;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;transition:border-color .15s,box-shadow .15s;}
+.related-link:hover{border-color:var(--green);box-shadow:0 0 0 2px rgba(29,185,84,.15);}
 </style>
 </head>
 <body>
@@ -178,30 +167,31 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   <div class="nav-pill">Live Calculator</div>
 </nav>
 <section class="tool-hero">
-  <div class="tool-eyebrow">Tool 02 of 30 &nbsp;&#183;&nbsp; <span class="cat">Opportunity Cost</span></div>
-  <h1 class="tool-h1">Your daily coffee habit is silently building <span class="red">someone else's retirement.</span></h1>
-  <p class="tool-sub">Enter your coffee habit. See the exact future wealth you trade for each cup, compounded to retirement.</p>
+  <div class="tool-eyebrow">Tool 02 of 30 &nbsp;&#183;&nbsp; <span class="cat">Habits</span></div>
+  <h1 class="tool-h1">Your daily coffee has a <span class="red">retirement price tag.</span></h1>
+  <p class="tool-sub">Enter your coffee habit. See the true compounded wealth cost over your career.</p>
   <div class="hero-badges"><div class="badge">&#128208; Verified math</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
 </section>
 <div class="workspace">
-  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Coffee Habit</div><div class="field"><label>Type of coffee</label><select class="inp" id="i-type" onchange="calc()"><option value="2.5">Drip / home brew ($2.50)</option><option value="5" selected>Latte or cappuccino ($5)</option><option value="7">Specialty / oat milk ($7)</option><option value="12">Cafe + tip ($12)</option></select></div><div class="field"><label>Cups per week <span class="field-val" id="v-freq">7/wk</span></label><input type="range" id="s-freq" min="1" max="21" step="1" value="7" oninput="syncSlider('freq',this.value,'','/wk',false,false);calc()"></div><div class="section-label">Your Profile</div><div class="field-row"><div class="field"><label>Current age <span class="field-val" id="v-age">30</span></label><input type="range" id="s-age" min="18" max="65" step="1" value="30" oninput="syncSlider('age',this.value,'','',false,false);calc()"></div><div class="field"><label>Retire at <span class="field-val" id="v-ret">65</span></label><input type="range" id="s-ret" min="45" max="80" step="1" value="65" oninput="syncSlider('ret',this.value,'','',false,false);calc()"></div></div><div class="field"><label>Annual investment return <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" oninput="syncSlider('r',this.value,'','%',false,false);calc()"><div class="field-hint">S&amp;P 500 inflation-adjusted avg &#8776; 7%</div></div><div class="field"><label>Inflation rate <span class="field-val" id="v-inf">3%</span></label><input type="range" id="s-inf" min="0" max="10" step="0.5" value="3" oninput="syncSlider('inf',this.value,'','%',false,false);calc()"></div></div></div></div>
+  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">The Habit</div><div class="field"><label>Cost per cup <span class="field-val" id="v-price">$4.5</span></label><input type="range" id="s-price" min="1" max="20" step="0.25" value="4.5" aria-label="Cost per cup" oninput="syncSlider('price',this.value,'$','',false,false);calc()"></div><div class="field"><label>Cups per week <span class="field-val" id="v-freq">7x/wk</span></label><input type="range" id="s-freq" min="1" max="21" step="1" value="7" aria-label="Cups per week" oninput="syncSlider('freq',this.value,'','x/wk',false,false);calc()"></div><div class="section-label">Your Profile</div><div class="field-row"><div class="field"><label>Current age <span class="field-val" id="v-age">30</span></label><input type="range" id="s-age" min="18" max="65" step="1" value="30" aria-label="Current age" oninput="syncSlider('age',this.value,'','',false,false);calc()"></div><div class="field"><label>Retire at <span class="field-val" id="v-ret">65</span></label><input type="range" id="s-ret" min="45" max="80" step="1" value="65" aria-label="Retire at" oninput="syncSlider('ret',this.value,'','',false,false);calc()"></div></div><div class="field"><label>Annual return <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" aria-label="Annual return" oninput="syncSlider('r',this.value,'','%',false,false);calc()"><div class="field-hint">Historical S&P 500 avg ~10%, real ~7%</div></div><div class="field"><label>Inflation rate <span class="field-val" id="v-inf">3%</span></label><input type="range" id="s-inf" min="0" max="10" step="0.5" value="3" aria-label="Inflation rate" oninput="syncSlider('inf',this.value,'','%',false,false);calc()"></div></div></div></div>
   <div class="results">
     <div class="metric-hero">
       <div class="mh-top">
-        <div class="mh-eyebrow">Lifetime Wealth Cost of This Coffee Habit</div>
-        <div class="mh-number red" id="r-hero">&#8212;</div>
+        <div class="mh-eyebrow">Lifetime Opportunity Cost</div>
+        <div class="mh-number" id="r-hero">&#8212;</div>
         <div class="mh-sub" id="r-sub">calculating&#8230;</div>
       </div>
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
-    <div class="chart-card"><div class="chart-head"><div class="card-title">Opportunity Cost Over Time</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>Opportunity Cost</div></div></div><div class="chart-inner"><canvas id="chart"></canvas></div></div>
-    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Price per cup</div><div class="bd-val ink" id="r-b1">—</div></div><div class="bd-row"><div class="bd-lbl">Annual cups</div><div class="bd-val ink" id="r-b2">—</div></div><div class="bd-row"><div class="bd-lbl">Annual cash spend</div><div class="bd-val ink" id="r-b3">—</div></div><div class="bd-row"><div class="bd-lbl">Total cash over lifetime</div><div class="bd-val amber" id="r-b4">—</div></div><div class="bd-row"><div class="bd-lbl">Future value if invested instead</div><div class="bd-val red" id="r-b5">—</div></div><div class="bd-row"><div class="bd-lbl">Inflation-adjusted real cost</div><div class="bd-val amber" id="r-b6">—</div></div><div class="bd-row"><div class="bd-lbl">True opportunity cost per cup</div><div class="bd-val red" id="r-b7">—</div></div></div>
+    <div class="chart-card"><div class="chart-head"><div class="card-title">Opportunity Cost Over Time</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>Wealth foregone</div></div></div><div class="chart-inner"><canvas id="chart" role="img" aria-label="Opportunity Cost Over Time chart"></canvas></div></div>
+    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Weekly habit cost</div><div class="bd-val red" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Monthly / annual cost</div><div class="bd-val amber" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Total cash over career</div><div class="bd-val red" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Opportunity cost (nominal)</div><div class="bd-val red" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Opportunity cost (today's $)</div><div class="bd-val red" id="r-b5">&#8212;</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px">GOOGLE ADSENSE &#8212; Replace after approval</div>
   </div>
 </div>
-<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Isn't coffee just a small treat?<div class="faq-ico">+</div></div><div class="faq-a">Yes — but at 7 cups/week from age 30 to 65, that's <strong>$63,700</strong> in cash and <strong>$273,000+</strong> in foregone wealth. The question isn't whether it's worth it. It's whether you know the real price.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What if I make coffee at home?<div class="faq-ico">+</div></div><div class="faq-a">Switch to 'Drip / home brew ($2.50)' — the gap narrows significantly, but even home coffee compounds to tens of thousands over a lifetime of daily habit.</div></div></section>
-<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
+<section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why does a coffee habit cost so much?<div class="faq-ico">+</div></div><div class="faq-a">The issue isn't the $5 — it's $5/day × 365 × 35 years of compound interest. Small amounts invested consistently become large sums through compounding.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Should I never buy coffee?<div class="faq-ico">+</div></div><div class="faq-a">This tool shows the cost, not the verdict. A $5 coffee you value highly may be worth $300K to you. The goal is conscious spending, not deprivation.</div></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/tools/tool-03.html">Streaming Cost</a><a class="related-link" href="/tools/tool-04.html">Eating Out vs Cooking</a><a class="related-link" href="/tools/tool-05.html">Smoking Cost</a><a class="related-link" href="/tools/tool-28.html">Daily Habit Cost</a></div></section>
+<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
   <div class="footer-copy">&#169; 2025 WealthDelay &#183; Free forever &#183; No data stored &#183; All calculations run in your browser</div>
@@ -213,75 +203,35 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   </div>
 </footer>
 <script>
-// ── WealthDelay Shared Math Library ──────────────────
-// All formulas verified against standard financial math
 
-// Future Value of Annuity: periodic payments compounding
 function fvAnnuity(pmt, annualRate, years) {
   const r = annualRate / 12;
   const n = years * 12;
   if (r === 0) return pmt * n;
   return pmt * ((Math.pow(1 + r, n) - 1) / r);
 }
-
-// Future Value of Lump Sum
+// FIXED: monthly compounding (was annual)
 function fvLump(pv, annualRate, years) {
-  return pv * Math.pow(1 + annualRate, years);
+  const r = annualRate / 12;
+  return pv * Math.pow(1 + r, years * 12);
 }
-
-// Real (inflation-adjusted) value
 function realValue(nominal, inflationRate, years) {
   return nominal / Math.pow(1 + inflationRate, years);
 }
-
-// Amortization payoff: returns {months, totalPaid, interestPaid}
-function amortize(balance, annualRate, monthlyPayment) {
-  const mRate = annualRate / 12;
-  let b = balance, total = 0, months = 0;
-  while (b > 0.01 && months < 600) {
-    const interest = b * mRate;
-    const principal = monthlyPayment - interest;
-    if (principal <= 0) { months = 600; break; }
-    b = Math.max(0, b - principal);
-    total += monthlyPayment;
-    months++;
-  }
-  return { months, totalPaid: total, interestPaid: total - balance };
-}
-
-// Drawdown: how long savings last
-function drawdown(balance, annualWithdrawal, returnRate, inflationRate) {
-  const mRate = returnRate / 12;
-  let b = balance, months = 0;
-  let mWithdrawal = annualWithdrawal / 12;
-  while (b > 0 && months < 1200) {
-    b = b * (1 + mRate) - mWithdrawal;
-    mWithdrawal *= (1 + inflationRate / 12);
-    if (b <= 0) { b = 0; break; }
-    months++;
-  }
-  return { months, years: months / 12 };
-}
-
-// Format currency
 function fmt(n) {
-  if (!isFinite(n)) return '$0';
+  if (!isFinite(n) || isNaN(n)) return '$0';
   const a = Math.abs(n);
   if (a >= 1e9) return '$' + (n / 1e9).toFixed(2) + 'B';
   if (a >= 1e6) return '$' + (n / 1e6).toFixed(2) + 'M';
   if (a >= 1e3) return '$' + (n / 1e3).toFixed(1) + 'K';
   return '$' + Math.round(n).toLocaleString();
 }
-
+// FIXED: NaN guard added
 function fmtFull(n) {
+  if (!isFinite(n) || isNaN(n)) return '$0';
   return '$' + Math.round(Math.abs(n)).toLocaleString();
 }
-
-function fmtPct(n) {
-  return (n * 100).toFixed(1) + '%';
-}
-
-// Sync slider display + gradient
+function fmtPct(n) { return (n * 100).toFixed(1) + '%'; }
 function syncSlider(id, val, pre, suf, comma, abbrev) {
   const el = document.getElementById('v-' + id);
   if (!el) return;
@@ -299,15 +249,6 @@ function syncSlider(id, val, pre, suf, comma, abbrev) {
     s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
   }
 }
-
-function initSliders() {
-  document.querySelectorAll('input[type=range]').forEach(s => {
-    const p = ((s.value - s.min) / (s.max - s.min)) * 100;
-    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
-  });
-}
-
-// Draw 2-line chart on canvas
 function drawChart(canvasId, labels, series, colors) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return;
@@ -322,35 +263,32 @@ function drawChart(canvasId, labels, series, colors) {
   ctx.clearRect(0, 0, W, H);
   const allV = series.flat().filter(isFinite);
   if (!allV.length) return;
-  const maxV = Math.max(...allV, 0.01), minV = Math.min(...allV, 0), range = maxV - minV || 1;
-  const sx = i => pad.l + (i / (labels.length - 1 || 1)) * cW;
-  const sy = v => pad.t + cH - ((v - minV) / range) * cH;
-  ctx.font = `11px -apple-system,sans-serif`;
+  const minV = 0, maxV = Math.max(...allV) * 1.05 || 1;
+  const xS = i => pad.l + (i / (labels.length - 1)) * cW;
+  const yS = v => pad.t + cH - ((v - minV) / (maxV - minV)) * cH;
+  ctx.strokeStyle = 'rgba(0,0,0,0.06)'; ctx.lineWidth = 1;
   for (let i = 0; i <= 4; i++) {
-    const v = maxV - (range / 4) * i, y = sy(v);
-    ctx.strokeStyle = 'rgba(0,0,0,0.06)'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(W - pad.r, y); ctx.stroke();
-    ctx.fillStyle = '#aeaeb2'; ctx.textAlign = 'right';
-    ctx.fillText(fmt(v), pad.l - 4, y + 4);
+    const y = pad.t + (i / 4) * cH;
+    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(pad.l + cW, y); ctx.stroke();
+    const v = maxV - (i / 4) * maxV;
+    ctx.fillStyle = '#6e6e73'; ctx.font = '10px system-ui,sans-serif'; ctx.textAlign = 'right';
+    ctx.fillText(fmt(v), pad.l - 4, y + 3);
   }
-  ctx.fillStyle = '#aeaeb2'; ctx.textAlign = 'center';
-  const step = Math.ceil(labels.length / 5);
-  labels.forEach((l, i) => { if (i % step === 0 || i === labels.length - 1) ctx.fillText('' + l, sx(i), H - 4); });
-  series.forEach((data, si) => {
-    if (data.length < 2) return;
-    const lc = colors[si] || '#1db954';
-    const fc = lc + '18';
-    ctx.beginPath();
-    data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
-    ctx.lineTo(sx(data.length - 1), sy(Math.max(minV, 0)));
-    ctx.lineTo(sx(0), sy(Math.max(minV, 0)));
-    ctx.closePath(); ctx.fillStyle = fc; ctx.fill();
-    ctx.beginPath();
-    data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
-    ctx.strokeStyle = lc; ctx.lineWidth = 2; ctx.lineJoin = 'round'; ctx.stroke();
+  const step = Math.max(1, Math.floor(labels.length / 6));
+  ctx.fillStyle = '#6e6e73'; ctx.textAlign = 'center';
+  labels.forEach((l, i) => { if (i % step === 0) ctx.fillText(l, xS(i), H - pad.b + 14); });
+  series.forEach((s, si) => {
+    ctx.beginPath(); ctx.strokeStyle = colors[si]; ctx.lineWidth = 2.5; ctx.lineJoin = 'round';
+    s.forEach((v, i) => { const x = xS(i), y = yS(isFinite(v) ? v : 0); i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); });
+    ctx.stroke();
   });
 }
-
+function initSliders() {
+  document.querySelectorAll('input[type=range]').forEach(s => {
+    const p = ((s.value - s.min) / (s.max - s.min)) * 100;
+    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
+  });
+}
 function toggleFaq(el) {
   const ico = el.querySelector('.faq-ico'), ans = el.nextElementSibling, open = ans.classList.contains('open');
   document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
@@ -360,108 +298,77 @@ function toggleFaq(el) {
 
 
 function calc() {
-  var price  = parseFloat(document.getElementById('i-type').value);
-  var freq   = parseFloat(document.getElementById('s-freq').value);
-  var age    = parseFloat(document.getElementById('s-age').value);
-  var ret    = parseFloat(document.getElementById('s-ret').value);
-  var annR   = parseFloat(document.getElementById('s-r').value) / 100;
-  var inf    = parseFloat(document.getElementById('s-inf').value) / 100;
-  var years  = Math.max(1, ret - age);
-  var annCups = freq * 52;
-  var annCash = annCups * price;
-  var monthly = annCash / 12;
-  // FV of annuity: how much invested monthly grows to by retirement
+  var price = parseFloat(document.getElementById('s-price').value);
+  var freq  = parseFloat(document.getElementById('s-freq').value);
+  var age   = parseFloat(document.getElementById('s-age').value);
+  var ret   = parseFloat(document.getElementById('s-ret').value);
+  var annR  = parseFloat(document.getElementById('s-r').value) / 100;
+  var inf   = parseFloat(document.getElementById('s-inf').value) / 100;
+  var years = Math.max(1, ret - age);
+  var weekly = price * freq;
+  var monthly = weekly * 52 / 12;
+  var cash = monthly * 12 * years;
   var fvI  = fvAnnuity(monthly, annR, years);
-  // Total cash spent over horizon
-  var cash = annCash * years;
-  // Inflation-adjusted real value of FV
   var real = realValue(fvI, inf, years);
-  // True opportunity cost per cup
-  var trueCup = fvI / Math.max(annCups * years, 1);
-
   document.getElementById('r-hero').textContent = fmt(fvI);
-  document.getElementById('r-sub').textContent  = fmt(fvI) + ' opportunity cost \u00b7 ' + years + '-year horizon';
+  document.getElementById('r-hero').style.color = 'var(--red)';
+  document.getElementById('r-sub').textContent  = fmt(fvI) + ' nominal \u00b7 ' + fmt(real) + ' in today\u2019s dollars';
   document.getElementById('r-metrics').innerHTML =
-    '<div class="mh-cell"><div class="mhc-label">CASH SPENT</div><div class="mhc-val ink">' + fmtFull(cash) + '</div><div class="mhc-sub">total nominal</div></div>' +
-    '<div class="mh-cell"><div class="mhc-label">INFLATION-ADJ</div><div class="mhc-val amber">' + fmtFull(real) + '</div><div class="mhc-sub">today\'s dollars</div></div>' +
-    '<div class="mh-cell"><div class="mhc-label">TRUE COST/CUP</div><div class="mhc-val red">$' + trueCup.toFixed(2) + '</div><div class="mhc-sub">incl. opportunity cost</div></div>';
-  document.getElementById('r-b1').textContent = '$' + price.toFixed(2);
-  document.getElementById('r-b2').textContent = annCups.toLocaleString() + ' cups/yr';
-  document.getElementById('r-b3').textContent = fmtFull(annCash) + '/yr';
-  document.getElementById('r-b4').textContent = fmtFull(cash);
-  document.getElementById('r-b5').textContent = fmtFull(fvI);
-  document.getElementById('r-b6').textContent = fmtFull(real);
-  document.getElementById('r-b7').textContent = '$' + trueCup.toFixed(2) + ' per cup (true cost)';
-  document.getElementById('r-insight').innerHTML =
-    'Your <strong>' + freq + ' cups/week</strong> at <strong>$' + price.toFixed(2) + '/cup</strong> costs <strong>' + fmtFull(annCash) + '/year</strong> in cash. Invested at ' + (annR*100).toFixed(1) + '%, that compounds to <strong>' + fmtFull(fvI) + '</strong> by retirement. In today\'s purchasing power: <strong>' + fmtFull(real) + '</strong>. Every cup truly costs <strong>$' + trueCup.toFixed(2) + '</strong>.';
-  var cI = [], cL = [];
+    '<div class="mh-cell"><div class="mhc-label">WEEKLY COST</div><div class="mhc-val ink">$' + weekly.toFixed(2) + '</div><div class="mhc-sub">' + freq + ' cups \u00d7 $' + price.toFixed(2) + '</div></div>' +
+    '<div class="mh-cell"><div class="mhc-label">CASH SPENT</div><div class="mhc-val amber">' + fmt(cash) + '</div><div class="mhc-sub">over ' + years + ' years</div></div>' +
+    '<div class="mh-cell"><div class="mhc-label">IN TODAY\u2019S $</div><div class="mhc-val red">' + fmt(real) + '</div><div class="mhc-sub">inflation-adjusted</div></div>';
+  document.getElementById('r-b1').textContent = freq + 'x/wk \u00d7 $' + price.toFixed(2) + ' = $' + weekly.toFixed(2) + '/wk';
+  document.getElementById('r-b2').textContent = '$' + monthly.toFixed(2) + '/mo \u00d7 12 = $' + (monthly*12).toFixed(0) + '/yr';
+  document.getElementById('r-b3').textContent = fmtFull(cash) + ' total cash over ' + years + ' yrs';
+  document.getElementById('r-b4').textContent = fmt(fvI) + ' if invested at ' + (annR*100).toFixed(1) + '%';
+  document.getElementById('r-b5').textContent = fmt(real) + ' in today\u2019s dollars (' + (inf*100).toFixed(1) + '% inflation)';
+  document.getElementById('r-insight').innerHTML = 'Your <strong>' + freq + ' cups/week</strong> at <strong>$' + price.toFixed(2) + '/cup</strong> costs <strong>' + fmtFull(cash) + '</strong> in cash over ' + years + ' years. Invested at ' + (annR*100).toFixed(1) + '%, it becomes <strong>' + fmt(fvI) + '</strong> (' + fmt(real) + ' in today\u2019s dollars). Small daily habits carry large long-term price tags.';
+  var cL = [], cI = [];
   for (var y = 0; y <= years; y++) { cL.push(age + y); cI.push(fvAnnuity(monthly, annR, y)); }
   drawChart('chart', cL, [cI], ['#ff3b30']);
 }
 
-window.addEventListener('resize',function(){if(typeof calc==='function')calc();});
-window.addEventListener('DOMContentLoaded',function(){initSliders();calc();makeEditable();});
-
-
-/* ── Click-to-edit for all slider value pills ── */
 function makeEditable() {
   document.querySelectorAll('.field-val').forEach(function(span) {
-    span.setAttribute('title', 'Click to type an exact value');
+    span.setAttribute('title','Click to type an exact value');
     span.addEventListener('click', function() {
-      if (span.querySelector('input')) return; // already editing
-      // Extract the numeric part — strip pre/suf characters like $, %, /mo etc.
+      if (span.querySelector('input')) return;
       var raw = span.textContent.trim();
-      // Pull just the number: remove $, commas, K/M suffix, and any non-numeric suffix
       var numeric = raw.replace(/[$,]/g,'');
-      // Handle K/M abbreviations
       if (/[\d.]+K$/.test(numeric)) numeric = String(parseFloat(numeric)*1000);
       else if (/[\d.]+M$/.test(numeric)) numeric = String(parseFloat(numeric)*1000000);
-      // Strip any remaining non-numeric trailing/leading chars
-      numeric = numeric.replace(/[^0-9.]/g,'').replace(/^\./, '0.');
+      numeric = numeric.replace(/[^0-9.]/g,'').replace(/^\./,'0.');
       if (!numeric || isNaN(parseFloat(numeric))) numeric = '0';
-
-      // Find the paired slider (id="s-X" where span id="v-X")
-      var sid = span.id ? span.id.replace('v-', 's-') : null;
+      var sid = span.id ? span.id.replace('v-','s-') : null;
       var slider = sid ? document.getElementById(sid) : null;
-
-      // Build inline input
       var inp = document.createElement('input');
-      inp.type = 'text';
-      inp.inputMode = 'decimal';
-      inp.value = numeric;
-      inp.className = 'field-val-input';
-      inp.style.width = Math.max(60, numeric.length * 10 + 20) + 'px';
-
-      span.innerHTML = '';
-      span.appendChild(inp);
-      inp.focus();
-      inp.select();
-
+      inp.type='text'; inp.inputMode='decimal'; inp.value=numeric;
+      inp.className='field-val-input';
+      inp.style.width=Math.max(60,numeric.length*10+20)+'px';
+      span.innerHTML=''; span.appendChild(inp);
+      inp.focus(); inp.select();
       function commit() {
-        var v = parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
-        if (isNaN(v)) v = slider ? parseFloat(slider.value) : 0;
+        var v=parseFloat(inp.value.replace(/[$,%\/a-zA-Z\s]/g,'').replace(/,/g,''));
+        if (isNaN(v)) v=slider?parseFloat(slider.value):0;
         if (slider) {
-          var mn = parseFloat(slider.min), mx = parseFloat(slider.max);
-          var st = parseFloat(slider.step) || 1;
-          // Clamp to min/max
-          v = Math.min(mx, Math.max(mn, v));
-          // Round to nearest step
-          v = Math.round((v - mn) / st) * st + mn;
-          v = parseFloat(v.toFixed(10)); // floating point cleanup
-          slider.value = v;
-          // Fire oninput to trigger sync + calc
-          slider.dispatchEvent(new Event('input', { bubbles: true }));
+          var mn=parseFloat(slider.min),mx=parseFloat(slider.max),st=parseFloat(slider.step)||1;
+          v=Math.min(mx,Math.max(mn,v));
+          v=Math.round((v-mn)/st)*st+mn;
+          v=parseFloat(v.toFixed(10));
+          slider.value=v;
+          slider.dispatchEvent(new Event('input',{bubbles:true}));
         }
       }
-
-      inp.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter') { e.preventDefault(); commit(); inp.blur(); }
-        if (e.key === 'Escape') { inp.blur(); }
+      inp.addEventListener('keydown',function(e){
+        if(e.key==='Enter'){e.preventDefault();commit();inp.blur();}
+        if(e.key==='Escape'){inp.blur();}
       });
-      inp.addEventListener('blur', commit);
+      inp.addEventListener('blur',commit);
     });
   });
 }
 
+window.addEventListener('resize',function(){if(typeof calc==='function')calc();});
+window.addEventListener('DOMContentLoaded',function(){initSliders();calc();makeEditable();});
 </script>
 </body></html>

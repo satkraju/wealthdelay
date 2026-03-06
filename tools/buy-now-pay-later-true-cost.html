@@ -156,6 +156,15 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
 .related-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
 .related-link{padding:8px 16px;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;transition:border-color .15s,box-shadow .15s;}
 .related-link:hover{border-color:var(--green);box-shadow:0 0 0 2px rgba(29,185,84,.15);}
+
+/* ── PDF Report Button ── */
+.pdf-wrap{max-width:1080px;margin:0 auto;padding:0 22px 32px;display:flex;justify-content:center;}
+.pdf-btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--white);font-family:var(--font);font-size:15px;font-weight:600;padding:14px 28px;border-radius:40px;border:none;cursor:pointer;letter-spacing:-.02em;transition:background .15s,transform .1s,box-shadow .15s;box-shadow:0 4px 16px rgba(0,0,0,.18);text-decoration:none;}
+.pdf-btn:hover{background:#2d2d2f;transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,.22);}
+.pdf-btn:active{transform:translateY(0);}
+.pdf-btn svg{flex-shrink:0;}
+.pdf-btn .pdf-sub{font-size:11px;font-weight:500;color:rgba(255,255,255,.55);margin-top:1px;}
+.pdf-btn-inner{display:flex;flex-direction:column;}
 </style>
 </head>
 <body>
@@ -193,6 +202,15 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   </div>
 </div>
 <section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is 0% BNPL actually free?<div class="faq-ico">+</div></div><div class="faq-a">There's no interest if paid on time — but the opportunity cost of spending that money instead of investing it is very real, as this tool shows.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">When is BNPL a mistake?<div class="faq-ico">+</div></div><div class="faq-a">When you use it to buy something you couldn't otherwise afford, miss a payment (fees often kick in), or use it so often the cumulative opportunity cost becomes significant.</div></div></section>
+<div class="pdf-wrap">
+  <button class="pdf-btn" onclick="generatePDF()">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4a2 2 0 012-2h5.586A2 2 0 0113 2.586L15.414 5A2 2 0 0116 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" stroke="white" stroke-width="1.5" fill="none"/><path d="M13 2v3a1 1 0 001 1h3M7 13h6M7 10h4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <div class="pdf-btn-inner">
+      <span>Download Your Free Report</span>
+      <span class="pdf-sub">PDF · Instant · No signup</span>
+    </div>
+  </button>
+</div>
 <section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/tools/credit-card-true-cost-calculator">Credit Card Cost</a><a class="related-link" href="/tools/car-loan-true-cost-calculator">Car Loan Cost</a><a class="related-link" href="/tools/debt-avalanche-vs-snowball">Debt Avalanche vs Snowball</a></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
@@ -381,5 +399,95 @@ function makeEditable() {
 
 window.addEventListener('resize',function(){if(typeof calc==='function')calc();});
 window.addEventListener('DOMContentLoaded',function(){initSliders();calc();makeEditable();});
+
+function generatePDF(){
+  var s=document.createElement('script');
+  s.src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
+  s.onload=function(){
+    var doc=new window.jspdf.jsPDF({orientation:'portrait',unit:'mm',format:'a4'});
+    var W=210,M=20,y=M;
+    // Header
+    doc.setFillColor(29,185,84);doc.rect(0,0,W,14,'F');
+    doc.setTextColor(255,255,255);doc.setFontSize(10);doc.setFont('helvetica','bold');
+    doc.text('WEALTHDELAY.COM',M,9.5);
+    doc.text('wealthdelay.com/tools/buy-now-pay-later-true-cost',W-M,9.5,{align:'right'});
+    y=28;
+    // Title
+    doc.setTextColor(29,29,31);doc.setFontSize(20);doc.setFont('helvetica','bold');
+    doc.text('Buy Now Pay Later True Cost Report',M,y);y+=8;
+    doc.setFontSize(10);doc.setFont('helvetica','normal');doc.setTextColor(110,110,115);
+    doc.text('Generated: '+new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}),M,y);y+=10;
+    doc.setDrawColor(235,235,237);doc.line(M,y,W-M,y);y+=8;
+    // Hero result
+    var heroEl=document.getElementById('r-hero');
+    var subEl=document.getElementById('r-sub');
+    var hero=heroEl?heroEl.textContent:'—';
+    var sub=subEl?subEl.textContent:'';
+    doc.setFillColor(240,253,244);doc.roundedRect(M,y,W-M*2,24,3,3,'F');
+    doc.setFontSize(22);doc.setFont('helvetica','bold');doc.setTextColor(21,128,61);
+    doc.text(hero,W/2,y+11,{align:'center'});
+    doc.setFontSize(10);doc.setFont('helvetica','normal');doc.setTextColor(110,110,115);
+    doc.text(sub,W/2,y+19,{align:'center'});y+=32;
+    // Inputs
+    doc.setFontSize(11);doc.setFont('helvetica','bold');doc.setTextColor(29,29,31);
+    doc.text('YOUR INPUTS',M,y);y+=5;
+    doc.setDrawColor(235,235,237);doc.line(M,y,W-M,y);y+=5;
+    var sliders=document.querySelectorAll('input[type=range]');
+    var fieldLabels=document.querySelectorAll('.field label');
+    doc.setFontSize(10);doc.setFont('helvetica','normal');
+    sliders.forEach(function(sl,i){
+      var valEl=document.getElementById('v-'+sl.id.replace('s-',''));
+      var lbl=fieldLabels[i]?fieldLabels[i].childNodes[0].textContent.trim():'Input '+(i+1);
+      var val=valEl?valEl.textContent:'—';
+      if(i%2===0)doc.setFillColor(249,249,251);else doc.setFillColor(255,255,255);
+      doc.rect(M,y-1,W-M*2,7,'F');
+      doc.setTextColor(110,110,115);doc.text(lbl.substring(0,45),M+3,y+4);
+      doc.setTextColor(29,29,31);doc.setFont('helvetica','bold');
+      doc.text(val,W-M-3,y+4,{align:'right'});
+      doc.setFont('helvetica','normal');y+=7;
+    });
+    y+=6;
+    // Results
+    doc.setFontSize(11);doc.setFont('helvetica','bold');doc.setTextColor(29,29,31);
+    doc.text('KEY RESULTS',M,y);y+=5;
+    doc.setDrawColor(235,235,237);doc.line(M,y,W-M,y);y+=5;
+    var bdRows=document.querySelectorAll('.bd-row');
+    doc.setFontSize(10);doc.setFont('helvetica','normal');
+    bdRows.forEach(function(row,i){
+      var lbl=row.querySelector('.bd-lbl');var val=row.querySelector('.bd-val');
+      if(!lbl||!val)return;
+      if(i%2===0)doc.setFillColor(249,249,251);else doc.setFillColor(255,255,255);
+      doc.rect(M,y-1,W-M*2,7,'F');
+      doc.setTextColor(110,110,115);doc.text(lbl.textContent.trim().substring(0,50),M+3,y+4);
+      doc.setTextColor(29,29,31);doc.setFont('helvetica','bold');
+      doc.text(val.textContent.trim(),W-M-3,y+4,{align:'right'});
+      doc.setFont('helvetica','normal');y+=7;
+    });
+    y+=8;
+    // Insight summary
+    var insEl=document.getElementById('r-insight');
+    if(insEl&&y<240){
+      var insText=insEl.innerText||insEl.textContent;
+      doc.setFontSize(11);doc.setFont('helvetica','bold');doc.setTextColor(29,29,31);
+      doc.text('ANALYSIS SUMMARY',M,y);y+=5;
+      doc.setDrawColor(235,235,237);doc.line(M,y,W-M,y);y+=5;
+      doc.setFontSize(9.5);doc.setFont('helvetica','normal');doc.setTextColor(61,61,63);
+      var lines=doc.splitTextToSize(insText,W-M*2-10);
+      var boxH=Math.min(lines.length*5+8,50);
+      doc.setFillColor(255,251,240);doc.roundedRect(M,y,W-M*2,boxH,2,2,'F');
+      doc.text(lines.slice(0,8),M+5,y+6);y+=boxH+8;
+    }
+    // Disclaimer
+    doc.setFontSize(7.5);doc.setFont('helvetica','normal');doc.setTextColor(174,174,178);
+    doc.text(doc.splitTextToSize('Disclaimer: This report is for educational purposes only and does not constitute financial advice. All projections use your inputs and historical averages. Consult a qualified financial advisor before making financial decisions.',W-M*2),M,275);
+    // Footer bar
+    doc.setFillColor(29,185,84);doc.rect(0,286,W,11,'F');
+    doc.setTextColor(255,255,255);doc.setFontSize(8);doc.setFont('helvetica','bold');
+    doc.text('WealthDelay — Free Financial Clarity Tools — wealthdelay.com',W/2,292.5,{align:'center'});
+    doc.save('WealthDelay-BNPL-True-Cost-Report.pdf');
+  };
+  document.head.appendChild(s);
+}
+
 </script>
 </body></html>

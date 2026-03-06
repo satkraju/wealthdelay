@@ -16,7 +16,7 @@
   --ink: #1d1d1f; --ink2: #3d3d3f; --muted: #6e6e73; --faint: #aeaeb2;
   --border: rgba(0,0,0,0.08); --border-strong: rgba(0,0,0,0.12);
   --bg: #f5f5f7; --bg2: #ebebed; --white: #ffffff;
-  --green: #1db954; --green-dark: #15803d; --green-light: #f0fdf4; --green-mid: #bbf7d0;
+  --green: #15803d; --green-dark: #15803d; --green-light: #f0fdf4; --green-mid: #bbf7d0;
   --red: #ff3b30; --amber: #ff9500; --blue: #0071e3; --purple: #8b5cf6;
   --font: -apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;
   --shadow-xs: 0 1px 2px rgba(0,0,0,.04);
@@ -149,12 +149,12 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   background: var(--white); border: 1.5px solid var(--green);
   border-radius: 6px; padding: 1px 7px; min-width: 60px; max-width: 90px;
   text-align: center; letter-spacing: -0.01em; outline: none;
-  box-shadow: 0 0 0 3px rgba(29,185,84,.15); font-family: var(--font);
+  box-shadow: 0 0 0 3px rgba(21,128,61,.15); font-family: var(--font);
 }
 .related-wrap{padding:40px 24px 0;max-width:960px;margin:0 auto;}
 .related-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
 .related-link{padding:8px 16px;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;transition:border-color .15s,box-shadow .15s;}
-.related-link:hover{border-color:var(--green);box-shadow:0 0 0 2px rgba(29,185,84,.15);}
+.related-link:hover{border-color:var(--green);box-shadow:0 0 0 2px rgba(21,128,61,.15);}
 
 /* ── PDF Report Button ── */
 .pdf-wrap{max-width:1080px;margin:0 auto;padding:0 22px 32px;display:flex;justify-content:center;}
@@ -170,7 +170,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
 <nav>
   <div class="nav-left">
     <a class="nav-logo" href="/index.html">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#1d1d1f"/><polyline points="5,20 9,12 13,18 17,10 21,16 27,8" stroke="#1db954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><line x1="5" y1="24" x2="27" y2="24" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-linecap="round"/><circle cx="27" cy="8" r="2.5" fill="#1db954"/></svg>
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#1d1d1f"/><polyline points="5,20 9,12 13,18 17,10 21,16 27,8" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><line x1="5" y1="24" x2="27" y2="24" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-linecap="round"/><circle cx="27" cy="8" r="2.5" fill="#15803d"/></svg>
       <div class="logo-text"><span class="w">Wealth</span><span class="d">Delay</span></div>
     </a>
     <a class="nav-back" href="/index.html">&#8592; All Tools</a>
@@ -195,7 +195,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
-    <div class="chart-card"><div class="chart-head"><div class="card-title">Low Fee vs High Fee</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#1db954"></div>Low fee (index)</div><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>High fee (active)</div></div></div><div class="chart-inner"><canvas id="chart"></canvas></div></div>
+    <div class="chart-card"><div class="chart-head"><div class="card-title">Low Fee vs High Fee</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#15803d"></div>Low fee (index)</div><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>High fee (active)</div></div></div><div class="chart-inner"><canvas id="chart"></canvas></div></div>
     <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Portfolio + contributions</div><div class="bd-val ink" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Gross return</div><div class="bd-val ink" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Low fee result</div><div class="bd-val green" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">High fee result</div><div class="bd-val red" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Fee drag (wealth destroyed)</div><div class="bd-val red" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Total fees paid</div><div class="bd-val red" id="r-b6">&#8212;</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px"><!-- Google AdSense — insert ad unit here after approval --></div>
   </div>
@@ -323,14 +323,14 @@ function syncSlider(id, val, pre, suf, comma, abbrev) {
   const s = document.getElementById('s-' + id);
   if (s) {
     const p = ((s.value - s.min) / (s.max - s.min)) * 100;
-    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
+    s.style.background = `linear-gradient(to right,#15803d 0%,#15803d ${p}%,#ebebed ${p}%,#ebebed 100%)`;
   }
 }
 
 function initSliders() {
   document.querySelectorAll('input[type=range]').forEach(s => {
     const p = ((s.value - s.min) / (s.max - s.min)) * 100;
-    s.style.background = `linear-gradient(to right,#1db954 0%,#1db954 ${p}%,#ebebed ${p}%,#ebebed 100%)`;
+    s.style.background = `linear-gradient(to right,#15803d 0%,#15803d ${p}%,#ebebed ${p}%,#ebebed 100%)`;
   });
 }
 
@@ -365,7 +365,7 @@ function drawChart(canvasId, labels, series, colors) {
   labels.forEach((l, i) => { if (i % step === 0 || i === labels.length - 1) ctx.fillText('' + l, sx(i), H - 4); });
   series.forEach((data, si) => {
     if (data.length < 2) return;
-    const lc = colors[si] || '#1db954';
+    const lc = colors[si] || '#15803d';
     const fc = lc + '18';
     ctx.beginPath();
     data.forEach((v, i) => i === 0 ? ctx.moveTo(sx(i), sy(v)) : ctx.lineTo(sx(i), sy(v)));
@@ -417,7 +417,7 @@ function calc(){
   document.getElementById('r-insight').innerHTML='A <strong>'+(highFee*100-lowFee*100).toFixed(2)+'% fee difference</strong> destroys <strong>'+fmt(drag)+'</strong> of your wealth over '+years+' years. Fees feel small annually but compound against you every single year. Choosing a 0.1% index ETF over a 1.5% active fund is one of the highest-return financial decisions you can make.';
   var cL2=[],cH=[],cL=[];
   for(var y=0;y<=years;y++){cL.push(age+y);cL2.push(fvLump(principal,netLow,y)+fvAnnuity(monthly,netLow,y));cH.push(fvLump(principal,netHigh,y)+fvAnnuity(monthly,netHigh,y));}
-  drawChart('chart',cL,[cL2,cH],['#1db954','#ff3b30']);
+  drawChart('chart',cL,[cL2,cH],['#15803d','#ff3b30']);
 }
 
 function makeEditable() {

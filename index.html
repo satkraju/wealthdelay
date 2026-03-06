@@ -984,6 +984,28 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 36
   </div>
 </section>
 
+<!-- PDF REPORT -->
+<div style="max-width:1080px;margin:0 auto;padding:0 22px 40px;display:flex;justify-content:center;">
+  <button onclick="generatePDF()" style="display:inline-flex;align-items:center;gap:10px;background:#1d1d1f;color:#fff;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:15px;font-weight:600;padding:14px 28px;border-radius:40px;border:none;cursor:pointer;letter-spacing:-.02em;box-shadow:0 4px 16px rgba(0,0,0,.18);">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4a2 2 0 012-2h5.586A2 2 0 0113 2.586L15.414 5A2 2 0 0116 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" stroke="white" stroke-width="1.5" fill="none"/><path d="M13 2v3a1 1 0 001 1h3M7 13h6M7 10h4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <div style="display:flex;flex-direction:column;">
+      <span>Download Your Free Report</span>
+      <span style="font-size:11px;font-weight:500;color:rgba(255,255,255,.55);margin-top:1px;">PDF · Instant · No signup</span>
+    </div>
+  </button>
+</div>
+
+
+<div style="max-width:1080px;margin:0 auto;padding:0 22px 40px;display:flex;justify-content:center;">
+  <button onclick="generatePDF()" style="display:inline-flex;align-items:center;gap:10px;background:#1d1d1f;color:#fff;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:15px;font-weight:600;padding:14px 28px;border-radius:40px;border:none;cursor:pointer;letter-spacing:-.02em;box-shadow:0 4px 16px rgba(0,0,0,.18);">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4a2 2 0 012-2h5.586A2 2 0 0113 2.586L15.414 5A2 2 0 0116 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" stroke="white" stroke-width="1.5" fill="none"/><path d="M13 2v3a1 1 0 001 1h3M7 13h6M7 10h4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <div style="display:flex;flex-direction:column;">
+      <span>Download Your Free Report</span>
+      <span style="font-size:11px;font-weight:500;color:rgba(255,255,255,.55);margin-top:1px;">PDF · Instant · No signup</span>
+    </div>
+  </button>
+</div>
+
 <!-- TOOLS MAP -->
 <section class="tools-section">
   <div class="tools-inner">
@@ -1216,6 +1238,93 @@ function makeEditable() {
       inp.addEventListener('blur', commit);
     });
   });
+}
+
+
+function generatePDF(){
+  var s=document.createElement('script');
+  s.src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
+  s.onload=function(){
+    var doc=new window.jspdf.jsPDF({orientation:'portrait',unit:'mm',format:'a4'});
+    var W=210,M=20,y=M;
+    doc.setFillColor(29,185,84);doc.rect(0,0,W,14,'F');
+    doc.setTextColor(255,255,255);doc.setFontSize(10);doc.setFont('helvetica','bold');
+    doc.text('WEALTHDELAY.COM',M,9.5);
+    doc.text('wealthdelay.com',W-M,9.5,{align:'right'});
+    y=28;
+    doc.setTextColor(29,29,31);doc.setFontSize(20);doc.setFont('helvetica','bold');
+    doc.text('Lifetime Financial Impact Report',M,y);y+=8;
+    doc.setFontSize(10);doc.setFont('helvetica','normal');doc.setTextColor(110,110,115);
+    doc.text('Generated: '+new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}),M,y);y+=10;
+    doc.setDrawColor(235,235,237);doc.line(M,y,W-M,y);y+=8;
+    var heroEl=document.getElementById('r-hero');
+    var hero=heroEl?heroEl.textContent:'--';
+    var subEl=document.getElementById('r-sub');
+    var sub=subEl?subEl.textContent:'';
+    doc.setFillColor(240,253,244);doc.roundedRect(M,y,W-M*2,24,3,3,'F');
+    doc.setFontSize(22);doc.setFont('helvetica','bold');doc.setTextColor(21,128,61);
+    doc.text(hero,W/2,y+11,{align:'center'});
+    doc.setFontSize(10);doc.setFont('helvetica','normal');doc.setTextColor(110,110,115);
+    doc.text(sub,W/2,y+19,{align:'center'});y+=32;
+    doc.setFontSize(11);doc.setFont('helvetica','bold');doc.setTextColor(29,29,31);
+    doc.text('YOUR INPUTS',M,y);y+=5;
+    doc.setDrawColor(235,235,237);doc.line(M,y,W-M,y);y+=5;
+    var sliders=document.querySelectorAll('input[type=range]');
+    var fieldLabels=document.querySelectorAll('.field label');
+    doc.setFontSize(10);doc.setFont('helvetica','normal');
+    sliders.forEach(function(sl,i){
+      var valEl=document.getElementById('v-'+sl.id.replace('s-',''));
+      var lbl=fieldLabels[i]?fieldLabels[i].childNodes[0].textContent.trim():'Input '+(i+1);
+      var val=valEl?valEl.textContent:'--';
+      if(i%2===0)doc.setFillColor(249,249,251);else doc.setFillColor(255,255,255);
+      doc.rect(M,y-1,W-M*2,7,'F');
+      doc.setTextColor(110,110,115);doc.text(lbl.substring(0,45),M+3,y+4);
+      doc.setTextColor(29,29,31);doc.setFont('helvetica','bold');
+      doc.text(val,W-M-3,y+4,{align:'right'});
+      doc.setFont('helvetica','normal');y+=7;
+    });
+    y+=6;
+    doc.setFontSize(11);doc.setFont('helvetica','bold');doc.setTextColor(29,29,31);
+    doc.text('FULL BREAKDOWN',M,y);y+=5;
+    doc.setDrawColor(235,235,237);doc.line(M,y,W-M,y);y+=5;
+    var results=[
+      ['Total Cash Spent (Nominal)',document.getElementById('r-nominal')?document.getElementById('r-nominal').textContent:'--'],
+      ['Future Value if Invested',document.getElementById('r-fv')?document.getElementById('r-fv').textContent:'--'],
+      ['Inflation-Adjusted Real Cost',document.getElementById('r-real2')?document.getElementById('r-real2').textContent:'--'],
+      ['Months of Retirement Delayed',document.getElementById('r-delaymo')?document.getElementById('r-delaymo').textContent:'--'],
+      ['Life-Hours at Your Wage',document.getElementById('r-hoursfull')?document.getElementById('r-hoursfull').textContent:'--'],
+      ['Daily Opportunity Cost',document.getElementById('r-daily')?document.getElementById('r-daily').textContent:'--'],
+    ];
+    doc.setFontSize(10);doc.setFont('helvetica','normal');
+    results.forEach(function(row,i){
+      if(i%2===0)doc.setFillColor(249,249,251);else doc.setFillColor(255,255,255);
+      doc.rect(M,y-1,W-M*2,7,'F');
+      doc.setTextColor(110,110,115);doc.text(row[0],M+3,y+4);
+      doc.setTextColor(29,29,31);doc.setFont('helvetica','bold');
+      doc.text(row[1],W-M-3,y+4,{align:'right'});
+      doc.setFont('helvetica','normal');y+=7;
+    });
+    y+=8;
+    var insEl=document.getElementById('r-insight');
+    if(insEl&&y<240){
+      var insText=insEl.innerText||insEl.textContent;
+      doc.setFontSize(11);doc.setFont('helvetica','bold');doc.setTextColor(29,29,31);
+      doc.text('ANALYSIS SUMMARY',M,y);y+=5;
+      doc.setDrawColor(235,235,237);doc.line(M,y,W-M,y);y+=5;
+      doc.setFontSize(9.5);doc.setFont('helvetica','normal');doc.setTextColor(61,61,63);
+      var lines=doc.splitTextToSize(insText,W-M*2-10);
+      var boxH=Math.min(lines.length*5+8,50);
+      doc.setFillColor(255,251,240);doc.roundedRect(M,y,W-M*2,boxH,2,2,'F');
+      doc.text(lines.slice(0,8),M+5,y+6);
+    }
+    doc.setFontSize(7.5);doc.setFont('helvetica','normal');doc.setTextColor(174,174,178);
+    doc.text(doc.splitTextToSize('Disclaimer: This report is for educational purposes only. Not financial advice. Consult a qualified financial advisor before making financial decisions.',W-M*2),M,275);
+    doc.setFillColor(29,185,84);doc.rect(0,286,W,11,'F');
+    doc.setTextColor(255,255,255);doc.setFontSize(8);doc.setFont('helvetica','bold');
+    doc.text('WealthDelay -- Free Financial Clarity Tools -- wealthdelay.com',W/2,292.5,{align:'center'});
+    doc.save('WealthDelay-Lifetime-Impact-Report.pdf');
+  };
+  document.head.appendChild(s);
 }
 
 </script>

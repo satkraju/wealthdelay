@@ -466,7 +466,7 @@ function generatePDF(){
     var doc=new window.jspdf.jsPDF({orientation:'portrait',unit:'mm',format:'a4'});
     var W=210,M=20,y=M;
     // Header
-    doc.setFillColor(29,185,84);doc.rect(0,0,W,14,'F');
+    doc.setFillColor(21,128,61);doc.rect(0,0,W,14,'F');
     doc.setTextColor(255,255,255);doc.setFontSize(10);doc.setFont('helvetica','bold');
     doc.text('WEALTHDELAY.COM',M,9.5);
     doc.text('wealthdelay.com/tools/daily-habit-true-cost-calculator',W-M,9.5,{align:'right'});
@@ -540,7 +540,7 @@ function generatePDF(){
     doc.setFontSize(7.5);doc.setFont('helvetica','normal');doc.setTextColor(174,174,178);
     doc.text(doc.splitTextToSize('Disclaimer: This report is for educational purposes only and does not constitute financial advice. All projections use your inputs and historical averages. Consult a qualified financial advisor before making financial decisions.',W-M*2),M,275);
     // Footer bar
-    doc.setFillColor(29,185,84);doc.rect(0,286,W,11,'F');
+    doc.setFillColor(21,128,61);doc.rect(0,286,W,11,'F');
     doc.setTextColor(255,255,255);doc.setFontSize(8);doc.setFont('helvetica','bold');
     doc.text('WealthDelay — Free Financial Clarity Tools — wealthdelay.com',W/2,292.5,{align:'center'});
     doc.save('WealthDelay-Daily-Habit-Cost-Report.pdf');

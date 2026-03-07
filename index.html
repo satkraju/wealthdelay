@@ -581,6 +581,7 @@ canvas { width: 100% !important; height: 200px !important; display: block; }
   justify-content: space-between;
 }
 .aff-disc { font-size: 10px; color: var(--faint); }
+.aff-region-label{font-size:11px;font-weight:700;color:#15803d;text-transform:uppercase;letter-spacing:.08em;margin:12px 0 4px;padding:0 4px;}
 .aff-row {
   display: flex;
   align-items: center;
@@ -747,18 +748,6 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 36
 
 
 /* ── Email Capture Strip ── */
-.email-strip{background:linear-gradient(135deg,#f0fdf4 0%,#dcfce7 100%);border:1px solid #bbf7d0;border-radius:18px;padding:32px 28px;max-width:1080px;margin:0 auto 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
-.email-strip-text{flex:1;min-width:200px;}
-.email-strip-eyebrow{font-size:11px;font-weight:700;color:#15803d;text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px;}
-.email-strip-title{font-size:18px;font-weight:700;color:#1d1d1f;letter-spacing:-.03em;margin-bottom:4px;line-height:1.3;}
-.email-strip-sub{font-size:13px;color:#6e6e73;line-height:1.5;}
-.email-strip-form{display:flex;gap:8px;flex-wrap:wrap;flex-shrink:0;}
-.email-strip-input{padding:11px 16px;border:1.5px solid #bbf7d0;border-radius:40px;font-size:14px;font-family:-apple-system,BlinkMacSystemFont,sans-serif;outline:none;min-width:220px;background:white;color:#1d1d1f;}
-.email-strip-input:focus{border-color:#15803d;box-shadow:0 0 0 3px rgba(21,128,61,.12);}
-.email-strip-btn{padding:11px 22px;background:#15803d;color:white;border:none;border-radius:40px;font-size:14px;font-weight:600;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,sans-serif;white-space:nowrap;transition:background .15s,transform .1s;}
-.email-strip-btn:hover{background:#166534;transform:translateY(-1px);}
-.email-strip-note{font-size:11px;color:#aeaeb2;margin-top:8px;width:100%;}
-@media(max-width:600px){.email-strip{padding:22px 18px;}.email-strip-input{min-width:160px;width:100%;}.email-strip-form{width:100%;}.email-strip-btn{width:100%;}}
 
 </style>
 </head>
@@ -952,18 +941,30 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 36
     </div>
 
     <div class="aff-card">
-      <div class="aff-head"><div class="card-title">Start Investing This Money Instead</div><div class="aff-disc">Sponsored</div></div>
-      <a class="aff-row" href="https://www.fidelity.com/open-account/overview" target="_blank" rel="noopener sponsored">
-        <div class="aff-info"><div class="aff-name">Fidelity Investments</div><div class="aff-desc">Zero-fee index funds · No minimum</div></div>
-        <div class="aff-btn">Open Free</div>
-      </a>
+      <div class="aff-head"><div class="card-title">Put This Money to Work</div><div class="aff-disc">Partner links · we may earn a commission</div></div>
+
+      <div class="aff-region-label">🇺🇸 United States</div>
       <a class="aff-row" href="https://m1.com/" target="_blank" rel="noopener sponsored">
-        <div class="aff-info"><div class="aff-name">M1 Finance</div><div class="aff-desc">Automated investing · $0 management</div></div>
-        <div class="aff-btn">Start Free</div>
+        <div class="aff-info"><div class="aff-name">M1 Finance</div><div class="aff-desc">Automated investing · Custom portfolios · $0 management fee</div></div>
+        <div class="aff-btn">Start Free →</div>
       </a>
       <a class="aff-row" href="https://www.sofi.com/banking/savings-account/" target="_blank" rel="noopener sponsored">
-        <div class="aff-info"><div class="aff-name">SoFi High-Yield Savings</div><div class="aff-desc">4.5%+ APY · FDIC insured · No fees</div></div>
-        <div class="aff-btn">Get Rate</div>
+        <div class="aff-info"><div class="aff-name">SoFi High-Yield Savings</div><div class="aff-desc">4.5%+ APY · FDIC insured · No account fees</div></div>
+        <div class="aff-btn">Get Rate →</div>
+      </a>
+      <a class="aff-row" href="https://www.betterment.com/" target="_blank" rel="noopener sponsored">
+        <div class="aff-info"><div class="aff-name">Betterment</div><div class="aff-desc">Robo-advisor · Tax-loss harvesting · $0 minimum</div></div>
+        <div class="aff-btn">Start Investing →</div>
+      </a>
+
+      <div class="aff-region-label" style="margin-top:16px">🇨🇦 Canada</div>
+      <a class="aff-row" href="https://www.wealthsimple.com/en-ca/accounts/invest" target="_blank" rel="noopener sponsored">
+        <div class="aff-info"><div class="aff-name">Wealthsimple</div><div class="aff-desc">Managed portfolios · TFSA &amp; RRSP · No minimum</div></div>
+        <div class="aff-btn">Start Free →</div>
+      </a>
+      <a class="aff-row" href="https://www.questrade.com/self-directed-investing/accounts" target="_blank" rel="noopener sponsored">
+        <div class="aff-info"><div class="aff-name">Questrade</div><div class="aff-desc">Self-directed ETFs · Low commissions · TFSA &amp; RRSP</div></div>
+        <div class="aff-btn">Open Account →</div>
       </a>
     </div>
 
@@ -1028,24 +1029,6 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 36
 </div>
 
 <!-- FOOTER -->
-
-<!-- Email Capture -->
-<div style="padding:0 22px;">
-<div class="email-strip">
-  <div class="email-strip-text">
-    <div class="email-strip-eyebrow">Free Weekly Insight</div>
-    <div class="email-strip-title">Get your weekly wealth check</div>
-    <div class="email-strip-sub">One number. One action. Every week. No spam, ever.</div>
-  </div>
-  <div>
-    <form class="email-strip-form" onsubmit="submitEmail(event)">
-      <input class="email-strip-input" type="email" placeholder="your@email.com" required id="email-input">
-      <button class="email-strip-btn" type="submit">Get It Free</button>
-    </form>
-    <div class="email-strip-note" id="email-msg">Join 0+ readers. Unsubscribe anytime.</div>
-  </div>
-</div>
-</div>
 
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
@@ -1360,50 +1343,6 @@ function generatePDF(){
 
 
 
-function submitEmail(e){
-  e.preventDefault();
-  var email=document.getElementById('email-input').value;
-  if(!email||!email.includes('@')){
-    document.getElementById('email-msg').textContent='Please enter a valid email.';
-    return;
-  }
-  var msg=document.getElementById('email-msg');
-  msg.textContent='Subscribing...';
-  msg.style.color='#6e6e73';
-  // Hidden iframe to avoid page redirect
-  var iframe=document.getElementById('brevo_iframe');
-  if(!iframe){
-    iframe=document.createElement('iframe');
-    iframe.id='brevo_iframe';
-    iframe.name='brevo_iframe';
-    iframe.style.display='none';
-    document.body.appendChild(iframe);
-  }
-  var form=document.createElement('form');
-  form.method='POST';
-  form.action='https://e693d8e4.sibforms.com/serve/MUIFAPxeqqSvGzrg4eeWLc07i7c6hR3s4kA-1VAaOdT207JWIWa0ictHWqOfc3VvpXl_MpHFO4LSM1l2PgsV_lK0yLcfD9UdE9eIZ5NhLI0elznMdfPL3pnkk8nv0M7U-h839eiWMzjkZCu61OfnmVJAO8oaNlOEKtq6yrnS0wt-QoGtYfnMpDT_AxhDMa_c-bgZXazuAndjIBte9A==';
-  form.target='brevo_iframe';
-  form.style.display='none';
-  // Email field
-  var ef=document.createElement('input');
-  ef.type='text';ef.name='EMAIL';ef.value=email;
-  form.appendChild(ef);
-  // Honeypot — must be empty
-  var hp=document.createElement('input');
-  hp.type='text';hp.name='email_address_check';hp.value='';
-  form.appendChild(hp);
-  // Locale
-  var lc=document.createElement('input');
-  lc.type='hidden';lc.name='locale';lc.value='en';
-  form.appendChild(lc);
-  document.body.appendChild(form);
-  form.submit();
-  document.body.removeChild(form);
-  document.getElementById('email-input').value='';
-  msg.textContent='You are in! Check your inbox.';
-  msg.style.color='#15803d';
-  msg.style.fontWeight='600';
-}
 
 </script>
 </body>

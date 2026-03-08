@@ -4,10 +4,10 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Daily Habit True Cost Calculator — Lifetime Financial Impact | WealthDelay</title>
 <meta name="description" content="Calculate the lifetime wealth cost of any daily habit. Small amounts compounded daily over 30 years produce shocking numbers. Free calculator.">
-<link rel="canonical" href="https://wealthdelay.com/tools/daily-habit-true-cost-calculator">
+<link rel="canonical" href="https://wealthdelay.com/daily-habit-true-cost-calculator">
 <meta property="og:title" content="Daily Habit True Cost Calculator — Lifetime Financial Impact | WealthDelay">
 <meta property="og:description" content="Calculate the lifetime wealth cost of any daily habit. Small amounts compounded daily over 30 years produce shocking numbers. Free calculator.">
-<meta property="og:url" content="https://wealthdelay.com/tools/daily-habit-true-cost-calculator">
+<meta property="og:url" content="https://wealthdelay.com/daily-habit-true-cost-calculator">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
@@ -209,14 +209,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
     <div class="metric-hero">
       <div class="mh-top">
         <div class="mh-eyebrow">Lifetime Opportunity Cost of This Habit</div>
-        <div class="mh-number" id="r-hero">&#8212;</div>
+        <div class="mh-number" id="r-hero">—</div>
         <div class="mh-sub" id="r-sub">calculating&#8230;</div>
       </div>
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
     <div class="chart-card"><div class="chart-head"><div class="card-title">Opportunity Cost Over Time</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>Wealth foregone</div></div></div><div class="chart-inner"><canvas id="chart"></canvas></div></div>
-    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Weekly habit cost</div><div class="bd-val red" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Monthly / annual cost</div><div class="bd-val amber" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Total cash over career</div><div class="bd-val red" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Lifetime opportunity cost</div><div class="bd-val red" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">True cost per occasion</div><div class="bd-val red" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Wealth multiplier</div><div class="bd-val red" id="r-b6">&#8212;</div></div></div>
+    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Weekly habit cost</div><div class="bd-val red" id="r-b1">—</div></div><div class="bd-row"><div class="bd-lbl">Monthly / annual cost</div><div class="bd-val amber" id="r-b2">—</div></div><div class="bd-row"><div class="bd-lbl">Total cash over career</div><div class="bd-val red" id="r-b3">—</div></div><div class="bd-row"><div class="bd-lbl">Lifetime opportunity cost</div><div class="bd-val red" id="r-b4">—</div></div><div class="bd-row"><div class="bd-lbl">True cost per occasion</div><div class="bd-val red" id="r-b5">—</div></div><div class="bd-row"><div class="bd-lbl">Wealth multiplier</div><div class="bd-val red" id="r-b6">—</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px"><!-- Google AdSense — insert ad unit here after approval --></div>
   </div>
 </div>
@@ -261,7 +261,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
 </div>
   </button>
 </div>
-<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/tools/coffee-habit-true-cost">Coffee Habit Cost</a><a class="related-link" href="/tools/smoking-financial-cost-calculator">Smoking Financial Cost</a><a class="related-link" href="/tools/lifestyle-inflation-calculator">Lifestyle Inflation</a><a class="related-link" href="/tools/opportunity-cost-calculator">Opportunity Cost</a><a class="related-link" href="/tools/fire-number-calculator">FIRE Number</a></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/coffee-habit-true-cost">Coffee Habit Cost</a><a class="related-link" href="/smoking-financial-cost-calculator">Smoking Financial Cost</a><a class="related-link" href="/lifestyle-inflation-calculator">Lifestyle Inflation</a><a class="related-link" href="/opportunity-cost-calculator">Opportunity Cost</a><a class="related-link" href="/fire-number-calculator">FIRE Number</a></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
@@ -272,8 +272,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
     <a href="/disclaimer.html">Disclaimer</a>
     <a href="/about.html">About</a>
   </div>
+</footer>
 <script>
-
 function startCheckout(){
   var btn=document.getElementById('pdf-pay-btn');
   btn.disabled=true;btn.textContent='Opening checkout...';
@@ -333,11 +333,6 @@ function openStripeCheckout(){
   });
 }
 
-  });
-}
-</script>
-</footer>
-<script>
 // ── WealthDelay Shared Math Library ──────────────────
 // All formulas verified against standard financial math
 
@@ -570,7 +565,7 @@ function generatePDF(){
     doc.setFillColor(21,128,61);doc.rect(0,0,W,14,'F');
     doc.setTextColor(255,255,255);doc.setFontSize(10);doc.setFont('helvetica','bold');
     doc.text('WEALTHDELAY.COM',M,9.5);
-    doc.text('wealthdelay.com/tools/daily-habit-true-cost-calculator',W-M,9.5,{align:'right'});
+    doc.text('wealthdelay.com/daily-habit-true-cost-calculator',W-M,9.5,{align:'right'});
     y=28;
     // Title
     doc.setTextColor(29,29,31);doc.setFontSize(20);doc.setFont('helvetica','bold');
@@ -648,13 +643,5 @@ function generatePDF(){
   };
   document.head.appendChild(s);
 }
-
-
-
-
-
-
-
-
 </script>
 </body></html>

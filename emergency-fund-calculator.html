@@ -4,10 +4,10 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Emergency Fund Calculator — How Much Should You Have? | WealthDelay</title>
 <meta name="description" content="Calculate exactly how large your emergency fund should be and the true financial cost of being underprepared. Free, instant results.">
-<link rel="canonical" href="https://wealthdelay.com/tools/emergency-fund-calculator">
+<link rel="canonical" href="https://wealthdelay.com/emergency-fund-calculator">
 <meta property="og:title" content="Emergency Fund Calculator — How Much Should You Have? | WealthDelay">
 <meta property="og:description" content="Calculate exactly how large your emergency fund should be and the true financial cost of being underprepared. Free, instant results.">
-<meta property="og:url" content="https://wealthdelay.com/tools/emergency-fund-calculator">
+<meta property="og:url" content="https://wealthdelay.com/emergency-fund-calculator">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
@@ -209,14 +209,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
     <div class="metric-hero">
       <div class="mh-top">
         <div class="mh-eyebrow">True Cost of Having No Emergency Fund</div>
-        <div class="mh-number" id="r-hero">&#8212;</div>
+        <div class="mh-number" id="r-hero">—</div>
         <div class="mh-sub" id="r-sub">calculating&#8230;</div>
       </div>
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
     
-    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Emergency amount</div><div class="bd-val red" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Credit card APR</div><div class="bd-val red" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Payoff time</div><div class="bd-val amber" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">CC interest paid</div><div class="bd-val red" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Wealth comparison</div><div class="bd-val green" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Wealth lost to delay</div><div class="bd-val red" id="r-b6">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">True cost of no e-fund</div><div class="bd-val red" id="r-b7">&#8212;</div></div></div>
+    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Emergency amount</div><div class="bd-val red" id="r-b1">—</div></div><div class="bd-row"><div class="bd-lbl">Credit card APR</div><div class="bd-val red" id="r-b2">—</div></div><div class="bd-row"><div class="bd-lbl">Payoff time</div><div class="bd-val amber" id="r-b3">—</div></div><div class="bd-row"><div class="bd-lbl">CC interest paid</div><div class="bd-val red" id="r-b4">—</div></div><div class="bd-row"><div class="bd-lbl">Wealth comparison</div><div class="bd-val green" id="r-b5">—</div></div><div class="bd-row"><div class="bd-lbl">Wealth lost to delay</div><div class="bd-val red" id="r-b6">—</div></div><div class="bd-row"><div class="bd-lbl">True cost of no e-fund</div><div class="bd-val red" id="r-b7">—</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px"><!-- Google AdSense — insert ad unit here after approval --></div>
   </div>
 </div>
@@ -262,7 +262,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
 </div>
   </button>
 </div>
-<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/tools/debt-avalanche-vs-snowball">Debt Avalanche vs Snowball</a><a class="related-link" href="/tools/layoff-survival-calculator">Layoff Runway</a><a class="related-link" href="/tools/inflation-savings-erosion-calculator">Inflation vs Savings</a><a class="related-link" href="/tools/how-long-will-savings-last">How Long Will Savings Last</a><a class="related-link" href="/tools/net-worth-target-calculator">Net Worth Target</a></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/debt-avalanche-vs-snowball">Debt Avalanche vs Snowball</a><a class="related-link" href="/layoff-survival-calculator">Layoff Runway</a><a class="related-link" href="/inflation-savings-erosion-calculator">Inflation vs Savings</a><a class="related-link" href="/how-long-will-savings-last">How Long Will Savings Last</a><a class="related-link" href="/net-worth-target-calculator">Net Worth Target</a></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
@@ -273,8 +273,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
     <a href="/disclaimer.html">Disclaimer</a>
     <a href="/about.html">About</a>
   </div>
+</footer>
 <script>
-
 function startCheckout(){
   var btn=document.getElementById('pdf-pay-btn');
   btn.disabled=true;btn.textContent='Opening checkout...';
@@ -334,11 +334,6 @@ function openStripeCheckout(){
   });
 }
 
-  });
-}
-</script>
-</footer>
-<script>
 // ── WealthDelay Shared Math Library ──────────────────
 // All formulas verified against standard financial math
 
@@ -592,7 +587,7 @@ function generatePDF(){
     doc.setFillColor(21,128,61);doc.rect(0,0,W,14,'F');
     doc.setTextColor(255,255,255);doc.setFontSize(10);doc.setFont('helvetica','bold');
     doc.text('WEALTHDELAY.COM',M,9.5);
-    doc.text('wealthdelay.com/tools/emergency-fund-calculator',W-M,9.5,{align:'right'});
+    doc.text('wealthdelay.com/emergency-fund-calculator',W-M,9.5,{align:'right'});
     y=28;
     // Title
     doc.setTextColor(29,29,31);doc.setFontSize(20);doc.setFont('helvetica','bold');
@@ -670,13 +665,5 @@ function generatePDF(){
   };
   document.head.appendChild(s);
 }
-
-
-
-
-
-
-
-
 </script>
 </body></html>

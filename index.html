@@ -1024,13 +1024,16 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 36
 
 
 <div style="max-width:1080px;margin:0 auto;padding:0 22px 40px;display:flex;justify-content:center;">
-  <button onclick="generatePDF()" style="display:inline-flex;align-items:center;gap:10px;background:#1d1d1f;color:#fff;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:15px;font-weight:600;padding:14px 28px;border-radius:40px;border:none;cursor:pointer;letter-spacing:-.02em;box-shadow:0 4px 16px rgba(0,0,0,.18);">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4a2 2 0 012-2h5.586A2 2 0 0113 2.586L15.414 5A2 2 0 0116 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" stroke="white" stroke-width="1.5" fill="none"/><path d="M13 2v3a1 1 0 001 1h3M7 13h6M7 10h4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
-    <div style="display:flex;flex-direction:column;">
-      <span>Download Your Free Report</span>
-      <span style="font-size:11px;font-weight:500;color:rgba(255,255,255,.55);margin-top:1px;">PDF · Instant · No signup</span>
-    </div>
-  </button>
+  <div class="pdf-gate">
+    <div class="pdf-gate-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="#15803d" stroke-width="1.5" fill="none"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="#15803d" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+    <div class="pdf-gate-title">Get Your Full PDF Report</div>
+    <div class="pdf-gate-sub">Your exact numbers, projections, and insight — formatted as a professional PDF.</div>
+    <button id="pdf-pay-btn" onclick="buyPDF()" class="pdf-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <div class="pdf-btn-inner"><span>Get My PDF Report — $9</span><span class="pdf-sub">One-time · Instant download</span></div>
+    </button>
+    <div class="pdf-secure">🔒 Secured by Stripe · SSL encrypted</div>
+  </div>
 </div>
 
 <!-- TOOLS MAP -->
@@ -1195,10 +1198,35 @@ function toggleFaq(el){
   if(!open){ans.classList.add('open');ico.classList.add('open');}
 }
 
-    }
+function initSliders(){
+  document.querySelectorAll('input[type=range]').forEach(s=>{
+    const p=((s.value-s.min)/(s.max-s.min))*100;
+    s.style.background=`linear-gradient(to right,#15803d 0%,#15803d ${p}%,#ebebed ${p}%,#ebebed 100%)`;
   });
 }
 
+window.addEventListener('resize',calc);
+window.addEventListener('DOMContentLoaded',()=>{initSliders();calc();});
+
+function buyPDF(){
+  var btn=document.getElementById('pdf-pay-btn');
+  btn.disabled=true;btn.innerHTML='Processing...';
+  var data={tool:'Lifetime Financial Impact Simulator',url:window.location.href};
+  localStorage.setItem('wd_pdf_data',JSON.stringify(data));
+  if(!window.Stripe){
+    var s=document.createElement('script');s.src='https://js.stripe.com/v3/';
+    s.onload=openStripeCheckout;document.head.appendChild(s);
+  }else{openStripeCheckout();}
+}
+function openStripeCheckout(){
+  var stripe=Stripe('pk_live_51T7nPkBLLrWtnUxCz7MIxSdxt1T3q4fx50WYyfJ0JJVIkYNyTMOgiMy9StvNmzz0Yx75T9WYYr2q5vYiHSg72ZZN00l76JDKn4');
+  stripe.redirectToCheckout({
+    lineItems:[{price:'price_1T8XQsBLLrWtnUxCAwinaoZS',quantity:1}],
+    mode:'payment',
+    successUrl:window.location.origin+'/payment-success.html?session_id={CHECKOUT_SESSION_ID}',
+    cancelUrl:window.location.href,
+  }).then(function(r){
+    if(r.error){var btn=document.getElementById('pdf-pay-btn');btn.disabled=false;btn.innerHTML='Get My PDF Report — $9';}
   });
 }
 

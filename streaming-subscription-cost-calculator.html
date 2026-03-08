@@ -2,13 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Streaming Subscription Cost Calculator &#8212; WealthDelay</title>
+<title>Streaming Subscription Cost Calculator — WealthDelay</title>
 <meta name="description" content="See the real lifetime wealth cost of your streaming subscriptions compounded to retirement. Free calculator.">
-<link rel="canonical" href="https://wealthdelay.com/tools/streaming-subscription-cost-calculator">
-<meta property="og:url" content="https://wealthdelay.com/tools/streaming-subscription-cost-calculator">
+<link rel="canonical" href="https://wealthdelay.com/streaming-subscription-cost-calculator">
+<meta property="og:title" content="Streaming Subscription Cost Calculator — WealthDelay">
+<meta property="og:description" content="See the real lifetime wealth cost of your streaming subscriptions compounded to retirement. Free calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wealthdelay.com/streaming-subscription-cost-calculator">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Streaming Subscription Cost Calculator — WealthDelay">
+<meta name="twitter:description" content="See the real lifetime wealth cost of your streaming subscriptions compounded to retirement. Free calculator.">
+<meta property="og:url" content="https://wealthdelay.com/streaming-subscription-cost-calculator">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":'Streaming Subscription Cost Calculator',"description":'See the real lifetime wealth cost of your streaming subscriptions compounded to retirement. Free calculator.',"url":"https://wealthdelay.com/tools/streaming-subscription-cost-calculator","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":'Streaming Subscription Cost Calculator',"description":'See the real lifetime wealth cost of your streaming subscriptions compounded to retirement. Free calculator.',"url":"https://wealthdelay.com/streaming-subscription-cost-calculator","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":'Are subscriptions really that costly?',"acceptedAnswer":{"@type":"Answer","text":'$46/mo sounds fine. But $46/mo × 35yr at 7% = $80,000+ in opportunity cost. The issue is subscriptions multiply silently — most households underestimate their total by 40%.'}},{"@type":"Question","name":'Which subscriptions are worth keeping?',"acceptedAnswer":{"@type":"Answer","text":'Any you use more than once per week, or that replace a more expensive habit. The rest are candidates to cancel or rotate seasonally.'}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
@@ -210,14 +217,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
     <div class="metric-hero">
       <div class="mh-top">
         <div class="mh-eyebrow">Lifetime Opportunity Cost</div>
-        <div class="mh-number" id="r-hero">&#8212;</div>
+        <div class="mh-number" id="r-hero">—</div>
         <div class="mh-sub" id="r-sub">calculating&#8230;</div>
       </div>
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
     <div class="chart-card"><div class="chart-head"><div class="card-title">Subscription Cost Over Time</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>Wealth foregone</div></div></div><div class="chart-inner"><canvas id="chart" role="img" aria-label="Subscription Cost Over Time chart"></canvas></div></div>
-    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Video streaming</div><div class="bd-val amber" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Music</div><div class="bd-val amber" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Gaming</div><div class="bd-val amber" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">News / reading</div><div class="bd-val amber" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Other</div><div class="bd-val amber" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Monthly / annual total</div><div class="bd-val red" id="r-b6">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Total cash over career</div><div class="bd-val red" id="r-b7">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Opportunity cost</div><div class="bd-val red" id="r-b8">&#8212;</div></div></div>
+    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Video streaming</div><div class="bd-val amber" id="r-b1">—</div></div><div class="bd-row"><div class="bd-lbl">Music</div><div class="bd-val amber" id="r-b2">—</div></div><div class="bd-row"><div class="bd-lbl">Gaming</div><div class="bd-val amber" id="r-b3">—</div></div><div class="bd-row"><div class="bd-lbl">News / reading</div><div class="bd-val amber" id="r-b4">—</div></div><div class="bd-row"><div class="bd-lbl">Other</div><div class="bd-val amber" id="r-b5">—</div></div><div class="bd-row"><div class="bd-lbl">Monthly / annual total</div><div class="bd-val red" id="r-b6">—</div></div><div class="bd-row"><div class="bd-lbl">Total cash over career</div><div class="bd-val red" id="r-b7">—</div></div><div class="bd-row"><div class="bd-lbl">Opportunity cost</div><div class="bd-val red" id="r-b8">—</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px"><!-- Google AdSense — insert ad unit here after approval --></div>
   </div>
 </div>
@@ -248,7 +255,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
 </div>
   </button>
 </div>
-<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/tools/coffee-habit-true-cost">Coffee Cost</a><a class="related-link" href="/tools/eating-out-vs-cooking-calculator">Eating Out Cost</a><a class="related-link" href="/tools/daily-habit-true-cost-calculator">Daily Habit Cost</a></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/coffee-habit-true-cost">Coffee Cost</a><a class="related-link" href="/eating-out-vs-cooking-calculator">Eating Out Cost</a><a class="related-link" href="/daily-habit-true-cost-calculator">Daily Habit Cost</a></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
@@ -259,8 +266,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
     <a href="/disclaimer.html">Disclaimer</a>
     <a href="/about.html">About</a>
   </div>
+</footer>
 <script>
-
 function startCheckout(){
   var btn=document.getElementById('pdf-pay-btn');
   btn.disabled=true;btn.textContent='Opening checkout...';
@@ -319,12 +326,6 @@ function openStripeCheckout(){
     }
   });
 }
-
-  });
-}
-</script>
-</footer>
-<script>
 
 function fvAnnuity(pmt, annualRate, years) {
   const r = annualRate / 12;
@@ -507,7 +508,7 @@ function generatePDF(){
     doc.setFillColor(21,128,61);doc.rect(0,0,W,14,'F');
     doc.setTextColor(255,255,255);doc.setFontSize(10);doc.setFont('helvetica','bold');
     doc.text('WEALTHDELAY.COM',M,9.5);
-    doc.text('wealthdelay.com/tools/streaming-subscription-cost-calculator',W-M,9.5,{align:'right'});
+    doc.text('wealthdelay.com/streaming-subscription-cost-calculator',W-M,9.5,{align:'right'});
     y=28;
     // Title
     doc.setTextColor(29,29,31);doc.setFontSize(20);doc.setFont('helvetica','bold');
@@ -585,13 +586,5 @@ function generatePDF(){
   };
   document.head.appendChild(s);
 }
-
-
-
-
-
-
-
-
 </script>
 </body></html>

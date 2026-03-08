@@ -4,8 +4,15 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>How Long Will My Savings Last? Retirement Calculator — WealthDelay</title>
 <meta name="description" content="Enter your portfolio size, withdrawal amount and return rate. Instantly see how many years your savings will last — and what the safe withdrawal rate is. Free, no login.">
-<link rel="canonical" href="https://wealthdelay.com/tools/how-long-will-savings-last">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":'How Long Will My Savings Last Calculator',"description":'Find out how long your retirement savings will last based on withdrawal rate, return and inflation. Free.',"url":"https://wealthdelay.com/tools/how-long-will-savings-last","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
+<link rel="canonical" href="https://wealthdelay.com/how-long-will-savings-last">
+<meta property="og:title" content="How Long Will My Savings Last? Retirement Calculator — WealthDelay">
+<meta property="og:description" content="Enter your portfolio size, withdrawal amount and return rate. Instantly see how many years your savings will last — and what the safe withdrawal rate is. Free, no login.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wealthdelay.com/how-long-will-savings-last">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Long Will My Savings Last? Retirement Calculator — WealthDelay">
+<meta name="twitter:description" content="Enter your portfolio size, withdrawal amount and return rate. Instantly see how many years your savings will last — and what the safe withdrawal rate is. Free, no login.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":'How Long Will My Savings Last Calculator',"description":'Find out how long your retirement savings will last based on withdrawal rate, return and inflation. Free.',"url":"https://wealthdelay.com/how-long-will-savings-last","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long will $1 million in savings last?","acceptedAnswer":{"@type":"Answer","text":"At a 4% withdrawal rate ($40,000/yr), $1 million lasts indefinitely if your portfolio earns at least 4% annually. At a more aggressive 6% withdrawal ($60,000/yr), a $1M portfolio typically lasts 20–25 years assuming 7% average annual returns."}},{"@type":"Question","name":"What is a safe withdrawal rate in retirement?","acceptedAnswer":{"@type":"Answer","text":"The 4% rule (Trinity Study, 1998) found that withdrawing 4% of your initial portfolio per year has historically lasted 30-year retirements ~95% of the time with a balanced portfolio. Many modern planners suggest 3–3.5% for longer retirements or conservative planning."}},{"@type":"Question","name":"How long will $500,000 last in retirement?","acceptedAnswer":{"@type":"Answer","text":"At a 4% safe withdrawal rate, $500,000 generates $20,000/year. Combined with Social Security, this can sustain a modest retirement. At 5% withdrawal ($25,000/yr) with 7% returns, the portfolio lasts approximately 28 years."}},{"@type":"Question","name":"Does this calculator account for inflation?","acceptedAnswer":{"@type":"Answer","text":"The calculator models after-tax withdrawals and portfolio return assumptions. For conservative inflation planning, set your annual withdrawal 20–30% higher than today's expenses to account for future purchasing power erosion."}},{"@type":"Question","name":"What happens if my savings run out?","acceptedAnswer":{"@type":"Answer","text":"If your withdrawal rate exceeds your portfolio's sustainable return, the calculator shows the exact year your savings deplete. The solution is to either reduce annual spending, increase your portfolio (by working longer or saving more), or reduce your effective withdrawal tax rate through Roth conversions."}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
@@ -208,14 +215,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
     <div class="metric-hero">
       <div class="mh-top">
         <div class="mh-eyebrow">Portfolio Sustainability</div>
-        <div class="mh-number" id="r-hero">&#8212;</div>
+        <div class="mh-number" id="r-hero">—</div>
         <div class="mh-sub" id="r-sub">calculating&#8230;</div>
       </div>
       <div class="mh-row" id="r-metrics"></div>
     </div>
     <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalised analysis.</div></div></div>
     <div class="chart-card"><div class="chart-head"><div class="card-title">Portfolio Balance Over Time</div><div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#ff3b30"></div>Balance</div></div></div><div class="chart-inner"><canvas id="chart" role="img" aria-label="Portfolio Balance Over Time chart"></canvas></div></div>
-    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Portfolio value</div><div class="bd-val ink" id="r-b1">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Annual withdrawal</div><div class="bd-val amber" id="r-b2">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Safe withdrawal rate</div><div class="bd-val amber" id="r-b3">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Tax gross-up</div><div class="bd-val red" id="r-b4">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Monthly after-tax income</div><div class="bd-val green" id="r-b5">&#8212;</div></div><div class="bd-row"><div class="bd-lbl">Verdict</div><div class="bd-val green" id="r-b6">&#8212;</div></div></div>
+    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown</div></div><div class="bd-row"><div class="bd-lbl">Portfolio value</div><div class="bd-val ink" id="r-b1">—</div></div><div class="bd-row"><div class="bd-lbl">Annual withdrawal</div><div class="bd-val amber" id="r-b2">—</div></div><div class="bd-row"><div class="bd-lbl">Safe withdrawal rate</div><div class="bd-val amber" id="r-b3">—</div></div><div class="bd-row"><div class="bd-lbl">Tax gross-up</div><div class="bd-val red" id="r-b4">—</div></div><div class="bd-row"><div class="bd-lbl">Monthly after-tax income</div><div class="bd-val green" id="r-b5">—</div></div><div class="bd-row"><div class="bd-lbl">Verdict</div><div class="bd-val green" id="r-b6">—</div></div></div>
     <div class="ad-slot ad-rect" style="height:120px" id="ad-slot-1"><!-- Google AdSense -- insert ad code here after approval --></div>
   </div>
 </div>
@@ -279,7 +286,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
 </div>
   </button>
 </div>
-<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/tools/fire-number-calculator">FIRE Number Calculator</a><a class="related-link" href="/tools/net-worth-target-calculator">Net Worth Target & Timeline</a><a class="related-link" href="/tools/retirement-wealth-estimator">Retirement Wealth Estimator</a><a class="related-link" href="/tools/401k-contribution-calculator">401k Contribution Impact</a></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/fire-number-calculator">FIRE Number Calculator</a><a class="related-link" href="/net-worth-target-calculator">Net Worth Target & Timeline</a><a class="related-link" href="/retirement-wealth-estimator">Retirement Wealth Estimator</a><a class="related-link" href="/401k-contribution-calculator">401k Contribution Impact</a></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
   <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
@@ -290,8 +297,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
     <a href="/disclaimer.html">Disclaimer</a>
     <a href="/about.html">About</a>
   </div>
+</footer>
 <script>
-
 function startCheckout(){
   var btn=document.getElementById('pdf-pay-btn');
   btn.disabled=true;btn.textContent='Opening checkout...';
@@ -350,12 +357,6 @@ function openStripeCheckout(){
     }
   });
 }
-
-  });
-}
-</script>
-</footer>
-<script>
 
 function fvAnnuity(pmt, annualRate, years) {
   const r = annualRate / 12;
@@ -555,7 +556,7 @@ function generatePDF(){
     doc.setFillColor(21,128,61); doc.rect(0,0,W,14,'F');
     doc.setTextColor(255,255,255); doc.setFontSize(10); doc.setFont('helvetica','bold');
     doc.text('WEALTHDELAY.COM',M,9.5);
-    doc.text('wealthdelay.com/tools/how-long-will-savings-last',W-M,9.5,{align:'right'});
+    doc.text('wealthdelay.com/how-long-will-savings-last',W-M,9.5,{align:'right'});
     y=28;
     doc.setTextColor(29,29,31); doc.setFontSize(22); doc.setFont('helvetica','bold');
     doc.text('Retirement Savings Runway Report',M,y); y+=8;
@@ -630,13 +631,5 @@ function generatePDF(){
   };
   document.head.appendChild(s);
 }
-
-
-
-
-
-
-
-
 </script>
 </body></html>

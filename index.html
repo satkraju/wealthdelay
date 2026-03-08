@@ -1028,7 +1028,7 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 36
     <div class="pdf-gate-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="#15803d" stroke-width="1.5" fill="none"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="#15803d" stroke-width="1.5" stroke-linecap="round"/></svg></div>
     <div class="pdf-gate-title">Get Your Full PDF Report</div>
     <div class="pdf-gate-sub">Your exact numbers, projections, and insight — formatted as a professional PDF.</div>
-    <button id="pdf-pay-btn" onclick="buyPDF()" class="pdf-btn">
+    <button id="pdf-pay-btn" onclick="buyPDF()" class="pdf-pay-btn">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
       <div class="pdf-btn-inner"><span>Get My PDF Report — $9</span><span class="pdf-sub">One-time · Instant download</span></div>
     </button>
@@ -1219,14 +1219,34 @@ function buyPDF(){
   }else{openStripeCheckout();}
 }
 function openStripeCheckout(){
-  var stripe=Stripe('pk_live_51T7nPkBLLrWtnUxCz7MIxSdxt1T3q4fx50WYyfJ0JJVIkYNyTMOgiMy9StvNmzz0Yx75T9WYYr2q5vYiHSg72ZZN00l76JDKn4');
-  stripe.redirectToCheckout({
-    lineItems:[{price:'price_1T8XQsBLLrWtnUxCAwinaoZS',quantity:1}],
-    mode:'payment',
-    successUrl:window.location.origin+'/payment-success.html?session_id={CHECKOUT_SESSION_ID}',
-    cancelUrl:window.location.href,
-  }).then(function(r){
-    if(r.error){var btn=document.getElementById('pdf-pay-btn');btn.disabled=false;btn.innerHTML='Get My PDF Report — $9';}
+  try {
+    var stripe=Stripe('pk_live_51T7nPkBLLrWtnUxCz7MIxSdxt1T3q4fx50WYyfJ0JJVIkYNyTMOgiMy9StvNmzz0Yx75T9WYYr2q5vYiHSg72ZZN00l76JDKn4');
+    stripe.redirectToCheckout({
+      lineItems:[{price:'price_1T8XQsBLLrWtnUxCAwinaoZS',quantity:1}],
+      mode:'payment',
+      successUrl:window.location.origin+'/payment-success.html?session_id={CHECKOUT_SESSION_ID}',
+      cancelUrl:window.location.href,
+    }).then(function(r){
+      if(r.error){
+        alert('Payment error: '+r.error.message);
+        var btn=document.getElementById('pdf-pay-btn');
+        if(btn){btn.disabled=false;btn.textContent='Get My PDF Report — $9';}
+      }
+    });
+  } catch(e) {
+    alert('Checkout error: '+e.message);
+    var btn=document.getElementById('pdf-pay-btn');
+    if(btn){btn.disabled=false;btn.textContent='Get My PDF Report — $9';}
+  }
+}
+      }
+    });
+  } catch(e) {
+    alert('Checkout error: '+e.message);
+    var btn=document.getElementById('pdf-pay-btn');
+    if(btn){btn.disabled=false;btn.textContent='Get My PDF Report — $9';}
+  }
+}
   });
 }
 

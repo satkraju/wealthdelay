@@ -2,83 +2,459 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/tools/tool-01", "destination": "/", "permanent": true },
-    { "source": "/tools/tool-01.html", "destination": "/", "permanent": true },
-    { "source": "/tools/tool-02.html", "destination": "/tools/coffee-habit-true-cost", "permanent": true },
-    { "source": "/tools/tool-02", "destination": "/tools/coffee-habit-true-cost", "permanent": true },
-    { "source": "/tools/tool-03.html", "destination": "/tools/streaming-subscription-cost-calculator", "permanent": true },
-    { "source": "/tools/tool-03", "destination": "/tools/streaming-subscription-cost-calculator", "permanent": true },
-    { "source": "/tools/tool-04.html", "destination": "/tools/eating-out-vs-cooking-calculator", "permanent": true },
-    { "source": "/tools/tool-04", "destination": "/tools/eating-out-vs-cooking-calculator", "permanent": true },
-    { "source": "/tools/tool-05.html", "destination": "/tools/smoking-financial-cost-calculator", "permanent": true },
-    { "source": "/tools/tool-05", "destination": "/tools/smoking-financial-cost-calculator", "permanent": true },
-    { "source": "/tools/tool-06.html", "destination": "/tools/gym-membership-roi-calculator", "permanent": true },
-    { "source": "/tools/tool-06", "destination": "/tools/gym-membership-roi-calculator", "permanent": true },
-    { "source": "/tools/tool-07.html", "destination": "/tools/credit-card-true-cost-calculator", "permanent": true },
-    { "source": "/tools/tool-07", "destination": "/tools/credit-card-true-cost-calculator", "permanent": true },
-    { "source": "/tools/tool-08.html", "destination": "/tools/mortgage-overpayment-calculator", "permanent": true },
-    { "source": "/tools/tool-08", "destination": "/tools/mortgage-overpayment-calculator", "permanent": true },
-    { "source": "/tools/tool-09.html", "destination": "/tools/student-loan-payoff-calculator", "permanent": true },
-    { "source": "/tools/tool-09", "destination": "/tools/student-loan-payoff-calculator", "permanent": true },
-    { "source": "/tools/tool-10.html", "destination": "/tools/car-loan-true-cost-calculator", "permanent": true },
-    { "source": "/tools/tool-10", "destination": "/tools/car-loan-true-cost-calculator", "permanent": true },
-    { "source": "/tools/tool-11.html", "destination": "/tools/buy-now-pay-later-true-cost", "permanent": true },
-    { "source": "/tools/tool-11", "destination": "/tools/buy-now-pay-later-true-cost", "permanent": true },
-    { "source": "/tools/tool-12.html", "destination": "/tools/debt-avalanche-vs-snowball", "permanent": true },
-    { "source": "/tools/tool-12", "destination": "/tools/debt-avalanche-vs-snowball", "permanent": true },
-    { "source": "/tools/tool-13.html", "destination": "/tools/salary-negotiation-calculator", "permanent": true },
-    { "source": "/tools/tool-13", "destination": "/tools/salary-negotiation-calculator", "permanent": true },
-    { "source": "/tools/tool-14.html", "destination": "/tools/401k-contribution-calculator", "permanent": true },
-    { "source": "/tools/tool-14", "destination": "/tools/401k-contribution-calculator", "permanent": true },
-    { "source": "/tools/tool-15.html", "destination": "/tools/fire-number-calculator", "permanent": true },
-    { "source": "/tools/tool-15", "destination": "/tools/fire-number-calculator", "permanent": true },
-    { "source": "/tools/tool-16.html", "destination": "/tools/inflation-savings-erosion-calculator", "permanent": true },
-    { "source": "/tools/tool-16", "destination": "/tools/inflation-savings-erosion-calculator", "permanent": true },
-    { "source": "/tools/tool-17.html", "destination": "/tools/how-long-will-savings-last", "permanent": true },
-    { "source": "/tools/tool-17", "destination": "/tools/how-long-will-savings-last", "permanent": true },
-    { "source": "/tools/tool-18.html", "destination": "/tools/lifestyle-inflation-calculator", "permanent": true },
-    { "source": "/tools/tool-18", "destination": "/tools/lifestyle-inflation-calculator", "permanent": true },
-    { "source": "/tools/tool-19.html", "destination": "/tools/true-cost-of-bigger-house", "permanent": true },
-    { "source": "/tools/tool-19", "destination": "/tools/true-cost-of-bigger-house", "permanent": true },
-    { "source": "/tools/tool-20.html", "destination": "/tools/luxury-car-opportunity-cost", "permanent": true },
-    { "source": "/tools/tool-20", "destination": "/tools/luxury-car-opportunity-cost", "permanent": true },
-    { "source": "/tools/tool-21.html", "destination": "/tools/true-hourly-rate-calculator", "permanent": true },
-    { "source": "/tools/tool-21", "destination": "/tools/true-hourly-rate-calculator", "permanent": true },
-    { "source": "/tools/tool-22.html", "destination": "/tools/side-hustle-investment-value", "permanent": true },
-    { "source": "/tools/tool-22", "destination": "/tools/side-hustle-investment-value", "permanent": true },
-    { "source": "/tools/tool-23.html", "destination": "/tools/rent-vs-buy-calculator", "permanent": true },
-    { "source": "/tools/tool-23", "destination": "/tools/rent-vs-buy-calculator", "permanent": true },
-    { "source": "/tools/tool-24.html", "destination": "/tools/index-fund-vs-stock-picking", "permanent": true },
-    { "source": "/tools/tool-24", "destination": "/tools/index-fund-vs-stock-picking", "permanent": true },
-    { "source": "/tools/tool-25.html", "destination": "/tools/emergency-fund-calculator", "permanent": true },
-    { "source": "/tools/tool-25", "destination": "/tools/emergency-fund-calculator", "permanent": true },
-    { "source": "/tools/tool-26.html", "destination": "/tools/investment-fee-drag-calculator", "permanent": true },
-    { "source": "/tools/tool-26", "destination": "/tools/investment-fee-drag-calculator", "permanent": true },
-    { "source": "/tools/tool-27.html", "destination": "/tools/compound-interest-early-vs-late", "permanent": true },
-    { "source": "/tools/tool-27", "destination": "/tools/compound-interest-early-vs-late", "permanent": true },
-    { "source": "/tools/tool-28.html", "destination": "/tools/daily-habit-true-cost-calculator", "permanent": true },
-    { "source": "/tools/tool-28", "destination": "/tools/daily-habit-true-cost-calculator", "permanent": true },
-    { "source": "/tools/tool-29.html", "destination": "/tools/net-worth-target-calculator", "permanent": true },
-    { "source": "/tools/tool-29", "destination": "/tools/net-worth-target-calculator", "permanent": true },
-    { "source": "/tools/tool-30.html", "destination": "/tools/retirement-wealth-estimator", "permanent": true },
-    { "source": "/tools/tool-30", "destination": "/tools/retirement-wealth-estimator", "permanent": true }
+    {
+      "source": "/tools/tool-01",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-01.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-02.html",
+      "destination": "/tools/coffee-habit-true-cost",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-02",
+      "destination": "/tools/coffee-habit-true-cost",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-03.html",
+      "destination": "/tools/streaming-subscription-cost-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-03",
+      "destination": "/tools/streaming-subscription-cost-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-04.html",
+      "destination": "/tools/eating-out-vs-cooking-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-04",
+      "destination": "/tools/eating-out-vs-cooking-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-05.html",
+      "destination": "/tools/smoking-financial-cost-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-05",
+      "destination": "/tools/smoking-financial-cost-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-06.html",
+      "destination": "/tools/gym-membership-roi-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-06",
+      "destination": "/tools/gym-membership-roi-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-07.html",
+      "destination": "/tools/credit-card-true-cost-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-07",
+      "destination": "/tools/credit-card-true-cost-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-08.html",
+      "destination": "/tools/mortgage-overpayment-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-08",
+      "destination": "/tools/mortgage-overpayment-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-09.html",
+      "destination": "/tools/student-loan-payoff-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-09",
+      "destination": "/tools/student-loan-payoff-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-10.html",
+      "destination": "/tools/car-loan-true-cost-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-10",
+      "destination": "/tools/car-loan-true-cost-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-11.html",
+      "destination": "/tools/buy-now-pay-later-true-cost",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-11",
+      "destination": "/tools/buy-now-pay-later-true-cost",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-12.html",
+      "destination": "/tools/debt-avalanche-vs-snowball",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-12",
+      "destination": "/tools/debt-avalanche-vs-snowball",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-13.html",
+      "destination": "/tools/salary-negotiation-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-13",
+      "destination": "/tools/salary-negotiation-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-14.html",
+      "destination": "/tools/401k-contribution-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-14",
+      "destination": "/tools/401k-contribution-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-15.html",
+      "destination": "/tools/fire-number-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-15",
+      "destination": "/tools/fire-number-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-16.html",
+      "destination": "/tools/inflation-savings-erosion-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-16",
+      "destination": "/tools/inflation-savings-erosion-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-17.html",
+      "destination": "/tools/how-long-will-savings-last",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-17",
+      "destination": "/tools/how-long-will-savings-last",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-18.html",
+      "destination": "/tools/lifestyle-inflation-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-18",
+      "destination": "/tools/lifestyle-inflation-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-19.html",
+      "destination": "/tools/true-cost-of-bigger-house",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-19",
+      "destination": "/tools/true-cost-of-bigger-house",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-20.html",
+      "destination": "/tools/luxury-car-opportunity-cost",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-20",
+      "destination": "/tools/luxury-car-opportunity-cost",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-21.html",
+      "destination": "/tools/true-hourly-rate-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-21",
+      "destination": "/tools/true-hourly-rate-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-22.html",
+      "destination": "/tools/side-hustle-investment-value",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-22",
+      "destination": "/tools/side-hustle-investment-value",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-23.html",
+      "destination": "/tools/rent-vs-buy-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-23",
+      "destination": "/tools/rent-vs-buy-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-24.html",
+      "destination": "/tools/index-fund-vs-stock-picking",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-24",
+      "destination": "/tools/index-fund-vs-stock-picking",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-25.html",
+      "destination": "/tools/emergency-fund-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-25",
+      "destination": "/tools/emergency-fund-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-26.html",
+      "destination": "/tools/investment-fee-drag-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-26",
+      "destination": "/tools/investment-fee-drag-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-27.html",
+      "destination": "/tools/compound-interest-early-vs-late",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-27",
+      "destination": "/tools/compound-interest-early-vs-late",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-28.html",
+      "destination": "/tools/daily-habit-true-cost-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-28",
+      "destination": "/tools/daily-habit-true-cost-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-29.html",
+      "destination": "/tools/net-worth-target-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-29",
+      "destination": "/tools/net-worth-target-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-30.html",
+      "destination": "/tools/retirement-wealth-estimator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tool-30",
+      "destination": "/tools/retirement-wealth-estimator",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
       ]
     },
     {
       "source": "/sitemap.xml",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/tools/coffee-habit-true-cost",
+      "destination": "/coffee-habit-true-cost.html"
+    },
+    {
+      "source": "/tools/streaming-subscription-cost-calculator",
+      "destination": "/streaming-subscription-cost-calculator.html"
+    },
+    {
+      "source": "/tools/eating-out-vs-cooking-calculator",
+      "destination": "/eating-out-vs-cooking-calculator.html"
+    },
+    {
+      "source": "/tools/smoking-financial-cost-calculator",
+      "destination": "/smoking-financial-cost-calculator.html"
+    },
+    {
+      "source": "/tools/gym-membership-roi-calculator",
+      "destination": "/gym-membership-roi-calculator.html"
+    },
+    {
+      "source": "/tools/credit-card-true-cost-calculator",
+      "destination": "/credit-card-true-cost-calculator.html"
+    },
+    {
+      "source": "/tools/mortgage-overpayment-calculator",
+      "destination": "/mortgage-overpayment-calculator.html"
+    },
+    {
+      "source": "/tools/student-loan-payoff-calculator",
+      "destination": "/student-loan-payoff-calculator.html"
+    },
+    {
+      "source": "/tools/car-loan-true-cost-calculator",
+      "destination": "/car-loan-true-cost-calculator.html"
+    },
+    {
+      "source": "/tools/buy-now-pay-later-true-cost",
+      "destination": "/buy-now-pay-later-true-cost.html"
+    },
+    {
+      "source": "/tools/debt-avalanche-vs-snowball",
+      "destination": "/debt-avalanche-vs-snowball.html"
+    },
+    {
+      "source": "/tools/salary-negotiation-calculator",
+      "destination": "/salary-negotiation-calculator.html"
+    },
+    {
+      "source": "/tools/401k-contribution-calculator",
+      "destination": "/401k-contribution-calculator.html"
+    },
+    {
+      "source": "/tools/fire-number-calculator",
+      "destination": "/fire-number-calculator.html"
+    },
+    {
+      "source": "/tools/inflation-savings-erosion-calculator",
+      "destination": "/inflation-savings-erosion-calculator.html"
+    },
+    {
+      "source": "/tools/how-long-will-savings-last",
+      "destination": "/how-long-will-savings-last.html"
+    },
+    {
+      "source": "/tools/lifestyle-inflation-calculator",
+      "destination": "/lifestyle-inflation-calculator.html"
+    },
+    {
+      "source": "/tools/true-cost-of-bigger-house",
+      "destination": "/true-cost-of-bigger-house.html"
+    },
+    {
+      "source": "/tools/luxury-car-opportunity-cost",
+      "destination": "/luxury-car-opportunity-cost.html"
+    },
+    {
+      "source": "/tools/true-hourly-rate-calculator",
+      "destination": "/true-hourly-rate-calculator.html"
+    },
+    {
+      "source": "/tools/side-hustle-investment-value",
+      "destination": "/side-hustle-investment-value.html"
+    },
+    {
+      "source": "/tools/rent-vs-buy-calculator",
+      "destination": "/rent-vs-buy-calculator.html"
+    },
+    {
+      "source": "/tools/index-fund-vs-stock-picking",
+      "destination": "/index-fund-vs-stock-picking.html"
+    },
+    {
+      "source": "/tools/emergency-fund-calculator",
+      "destination": "/emergency-fund-calculator.html"
+    },
+    {
+      "source": "/tools/investment-fee-drag-calculator",
+      "destination": "/investment-fee-drag-calculator.html"
+    },
+    {
+      "source": "/tools/compound-interest-early-vs-late",
+      "destination": "/compound-interest-early-vs-late.html"
+    },
+    {
+      "source": "/tools/daily-habit-true-cost-calculator",
+      "destination": "/daily-habit-true-cost-calculator.html"
+    },
+    {
+      "source": "/tools/net-worth-target-calculator",
+      "destination": "/net-worth-target-calculator.html"
+    },
+    {
+      "source": "/tools/retirement-wealth-estimator",
+      "destination": "/retirement-wealth-estimator.html"
     }
   ]
 }

@@ -247,7 +247,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
     <div class="pdf-price">$9</div>
     <div class="pdf-price-note">One-time · Instant download<br>No subscription ever</div>
   </div>
-  <button class="pdf-pay-btn" id="pdf-pay-btn" onclick="startCheckout()">
+  <button class="pdf-pay-btn" id="pdf-pay-btn" onclick="window.open('https://buy.stripe.com/dRm3cubrKeEY8BP6ve1RC00','_blank')">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
     Get My PDF Report — $9
   </button>
@@ -268,72 +268,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   </div>
 </footer>
 <script>
-function startCheckout(){
-  var btn=document.getElementById('pdf-pay-btn');
-  btn.disabled=true;btn.textContent='Opening checkout...';
-  // Save current page results to sessionStorage so success page can generate PDF
-  var data={
-    title:document.title,
-    url:window.location.href,
-    toolName: document.querySelector('.tool-h1') ? document.querySelector('.tool-h1').textContent : document.title,
-    inputs:[],
-    results:[],
-    insight:''
-  };
-  // Save inputs
-  var sliders=document.querySelectorAll('input[type=range]');
-  var labels=document.querySelectorAll('.field label');
-  sliders.forEach(function(sl,i){
-    var valEl=document.getElementById('v-'+sl.id.replace('s-',''));
-    var lbl=labels[i]?labels[i].childNodes[0].textContent.trim():'Input '+(i+1);
-    data.inputs.push({label:lbl,value:valEl?valEl.textContent:'—'});
-  });
-  // Save results
-  document.querySelectorAll('.bd-row').forEach(function(row){
-    var lbl=row.querySelector('.bd-lbl');var val=row.querySelector('.bd-val');
-    if(lbl&&val) data.results.push({label:lbl.textContent.trim(),value:val.textContent.trim()});
-  });
-  // Save hero number
-  var hero=document.getElementById('r-hero');
-  var sub=document.getElementById('r-sub');
-  data.hero=hero?hero.textContent:'';
-  data.heroSub=sub?sub.textContent:'';
-  // Save insight
-  var ins=document.getElementById('r-insight');
-  data.insight=ins?ins.innerText||ins.textContent:'';
-  // Save generatePDF function source for reconstruction
-  localStorage.setItem('wd_pdf_data', JSON.stringify(data));
-  
-  if(!window.Stripe){
-    var s=document.createElement('script');
-    s.src='https://js.stripe.com/v3/';
-    s.onload=openStripeCheckout;
-    document.head.appendChild(s);
-  }else{openStripeCheckout();}
-}
-function openStripeCheckout(){
-  try {
-    var stripe=Stripe('pk_live_51T7nPkBLLrWtnUxCz7MIxSdxt1T3q4fx50WYyfJ0JJVIkYNyTMOgiMy9StvNmzz0Yx75T9WYYr2q5vYiHSg72ZZN00l76JDKn4');
-    stripe.redirectToCheckout({
-      lineItems:[{price:'price_1T8XQsBLLrWtnUxCAwinaoZS',quantity:1}],
-      mode:'payment',
-      successUrl:window.location.origin+'/payment-success.html?session_id={CHECKOUT_SESSION_ID}',
-      cancelUrl:window.location.href,
-    }).then(function(r){
-      if(r.error){
-        alert('Payment error: '+r.error.message);
-        var btn=document.getElementById('pdf-pay-btn');
-        if(btn){btn.disabled=false;btn.textContent='Get My PDF Report — $9';}
-      }
-    });
-  } catch(e) {
-    alert('Checkout error: '+e.message);
-    var btn=document.getElementById('pdf-pay-btn');
-    if(btn){btn.disabled=false;btn.textContent='Get My PDF Report — $9';}
-  }
-}
-  });
-}
+
 
 function fvAnnuity(pmt, annualRate, years) {
   const r = annualRate / 12;

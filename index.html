@@ -766,6 +766,8 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 36
 .pdf-pay-btn:hover{background:#166534;transform:translateY(-1px);}
 .pdf-pay-btn:disabled{opacity:.6;cursor:not-allowed;transform:none;}
 .pdf-secure{font-size:11px;color:var(--faint);margin-top:10px;display:flex;align-items:center;justify-content:center;gap:4px;}
+.pdf-btn-inner{display:flex;flex-direction:column;align-items:flex-start;}
+.pdf-sub{font-size:11px;font-weight:500;color:rgba(255,255,255,.6);margin-top:1px;}
 
 </style>
 </head>
@@ -1026,11 +1028,23 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 36
 <div style="max-width:1080px;margin:0 auto;padding:0 22px 40px;display:flex;justify-content:center;">
   <div class="pdf-gate">
     <div class="pdf-gate-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="#15803d" stroke-width="1.5" fill="none"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="#15803d" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-    <div class="pdf-gate-title">Get Your Full PDF Report</div>
-    <div class="pdf-gate-sub">Your exact numbers, projections, and insight — formatted as a professional PDF.</div>
-    <button id="pdf-pay-btn" onclick="buyPDF()" class="pdf-pay-btn">
+    <div class="pdf-gate-title">Download Your Full Report</div>
+    <div class="pdf-gate-sub">Get your personalized analysis as a formatted PDF — your exact numbers, projections, and action steps.</div>
+    <div style="background:var(--green-light);border-radius:12px;padding:16px 20px;margin:0 auto 20px;max-width:340px;text-align:left;">
+      <div style="font-size:13px;color:var(--green);font-weight:500;line-height:1.8;">
+        ✓ &nbsp;Your exact calculator results &amp; full breakdown<br>
+        ✓ &nbsp;Projections and milestones timeline<br>
+        ✓ &nbsp;Personalized action steps<br>
+        ✓ &nbsp;Instant download — yours to keep
+      </div>
+    </div>
+    <div style="margin-bottom:16px;">
+      <span style="font-size:32px;font-weight:800;letter-spacing:-.04em;color:var(--ink);">$9</span>
+      <span style="font-size:13px;color:var(--muted);margin-left:8px;">One-time · Instant download<br>No subscription ever</span>
+    </div>
+    <button id="pdf-pay-btn" onclick="window.open('https://buy.stripe.com/dRm3cubrKeEY8BP6ve1RC00','_blank')" class="pdf-pay-btn" style="width:auto;padding:14px 40px;">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
-      <div class="pdf-btn-inner"><span>Get My PDF Report — $9</span><span class="pdf-sub">One-time · Instant download</span></div>
+      Get My PDF Report — $9
     </button>
     <div class="pdf-secure">🔒 Secured by Stripe · SSL encrypted</div>
   </div>
@@ -1208,47 +1222,6 @@ function initSliders(){
 window.addEventListener('resize',calc);
 window.addEventListener('DOMContentLoaded',()=>{initSliders();calc();});
 
-function buyPDF(){
-  var btn=document.getElementById('pdf-pay-btn');
-  btn.disabled=true;btn.innerHTML='Processing...';
-  var data={tool:'Lifetime Financial Impact Simulator',url:window.location.href};
-  localStorage.setItem('wd_pdf_data',JSON.stringify(data));
-  if(!window.Stripe){
-    var s=document.createElement('script');s.src='https://js.stripe.com/v3/';
-    s.onload=openStripeCheckout;document.head.appendChild(s);
-  }else{openStripeCheckout();}
-}
-function openStripeCheckout(){
-  try {
-    var stripe=Stripe('pk_live_51T7nPkBLLrWtnUxCz7MIxSdxt1T3q4fx50WYyfJ0JJVIkYNyTMOgiMy9StvNmzz0Yx75T9WYYr2q5vYiHSg72ZZN00l76JDKn4');
-    stripe.redirectToCheckout({
-      lineItems:[{price:'price_1T8XQsBLLrWtnUxCAwinaoZS',quantity:1}],
-      mode:'payment',
-      successUrl:window.location.origin+'/payment-success.html?session_id={CHECKOUT_SESSION_ID}',
-      cancelUrl:window.location.href,
-    }).then(function(r){
-      if(r.error){
-        alert('Payment error: '+r.error.message);
-        var btn=document.getElementById('pdf-pay-btn');
-        if(btn){btn.disabled=false;btn.textContent='Get My PDF Report — $9';}
-      }
-    });
-  } catch(e) {
-    alert('Checkout error: '+e.message);
-    var btn=document.getElementById('pdf-pay-btn');
-    if(btn){btn.disabled=false;btn.textContent='Get My PDF Report — $9';}
-  }
-}
-      }
-    });
-  } catch(e) {
-    alert('Checkout error: '+e.message);
-    var btn=document.getElementById('pdf-pay-btn');
-    if(btn){btn.disabled=false;btn.textContent='Get My PDF Report — $9';}
-  }
-}
-  });
-}
 
 </script>
 </body>

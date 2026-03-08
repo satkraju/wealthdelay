@@ -168,6 +168,23 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
 
 /* ── Email Capture Strip ── */
 
+
+.pdf-gate{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);border:1.5px solid var(--green-mid);overflow:hidden;max-width:1080px;margin:0 auto 32px;padding:28px;text-align:center;}
+.pdf-gate-icon{width:48px;height:48px;background:var(--green-light);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
+.pdf-gate-title{font-size:20px;font-weight:700;letter-spacing:-.03em;margin-bottom:8px;}
+.pdf-gate-sub{font-size:14px;color:var(--muted);max-width:380px;margin:0 auto 20px;line-height:1.6;}
+.pdf-wyg{background:var(--green-light);border-radius:10px;padding:14px 18px;margin-bottom:20px;text-align:left;max-width:400px;margin-left:auto;margin-right:auto;}
+.pdf-wyg-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--ink);margin-bottom:6px;}
+.pdf-wyg-item:last-child{margin-bottom:0;}
+.pdf-wyg-item::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0;}
+.pdf-price-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:18px;}
+.pdf-price{font-size:32px;font-weight:700;letter-spacing:-.04em;}
+.pdf-price-note{font-size:12px;color:var(--muted);text-align:left;line-height:1.5;}
+.pdf-pay-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--green);color:white;font-family:var(--font);font-size:15px;font-weight:600;padding:14px 32px;border-radius:40px;border:none;cursor:pointer;letter-spacing:-.02em;transition:all .15s;box-shadow:0 4px 16px rgba(21,128,61,.3);width:100%;max-width:320px;}
+.pdf-pay-btn:hover{background:#166534;transform:translateY(-1px);}
+.pdf-pay-btn:disabled{opacity:.6;cursor:not-allowed;transform:none;}
+.pdf-secure{font-size:11px;color:var(--faint);margin-top:10px;display:flex;align-items:center;justify-content:center;gap:4px;}
+
 </style>
 </head>
 <body>
@@ -207,13 +224,28 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
 <section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is overpaying a mortgage always the best use of money?<div class="faq-ico">+</div></div><div class="faq-a">Not always. If your mortgage rate (e.g. 3.5%) is lower than your expected investment return (e.g. 7%), investing the extra may build more wealth. At high rates (6.5%+), overpaying is often the better guaranteed return.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What happens after the mortgage is paid off?<div class="faq-ico">+</div></div><div class="faq-a">Your monthly payment becomes free cash. Reinvesting it (as this tool models) can build significant wealth. The 'Freedom Fund' metric shows exactly how much.</div></div></section>
   </div>
 
-<div class="pdf-wrap">
-  <button class="pdf-btn" onclick="generatePDF()">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4a2 2 0 012-2h5.586A2 2 0 0113 2.586L15.414 5A2 2 0 0116 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" stroke="white" stroke-width="1.5" fill="none"/><path d="M13 2v3a1 1 0 001 1h3M7 13h6M7 10h4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
-    <div class="pdf-btn-inner">
-      <span>Download Your Free Report</span>
-      <span class="pdf-sub">PDF · Instant · No signup</span>
-    </div>
+<div class="pdf-gate">
+  <div class="pdf-gate-icon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="#15803d" stroke-width="1.5" fill="none"/><path d="M14 2v6h6M9 13h6M9 17h4" stroke="#15803d" stroke-width="1.5" stroke-linecap="round"/></svg>
+  </div>
+  <div class="pdf-gate-title">Download Your Full Report</div>
+  <div class="pdf-gate-sub">Get your personalized analysis as a formatted PDF — your exact numbers, projections, and action steps.</div>
+  <div class="pdf-wyg">
+    <div class="pdf-wyg-item">Your exact calculator results &amp; full breakdown</div>
+    <div class="pdf-wyg-item">Projections and milestones timeline</div>
+    <div class="pdf-wyg-item">Personalized action steps</div>
+    <div class="pdf-wyg-item">Instant download — yours to keep</div>
+  </div>
+  <div class="pdf-price-row">
+    <div class="pdf-price">$9</div>
+    <div class="pdf-price-note">One-time · Instant download<br>No subscription ever</div>
+  </div>
+  <button class="pdf-pay-btn" id="pdf-pay-btn" onclick="startCheckout()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+    Get My PDF Report — $9
+  </button>
+  <div class="pdf-secure">🔒 Secured by Stripe · SSL encrypted</div>
+</div>
   </button>
 </div>
 <section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/tools/credit-card-true-cost-calculator">Credit Card Cost</a><a class="related-link" href="/tools/rent-vs-buy-calculator">Rent vs Buy</a><a class="related-link" href="/tools/true-cost-of-bigger-house">Bigger House Cost</a></div></section>
@@ -227,6 +259,70 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
     <a href="/disclaimer.html">Disclaimer</a>
     <a href="/about.html">About</a>
   </div>
+<script>
+
+function startCheckout(){
+  var btn=document.getElementById('pdf-pay-btn');
+  btn.disabled=true;btn.textContent='Opening checkout...';
+  // Save current page results to sessionStorage so success page can generate PDF
+  var data={
+    title:document.title,
+    url:window.location.href,
+    toolName: document.querySelector('.tool-h1') ? document.querySelector('.tool-h1').textContent : document.title,
+    inputs:[],
+    results:[],
+    insight:''
+  };
+  // Save inputs
+  var sliders=document.querySelectorAll('input[type=range]');
+  var labels=document.querySelectorAll('.field label');
+  sliders.forEach(function(sl,i){
+    var valEl=document.getElementById('v-'+sl.id.replace('s-',''));
+    var lbl=labels[i]?labels[i].childNodes[0].textContent.trim():'Input '+(i+1);
+    data.inputs.push({label:lbl,value:valEl?valEl.textContent:'—'});
+  });
+  // Save results
+  document.querySelectorAll('.bd-row').forEach(function(row){
+    var lbl=row.querySelector('.bd-lbl');var val=row.querySelector('.bd-val');
+    if(lbl&&val) data.results.push({label:lbl.textContent.trim(),value:val.textContent.trim()});
+  });
+  // Save hero number
+  var hero=document.getElementById('r-hero');
+  var sub=document.getElementById('r-sub');
+  data.hero=hero?hero.textContent:'';
+  data.heroSub=sub?sub.textContent:'';
+  // Save insight
+  var ins=document.getElementById('r-insight');
+  data.insight=ins?ins.innerText||ins.textContent:'';
+  // Save generatePDF function source for reconstruction
+  localStorage.setItem('wd_pdf_data', JSON.stringify(data));
+  
+  if(!window.Stripe){
+    var s=document.createElement('script');
+    s.src='https://js.stripe.com/v3/';
+    s.onload=openStripeCheckout;
+    document.head.appendChild(s);
+  }else{openStripeCheckout();}
+}
+function openStripeCheckout(){
+  var stripe=Stripe('pk_live_51T7nPkBLLrWtnUxCz7MIxSdxt1T3q4fx50WYyfJ0JJVIkYNyTMOgiMy9StvNmzz0Yx75T9WYYr2q5vYiHSg72ZZN00l76JDKn4');
+  stripe.redirectToCheckout({
+    lineItems:[{price:'price_1T8XQsBLLrWtnUxCAwinaoZS',quantity:1}],
+    mode:'payment',
+    successUrl:window.location.origin+'/payment-success.html?session_id={CHECKOUT_SESSION_ID}',
+    cancelUrl:window.location.href,
+  }).then(function(r){
+    if(r.error){
+      var btn=document.getElementById('pdf-pay-btn');
+      btn.disabled=false;
+      btn.innerHTML='<svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg> Get My PDF Report — $9';
+    }
+  });
+}
+
+  });
+}
+</script>
 </footer>
 <script>
 

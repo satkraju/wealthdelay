@@ -132,7 +132,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
 .footer-links a{font-size:12px;color:var(--muted);text-decoration:none;}
 .footer-links a:hover{color:var(--ink);}
 .footer-copy{font-size:12px;color:var(--faint);margin-top:10px;}
-.disclaimer{max-width:1080px;margin:0 auto;padding:0 22px 24px;font-size:12px;color:var(--faint);line-height:1.7;text-align:center;}
+.disclaimer{max-width:1080px;margin:48px auto 0;padding:24px 28px;font-size:12px;color:var(--ink3,#6B6B6B);line-height:1.75;text-align:center;background:var(--cream2,#F7F2E8);border:1px solid var(--border,#E5DDD0);border-radius:12px;}
+.disclaimer strong{color:var(--ink2,#3D3D3D);font-weight:700;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 .tool-hero{animation:fadeUp .45s ease both;}
 .workspace{animation:fadeUp .45s .1s ease both;}
@@ -154,10 +155,13 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px
   text-align: center; letter-spacing: -0.01em; outline: none;
   box-shadow: 0 0 0 3px rgba(21,128,61,.15); font-family: var(--font);
 }
-.related-wrap{padding:40px 24px 0;max-width:960px;margin:0 auto;}
-.related-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
-.related-link{padding:8px 16px;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;transition:border-color .15s,box-shadow .15s;}
-.related-link:hover{border-color:var(--green);box-shadow:0 0 0 2px rgba(21,128,61,.15);}
+.related-wrap{padding:56px 24px 0;max-width:1080px;margin:0 auto;}
+.related-wrap .section-title{font-size:22px;font-weight:800;letter-spacing:-.03em;color:var(--ink);margin-bottom:20px;text-align:left;}
+.related-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:0;}
+.related-link{padding:16px 18px;background:var(--white);border:1px solid var(--border);border-radius:12px;font-size:13px;font-weight:600;color:var(--ink2);text-decoration:none;transition:all .18s;display:flex;align-items:center;justify-content:space-between;gap:8px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.related-link::after{content:'→';font-size:14px;color:var(--green);opacity:0;transform:translateX(-4px);transition:all .18s;}
+.related-link:hover{border-color:#BBF7D0;background:#F0FDF4;color:var(--green);box-shadow:0 4px 16px rgba(22,163,74,.1);transform:translateY(-1px);}
+.related-link:hover::after{opacity:1;transform:translateX(0);}
 
 /* ── PDF Report Button ── */
 .pdf-wrap{max-width:1080px;margin:0 auto;padding:0 22px 32px;display:flex;justify-content:center;}

@@ -448,19 +448,19 @@ function animateCount(el, target, duration) {
 function getRealityTranslation(amount) {
   var a = Math.abs(amount);
   if (!isFinite(a) || a < 1000) return null;
-  if (a >= 1000000) return 'That’s over a million dollars — a complete financial independence fund.';
-  if (a >= 750000) return 'That’s enough for a comfortable full retirement.';
-  if (a >= 500000) return 'That’s a 4-bedroom house paid in cash in most US cities.';
-  if (a >= 400000) return 'That’s 4 years of college education at a top university.';
-  if (a >= 250000) return 'That’s a 10% down payment on a \.5M home.';
-  if (a >= 200000) return 'That’s a new Tesla Model S — every year for 4 years.';
-  if (a >= 150000) return 'That’s 3 years of the average US household income.';
-  if (a >= 100000) return 'That’s over  K — a full year salary for most Americans.';
-  if (a >= 75000) return 'That’s enough to fully fund a Roth IRA for 15 years.';
-  if (a >= 50000) return 'That’s a year of tuition at a top US university.';
-  if (a >= 25000) return 'That’s a used car — paid for in cash.';
-  if (a >= 10000) return 'That’s a month of mortgage payments on a  K home.';
-  return 'That’s real money that could be working for you.';
+  if (a >= 1000000) return "That’s over a million dollars — a complete financial independence fund.";
+  if (a >= 750000) return "That’s enough for a comfortable full retirement.";
+  if (a >= 500000) return "That’s a 4-bedroom house paid in cash in most US cities.";
+  if (a >= 400000) return "That’s 4 years of college education at a top university.";
+  if (a >= 250000) return "That’s a 10% down payment on a $2.5M home.";
+  if (a >= 200000) return "That’s a new Tesla Model S — every year for 4 years.";
+  if (a >= 150000) return "That’s 3 years of the average US household income.";
+  if (a >= 100000) return "That’s over $100K — a full year salary for most Americans.";
+  if (a >= 75000) return "That’s enough to fully fund a Roth IRA for 15 years.";
+  if (a >= 50000) return "That’s a year of tuition at a top US university.";
+  if (a >= 25000) return "That’s a used car — paid for in cash.";
+  if (a >= 10000) return "That’s a month of mortgage payments on a $400K home.";
+  return "That’s real money that could be working for you.";
 }
 
 function fvAnnuity(pmt, annualRate, years) {

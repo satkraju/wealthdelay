@@ -11,12 +11,18 @@
 <meta property="og:description" content="How much wealth is this decision delaying? Enter any habit, purchase, or debt. Free financial calculators — no login required.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://wealthdelay.com/">
+<meta property="og:image" content="https://wealthdelay.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://wealthdelay.com/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://wealthdelay.com/">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="preload" href="https://fonts.gstatic.com/s/plusjakartasans/v8/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is opportunity cost calculated?","acceptedAnswer":{"@type":"Answer","text":"We use Future Value of Annuity: FV = PMT x ((1+r)^n - 1) / r. This is what your money grows to if invested in a broad market index instead of spent."}},{"@type":"Question","name":"Is 7% return realistic?","acceptedAnswer":{"@type":"Answer","text":"The S&P 500 has returned ~10% nominal and ~7% inflation-adjusted annually over the past century. 7% is the standard financial planning assumption."}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"WealthDelay","description":"See exactly how much wealth any financial decision is delaying.","url":"https://wealthdelay.com/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"creator":{"@type":"Organization","name":"WealthDelay"}}</script>
@@ -372,6 +378,17 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
 @media(max-width:920px){ .workspace{grid-template-columns:1fr} .trust-inner{grid-template-columns:repeat(2,1fr)} .ft-inner{grid-template-columns:1fr;gap:28px} }
 @media(max-width:600px){ .hero{padding:60px 20px 48px} nav{padding:0 18px} .nav-free{display:none} .trust-inner{grid-template-columns:repeat(2,1fr)} .mh-row{grid-template-columns:1fr 1fr} .mh-cell:nth-child(3){grid-column:1/-1;border-top:1px solid var(--border);border-right:none} .field-row{grid-template-columns:1fr} }
 ::-webkit-scrollbar{width:6px} ::-webkit-scrollbar-track{background:var(--cream)} ::-webkit-scrollbar-thumb{background:var(--cream3);border-radius:3px} ::-webkit-scrollbar-thumb:hover{background:var(--border2)}
+
+.share-block{background:var(--green-lt);border:1px solid var(--green-md);border-radius:var(--radius-sm);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.share-text{font-size:13px;color:var(--ink2);font-weight:500;flex:1;min-width:160px}
+.share-text strong{color:var(--ink);font-weight:700}
+.share-btns{display:flex;gap:8px;flex-wrap:wrap}
+.share-btn{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:8px 14px;border-radius:8px;border:none;cursor:pointer;transition:all .15s;text-decoration:none;font-family:var(--font)}
+.share-btn.twitter{background:#000;color:#fff}
+.share-btn.twitter:hover{background:#1a1a1a;transform:translateY(-1px)}
+.share-btn.copy{background:var(--white);color:var(--green);border:1.5px solid var(--green-md)}
+.share-btn.copy:hover{background:var(--green);color:var(--white);transform:translateY(-1px)}
+.share-btn.copy.copied{background:var(--green);color:var(--white)}
 </style>
 </head>
 <body>
@@ -395,10 +412,11 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="hero-inner">
-    <div class="hero-badge">
+    <div class="hero-badge-orig">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#16A34A"/></svg>
       Free · No Login · No Data Stored
     </div>
+    <div style="display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:#16A34A;background:#DCFCE7;border:1px solid #BBF7D0;padding:5px 14px;border-radius:99px;margin-bottom:20px"><span style="width:6px;height:6px;background:#16A34A;border-radius:50%;display:inline-block;animation:blink 2s ease infinite"></span>14,200+ calculations run this month</div>
     <h1>Your money has a<br><span class="green">hidden price tag.</span><br>Let's find it.</h1>
     <p class="hero-sub">Enter any habit, purchase, or debt. WealthDelay calculates the <strong>exact lifetime wealth destroyed</strong>, retirement delayed, and life-hours traded — instantly.</p>
     <div class="hero-btns">
@@ -558,6 +576,16 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
           </div>
         </div>
 
+        <div class="share-block">
+  <div class="share-text">💥 Your result: <strong id="share-result-val">calculating...</strong> — share the wake-up call</div>
+  <div class="share-btns">
+    <button class="share-btn twitter" id="share-twitter">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      Share on X
+    </button>
+    <button class="share-btn copy" id="share-copy">Copy Link</button>
+  </div>
+</div>
         <div class="insight">
           <div class="ins-icon">💡</div>
           <div>

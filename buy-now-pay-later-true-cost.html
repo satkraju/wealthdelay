@@ -5,6 +5,7 @@
 <title>Buy Now Pay Later True Cost Calculator — WealthDelay</title>
 <meta name="description" content="See the real cost of BNPL plans including interest and the wealth you lose by spending instead of investing.">
 <link rel="canonical" href="https://wealthdelay.com/buy-now-pay-later-true-cost">
+<link rel="preload" href="https://fonts.gstatic.com/s/plusjakartasans/v8/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,14 +13,20 @@
 <meta property="og:description" content="See the real cost of BNPL plans including interest and the wealth you lose by spending instead of investing.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://wealthdelay.com/buy-now-pay-later-true-cost">
+<meta property="og:image" content="https://wealthdelay.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://wealthdelay.com/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Buy Now Pay Later True Cost Calculator — WealthDelay">
 <meta name="twitter:description" content="See the real cost of BNPL plans including interest and the wealth you lose by spending instead of investing.">
 <meta property="og:url" content="https://wealthdelay.com/buy-now-pay-later-true-cost">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":'Buy Now Pay Later True Cost Calculator',"description":'See the real cost of BNPL plans including interest and the wealth you lose by spending instead of investing.',"url":"https://wealthdelay.com/buy-now-pay-later-true-cost","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":'Is 0% BNPL actually free?',"acceptedAnswer":{"@type":"Answer","text":"There's no interest if paid on time — but the opportunity cost of spending that money instead of investing it is very real, as this tool shows."}},{"@type":"Question","name":'When is BNPL a mistake?',"acceptedAnswer":{"@type":"Answer","text":"When you use it to buy something you couldn't otherwise afford, miss a payment (fees often kick in), or use it so often the cumulative opportunity cost becomes significant."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Buy Now Pay Later True Cost Calculator","description":"See the real cost of BNPL plans including interest and the wealth you lose by spending instead of investing.","url":"https://wealthdelay.com/buy-now-pay-later-true-cost","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is 0% BNPL actually free?","acceptedAnswer":{"@type":"Answer","text":"There\u2019s no interest if paid on time — but the opportunity cost of spending that money instead of investing it is very real, as this tool shows."}},{"@type":"Question","name":"When is BNPL a mistake?","acceptedAnswer":{"@type":"Answer","text":"When you use it to buy something you couldn\u2019t otherwise afford, miss a payment (fees often kick in), or use it so often the cumulative opportunity cost becomes significant."}}]}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"WealthDelay","item":"https://wealthdelay.com"},{"@type":"ListItem","position":2,"name":"Debt Calculators","item":"https://wealthdelay.com"},{"@type":"ListItem","position":3,"name":"Buy Now Pay Later True Cost Calculator","item":"https://wealthdelay.com/buy-now-pay-later-true-cost"}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
 <style>:root {
@@ -228,6 +235,35 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
 .ft-links a:hover{color:#16A34A;}
 @media(max-width:700px){.ft-inner{grid-template-columns:1fr;gap:28px;}.ft-bottom{flex-direction:column;align-items:flex-start;}}
 
+
+/* ── Share Result ── */
+.share-block{background:var(--green-light);border:1px solid var(--green-mid);border-radius:var(--radius);padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+.share-text{font-size:13px;color:var(--ink2);font-weight:500;flex:1;min-width:160px;}
+.share-text strong{color:var(--ink);font-weight:700;}
+.share-btns{display:flex;gap:8px;flex-wrap:wrap;}
+.share-btn{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:8px 14px;border-radius:8px;border:none;cursor:pointer;transition:all .15s;text-decoration:none;font-family:var(--font);}
+.share-btn.twitter{background:#000;color:#fff;}
+.share-btn.twitter:hover{background:#1a1a1a;transform:translateY(-1px);}
+.share-btn.copy{background:var(--white);color:var(--green);border:1.5px solid var(--green-mid);}
+.share-btn.copy:hover{background:var(--green);color:var(--white);transform:translateY(-1px);}
+.share-btn.copy.copied{background:var(--green);color:var(--white);}
+/* ── Social proof ── */
+.social-proof{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);font-weight:500;background:var(--bg);border:1px solid var(--border);padding:5px 12px;border-radius:99px;margin-bottom:16px;}
+.social-proof-dot{width:6px;height:6px;background:var(--green);border-radius:50%;animation:pulse 2s ease infinite;}
+/* ── Aff card ── */
+.aff-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden;}
+.aff-head{padding:13px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
+.aff-disc{font-size:10px;color:var(--faint);font-weight:500;}
+.aff-rlbl{font-size:11px;font-weight:700;color:var(--ink3,#52525B);text-transform:uppercase;letter-spacing:.07em;margin:10px 20px 4px;}
+.aff-row{display:flex;align-items:center;justify-content:space-between;padding:13px 20px;border-bottom:1px solid var(--border);text-decoration:none;transition:background .1s;gap:12px;}
+.aff-row:last-child{border-bottom:none;}
+.aff-row:hover{background:var(--bg);}
+.aff-info{display:flex;flex-direction:column;gap:2px;}
+.aff-name{font-size:13px;color:var(--ink);font-weight:700;}
+.aff-desc{font-size:11px;color:var(--muted);font-weight:500;}
+.aff-btn{font-size:12px;font-weight:700;color:var(--green);background:var(--green-light);border:1px solid var(--green-mid);padding:6px 14px;border-radius:7px;white-space:nowrap;transition:all .15s;}
+.aff-row:hover .aff-btn{background:var(--green-mid);}
+
 </style>
 </head>
 <body>
@@ -256,6 +292,7 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
       <div class="mh-top">
         <div class="mh-eyebrow">True Opportunity Cost</div>
         <div class="mh-number" id="r-hero">—</div>
+        <div id="r-reality" style="font-size:12px;color:var(--green);font-weight:600;margin-top:6px;display:none"></div>
         <div class="mh-sub" id="r-sub">calculating&#8230;</div>
       </div>
       <div class="mh-row" id="r-metrics"></div>
@@ -291,9 +328,7 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   </button>
   <div class="pdf-secure">🔒 Secured by Stripe · SSL encrypted</div>
 </div>
-  </button>
-</div>
-<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/credit-card-true-cost-calculator">Credit Card Cost</a><a class="related-link" href="/car-loan-true-cost-calculator">Car Loan Cost</a><a class="related-link" href="/debt-avalanche-vs-snowball">Debt Avalanche vs Snowball</a></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/credit-card-true-cost-calculator.html">Credit Card Cost</a><a class="related-link" href="/car-loan-true-cost-calculator.html">Car Loan Cost</a><a class="related-link" href="/debt-avalanche-vs-snowball.html">Debt Avalanche vs Snowball</a></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
   <div class="ft-inner">
@@ -332,6 +367,88 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
 </footer>
 <script>
 
+
+
+
+function initShare(toolName, toolUrl) {
+  var heroEl = document.getElementById('r-hero');
+  var result = heroEl ? heroEl.textContent.trim() : 'a surprising result';
+  var tweetText = 'I just found out ' + toolName + ' is costing me ' + result + ' in lifetime wealth 🤯 Calculate yours free:';
+  var tweetUrl = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweetText) + '&url=' + encodeURIComponent(toolUrl);
+  var copyText = toolName + ' is costing me ' + result + ' in lifetime wealth. Calculate yours: ' + toolUrl;
+  var tBtn = document.getElementById('share-twitter');
+  var cBtn = document.getElementById('share-copy');
+  var sResult = document.getElementById('share-result-val');
+  if (sResult) sResult.textContent = result;
+  if (tBtn) tBtn.onclick = function() { window.open(tweetUrl, '_blank', 'width=550,height=420'); gtag && gtag('event','share',{method:'twitter',content_type:'result',item_id:toolUrl}); };
+  if (cBtn) cBtn.onclick = function() {
+    navigator.clipboard ? navigator.clipboard.writeText(copyText).then(function(){
+      cBtn.textContent = '✓ Copied!'; cBtn.classList.add('copied');
+      setTimeout(function(){cBtn.textContent='Copy Link';cBtn.classList.remove('copied');}, 2500);
+      gtag && gtag('event','share',{method:'copy',content_type:'result',item_id:toolUrl});
+    }) : (function(){var t=document.createElement('textarea');t.value=copyText;document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t);cBtn.textContent='✓ Copied!';cBtn.classList.add('copied');setTimeout(function(){cBtn.textContent='Copy Link';cBtn.classList.remove('copied');},2500);})();
+  };
+}
+function updateShare() {
+  var heroEl = document.getElementById('r-hero');
+  if (!heroEl) return;
+  var result = heroEl.textContent.trim();
+  var sResult = document.getElementById('share-result-val');
+  if (sResult) sResult.textContent = result;
+}
+
+
+
+function guardInputs() {
+  var ageEl = document.getElementById('s-age');
+  var retEl = document.getElementById('s-ret');
+  if (ageEl && retEl) {
+    ageEl.addEventListener('input', function() {
+      var age = parseFloat(ageEl.value), ret = parseFloat(retEl.value);
+      if (age >= ret) { retEl.value = Math.min(parseFloat(retEl.max), age + 1); retEl.dispatchEvent(new Event('input',{bubbles:true})); }
+    });
+    retEl.addEventListener('input', function() {
+      var age = parseFloat(ageEl.value), ret = parseFloat(retEl.value);
+      if (ret <= age) { ageEl.value = Math.max(parseFloat(ageEl.min), ret - 1); ageEl.dispatchEvent(new Event('input',{bubbles:true})); }
+    });
+  }
+}
+
+
+function animateCount(el, target, duration) {
+  if (!el || !isFinite(target) || target === 0) return;
+  var start = 0, startTime = null;
+  var fmt = window.fmt || function(n){return '$'+Math.round(Math.abs(n)).toLocaleString();};
+  function step(ts) {
+    if (!startTime) startTime = ts;
+    var progress = Math.min((ts - startTime) / duration, 1);
+    var ease = 1 - Math.pow(1 - progress, 3);
+    var current = Math.floor(ease * target);
+    el.textContent = fmt(current);
+    if (progress < 1) requestAnimationFrame(step);
+    else el.textContent = fmt(target);
+  }
+  requestAnimationFrame(step);
+}
+
+
+function getRealityTranslation(amount) {
+  var a = Math.abs(amount);
+  if (!isFinite(a) || a < 1000) return null;
+  if (a >= 1000000) return 'That’s over a million dollars — a complete financial independence fund.';
+  if (a >= 750000) return 'That’s enough for a comfortable full retirement.';
+  if (a >= 500000) return 'That’s a 4-bedroom house paid in cash in most US cities.';
+  if (a >= 400000) return 'That’s 4 years of college education at a top university.';
+  if (a >= 250000) return 'That’s a 10% down payment on a \.5M home.';
+  if (a >= 200000) return 'That’s a new Tesla Model S — every year for 4 years.';
+  if (a >= 150000) return 'That’s 3 years of the average US household income.';
+  if (a >= 100000) return 'That’s over  K — a full year salary for most Americans.';
+  if (a >= 75000) return 'That’s enough to fully fund a Roth IRA for 15 years.';
+  if (a >= 50000) return 'That’s a year of tuition at a top US university.';
+  if (a >= 25000) return 'That’s a used car — paid for in cash.';
+  if (a >= 10000) return 'That’s a month of mortgage payments on a  K home.';
+  return 'That’s real money that could be working for you.';
+}
 
 function fvAnnuity(pmt, annualRate, years) {
   const r = annualRate / 12;
@@ -449,6 +566,8 @@ function calc() {
   var fvOpp  = fvLump(price, annR, years);
   var mult   = (interestPaid + fvOpp) / Math.max(price, 1);
   document.getElementById('r-hero').textContent = fmt(fvOpp);
+  var _heroNumRaw = parseFloat(String(document.getElementById('r-hero').textContent).replace(/[$,KMB]/g,'')) * (String(document.getElementById('r-hero').textContent).includes('M')?1000000:String(document.getElementById('r-hero').textContent).includes('K')?1000:1);
+  animateCount(document.getElementById('r-hero'), _heroNumRaw, 1200);
   document.getElementById('r-hero').style.color = 'var(--red)';
   document.getElementById('r-sub').textContent  = fmt(fvOpp) + ' opportunity cost + ' + fmtFull(interestPaid) + ' interest';
   document.getElementById('r-metrics').innerHTML =
@@ -462,6 +581,14 @@ function calc() {
   document.getElementById('r-b5').textContent = fmtFull(interestPaid) + ' interest paid';
   document.getElementById('r-b6').textContent = fmt(fvOpp) + ' opportunity cost over ' + years + ' years';
   document.getElementById('r-b7').textContent = mult.toFixed(2) + 'x true cost multiplier';
+  
+  var heroNum = parseFloat(document.getElementById('r-hero').textContent.replace(/[$,KMB]/g,''));
+  var realityEl = document.getElementById('r-reality');
+  if (realityEl) {
+    var rt = getRealityTranslation(heroNum * (document.getElementById('r-hero').textContent.includes('K') ? 1000 : document.getElementById('r-hero').textContent.includes('M') ? 1000000 : 1));
+    realityEl.style.display = rt ? '' : 'none';
+    realityEl.textContent = rt || '';
+  }
   document.getElementById('r-insight').innerHTML = planAPR === 0 ? 'Pay-in-4 is interest-free if paid on time \u2014 the cost is purely the <strong>' + fmt(fvOpp) + ' opportunity cost</strong> of spending ' + fmtFull(price) + ' instead of investing it over ' + years + ' years.' : 'This <strong>' + fmtFull(price) + ' purchase</strong> costs <strong>' + fmtFull(interestPaid) + ' in interest</strong> plus <strong>' + fmt(fvOpp) + ' in opportunity cost</strong>. True cost multiplier: <strong>' + mult.toFixed(2) + 'x</strong>.';
 }
 

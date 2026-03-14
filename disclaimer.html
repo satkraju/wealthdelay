@@ -1,111 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Disclaimer — WealthDelay</title>
-<meta name="description" content="WealthDelay disclaimer — educational tool only, not financial advice.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disclaimer | WealthDelay</title>
+<meta name="description" content="WealthDelay disclaimer. All calculators are for educational purposes only and do not constitute financial advice.">
 <link rel="canonical" href="https://wealthdelay.com/disclaimer.html">
+<meta property="og:title" content="Disclaimer | WealthDelay">
+<meta property="og:description" content="WealthDelay disclaimer. All calculators are for educational purposes only and do not constitute financial advice.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wealthdelay.com/disclaimer.html">
+<meta property="og:image" content="https://wealthdelay.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://wealthdelay.com/og-default.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
 <style>
-:root {
-  --ink:#1d1d1f;--ink2:#3d3d3f;--muted:#6e6e73;--faint:#aeaeb2;
-  --border:rgba(0,0,0,.08);--bg:#f5f5f7;--bg2:#ebebed;--white:#fff;
-  --green: #16A34A;--green-light:#f0fdf4;--green-mid:#bbf7d0;
-  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+:root{
+  --ink:#1a1a1a;--ink2:#3d3d3d;--muted:#6e6e73;--faint:#aeaeb2;
+  --bg:#FDFAF5;--bg2:#F7F2E8;--white:#ffffff;
+  --green:#16A34A;--green-light:#F0FDF4;--green-mid:#BBF7D0;
+  --border:rgba(0,0,0,0.08);--border-strong:rgba(0,0,0,0.12);
+  --font:'Plus Jakarta Sans',system-ui,sans-serif;
   --shadow:0 8px 32px rgba(0,0,0,.08),0 2px 8px rgba(0,0,0,.04);
-  --radius:18px;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:var(--font);background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;}
-nav{position:sticky;top:0;z-index:200;height:52px;background:rgba(245,245,247,.85);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.1);display:flex;align-items:center;justify-content:space-between;padding:0 22px;}
-.nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none;}
-.logo-text{font-size:16px;font-weight:600;letter-spacing:-.022em;}
-.logo-text .w{color:var(--green);}
-.logo-text .d{color:var(--ink);}
-.nav-back{font-size:13px;color:#0071e3;text-decoration:none;font-weight:500;}
-.nav-back:hover{text-decoration:underline;}
-.page-wrap{max-width:760px;margin:0 auto;padding:56px 22px 80px;}
-.page-title{font-size:clamp(32px,5vw,48px);font-weight:700;letter-spacing:-.05em;color:var(--ink);margin-bottom:8px;}
-.page-date{font-size:13px;color:var(--faint);margin-bottom:40px;}
-.page-section{margin-bottom:36px;}
-.page-section h2{font-size:20px;font-weight:700;letter-spacing:-.03em;color:var(--ink);margin-bottom:12px;}
-.page-section p{font-size:16px;color:var(--ink2);line-height:1.75;margin-bottom:12px;}
-.page-section p:last-child{margin-bottom:0;}
-.page-section ul{font-size:16px;color:var(--ink2);line-height:1.75;padding-left:20px;}
-.page-section ul li{margin-bottom:6px;}
-.page-section a{color:#0071e3;text-decoration:none;}
-.page-section a:hover{text-decoration:underline;}
-.highlight-box{background:var(--green-light);border:1px solid var(--green-mid);border-radius:var(--radius);padding:20px 24px;margin-bottom:24px;}
-.highlight-box p{font-size:15px;color:var(--ink2);line-height:1.7;margin:0;}
-.highlight-box strong{color:var(--ink);}
-footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 22px;text-align:center;}
-.footer-logo{font-size:15px;font-weight:600;color:var(--ink2);letter-spacing:-.02em;margin-bottom:8px;}
-.footer-logo .w{color:var(--green);}
-.footer-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:10px;}
-.footer-links a{font-size:12px;color:var(--muted);text-decoration:none;}
-.footer-links a:hover{color:var(--ink);}
-.footer-copy{font-size:12px;color:var(--faint);margin-top:10px;}
+  --radius:18px;--radius-sm:12px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+
+nav{position:sticky;top:0;z-index:200;height:62px;background:rgba(253,250,245,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 28px;}
+.nav-left{display:flex;align-items:center;gap:16px;}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.logo-icon{width:34px;height:34px;background:#16A34A;border-radius:9px;display:grid;place-items:center;flex-shrink:0;box-shadow:0 2px 8px rgba(22,163,74,.28);}
+.logo-name{font-size:18px;font-weight:800;color:#1a1a1a;letter-spacing:-.03em;line-height:1;}
+.logo-name em{color:#16A34A;font-style:normal;}
+.nav-back{font-size:13px;font-weight:600;color:#16A34A;text-decoration:none;display:flex;align-items:center;gap:4px;transition:opacity .15s;}
+.nav-back:hover{opacity:.75;}
+footer{background:#111827;border-top:1px solid rgba(255,255,255,.06);padding:52px 28px 32px;text-align:left;}
+.ft-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;padding-bottom:40px;}
+.ft-brand-name{font-size:20px;font-weight:800;color:#F9FAFB;letter-spacing:-.03em;margin-bottom:8px;}
+.ft-brand-name em{color:#16A34A;font-style:normal;}
+.ft-brand-p{font-size:13px;color:#6B7280;line-height:1.7;max-width:240px;font-weight:500;}
+.ft-col h4{font-size:11px;font-weight:700;color:#4B5563;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;}
+.ft-col a{display:block;font-size:13px;color:#6B7280;text-decoration:none;margin-bottom:8px;font-weight:500;transition:color .12s;}
+.ft-col a:hover{color:#16A34A;}
+.ft-bottom{max-width:1080px;margin:0 auto;padding-top:24px;border-top:1px solid #1F2937;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:12px;color:#4B5563;font-weight:500;}
+.ft-links{display:flex;gap:18px;}
+.ft-links a{color:#4B5563;text-decoration:none;font-size:12px;font-weight:500;transition:color .12s;}
+.ft-links a:hover{color:#16A34A;}
+@media(max-width:700px){.ft-inner{grid-template-columns:1fr;gap:28px;}.ft-bottom{flex-direction:column;align-items:flex-start;}}
+.page-wrap{max-width:760px;margin:0 auto;padding:56px 28px 80px}
+.page-eyebrow{display:inline-block;font-size:12px;font-weight:700;color:var(--green);background:var(--green-light);border:1px solid var(--green-mid);padding:4px 12px;border-radius:99px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:20px}
+.page-wrap h1{font-size:clamp(28px,5vw,42px);font-weight:800;letter-spacing:-.04em;line-height:1.1;color:var(--ink);margin-bottom:8px}
+.page-meta{font-size:13px;color:var(--muted);margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+.page-wrap h2{font-size:20px;font-weight:700;letter-spacing:-.02em;color:var(--ink);margin:36px 0 12px}
+.page-wrap p{margin-bottom:18px;color:#3d3d3f;line-height:1.75}
+.page-wrap a{color:var(--green);text-decoration:none}
+.page-wrap a:hover{text-decoration:underline}
+.page-wrap ul,.page-wrap ol{margin:0 0 18px 24px;color:#3d3d3f;line-height:1.75}
+.page-wrap li{margin-bottom:8px}
+.highlight-box{background:var(--green-light);border:1px solid var(--green-mid);border-radius:var(--radius-sm);padding:20px 24px;margin:24px 0}
+.highlight-box p{margin-bottom:0;color:var(--ink)}
+@media(max-width:600px){.page-wrap{padding:36px 20px 60px}}
 </style>
 </head>
 <body>
 <nav>
-  <div style="display:flex;align-items:center;gap:16px;">
-    <a class="nav-logo" href="/"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#1d1d1f"/><polyline points="5,20 9,12 13,18 17,10 21,16 27,8" stroke="#1db954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><line x1="5" y1="24" x2="27" y2="24" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-linecap="round"/><circle cx="27" cy="8" r="2.5" fill="#1db954"/></svg>
-      <div class="logo-text"><span class="w">Wealth</span><span class="d">Delay</span></div>
+  <div class="nav-left">
+    <a class="nav-logo" href="/index.html">
+      <div class="logo-icon">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><polyline points="1.5,13 5,7.5 8,10.5 11,5.5 14,8.5 16.5,3.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="logo-name"><em>Wealth</em>Delay</div>
     </a>
-    <a class="nav-back" href="/">← Home</a>
+    <a class="nav-back" href="/index.html">&#8592; All Tools</a>
   </div>
 </nav>
 <div class="page-wrap">
-  <div class="page-title">Disclaimer</div>
-  <div class="page-date">Last updated: January 2025</div>
+  <div class="page-eyebrow">Legal</div>
+  <h1>Disclaimer</h1>
+  <div class="page-meta">Last updated: March 2026 &middot; Please read carefully</div>
 
-  <div class="highlight-box">
-    <p><strong>WealthDelay is an educational tool, not financial advice.</strong> All calculations are projections based on your inputs and historical averages. Actual results will vary. Always consult a qualified financial advisor before making financial decisions.</p>
-  </div>
+  <div class="highlight-box"><p><strong>Summary:</strong> WealthDelay calculators are for educational purposes only. They are not financial advice. Results are estimates based on historical averages. Consult a qualified financial advisor before making financial decisions.</p></div>
 
-  <div class="page-section">
-    <h2>Not Financial Advice</h2>
-    <p>The information, calculations, and projections provided by WealthDelay are for general educational and informational purposes only. Nothing on this website constitutes financial, investment, tax, or legal advice. WealthDelay is not a registered investment advisor, broker-dealer, or financial planner.</p>
-    <p>Do not make financial decisions based solely on information from WealthDelay. Always consult with a qualified, licensed financial professional before making investment, debt, retirement, or other financial decisions.</p>
-  </div>
+  <h2>Educational Purpose Only</h2>
+  <p>All content on WealthDelay — including calculators, articles, and guides — is provided for general educational and informational purposes only. Nothing on this site constitutes financial advice, investment advice, tax advice, legal advice, or any other professional advice.</p>
 
-  <div class="page-section">
-    <h2>Accuracy of Calculations</h2>
-    <p>Our calculators use standard financial formulas (Future Value of Annuity, amortization schedules, etc.) and reasonable default assumptions. However:</p>
-    <ul>
-      <li>Investment returns are not guaranteed. Past performance does not predict future results.</li>
-      <li>The S&P 500 historical average return (~7% inflation-adjusted) represents a long-term historical average, not a guarantee of future performance.</li>
-      <li>Inflation rates, tax rates, and interest rates change over time and may differ significantly from our defaults.</li>
-      <li>Individual circumstances vary widely. Your actual results may differ materially from projections.</li>
-    </ul>
-  </div>
+  <h2>Not a Substitute for Professional Advice</h2>
+  <p>The calculators and content on WealthDelay are not a substitute for personalized advice from a qualified financial advisor, accountant, or other licensed professional. Before making any significant financial decision — including investments, debt payoff strategy, retirement planning, or major purchases — consult with a qualified professional who understands your complete financial situation.</p>
 
-  <div class="page-section">
-    <h2>Affiliate Relationships</h2>
-    <p>WealthDelay may display affiliate links to financial products and services (investment accounts, savings accounts, etc.). If you click these links and sign up for a product, we may receive a commission at no cost to you. Affiliate links are clearly marked as "Sponsored." Our editorial content and calculator results are not influenced by affiliate relationships.</p>
-  </div>
+  <h2>Assumptions and Estimates</h2>
+  <p>All calculator results are estimates based on the inputs you provide and general assumptions about historical market performance. Key assumptions include:</p>
+  <ul>
+    <li>Default investment return of 7% annually (S&amp;P 500 historical inflation-adjusted average)</li>
+    <li>Default inflation rate of 3% annually</li>
+    <li>Consistent monthly contributions throughout the projection period</li>
+    <li>No taxes on investment gains (results represent pre-tax scenarios unless noted)</li>
+  </ul>
+  <p>Actual investment returns vary significantly year to year. Past performance does not guarantee future results. You may earn more or less than any projection shown.</p>
 
-  <div class="page-section">
-    <h2>No Endorsement</h2>
-    <p>Mention of specific financial products, companies, or services does not constitute an endorsement by WealthDelay. You should conduct your own research before using any financial product or service.</p>
-  </div>
+  <h2>No Warranties</h2>
+  <p>WealthDelay makes no warranties, expressed or implied, regarding the accuracy, completeness, or fitness for purpose of any calculator or content. We strive for mathematical accuracy and correct errors promptly when identified, but cannot guarantee that all calculations are error-free.</p>
 
-  <div class="page-section">
-    <h2>Limitation of Liability</h2>
-    <p>WealthDelay and its operators are not liable for any financial losses, damages, or decisions made based on the use of this website. You use WealthDelay at your own risk.</p>
-  </div>
+  <h2>Limitation of Liability</h2>
+  <p>WealthDelay and its operators shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use of or reliance on any content or calculator on this site.</p>
 
-  <div class="page-section">
-    <h2>Contact</h2>
-    <p>Questions? Contact us at <a href="/cdn-cgi/l/email-protection#761a1311171a360113171a021e12131a170f5815191b"><span class="__cf_email__" data-cfemail="c6aaa3a1a7aa86b1a3a7aab2aea2a3aaa7bfe8a5a9ab">[email&#160;protected]</span></a>.</p>
-  </div>
+  <h2>Affiliate Disclosure</h2>
+  <p>Some links on WealthDelay are affiliate links. We may earn a commission if you click and open an account with a partner. This does not increase your cost. Affiliate relationships do not influence calculator results, rankings, or editorial content.</p>
 </div>
 <footer>
-  <div class="footer-logo"><span class="w">Wealth</span>Delay</div>
-  <div class="footer-copy">© 2025 WealthDelay · Free forever · No data stored</div>
-  <div class="footer-links">
-    <a href="/">Home</a>
-    <a href="/privacy.html">Privacy</a>
-    <a href="/di
+  <div class="ft-inner">
+    <div>
+      <div class="ft-brand-name"><em>Wealth</em>Delay</div>
+      <p class="ft-brand-p">Free financial calculators. Real compound math. No login, no data stored, no subscriptions.</p>
+    </div>
+    <div class="ft-col">
+      <h4>Top Calculators</h4>
+      <a href="/coffee-habit-true-cost.html">Coffee Habit Cost</a>
+      <a href="/rent-vs-buy-calculator.html">Rent vs Buy</a>
+      <a href="/fire-number-calculator.html">FIRE Number</a>
+      <a href="/car-loan-true-cost-calculator.html">Car Loan True Cost</a>
+      <a href="/salary-negotiation-calculator.html">Salary Negotiation</a>
+      <a href="/compound-interest-early-vs-late.html">Compound Interest</a>
+    </div>
+    <div class="ft-col">
+      <h4>Guides</h4>
+      <a href="/true-cost-daily-coffee-habit.html">Coffee Habit Guide</a>
+      <a href="/what-is-opportunity-cost.html">Opportunity Cost Explained</a>
+      <a href="/how-to-calculate-fire-number.html">FIRE Number Guide</a>
+      <a href="/rent-vs-buy-math.html">Rent vs Buy Math</a>
+      <a href="/true-cost-of-car-loan.html">Car Loan Real Cost</a>
+      <a href="/privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <span>&#169; 2026 WealthDelay &middot; Free forever &middot; All calculations run in your browser</span>
+    <div class="ft-links">
+      <a href="/privacy.html">Privacy</a>
+      <a href="/disclaimer.html">Disclaimer</a>
+      <a href="/about.html">About</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

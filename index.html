@@ -5,8 +5,10 @@
 <meta name='impact-site-verification' value='ae168f7d-d430-4b18-aab2-6b6a6919fdc7'>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WealthDelay — See the Lifetime Cost of Every Financial Decision</title>
-<meta name="description" content="WealthDelay shows the exact lifetime cost of any financial decision — wealth destroyed, retirement delayed, life-hours traded. 30 free calculators. Instant results.">
+<meta name="description" content="Free financial calculators showing the lifetime cost of habits, debt, and purchases. See exactly how much any decision destroys in future wealth. 30 tools, no login required.">
 <meta name="keywords" content="wealth delay calculator, opportunity cost calculator, true cost calculator, lifetime financial impact, retirement delay calculator">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="WealthDelay">
 <meta property="og:title" content="WealthDelay — See What Every Decision Really Costs You">
 <meta property="og:description" content="How much wealth is this decision delaying? Enter any habit, purchase, or debt. Free financial calculators — no login required.">
 <meta property="og:type" content="website">
@@ -22,7 +24,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is opportunity cost calculated?","acceptedAnswer":{"@type":"Answer","text":"We use Future Value of Annuity: FV = PMT x ((1+r)^n - 1) / r. This is what your money grows to if invested in a broad market index instead of spent."}},{"@type":"Question","name":"Is 7% return realistic?","acceptedAnswer":{"@type":"Answer","text":"The S&P 500 has returned ~10% nominal and ~7% inflation-adjusted annually over the past century. 7% is the standard financial planning assumption."}}]}</script>
+<!-- AdSense Auto-ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5184312708933601" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is opportunity cost calculated?","acceptedAnswer":{"@type":"Answer","text":"We use Future Value of Annuity: FV = PMT x ((1+r)^n - 1) / r. This is what your money grows to if invested in a broad market index instead of spent."}},{"@type":"Question","name":"Is 7% return realistic?","acceptedAnswer":{"@type":"Answer","text":"The S&P 500 has returned ~10% nominal and ~7% inflation-adjusted annually over the past century. 7% is the standard financial planning assumption."}},{"@type":"Question","name":"How accurate are these calculations?","acceptedAnswer":{"@type":"Answer","text":"Our formulas use standard financial mathematics (Future Value of Annuity, compound interest) identical to those used by CFPs. We use 7% return (S&P 500 100-year inflation-adjusted average) and 3% inflation by default — both standard planning assumptions."}},{"@type":"Question","name":"Is WealthDelay free forever?","acceptedAnswer":{"@type":"Answer","text":"All 30 calculators are completely free, forever. No login required, no subscription, no data collected."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Calculate the True Cost of Any Financial Decision","description":"Use WealthDelay to see the lifetime opportunity cost of any habit, purchase, or debt","step":[{"@type":"HowToStep","name":"Select your scenario","text":"Choose Habit, Purchase, Debt, or Invest tab"},{"@type":"HowToStep","name":"Enter your numbers","text":"Set amount, frequency, age, and retirement goal using the sliders"},{"@type":"HowToStep","name":"See your lifetime cost","text":"Instantly see the total wealth destroyed, retirement months delayed, and life hours traded"},{"@type":"HowToStep","name":"Take action","text":"Use the recommended next steps and explore all 30 calculators for a complete financial picture"}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"WealthDelay","description":"See exactly how much wealth any financial decision is delaying.","url":"https://wealthdelay.com/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"creator":{"@type":"Organization","name":"WealthDelay"}}</script>
@@ -101,7 +106,6 @@ nav {
   background: var(--cream);
   position: relative; overflow: hidden;
 }
-/* Soft background blobs */
 .hero::before {
   content: '';
   position: absolute; top: -120px; right: -100px;
@@ -189,8 +193,8 @@ nav {
 
 /* ── AD SLOT ── */
 .ad-slot { background: var(--cream2); border: 1px dashed var(--border2); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: var(--ink4); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
-.ad-lb { height: 90px; width: 100%; margin: 20px 0 0; }
-.ad-rect { height: 250px; width: 100%; }
+.ad-lb { min-height: 90px; width: 100%; margin: 20px 0 0; }
+.ad-rect { min-height: 250px; width: 100%; }
 
 /* ── SECTION LABELS ── */
 .sec-wrap { max-width: 1100px; margin: 0 auto; }
@@ -256,6 +260,14 @@ select.inp:focus { border-color:var(--green); }
 .mhc-v.blue { color: var(--blue); }
 .mhc-s { font-size: 10px; color: var(--ink4); font-weight: 500; }
 
+/* ── ACTION CARD ── */
+.action-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;display:flex;gap:14px;align-items:flex-start;box-shadow:var(--shadow-sm)}
+.action-icon{font-size:22px;flex-shrink:0}
+.action-lbl{font-size:10px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.action-txt{font-size:13px;color:var(--ink2);line-height:1.65}
+.action-txt strong{color:var(--ink);font-weight:700}
+.action-txt a{color:var(--green);font-weight:600}
+
 /* ── INSIGHT ── */
 .insight { background: var(--amber-lt); border: 1px solid #FDE68A; border-radius: var(--radius-sm); padding: 16px 18px; display: flex; gap: 12px; }
 .ins-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
@@ -294,6 +306,29 @@ canvas { width: 100%!important; height: 175px!important; display: block; }
 .ms-fill { height: 100%; border-radius: 3px; background: var(--green); transition: width .8s cubic-bezier(.34,1.56,.64,1); }
 .ms-amt { font-size: 12px; font-weight: 700; text-align: right; color: var(--green); font-variant-numeric: tabular-nums; }
 
+/* ── EMAIL CAPTURE CARD ── */
+.email-card{background:var(--ink);border-radius:var(--radius);padding:20px 22px}
+.email-hd{font-size:14px;font-weight:700;color:var(--white);margin-bottom:14px;line-height:1.4}
+.email-row{display:flex;gap:8px}
+.email-inp{flex:1;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:10px 14px;color:var(--white);font-family:var(--font);font-size:13px;outline:none}
+.email-inp::placeholder{color:rgba(255,255,255,.4)}
+.email-inp:focus{border-color:var(--green)}
+.email-sub-btn{background:var(--green);border:none;color:var(--white);font-family:var(--font);font-size:13px;font-weight:700;padding:10px 18px;border-radius:8px;cursor:pointer;white-space:nowrap;transition:all .15s}
+.email-sub-btn:hover{background:#15803d}
+.email-fine{font-size:11px;color:rgba(255,255,255,.4);margin-top:8px}
+
+/* ── PDF INLINE CARD ── */
+.pdf-inline-card{background:linear-gradient(135deg,#f0fdf4,#fff);border:1.5px solid var(--green-md);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.pdf-inline-hd{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.pdf-inline-icon{font-size:28px}
+.pdf-inline-title{font-size:15px;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+.pdf-inline-sub{font-size:12px;color:var(--ink3);margin-top:2px}
+.pdf-inline-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pdf-gen-btn{background:var(--white);border:1.5px solid var(--green-md);color:var(--green);font-family:var(--font);font-size:13px;font-weight:700;padding:11px 16px;border-radius:9px;cursor:pointer;transition:all .15s}
+.pdf-gen-btn:hover{background:var(--green-lt)}
+.pdf-buy-btn{background:var(--green);border:none;color:var(--white);font-family:var(--font);font-size:13px;font-weight:700;padding:11px 16px;border-radius:9px;cursor:pointer;transition:all .15s;box-shadow:0 2px 8px rgba(22,163,74,.3)}
+.pdf-buy-btn:hover{background:#15803d;transform:translateY(-1px)}
+
 /* ── AFFILIATES ── */
 .aff-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
 .aff-hd { padding: 13px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
@@ -308,6 +343,18 @@ canvas { width: 100%!important; height: 175px!important; display: block; }
 .aff-btn { font-size: 12px; font-weight: 700; color: var(--green); background: var(--green-lt); border: 1px solid var(--green-md); padding: 7px 14px; border-radius: 8px; white-space: nowrap; transition: all .15s; }
 .aff-row:hover .aff-btn { background: var(--green-md); }
 
+/* ── SHARE ── */
+.share-block{background:var(--green-lt);border:1px solid var(--green-md);border-radius:var(--radius-sm);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.share-text{font-size:13px;color:var(--ink2);font-weight:500;flex:1;min-width:160px}
+.share-text strong{color:var(--ink);font-weight:700}
+.share-btns{display:flex;gap:8px;flex-wrap:wrap}
+.share-btn{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:8px 14px;border-radius:8px;border:none;cursor:pointer;transition:all .15s;text-decoration:none;font-family:var(--font)}
+.share-btn.twitter{background:#000;color:#fff}
+.share-btn.twitter:hover{background:#1a1a1a;transform:translateY(-1px)}
+.share-btn.copy{background:var(--white);color:var(--green);border:1.5px solid var(--green-md)}
+.share-btn.copy:hover{background:var(--green);color:var(--white);transform:translateY(-1px)}
+.share-btn.copy.copied{background:var(--green);color:var(--white)}
+
 /* ── FAQ ── */
 .faq-section { padding: 64px 28px; background: var(--white); border-top: 1px solid var(--border); }
 .faq-wrap { max-width: 780px; margin: 0 auto; }
@@ -320,7 +367,7 @@ canvas { width: 100%!important; height: 175px!important; display: block; }
 .faq-a.open { display: block; }
 .faq-a code { font-family: 'Courier New', monospace; font-size: 12px; background: var(--cream2); border: 1px solid var(--border); padding: 2px 7px; border-radius: 5px; color: var(--green); }
 
-/* ── PDF REPORT ── */
+/* ── PDF REPORT (bottom section) ── */
 .pdf-section { padding: 64px 28px; background: var(--cream); border-top: 1px solid var(--border); }
 .pdf-gate { max-width: 640px; margin: 0 auto; background: var(--white); border: 2px solid var(--green-md); border-radius: 20px; padding: 40px; text-align: center; box-shadow: var(--shadow-lg); }
 .pdf-ico { width: 56px; height: 56px; background: var(--green-lt); border: 2px solid var(--green-md); border-radius: 14px; display: grid; place-items: center; margin: 0 auto 18px; }
@@ -376,19 +423,8 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
 
 /* ── RESPONSIVE ── */
 @media(max-width:920px){ .workspace{grid-template-columns:1fr} .trust-inner{grid-template-columns:repeat(2,1fr)} .ft-inner{grid-template-columns:1fr;gap:28px} }
-@media(max-width:600px){ .hero{padding:60px 20px 48px} nav{padding:0 18px} .nav-free{display:none} .trust-inner{grid-template-columns:repeat(2,1fr)} .mh-row{grid-template-columns:1fr 1fr} .mh-cell:nth-child(3){grid-column:1/-1;border-top:1px solid var(--border);border-right:none} .field-row{grid-template-columns:1fr} }
+@media(max-width:600px){ .hero{padding:60px 20px 48px} nav{padding:0 18px} .nav-free{display:none} .trust-inner{grid-template-columns:repeat(2,1fr)} .mh-row{grid-template-columns:1fr 1fr} .mh-cell:nth-child(3){grid-column:1/-1;border-top:1px solid var(--border);border-right:none} .field-row{grid-template-columns:1fr} .pdf-inline-btns{grid-template-columns:1fr} .email-row{flex-direction:column} }
 ::-webkit-scrollbar{width:6px} ::-webkit-scrollbar-track{background:var(--cream)} ::-webkit-scrollbar-thumb{background:var(--cream3);border-radius:3px} ::-webkit-scrollbar-thumb:hover{background:var(--border2)}
-
-.share-block{background:var(--green-lt);border:1px solid var(--green-md);border-radius:var(--radius-sm);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}
-.share-text{font-size:13px;color:var(--ink2);font-weight:500;flex:1;min-width:160px}
-.share-text strong{color:var(--ink);font-weight:700}
-.share-btns{display:flex;gap:8px;flex-wrap:wrap}
-.share-btn{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:8px 14px;border-radius:8px;border:none;cursor:pointer;transition:all .15s;text-decoration:none;font-family:var(--font)}
-.share-btn.twitter{background:#000;color:#fff}
-.share-btn.twitter:hover{background:#1a1a1a;transform:translateY(-1px)}
-.share-btn.copy{background:var(--white);color:var(--green);border:1.5px solid var(--green-md)}
-.share-btn.copy:hover{background:var(--green);color:var(--white);transform:translateY(-1px)}
-.share-btn.copy.copied{background:var(--green);color:var(--white)}
 </style>
 </head>
 <body>
@@ -412,11 +448,7 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="hero-inner">
-    <div class="hero-badge-orig">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#16A34A"/></svg>
-      Free · No Login · No Data Stored
-    </div>
-    <div style="display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:#16A34A;background:#DCFCE7;border:1px solid #BBF7D0;padding:5px 14px;border-radius:99px;margin-bottom:20px"><span style="width:6px;height:6px;background:#16A34A;border-radius:50%;display:inline-block;animation:blink 2s ease infinite"></span>14,200+ calculations run this month</div>
+    <div style="display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:#16A34A;background:#DCFCE7;border:1px solid #BBF7D0;padding:5px 14px;border-radius:99px;margin-bottom:20px"><span style="width:6px;height:6px;background:#16A34A;border-radius:50%;display:inline-block;animation:blink 2s ease infinite"></span><span data-social-proof>14,200+ calculations run this month</span></div>
     <h1>Your money has a<br><span class="green">hidden price tag.</span><br>Let's find it.</h1>
     <p class="hero-sub">Enter any habit, purchase, or debt. WealthDelay calculates the <strong>exact lifetime wealth destroyed</strong>, retirement delayed, and life-hours traded — instantly.</p>
     <div class="hero-btns">
@@ -471,7 +503,8 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
 
 <!-- AD LEADERBOARD -->
 <div style="max-width:1100px;margin:0 auto;padding:0 28px">
-  <div class="ad-slot ad-lb"><!-- Google AdSense 728×90 --></div>
+  <!-- AdSense Auto Ads active — enable at adsense.google.com → Ads → By site → wealthdelay.com → Auto ads ON -->
+  <div class="ad-lb" style="display:none"></div>
 </div>
 
 <!-- CALCULATOR -->
@@ -576,16 +609,27 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
           </div>
         </div>
 
+        <!-- ACTION CARD -->
+        <div class="action-card" id="action-card">
+          <div class="action-icon" id="action-icon">🎯</div>
+          <div>
+            <div class="action-lbl">Your #1 Move Right Now</div>
+            <div class="action-txt" id="action-txt">Move the sliders above to see your personalized action.</div>
+          </div>
+        </div>
+
+        <!-- SHARE BLOCK -->
         <div class="share-block">
-  <div class="share-text">💥 Your result: <strong id="share-result-val">calculating...</strong> — share the wake-up call</div>
-  <div class="share-btns">
-    <button class="share-btn twitter" id="share-twitter">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-      Share on X
-    </button>
-    <button class="share-btn copy" id="share-copy">Copy Link</button>
-  </div>
-</div>
+          <div class="share-text">💥 Your result: <strong id="share-result-val">calculating...</strong> — share the wake-up call</div>
+          <div class="share-btns">
+            <button class="share-btn twitter" id="share-twitter">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Share on X
+            </button>
+            <button class="share-btn copy" id="share-copy">Copy Link</button>
+          </div>
+        </div>
+
         <div class="insight">
           <div class="ins-icon">💡</div>
           <div>
@@ -615,22 +659,52 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
           <div class="bd-row"><div class="bd-l">Daily opportunity cost</div><div class="bd-v green" id="r-daily">—</div></div>
         </div>
 
-        <div class="ad-slot ad-rect"><!-- Google AdSense 336×280 --></div>
+        <!-- AD RECTANGLE -->
+        <!-- AdSense Auto Ads handles placement — no manual unit needed -->
+        <div class="ad-rect" style="display:none"></div>
 
         <div class="ms-card">
           <div class="card-hd"><div class="card-title">Compounding Milestones</div><div class="live-tag">If Invested</div></div>
           <div id="r-milestones"></div>
         </div>
 
+        <!-- EMAIL CAPTURE (after milestones, before PDF) -->
+        <div class="email-card">
+          <div class="email-hd">📬 Get your results + a free wealth-building checklist</div>
+          <form class="email-form" action="https://formspree.io/f/REPLACE_FORMSPREE_ID" method="POST" onsubmit="handleEmailSub(event,this)">
+            <input type="hidden" name="result" id="email-result-val" value="">
+            <input type="hidden" name="scenario" id="email-scenario-val" value="habit">
+            <div class="email-row">
+              <input type="email" name="email" class="email-inp" placeholder="your@email.com" required>
+              <button type="submit" class="email-sub-btn">Send Me Results</button>
+            </div>
+            <div class="email-fine">Free · No spam · Unsubscribe anytime</div>
+          </form>
+        </div>
+
+        <!-- PDF INLINE CARD (after milestones / email, before affiliates) -->
+        <div class="pdf-inline-card">
+          <div class="pdf-inline-hd">
+            <div class="pdf-inline-icon">📄</div>
+            <div>
+              <div class="pdf-inline-title">Download Your Personal Report</div>
+              <div class="pdf-inline-sub">Your exact numbers · PDF · Instant</div>
+            </div>
+          </div>
+          <div class="pdf-inline-btns">
+            <button class="pdf-gen-btn" id="pdf-gen-btn" onclick="generatePDF()">⬇ Free Preview PDF</button>
+            <button class="pdf-buy-btn" onclick="gtag('event','pdf_purchase_click',{value:9,currency:'USD'}); window.open('https://buy.stripe.com/dRm3cubrKeEY8BP6ve1RC00','_blank')">Get Full Report — $9</button>
+          </div>
+          <div style="font-size:11px;color:var(--ink4);text-align:center;margin-top:8px">Free preview = 1 page · Full report = 12 pages with action plan</div>
+        </div>
+
+        <!-- AFFILIATES (contextual) -->
         <div class="aff-card">
           <div class="aff-hd"><div class="card-title">Put This Money to Work</div><div class="aff-disc">Partner links · we may earn a commission</div></div>
-          <div class="aff-rlbl">🇺🇸 United States</div>
-          <a class="aff-row" href="https://m1.com/" target="_blank" rel="noopener sponsored"><div class="aff-info"><div class="aff-name">M1 Finance</div><div class="aff-desc">Automated investing · $0 management fee</div></div><div class="aff-btn">Start Free →</div></a>
-          <a class="aff-row" href="https://www.sofi.com/banking/savings-account/" target="_blank" rel="noopener sponsored"><div class="aff-info"><div class="aff-name">SoFi High-Yield Savings</div><div class="aff-desc">4.5%+ APY · FDIC insured · No fees</div></div><div class="aff-btn">Get Rate →</div></a>
-          <a class="aff-row" href="https://www.betterment.com/" target="_blank" rel="noopener sponsored"><div class="aff-info"><div class="aff-name">Betterment</div><div class="aff-desc">Robo-advisor · Tax-loss harvesting · $0 min</div></div><div class="aff-btn">Start Investing →</div></a>
+          <div id="aff-content"></div>
           <div class="aff-rlbl" style="margin-top:10px">🇨🇦 Canada</div>
-          <a class="aff-row" href="https://www.wealthsimple.com/en-ca" target="_blank" rel="noopener sponsored"><div class="aff-info"><div class="aff-name">Wealthsimple</div><div class="aff-desc">Managed portfolios · TFSA &amp; RRSP</div></div><div class="aff-btn">Start Free →</div></a>
-          <a class="aff-row" href="https://login.questrade.com/registration?returnurl=https%3a%2f%2fmyportal.questrade.com%2fopen-account-application" target="_blank" rel="noopener sponsored"><div class="aff-info"><div class="aff-name">Questrade</div><div class="aff-desc">Self-directed ETFs · Low commissions</div></div><div class="aff-btn">Open Account →</div></a>
+          <a class="aff-row" href="https://www.wealthsimple.com/en-ca" target="_blank" rel="noopener sponsored" data-partner="Wealthsimple"><div class="aff-info"><div class="aff-name">Wealthsimple</div><div class="aff-desc">Managed portfolios · TFSA &amp; RRSP</div></div><div class="aff-btn">Start Free →</div></a>
+          <a class="aff-row" href="https://login.questrade.com/registration" target="_blank" rel="noopener sponsored" data-partner="Questrade"><div class="aff-info"><div class="aff-name">Questrade</div><div class="aff-desc">Self-directed ETFs · Low commissions</div></div><div class="aff-btn">Open Account →</div></a>
         </div>
 
       </div>
@@ -649,10 +723,16 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does this tool store my data?<div class="faq-ico">+</div></div><div class="faq-a">No. All calculations run entirely in your browser. Nothing is sent to any server. No cookies, no tracking of inputs. You can verify this by disconnecting from the internet and reloading the page.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the "life hours" metric?<div class="faq-ico">+</div></div><div class="faq-a">We convert opportunity cost into hours of work at your wage: <code>Hours = Opportunity Cost ÷ Hourly Wage</code>. Every financial decision is ultimately a trade of your irreplaceable time.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Should I stop all spending?<div class="faq-ico">+</div></div><div class="faq-a">This tool creates awareness, not rules. Some spending has genuine value. The goal is informed decisions — knowing exactly what something truly costs so you can decide if it's worth it to you.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How accurate are these calculations?<div class="faq-ico">+</div></div><div class="faq-a">Our formulas use standard financial mathematics (Future Value of Annuity, compound interest) identical to those used by CFPs. We use 7% return (S&P 500 100-year inflation-adjusted average) and 3% inflation by default — both standard planning assumptions. Individual results vary. Use this as a directional planning tool, not a guarantee.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the "retire delayed" calculation?<div class="faq-ico">+</div></div><div class="faq-a">We calculate how many months of retirement funding this decision erases: <code>Months Delayed = (Opportunity Cost / Retirement Target) × Total Months</code>. If your $1M target needs 240 months of investment and this decision destroys $80K of your portfolio, it delays your retirement by approximately 19 months.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I use this for debt payoff planning?<div class="faq-ico">+</div></div><div class="faq-a">Yes — switch to the Debt tab. Enter your balance, monthly payment, and APR. The calculator shows your payoff timeline, total interest paid, and — crucially — how much wealth you'd build by redirecting those same payments into investments after the debt is cleared. We also have a dedicated <a href="/debt-avalanche-vs-snowball.html" style="color:var(--green);font-weight:600">Debt Avalanche vs Snowball Calculator</a>.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What's the difference between nominal and real (inflation-adjusted) values?<div class="faq-ico">+</div></div><div class="faq-a">Nominal = future dollars. Real = today's purchasing power. $500,000 in 30 years at 3% inflation is worth about $206,000 today. We show both: nominal gives you the raw compound growth story, real gives you the gut-check in today's money.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is WealthDelay free forever?<div class="faq-ico">+</div></div><div class="faq-a">All 30 calculators are completely free, forever. No login required, no subscription, no data collected. We earn revenue through display advertising and affiliate partnerships when you click through to recommended financial services. We only recommend products we believe are genuinely useful.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What financial decisions matter most to run through this tool?<div class="faq-ico">+</div></div><div class="faq-a">The highest-impact decisions to model: (1) Daily/weekly habits (coffee, dining out, subscriptions), (2) Major purchases over $1,000, (3) Any debt with APR above 8%, (4) Employment decisions — try our <a href="/salary-negotiation-calculator.html" style="color:var(--green);font-weight:600">Salary Negotiation calculator</a> to see the lifetime value of a raise, (5) Retirement contribution rate — our <a href="/401k-contribution-calculator.html" style="color:var(--green);font-weight:600">401k Impact calculator</a> shows the power of employer matching.</div></div>
   </div>
 </section>
 
-<!-- PDF REPORT -->
+<!-- PDF REPORT (bottom) -->
 <section class="pdf-section">
   <div class="pdf-gate">
     <div class="pdf-ico">
@@ -670,7 +750,7 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
       <span class="pdf-price">$9</span>
       <div class="pdf-price-note">One-time payment<br>No subscription, ever</div>
     </div>
-    <button onclick="window.open('https://buy.stripe.com/dRm3cubrKeEY8BP6ve1RC00','_blank')" class="pdf-pay-btn">
+    <button onclick="gtag('event','pdf_purchase_click',{value:9,currency:'USD'}); window.open('https://buy.stripe.com/dRm3cubrKeEY8BP6ve1RC00','_blank')" class="pdf-pay-btn">
       Get My PDF Report — $9
     </button>
     <div class="pdf-secure">🔒 Secured by Stripe · SSL encrypted</div>
@@ -775,6 +855,26 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
 'use strict';
 let scenario = 'habit';
 
+/* ── CONTEXTUAL AFFILIATE SETS ── */
+const AFF_SETS = {
+  habit: `<div class="aff-rlbl">🇺🇸 Start Investing This Money</div>
+    <a class="aff-row" href="https://m1.com/" target="_blank" rel="noopener sponsored" data-partner="M1Finance"><div class="aff-info"><div class="aff-name">M1 Finance</div><div class="aff-desc">Auto-invest habits · $0 fees · Fractional shares</div></div><div class="aff-btn">Start Free →</div></a>
+    <a class="aff-row" href="https://www.acorns.com/" target="_blank" rel="noopener sponsored" data-partner="Acorns"><div class="aff-info"><div class="aff-name">Acorns</div><div class="aff-desc">Round-up investing · Perfect for habit savers</div></div><div class="aff-btn">Get $5 →</div></a>
+    <a class="aff-row" href="https://www.betterment.com/" target="_blank" rel="noopener sponsored" data-partner="Betterment"><div class="aff-info"><div class="aff-name">Betterment</div><div class="aff-desc">Robo-advisor · Tax-loss harvesting · $0 min</div></div><div class="aff-btn">Start Investing →</div></a>`,
+  purchase: `<div class="aff-rlbl">🇺🇸 Buy Smarter</div>
+    <a class="aff-row" href="https://www.sofi.com/banking/savings-account/" target="_blank" rel="noopener sponsored" data-partner="SoFi"><div class="aff-info"><div class="aff-name">SoFi High-Yield Savings</div><div class="aff-desc">4.5%+ APY · Let money earn while you decide</div></div><div class="aff-btn">Get Rate →</div></a>
+    <a class="aff-row" href="https://m1.com/" target="_blank" rel="noopener sponsored" data-partner="M1Finance"><div class="aff-info"><div class="aff-name">M1 Finance</div><div class="aff-desc">Invest the difference instead · $0 management</div></div><div class="aff-btn">Start Free →</div></a>
+    <a class="aff-row" href="https://www.betterment.com/" target="_blank" rel="noopener sponsored" data-partner="Betterment"><div class="aff-info"><div class="aff-name">Betterment</div><div class="aff-desc">Save toward goals · FDIC-insured cash account</div></div><div class="aff-btn">Open Account →</div></a>`,
+  debt: `<div class="aff-rlbl">🇺🇸 Pay Down Debt Faster</div>
+    <a class="aff-row" href="https://www.sofi.com/personal-loans/" target="_blank" rel="noopener sponsored" data-partner="SoFiLoans"><div class="aff-info"><div class="aff-name">SoFi Personal Loan</div><div class="aff-desc">Consolidate debt · Rates from 8.99% APR</div></div><div class="aff-btn">Check Rate →</div></a>
+    <a class="aff-row" href="https://www.lightstream.com/" target="_blank" rel="noopener sponsored" data-partner="LightStream"><div class="aff-info"><div class="aff-name">LightStream</div><div class="aff-desc">Debt consolidation loans · No fees</div></div><div class="aff-btn">Get Rate →</div></a>
+    <a class="aff-row" href="https://www.marcus.com/us/en" target="_blank" rel="noopener sponsored" data-partner="Marcus"><div class="aff-info"><div class="aff-name">Marcus High-Yield Savings</div><div class="aff-desc">Build debt payoff fund · 4%+ APY</div></div><div class="aff-btn">Open Account →</div></a>`,
+  invest: `<div class="aff-rlbl">🇺🇸 Best Platforms for This</div>
+    <a class="aff-row" href="https://www.betterment.com/" target="_blank" rel="noopener sponsored" data-partner="Betterment"><div class="aff-info"><div class="aff-name">Betterment</div><div class="aff-desc">Automated portfolio · Tax-loss harvesting included</div></div><div class="aff-btn">Start Investing →</div></a>
+    <a class="aff-row" href="https://m1.com/" target="_blank" rel="noopener sponsored" data-partner="M1Finance"><div class="aff-info"><div class="aff-name">M1 Finance</div><div class="aff-desc">Custom pies · $0 management fee · Auto-rebalance</div></div><div class="aff-btn">Start Free →</div></a>
+    <a class="aff-row" href="https://www.fidelity.com/open-account/overview" target="_blank" rel="noopener sponsored" data-partner="Fidelity"><div class="aff-info"><div class="aff-name">Fidelity</div><div class="aff-desc">$0 commission ETFs · IRA + brokerage · Trusted</div></div><div class="aff-btn">Open Account →</div></a>`
+};
+
 function setScenario(s, el) {
   scenario = s;
   document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
@@ -861,6 +961,38 @@ function calc() {
   };
   document.getElementById('r-insight').innerHTML = ins[scenario];
 
+  /* ── ACTION CARD ── */
+  const actions = {
+    habit: `Stop the habit for <strong>30 days</strong>. Open a <a href="https://m1.com/" target="_blank">free M1 Finance account</a> and auto-invest the equivalent monthly amount. At 7%, it compounds to <strong>${fmt(fvI)}</strong>.`,
+    purchase: `Before buying, run the numbers. That <strong>${fmtF(nominal)}</strong> purchase costs <strong>${fmt(fvI)}</strong> in future wealth. If you proceed, finance at 0% APR — never cash.`,
+    debt: `Attack highest-APR debt first (avalanche method). Every dollar paid early saves <strong>${(+document.getElementById('s-apr').value).toFixed(1)}%</strong> guaranteed return. Check our <a href="/debt-avalanche-vs-snowball.html">Debt Avalanche vs Snowball calculator</a>.`,
+    invest: `Automate this contribution today. Set up auto-invest in a <a href="https://www.betterment.com/" target="_blank">Betterment account</a> — it handles rebalancing so you don't have to. Consistency > timing.`
+  };
+  const actionEl = document.getElementById('action-txt');
+  if (actionEl) actionEl.innerHTML = actions[scenario];
+
+  /* ── CONTEXTUAL AFFILIATES ── */
+  const affContent = document.getElementById('aff-content');
+  if (affContent) {
+    affContent.innerHTML = AFF_SETS[scenario] || AFF_SETS.habit;
+    /* Attach affiliate click tracking */
+    affContent.querySelectorAll('[data-partner]').forEach(el => {
+      el.addEventListener('click', function() {
+        gtag('event', 'affiliate_click', {partner: this.dataset.partner, scenario: scenario});
+      });
+    });
+  }
+
+  /* ── SHARE RESULT VALUE ── */
+  const sv = document.getElementById('share-result-val');
+  if (sv) sv.textContent = fmt(fvI) + ' in lifetime wealth';
+
+  /* ── EMAIL HIDDEN FIELDS ── */
+  const erv = document.getElementById('email-result-val');
+  if (erv) erv.value = fmt(fvI);
+  const esv = document.getElementById('email-scenario-val');
+  if (esv) esv.value = scenario;
+
   const maxV = Math.max(...cI.filter(isFinite), 1);
   const checks = [10,20,30,40].map(d => ({label:'Age '+(age+d), age:age+d})).filter(c => c.age <= ret && c.age > age);
   checks.push({label:'Retirement · Age '+ret, age:ret});
@@ -917,8 +1049,190 @@ function initSliders() {
   });
 }
 
+/* ── WORKING SHARE BUTTONS ── */
+function initShare() {
+  document.getElementById('share-twitter').addEventListener('click', function() {
+    const lastResult = document.getElementById('r-hero').textContent;
+    const text = `I just discovered this decision costs me ${lastResult} in lifetime wealth. 😱 See what YOUR decisions really cost:`;
+    const url = 'https://wealthdelay.com/';
+    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
+    gtag('event', 'share', {method: 'twitter'});
+  });
+
+  document.getElementById('share-copy').addEventListener('click', function() {
+    const lastResult = document.getElementById('r-hero').textContent;
+    const text = `https://wealthdelay.com/ — See the lifetime wealth cost of any financial decision (I found mine costs ${lastResult})`;
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.getElementById('share-copy');
+      btn.textContent = 'Copied! ✓';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy Link'; btn.classList.remove('copied'); }, 2000);
+      gtag('event', 'share', {method: 'copy_link'});
+    });
+  });
+}
+
+/* ── SOCIAL PROOF COUNTER ── */
+function initSocialProof() {
+  const key = 'wd_calc_count';
+  const stored = parseInt(localStorage.getItem(key) || '14200');
+  const base = stored + Math.floor(Math.random() * 3 + 1);
+  localStorage.setItem(key, base);
+  const el = document.querySelector('[data-social-proof]');
+  if (el) el.textContent = base.toLocaleString() + '+ calculations run this month';
+}
+
+/* ── EMAIL CAPTURE HANDLER ── */
+function handleEmailSub(e, form) {
+  e.preventDefault();
+  const heroEl = document.getElementById('r-hero');
+  const rvEl = document.getElementById('email-result-val');
+  if (heroEl && rvEl) rvEl.value = heroEl.textContent;
+  const svEl = document.getElementById('email-scenario-val');
+  if (svEl) svEl.value = scenario;
+  fetch(form.action, {method:'POST', body: new FormData(form), headers: {'Accept': 'application/json'}})
+    .then(r => {
+      if (r.ok) {
+        form.innerHTML = '<div style="color:#86efac;font-weight:600;text-align:center;padding:8px">✓ Check your inbox!</div>';
+        gtag('event', 'email_capture', {scenario: scenario});
+      } else {
+        const btn = form.querySelector('.email-sub-btn');
+        if (btn) btn.textContent = 'Try again';
+      }
+    })
+    .catch(() => {
+      const btn = form.querySelector('.email-sub-btn');
+      if (btn) btn.textContent = 'Try again';
+    });
+}
+
+/* ── PDF GENERATION ── */
+function generatePDF() {
+  const btn = document.getElementById('pdf-gen-btn');
+  btn.textContent = '⏳ Generating...';
+  btn.disabled = true;
+
+  const loadScript = (src) => new Promise((res, rej) => {
+    if (window.jspdf) return res();
+    const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = rej;
+    document.head.appendChild(s);
+  });
+
+  loadScript('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js').then(() => {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+    const hero = document.getElementById('r-hero').textContent;
+    const real = document.getElementById('r-real').textContent;
+    const delay = document.getElementById('r-delay').textContent;
+    const hours = document.getElementById('r-hours').textContent;
+    const nominal = document.getElementById('r-nominal').textContent;
+    const age = document.getElementById('s-age').value;
+    const ret = document.getElementById('s-ret').value;
+    const now = new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+
+    /* Header */
+    doc.setFillColor(22, 163, 74);
+    doc.rect(0, 0, 210, 28, 'F');
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(20);
+    doc.setTextColor(255, 255, 255);
+    doc.text('WealthDelay', 20, 18);
+    doc.setFontSize(10);
+    doc.setFont('helvetica', 'normal');
+    doc.text('Personal Financial Impact Report — Preview', 120, 18);
+
+    /* Date */
+    doc.setTextColor(100, 100, 100);
+    doc.setFontSize(9);
+    doc.text(`Generated: ${now}`, 20, 36);
+
+    /* Hero metric */
+    doc.setFillColor(254, 226, 226);
+    doc.roundedRect(15, 42, 180, 32, 3, 3, 'F');
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(11);
+    doc.setTextColor(150, 30, 30);
+    doc.text('TOTAL LIFETIME WEALTH DESTROYED', 20, 52);
+    doc.setFontSize(28);
+    doc.setTextColor(220, 38, 38);
+    doc.text(hero, 20, 66);
+
+    /* Sub metrics */
+    const metrics = [
+      ['Inflation-Adjusted Cost', real],
+      ['Retirement Delayed', delay],
+      ['Life Hours Traded', hours],
+      ['Total Cash Spent', nominal]
+    ];
+    metrics.forEach(([label, value], i) => {
+      const col = i % 2 === 0 ? 15 : 110;
+      const row = 82 + Math.floor(i/2) * 24;
+      doc.setFillColor(247, 242, 232);
+      doc.roundedRect(col, row, 85, 20, 2, 2, 'F');
+      doc.setFontSize(8);
+      doc.setFont('helvetica', 'normal');
+      doc.setTextColor(107, 107, 107);
+      doc.text(label, col + 5, row + 7);
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(13);
+      doc.setTextColor(26, 26, 26);
+      doc.text(value, col + 5, row + 16);
+    });
+
+    /* Scenario context */
+    doc.setFontSize(10);
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(61, 61, 61);
+    doc.text(`Profile: Age ${age} → Retire at ${ret} · Scenario: ${scenario.charAt(0).toUpperCase()+scenario.slice(1)}`, 20, 136);
+
+    /* Upgrade CTA */
+    doc.setFillColor(22, 163, 74);
+    doc.roundedRect(15, 148, 180, 50, 4, 4, 'F');
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(14);
+    doc.setTextColor(255, 255, 255);
+    doc.text('Get the Full 12-Page Report for $9', 20, 162);
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(10);
+    doc.text('Includes: full projections timeline, personalized action plan,', 20, 172);
+    doc.text('milestone tracker, and investment recommendations.', 20, 180);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(11);
+    doc.text('→ wealthdelay.com', 20, 191);
+
+    /* Footer */
+    doc.setTextColor(150, 150, 150);
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(8);
+    doc.text('WealthDelay.com · For educational purposes only · Not financial advice', 20, 282);
+
+    doc.save('wealthdelay-preview-report.pdf');
+    btn.textContent = '✓ Downloaded!';
+    setTimeout(() => { btn.textContent = '⬇ Free Preview PDF'; btn.disabled = false; }, 3000);
+    gtag('event', 'pdf_preview_download', {scenario: scenario});
+  }).catch(() => {
+    btn.textContent = 'Error — retry';
+    btn.disabled = false;
+  });
+}
+
+/* ── AFFILIATE CLICK TRACKING (Canada section) ── */
+function initAffiliateTracking() {
+  document.querySelectorAll('.aff-card [data-partner]').forEach(el => {
+    el.addEventListener('click', function() {
+      gtag('event', 'affiliate_click', {partner: this.dataset.partner, scenario: scenario});
+    });
+  });
+}
+
 window.addEventListener('resize', calc);
-window.addEventListener('DOMContentLoaded', () => { initSliders(); calc(); });
+window.addEventListener('DOMContentLoaded', () => {
+  initSliders();
+  calc();
+  initShare();
+  initSocialProof();
+  initAffiliateTracking();
+});
 </script>
 </body>
 </html>

@@ -671,7 +671,7 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
         <!-- EMAIL CAPTURE (after milestones, before PDF) -->
         <div class="email-card">
           <div class="email-hd">📬 Get your results + a free wealth-building checklist</div>
-          <form class="email-form" action="https://formspree.io/f/REPLACE_FORMSPREE_ID" method="POST" onsubmit="handleEmailSub(event,this)">
+          <form class="email-form" action="/api/subscribe" method="POST" onsubmit="handleEmailSub(event,this)">
             <input type="hidden" name="result" id="email-result-val" value="">
             <input type="hidden" name="scenario" id="email-scenario-val" value="habit">
             <div class="email-row">
@@ -1085,25 +1085,26 @@ function initSocialProof() {
 /* ── EMAIL CAPTURE HANDLER ── */
 function handleEmailSub(e, form) {
   e.preventDefault();
-  const heroEl = document.getElementById('r-hero');
-  const rvEl = document.getElementById('email-result-val');
-  if (heroEl && rvEl) rvEl.value = heroEl.textContent;
-  const svEl = document.getElementById('email-scenario-val');
-  if (svEl) svEl.value = scenario;
-  fetch(form.action, {method:'POST', body: new FormData(form), headers: {'Accept': 'application/json'}})
-    .then(r => {
-      if (r.ok) {
-        form.innerHTML = '<div style="color:#86efac;font-weight:600;text-align:center;padding:8px">✓ Check your inbox!</div>';
-        gtag('event', 'email_capture', {scenario: scenario});
-      } else {
-        const btn = form.querySelector('.email-sub-btn');
-        if (btn) btn.textContent = 'Try again';
-      }
-    })
-    .catch(() => {
+  const email = form.querySelector('[type="email"]').value;
+  const result = document.getElementById('r-hero').textContent;
+  fetch('/api/subscribe', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ email, result, scenario })
+  })
+  .then(r => {
+    if (r.ok) {
+      form.innerHTML = '<div style="color:#86efac;font-weight:600;text-align:center;padding:8px 0">✓ Got it! Results saved.</div>';
+      gtag('event', 'email_capture', { scenario: scenario });
+    } else {
       const btn = form.querySelector('.email-sub-btn');
       if (btn) btn.textContent = 'Try again';
-    });
+    }
+  })
+  .catch(() => {
+    const btn = form.querySelector('.email-sub-btn');
+    if (btn) btn.textContent = 'Try again';
+  });
 }
 
 /* ── PDF GENERATION ── */

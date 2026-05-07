@@ -404,6 +404,25 @@ canvas { width: 100%!important; height: 175px!important; display: block; }
 .art-blurb { font-size: 13px; color: var(--ink3); line-height: 1.65; margin-bottom: 18px; }
 .art-cta { font-size: 13px; font-weight: 700; color: var(--green); display: flex; align-items: center; gap: 5px; }
 
+/* ── PHILOSOPHY ── */
+.phi-section{padding:72px 28px;background:var(--ink);border-top:1px solid #27272A}
+.phi-section .sec-tag{color:#86efac;background:rgba(22,163,74,.15);border-color:rgba(22,163,74,.3)}
+.phi-section .sec-tag::before{background:#86efac}
+.phi-h{font-size:clamp(22px,3.5vw,38px);font-weight:800;color:var(--white);letter-spacing:-.04em;line-height:1.15;margin-bottom:8px}
+.phi-sub{font-size:15px;color:#71717A;margin-bottom:48px;max-width:560px;line-height:1.7}
+.phi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.phi-card{background:#18181B;border:1px solid #27272A;border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;gap:16px;transition:border-color .2s}
+.phi-card:hover{border-color:#3F3F46}
+.phi-quote{font-size:17px;font-weight:700;color:var(--white);line-height:1.5;letter-spacing:-.02em;font-style:italic}
+.phi-quote::before{content:'\201C';color:var(--green);font-size:28px;line-height:0;vertical-align:-12px;margin-right:4px;font-style:normal}
+.phi-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto}
+.phi-attr{display:flex;flex-direction:column;gap:2px}
+.phi-name{font-size:13px;font-weight:700;color:var(--green)}
+.phi-role{font-size:11px;color:#52525B;font-weight:500}
+.phi-link{font-size:11px;font-weight:700;color:#52525B;text-decoration:none;padding:6px 12px;border:1px solid #27272A;border-radius:6px;white-space:nowrap;transition:all .15s}
+.phi-link:hover{color:var(--green);border-color:var(--green)}
+@media(max-width:600px){.phi-grid{grid-template-columns:1fr}}
+
 /* ── FOOTER ── */
 footer { background: var(--ink); padding: 52px 28px 32px; }
 .ft-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; margin-bottom: 40px; }
@@ -465,17 +484,29 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
 <div class="ticker">
   <div class="ticker-track">
     <div class="tick"><span>Daily $6 Coffee</span><span class="tick-sep">·</span><span class="v">$244,800 destroyed over 30 yrs</span></div>
+    <div class="tick"><span>Naval Ravikant</span><span class="tick-sep">·</span><span class="v">"Wealth is assets that earn while you sleep"</span></div>
     <div class="tick"><span>$30K Car Loan @ 7%</span><span class="tick-sep">·</span><span class="v">$78,000 true cost</span></div>
+    <div class="tick"><span>Warren Buffett</span><span class="tick-sep">·</span><span class="v">"Compound interest — the eighth wonder of the world"</span></div>
     <div class="tick"><span>$1,000/mo habit</span><span class="tick-sep">·</span><span class="v">$1.2M in 30 years</span></div>
+    <div class="tick"><span>Charlie Munger</span><span class="tick-sep">·</span><span class="v">"Invert, always invert — what habits are destroying your wealth?"</span></div>
     <div class="tick"><span>Invest $200/mo at age 22</span><span class="tick-sep">·</span><span class="v">$524,000 by 65</span></div>
+    <div class="tick"><span>Morgan Housel</span><span class="tick-sep">·</span><span class="v">"Wealth is what you don't see"</span></div>
     <div class="tick"><span>Credit Card @ 22% APR</span><span class="tick-sep">·</span><span class="v">38× true cost in 10 yrs</span></div>
+    <div class="tick"><span>Naval Ravikant</span><span class="tick-sep">·</span><span class="v">"You're not going to get rich renting out your time"</span></div>
     <div class="tick"><span>Skip 401k Match</span><span class="tick-sep">·</span><span class="v">Instant 100% return missed</span></div>
+    <div class="tick"><span>James Clear</span><span class="tick-sep">·</span><span class="v">"The costs of bad habits are in the future"</span></div>
     <div class="tick"><span>Daily $6 Coffee</span><span class="tick-sep">·</span><span class="v">$244,800 destroyed over 30 yrs</span></div>
+    <div class="tick"><span>Naval Ravikant</span><span class="tick-sep">·</span><span class="v">"Wealth is assets that earn while you sleep"</span></div>
     <div class="tick"><span>$30K Car Loan @ 7%</span><span class="tick-sep">·</span><span class="v">$78,000 true cost</span></div>
+    <div class="tick"><span>Warren Buffett</span><span class="tick-sep">·</span><span class="v">"Compound interest — the eighth wonder of the world"</span></div>
     <div class="tick"><span>$1,000/mo habit</span><span class="tick-sep">·</span><span class="v">$1.2M in 30 years</span></div>
+    <div class="tick"><span>Charlie Munger</span><span class="tick-sep">·</span><span class="v">"Invert, always invert — what habits are destroying your wealth?"</span></div>
     <div class="tick"><span>Invest $200/mo at age 22</span><span class="tick-sep">·</span><span class="v">$524,000 by 65</span></div>
+    <div class="tick"><span>Morgan Housel</span><span class="tick-sep">·</span><span class="v">"Wealth is what you don't see"</span></div>
     <div class="tick"><span>Credit Card @ 22% APR</span><span class="tick-sep">·</span><span class="v">38× true cost in 10 yrs</span></div>
+    <div class="tick"><span>Naval Ravikant</span><span class="tick-sep">·</span><span class="v">"You're not going to get rich renting out your time"</span></div>
     <div class="tick"><span>Skip 401k Match</span><span class="tick-sep">·</span><span class="v">Instant 100% return missed</span></div>
+    <div class="tick"><span>James Clear</span><span class="tick-sep">·</span><span class="v">"The costs of bad habits are in the future"</span></div>
   </div>
 </div>
 
@@ -728,6 +759,9 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I use this for debt payoff planning?<div class="faq-ico">+</div></div><div class="faq-a">Yes — switch to the Debt tab. Enter your balance, monthly payment, and APR. The calculator shows your payoff timeline, total interest paid, and — crucially — how much wealth you'd build by redirecting those same payments into investments after the debt is cleared. We also have a dedicated <a href="/debt-avalanche-vs-snowball.html" style="color:var(--green);font-weight:600">Debt Avalanche vs Snowball Calculator</a>.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What's the difference between nominal and real (inflation-adjusted) values?<div class="faq-ico">+</div></div><div class="faq-a">Nominal = future dollars. Real = today's purchasing power. $500,000 in 30 years at 3% inflation is worth about $206,000 today. We show both: nominal gives you the raw compound growth story, real gives you the gut-check in today's money.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is WealthDelay free forever?<div class="faq-ico">+</div></div><div class="faq-a">All 30 calculators are completely free, forever. No login required, no subscription, no data collected. We earn revenue through display advertising and affiliate partnerships when you click through to recommended financial services. We only recommend products we believe are genuinely useful.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What does Naval Ravikant mean by "wealth is assets that earn while you sleep"?<div class="faq-ico">+</div></div><div class="faq-a">Naval's core insight: true wealth isn't income — it's ownership. A salary stops when you stop working. Assets (investments, equity, businesses) compound without your direct effort. This calculator shows the gap between spending (which produces nothing) and investing (which produces sleeping income). Every dollar this tool shows as "opportunity cost" is a dollar that could have become a sleeping asset.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why does Warren Buffett call compound interest the "eighth wonder of the world"?<div class="faq-ico">+</div></div><div class="faq-a">Because it's the only mathematical force that works harder the longer you leave it alone. $200/month invested at 22 becomes $524,000 at 65. The same $200/month starting at 32 becomes only $243,000 — a $281,000 penalty for 10 years of delay. Buffett built his entire fortune on this principle: buy great assets, then do nothing. The "eighth wonder" is that patience itself generates returns.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is Charlie Munger's "inversion" principle and how does it apply here?<div class="faq-ico">+</div></div><div class="faq-a">Munger's rule: instead of asking "how do I get rich?", ask "what makes people poor — and avoid that." Most financial advice tells you what to do. WealthDelay shows you what not to do, quantified. That $6 coffee isn't a coffee problem — it's a $244,800 wealth destruction problem. Inversion turns a vague good intention ("I should save more") into a specific, motivating number.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What financial decisions matter most to run through this tool?<div class="faq-ico">+</div></div><div class="faq-a">The highest-impact decisions to model: (1) Daily/weekly habits (coffee, dining out, subscriptions), (2) Major purchases over $1,000, (3) Any debt with APR above 8%, (4) Employment decisions — try our <a href="/salary-negotiation-calculator.html" style="color:var(--green);font-weight:600">Salary Negotiation calculator</a> to see the lifetime value of a raise, (5) Retirement contribution rate — our <a href="/401k-contribution-calculator.html" style="color:var(--green);font-weight:600">401k Impact calculator</a> shows the power of employer matching.</div></div>
   </div>
 </section>
@@ -808,6 +842,90 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
       <a href="/how-to-calculate-fire-number.html" class="art-card"><span class="art-emoji">🔥</span><div class="art-tag">FIRE &amp; Retirement</div><div class="art-title">How to Calculate Your FIRE Number</div><div class="art-blurb">The exact formula for financial independence — and what most people dangerously get wrong about it.</div><div class="art-cta">Read guide →</div></a>
       <a href="/rent-vs-buy-math.html" class="art-card"><span class="art-emoji">🏠</span><div class="art-tag">Housing</div><div class="art-title">Rent vs. Buy: What the Math Says</div><div class="art-blurb">The hidden costs of homeownership most calculators ignore — and exactly when buying wins.</div><div class="art-cta">Read guide →</div></a>
       <a href="/true-cost-of-car-loan.html" class="art-card"><span class="art-emoji">🚗</span><div class="art-tag">Debt Cost</div><div class="art-title">Why Your $35K Car Really Costs $78,000</div><div class="art-blurb">Purchase price, interest, depreciation, opportunity cost — the four layers no one tells you about.</div><div class="art-cta">Read guide →</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY SECTION -->
+<section class="phi-section">
+  <div class="sec-wrap">
+    <div class="sec-tag">The Intellectual Foundation</div>
+    <h2 class="phi-h">Principles from the Greatest Wealth Minds</h2>
+    <p class="phi-sub">Every number in this calculator is grounded in ideas these thinkers spent lifetimes proving. Run the math on your own decisions below.</p>
+    <div class="phi-grid">
+
+      <div class="phi-card">
+        <div class="phi-quote">Wealth is assets that earn while you sleep. Every dollar you spend on a habit is a dollar that never becomes a sleeping asset.</div>
+        <div class="phi-footer">
+          <div class="phi-attr"><div class="phi-name">Naval Ravikant</div><div class="phi-role">Angel philosopher · How to Get Rich</div></div>
+          <a href="/fire-number-calculator.html" class="phi-link">FIRE Calculator →</a>
+        </div>
+      </div>
+
+      <div class="phi-card">
+        <div class="phi-quote">Compound interest is the eighth wonder of the world. He who understands it, earns it. He who doesn't, pays it.</div>
+        <div class="phi-footer">
+          <div class="phi-attr"><div class="phi-name">Warren Buffett</div><div class="phi-role">Chairman, Berkshire Hathaway</div></div>
+          <a href="/compound-interest-early-vs-late.html" class="phi-link">Compounding Calc →</a>
+        </div>
+      </div>
+
+      <div class="phi-card">
+        <div class="phi-quote">Invert, always invert. Don't ask what builds wealth — ask what destroys it. Then stop doing that.</div>
+        <div class="phi-footer">
+          <div class="phi-attr"><div class="phi-name">Charlie Munger</div><div class="phi-role">Vice Chairman, Berkshire Hathaway</div></div>
+          <a href="/daily-habit-true-cost-calculator.html" class="phi-link">Habit Cost Calc →</a>
+        </div>
+      </div>
+
+      <div class="phi-card">
+        <div class="phi-quote">Wealth is what you don't see. It's the cars not purchased, the clothes not bought, the vacations postponed. Wealth is financial assets that haven't yet been converted into things you see.</div>
+        <div class="phi-footer">
+          <div class="phi-attr"><div class="phi-name">Morgan Housel</div><div class="phi-role">Author · The Psychology of Money</div></div>
+          <a href="/net-worth-target-calculator.html" class="phi-link">Net Worth Calc →</a>
+        </div>
+      </div>
+
+      <div class="phi-card">
+        <div class="phi-quote">You're not going to get rich renting out your time. You must own equity — a piece of a business — to gain your financial freedom.</div>
+        <div class="phi-footer">
+          <div class="phi-attr"><div class="phi-name">Naval Ravikant</div><div class="phi-role">Angel philosopher · Almanack of Naval</div></div>
+          <a href="/true-hourly-rate-calculator.html" class="phi-link">True Hourly Rate →</a>
+        </div>
+      </div>
+
+      <div class="phi-card">
+        <div class="phi-quote">The costs of your good habits are in the present. The costs of your bad habits are in the future. This calculator makes the future cost visible today.</div>
+        <div class="phi-footer">
+          <div class="phi-attr"><div class="phi-name">James Clear</div><div class="phi-role">Author · Atomic Habits</div></div>
+          <a href="/coffee-habit-true-cost.html" class="phi-link">Coffee Cost Calc →</a>
+        </div>
+      </div>
+
+      <div class="phi-card">
+        <div class="phi-quote">Price is what you pay. Value is what you get. Most people confuse the sticker price with the true cost — they never calculate what that money would have become.</div>
+        <div class="phi-footer">
+          <div class="phi-attr"><div class="phi-name">Warren Buffett</div><div class="phi-role">Chairman, Berkshire Hathaway</div></div>
+          <a href="/car-loan-true-cost-calculator.html" class="phi-link">Car True Cost →</a>
+        </div>
+      </div>
+
+      <div class="phi-card">
+        <div class="phi-quote">Play long-term games with long-term people. In finance, the long-term game is compound growth. Every year you delay investing is a year you can never get back.</div>
+        <div class="phi-footer">
+          <div class="phi-attr"><div class="phi-name">Naval Ravikant</div><div class="phi-role">Angel philosopher · How to Get Rich</div></div>
+          <a href="/401k-contribution-calculator.html" class="phi-link">401k Impact Calc →</a>
+        </div>
+      </div>
+
+      <div class="phi-card">
+        <div class="phi-quote">The stock market is a device for transferring money from the impatient to the patient. Time in the market beats timing the market — always.</div>
+        <div class="phi-footer">
+          <div class="phi-attr"><div class="phi-name">Warren Buffett</div><div class="phi-role">Chairman, Berkshire Hathaway</div></div>
+          <a href="/index-fund-vs-stock-picking.html" class="phi-link">Index vs Picking →</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -954,10 +1072,10 @@ function calc() {
   document.getElementById('r-daily').textContent = '$' + dailyOC.toFixed(2) + '/day';
 
   const ins = {
-    habit: `This habit costs <strong>${fmtF(nominal)}</strong> in cash over ${years} years. But the real price is <strong>${fmtF(fvI)}</strong> in future wealth — that's <strong>${lifeH.toLocaleString()} hours of your life</strong> at your wage. In today's purchasing power: <strong>${fmtF(realFV)}</strong>.`,
-    purchase: `The sticker price understates the real cost. That money, invested instead, would grow to <strong>${fmtF(fvI)}</strong>. Every $1 spent today costs <strong>${(fvI/Math.max(nominal,1)).toFixed(1)}×</strong> in future wealth.`,
-    debt: `This debt costs <strong>${fmtF(nominal)}</strong> in total payments. Once paid off, redirecting those same payments could compound to <strong>${fmtF(fvI)}</strong>. Eliminating high-interest debt is the highest guaranteed return available.`,
-    invest: `Investing consistently builds <strong>${fmtF(fvI)}</strong> — a <strong>${(fvI/Math.max(nominal,1)).toFixed(1)}× return</strong> on <strong>${fmtF(nominal)}</strong> contributed. In today's dollars: <strong>${fmtF(realFV)}</strong>. Time is doing the heavy lifting.`
+    habit: `This habit costs <strong>${fmtF(nominal)}</strong> in cash over ${years} years. The real price is <strong>${fmtF(fvI)}</strong> in future wealth — <strong>${lifeH.toLocaleString()} hours of your life</strong> at your wage. In today's dollars: <strong>${fmtF(realFV)}</strong>.<br><br><em style="font-size:12px;color:var(--ink4)">"Every minute you spend not building assets is a minute not working towards wealth that earns while you sleep." — <strong style="color:var(--ink3)">Naval Ravikant</strong></em>`,
+    purchase: `The sticker price understates the real cost. That money, invested instead, would grow to <strong>${fmtF(fvI)}</strong>. Every $1 spent today costs <strong>${(fvI/Math.max(nominal,1)).toFixed(1)}×</strong> in future wealth.<br><br><em style="font-size:12px;color:var(--ink4)">"Price is what you pay. Value is what you get." — <strong style="color:var(--ink3)">Warren Buffett</strong>. Run the real numbers before every major purchase.</em>`,
+    debt: `This debt costs <strong>${fmtF(nominal)}</strong> in total payments. Once paid off, redirecting those same payments could compound to <strong>${fmtF(fvI)}</strong>. Eliminating high-interest debt is the highest guaranteed return available.<br><br><em style="font-size:12px;color:var(--ink4)">"Invert, always invert — don't ask how to build wealth, ask what destroys it. Then stop doing that." — <strong style="color:var(--ink3)">Charlie Munger</strong></em>`,
+    invest: `Investing consistently builds <strong>${fmtF(fvI)}</strong> — a <strong>${(fvI/Math.max(nominal,1)).toFixed(1)}× return</strong> on <strong>${fmtF(nominal)}</strong> contributed. In today's dollars: <strong>${fmtF(realFV)}</strong>.<br><br><em style="font-size:12px;color:var(--ink4)">"Compound interest is the eighth wonder of the world. He who understands it, earns it." — <strong style="color:var(--ink3)">Warren Buffett</strong></em>`
   };
   document.getElementById('r-insight').innerHTML = ins[scenario];
 

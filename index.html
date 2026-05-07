@@ -592,6 +592,7 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
               <div class="fsec">Investment Plan</div>
               <div class="field"><label>Monthly contribution <span class="fval" id="v-contrib">$300</span></label><input type="range" id="s-contrib" min="25" max="10000" step="25" value="300" oninput="sync('contrib',this.value,'$','');calc()"></div>
               <div class="field"><label>Lump sum <span class="fval" id="v-lump">$5,000</span></label><input type="range" id="s-lump" min="0" max="250000" step="1000" value="5000" oninput="sync('lump',this.value,'$','',true);calc()"></div>
+              <div class="field"><label>Employer match <span class="fval" id="v-match">0%</span></label><input type="range" id="s-match" min="0" max="100" step="5" value="0" oninput="sync('match',this.value,'','%');calc()"><div class="fhint">401k employer match — instant 50–100% return on contributions</div></div>
             </div>
 
             <div class="fsec">Your Profile</div>
@@ -619,6 +620,11 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
               <label>Retirement target <span class="fval" id="v-target">$1.0M</span></label>
               <input type="range" id="s-target" min="100000" max="5000000" step="50000" value="1000000" oninput="sync('target',this.value,'$','',true,true);calc()">
               <div class="fhint">4% rule: target = 25× your annual expenses</div>
+            </div>
+            <div class="field">
+              <label>Marginal tax rate <span class="fval" id="v-tax">22%</span></label>
+              <input type="range" id="s-tax" min="0" max="50" step="1" value="22" oninput="sync('tax',this.value,'','%');calc()">
+              <div class="fhint">Used to calculate pre-tax income required to fund this decision</div>
             </div>
           </div>
         </div>
@@ -688,6 +694,10 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
           <div class="bd-row"><div class="bd-l">Months of retirement delayed</div><div class="bd-v amber" id="r-delaymo">—</div></div>
           <div class="bd-row"><div class="bd-l">Life-hours at your wage</div><div class="bd-v blue" id="r-hoursfull">—</div></div>
           <div class="bd-row"><div class="bd-l">Daily opportunity cost</div><div class="bd-v green" id="r-daily">—</div></div>
+          <div class="bd-row"><div class="bd-l">Pre-tax income required</div><div class="bd-v ink" id="r-pretax">—</div></div>
+          <div class="bd-row" id="r-match-row" style="display:none"><div class="bd-l">With employer match</div><div class="bd-v green" id="r-match-fv">—</div></div>
+          <div class="bd-row"><div class="bd-l">True cost multiplier</div><div class="bd-v red" id="r-multiplier">—</div></div>
+          <div class="bd-row" id="r-debt-warn-row" style="display:none"><div class="bd-l" style="color:var(--red);font-weight:600">⚠ Payment barely covers interest</div><div class="bd-v red" id="r-debt-warn">—</div></div>
         </div>
 
         <!-- AD RECTANGLE -->
@@ -927,6 +937,7 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
       </div>
 
     </div>
+    <p style="font-size:11px;color:#3F3F46;text-align:center;margin-top:40px;line-height:1.7">Quotes attributed to their respective authors for educational purposes. No endorsement of WealthDelay by any quoted individual is implied or claimed.</p>
   </div>
 </section>
 
@@ -1028,98 +1039,182 @@ function fvA(pmt, r, n) { return r === 0 ? pmt * n : pmt * ((Math.pow(1+r, n) - 
 function fvL(pv, r, n) { return pv * Math.pow(1 + r/12, n*12); }
 
 function calc() {
-  const age = +document.getElementById('s-age').value, ret = +document.getElementById('s-ret').value;
-  const wage = +document.getElementById('s-wage').value, annR = +document.getElementById('s-return').value / 100;
-  const infl = +document.getElementById('s-infl').value / 100, target = +document.getElementById('s-target').value;
+  const age = +document.getElementById('s-age').value;
+  const ret = +document.getElementById('s-ret').value;
+  const wage = +document.getElementById('s-wage').value;
+  const annR = +document.getElementById('s-return').value / 100;
+  const infl = +document.getElementById('s-infl').value / 100;
+  const target = +document.getElementById('s-target').value;
+  const taxRate = +document.getElementById('s-tax').value / 100;
   const years = Math.max(1, ret - age), months = years * 12, mRate = annR / 12;
+  const inflM = infl / 12;
   let nominal = 0, fvI = 0, realFV = 0, retDelay = 0;
   const cI = [], cS = [], cL = [];
 
-  if (scenario === 'habit' || scenario === 'purchase') {
-    const amt = +document.getElementById('s-amount').value, freq = +document.getElementById('i-freq').value;
-    const monthly = (amt * freq) / 12;
-    if (scenario === 'purchase') { fvI = fvL(amt, annR, years); nominal = amt; }
-    else { fvI = fvA(monthly, mRate, months); nominal = monthly * months; }
-    realFV = fvI / Math.pow(1+infl, years);
-    for (let y = 0; y <= years; y++) { cL.push(age+y); cI.push(scenario==='purchase' ? fvL(amt,annR,y) : fvA(monthly,mRate,y*12)); cS.push(scenario==='purchase' ? amt : monthly*y*12); }
-    retDelay = Math.min(Math.round((fvI/target)*months), months);
-  } else if (scenario === 'debt') {
-    const bal = +document.getElementById('s-dbal').value, pay = +document.getElementById('s-dpay').value;
-    const apr = +document.getElementById('s-apr').value / 100, mApr = apr / 12;
-    let debt = bal, totalPaid = 0, payoffMo = 0;
-    while (debt > 0.01 && payoffMo < months) { const i = debt*mApr, p = pay-i; if (p <= 0) { payoffMo = months; break; } debt = Math.max(0, debt-p); totalPaid += pay; payoffMo++; }
-    nominal = totalPaid; fvI = fvA(pay, mRate, Math.max(0, months-payoffMo)); realFV = fvI / Math.pow(1+infl, years);
-    let d = bal;
-    for (let y = 0; y <= years; y++) { cL.push(age+y); cS.push(-d); const mE = y*12; cI.push(mE > payoffMo ? fvA(pay,mRate,mE-payoffMo) : 0); for (let m = 0; m < 12 && d > 0.01; m++) { const i = d*mApr, p = pay-i; if (p > 0) d = Math.max(0, d-p); else d *= (1+mApr); } }
-    retDelay = Math.min(Math.round((fvI/target)*months), months);
-  } else {
-    const monthly = +document.getElementById('s-contrib').value, lump = +document.getElementById('s-lump').value;
-    for (let y = 0; y <= years; y++) { cL.push(age+y); cI.push(fvL(lump,annR,y) + fvA(monthly,mRate,y*12)); cS.push(lump + monthly*y*12); }
-    nominal = lump + monthly*months; fvI = cI[cI.length-1]; realFV = fvI / Math.pow(1+infl, years); retDelay = 0;
+  // FV of growing annuity (habit with cost inflation)
+  function fvGA(pmt, r, g, n) {
+    if (Math.abs(r - g) < 1e-8) return pmt * n * Math.pow(1 + r, n / 2);
+    return pmt * (Math.pow(1 + r, n) - Math.pow(1 + g, n)) / (r - g);
   }
 
-  const lifeH = Math.round(fvI / wage), dailyOC = fvI / (years * 365);
+  // Hide/show match row
+  const matchEl = document.getElementById('s-match');
+  const matchRate = matchEl ? +matchEl.value / 100 : 0;
+  const matchRow = document.getElementById('r-match-row');
+  if (matchRow) matchRow.style.display = scenario === 'invest' && matchRate > 0 ? '' : 'none';
+
+  // Hide debt warning by default
+  const debtWarnRow = document.getElementById('r-debt-warn-row');
+  if (debtWarnRow) debtWarnRow.style.display = 'none';
+
+  if (scenario === 'habit' || scenario === 'purchase') {
+    const amt = +document.getElementById('s-amount').value;
+    const freq = +document.getElementById('i-freq').value;
+    const monthly = (amt * freq) / 12;
+
+    if (scenario === 'purchase') {
+      // Fix: account for replacement cycles
+      const plife = +document.getElementById('s-plife').value;
+      const replacements = Math.ceil(years / plife);
+      nominal = amt * replacements;
+      fvI = 0;
+      for (let i = 0; i < replacements; i++) {
+        const yLeft = Math.max(0, years - i * plife);
+        fvI += fvL(amt, annR, yLeft);
+      }
+      // Chart: approximate as single lump for simplicity
+      for (let y = 0; y <= years; y++) { cL.push(age + y); cI.push(fvL(amt, annR, y)); cS.push(amt); }
+    } else {
+      // Habit with cost inflation: amount grows at inflation rate annually
+      fvI = fvGA(monthly, mRate, inflM, months);
+      nominal = monthly * months; // undiscounted nominal spend
+      for (let y = 0; y <= years; y++) {
+        cL.push(age + y);
+        cI.push(fvGA(monthly, mRate, inflM, y * 12));
+        cS.push(monthly * y * 12);
+      }
+    }
+    realFV = fvI / Math.pow(1 + infl, years);
+    retDelay = Math.min(Math.round((fvI / target) * months), months);
+
+  } else if (scenario === 'debt') {
+    const bal = +document.getElementById('s-dbal').value;
+    const pay = +document.getElementById('s-dpay').value;
+    const apr = +document.getElementById('s-apr').value / 100;
+    const mApr = apr / 12;
+    const monthlyInterest = bal * mApr;
+
+    // Warn if payment barely covers interest
+    if (pay <= monthlyInterest * 1.05) {
+      if (debtWarnRow) debtWarnRow.style.display = '';
+      const warnEl = document.getElementById('r-debt-warn');
+      if (warnEl) warnEl.textContent = 'Min payment needed: ' + fmtF(monthlyInterest * 1.1);
+    }
+
+    let debt = bal, totalPaid = 0, payoffMo = 0;
+    while (debt > 0.01 && payoffMo < months) {
+      const i = debt * mApr, p = pay - i;
+      if (p <= 0) { payoffMo = months; break; }
+      debt = Math.max(0, debt - p); totalPaid += pay; payoffMo++;
+    }
+    nominal = totalPaid;
+    fvI = fvA(pay, mRate, Math.max(0, months - payoffMo));
+    realFV = fvI / Math.pow(1 + infl, years);
+
+    let d = bal;
+    for (let y = 0; y <= years; y++) {
+      cL.push(age + y); cS.push(-d);
+      const mE = y * 12;
+      cI.push(mE > payoffMo ? fvA(pay, mRate, mE - payoffMo) : 0);
+      for (let m = 0; m < 12 && d > 0.01; m++) {
+        const i = d * mApr, p = pay - i;
+        if (p > 0) d = Math.max(0, d - p); else d *= (1 + mApr);
+      }
+    }
+    retDelay = Math.min(Math.round((fvI / target) * months), months);
+
+  } else {
+    // Invest — with employer match
+    const monthly = +document.getElementById('s-contrib').value;
+    const lump = +document.getElementById('s-lump').value;
+    const effectiveMonthly = monthly * (1 + matchRate);
+    for (let y = 0; y <= years; y++) {
+      cL.push(age + y);
+      cI.push(fvL(lump, annR, y) + fvA(effectiveMonthly, mRate, y * 12));
+      cS.push(lump + monthly * y * 12);
+    }
+    nominal = lump + monthly * months;
+    fvI = cI[cI.length - 1];
+    realFV = fvI / Math.pow(1 + infl, years);
+    retDelay = 0;
+
+    // Show match FV separately
+    if (matchRate > 0 && matchRow) {
+      const matchOnlyFV = fvA(monthly * matchRate, mRate, months);
+      document.getElementById('r-match-fv').textContent = '+' + fmt(matchOnlyFV) + ' from match';
+    }
+  }
+
+  const lifeH = Math.round(fvI / wage);
+  const dailyOC = fvI / (years * 365);
+  const preTaxCost = nominal / Math.max(1 - taxRate, 0.01);
+  const multiplier = fvI / Math.max(nominal, 1);
+
+  // Update hero
   document.getElementById('r-hero').textContent = fmt(fvI);
   document.getElementById('r-sub').textContent = `${fmtF(fvI)} opportunity cost · ${years}-year horizon`;
   document.getElementById('r-real').textContent = fmt(realFV);
   document.getElementById('r-delay').textContent = retDelay > 0 ? retDelay + ' mo' : '<1 mo';
-  document.getElementById('r-hours').textContent = lifeH >= 1000 ? (lifeH/1000).toFixed(1)+'K hrs' : lifeH + ' hrs';
+  document.getElementById('r-hours').textContent = lifeH >= 1000 ? (lifeH / 1000).toFixed(1) + 'K hrs' : lifeH + ' hrs';
+
+  // Update breakdown
   document.getElementById('r-nominal').textContent = fmtF(nominal);
   document.getElementById('r-fv').textContent = fmtF(fvI);
   document.getElementById('r-real2').textContent = fmtF(realFV);
   document.getElementById('r-delaymo').textContent = retDelay > 0 ? retDelay + ' months' : '<1 month';
   document.getElementById('r-hoursfull').textContent = lifeH.toLocaleString() + ' hours';
   document.getElementById('r-daily').textContent = '$' + dailyOC.toFixed(2) + '/day';
+  document.getElementById('r-pretax').textContent = fmtF(preTaxCost) + ' earned to fund this';
+  document.getElementById('r-multiplier').textContent = multiplier.toFixed(1) + '× — each $1 costs $' + multiplier.toFixed(2) + ' in future wealth';
 
+  // Share value
+  const sv = document.getElementById('share-result-val');
+  if (sv) sv.textContent = fmt(fvI) + ' in lifetime wealth';
+
+  // Insights with philosopher quotes
   const ins = {
-    habit: `This habit costs <strong>${fmtF(nominal)}</strong> in cash over ${years} years. The real price is <strong>${fmtF(fvI)}</strong> in future wealth — <strong>${lifeH.toLocaleString()} hours of your life</strong> at your wage. In today's dollars: <strong>${fmtF(realFV)}</strong>.<br><br><em style="font-size:12px;color:var(--ink4)">"Every minute you spend not building assets is a minute not working towards wealth that earns while you sleep." — <strong style="color:var(--ink3)">Naval Ravikant</strong></em>`,
-    purchase: `The sticker price understates the real cost. That money, invested instead, would grow to <strong>${fmtF(fvI)}</strong>. Every $1 spent today costs <strong>${(fvI/Math.max(nominal,1)).toFixed(1)}×</strong> in future wealth.<br><br><em style="font-size:12px;color:var(--ink4)">"Price is what you pay. Value is what you get." — <strong style="color:var(--ink3)">Warren Buffett</strong>. Run the real numbers before every major purchase.</em>`,
-    debt: `This debt costs <strong>${fmtF(nominal)}</strong> in total payments. Once paid off, redirecting those same payments could compound to <strong>${fmtF(fvI)}</strong>. Eliminating high-interest debt is the highest guaranteed return available.<br><br><em style="font-size:12px;color:var(--ink4)">"Invert, always invert — don't ask how to build wealth, ask what destroys it. Then stop doing that." — <strong style="color:var(--ink3)">Charlie Munger</strong></em>`,
-    invest: `Investing consistently builds <strong>${fmtF(fvI)}</strong> — a <strong>${(fvI/Math.max(nominal,1)).toFixed(1)}× return</strong> on <strong>${fmtF(nominal)}</strong> contributed. In today's dollars: <strong>${fmtF(realFV)}</strong>.<br><br><em style="font-size:12px;color:var(--ink4)">"Compound interest is the eighth wonder of the world. He who understands it, earns it." — <strong style="color:var(--ink3)">Warren Buffett</strong></em>`
+    habit: `This habit costs <strong>${fmtF(nominal)}</strong> in cash over ${years} years (inflating at ${(infl*100).toFixed(1)}%/yr). The real price is <strong>${fmtF(fvI)}</strong> in future wealth — <strong>${lifeH.toLocaleString()} hours of your life</strong> at your wage. Pre-tax, you must earn <strong>${fmtF(preTaxCost)}</strong> to fund it. In today's dollars: <strong>${fmtF(realFV)}</strong>.<br><br><em style="font-size:12px;color:var(--ink4)">"Every minute you spend not building assets is a minute not working towards wealth that earns while you sleep." — <strong style="color:var(--ink3)">Naval Ravikant</strong></em>`,
+    purchase: `Accounting for ${Math.ceil(years / Math.max(1, +document.getElementById('s-plife').value))} replacement cycle(s), total spend is <strong>${fmtF(nominal)}</strong>. Invested instead, that becomes <strong>${fmtF(fvI)}</strong> — a <strong>${multiplier.toFixed(1)}× multiplier</strong>. Pre-tax cost to fund this: <strong>${fmtF(preTaxCost)}</strong>.<br><br><em style="font-size:12px;color:var(--ink4)">"Price is what you pay. Value is what you get." — <strong style="color:var(--ink3)">Warren Buffett</strong>. Run the real numbers before every major purchase.</em>`,
+    debt: `This debt costs <strong>${fmtF(nominal)}</strong> in total payments. Once cleared, redirecting payments builds <strong>${fmtF(fvI)}</strong>. Eliminating ${+document.getElementById('s-apr').value}% APR debt is a guaranteed <strong>${+document.getElementById('s-apr').value}% return</strong> — better than most investments.<br><br><em style="font-size:12px;color:var(--ink4)">"Invert, always invert — don't ask how to build wealth, ask what destroys it. Then stop doing that." — <strong style="color:var(--ink3)">Charlie Munger</strong></em>`,
+    invest: `Investing builds <strong>${fmtF(fvI)}</strong>${matchRate > 0 ? ' (including employer match)' : ''} — a <strong>${multiplier.toFixed(1)}× return</strong> on <strong>${fmtF(nominal)}</strong> contributed. In today's dollars: <strong>${fmtF(realFV)}</strong>.${matchRate > 0 ? ' Your employer match is an <strong>instant ' + (+document.getElementById('s-match').value) + '% return</strong> — maximise it first.' : ''}<br><br><em style="font-size:12px;color:var(--ink4)">"Compound interest is the eighth wonder of the world. He who understands it, earns it." — <strong style="color:var(--ink3)">Warren Buffett</strong></em>`
   };
   document.getElementById('r-insight').innerHTML = ins[scenario];
 
-  /* ── ACTION CARD ── */
+  // Action card
   const actions = {
-    habit: `Stop the habit for <strong>30 days</strong>. Open a <a href="https://m1.com/" target="_blank">free M1 Finance account</a> and auto-invest the equivalent monthly amount. At 7%, it compounds to <strong>${fmt(fvI)}</strong>.`,
-    purchase: `Before buying, run the numbers. That <strong>${fmtF(nominal)}</strong> purchase costs <strong>${fmt(fvI)}</strong> in future wealth. If you proceed, finance at 0% APR — never cash.`,
-    debt: `Attack highest-APR debt first (avalanche method). Every dollar paid early saves <strong>${(+document.getElementById('s-apr').value).toFixed(1)}%</strong> guaranteed return. Check our <a href="/debt-avalanche-vs-snowball.html">Debt Avalanche vs Snowball calculator</a>.`,
-    invest: `Automate this contribution today. Set up auto-invest in a <a href="https://www.betterment.com/" target="_blank">Betterment account</a> — it handles rebalancing so you don't have to. Consistency > timing.`
+    habit: `Stop the habit for <strong>30 days</strong>. Open a <a href="https://m1.com/" target="_blank">free M1 Finance account</a> and auto-invest the equivalent ${fmtF(nominal/months)}/mo. At 7%, it compounds to <strong>${fmt(fvI)}</strong>.`,
+    purchase: `Before buying, ask: can I rent, borrow, or buy used? The <strong>${multiplier.toFixed(1)}× multiplier</strong> means every dollar saved here is worth ${multiplier.toFixed(1)} dollars at retirement.`,
+    debt: `Attack highest-APR debt first (avalanche method). Every dollar paid early saves <strong>${+document.getElementById('s-apr').value}% guaranteed return</strong>. Check our <a href="/debt-avalanche-vs-snowball.html">Debt Avalanche vs Snowball calculator</a>.`,
+    invest: `Automate this contribution today. ${matchRate > 0 ? `With your ${+document.getElementById('s-match').value}% employer match, your effective return starts at ${+document.getElementById('s-match').value}% before the market does anything.` : 'Check if your employer offers a 401k match — it\'s an instant 50–100% return before the market touches it.'}`
   };
   const actionEl = document.getElementById('action-txt');
   if (actionEl) actionEl.innerHTML = actions[scenario];
 
-  /* ── CONTEXTUAL AFFILIATES ── */
-  const affContent = document.getElementById('aff-content');
-  if (affContent) {
-    affContent.innerHTML = AFF_SETS[scenario] || AFF_SETS.habit;
-    /* Attach affiliate click tracking */
-    affContent.querySelectorAll('[data-partner]').forEach(el => {
-      el.addEventListener('click', function() {
-        gtag('event', 'affiliate_click', {partner: this.dataset.partner, scenario: scenario});
-      });
-    });
-  }
-
-  /* ── SHARE RESULT VALUE ── */
-  const sv = document.getElementById('share-result-val');
-  if (sv) sv.textContent = fmt(fvI) + ' in lifetime wealth';
-
-  /* ── EMAIL HIDDEN FIELDS ── */
-  const erv = document.getElementById('email-result-val');
-  if (erv) erv.value = fmt(fvI);
-  const esv = document.getElementById('email-scenario-val');
-  if (esv) esv.value = scenario;
-
+  // Milestones
   const maxV = Math.max(...cI.filter(isFinite), 1);
-  const checks = [10,20,30,40].map(d => ({label:'Age '+(age+d), age:age+d})).filter(c => c.age <= ret && c.age > age);
-  checks.push({label:'Retirement · Age '+ret, age:ret});
+  const checks = [10, 20, 30, 40].map(d => ({ label: 'Age ' + (age + d), age: age + d })).filter(c => c.age <= ret && c.age > age);
+  checks.push({ label: 'Retirement · Age ' + ret, age: ret });
   document.getElementById('r-milestones').innerHTML = checks.map(cp => {
     const idx = cL.indexOf(cp.age); if (idx < 0) return '';
-    const val = cI[idx], pct = Math.min(100, Math.max(0, (val/maxV)*100));
+    const val = cI[idx], pct = Math.min(100, Math.max(0, (val / maxV) * 100));
     const col = val >= 0 ? 'var(--green)' : 'var(--red)';
     return `<div class="ms-row"><div class="ms-age">${cp.label}</div><div class="ms-track"><div class="ms-fill" style="width:${pct}%;background:${col}"></div></div><div class="ms-amt" style="color:${col}">${fmt(val)}</div></div>`;
   }).join('');
+
+  // Contextual affiliates
+  const affContent = document.getElementById('aff-content');
+  if (affContent) affContent.innerHTML = AFF_SETS[scenario] || AFF_SETS.habit;
+
   drawChart(cL, cI, cS);
 }
 

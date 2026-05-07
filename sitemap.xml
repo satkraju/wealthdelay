@@ -4,285 +4,243 @@
   <!-- Homepage -->
   <url>
     <loc>https://wealthdelay.com/</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Tool 01 -->
+  <!-- Habit Tools -->
   <url>
-    <loc>https://wealthdelay.com/index.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Tool 02 -->
-  <url>
-    <loc>https://wealthdelay.com/coffee-habit-true-cost.html</loc>
-    <lastmod>2026-05-06</lastmod>
+    <loc>https://wealthdelay.com/coffee-habit-true-cost</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Tool 03 -->
   <url>
-    <loc>https://wealthdelay.com/streaming-subscription-cost-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 04 -->
-  <url>
-    <loc>https://wealthdelay.com/eating-out-vs-cooking-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 05 -->
-  <url>
-    <loc>https://wealthdelay.com/smoking-financial-cost-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 06 -->
-  <url>
-    <loc>https://wealthdelay.com/gym-membership-roi-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 07 -->
-  <url>
-    <loc>https://wealthdelay.com/credit-card-true-cost-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 08 -->
-  <url>
-    <loc>https://wealthdelay.com/mortgage-overpayment-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 09 -->
-  <url>
-    <loc>https://wealthdelay.com/student-loan-payoff-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 10 -->
-  <url>
-    <loc>https://wealthdelay.com/car-loan-true-cost-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 11 -->
-  <url>
-    <loc>https://wealthdelay.com/buy-now-pay-later-true-cost.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 12 -->
-  <url>
-    <loc>https://wealthdelay.com/debt-avalanche-vs-snowball.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 13 -->
-  <url>
-    <loc>https://wealthdelay.com/salary-negotiation-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 14 -->
-  <url>
-    <loc>https://wealthdelay.com/401k-contribution-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 15 -->
-  <url>
-    <loc>https://wealthdelay.com/fire-number-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 16 -->
-  <url>
-    <loc>https://wealthdelay.com/inflation-savings-erosion-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 17 -->
-  <url>
-    <loc>https://wealthdelay.com/how-long-will-savings-last.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 18 -->
-  <url>
-    <loc>https://wealthdelay.com/lifestyle-inflation-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 19 -->
-  <url>
-    <loc>https://wealthdelay.com/true-cost-of-bigger-house.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 20 -->
-  <url>
-    <loc>https://wealthdelay.com/luxury-car-opportunity-cost.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 21 -->
-  <url>
-    <loc>https://wealthdelay.com/true-hourly-rate-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 22 -->
-  <url>
-    <loc>https://wealthdelay.com/side-hustle-investment-value.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tool 23 -->
-  <url>
-    <loc>https://wealthdelay.com/rent-vs-buy-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
+    <loc>https://wealthdelay.com/daily-habit-true-cost-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Tool 24 -->
   <url>
-    <loc>https://wealthdelay.com/index-fund-vs-stock-picking.html</loc>
-    <lastmod>2026-05-06</lastmod>
+    <loc>https://wealthdelay.com/streaming-subscription-cost-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/eating-out-vs-cooking-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/smoking-financial-cost-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/gym-membership-roi-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/lifestyle-inflation-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Tool 25 -->
+  <!-- Debt Tools -->
   <url>
-    <loc>https://wealthdelay.com/emergency-fund-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
+    <loc>https://wealthdelay.com/credit-card-true-cost-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/car-loan-true-cost-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/student-loan-payoff-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/mortgage-overpayment-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/buy-now-pay-later-true-cost</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/debt-avalanche-vs-snowball</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Tool 26 -->
+  <!-- Investment Tools -->
   <url>
-    <loc>https://wealthdelay.com/investment-fee-drag-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
+    <loc>https://wealthdelay.com/fire-number-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/retirement-wealth-estimator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/compound-interest-early-vs-late</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/401k-contribution-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/investment-fee-drag-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/index-fund-vs-stock-picking</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/inflation-savings-erosion-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/side-hustle-investment-value</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Tool 27 -->
+  <!-- Life & Housing Tools -->
   <url>
-    <loc>https://wealthdelay.com/compound-interest-early-vs-late.html</loc>
-    <lastmod>2026-05-06</lastmod>
+    <loc>https://wealthdelay.com/rent-vs-buy-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/true-cost-of-bigger-house</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Tool 28 -->
   <url>
-    <loc>https://wealthdelay.com/daily-habit-true-cost-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
+    <loc>https://wealthdelay.com/luxury-car-opportunity-cost</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Tool 29 -->
   <url>
-    <loc>https://wealthdelay.com/net-worth-target-calculator.html</loc>
-    <lastmod>2026-05-06</lastmod>
+    <loc>https://wealthdelay.com/salary-negotiation-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Tool 30 -->
   <url>
-    <loc>https://wealthdelay.com/retirement-wealth-estimator.html</loc>
-    <lastmod>2026-05-06</lastmod>
+    <loc>https://wealthdelay.com/true-hourly-rate-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/emergency-fund-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/how-long-will-savings-last</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/net-worth-target-calculator</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Articles -->
   <url>
-    <loc>https://wealthdelay.com/true-cost-daily-coffee-habit.html</loc>
-    <lastmod>2026-05-06</lastmod>
+    <loc>https://wealthdelay.com/true-cost-daily-coffee-habit</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/what-is-opportunity-cost</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/how-to-calculate-fire-number</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/rent-vs-buy-math</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/true-cost-of-car-loan</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- Site Pages -->
   <url>
-    <loc>https://wealthdelay.com/what-is-opportunity-cost.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://wealthdelay.com/about</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
-
   <url>
-    <loc>https://wealthdelay.com/how-to-calculate-fire-number.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://wealthdelay.com/privacy</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
-
   <url>
-    <loc>https://wealthdelay.com/rent-vs-buy-math.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://wealthdelay.com/true-cost-of-car-loan.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://wealthdelay.com/disclaimer</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>

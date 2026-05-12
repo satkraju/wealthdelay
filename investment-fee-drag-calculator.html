@@ -779,4 +779,39 @@ function generatePDF(){
   document.head.appendChild(s);
 }
 </script>
+
+<section style="max-width:760px;margin:0 auto;padding:48px 24px 72px;">
+  <h2 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(20px,2.5vw,26px);font-weight:800;letter-spacing:-.02em;color:#1d1d1f;margin-bottom:14px;">What Is the Investment Fee Drag Calculator?</h2>
+  <p style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#3d3d3f;line-height:1.68;font-size:16px;margin-bottom:20px;">This calculator shows exactly how much wealth is destroyed by investment management fees over time — comparing a high-fee actively managed fund to a low-cost index fund holding identical assets. It's for investors who see "1% annual fee" as small and haven't calculated what that single percentage point costs them over 20–30 years of compounding.</p>
+
+  <h2 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(18px,2vw,22px);font-weight:800;letter-spacing:-.02em;color:#1d1d1f;margin-bottom:12px;">How the Calculation Works</h2>
+  <p style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#3d3d3f;line-height:1.68;font-size:16px;margin-bottom:20px;">The fee drag calculation compares two future value scenarios: FV_low = P(1+r−f₁)^n and FV_high = P(1+r−f₂)^n, where r is the gross return rate, f₁ is the low-fee expense ratio, and f₂ is the high-fee expense ratio. The difference compounds exponentially. The fee doesn't just cost you its face value — it costs you the compound growth that fee money would have generated over the remaining investment horizon.</p>
+
+  <h2 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(18px,2vw,22px);font-weight:800;letter-spacing:-.02em;color:#1d1d1f;margin-bottom:12px;">Why This Number Matters</h2>
+  <p style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#3d3d3f;line-height:1.68;font-size:16px;margin-bottom:28px;">A 1% expense ratio on a $200,000 portfolio earning 7% annually costs $204,000 over 30 years in foregone wealth compared to a 0.05% index fund. That's not $2,000/year compounded — it's much more, because the fee compounds against your compounding returns. Vanguard's own research shows that expense ratios are the single most reliable predictor of future fund performance: lower costs persistently beat higher costs.</p>
+
+  <h2 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(18px,2vw,22px);font-weight:800;letter-spacing:-.02em;color:#1d1d1f;margin-bottom:16px;">Frequently Asked Questions</h2>
+
+  <div style="border:1px solid rgba(0,0,0,0.08);border-radius:12px;overflow:hidden;margin-bottom:28px;">
+    <div style="padding:18px 20px;border-bottom:1px solid rgba(0,0,0,0.06);">
+      <h3 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;font-weight:700;color:#1d1d1f;margin-bottom:6px;">What is a reasonable expense ratio?</h3>
+      <p style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;color:#3d3d3f;line-height:1.6;margin:0;">Total US stock market index funds now cost as little as 0.03% (Fidelity FZROX is 0%). Broad international index funds run 0.05–0.10%. The average actively managed US fund charges 0.68%. Any fee above 0.25% requires strong justification — and active funds underperform their index benchmarks 80–90% of the time over 10+ year periods, per S&amp;P's SPIVA reports.</p>
+    </div>
+    <div style="padding:18px 20px;border-bottom:1px solid rgba(0,0,0,0.06);">
+      <h3 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;font-weight:700;color:#1d1d1f;margin-bottom:6px;">Are financial advisor fees included in the expense ratio?</h3>
+      <p style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;color:#3d3d3f;line-height:1.6;margin:0;">No — advisor fees are separate. A 1% AUM (assets under management) advisory fee sits on top of fund expense ratios. Combined fees of 1.5–2% annually are common in advisor-managed accounts. At those levels on a $500,000 portfolio, the 30-year wealth drag exceeds $700,000.</p>
+    </div>
+    <div style="padding:18px 20px;">
+      <h3 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;font-weight:700;color:#1d1d1f;margin-bottom:6px;">What about 401k plan fees?</h3>
+      <p style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;color:#3d3d3f;line-height:1.6;margin:0;">Your 401k plan may charge administrative fees (typically 0.1–1%) on top of individual fund expense ratios. You can find these in your plan's fee disclosure document (required by law). If your plan offers only high-fee options, maximize your 401k match, then contribute additional retirement savings to an IRA where you can choose your own low-cost funds.</p>
+    </div>
+  </div>
+
+  <h2 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(18px,2vw,22px);font-weight:800;letter-spacing:-.02em;color:#1d1d1f;margin-bottom:14px;">Related Calculators</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">
+    <a href="/index-fund-vs-stock-picking" style="display:block;padding:14px 16px;background:#f7f2e8;border:1px solid rgba(0,0,0,0.08);border-radius:10px;text-decoration:none;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:14px;font-weight:600;color:#1d1d1f;">Index Funds vs Stock Picking →</a>
+    <a href="/401k-contribution-calculator" style="display:block;padding:14px 16px;background:#f7f2e8;border:1px solid rgba(0,0,0,0.08);border-radius:10px;text-decoration:none;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:14px;font-weight:600;color:#1d1d1f;">401k Contribution Calculator →</a>
+    <a href="/fire-number-calculator" style="display:block;padding:14px 16px;background:#f7f2e8;border:1px solid rgba(0,0,0,0.08);border-radius:10px;text-decoration:none;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:14px;font-weight:600;color:#1d1d1f;">FIRE Number Calculator →</a>
+  </div>
+</section>
 </body></html>

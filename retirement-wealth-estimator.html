@@ -787,4 +787,39 @@ function generatePDF(){
   document.head.appendChild(s);
 }
 </script>
+
+<section style="max-width:760px;margin:0 auto;padding:48px 24px 72px;">
+  <h2 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(20px,2.5vw,26px);font-weight:800;letter-spacing:-.02em;color:#1d1d1f;margin-bottom:14px;">What Is the Retirement Wealth Estimator?</h2>
+  <p style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#3d3d3f;line-height:1.68;font-size:16px;margin-bottom:20px;">The Retirement Wealth Estimator projects how much your current savings and ongoing contributions will grow by the time you retire. It's built for anyone who wants to see — in today's dollars — whether their current savings rate puts them on track, or how much more they need to set aside each month to hit their target.</p>
+
+  <h2 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(18px,2vw,22px);font-weight:800;letter-spacing:-.02em;color:#1d1d1f;margin-bottom:12px;">How the Calculation Works</h2>
+  <p style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#3d3d3f;line-height:1.68;font-size:16px;margin-bottom:20px;">The calculator uses the Future Value of a growing annuity formula: FV = P(1+r)^n + C × [(1+r)^n − 1] / r, where P is your current portfolio, r is the annual return rate, n is years to retirement, and C is your monthly contribution. The default assumes 7% annual growth — the historical average real return of a diversified US stock portfolio after inflation.</p>
+
+  <h2 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(18px,2vw,22px);font-weight:800;letter-spacing:-.02em;color:#1d1d1f;margin-bottom:12px;">Why This Number Matters</h2>
+  <p style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#3d3d3f;line-height:1.68;font-size:16px;margin-bottom:28px;">Most people dramatically underestimate how much compound growth does the heavy lifting over time. Someone who starts with $10,000 at age 25 and contributes $500/month will accumulate roughly $1.4M by age 65 at 7% returns — with only $252,000 coming from their own contributions. The other $1.15M is pure compound growth. Seeing this projection early is what turns occasional savers into consistent investors.</p>
+
+  <h2 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(18px,2vw,22px);font-weight:800;letter-spacing:-.02em;color:#1d1d1f;margin-bottom:16px;">Frequently Asked Questions</h2>
+
+  <div style="border:1px solid rgba(0,0,0,0.08);border-radius:12px;overflow:hidden;margin-bottom:28px;">
+    <div style="padding:18px 20px;border-bottom:1px solid rgba(0,0,0,0.06);">
+      <h3 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;font-weight:700;color:#1d1d1f;margin-bottom:6px;">What return rate should I use?</h3>
+      <p style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;color:#3d3d3f;line-height:1.6;margin:0;">The S&amp;P 500 has returned an average of about 10% nominally and 7% after inflation over the past 50 years. For a conservative estimate, use 6%. For an all-stock portfolio with no inflation adjustment, 10% is historically supported — but past returns don't guarantee future results.</p>
+    </div>
+    <div style="padding:18px 20px;border-bottom:1px solid rgba(0,0,0,0.06);">
+      <h3 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;font-weight:700;color:#1d1d1f;margin-bottom:6px;">How much should I have saved by age 40?</h3>
+      <p style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;color:#3d3d3f;line-height:1.6;margin:0;">Fidelity recommends having 3× your annual salary saved by age 40. If you earn $80,000, that's $240,000. However, the more actionable benchmark is whether your current trajectory hits your FIRE number or target retirement date — this calculator gives you that specific projection.</p>
+    </div>
+    <div style="padding:18px 20px;">
+      <h3 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;font-weight:700;color:#1d1d1f;margin-bottom:6px;">Does this account for inflation?</h3>
+      <p style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;color:#3d3d3f;line-height:1.6;margin:0;">If you use the 7% real return assumption, the result is already inflation-adjusted — meaning the output is in today's purchasing power. If you use the nominal 10%, multiply the output by roughly 0.5 to get an approximate real value (assuming 3% average inflation over 25+ years).</p>
+    </div>
+  </div>
+
+  <h2 style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(18px,2vw,22px);font-weight:800;letter-spacing:-.02em;color:#1d1d1f;margin-bottom:14px;">Related Calculators</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">
+    <a href="/fire-number-calculator" style="display:block;padding:14px 16px;background:#f7f2e8;border:1px solid rgba(0,0,0,0.08);border-radius:10px;text-decoration:none;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:14px;font-weight:600;color:#1d1d1f;">FIRE Number Calculator →</a>
+    <a href="/compound-interest-early-vs-late" style="display:block;padding:14px 16px;background:#f7f2e8;border:1px solid rgba(0,0,0,0.08);border-radius:10px;text-decoration:none;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:14px;font-weight:600;color:#1d1d1f;">Compound Interest: Early vs Late →</a>
+    <a href="/401k-contribution-calculator" style="display:block;padding:14px 16px;background:#f7f2e8;border:1px solid rgba(0,0,0,0.08);border-radius:10px;text-decoration:none;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:14px;font-weight:600;color:#1d1d1f;">401k Contribution Calculator →</a>
+  </div>
+</section>
 </body></html>

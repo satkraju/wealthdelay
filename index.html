@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -804,7 +804,7 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
     <div class="sec-tag">All Calculators</div>
     <h2 class="sec-h">30 Free Tools</h2>
     <div class="tools-grid">
-      <a href="/index.html" class="tool-tile"><div class="tile-num">01 · Opportunity Cost</div><div class="tile-name">Lifetime Financial Impact Simulator</div></a>
+      <a href="/" class="tool-tile"><div class="tile-num">01 · Opportunity Cost</div><div class="tile-name">Lifetime Financial Impact Simulator</div></a>
       <a href="/coffee-habit-true-cost.html" class="tool-tile"><div class="tile-num">02 · Opportunity Cost</div><div class="tile-name">Coffee Lifetime Cost Calculator</div></a>
       <a href="/streaming-subscription-cost-calculator.html" class="tool-tile"><div class="tile-num">03 · Opportunity Cost</div><div class="tile-name">Streaming Subscription True Cost</div></a>
       <a href="/eating-out-vs-cooking-calculator.html" class="tool-tile"><div class="tile-num">04 · Opportunity Cost</div><div class="tile-name">Eating Out vs Cooking</div></a>
@@ -1058,7 +1058,11 @@ function calc() {
 
   // FV of growing annuity (habit with cost inflation)
   function fvGA(pmt, r, g, n) {
-    if (Math.abs(r - g) < 1e-8) return pmt * n * Math.pow(1 + r, n / 2);
+    if (n <= 0) return 0;
+    if (Math.abs(r - g) < 1e-10) {
+      const rAdj = r + 1e-10;
+      return pmt * (Math.pow(1 + rAdj, n) - Math.pow(1 + g, n)) / (rAdj - g);
+    }
     return pmt * (Math.pow(1 + r, n) - Math.pow(1 + g, n)) / (r - g);
   }
 
@@ -1293,8 +1297,14 @@ function initShare() {
 /* ── SOCIAL PROOF COUNTER ── */
 function initSocialProof() {
   const key = 'wd_calc_count';
+  const monthKey = 'wd_calc_month';
+  const thisMonth = new Date().getFullYear() + '-' + new Date().getMonth();
+  if (localStorage.getItem(monthKey) !== thisMonth) {
+    localStorage.setItem(monthKey, thisMonth);
+    localStorage.setItem(key, '14200');
+  }
   const stored = parseInt(localStorage.getItem(key) || '14200');
-  const base = stored + Math.floor(Math.random() * 3 + 1);
+  const base = Math.min(stored + Math.floor(Math.random() * 3 + 1), 19999);
   localStorage.setItem(key, base);
   const el = document.querySelector('[data-social-proof]');
   if (el) el.textContent = base.toLocaleString() + '+ calculations run this month';

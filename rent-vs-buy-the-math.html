@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Rent vs Buy: The Math Nobody Shows You | WealthDelay</title>
+<meta name="description" content="Everyone says buying is better than renting. The math says: it depends. Here's the full rent vs buy calculation most people never see.">
+<meta name="author" content="WealthDelay Team">
+<link rel="canonical" href="https://wealthdelay.com/rent-vs-buy-the-math">
+<link rel="preload" href="https://fonts.gstatic.com/s/plusjakartasans/v8/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta property="og:title" content="Rent vs Buy: The Math Nobody Shows You | WealthDelay">
+<meta property="og:description" content="Everyone says buying is better than renting. The math says: it depends. Here's the full rent vs buy calculation most people never see.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wealthdelay.com/rent-vs-buy-the-math">
+<meta property="og:image" content="https://wealthdelay.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rent vs Buy: The Math Nobody Shows You | WealthDelay">
+<meta name="twitter:description" content="Everyone says buying is better than renting. The math says: it depends. Here's the full rent vs buy calculation most people never see.">
+<meta name="twitter:image" content="https://wealthdelay.com/og-default.png">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebArticle","headline":"Rent vs Buy: The Math Nobody Shows You","description":"Everyone says buying is better than renting. The math says: it depends. Here's the full rent vs buy calculation most people never see.","url":"https://wealthdelay.com/rent-vs-buy-the-math","datePublished":"2026-05-07","author":{"@type":"Organization","name":"WealthDelay Team"},"publisher":{"@type":"Organization","name":"WealthDelay","logo":{"@type":"ImageObject","url":"https://wealthdelay.com/og-default.png"}}}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is renting really throwing money away?","acceptedAnswer":{"@type":"Answer","text":"No. This is one of the most expensive financial myths in circulation. When you rent, you pay for housing. When you buy, you also pay for mortgage interest (typically 60-70% of early payments), property taxes, insurance, and maintenance costs averaging 1-3% of home value per year. The opportunity cost of the down payment, invested in index funds, also accumulates significantly over time. Whether buying beats renting depends entirely on local price-to-rent ratios and your time horizon."}},{"@type":"Question","name":"What is the 5% rule for rent vs buy?","acceptedAnswer":{"@type":"Answer","text":"The 5% rule, popularized by financial planner Ben Felix, states that the unrecoverable annual cost of owning a home is approximately 5% of the home's value: about 1% in property tax, 1% in maintenance costs, and 3% as the opportunity cost of the down payment and equity. If you can rent an equivalent home for less than 5% of the purchase price per year (i.e., less than the purchase price divided by 12 multiplied by 0.05/12 per month), renting is likely the better financial choice."}},{"@type":"Question","name":"How long do you need to stay in a home for buying to beat renting?","acceptedAnswer":{"@type":"Answer","text":"In most US markets at 2024-2025 price-to-rent ratios, the break-even point is typically 5 to 8 years. In high-cost markets like San Francisco, New York, or Boston, it can exceed 10 years. If you might move within 5 years, the transaction costs of buying (6-8% round-trip for agent fees, closing costs, and selling costs) usually make renting the financially superior choice."}}]}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"WealthDelay","item":"https://wealthdelay.com"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://wealthdelay.com"},{"@type":"ListItem","position":3,"name":"Rent vs Buy: The Math Nobody Shows You","item":"https://wealthdelay.com/rent-vs-buy-the-math"}]}</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5184312708933601" crossorigin="anonymous"></script>
+
+<style>
+:root {
+  --ink: #1d1d1f; --ink2: #3d3d3f; --muted: #6e6e73; --faint: #aeaeb2;
+  --border: rgba(0,0,0,0.08); --border-strong: rgba(0,0,0,0.12);
+  --bg: #FDFAF5; --bg2: #F7F2E8; --white: #ffffff;
+  --green: #16A34A; --green-dark: #14532D; --green-light: #F0FDF4; --green-mid: #BBF7D0;
+  --red: #ff3b30; --amber: #ff9500; --blue: #0071e3; --purple: #8b5cf6;
+  --font: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --shadow-xs: 0 1px 2px rgba(0,0,0,.04);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.06),0 1px 3px rgba(0,0,0,.04);
+  --shadow: 0 8px 32px rgba(0,0,0,.08),0 2px 8px rgba(0,0,0,.04);
+  --radius: 18px; --radius-sm: 12px; --radius-xs: 8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:var(--font);background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+nav{position:sticky;top:0;z-index:200;height:62px;background:rgba(253,250,245,.92);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.1);display:flex;align-items:center;justify-content:space-between;padding:0 28px;}
+.nav-left{display:flex;align-items:center;gap:16px;}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.logo-icon{width:34px;height:34px;background:#16A34A;border-radius:9px;display:grid;place-items:center;flex-shrink:0;box-shadow:0 2px 8px rgba(22,163,74,.28);}
+.logo-name{font-size:18px;font-weight:800;color:#1A1A1A;letter-spacing:-.03em;line-height:1;}
+.logo-name em{color:#16A34A;font-style:normal;}
+.nav-back{font-size:13px;font-weight:600;color:#16A34A;text-decoration:none;display:flex;align-items:center;gap:4px;transition:opacity .15s;}
+.nav-back:hover{opacity:.75;}
+.nav-pill{font-size:12px;font-weight:700;color:#16A34A;background:#DCFCE7;border:1px solid #BBF7D0;padding:5px 14px;border-radius:99px;display:flex;align-items:center;gap:6px;letter-spacing:.01em;}
+.nav-pill::before{content:'';width:6px;height:6px;background:#16A34A;border-radius:50%;animation:navpulse 2s ease infinite;}
+@keyframes navpulse{0%,100%{opacity:1}50%{opacity:.3}}
+.article-hero{background:var(--white);border-bottom:1px solid var(--border);padding:64px 24px 52px;text-align:center;}
+.article-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:18px;}
+.article-eyebrow .cat{color:var(--green);}
+.article-h1{font-size:clamp(30px,5vw,52px);font-weight:800;letter-spacing:-.04em;line-height:1.07;color:var(--ink);max-width:780px;margin:0 auto 18px;}
+.article-sub{font-size:clamp(16px,1.8vw,19px);color:var(--muted);max-width:560px;margin:0 auto 28px;line-height:1.6;}
+.article-meta{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--faint);}
+.article-meta span{display:flex;align-items:center;gap:5px;}
+.article-body{max-width:760px;margin:0 auto;padding:56px 24px 80px;}
+.article-body h2{font-size:clamp(20px,2.5vw,26px);font-weight:800;letter-spacing:-.03em;color:var(--ink);margin:44px 0 14px;}
+.article-body h3{font-size:clamp(17px,2vw,20px);font-weight:700;letter-spacing:-.02em;color:var(--ink2);margin:32px 0 12px;}
+.article-body p{color:var(--ink2);line-height:1.72;margin-bottom:20px;font-size:16.5px;}
+.article-body ul,.article-body ol{color:var(--ink2);line-height:1.72;margin-bottom:20px;padding-left:24px;font-size:16.5px;}
+.article-body li{margin-bottom:8px;}
+.article-body strong{color:var(--ink);font-weight:700;}
+.callout{background:#f0fdf4;border-left:4px solid #16A34A;padding:20px 24px;border-radius:8px;margin:28px 0;}
+.callout-label{font-size:11px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;}
+.callout p{margin-bottom:0;color:var(--ink2);}
+.callout p+p{margin-top:10px;}
+.callout strong{color:var(--green-dark);}
+.number-example{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:24px 28px;margin:28px 0;box-shadow:var(--shadow-sm);}
+.number-example-title{font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;}
+.number-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);}
+.number-row:last-child{border-bottom:none;}
+.number-label{font-size:14px;color:var(--muted);}
+.number-val{font-size:15px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums;}
+.number-val.green{color:var(--green);}
+.number-val.red{color:var(--red);}
+.number-val.amber{color:var(--amber);}
+.related-link{padding:16px 18px;background:var(--white);border:1px solid var(--border);border-radius:12px;font-size:14px;font-weight:600;color:var(--ink2);text-decoration:none;transition:all .18s;display:block;}
+.related-link:hover{border-color:#BBF7D0;background:#F0FDF4;color:var(--green);}
+.disclaimer{max-width:760px;margin:0 auto;padding:24px 28px 48px;font-size:12px;color:#6B6B6B;line-height:1.75;text-align:center;}
+footer{background:#111827;border-top:1px solid rgba(255,255,255,.06);padding:52px 28px 32px;text-align:left;}
+.footer-logo,.footer-copy,.footer-links{display:none !important;}
+.ft-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;padding-bottom:40px;}
+.ft-brand-name{font-size:20px;font-weight:800;color:#F9FAFB;letter-spacing:-.03em;margin-bottom:8px;}
+.ft-brand-name em{color:#16A34A;font-style:normal;}
+.ft-brand-p{font-size:13px;color:#6B7280;line-height:1.7;max-width:240px;font-weight:500;}
+.ft-col h4{font-size:11px;font-weight:700;color:#4B5563;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;}
+.ft-col a{display:block;font-size:13px;color:#6B7280;text-decoration:none;margin-bottom:8px;font-weight:500;transition:color .12s;}
+.ft-col a:hover{color:#16A34A;}
+.ft-bottom{max-width:1080px;margin:0 auto;padding-top:24px;border-top:1px solid #1F2937;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:12px;color:#4B5563;font-weight:500;}
+.ft-links{display:flex;gap:18px;}
+.ft-links a{color:#4B5563;text-decoration:none;font-size:12px;font-weight:500;transition:color .12s;}
+.ft-links a:hover{color:#16A34A;}
+@media(max-width:700px){.ft-inner{grid-template-columns:1fr;gap:28px;}.ft-bottom{flex-direction:column;align-items:flex-start;}}
+@media(max-width:600px){.article-h1{font-size:28px;}.article-body{padding:36px 16px 60px;}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-left">
+    <a class="nav-logo" href="/">
+      <div class="logo-icon">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><polyline points="1.5,13 5,7.5 8,10.5 11,5.5 14,8.5 16.5,3.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="logo-name"><em>Wealth</em>Delay</div>
+    </a>
+    <a class="nav-back" href="/">&#8592; All Tools</a>
+  </div>
+  <div class="nav-pill">Free Guide</div>
+</nav>
+
+<section class="article-hero">
+  <div class="article-eyebrow">Guide &nbsp;&#183;&nbsp; <span class="cat">Housing</span></div>
+  <h1 class="article-h1">Rent vs Buy: The Math Nobody Shows You</h1>
+  <p class="article-sub">Everyone says buying is better than renting. The math says: it depends. Here is the full rent vs buy calculation most people never see — including the costs that are routinely left out of the comparison.</p>
+  <div class="article-meta">
+    <span>By WealthDelay Team</span>
+    <span>&#183;</span>
+    <span>Published May 7, 2026</span>
+    <span>&#183;</span>
+    <span>14 min read</span>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p>"Renting is throwing money away." You have heard this phrase so many times it feels like settled science. Parents say it. Real estate agents say it. Financial advice columns repeat it as though it is a natural law. It is not. It is a myth — and it is one of the most expensive financial myths in circulation because it pushes people into buying homes before the math actually supports it.</p>
+
+  <p>The truth is more nuanced: buying can be the better financial decision, and renting can be the better financial decision, depending on your specific situation. Whether you should buy or rent comes down to a set of variables that the "renting is throwing money away" crowd consistently ignores: the price-to-rent ratio in your market, your time horizon, the true unrecoverable costs of ownership, and what you would do with the capital you would otherwise tie up in a down payment.</p>
+
+  <p>Let us go through the complete math.</p>
+
+  <h2>The True Cost of Buying: What Most People Miss</h2>
+
+  <p>When someone says "I pay $2,400 a month in mortgage, not $2,200 in rent, but at least I'm building equity," they are comparing the wrong numbers. The mortgage payment is not the cost of owning — it is one component of it. Here is what a complete cost analysis of homeownership looks like for a $500,000 home.</p>
+
+  <h3>Component 1: Mortgage Interest</h3>
+
+  <p>On a 30-year fixed mortgage at a 7% interest rate with 20% down ($100,000), the monthly principal and interest payment is approximately $2,661. But in the first year, roughly 70% of each payment goes to interest — money paid to the lender that builds zero equity. Over the full 30-year life of the loan, total interest paid comes to approximately $558,000. You will have bought a $500,000 house for $958,000 in nominal dollars.</p>
+
+  <h3>Component 2: Property Tax</h3>
+
+  <p>The average effective property tax rate in the United States is approximately 1.1% of assessed value per year. On a $500,000 home, that is $5,500 per year, or $458 per month. This money goes to local government. It never stops. It typically increases each year as property values rise. Over 30 years at modest 2% annual increases, total property taxes paid on a $500,000 home easily exceed $200,000.</p>
+
+  <h3>Component 3: Maintenance and Repairs</h3>
+
+  <p>The rule of thumb used by financial planners is that homeowners should budget 1% to 3% of home value per year for maintenance, repairs, and capital expenditures. A roof replacement costs $10,000 to $25,000. An HVAC system costs $7,000 to $15,000. Kitchen renovation: $20,000 to $60,000. These are not optional — they are the price of maintaining the asset. On a $500,000 home, budgeting 1.5% per year means $7,500 annually, or $625 per month, dedicated to maintenance.</p>
+
+  <h3>Component 4: Homeowner's Insurance</h3>
+
+  <p>Average homeowner's insurance in the US runs approximately $1,400 per year, or $117 per month. In coastal markets or areas with flood, wildfire, or hurricane risk, this figure can be several multiples higher.</p>
+
+  <h3>Component 5: The Opportunity Cost of the Down Payment</h3>
+
+  <p>This is the cost that virtually every rent vs buy discussion ignores entirely, and it is enormous. The $100,000 down payment on a $500,000 home is $100,000 that is no longer invested in financial markets. At a 7% annual return, $100,000 becomes $761,000 over 30 years. That is the opportunity cost of the down payment — the wealth you forgo by putting capital into housing equity instead of a stock market index fund.</p>
+
+  <div class="callout">
+    <div class="callout-label">True Annual Cost of Owning a $500K Home</div>
+    <p>Mortgage interest (yr 1): <strong>$27,600</strong></p>
+    <p>Property tax (1.1%): <strong>$5,500</strong></p>
+    <p>Maintenance (1.5%): <strong>$7,500</strong></p>
+    <p>Insurance: <strong>$1,400</strong></p>
+    <p>Opportunity cost of $100K down payment at 7%: <strong>$7,000/year</strong></p>
+    <p style="margin-top:10px;"><strong>Total unrecoverable annual cost: ~$49,000, or $4,083/month</strong></p>
+    <p>Note: Principal payments build equity and are recoverable — they are not included in this unrecoverable cost figure.</p>
+  </div>
+
+  <h2>The True Cost of Renting</h2>
+
+  <p>Renting is considerably simpler to analyze. You pay rent. You are not responsible for maintenance. You have no property taxes. Your insurance (renters insurance) costs approximately $15 to $30 per month. And critically — the down payment capital you did not deploy into a home can be invested.</p>
+
+  <p>Assume you rent an equivalent home for $2,200 per month (using the $500,000 purchase price example). Your annual housing cost is $26,400 in rent plus approximately $300 in renters insurance. Total: $26,700 per year.</p>
+
+  <p>But you also have $100,000 that you would have used for a down payment, plus the monthly difference between owning and renting ($4,083 vs $2,200 = $1,883/month), being invested instead. Over 30 years at 7%, this invested capital is worth substantially more than home equity in most realistic scenarios.</p>
+
+  <div class="number-example">
+    <div class="number-example-title">30-Year Comparison: $500K Home Purchase vs Renting</div>
+    <div class="number-row"><div class="number-label">Home purchase price</div><div class="number-val">$500,000</div></div>
+    <div class="number-row"><div class="number-label">Down payment (20%)</div><div class="number-val">$100,000</div></div>
+    <div class="number-row"><div class="number-label">Mortgage rate</div><div class="number-val">7.0%</div></div>
+    <div class="number-row"><div class="number-label">Equivalent monthly rent</div><div class="number-val">$2,200</div></div>
+    <div class="number-row"><div class="number-label">Total true cost of ownership over 30 yrs</div><div class="number-val red">$1,460,000</div></div>
+    <div class="number-row"><div class="number-label">Home value at 3% annual appreciation</div><div class="number-val green">$1,213,000</div></div>
+    <div class="number-row"><div class="number-label">Net buyer position (home value minus costs)</div><div class="number-val amber">−$247,000</div></div>
+    <div class="number-row"><div class="number-label">Renter's investment portfolio (savings invested at 7%)</div><div class="number-val green">$820,000</div></div>
+  </div>
+
+  <p>These numbers vary significantly based on local appreciation rates, rent levels, and investment returns. In markets where homes appreciate at 5% annually (coastal cities), buying eventually outperforms. In flat-appreciation markets, renting often wins for decades.</p>
+
+  <h2>The 5% Rule: A Simple Framework</h2>
+
+  <p>Financial planner Ben Felix popularized a practical framework called the 5% Rule that cuts through most of the complexity. The insight is that the unrecoverable annual cost of owning a home is approximately 5% of the home's value:</p>
+
+  <ul>
+    <li><strong>1% property tax</strong> (national average)</li>
+    <li><strong>1% maintenance cost</strong> (conservative estimate)</li>
+    <li><strong>3% opportunity cost</strong> (cost of capital tied up in the home instead of invested)</li>
+  </ul>
+
+  <p>The rule: multiply the home's purchase price by 5% and divide by 12. If you can rent an equivalent home for less than that monthly figure, renting is likely the better financial decision.</p>
+
+  <p>Applied to a $500,000 home: $500,000 × 5% = $25,000 per year, or $2,083 per month. If you can rent a comparable home for less than $2,083 per month, renting likely wins. If rent is $2,500 per month and a comparable home costs $400,000 ($400,000 × 5% / 12 = $1,667), buying likely wins.</p>
+
+  <div class="callout">
+    <div class="callout-label">The 5% Rule Applied to Common US Markets (2025)</div>
+    <p><strong>San Francisco:</strong> Median home $1.3M → 5% threshold = $5,417/month. Comparable 2-bedroom rents ~$3,200. Renting wins decisively.</p>
+    <p><strong>Dallas, TX:</strong> Median home $380K → 5% threshold = $1,583/month. Comparable 2-bedroom rents ~$1,700. Buying is close to break-even.</p>
+    <p><strong>Indianapolis, IN:</strong> Median home $270K → 5% threshold = $1,125/month. Comparable 2-bedroom rents ~$1,300. Buying starts to win.</p>
+  </div>
+
+  <h2>The Break-Even Timeline: When Does Buying Actually Win?</h2>
+
+  <p>Even when buying is the better long-term financial choice, it is almost always the worse short-term choice due to transaction costs. Buying and selling a home involves approximately 6% to 8% of the home's value in combined costs: buyer's closing costs (2-3%), seller's agent commission (2.5-3%), seller's closing costs (1-2%), and moving expenses.</p>
+
+  <p>On a $500,000 home, the round-trip transaction cost is roughly $30,000 to $40,000. That cost must be recouped through appreciation and equity building before buying breaks even with renting. In a typical US market, this break-even occurs between years 5 and 8. In high-cost, high-price-to-rent markets, it can take 10 or more years.</p>
+
+  <p>The practical implication: if there is any meaningful probability you will move within 5 years, the math strongly favors renting in almost every US market. Only if you are highly confident you will stay for 7 or more years does buying become the clearly superior financial choice in most markets.</p>
+
+  <h2>The Non-Financial Factors That Matter</h2>
+
+  <p>This article has focused exclusively on the financial math because that is what is most frequently distorted by the "renting is throwing money away" narrative. But the rent vs buy decision is not purely financial, and the non-financial factors are legitimate.</p>
+
+  <p>Owning a home provides stability — you cannot be non-renewed by a landlord. It provides the ability to customize, renovate, and make the space genuinely yours. It provides community roots and a hedge against rent increases in specific markets. It is also a forced savings mechanism that works well for people who would not invest the equivalent capital if they were renting.</p>
+
+  <p>These are real benefits. They just need to be weighed against real costs, using the real math, rather than the false premise that renting is inherently inferior to buying.</p>
+
+  <h2>Making the Right Decision for Your Situation</h2>
+
+  <p>The rent vs buy decision is individual. To make it correctly, you need to know:</p>
+
+  <ol>
+    <li>The price-to-rent ratio in your specific target market (purchase price divided by annual rent for equivalent property)</li>
+    <li>Your realistic time horizon — how long you are likely to stay</li>
+    <li>The local property appreciation rate over the past 20 years</li>
+    <li>Whether you would actually invest the down payment and monthly savings difference if you rented</li>
+    <li>Your personal value of stability, control, and ownership beyond the financial calculation</li>
+  </ol>
+
+  <p>Price-to-rent ratios above 20 favor renting in most scenarios. Ratios below 15 generally favor buying. Between 15 and 20 is where the analysis becomes time-horizon-dependent.</p>
+
+  <div class="callout">
+    <div class="callout-label">Bottom Line</div>
+    <p>The true annual unrecoverable cost of homeownership is approximately <strong>5% of the home's value</strong> — not just the mortgage payment. This includes property tax, maintenance, insurance, and the opportunity cost of down payment capital. Renting is only "throwing money away" if you would not invest the difference. If you would invest it, renting in high price-to-rent markets can significantly outperform buying financially. Use our <strong>Rent vs Buy Calculator</strong> to run your specific numbers.</p>
+  </div>
+
+  <h2>Related Calculators</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:16px;">
+    <a href="/rent-vs-buy-calculator.html" class="related-link">Rent vs Buy Calculator →</a>
+    <a href="/mortgage-overpayment-calculator.html" class="related-link">Mortgage Overpayment Calculator →</a>
+    <a href="/compound-interest-early-vs-late.html" class="related-link">Compound Interest Calculator →</a>
+    <a href="/true-cost-of-debt.html" class="related-link">True Cost of Debt Guide →</a>
+  </div>
+
+</article>
+
+<div class="disclaimer">
+  <strong>Disclaimer:</strong> This article is for educational purposes only and does not constitute financial or real estate advice. All calculations use example figures. Market conditions vary significantly by location and time. Consult a qualified financial advisor before making housing decisions.
+</div>
+
+<footer>
+  <div class="ft-inner">
+    <div>
+      <div class="ft-brand-name"><em>Wealth</em>Delay</div>
+      <p class="ft-brand-p">Free financial calculators. Real compound math. No login, no data stored, no subscriptions.</p>
+    </div>
+    <div class="ft-col">
+      <h4>Top Calculators</h4>
+      <a href="/coffee-habit-true-cost.html">Coffee Habit Cost</a>
+      <a href="/rent-vs-buy-calculator.html">Rent vs Buy</a>
+      <a href="/fire-number-calculator.html">FIRE Number</a>
+      <a href="/car-loan-true-cost-calculator.html">Car Loan True Cost</a>
+      <a href="/salary-negotiation-calculator.html">Salary Negotiation</a>
+      <a href="/compound-interest-early-vs-late.html">Compound Interest</a>
+    </div>
+    <div class="ft-col">
+      <h4>Guides</h4>
+      <a href="/the-million-dollar-mistake.html">The Million Dollar Mistake</a>
+      <a href="/rent-vs-buy-the-math.html">Rent vs Buy Math</a>
+      <a href="/how-to-calculate-your-fire-number.html">FIRE Number Guide</a>
+      <a href="/true-cost-of-debt.html">True Cost of Debt</a>
+      <a href="/investing-at-25-vs-35.html">Investing at 25 vs 35</a>
+      <a href="/privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <span>&#169; 2026 WealthDelay &middot; Free forever &middot; All calculations run in your browser</span>
+    <div class="ft-links">
+      <a href="/privacy.html">Privacy</a>
+      <a href="/disclaimer.html">Disclaimer</a>
+      <a href="/about.html">About</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -223,6 +223,38 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Long-form Articles -->
+  <url>
+    <loc>https://wealthdelay.com/the-million-dollar-mistake</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/rent-vs-buy-the-math</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/how-to-calculate-your-fire-number</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/true-cost-of-debt</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/investing-at-25-vs-35</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Site Pages -->
   <url>
     <loc>https://wealthdelay.com/about</loc>

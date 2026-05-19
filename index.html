@@ -187,6 +187,7 @@ nav {
 }
 .ticker-track { display: inline-flex; gap: 56px; animation: scroll 34s linear infinite; }
 @keyframes scroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
 .tick { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,.7); }
 .tick .v { color: var(--white); font-weight: 700; }
 .tick-sep { color: rgba(255,255,255,.3); }
@@ -386,9 +387,14 @@ canvas { width: 100%!important; height: 175px!important; display: block; }
 
 /* ── TOOLS SECTION ── */
 .tools-section { padding: 64px 28px; background: var(--cream2); border-top: 1px solid var(--border); }
-.tools-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(186px,1fr)); gap: 8px; margin-top: 28px; }
+.tools-filter { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 20px; }
+.tf-btn { font-family: var(--font); font-size: 13px; font-weight: 600; padding: 7px 16px; border-radius: 99px; border: 1.5px solid var(--border); background: var(--white); color: var(--ink3); cursor: pointer; transition: all .18s; }
+.tf-btn:hover { border-color: var(--green-md); color: var(--green); background: var(--green-lt); }
+.tf-btn.active { background: var(--green); border-color: var(--green); color: #fff; }
+.tools-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(186px,1fr)); gap: 8px; margin-top: 16px; }
 .tool-tile { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; transition: all .2s; text-decoration: none; }
 .tool-tile:hover { border-color: var(--green-md); transform: translateY(-2px); box-shadow: var(--shadow); background: #f0fdf4; }
+.tool-tile.hidden { display: none; }
 .tile-num { font-size: 10px; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
 .tile-name { font-size: 12px; font-weight: 600; color: var(--ink2); line-height: 1.45; }
 .tool-tile:hover .tile-name { color: var(--ink); }
@@ -460,7 +466,7 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
   </a>
   <div class="nav-r">
     <div class="nav-free">30 Free Calculators</div>
-    <a href="#calc" class="nav-cta">Try It Free</a>
+    <a href="#calc" class="nav-cta">Try the Calculator</a>
   </div>
 </nav>
 
@@ -479,6 +485,28 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
     </div>
   </div>
 </section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-inner">
+    <div class="trust-cell">
+      <div class="trust-icon">🧮</div>
+      <div><div class="trust-num">30</div><div class="trust-lbl">Free calculators</div></div>
+    </div>
+    <div class="trust-cell">
+      <div class="trust-icon">💰</div>
+      <div><div class="trust-num">$0</div><div class="trust-lbl">Cost — forever</div></div>
+    </div>
+    <div class="trust-cell">
+      <div class="trust-icon">🔒</div>
+      <div><div class="trust-num">0</div><div class="trust-lbl">Data stored</div></div>
+    </div>
+    <div class="trust-cell">
+      <div class="trust-icon">📈</div>
+      <div><div class="trust-num">7%</div><div class="trust-lbl">S&amp;P 500 avg used</div></div>
+    </div>
+  </div>
+</div>
 
 <!-- TICKER -->
 <div class="ticker">
@@ -507,28 +535,6 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
     <div class="tick"><span>Naval Ravikant</span><span class="tick-sep">·</span><span class="v">"You're not going to get rich renting out your time"</span></div>
     <div class="tick"><span>Skip 401k Match</span><span class="tick-sep">·</span><span class="v">Instant 100% return missed</span></div>
     <div class="tick"><span>James Clear</span><span class="tick-sep">·</span><span class="v">"The costs of bad habits are in the future"</span></div>
-  </div>
-</div>
-
-<!-- TRUST STRIP -->
-<div class="trust-strip">
-  <div class="trust-inner">
-    <div class="trust-cell">
-      <div class="trust-icon">🧮</div>
-      <div><div class="trust-num">30</div><div class="trust-lbl">Free calculators</div></div>
-    </div>
-    <div class="trust-cell">
-      <div class="trust-icon">💰</div>
-      <div><div class="trust-num">$0</div><div class="trust-lbl">Cost — forever</div></div>
-    </div>
-    <div class="trust-cell">
-      <div class="trust-icon">🔒</div>
-      <div><div class="trust-num">0</div><div class="trust-lbl">Data stored</div></div>
-    </div>
-    <div class="trust-cell">
-      <div class="trust-icon">📈</div>
-      <div><div class="trust-num">7%</div><div class="trust-lbl">S&amp;P 500 avg used</div></div>
-    </div>
   </div>
 </div>
 
@@ -803,37 +809,45 @@ footer { background: var(--ink); padding: 52px 28px 32px; }
   <div class="sec-wrap">
     <div class="sec-tag">All Calculators</div>
     <h2 class="sec-h">30 Free Tools</h2>
+    <div class="tools-filter">
+      <button class="tf-btn active" onclick="filterTools('all',this)">All</button>
+      <button class="tf-btn" onclick="filterTools('habits',this)">Habits</button>
+      <button class="tf-btn" onclick="filterTools('debt',this)">Debt</button>
+      <button class="tf-btn" onclick="filterTools('investing',this)">Investing</button>
+      <button class="tf-btn" onclick="filterTools('housing',this)">Housing</button>
+      <button class="tf-btn" onclick="filterTools('income',this)">Income</button>
+    </div>
     <div class="tools-grid">
-      <a href="/" class="tool-tile"><div class="tile-num">01 · Opportunity Cost</div><div class="tile-name">Lifetime Financial Impact Simulator</div></a>
-      <a href="/coffee-habit-true-cost.html" class="tool-tile"><div class="tile-num">02 · Opportunity Cost</div><div class="tile-name">Coffee Lifetime Cost Calculator</div></a>
-      <a href="/streaming-subscription-cost-calculator.html" class="tool-tile"><div class="tile-num">03 · Opportunity Cost</div><div class="tile-name">Streaming Subscription True Cost</div></a>
-      <a href="/eating-out-vs-cooking-calculator.html" class="tool-tile"><div class="tile-num">04 · Opportunity Cost</div><div class="tile-name">Eating Out vs Cooking</div></a>
-      <a href="/smoking-financial-cost-calculator.html" class="tool-tile"><div class="tile-num">05 · Opportunity Cost</div><div class="tile-name">Smoking &amp; Vaping Financial Impact</div></a>
-      <a href="/gym-membership-roi-calculator.html" class="tool-tile"><div class="tile-num">06 · Opportunity Cost</div><div class="tile-name">Gym Membership ROI Calculator</div></a>
-      <a href="/credit-card-true-cost-calculator.html" class="tool-tile"><div class="tile-num">07 · Debt Cost</div><div class="tile-name">Credit Card True Cost</div></a>
-      <a href="/mortgage-overpayment-calculator.html" class="tool-tile"><div class="tile-num">08 · Debt Cost</div><div class="tile-name">Mortgage Overpayment Calculator</div></a>
-      <a href="/student-loan-payoff-calculator.html" class="tool-tile"><div class="tile-num">09 · Debt Cost</div><div class="tile-name">Student Loan Simulator</div></a>
-      <a href="/car-loan-true-cost-calculator.html" class="tool-tile"><div class="tile-num">10 · Debt Cost</div><div class="tile-name">Car Loan True Cost</div></a>
-      <a href="/buy-now-pay-later-true-cost.html" class="tool-tile"><div class="tile-num">11 · Debt Cost</div><div class="tile-name">Buy Now Pay Later True Cost</div></a>
-      <a href="/debt-avalanche-vs-snowball.html" class="tool-tile"><div class="tile-num">12 · Debt Cost</div><div class="tile-name">Debt Avalanche vs Snowball</div></a>
-      <a href="/salary-negotiation-calculator.html" class="tool-tile"><div class="tile-num">13 · Income</div><div class="tile-name">Salary Negotiation Lifetime Value</div></a>
-      <a href="/401k-contribution-calculator.html" class="tool-tile"><div class="tile-num">14 · Income</div><div class="tile-name">401k Contribution Impact</div></a>
-      <a href="/fire-number-calculator.html" class="tool-tile"><div class="tile-num">15 · Retirement</div><div class="tile-name">FIRE Number Calculator</div></a>
-      <a href="/inflation-savings-erosion-calculator.html" class="tool-tile"><div class="tile-num">16 · Retirement</div><div class="tile-name">Inflation vs Savings Erosion</div></a>
-      <a href="/how-long-will-savings-last.html" class="tool-tile"><div class="tile-num">17 · Retirement</div><div class="tile-name">How Long Will Savings Last?</div></a>
-      <a href="/lifestyle-inflation-calculator.html" class="tool-tile"><div class="tile-num">18 · Lifestyle</div><div class="tile-name">Lifestyle Inflation Calculator</div></a>
-      <a href="/true-cost-of-bigger-house.html" class="tool-tile"><div class="tile-num">19 · Lifestyle</div><div class="tile-name">True Cost of a Bigger House</div></a>
-      <a href="/luxury-car-opportunity-cost.html" class="tool-tile"><div class="tile-num">20 · Lifestyle</div><div class="tile-name">Luxury Car Opportunity Cost</div></a>
-      <a href="/true-hourly-rate-calculator.html" class="tool-tile"><div class="tile-num">21 · Income</div><div class="tile-name">True Hourly Rate Calculator</div></a>
-      <a href="/side-hustle-investment-value.html" class="tool-tile"><div class="tile-num">22 · Income</div><div class="tile-name">Side Hustle Investment Value</div></a>
-      <a href="/rent-vs-buy-calculator.html" class="tool-tile"><div class="tile-num">23 · Housing</div><div class="tile-name">Rent vs Buy Calculator</div></a>
-      <a href="/index-fund-vs-stock-picking.html" class="tool-tile"><div class="tile-num">24 · Investing</div><div class="tile-name">Index Fund vs Stock Picking</div></a>
-      <a href="/emergency-fund-calculator.html" class="tool-tile"><div class="tile-num">25 · Risk</div><div class="tile-name">Emergency Fund True Cost</div></a>
-      <a href="/investment-fee-drag-calculator.html" class="tool-tile"><div class="tile-num">26 · Investing</div><div class="tile-name">Investment Fee Drag Calculator</div></a>
-      <a href="/compound-interest-early-vs-late.html" class="tool-tile"><div class="tile-num">27 · Investing</div><div class="tile-name">Compounding Early vs Late</div></a>
-      <a href="/daily-habit-true-cost-calculator.html" class="tool-tile"><div class="tile-num">28 · Habits</div><div class="tile-name">Daily Habit True Cost Calculator</div></a>
-      <a href="/net-worth-target-calculator.html" class="tool-tile"><div class="tile-num">29 · Investing</div><div class="tile-name">Net Worth Target &amp; Timeline</div></a>
-      <a href="/retirement-wealth-estimator.html" class="tool-tile"><div class="tile-num">30 · Retirement</div><div class="tile-name">Retirement Wealth Estimator</div></a>
+      <a href="/" class="tool-tile" data-cat="habits"><div class="tile-num">01 · Opportunity Cost</div><div class="tile-name">Lifetime Financial Impact Simulator</div></a>
+      <a href="/coffee-habit-true-cost" class="tool-tile" data-cat="habits"><div class="tile-num">02 · Habits</div><div class="tile-name">Coffee Lifetime Cost Calculator</div></a>
+      <a href="/streaming-subscription-cost-calculator" class="tool-tile" data-cat="habits"><div class="tile-num">03 · Habits</div><div class="tile-name">Streaming Subscription True Cost</div></a>
+      <a href="/eating-out-vs-cooking-calculator" class="tool-tile" data-cat="habits"><div class="tile-num">04 · Habits</div><div class="tile-name">Eating Out vs Cooking</div></a>
+      <a href="/smoking-financial-cost-calculator" class="tool-tile" data-cat="habits"><div class="tile-num">05 · Habits</div><div class="tile-name">Smoking &amp; Vaping Financial Impact</div></a>
+      <a href="/gym-membership-roi-calculator" class="tool-tile" data-cat="habits"><div class="tile-num">06 · Habits</div><div class="tile-name">Gym Membership ROI Calculator</div></a>
+      <a href="/daily-habit-true-cost-calculator" class="tool-tile" data-cat="habits"><div class="tile-num">07 · Habits</div><div class="tile-name">Daily Habit True Cost Calculator</div></a>
+      <a href="/lifestyle-inflation-calculator" class="tool-tile" data-cat="habits"><div class="tile-num">08 · Habits</div><div class="tile-name">Lifestyle Inflation Calculator</div></a>
+      <a href="/credit-card-true-cost-calculator" class="tool-tile" data-cat="debt"><div class="tile-num">09 · Debt</div><div class="tile-name">Credit Card True Cost</div></a>
+      <a href="/mortgage-overpayment-calculator" class="tool-tile" data-cat="debt"><div class="tile-num">10 · Debt</div><div class="tile-name">Mortgage Overpayment Calculator</div></a>
+      <a href="/student-loan-payoff-calculator" class="tool-tile" data-cat="debt"><div class="tile-num">11 · Debt</div><div class="tile-name">Student Loan Simulator</div></a>
+      <a href="/car-loan-true-cost-calculator" class="tool-tile" data-cat="debt"><div class="tile-num">12 · Debt</div><div class="tile-name">Car Loan True Cost</div></a>
+      <a href="/buy-now-pay-later-true-cost" class="tool-tile" data-cat="debt"><div class="tile-num">13 · Debt</div><div class="tile-name">Buy Now Pay Later True Cost</div></a>
+      <a href="/debt-avalanche-vs-snowball" class="tool-tile" data-cat="debt"><div class="tile-num">14 · Debt</div><div class="tile-name">Debt Avalanche vs Snowball</div></a>
+      <a href="/fire-number-calculator" class="tool-tile" data-cat="investing"><div class="tile-num">15 · Investing</div><div class="tile-name">FIRE Number Calculator</div></a>
+      <a href="/inflation-savings-erosion-calculator" class="tool-tile" data-cat="investing"><div class="tile-num">16 · Investing</div><div class="tile-name">Inflation vs Savings Erosion</div></a>
+      <a href="/how-long-will-savings-last" class="tool-tile" data-cat="investing"><div class="tile-num">17 · Investing</div><div class="tile-name">How Long Will Savings Last?</div></a>
+      <a href="/index-fund-vs-stock-picking" class="tool-tile" data-cat="investing"><div class="tile-num">18 · Investing</div><div class="tile-name">Index Fund vs Stock Picking</div></a>
+      <a href="/investment-fee-drag-calculator" class="tool-tile" data-cat="investing"><div class="tile-num">19 · Investing</div><div class="tile-name">Investment Fee Drag Calculator</div></a>
+      <a href="/compound-interest-early-vs-late" class="tool-tile" data-cat="investing"><div class="tile-num">20 · Investing</div><div class="tile-name">Compounding Early vs Late</div></a>
+      <a href="/net-worth-target-calculator" class="tool-tile" data-cat="investing"><div class="tile-num">21 · Investing</div><div class="tile-name">Net Worth Target &amp; Timeline</div></a>
+      <a href="/retirement-wealth-estimator" class="tool-tile" data-cat="investing"><div class="tile-num">22 · Investing</div><div class="tile-name">Retirement Wealth Estimator</div></a>
+      <a href="/emergency-fund-calculator" class="tool-tile" data-cat="investing"><div class="tile-num">23 · Investing</div><div class="tile-name">Emergency Fund True Cost</div></a>
+      <a href="/rent-vs-buy-calculator" class="tool-tile" data-cat="housing"><div class="tile-num">24 · Housing</div><div class="tile-name">Rent vs Buy Calculator</div></a>
+      <a href="/true-cost-of-bigger-house" class="tool-tile" data-cat="housing"><div class="tile-num">25 · Housing</div><div class="tile-name">True Cost of a Bigger House</div></a>
+      <a href="/luxury-car-opportunity-cost" class="tool-tile" data-cat="housing"><div class="tile-num">26 · Housing</div><div class="tile-name">Luxury Car Opportunity Cost</div></a>
+      <a href="/salary-negotiation-calculator" class="tool-tile" data-cat="income"><div class="tile-num">27 · Income</div><div class="tile-name">Salary Negotiation Lifetime Value</div></a>
+      <a href="/401k-contribution-calculator" class="tool-tile" data-cat="income"><div class="tile-num">28 · Income</div><div class="tile-name">401k Contribution Impact</div></a>
+      <a href="/true-hourly-rate-calculator" class="tool-tile" data-cat="income"><div class="tile-num">29 · Income</div><div class="tile-name">True Hourly Rate Calculator</div></a>
+      <a href="/side-hustle-investment-value" class="tool-tile" data-cat="income"><div class="tile-num">30 · Income</div><div class="tile-name">Side Hustle Investment Value</div></a>
     </div>
   </div>
 </section>
@@ -1442,6 +1456,15 @@ function generatePDF() {
   }).catch(() => {
     btn.textContent = 'Error — retry';
     btn.disabled = false;
+  });
+}
+
+/* ── TOOLS CATEGORY FILTER ── */
+function filterTools(cat, btn) {
+  document.querySelectorAll('.tf-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.tool-tile').forEach(tile => {
+    tile.classList.toggle('hidden', cat !== 'all' && tile.dataset.cat !== cat);
   });
 }
 

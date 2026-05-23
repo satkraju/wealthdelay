@@ -462,8 +462,20 @@ def main():
 
     # 7. Deploy
     if DRY_RUN:
+        # Copy to dry-run-output/ for artifact upload
+        dry_run_dir = SITE_ROOT / "dry-run-output"
+        dry_run_dir.mkdir(exist_ok=True)
+        dry_run_path = dry_run_dir / output_path.name
+        dry_run_path.write_text(html, encoding="utf-8")
         print("\n[4/4] DRY RUN — skipping git push")
-        print(f"  Article ready at: {output_path}")
+        print(f"  Article saved to: dry-run-output/{output_path.name}")
+        print(f"\n{'='*60}")
+        print("ARTICLE PREVIEW:")
+        print(f"  Title:    {article['title']}")
+        print(f"  Slug:     {article['slug']}")
+        print(f"  Keywords: {', '.join(article.get('keywords', []))}")
+        print(f"  Intro:    {article.get('intro', '')[:200]}...")
+        print(f"{'='*60}")
     else:
         print("\n[4/4] Deploying to GitHub → Vercel...")
         files = [str(output_path), str(SITEMAP_PATH)]

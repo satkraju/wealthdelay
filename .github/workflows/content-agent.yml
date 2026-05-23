@@ -57,5 +57,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: generated-article
-          path: '*.html'
+          path: 'dry-run-output/*.html'
           retention-days: 7

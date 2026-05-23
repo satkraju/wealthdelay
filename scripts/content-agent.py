@@ -111,13 +111,38 @@ def fetch_trending_topics(max_items: int = 20) -> list[dict]:
     return unique[:max_items]
 
 
-def map_to_calculator(text: str) -> tuple[str, str]:
-    """Return (calculator_url, calculator_name) best matching the topic."""
+def map_to_calculator(text: str, client: Optional[anthropic.Anthropic] = None) -> tuple[str, str]:
+    """
+    Use Claude to pick the best-fit calculator for the topic.
+    Falls back to keyword matching if API call fails.
+    """
+    if client:
+        calc_list = "\n".join(f"- {name} ({url})" for _, url, name in CALCULATOR_MAP)
+        try:
+            msg = client.messages.create(
+                model="claude-haiku-4-5",
+                max_tokens=100,
+                messages=[{
+                    "role": "user",
+                    "content": (
+                        f"Given this financial news: '{text[:300]}'\n\n"
+                        f"Which ONE calculator from this list is most relevant?\n{calc_list}\n\n"
+                        "Reply with ONLY the calculator name, exactly as written above."
+                    )
+                }]
+            )
+            chosen_name = msg.content[0].text.strip()
+            for _, url, name in CALCULATOR_MAP:
+                if name.lower() == chosen_name.lower():
+                    return url, name
+        except Exception:
+            pass  # Fall through to keyword matching
+
+    # Keyword fallback
     text_lower = text.lower()
     for keywords, url, name in CALCULATOR_MAP:
         if any(kw in text_lower for kw in keywords):
             return url, name
-    # Default fallback
     return "/daily-habit-true-cost-calculator", "Daily Habit True Cost Calculator"
 
 
@@ -403,8 +428,9 @@ def main():
     print(f"\n  Selected: {selected['title']}")
     print(f"  Relevance score: {selected['score']}/10")
 
-    # 3. Map to calculator
-    calc_url, calc_name = map_to_calculator(selected["title"] + " " + selected["summary"])
+    # 3. Map to calculator (Claude picks best fit, keyword fallback)
+    _client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    calc_url, calc_name = map_to_calculator(selected["title"] + " " + selected["summary"], _client)
     print(f"  Calculator: {calc_name}")
 
     # 4. Generate article

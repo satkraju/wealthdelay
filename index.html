@@ -1297,9 +1297,7 @@ function initShare() {
   });
 
   document.getElementById('share-copy').addEventListener('click', function() {
-    const lastResult = document.getElementById('r-hero').textContent;
-    const text = `I found my habit costs ${lastResult} in lifetime wealth 🤯\n\nSee what YOUR financial decisions really cost:\nhttps://wealthdelay.com`;
-    navigator.clipboard.writeText(text).then(() => {
+    navigator.clipboard.writeText('https://wealthdelay.com').then(() => {
       const btn = document.getElementById('share-copy');
       btn.textContent = 'Copied! ✓';
       btn.classList.add('copied');

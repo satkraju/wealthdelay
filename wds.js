@@ -70,6 +70,9 @@
       '#wds-dl{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:#fff;background:#16a34a;border:none;border-radius:9px;padding:9px 16px;cursor:pointer;font-family:inherit;letter-spacing:-.01em;transition:all .15s;}',
       '#wds-dl:hover:not(:disabled){background:#14532d;transform:translateY(-1px);}',
       '#wds-dl:disabled{background:#aeaeb2;cursor:default;transform:none;}',
+      '#wds-tw{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:#fff;background:#000;border:none;border-radius:9px;padding:9px 16px;cursor:pointer;font-family:inherit;letter-spacing:-.01em;transition:all .15s;margin-left:8px;}',
+      '#wds-tw:hover:not(:disabled){background:#1a1a1a;transform:translateY(-1px);}',
+      '#wds-tw:disabled{background:#aeaeb2;cursor:default;transform:none;}',
     ];
     s.textContent = rules.join('');
     document.head.appendChild(s);
@@ -170,9 +173,16 @@
     btn.appendChild(dlSvg);
     btn.appendChild(document.createTextNode(' Download Share Card'));
 
+    // Twitter share button
+    var tBtn = document.createElement('button');
+    tBtn.id = 'wds-tw';
+    tBtn.disabled = true;
+    tBtn.appendChild(document.createTextNode('𝕏 Share on X'));
+
     info.appendChild(badge);
     info.appendChild(desc);
     info.appendChild(btn);
+    info.appendChild(tBtn);
     body.appendChild(info);
     root.appendChild(body);
 
@@ -221,6 +231,17 @@
     if (dlBtn) {
       dlBtn.disabled = false;
       dlBtn.onclick = function () { drawCard(fv, score, habit, theme); };
+    }
+    var twBtn = document.getElementById('wds-tw');
+    if (twBtn) {
+      twBtn.disabled = false;
+      twBtn.onclick = function () {
+        var txt = (habit || 'This habit') + ' is costing me ' + fmtFV(fv) + ' in lifetime wealth 🤯\n\nCalculate your wealth delay:';
+        window.open(
+          'https://twitter.com/intent/tweet?text=' + encodeURIComponent(txt) + '&url=' + encodeURIComponent('https://wealthdelay.com'),
+          '_blank', 'width=550,height=420'
+        );
+      };
     }
   }
 
@@ -321,7 +342,9 @@
     var link = document.createElement('a');
     link.download = 'wealth-delay-score-' + score.toFixed(1) + '.png';
     link.href = cv.toDataURL('image/png');
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
 
     if (typeof gtag !== 'undefined') {
       gtag('event', 'wds_card_download', { wds_score: score, fv_lost: Math.round(fv) });

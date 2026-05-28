@@ -1,6 +1,12 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/how-to-calculate-your-fire-number", "destination": "/how-to-calculate-fire-number", "permanent": true },
+    { "source": "/how-to-calculate-your-fire-number.html", "destination": "/how-to-calculate-fire-number", "permanent": true },
+    { "source": "/rent-vs-buy-the-math", "destination": "/rent-vs-buy-math", "permanent": true },
+    { "source": "/rent-vs-buy-the-math.html", "destination": "/rent-vs-buy-math", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",

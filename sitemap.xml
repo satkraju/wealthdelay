@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://wealthdelay.com/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Habit Tools -->
   <url>
     <loc>https://wealthdelay.com/coffee-habit-true-cost</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://wealthdelay.com/car-loan-true-cost-calculator</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -194,31 +194,31 @@
   <!-- Articles -->
   <url>
     <loc>https://wealthdelay.com/true-cost-daily-coffee-habit</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wealthdelay.com/what-is-opportunity-cost</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wealthdelay.com/how-to-calculate-fire-number</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wealthdelay.com/rent-vs-buy-math</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wealthdelay.com/true-cost-of-car-loan</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -226,18 +226,6 @@
   <!-- Long-form Articles -->
   <url>
     <loc>https://wealthdelay.com/the-million-dollar-mistake</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wealthdelay.com/rent-vs-buy-the-math</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wealthdelay.com/how-to-calculate-your-fire-number</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -274,7 +262,6 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-
 
   <url>
     <loc>https://wealthdelay.com/fed-interest-rates-kevin-warsh-savings-impact</loc>

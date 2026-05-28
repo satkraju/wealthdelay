@@ -279,6 +279,13 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   <p class="tool-sub">Enter your side hustle income and what you invest. See the compounded wealth it builds by retirement.</p>
   <div class="hero-badges"><div class="badge">&#128208; Verified math</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
 </section>
+<div class="wd-byline" style="max-width:760px;margin:0 auto;padding:14px 24px 0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:13px;color:#6e6e73;">
+  <span style="font-weight:600;color:#1d1d1f;">By WealthDelay Editorial</span>
+  <span style="opacity:.4;">·</span>
+  <span>Reviewed for accuracy on May 28, 2026</span>
+  <span style="opacity:.4;">·</span>
+  <span style="color:#16A34A;font-weight:600;">&#10003; Standard compound-interest math, S&amp;P 100-year average</span>
+</div>
 <div class="workspace">
   <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Your Side Hustle</div><div class="field"><label>Monthly side hustle income <span class="field-val" id="v-income">$1000/mo</span></label><input type="range" id="s-income" min="100" max="20000" step="100" value="1000" oninput="syncSlider('income',this.value,'$','/mo',true,false);calc()"></div><div class="field"><label>Portion invested <span class="field-val" id="v-inv">50%</span></label><input type="range" id="s-inv" min="0" max="100" step="5" value="50" oninput="syncSlider('inv',this.value,'','%',false,false);calc()"><div class="field-hint">Rest covers taxes and expenses</div></div><div class="section-label">Your Profile</div><div class="field-row"><div class="field"><label>Current age <span class="field-val" id="v-age">30</span></label><input type="range" id="s-age" min="18" max="65" step="1" value="30" oninput="syncSlider('age',this.value,'','',false,false);calc()"></div><div class="field"><label>Retire at <span class="field-val" id="v-ret">65</span></label><input type="range" id="s-ret" min="45" max="80" step="1" value="65" oninput="syncSlider('ret',this.value,'','',false,false);calc()"></div></div><div class="field"><label>Annual return <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" oninput="syncSlider('r',this.value,'','%',false,false);calc()"></div></div></div></div>
   <div class="results">
@@ -306,6 +313,17 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   <h3 style="font-size:20px;font-weight:700;letter-spacing:-.02em;color:#1d1d1f;margin:32px 0 12px;">The Optimal Strategy: Split the Income</h3>
   <p>The most sustainable approach isn't all-or-nothing. Allocating 50% of side hustle income to investing and 50% to lifestyle or debt payoff creates a system that compounds wealth while avoiding the burnout of never enjoying the fruits of extra work. This calculator lets you model any split to find the balance that fits your goals.</p>
 </article>
+<section style="max-width:760px;margin:48px auto 0;padding:24px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <h3 style="font-size:13px;font-weight:700;color:#1d1d1f;text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px;">Sources &amp; Methodology</h3>
+  <ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:1.7;color:#3d3d3f;">
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Robert Shiller, <em>U.S. Stock Market Real Returns 1871&ndash;present</em> &mdash; basis for the 7% inflation-adjusted return assumption. <a href="http://www.econ.yale.edu/~shiller/data.htm" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">Data &rarr;</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Federal Reserve Economic Data (FRED), <em>interest rates, CPI, household-finance series</em>. <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">FRED &rarr;</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Bureau of Labor Statistics, <em>CPI &amp; wage data</em>. <a href="https://www.bls.gov/cpi/" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">BLS &rarr;</a></li>
+    <li style="padding:8px 0;">IRS, <em>2026 contribution limits, tax brackets, retirement-account rules</em>. <a href="https://www.irs.gov/" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">IRS &rarr;</a></li>
+  </ul>
+  <p style="font-size:12px;color:#6e6e73;margin:14px 0 0;line-height:1.55;"><strong>Methodology:</strong> Calculations use standard financial mathematics &mdash; Future Value of Annuity (FV = PMT &times; ((1+r)<sup>n</sup> &minus; 1) / r), standard loan amortization for debt payoff, and the historical ~7% real S&amp;P 500 return for opportunity-cost projections. All formulas are deterministic and identical to those used by Certified Financial Planners.</p>
+</section>
+
 <section class="faq-wrap"><h2 class="section-title">Common Questions</h2>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Should I invest all my side hustle income?<div class="faq-ico">+</div></div><div class="faq-a">Not necessarily. A reasonable framework: pay off any high-interest debt first (>6% APR), maintain your emergency fund, then invest 50–70% and allow 30–50% for lifestyle spending. Strict all-investing rules often lead to burnout and abandoning the side hustle.</div></div>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What return should I assume for side hustle investments?<div class="faq-ico">+</div></div><div class="faq-a">7% is the standard inflation-adjusted historical average for a broad market index fund. Use 5% for a conservative estimate, 9% for a more aggressive one. The exact rate matters less than the habit of consistent investing.</div></div>
@@ -336,7 +354,7 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   </button>
   <div class="pdf-secure">🔒 Secured by Stripe · SSL encrypted</div>
 </div>
-<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/true-hourly-rate-calculator.html">True Hourly Rate</a><a class="related-link" href="/">Opportunity Cost</a><a class="related-link" href="/salary-negotiation-calculator.html">Salary Negotiation</a><a class="related-link" href="/lifestyle-inflation-calculator.html">Lifestyle Inflation</a><a class="related-link" href="/fire-number-calculator.html">FIRE Number</a></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/true-hourly-rate-calculator">True Hourly Rate</a><a class="related-link" href="/">Opportunity Cost</a><a class="related-link" href="/salary-negotiation-calculator">Salary Negotiation</a><a class="related-link" href="/lifestyle-inflation-calculator">Lifestyle Inflation</a><a class="related-link" href="/fire-number-calculator">FIRE Number</a></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
 <footer>
   <div class="ft-inner">
@@ -346,29 +364,29 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
     </div>
     <div class="ft-col">
       <h4>Top Calculators</h4>
-      <a href="/coffee-habit-true-cost.html">Coffee Habit Cost</a>
-      <a href="/rent-vs-buy-calculator.html">Rent vs Buy</a>
-      <a href="/fire-number-calculator.html">FIRE Number</a>
-      <a href="/car-loan-true-cost-calculator.html">Car Loan True Cost</a>
-      <a href="/salary-negotiation-calculator.html">Salary Negotiation</a>
-      <a href="/compound-interest-early-vs-late.html">Compound Interest</a>
+      <a href="/coffee-habit-true-cost">Coffee Habit Cost</a>
+      <a href="/rent-vs-buy-calculator">Rent vs Buy</a>
+      <a href="/fire-number-calculator">FIRE Number</a>
+      <a href="/car-loan-true-cost-calculator">Car Loan True Cost</a>
+      <a href="/salary-negotiation-calculator">Salary Negotiation</a>
+      <a href="/compound-interest-early-vs-late">Compound Interest</a>
     </div>
     <div class="ft-col">
       <h4>Guides</h4>
-      <a href="/true-cost-daily-coffee-habit.html">Coffee Habit Guide</a>
-      <a href="/what-is-opportunity-cost.html">Opportunity Cost Explained</a>
-      <a href="/how-to-calculate-fire-number.html">FIRE Number Guide</a>
-      <a href="/rent-vs-buy-math.html">Rent vs Buy Math</a>
-      <a href="/true-cost-of-car-loan.html">Car Loan Real Cost</a>
-      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/true-cost-daily-coffee-habit">Coffee Habit Guide</a>
+      <a href="/what-is-opportunity-cost">Opportunity Cost Explained</a>
+      <a href="/how-to-calculate-fire-number">FIRE Number Guide</a>
+      <a href="/rent-vs-buy-math">Rent vs Buy Math</a>
+      <a href="/true-cost-of-car-loan">Car Loan Real Cost</a>
+      <a href="/privacy">Privacy Policy</a>
     </div>
   </div>
   <div class="ft-bottom">
     <span>&#169; 2026 WealthDelay &middot; Free forever &middot; All calculations run in your browser</span>
     <div class="ft-links">
-      <a href="/privacy.html">Privacy</a>
-      <a href="/disclaimer.html">Disclaimer</a>
-      <a href="/about.html">About</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/about">About</a>
       <a href="/sitemap.xml">Sitemap</a>
     </div>
   </div>

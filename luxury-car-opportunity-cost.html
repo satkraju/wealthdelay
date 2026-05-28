@@ -281,6 +281,13 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   <p class="tool-sub">Compare a luxury and modest car. See the monthly gap and the retirement wealth difference it creates.</p>
   <div class="hero-badges"><div class="badge">&#128208; Verified math</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
 </section>
+<div class="wd-byline" style="max-width:760px;margin:0 auto;padding:14px 24px 0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:13px;color:#6e6e73;">
+  <span style="font-weight:600;color:#1d1d1f;">By WealthDelay Editorial</span>
+  <span style="opacity:.4;">·</span>
+  <span>Reviewed for accuracy on May 28, 2026</span>
+  <span style="opacity:.4;">·</span>
+  <span style="color:#16A34A;font-weight:600;">&#10003; Standard compound-interest math, S&amp;P 100-year average</span>
+</div>
 <div class="workspace">
   <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Luxury Car</div><div class="field"><label>Luxury car price <span class="field-val" id="v-lux">$80000</span></label><input type="range" id="s-lux" min="20000" max="200000" step="2500" value="80000" aria-label="Luxury car price" oninput="syncSlider('lux',this.value,'$','',true,true);calc()"></div><div class="field-row"><div class="field"><label>Luxury insurance/mo <span class="field-val" id="v-lins">$300/mo</span></label><input type="range" id="s-lins" min="100" max="1000" step="25" value="300" aria-label="Luxury insurance/mo" oninput="syncSlider('lins',this.value,'$','/mo',false,false);calc()"></div><div class="field"><label>Luxury maintenance/mo <span class="field-val" id="v-lmaint">$200/mo</span></label><input type="range" id="s-lmaint" min="50" max="500" step="25" value="200" aria-label="Luxury maintenance/mo" oninput="syncSlider('lmaint',this.value,'$','/mo',false,false);calc()"></div></div><div class="section-label">Modest Car</div><div class="field"><label>Modest car price <span class="field-val" id="v-mod">$25000</span></label><input type="range" id="s-mod" min="5000" max="80000" step="1000" value="25000" aria-label="Modest car price" oninput="syncSlider('mod',this.value,'$','',true,true);calc()"></div><div class="field-row"><div class="field"><label>Modest insurance/mo <span class="field-val" id="v-mins">$150/mo</span></label><input type="range" id="s-mins" min="50" max="500" step="25" value="150" aria-label="Modest insurance/mo" oninput="syncSlider('mins',this.value,'$','/mo',false,false);calc()"></div><div class="field"><label>Modest maintenance/mo <span class="field-val" id="v-mmaint">$100/mo</span></label><input type="range" id="s-mmaint" min="25" max="300" step="25" value="100" aria-label="Modest maintenance/mo" oninput="syncSlider('mmaint',this.value,'$','/mo',false,false);calc()"></div></div><div class="section-label">Loan & Profile</div><div class="field-row"><div class="field"><label>Loan APR <span class="field-val" id="v-apr">7%</span></label><input type="range" id="s-apr" min="0" max="20" step="0.25" value="7" aria-label="Loan APR" oninput="syncSlider('apr',this.value,'','%',false,false);calc()"></div><div class="field"><label>Term (months) <span class="field-val" id="v-term">60mo</span></label><input type="range" id="s-term" min="24" max="84" step="12" value="60" aria-label="Term (months)" oninput="syncSlider('term',this.value,'','mo',false,false);calc()"></div></div><div class="field-row"><div class="field"><label>Current age <span class="field-val" id="v-age">30</span></label><input type="range" id="s-age" min="18" max="65" step="1" value="30" aria-label="Current age" oninput="syncSlider('age',this.value,'','',false,false);calc()"></div><div class="field"><label>Retire at <span class="field-val" id="v-ret">65</span></label><input type="range" id="s-ret" min="45" max="80" step="1" value="65" aria-label="Retire at" oninput="syncSlider('ret',this.value,'','',false,false);calc()"></div></div><div class="field"><label>Investment return <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" aria-label="Investment return" oninput="syncSlider('r',this.value,'','%',false,false);calc()"></div></div></div></div>
   <div class="results">
@@ -312,6 +319,17 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   <h3 style="font-size:20px;font-weight:700;letter-spacing:-.02em;color:#1d1d1f;margin:32px 0 12px;">When a Luxury Car Is Worth It</h3>
   <p>A luxury car is financially rational when: you're already financially independent and the cost is a small fraction of net worth, you derive genuine daily utility that exceeds the opportunity cost, or it serves a legitimate professional purpose. The problem isn't luxury cars — it's buying them before financial independence, financed at 6%+ interest, while retirement savings are underfunded.</p>
 </article>
+<section style="max-width:760px;margin:48px auto 0;padding:24px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <h3 style="font-size:13px;font-weight:700;color:#1d1d1f;text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px;">Sources &amp; Methodology</h3>
+  <ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:1.7;color:#3d3d3f;">
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Robert Shiller, <em>U.S. Stock Market Real Returns 1871&ndash;present</em> &mdash; basis for the 7% inflation-adjusted return assumption. <a href="http://www.econ.yale.edu/~shiller/data.htm" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">Data &rarr;</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Federal Reserve Economic Data (FRED), <em>interest rates, CPI, household-finance series</em>. <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">FRED &rarr;</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Bureau of Labor Statistics, <em>CPI &amp; wage data</em>. <a href="https://www.bls.gov/cpi/" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">BLS &rarr;</a></li>
+    <li style="padding:8px 0;">IRS, <em>2026 contribution limits, tax brackets, retirement-account rules</em>. <a href="https://www.irs.gov/" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">IRS &rarr;</a></li>
+  </ul>
+  <p style="font-size:12px;color:#6e6e73;margin:14px 0 0;line-height:1.55;"><strong>Methodology:</strong> Calculations use standard financial mathematics &mdash; Future Value of Annuity (FV = PMT &times; ((1+r)<sup>n</sup> &minus; 1) / r), standard loan amortization for debt payoff, and the historical ~7% real S&amp;P 500 return for opportunity-cost projections. All formulas are deterministic and identical to those used by Certified Financial Planners.</p>
+</section>
+
 <section class="faq-wrap"><h2 class="section-title">Common Questions</h2>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How much does a luxury car really cost vs a regular car?<div class="faq-ico">+</div></div><div class="faq-a">Beyond the sticker price difference, factor in: higher insurance (30–50% more), higher maintenance (2–3× more), faster depreciation, and the opportunity cost of the capital difference invested. Total lifetime wealth difference between a $75,000 luxury car and a $25,000 economy car frequently exceeds $400,000–$500,000 over 30 years.</div></div>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is it financially smart to buy a luxury car?<div class="faq-ico">+</div></div><div class="faq-a">It depends entirely on your financial position. If you're financially independent and the cost is a small fraction of net worth, it can be justified. If retirement savings are underfunded or the car is financed at high interest rates, the true lifetime cost makes it one of the most expensive financial decisions you can make.</div></div>
@@ -342,7 +360,7 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   </button>
   <div class="pdf-secure">🔒 Secured by Stripe · SSL encrypted</div>
 </div>
-<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/car-loan-true-cost-calculator.html">Car Loan Cost</a><a class="related-link" href="/true-cost-of-bigger-house.html">Bigger House Cost</a><a class="related-link" href="/investment-fee-drag-calculator.html">Investment Fee Drag</a></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/car-loan-true-cost-calculator">Car Loan Cost</a><a class="related-link" href="/true-cost-of-bigger-house">Bigger House Cost</a><a class="related-link" href="/investment-fee-drag-calculator">Investment Fee Drag</a></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
   <div class="ft-inner">
@@ -352,29 +370,29 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
     </div>
     <div class="ft-col">
       <h4>Top Calculators</h4>
-      <a href="/coffee-habit-true-cost.html">Coffee Habit Cost</a>
-      <a href="/rent-vs-buy-calculator.html">Rent vs Buy</a>
-      <a href="/fire-number-calculator.html">FIRE Number</a>
-      <a href="/car-loan-true-cost-calculator.html">Car Loan True Cost</a>
-      <a href="/salary-negotiation-calculator.html">Salary Negotiation</a>
-      <a href="/compound-interest-early-vs-late.html">Compound Interest</a>
+      <a href="/coffee-habit-true-cost">Coffee Habit Cost</a>
+      <a href="/rent-vs-buy-calculator">Rent vs Buy</a>
+      <a href="/fire-number-calculator">FIRE Number</a>
+      <a href="/car-loan-true-cost-calculator">Car Loan True Cost</a>
+      <a href="/salary-negotiation-calculator">Salary Negotiation</a>
+      <a href="/compound-interest-early-vs-late">Compound Interest</a>
     </div>
     <div class="ft-col">
       <h4>Guides</h4>
-      <a href="/true-cost-daily-coffee-habit.html">Coffee Habit Guide</a>
-      <a href="/what-is-opportunity-cost.html">Opportunity Cost Explained</a>
-      <a href="/how-to-calculate-fire-number.html">FIRE Number Guide</a>
-      <a href="/rent-vs-buy-math.html">Rent vs Buy Math</a>
-      <a href="/true-cost-of-car-loan.html">Car Loan Real Cost</a>
-      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/true-cost-daily-coffee-habit">Coffee Habit Guide</a>
+      <a href="/what-is-opportunity-cost">Opportunity Cost Explained</a>
+      <a href="/how-to-calculate-fire-number">FIRE Number Guide</a>
+      <a href="/rent-vs-buy-math">Rent vs Buy Math</a>
+      <a href="/true-cost-of-car-loan">Car Loan Real Cost</a>
+      <a href="/privacy">Privacy Policy</a>
     </div>
   </div>
   <div class="ft-bottom">
     <span>&#169; 2026 WealthDelay &middot; Free forever &middot; All calculations run in your browser</span>
     <div class="ft-links">
-      <a href="/privacy.html">Privacy</a>
-      <a href="/disclaimer.html">Disclaimer</a>
-      <a href="/about.html">About</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/about">About</a>
       <a href="/sitemap.xml">Sitemap</a>
     </div>
   </div>

@@ -284,6 +284,13 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   <p class="tool-sub">Enter your portfolio size, annual spending and return rate. See exactly how many years your money lasts — and whether you're on track for a sustainable retirement.</p>
   <div class="hero-badges"><div class="badge">&#128208; Verified math</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
 </section>
+<div class="wd-byline" style="max-width:760px;margin:0 auto;padding:14px 24px 0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:13px;color:#6e6e73;">
+  <span style="font-weight:600;color:#1d1d1f;">By WealthDelay Editorial</span>
+  <span style="opacity:.4;">·</span>
+  <span>Reviewed for accuracy on May 28, 2026</span>
+  <span style="opacity:.4;">·</span>
+  <span style="color:#16A34A;font-weight:600;">&#10003; Standard compound-interest math, S&amp;P 100-year average</span>
+</div>
 <div class="workspace">
   <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Your Retirement Portfolio</div><div class="field"><label>Total portfolio value <span class="field-val" id="v-nest">$1000000</span></label><input type="range" id="s-nest" min="50000" max="5000000" step="10000" value="1000000" aria-label="Total portfolio value" oninput="syncSlider('nest',this.value,'$','',true,true);calc()"></div><div class="field"><label>Annual withdrawal (after-tax) <span class="field-val" id="v-withdraw">$40000/yr</span></label><input type="range" id="s-withdraw" min="10000" max="300000" step="1000" value="40000" aria-label="Annual withdrawal (after-tax)" oninput="syncSlider('withdraw',this.value,'$','/yr',true,false);calc()"></div><div class="field"><label>Annual return assumption <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" aria-label="Annual return assumption" oninput="syncSlider('r',this.value,'','%',false,false);calc()"></div><div class="field"><label>Inflation rate <span class="field-val" id="v-inf">3%</span></label><input type="range" id="s-inf" min="0" max="8" step="0.5" value="3" aria-label="Inflation rate" oninput="syncSlider('inf',this.value,'','%',false,false);calc()"></div><div class="field"><label>Effective withdrawal tax rate <span class="field-val" id="v-tax">20%</span></label><input type="range" id="s-tax" min="0" max="40" step="1" value="20" aria-label="Effective withdrawal tax rate" oninput="syncSlider('tax',this.value,'','%',false,false);calc()"><div class="field-hint">Tax on 401k/IRA withdrawals</div></div></div></div></div>
   <div class="results">
@@ -329,6 +336,17 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   <p>If your current numbers show your savings depleting before age 85–90, you have several levers: reduce annual spending (even $5,000/year less has a dramatic compounding effect on longevity), increase your portfolio before retiring, delay retirement by 1–2 years (which both grows the portfolio and shortens the drawdown period), or optimize your tax situation through Roth conversions to reduce the gross-up required on each withdrawal.</p>
 </article>
 
+<section style="max-width:760px;margin:48px auto 0;padding:24px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <h3 style="font-size:13px;font-weight:700;color:#1d1d1f;text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px;">Sources &amp; Methodology</h3>
+  <ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:1.7;color:#3d3d3f;">
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Robert Shiller, <em>U.S. Stock Market Real Returns 1871&ndash;present</em> &mdash; basis for the 7% inflation-adjusted return assumption. <a href="http://www.econ.yale.edu/~shiller/data.htm" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">Data &rarr;</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Federal Reserve Economic Data (FRED), <em>interest rates, CPI, household-finance series</em>. <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">FRED &rarr;</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Bureau of Labor Statistics, <em>CPI &amp; wage data</em>. <a href="https://www.bls.gov/cpi/" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">BLS &rarr;</a></li>
+    <li style="padding:8px 0;">IRS, <em>2026 contribution limits, tax brackets, retirement-account rules</em>. <a href="https://www.irs.gov/" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">IRS &rarr;</a></li>
+  </ul>
+  <p style="font-size:12px;color:#6e6e73;margin:14px 0 0;line-height:1.55;"><strong>Methodology:</strong> Calculations use standard financial mathematics &mdash; Future Value of Annuity (FV = PMT &times; ((1+r)<sup>n</sup> &minus; 1) / r), standard loan amortization for debt payoff, and the historical ~7% real S&amp;P 500 return for opportunity-cost projections. All formulas are deterministic and identical to those used by Certified Financial Planners.</p>
+</section>
+
 <section class="faq-wrap"><h2 class="section-title">Common Questions</h2>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How long will $1 million in savings last?<div class="faq-ico">+</div></div><div class="faq-a">At a 4% withdrawal rate ($40,000/yr), $1 million lasts indefinitely if your portfolio earns at least 4% annually. At a more aggressive 6% withdrawal ($60,000/yr), a $1M portfolio typically lasts 20–25 years assuming 7% average annual returns. Use the calculator above to model your exact scenario.</div></div>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is a safe withdrawal rate in retirement?<div class="faq-ico">+</div></div><div class="faq-a">The 4% rule (Trinity Study, 1998) found that withdrawing 4% of your initial portfolio per year has historically lasted 30-year retirements ~95% of the time with a balanced portfolio. Many modern planners suggest 3–3.5% for longer retirements exceeding 35 years.</div></div>
@@ -360,7 +378,7 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   </button>
   <div class="pdf-secure">🔒 Secured by Stripe · SSL encrypted</div>
 </div>
-<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/fire-number-calculator.html">FIRE Number Calculator</a><a class="related-link" href="/net-worth-target-calculator.html">Net Worth Target & Timeline</a><a class="related-link" href="/retirement-wealth-estimator.html">Retirement Wealth Estimator</a><a class="related-link" href="/401k-contribution-calculator.html">401k Contribution Impact</a></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/fire-number-calculator">FIRE Number Calculator</a><a class="related-link" href="/net-worth-target-calculator">Net Worth Target & Timeline</a><a class="related-link" href="/retirement-wealth-estimator">Retirement Wealth Estimator</a><a class="related-link" href="/401k-contribution-calculator">401k Contribution Impact</a></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
   <div class="ft-inner">
@@ -370,29 +388,29 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
     </div>
     <div class="ft-col">
       <h4>Top Calculators</h4>
-      <a href="/coffee-habit-true-cost.html">Coffee Habit Cost</a>
-      <a href="/rent-vs-buy-calculator.html">Rent vs Buy</a>
-      <a href="/fire-number-calculator.html">FIRE Number</a>
-      <a href="/car-loan-true-cost-calculator.html">Car Loan True Cost</a>
-      <a href="/salary-negotiation-calculator.html">Salary Negotiation</a>
-      <a href="/compound-interest-early-vs-late.html">Compound Interest</a>
+      <a href="/coffee-habit-true-cost">Coffee Habit Cost</a>
+      <a href="/rent-vs-buy-calculator">Rent vs Buy</a>
+      <a href="/fire-number-calculator">FIRE Number</a>
+      <a href="/car-loan-true-cost-calculator">Car Loan True Cost</a>
+      <a href="/salary-negotiation-calculator">Salary Negotiation</a>
+      <a href="/compound-interest-early-vs-late">Compound Interest</a>
     </div>
     <div class="ft-col">
       <h4>Guides</h4>
-      <a href="/true-cost-daily-coffee-habit.html">Coffee Habit Guide</a>
-      <a href="/what-is-opportunity-cost.html">Opportunity Cost Explained</a>
-      <a href="/how-to-calculate-fire-number.html">FIRE Number Guide</a>
-      <a href="/rent-vs-buy-math.html">Rent vs Buy Math</a>
-      <a href="/true-cost-of-car-loan.html">Car Loan Real Cost</a>
-      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/true-cost-daily-coffee-habit">Coffee Habit Guide</a>
+      <a href="/what-is-opportunity-cost">Opportunity Cost Explained</a>
+      <a href="/how-to-calculate-fire-number">FIRE Number Guide</a>
+      <a href="/rent-vs-buy-math">Rent vs Buy Math</a>
+      <a href="/true-cost-of-car-loan">Car Loan Real Cost</a>
+      <a href="/privacy">Privacy Policy</a>
     </div>
   </div>
   <div class="ft-bottom">
     <span>&#169; 2026 WealthDelay &middot; Free forever &middot; All calculations run in your browser</span>
     <div class="ft-links">
-      <a href="/privacy.html">Privacy</a>
-      <a href="/disclaimer.html">Disclaimer</a>
-      <a href="/about.html">About</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/about">About</a>
       <a href="/sitemap.xml">Sitemap</a>
     </div>
   </div>

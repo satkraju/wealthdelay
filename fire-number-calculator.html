@@ -284,6 +284,18 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   <p class="tool-sub">Enter your expenses, savings and return. See your FIRE number and inflation-adjusted timeline.</p>
   <div class="hero-badges"><div class="badge">&#128208; Verified math</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
 </section>
+<div class="wd-byline" style="max-width:760px;margin:0 auto;padding:14px 24px 0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:13px;color:#6e6e73;">
+  <span style="font-weight:600;color:#1d1d1f;">By WealthDelay Editorial</span>
+  <span style="opacity:.4;">·</span>
+  <span>Reviewed for accuracy on May 28, 2026</span>
+  <span style="opacity:.4;">·</span>
+  <span style="color:#16A34A;font-weight:600;">&#10003; Based on Trinity Study + inflation-adjusted Monte Carlo</span>
+</div>
+<section class="wd-quick-answer" style="max-width:760px;margin:24px auto 0;padding:24px;background:#F0FDF4;border:1px solid #BBF7D0;border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <div style="font-size:11px;font-weight:700;color:#16A34A;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Quick Answer</div>
+  <p style="font-size:17px;line-height:1.55;color:#1d1d1f;margin:0 0 12px;font-weight:500;"><strong>What is my FIRE number?</strong> Multiply your expected annual retirement spending by 25. That ratio comes from the 4% safe withdrawal rate &mdash; the rate at which a 60/40 stock-bond portfolio survived every 30-year retirement period in U.S. history (Trinity Study, 1998). $50,000/year of spending &rarr; $1.25M FIRE number. $80,000/year &rarr; $2M. $120,000/year &rarr; $3M.</p>
+  <p style="font-size:14px;color:#3d3d3f;margin:0;line-height:1.55;">The calculator below adjusts for inflation during accumulation (most don&rsquo;t) and lets you flex the withdrawal rate &mdash; use 3.5% for a longer or earlier retirement, 4.5%&ndash;5% if you have Social Security or part-time income to cushion the early years.</p>
+</section>
 <div class="workspace">
   <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Your Finances</div><div class="field"><label>Annual living expenses <span class="field-val" id="v-exp">$50000/yr</span></label><input type="range" id="s-exp" min="10000" max="300000" step="5000" value="50000" aria-label="Annual living expenses" oninput="syncSlider('exp',this.value,'$','/yr',true,true);calc()"></div><div class="field"><label>Current savings / investments <span class="field-val" id="v-saved">$200000</span></label><input type="range" id="s-saved" min="0" max="2000000" step="5000" value="200000" aria-label="Current savings / investments" oninput="syncSlider('saved',this.value,'$','',true,true);calc()"></div><div class="field"><label>Monthly savings / investment <span class="field-val" id="v-monthly">$3000/mo</span></label><input type="range" id="s-monthly" min="100" max="10000" step="100" value="3000" aria-label="Monthly savings / investment" oninput="syncSlider('monthly',this.value,'$','/mo',true,false);calc()"></div><div class="section-label">Assumptions</div><div class="field"><label>Annual portfolio return <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" aria-label="Annual portfolio return" oninput="syncSlider('r',this.value,'','%',false,false);calc()"></div><div class="field"><label>Inflation rate <span class="field-val" id="v-inf">3%</span></label><input type="range" id="s-inf" min="0" max="8" step="0.5" value="3" aria-label="Inflation rate" oninput="syncSlider('inf',this.value,'','%',false,false);calc()"></div><div class="field"><label>Safe withdrawal rate <span class="field-val" id="v-swr">4%</span></label><input type="range" id="s-swr" min="2" max="8" step="0.25" value="4" aria-label="Safe withdrawal rate" oninput="syncSlider('swr',this.value,'','%',false,false);calc()"><div class="field-hint">4% = Trinity Study benchmark</div></div></div></div></div>
   <div class="results">
@@ -302,6 +314,39 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
     <div class="ad-slot ad-rect" style="height:120px"><!-- Google AdSense — insert ad unit here after approval --></div>
   </div>
 </div>
+<section style="max-width:760px;margin:48px auto 0;padding:24px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <h3 style="font-size:13px;font-weight:700;color:#1d1d1f;text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px;">FIRE Number by Withdrawal Rate &amp; Annual Spending</h3>
+  <div style="overflow-x:auto;">
+  <table style="width:100%;border-collapse:collapse;font-size:14px;color:#3d3d3f;">
+    <thead><tr style="background:#F7F2E8;text-align:left;">
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">Annual spending</th>
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">4% (25&times;)</th>
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">3.5% (28.5&times;)</th>
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">3% (33&times;)</th>
+    </tr></thead>
+    <tbody>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">$40,000 (Lean FIRE)</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;color:#16A34A;">$1,000,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">$1,140,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">$1,320,000</td></tr>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">$60,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;color:#16A34A;">$1,500,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">$1,710,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">$1,980,000</td></tr>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">$80,000 (Regular FIRE)</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;color:#16A34A;">$2,000,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">$2,280,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">$2,640,000</td></tr>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">$120,000 (Fat FIRE)</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;color:#16A34A;">$3,000,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">$3,420,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">$3,960,000</td></tr>
+      <tr><td style="padding:10px 12px;">$200,000 (Chubby/Fat FIRE)</td><td style="padding:10px 12px;font-weight:600;color:#16A34A;">$5,000,000</td><td style="padding:10px 12px;font-weight:600;">$5,700,000</td><td style="padding:10px 12px;font-weight:600;">$6,600,000</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12px;color:#6e6e73;margin:12px 0 0;line-height:1.55;">Lower withdrawal rates &mdash; 3% to 3.5% &mdash; are appropriate when retiring early (40-year+ horizon), in a richly-valued market, or without Social Security to backstop late life.</p>
+</section>
+
+<section style="max-width:760px;margin:24px auto 0;padding:24px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <h3 style="font-size:13px;font-weight:700;color:#1d1d1f;text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px;">Sources &amp; Methodology</h3>
+  <ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:1.7;color:#3d3d3f;">
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Cooley, Hubbard &amp; Walz (1998), <em>Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable</em> &mdash; the original Trinity Study establishing the 4% rule. <a href="https://www.aaii.com/files/journal/pdf/feb98_choosing_a_withdrawal_rate.pdf" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">PDF &rarr;</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Bengen (1994), <em>Determining Withdrawal Rates Using Historical Data</em> &mdash; the founding paper on safe withdrawal rates. <a href="https://www.retailinvestor.org/pdf/Bengen1.pdf" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">PDF &rarr;</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Robert Shiller, <em>U.S. Stock Market Real Returns 1871&ndash;present</em> &mdash; basis for the 7% real-return assumption. <a href="http://www.econ.yale.edu/~shiller/data.htm" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">Data &rarr;</a></li>
+    <li style="padding:8px 0;">Kitces, <em>Safe Withdrawal Rates in Today&rsquo;s Low-Yield Environment</em>. <a href="https://www.kitces.com/blog/the-ratcheting-safe-withdrawal-rate-a-more-dominant-version-of-the-4-rule/" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">Article &rarr;</a></li>
+  </ul>
+  <p style="font-size:12px;color:#6e6e73;margin:14px 0 0;line-height:1.55;"><strong>Methodology:</strong> FIRE number = Annual Expenses &divide; Safe Withdrawal Rate. Calculator inflates expected expenses to your retirement year (most calculators skip this and understate timeline by 3&ndash;5 years). Investment growth uses standard compound math with monthly contributions.</p>
+</section>
+
 <section class="faq-wrap"><h2 class="section-title">Common Questions</h2><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the 4% rule?<div class="faq-ico">+</div></div><div class="faq-a">The Trinity Study (1998) found that a 4% annual withdrawal from a diversified portfolio has historically survived 30-year retirements ~95% of the time. It's a starting point, not a guarantee.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why does this show more years than other calculators?<div class="faq-ico">+</div></div><div class="faq-a">This tool correctly accounts for inflation: your FIRE number grows in nominal terms during accumulation (because your future expenses will be higher). Many calculators use a fixed target, which understates the timeline by several years.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What isn't modelled here?<div class="faq-ico">+</div></div><div class="faq-a">Sequence-of-returns risk, Social Security income, healthcare costs in early retirement, and taxes on traditional 401k/IRA withdrawals. Use this as a directional guide, not a financial plan.</div></div></section>
   </div>
 
@@ -327,7 +372,7 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   </button>
   <div class="pdf-secure">🔒 Secured by Stripe · SSL encrypted</div>
 </div>
-<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/how-long-will-savings-last.html">Savings Drawdown</a><a class="related-link" href="/net-worth-target-calculator.html">Net Worth Timeline</a><a class="related-link" href="/retirement-wealth-estimator.html">Retirement Estimator</a></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/how-long-will-savings-last">Savings Drawdown</a><a class="related-link" href="/net-worth-target-calculator">Net Worth Timeline</a><a class="related-link" href="/retirement-wealth-estimator">Retirement Estimator</a></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Individual results will vary. Consult a qualified financial advisor before making financial decisions.</div>
 <footer>
   <div class="ft-inner">
@@ -337,29 +382,29 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
     </div>
     <div class="ft-col">
       <h4>Top Calculators</h4>
-      <a href="/coffee-habit-true-cost.html">Coffee Habit Cost</a>
-      <a href="/rent-vs-buy-calculator.html">Rent vs Buy</a>
-      <a href="/fire-number-calculator.html">FIRE Number</a>
-      <a href="/car-loan-true-cost-calculator.html">Car Loan True Cost</a>
-      <a href="/salary-negotiation-calculator.html">Salary Negotiation</a>
-      <a href="/compound-interest-early-vs-late.html">Compound Interest</a>
+      <a href="/coffee-habit-true-cost">Coffee Habit Cost</a>
+      <a href="/rent-vs-buy-calculator">Rent vs Buy</a>
+      <a href="/fire-number-calculator">FIRE Number</a>
+      <a href="/car-loan-true-cost-calculator">Car Loan True Cost</a>
+      <a href="/salary-negotiation-calculator">Salary Negotiation</a>
+      <a href="/compound-interest-early-vs-late">Compound Interest</a>
     </div>
     <div class="ft-col">
       <h4>Guides</h4>
-      <a href="/true-cost-daily-coffee-habit.html">Coffee Habit Guide</a>
-      <a href="/what-is-opportunity-cost.html">Opportunity Cost Explained</a>
-      <a href="/how-to-calculate-fire-number.html">FIRE Number Guide</a>
-      <a href="/rent-vs-buy-math.html">Rent vs Buy Math</a>
-      <a href="/true-cost-of-car-loan.html">Car Loan Real Cost</a>
-      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/true-cost-daily-coffee-habit">Coffee Habit Guide</a>
+      <a href="/what-is-opportunity-cost">Opportunity Cost Explained</a>
+      <a href="/how-to-calculate-fire-number">FIRE Number Guide</a>
+      <a href="/rent-vs-buy-math">Rent vs Buy Math</a>
+      <a href="/true-cost-of-car-loan">Car Loan Real Cost</a>
+      <a href="/privacy">Privacy Policy</a>
     </div>
   </div>
   <div class="ft-bottom">
     <span>&#169; 2026 WealthDelay &middot; Free forever &middot; All calculations run in your browser</span>
     <div class="ft-links">
-      <a href="/privacy.html">Privacy</a>
-      <a href="/disclaimer.html">Disclaimer</a>
-      <a href="/about.html">About</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/about">About</a>
       <a href="/sitemap.xml">Sitemap</a>
     </div>
   </div>

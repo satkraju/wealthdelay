@@ -279,6 +279,18 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   <p class="tool-sub">Enter a monthly amount and two start ages. See the exact wealth gap that starting early creates.</p>
   <div class="hero-badges"><div class="badge">&#128208; Verified math</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
 </section>
+<div class="wd-byline" style="max-width:760px;margin:0 auto;padding:14px 24px 0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:13px;color:#6e6e73;">
+  <span style="font-weight:600;color:#1d1d1f;">By WealthDelay Editorial</span>
+  <span style="opacity:.4;">·</span>
+  <span>Reviewed for accuracy on May 28, 2026</span>
+  <span style="opacity:.4;">·</span>
+  <span style="color:#16A34A;font-weight:600;">&#10003; Standard FV-of-annuity math, S&amp;P 100-year average</span>
+</div>
+<section class="wd-quick-answer" style="max-width:760px;margin:24px auto 0;padding:24px;background:#F0FDF4;border:1px solid #BBF7D0;border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <div style="font-size:11px;font-weight:700;color:#16A34A;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Quick Answer</div>
+  <p style="font-size:17px;line-height:1.55;color:#1d1d1f;margin:0 0 12px;font-weight:500;"><strong>How much does waiting cost?</strong> At a 7% real return, every decade you delay starting roughly <em>doubles</em> the monthly contribution required to reach the same end balance. Starting at 25 vs 35 with $300/month to age 65: $1.1M vs $540K &mdash; a $560K gap from a $36K head start. Time is the dominant variable, not amount.</p>
+  <p style="font-size:14px;color:#3d3d3f;margin:0;line-height:1.55;">Use the calculator below to compare any two start ages. The result is exact, not rule-of-thumb &mdash; it uses the Future Value of Annuity formula with monthly compounding.</p>
+</section>
 <div class="workspace">
   <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">Your Investment</div><div class="field"><label>Monthly contribution <span class="field-val" id="v-monthly">$300/mo</span></label><input type="range" id="s-monthly" min="50" max="5000" step="50" value="300" oninput="syncSlider('monthly',this.value,'$','/mo',false,false);calc()"></div><div class="field"><label>Annual return <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" oninput="syncSlider('r',this.value,'','%',false,false);calc()"></div><div class="section-label">Two Start Ages</div><div class="field-row"><div class="field"><label>Early start age <span class="field-val" id="v-early">22</span></label><input type="range" id="s-early" min="18" max="60" step="1" value="22" oninput="syncSlider('early',this.value,'','',false,false);calc()"></div><div class="field"><label>Late start age <span class="field-val" id="v-late">32</span></label><input type="range" id="s-late" min="19" max="65" step="1" value="32" oninput="syncSlider('late',this.value,'','',false,false);calc()"></div></div><div class="field"><label>Retire at <span class="field-val" id="v-ret">65</span></label><input type="range" id="s-ret" min="45" max="80" step="1" value="65" oninput="syncSlider('ret',this.value,'','',false,false);calc()"></div></div></div></div>
   <div class="results">
@@ -308,6 +320,39 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   <h3 style="font-size:20px;font-weight:700;letter-spacing:-.02em;color:#1d1d1f;margin:32px 0 12px;">What If You've Already Started Late?</h3>
   <p>If you're reading this at 40 or 50, the answer isn't despair — it's acceleration. Increasing your savings rate aggressively in your peak earning years, eliminating high-fee investments, maximising tax-advantaged accounts (401k, RRSP, ISA), and delaying retirement by 2–3 years can significantly close the gap created by a late start.</p>
 </article>
+<section style="max-width:760px;margin:48px auto 0;padding:24px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <h3 style="font-size:13px;font-weight:700;color:#1d1d1f;text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px;">$300/month at 7% &mdash; final value by start age (retire at 65)</h3>
+  <div style="overflow-x:auto;">
+  <table style="width:100%;border-collapse:collapse;font-size:14px;color:#3d3d3f;">
+    <thead><tr style="background:#F7F2E8;text-align:left;">
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">Start age</th>
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">Years invested</th>
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">Total contributed</th>
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">Final balance at 65</th>
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">vs starting at 25</th>
+    </tr></thead>
+    <tbody>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;color:#16A34A;">25</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">40</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">$144,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">$1,108,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">&mdash;</td></tr>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">30</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">35</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">$126,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">$766,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);color:#DC2626;font-weight:600;">&minus;$342,000</td></tr>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">35</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">30</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">$108,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">$524,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);color:#DC2626;font-weight:600;">&minus;$584,000</td></tr>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">40</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">25</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">$90,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">$352,000</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);color:#DC2626;font-weight:600;">&minus;$756,000</td></tr>
+      <tr><td style="padding:10px 12px;font-weight:600;">45</td><td style="padding:10px 12px;">20</td><td style="padding:10px 12px;">$72,000</td><td style="padding:10px 12px;font-weight:600;">$230,000</td><td style="padding:10px 12px;color:#DC2626;font-weight:600;">&minus;$878,000</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12px;color:#6e6e73;margin:12px 0 0;line-height:1.55;">Each 5-year delay costs roughly $200K&ndash;$340K of final wealth. The first decade matters more than the last two combined &mdash; that is the compounding asymmetry.</p>
+</section>
+
+<section style="max-width:760px;margin:24px auto 0;padding:24px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <h3 style="font-size:13px;font-weight:700;color:#1d1d1f;text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px;">Sources &amp; Methodology</h3>
+  <ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:1.7;color:#3d3d3f;">
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Robert Shiller, <em>U.S. Stock Market Real Returns 1871&ndash;present</em> &mdash; the 7% inflation-adjusted return used here. <a href="http://www.econ.yale.edu/~shiller/data.htm" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">Data &rarr;</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Vanguard, <em>How America Saves 2024</em> &mdash; participant contribution data showing median start-age impact. <a href="https://institutional.vanguard.com/insights-and-research/report/how-america-saves.html" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">Report &rarr;</a></li>
+    <li style="padding:8px 0;">JP Morgan, <em>Guide to Retirement</em> &mdash; the well-known &ldquo;Susan vs Bill&rdquo; early-vs-late comparison chart. <a href="https://am.jpmorgan.com/us/en/asset-management/adv/insights/retirement-insights/guide-to-retirement/" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">Guide &rarr;</a></li>
+  </ul>
+  <p style="font-size:12px;color:#6e6e73;margin:14px 0 0;line-height:1.55;"><strong>Methodology:</strong> Future value uses FV = PMT &times; ((1+r/12)<sup>n</sup> &minus; 1) / (r/12) with monthly compounding. Returns assume continuous monthly contributions at a constant rate. Real-world returns vary year-to-year (sequence risk); use the calculator below to stress-test with lower assumed returns.</p>
+</section>
+
 <section class="faq-wrap"><h2 class="section-title">Common Questions</h2>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How much does waiting 10 years to invest actually cost?<div class="faq-ico">+</div></div><div class="faq-a">Waiting 10 years to start investing $300/month costs approximately $452,000 in final wealth at age 65 (starting at 25 vs 35 at 7% returns). The early investor contributes the same monthly amount but ends up with roughly twice the wealth due to additional compounding time.</div></div>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is it too late to start investing at 40?<div class="faq-ico">+</div></div><div class="faq-a">No. Starting at 40 still gives 25+ years of compounding. The key adjustments: increase your savings rate to compensate for lost time, maximise tax-advantaged accounts, minimise fees, and consider working 2–3 years longer than originally planned. The gap from a late start can be significantly closed with aggressive but achievable changes.</div></div>
@@ -338,7 +383,7 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   </button>
   <div class="pdf-secure">🔒 Secured by Stripe · SSL encrypted</div>
 </div>
-<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/fire-number-calculator.html">FIRE Number</a><a class="related-link" href="/net-worth-target-calculator.html">Net Worth Target</a><a class="related-link" href="/401k-contribution-calculator.html">401k Contribution</a><a class="related-link" href="/investment-fee-drag-calculator.html">Investment Fee Drag</a><a class="related-link" href="/retirement-wealth-estimator.html">Retirement Estimator</a></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/fire-number-calculator">FIRE Number</a><a class="related-link" href="/net-worth-target-calculator">Net Worth Target</a><a class="related-link" href="/401k-contribution-calculator">401k Contribution</a><a class="related-link" href="/investment-fee-drag-calculator">Investment Fee Drag</a><a class="related-link" href="/retirement-wealth-estimator">Retirement Estimator</a></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
 <footer>
   <div class="ft-inner">
@@ -348,29 +393,29 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
     </div>
     <div class="ft-col">
       <h4>Top Calculators</h4>
-      <a href="/coffee-habit-true-cost.html">Coffee Habit Cost</a>
-      <a href="/rent-vs-buy-calculator.html">Rent vs Buy</a>
-      <a href="/fire-number-calculator.html">FIRE Number</a>
-      <a href="/car-loan-true-cost-calculator.html">Car Loan True Cost</a>
-      <a href="/salary-negotiation-calculator.html">Salary Negotiation</a>
-      <a href="/compound-interest-early-vs-late.html">Compound Interest</a>
+      <a href="/coffee-habit-true-cost">Coffee Habit Cost</a>
+      <a href="/rent-vs-buy-calculator">Rent vs Buy</a>
+      <a href="/fire-number-calculator">FIRE Number</a>
+      <a href="/car-loan-true-cost-calculator">Car Loan True Cost</a>
+      <a href="/salary-negotiation-calculator">Salary Negotiation</a>
+      <a href="/compound-interest-early-vs-late">Compound Interest</a>
     </div>
     <div class="ft-col">
       <h4>Guides</h4>
-      <a href="/true-cost-daily-coffee-habit.html">Coffee Habit Guide</a>
-      <a href="/what-is-opportunity-cost.html">Opportunity Cost Explained</a>
-      <a href="/how-to-calculate-fire-number.html">FIRE Number Guide</a>
-      <a href="/rent-vs-buy-math.html">Rent vs Buy Math</a>
-      <a href="/true-cost-of-car-loan.html">Car Loan Real Cost</a>
-      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/true-cost-daily-coffee-habit">Coffee Habit Guide</a>
+      <a href="/what-is-opportunity-cost">Opportunity Cost Explained</a>
+      <a href="/how-to-calculate-fire-number">FIRE Number Guide</a>
+      <a href="/rent-vs-buy-math">Rent vs Buy Math</a>
+      <a href="/true-cost-of-car-loan">Car Loan Real Cost</a>
+      <a href="/privacy">Privacy Policy</a>
     </div>
   </div>
   <div class="ft-bottom">
     <span>&#169; 2026 WealthDelay &middot; Free forever &middot; All calculations run in your browser</span>
     <div class="ft-links">
-      <a href="/privacy.html">Privacy</a>
-      <a href="/disclaimer.html">Disclaimer</a>
-      <a href="/about.html">About</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/about">About</a>
       <a href="/sitemap.xml">Sitemap</a>
     </div>
   </div>

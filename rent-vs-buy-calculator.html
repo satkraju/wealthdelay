@@ -280,6 +280,18 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   <p class="tool-sub">Enter home price, rent and your time horizon. See a true apples-to-apples financial comparison.</p>
   <div class="hero-badges"><div class="badge">&#128208; Verified math</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
 </section>
+<div class="wd-byline" style="max-width:760px;margin:0 auto;padding:14px 24px 0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:13px;color:#6e6e73;">
+  <span style="font-weight:600;color:#1d1d1f;">By WealthDelay Editorial</span>
+  <span style="opacity:.4;">·</span>
+  <span>Reviewed for accuracy on May 28, 2026</span>
+  <span style="opacity:.4;">·</span>
+  <span style="color:#16A34A;font-weight:600;">&#10003; Includes opportunity cost of down payment</span>
+</div>
+<section class="wd-quick-answer" style="max-width:760px;margin:24px auto 0;padding:24px;background:#F0FDF4;border:1px solid #BBF7D0;border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <div style="font-size:11px;font-weight:700;color:#16A34A;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Quick Answer</div>
+  <p style="font-size:17px;line-height:1.55;color:#1d1d1f;margin:0 0 12px;font-weight:500;"><strong>Should you rent or buy?</strong> The honest answer is: it depends on your time horizon and the local rent-to-price ratio. As a rule of thumb, buying wins financially if you will stay <strong>at least 5 years</strong> AND the home price is less than ~<strong>16&times; the annual rent</strong> for an equivalent home. Above 20&times;, renting and investing the difference almost always wins.</p>
+  <p style="font-size:14px;color:#3d3d3f;margin:0;line-height:1.55;">Most calculators ignore the opportunity cost of your down payment, property taxes, maintenance (~1% of price/year), and insurance &mdash; that is why &ldquo;mortgage = rent&rdquo; rules of thumb mislead. The calculator below accounts for all of it.</p>
+</section>
 <div class="workspace">
   <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body"><div class="section-label">The Home</div><div class="field"><label>Home purchase price <span class="field-val" id="v-price">$400000</span></label><input type="range" id="s-price" min="100000" max="2000000" step="10000" value="400000" oninput="syncSlider('price',this.value,'$','',true,true);calc()"></div><div class="field"><label>Down payment % <span class="field-val" id="v-down">20%</span></label><input type="range" id="s-down" min="3" max="40" step="1" value="20" oninput="syncSlider('down',this.value,'','%',false,false);calc()"></div><div class="field"><label>Mortgage rate <span class="field-val" id="v-rate">6.5%</span></label><input type="range" id="s-rate" min="2" max="12" step="0.25" value="6.5" oninput="syncSlider('rate',this.value,'','%',false,false);calc()"></div><div class="section-label">vs Renting</div><div class="field"><label>Monthly rent (equivalent) <span class="field-val" id="v-rent">$2000/mo</span></label><input type="range" id="s-rent" min="500" max="10000" step="100" value="2000" oninput="syncSlider('rent',this.value,'$','/mo',true,false);calc()"></div><div class="field"><label>Time horizon (years) <span class="field-val" id="v-hor">5yrs</span></label><input type="range" id="s-hor" min="1" max="30" step="1" value="5" oninput="syncSlider('hor',this.value,'','yrs',false,false);calc()"></div><div class="section-label">Assumptions</div><div class="field"><label>Home appreciation rate <span class="field-val" id="v-app">3%</span></label><input type="range" id="s-app" min="0" max="10" step="0.5" value="3" oninput="syncSlider('app',this.value,'','%',false,false);calc()"></div><div class="field"><label>Property tax rate <span class="field-val" id="v-tax">1.2%</span></label><input type="range" id="s-tax" min="0" max="3" step="0.1" value="1.2" oninput="syncSlider('tax',this.value,'','%',false,false);calc()"></div><div class="field"><label>Maintenance rate <span class="field-val" id="v-maint">1.0%</span></label><input type="range" id="s-maint" min="0" max="3" step="0.1" value="1.0" oninput="syncSlider('maint',this.value,'','%',false,false);calc()"></div><div class="field"><label>Investment return (opportunity cost) <span class="field-val" id="v-r">7%</span></label><input type="range" id="s-r" min="2" max="14" step="0.5" value="7" oninput="syncSlider('r',this.value,'','%',false,false);calc()"></div></div></div></div>
   <div class="results">
@@ -311,6 +323,38 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   <h3 style="font-size:20px;font-weight:700;letter-spacing:-.02em;color:#1d1d1f;margin:32px 0 12px;">When Renting Clearly Wins</h3>
   <p>Renting is financially superior when: you might move within 5 years, local price-to-rent ratios exceed 25, you'd invest the down payment and monthly savings difference, or you're in a high-appreciation market where homes are priced for expected future gains rather than current fundamentals. In expensive cities like Toronto, Vancouver, San Francisco and New York, renting and investing the difference has historically outperformed buying in many scenarios.</p>
 </article>
+<section style="max-width:760px;margin:48px auto 0;padding:24px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <h3 style="font-size:13px;font-weight:700;color:#1d1d1f;text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px;">Break-even by price-to-rent ratio</h3>
+  <div style="overflow-x:auto;">
+  <table style="width:100%;border-collapse:collapse;font-size:14px;color:#3d3d3f;">
+    <thead><tr style="background:#F7F2E8;text-align:left;">
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">Price &divide; annual rent</th>
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">Example market</th>
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">Verdict (5-yr horizon)</th>
+    </tr></thead>
+    <tbody>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">Below 15&times;</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">Cleveland, Detroit, Pittsburgh, Memphis</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);color:#16A34A;font-weight:600;">Buying clearly wins</td></tr>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">15&ndash;18&times;</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">Most Midwest &amp; Southeast metros</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);color:#16A34A;font-weight:600;">Buying wins if &gt;5 yrs</td></tr>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">18&ndash;22&times;</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">Boston, Denver, Austin, Miami</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);color:#D97706;font-weight:600;">Coin flip &mdash; depends on horizon</td></tr>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">22&ndash;30&times;</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">Seattle, NYC, Los Angeles</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);color:#DC2626;font-weight:600;">Renting wins unless &gt;10 yrs</td></tr>
+      <tr><td style="padding:10px 12px;font-weight:600;">Above 30&times;</td><td style="padding:10px 12px;">San Francisco, San Jose, Manhattan</td><td style="padding:10px 12px;color:#DC2626;font-weight:600;">Renting almost always wins</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12px;color:#6e6e73;margin:12px 0 0;line-height:1.55;">Price-to-rent ratio = home purchase price &divide; annual rent for an equivalent home. The classic Trulia/Smart Money threshold is 15&times; (buy) vs 20&times; (rent), assuming 5-year hold and historical appreciation.</p>
+</section>
+
+<section style="max-width:760px;margin:24px auto 0;padding:24px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <h3 style="font-size:13px;font-weight:700;color:#1d1d1f;text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px;">Sources &amp; Methodology</h3>
+  <ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:1.7;color:#3d3d3f;">
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">S&amp;P CoreLogic Case-Shiller U.S. National Home Price Index &mdash; long-run home price appreciation. <a href="https://fred.stlouisfed.org/series/CSUSHPISA" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">FRED data &rarr;</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Federal Reserve, <em>30-Year Fixed Rate Mortgage Average</em>. <a href="https://fred.stlouisfed.org/series/MORTGAGE30US" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">Current rate &rarr;</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Bureau of Labor Statistics, <em>CPI: Rent of Primary Residence</em> &mdash; the rent-growth assumption baseline. <a href="https://fred.stlouisfed.org/series/CUSR0000SEHA" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">FRED data &rarr;</a></li>
+    <li style="padding:8px 0;">Khater &amp; McManus / Freddie Mac, <em>The 5/15/20 Buying Threshold Analysis</em>. <a href="https://www.freddiemac.com/research" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">Research portal &rarr;</a></li>
+  </ul>
+  <p style="font-size:12px;color:#6e6e73;margin:14px 0 0;line-height:1.55;"><strong>Methodology:</strong> Buying cost = down payment opportunity cost (FV at portfolio return) + mortgage interest + property tax + maintenance (1% of home value/yr) + insurance + transaction costs (~9% round-trip) &minus; equity at sale. Renting cost = rent over horizon (inflated by CPI rent index) + opportunity-cost FV on the down payment kept invested. Apples-to-apples 5-year hold by default.</p>
+</section>
+
 <section class="faq-wrap"><h2 class="section-title">Common Questions</h2>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is it always better to buy than rent?<div class="faq-ico">+</div></div><div class="faq-a">No. Whether buying beats renting depends on local price-to-rent ratios, how long you stay, mortgage rates, and what you'd do with the down payment capital. In cities with price-to-rent ratios above 25, renting and investing the difference has historically competed with or beaten buying.</div></div>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the break-even year for buying vs renting?<div class="faq-ico">+</div></div><div class="faq-a">The break-even year is when the net wealth of a homeowner (equity minus total ownership costs) equals the net wealth of a renter who invested the down payment and monthly savings difference. In most markets this is 5–10 years. If you move before break-even, renting was cheaper.</div></div>
@@ -341,7 +385,7 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
   </button>
   <div class="pdf-secure">🔒 Secured by Stripe · SSL encrypted</div>
 </div>
-<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/true-cost-of-bigger-house.html">True Cost of Bigger House</a><a class="related-link" href="/mortgage-overpayment-calculator.html">Mortgage Overpayment</a><a class="related-link" href="/investment-fee-drag-calculator.html">Investment Fee Drag</a><a class="related-link" href="/net-worth-target-calculator.html">Net Worth Target</a><a class="related-link" href="/how-long-will-savings-last.html">How Long Will Savings Last</a></div></section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/true-cost-of-bigger-house">True Cost of Bigger House</a><a class="related-link" href="/mortgage-overpayment-calculator">Mortgage Overpayment</a><a class="related-link" href="/investment-fee-drag-calculator">Investment Fee Drag</a><a class="related-link" href="/net-worth-target-calculator">Net Worth Target</a><a class="related-link" href="/how-long-will-savings-last">How Long Will Savings Last</a></div></section>
 <div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not financial advice. Projections use historical averages and are not guaranteed. Consult a qualified financial advisor.</div>
 <footer>
   <div class="ft-inner">
@@ -351,29 +395,29 @@ footer{background:#111827 !important;border-top:1px solid rgba(255,255,255,.06) 
     </div>
     <div class="ft-col">
       <h4>Top Calculators</h4>
-      <a href="/coffee-habit-true-cost.html">Coffee Habit Cost</a>
-      <a href="/rent-vs-buy-calculator.html">Rent vs Buy</a>
-      <a href="/fire-number-calculator.html">FIRE Number</a>
-      <a href="/car-loan-true-cost-calculator.html">Car Loan True Cost</a>
-      <a href="/salary-negotiation-calculator.html">Salary Negotiation</a>
-      <a href="/compound-interest-early-vs-late.html">Compound Interest</a>
+      <a href="/coffee-habit-true-cost">Coffee Habit Cost</a>
+      <a href="/rent-vs-buy-calculator">Rent vs Buy</a>
+      <a href="/fire-number-calculator">FIRE Number</a>
+      <a href="/car-loan-true-cost-calculator">Car Loan True Cost</a>
+      <a href="/salary-negotiation-calculator">Salary Negotiation</a>
+      <a href="/compound-interest-early-vs-late">Compound Interest</a>
     </div>
     <div class="ft-col">
       <h4>Guides</h4>
-      <a href="/true-cost-daily-coffee-habit.html">Coffee Habit Guide</a>
-      <a href="/what-is-opportunity-cost.html">Opportunity Cost Explained</a>
-      <a href="/how-to-calculate-fire-number.html">FIRE Number Guide</a>
-      <a href="/rent-vs-buy-math.html">Rent vs Buy Math</a>
-      <a href="/true-cost-of-car-loan.html">Car Loan Real Cost</a>
-      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/true-cost-daily-coffee-habit">Coffee Habit Guide</a>
+      <a href="/what-is-opportunity-cost">Opportunity Cost Explained</a>
+      <a href="/how-to-calculate-fire-number">FIRE Number Guide</a>
+      <a href="/rent-vs-buy-math">Rent vs Buy Math</a>
+      <a href="/true-cost-of-car-loan">Car Loan Real Cost</a>
+      <a href="/privacy">Privacy Policy</a>
     </div>
   </div>
   <div class="ft-bottom">
     <span>&#169; 2026 WealthDelay &middot; Free forever &middot; All calculations run in your browser</span>
     <div class="ft-links">
-      <a href="/privacy.html">Privacy</a>
-      <a href="/disclaimer.html">Disclaimer</a>
-      <a href="/about.html">About</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/about">About</a>
       <a href="/sitemap.xml">Sitemap</a>
     </div>
   </div>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Paycheck Calculator — Estimate Your Take-Home Pay | WealthDelay</title>
+<meta name="description" content="Estimate your real take-home pay after FICA payroll taxes, federal/state withholding, and pre-tax deductions. Free, instant, no signup.">
+<link rel="canonical" href="https://wealthdelay.com/paycheck-take-home-calculator">
+<link rel="preload" href="https://fonts.gstatic.com/s/plusjakartasans/v8/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/calc-common.css">
+<meta property="og:title" content="Paycheck Calculator — Estimate Your Take-Home Pay | WealthDelay">
+<meta property="og:description" content="Estimate your real take-home pay after FICA payroll taxes, federal/state withholding, and pre-tax deductions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wealthdelay.com/paycheck-take-home-calculator">
+<meta property="og:image" content="https://wealthdelay.com/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://wealthdelay.com/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Paycheck / Take-Home Pay Calculator","description":"Estimate your real take-home pay after FICA payroll taxes and pre-tax deductions.","url":"https://wealthdelay.com/paycheck-take-home-calculator","applicationCategory":"FinanceApplication","isAccessibleForFree":true,"operatingSystem":"Any"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why is my paycheck so much less than my salary?","acceptedAnswer":{"@type":"Answer","text":"FICA payroll taxes (6.2% Social Security up to the annual wage base, 1.45% Medicare with no cap) come out automatically, plus federal income tax withholding, state income tax (if applicable), and any pre-tax deductions like 401(k) contributions or health insurance premiums."}},{"@type":"Question","name":"Does increasing my 401(k) contribution lower my paycheck taxes?","acceptedAnswer":{"@type":"Answer","text":"Yes for a Traditional 401(k) — contributions are deducted from your paycheck before federal (and most state) income tax is calculated, lowering your taxable income. They do NOT reduce FICA (Social Security/Medicare) taxes, which apply to your full gross wages regardless of 401(k) contributions."}},{"@type":"Question","name":"What is the Social Security wage base?","acceptedAnswer":{"@type":"Answer","text":"It's the maximum amount of annual earnings subject to the 6.2% Social Security tax. Earnings above this amount are not taxed for Social Security (though Medicare's 1.45% has no cap, and an extra 0.9% Medicare surtax applies above $200,000 single / $250,000 married filing jointly). The wage base is adjusted annually by the Social Security Administration — confirm the current figure at ssa.gov."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"WealthDelay","item":"https://wealthdelay.com"},{"@type":"ListItem","position":2,"name":"Housing & Life Decision Calculators","item":"https://wealthdelay.com/housing-life-calculators"},{"@type":"ListItem","position":3,"name":"Paycheck Calculator","item":"https://wealthdelay.com/paycheck-take-home-calculator"}]}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNEP9J1LN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YPNEP9J1LN');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5184312708933601" crossorigin="anonymous"></script>
+<script src="/embed.js" defer></script>
+</head>
+<body>
+<nav>
+  <div class="nav-left">
+    <a class="nav-logo" href="/">
+      <div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><polyline points="1.5,13 5,7.5 8,10.5 11,5.5 14,8.5 16.5,3.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="logo-name"><em>Wealth</em>Delay</div>
+    </a>
+    <a class="nav-back" href="/">&#8592; All Tools</a>
+  </div>
+  <div class="nav-pill">Live Calculator</div>
+</nav>
+<section class="tool-hero">
+  <div class="tool-eyebrow">Calculator &nbsp;&#183;&nbsp; <span class="cat">Housing &amp; Life Decisions</span></div>
+  <h1 class="tool-h1">Your salary isn't <span class="green">your paycheck.</span></h1>
+  <p class="tool-sub">Estimate what actually lands in your bank account after payroll taxes and deductions.</p>
+  <div class="hero-badges"><div class="badge">&#128208; Verified FICA rates</div><div class="badge">&#9889; Instant results</div><div class="badge">&#128274; No data stored</div><div class="badge">$0 Free</div></div>
+</section>
+<div class="wd-byline" style="max-width:760px;margin:0 auto;padding:14px 24px 0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:13px;color:#6e6e73;">
+  <span style="font-weight:600;color:#1d1d1f;">By WealthDelay Editorial</span>
+  <span style="opacity:.4;">&middot;</span>
+  <span>Reviewed for accuracy on June 20, 2026</span>
+  <span style="opacity:.4;">&middot;</span>
+  <span style="color:#16A34A;font-weight:600;">&#10003; Uses official IRS/SSA FICA rates</span>
+</div>
+<div class="wd-hub-link" style="max-width:760px;margin:8px auto 0;padding:0 24px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:13px;"><a href="/housing-life-calculators" style="color:#16A34A;font-weight:600;text-decoration:none;">&#8592; Part of the Housing &amp; Life Decisions hub</a></div>
+<section class="wd-quick-answer" style="max-width:760px;margin:24px auto 0;padding:24px;background:#F0FDF4;border:1px solid #BBF7D0;border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <div style="font-size:11px;font-weight:700;color:#16A34A;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Quick Answer</div>
+  <p style="font-size:17px;line-height:1.55;color:#1d1d1f;margin:0 0 12px;font-weight:500;">Your take-home pay = gross salary &minus; FICA taxes (6.2% Social Security + 1.45% Medicare) &minus; pre-tax deductions (401k, health insurance) &minus; federal &amp; state income tax withholding. FICA rates are fixed by law; income tax withholding depends on your filing status and bracket.</p>
+  <p style="font-size:14px;color:#3d3d3f;margin:0;line-height:1.55;">This tool uses the <strong>actual FICA rates</strong> (6.2% / 1.45%) and asks YOU for your effective income tax rate, rather than guessing federal/state tax brackets — brackets change by state and situation, so we don't invent a number for you.</p>
+</section>
+<div class="workspace">
+  <div><div class="card"><div class="card-head"><div class="card-title">Your Parameters</div><div class="live-badge">Live</div></div><div class="card-body">
+    <div class="section-label">Income</div>
+    <div class="field"><label>Annual gross salary <span class="field-val" id="v-salary">$70000/yr</span></label><input type="range" id="s-salary" min="20000" max="400000" step="2000" value="70000" aria-label="Annual gross salary" oninput="syncSlider('salary',this.value,'$','/yr',true,true);calc()"></div>
+    <div class="section-label">Deductions</div>
+    <div class="field"><label>Pre-tax 401(k)/HSA deductions <span class="field-val" id="v-pretax">5%</span></label><input type="range" id="s-pretax" min="0" max="25" step="1" value="5" aria-label="Pre-tax deductions percent" oninput="syncSlider('pretax',this.value,'','%',false,false);calc()"><div class="field-hint">As a % of gross salary — lowers your taxable income</div></div>
+    <div class="field"><label>Combined effective income tax rate <span class="field-val" id="v-itax">18%</span></label><input type="range" id="s-itax" min="0" max="40" step="1" value="18" aria-label="Effective income tax rate" oninput="syncSlider('itax',this.value,'','%',false,false);calc()"><div class="field-hint">Federal + state combined — check your last pay stub or a withholding estimator for your real number</div></div>
+    <div class="section-label">Pay Frequency</div>
+    <div class="field"><label>Pay periods per year <span class="field-val" id="v-periods">26</span></label><input type="range" id="s-periods" min="12" max="52" step="1" value="26" aria-label="Pay periods per year" oninput="syncSlider('periods',this.value,'','',false,false);calc()"><div class="field-hint">26 = biweekly, 24 = semi-monthly, 12 = monthly, 52 = weekly</div></div>
+  </div></div></div>
+  <div class="results">
+    <div class="metric-hero">
+      <div class="mh-top">
+        <div class="mh-eyebrow">Estimated Take-Home Pay</div>
+        <div class="mh-number green" id="r-hero">&mdash;</div>
+        <div class="mh-sub" id="r-sub">calculating&#8230;</div>
+      </div>
+      <div class="mh-row" id="r-metrics"></div>
+    </div>
+    <div class="insight"><div class="insight-icon">&#128161;</div><div><div class="insight-label">What This Really Means</div><div class="insight-text" id="r-insight">Adjust the sliders to see your personalized analysis.</div></div></div>
+    <div class="breakdown-card"><div class="card-head"><div class="card-title">Full Breakdown (Annual)</div></div>
+      <div class="bd-row"><div class="bd-lbl">Gross salary</div><div class="bd-val ink" id="r-b1">&mdash;</div></div>
+      <div class="bd-row"><div class="bd-lbl">Pre-tax deductions (401k/HSA)</div><div class="bd-val blue" id="r-b2">&mdash;</div></div>
+      <div class="bd-row"><div class="bd-lbl">Social Security tax (6.2%)</div><div class="bd-val red" id="r-b3">&mdash;</div></div>
+      <div class="bd-row"><div class="bd-lbl">Medicare tax (1.45%)</div><div class="bd-val red" id="r-b4">&mdash;</div></div>
+      <div class="bd-row"><div class="bd-lbl">Estimated federal + state income tax</div><div class="bd-val red" id="r-b5">&mdash;</div></div>
+      <div class="bd-row"><div class="bd-lbl">Estimated take-home pay</div><div class="bd-val green" id="r-b6">&mdash;</div></div>
+      <div class="bd-row"><div class="bd-lbl">Per paycheck</div><div class="bd-val green" id="r-b7">&mdash;</div></div>
+    </div>
+    <div class="ad-slot ad-rect" style="height:120px"><!-- Google AdSense — insert ad unit here after approval --></div>
+  </div>
+</div>
+<section style="max-width:760px;margin:48px auto 0;padding:24px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <h3 style="font-size:13px;font-weight:700;color:#1d1d1f;text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px;">FICA payroll tax rates (fixed by law)</h3>
+  <div style="overflow-x:auto;">
+  <table style="width:100%;border-collapse:collapse;font-size:14px;color:#3d3d3f;">
+    <thead><tr style="background:#F7F2E8;text-align:left;">
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">Tax</th>
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">Employee rate</th>
+      <th style="padding:10px 12px;font-weight:700;color:#1d1d1f;border-bottom:1px solid rgba(0,0,0,0.08);">Wage cap</th>
+    </tr></thead>
+    <tbody>
+      <tr><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);font-weight:600;">Social Security</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">6.2%</td><td style="padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.05);">Annual wage base — adjusts yearly, confirm at ssa.gov</td></tr>
+      <tr><td style="padding:10px 12px;font-weight:600;">Medicare</td><td style="padding:10px 12px;">1.45% (+0.9% over $200K single)</td><td style="padding:10px 12px;color:#16A34A;font-weight:600;">No cap</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12px;color:#6e6e73;margin:12px 0 0;line-height:1.55;">This calculator caps Social Security tax at the current wage base and never invents a federal/state income tax bracket — you supply your own effective rate from a pay stub or the IRS withholding estimator, since brackets vary by state, filing status, and change yearly.</p>
+</section>
+<section style="max-width:760px;margin:24px auto 0;padding:24px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;">
+  <h3 style="font-size:13px;font-weight:700;color:#1d1d1f;text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px;">Sources &amp; Methodology</h3>
+  <ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:1.7;color:#3d3d3f;">
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">Social Security Administration, <em>FICA tax rates and wage base</em>. <a href="https://www.ssa.gov/oact/cola/cbb.html" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">SSA source &rarr;</a></li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);">IRS, <em>Topic No. 751 — Social Security and Medicare withholding rates</em>. <a href="https://www.irs.gov/taxtopics/tc751" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">IRS source &rarr;</a></li>
+    <li style="padding:8px 0;">IRS, <em>Tax Withholding Estimator</em> &mdash; use this to find your real effective rate. <a href="https://www.irs.gov/individuals/tax-withholding-estimator" target="_blank" rel="noopener" style="color:#16A34A;text-decoration:none;font-weight:600;">Try it &rarr;</a></li>
+  </ul>
+  <p style="font-size:12px;color:#6e6e73;margin:14px 0 0;line-height:1.55;"><strong>Methodology:</strong> Pre-tax deductions reduce the income subject to your supplied income tax rate but NOT the income subject to FICA (which by law applies to full gross wages, capped only for Social Security). This is an estimate — your actual paycheck also depends on your W-4 elections, benefits, and local taxes not modeled here.</p>
+</section>
+<section class="faq-wrap"><h2 class="section-title">Common Questions</h2>
+  <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why is my paycheck so much less than my salary?<div class="faq-ico">+</div></div><div class="faq-a">FICA payroll taxes (6.2% Social Security up to the annual wage base, 1.45% Medicare with no cap) come out automatically, plus federal income tax withholding, state income tax (if applicable), and any pre-tax deductions like 401(k) contributions or health insurance premiums.</div></div>
+  <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does increasing my 401(k) contribution lower my paycheck taxes?<div class="faq-ico">+</div></div><div class="faq-a">Yes for a Traditional 401(k) — contributions are deducted from your paycheck before federal (and most state) income tax is calculated, lowering your taxable income. They do NOT reduce FICA (Social Security/Medicare) taxes, which apply to your full gross wages regardless of 401(k) contributions.</div></div>
+  <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the Social Security wage base?<div class="faq-ico">+</div></div><div class="faq-a">It's the maximum amount of annual earnings subject to the 6.2% Social Security tax. Earnings above this amount are not taxed for Social Security (though Medicare's 1.45% has no cap, and an extra 0.9% Medicare surtax applies above $200,000 single / $250,000 married filing jointly). The wage base is adjusted annually by the Social Security Administration — confirm the current figure at ssa.gov.</div></div>
+</section>
+<section class="related-wrap"><h2 class="section-title">Related Tools</h2><div class="related-links"><a class="related-link" href="/salary-negotiation-calculator">Salary Negotiation</a><a class="related-link" href="/true-hourly-rate-calculator">True Hourly Rate</a><a class="related-link" href="/401k-contribution-calculator">401k Contribution Impact</a></div></section>
+<div class="disclaimer"><strong>Disclaimer:</strong> For educational purposes only. Not tax advice. This is an estimate, not a substitute for a real pay stub, IRS Form W-4, or a tax professional. Actual withholding depends on your specific situation, employer, and state.</div>
+<footer>
+  <div class="ft-inner">
+    <div>
+      <div class="ft-brand-name"><em>Wealth</em>Delay</div>
+      <p class="ft-brand-p">Free financial calculators. Real compound math. No login, no data stored, no subscriptions.</p>
+    </div>
+    <div class="ft-col">
+      <h4>Calculator Hubs</h4>
+      <a href="/money-habit-calculators">Money Habit Calculators</a>
+      <a href="/debt-payoff-calculators">Debt Payoff Calculators</a>
+      <a href="/investing-calculators">Investing &amp; Retirement</a>
+      <a href="/housing-life-calculators">Housing &amp; Life Decisions</a>
+      <a href="/wealth-delay-score">Wealth Delay Score</a>
+    </div>
+    <div class="ft-col">
+      <h4>Guides</h4>
+      <a href="/true-cost-daily-coffee-habit">Coffee Habit Guide</a>
+      <a href="/what-is-opportunity-cost">Opportunity Cost Explained</a>
+      <a href="/how-to-calculate-fire-number">FIRE Number Guide</a>
+      <a href="/privacy">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <span>&#169; 2026 WealthDelay &middot; Free forever &middot; All calculations run in your browser</span>
+    <div class="ft-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/about">About</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+<script src="/calc-common.js"></script>
+<script>
+var SS_WAGE_BASE = 176100; // 2025 SSA wage base — confirm current-year figure at ssa.gov before relying on this for income above this level
+function calc() {
+  var salary  = parseFloat(document.getElementById('s-salary').value);
+  var pretaxP = parseFloat(document.getElementById('s-pretax').value) / 100;
+  var itax    = parseFloat(document.getElementById('s-itax').value) / 100;
+  var periods = parseFloat(document.getElementById('s-periods').value);
+
+  var pretaxDed = salary * pretaxP;
+  var ssTaxable = Math.min(salary, SS_WAGE_BASE);
+  var ssTax = ssTaxable * 0.062;
+  var medicareTax = salary * 0.0145;
+  var taxableForIncomeTax = Math.max(0, salary - pretaxDed);
+  var incomeTax = taxableForIncomeTax * itax;
+  var takeHome = salary - pretaxDed - ssTax - medicareTax - incomeTax;
+  var perPaycheck = takeHome / periods;
+
+  document.getElementById('r-hero').textContent = fmt(takeHome);
+  document.getElementById('r-sub').textContent = fmt(takeHome) + '/yr take-home · ' + fmtFull(perPaycheck) + ' per paycheck';
+
+  document.getElementById('r-metrics').innerHTML =
+    '<div class="mh-cell"><div class="mhc-label">TOTAL TAXES + DEDUCTIONS</div><div class="mhc-val red">' + fmt(pretaxDed + ssTax + medicareTax + incomeTax) + '</div><div class="mhc-sub">' + (((pretaxDed + ssTax + medicareTax + incomeTax) / salary) * 100).toFixed(1) + '% of gross</div></div>' +
+    '<div class="mh-cell"><div class="mhc-label">PER PAYCHECK</div><div class="mhc-val green">' + fmtFull(perPaycheck) + '</div><div class="mhc-sub">' + periods + ' pay periods</div></div>' +
+    '<div class="mh-cell"><div class="mhc-label">TAKE-HOME %</div><div class="mhc-val green">' + ((takeHome / salary) * 100).toFixed(1) + '%</div><div class="mhc-sub">of gross salary</div></div>';
+
+  document.getElementById('r-b1').textContent = fmtFull(salary);
+  document.getElementById('r-b2').textContent = fmtFull(pretaxDed);
+  document.getElementById('r-b3').textContent = fmtFull(ssTax);
+  document.getElementById('r-b4').textContent = fmtFull(medicareTax);
+  document.getElementById('r-b5').textContent = fmtFull(incomeTax);
+  document.getElementById('r-b6').textContent = fmtFull(takeHome);
+  document.getElementById('r-b7').textContent = fmtFull(perPaycheck);
+
+  document.getElementById('r-insight').innerHTML = 'On a <strong>' + fmtFull(salary) + '/yr</strong> salary, FICA payroll taxes alone take <strong>' + fmtFull(ssTax + medicareTax) + '</strong>, regardless of your tax bracket. After your pre-tax deductions and estimated income tax, your take-home is roughly <strong>' + fmt(takeHome) + '/yr (' + ((takeHome / salary) * 100).toFixed(0) + '%)</strong> — about <strong>' + fmtFull(perPaycheck) + '</strong> per paycheck.';
+}
+</script>
+</body></html>

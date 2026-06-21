@@ -191,6 +191,58 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Investing & Retirement Tools (Phase 6) -->
+  <url>
+    <loc>https://wealthdelay.com/roth-vs-traditional-401k-calculator</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/hsa-triple-tax-advantage-calculator</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/cd-vs-high-yield-savings-calculator</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/rmd-calculator</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/social-security-break-even-calculator</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/retirement-savings-by-age-calculator</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Housing & Life Tools (Phase 6) -->
+  <url>
+    <loc>https://wealthdelay.com/paycheck-take-home-calculator</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/529-college-savings-calculator</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Calculator Hubs -->
   <url>
     <loc>https://wealthdelay.com/money-habit-calculators</loc>

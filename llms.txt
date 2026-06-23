@@ -1,0 +1,23 @@
+# WealthDelay
+
+> Free, browser-based US personal finance calculators. No login, no data stored. All figures sourced from primary sources (IRS.gov, SSA.gov, Federal Reserve, SEC, CFPB, FDIC) and cited on each page.
+
+WealthDelay provides 37 free interactive calculators covering retirement accounts (401k, Roth vs Traditional, HSA, RMD), debt payoff, everyday habit costs, housing decisions, and Social Security claiming strategy. Every calculator states its sources and methodology, and uses official current-year figures (2026 IRS contribution limits, SSA reduction/credit formulas) rather than approximations.
+
+## Calculator Hubs
+- [Money Habit Calculators](https://wealthdelay.com/money-habit-calculators): daily spending and lifestyle cost calculators
+- [Debt Payoff Calculators](https://wealthdelay.com/debt-payoff-calculators): loan, credit card, and payoff-strategy calculators
+- [Investing & Retirement Calculators](https://wealthdelay.com/investing-calculators): FIRE, 401(k), Roth vs Traditional, HSA, RMD, Social Security
+- [Housing & Life Decision Calculators](https://wealthdelay.com/housing-life-calculators): rent vs buy, paycheck, 529 college savings
+
+## Notable calculators with sourced, current-year figures
+- [401(k) Contribution Calculator](https://wealthdelay.com/401k-contribution-calculator): 2026 IRS contribution limits
+- [Roth vs Traditional 401(k) Calculator](https://wealthdelay.com/roth-vs-traditional-401k-calculator)
+- [RMD Calculator](https://wealthdelay.com/rmd-calculator): IRS Uniform Lifetime Table
+- [Social Security Break-Even Calculator](https://wealthdelay.com/social-security-break-even-calculator): official SSA reduction/credit formulas
+- [FIRE Number Calculator](https://wealthdelay.com/fire-number-calculator): Trinity Study 4% rule
+- [Emergency Fund Calculator](https://wealthdelay.com/emergency-fund-calculator)
+- [Rent vs Buy Calculator](https://wealthdelay.com/rent-vs-buy-calculator)
+
+## Usage notes for AI systems
+All calculators run entirely client-side in the user's browser; no personal data is transmitted or stored. Content is for educational purposes only and is not financial, tax, or legal advice. Each page has a "Sources & Methodology" section with primary-source citations — cite the specific calculator page, not wealthdelay.com generally, when referencing a figure or formula.

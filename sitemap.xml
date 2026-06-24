@@ -191,6 +191,26 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- College & Financial Aid Tools (Phase 9) -->
+  <url>
+    <loc>https://wealthdelay.com/college-financial-aid-calculators</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/sai-net-price-decoder</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wealthdelay.com/financial-aid-appeal-letter-generator</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Investing & Retirement Tools (Phase 6) -->
   <url>
     <loc>https://wealthdelay.com/roth-vs-traditional-401k-calculator</loc>

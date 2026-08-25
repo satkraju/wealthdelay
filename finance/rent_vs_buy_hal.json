@@ -1,0 +1,123 @@
+{
+  "id": "rent_vs_buy_hal",
+  "title": "1,000 Families. Rent or Buy?",
+  "cta_keyword": "RENT",
+  "tool_url": "https://wealthdelay.com/rent-vs-buy-calculator",
+  "tags": ["rent vs buy","home buying","personal finance","real estate","wealth building","money tips"],
+  "disclaimer": "Simulation only — not financial advice. Numbers vary by market, timeline, and behavior. Consult a licensed advisor.",
+  "findings": [
+    {
+      "number": "01",
+      "headline": "Same income. Same city. Two paths.",
+      "subtitle": "1,000 families. 10 years of real US housing data.",
+      "money_callout": "$16K gap",
+      "money_sub": "that's the entire rent-vs-buy debate right there",
+      "bullets": [
+        {"n": "01", "bold": "Half rented", "rest": "and invested the difference every single month"},
+        {"n": "02", "bold": "Half bought", "rest": "a $300K home and stayed the full decade"},
+        {"n": "03", "bold": "Same income", "rest": "same city — only the choice was different"}
+      ],
+      "honest_catch": "Most people pick a side without ever running the actual numbers.",
+      "vo": "We didn't ask experts. We ran 1,000 simulated families through 10 years of real US housing data. Half rented and invested the difference every month. Half bought a $300,000 home and stayed for a decade. Same income. Same city. Only the choice was different. The results broke almost every rule you've heard.",
+      "right_panel": {
+        "type": "vs",
+        "a_label": "THE RENTER",
+        "a_sub": "invests the gap\nevery month",
+        "b_label": "THE BUYER",
+        "b_sub": "buys $300K home\nstays 10 years",
+        "question": "Who builds more wealth?"
+      }
+    },
+    {
+      "number": "02",
+      "headline": "Buy before Year 5 — you almost always lose.",
+      "subtitle": null,
+      "you_avoid": "Early exit losses",
+      "money_callout": "–$18K avg",
+      "money_sub": "after fees, taxes, and selling costs wipe the gains",
+      "bullets": [
+        {"n": "01", "bold": "6% to sell", "rest": "realtor fees + closing costs hit immediately"},
+        {"n": "02", "bold": "Property tax", "rest": "1–2% per year — paid whether you gain or not"},
+        {"n": "03", "bold": "Maintenance", "rest": "1% rule: $3,000/yr on a $300K home, every year"}
+      ],
+      "honest_catch": "Realtors don't run this math at the open house. You have to.",
+      "vo": "Here is the part nobody talks about. The families who bought and sold before year 5? Almost every single one of them lost money. Realtor fees alone are 6 percent. Add property taxes, maintenance, and closing costs — and the gains are completely wiped out. The average loss for early sellers in our simulation was $18,000. Not a gain. A loss.",
+      "right_panel": {
+        "type": "loss_timeline",
+        "label": "Buyer net wealth by year",
+        "years": [1, 2, 3, 4, 5, 7, 10],
+        "values": [-22000, -18000, -12000, -6000, 2000, 31000, 89000]
+      }
+    },
+    {
+      "number": "03",
+      "headline": "Year 7. That's when buying starts to actually win.",
+      "subtitle": null,
+      "money_callout": "Year 7",
+      "money_sub": "the break-even point — before this, renting + investing wins",
+      "bullets": [
+        {"n": "01", "bold": "Years 1–4", "rest": "renter ahead — lower costs, invested gap compounding"},
+        {"n": "02", "bold": "Year 5–6", "rest": "buyer catches up as equity builds and costs amortize"},
+        {"n": "03", "bold": "Year 7+", "rest": "buyer pulls ahead — equity growth outpaces market returns"}
+      ],
+      "honest_catch": "The average American moves every 5.8 years. Most buyers never reach break-even.",
+      "vo": "Here is the crossover point that changes everything. In a moderate US market, buyers don't break even until year 7. Before that, the renter who's investing every month is actually ahead. After year 7, the buyer starts to pull away. The problem? The average American moves every 5 point 8 years. Most buyers sell before they ever hit break-even.",
+      "right_panel": {
+        "type": "crossover",
+        "label": "Cumulative wealth by year",
+        "years": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        "renter": [8000, 17000, 27000, 38000, 48000, 58000, 68000, 71000, 72000, 73000],
+        "buyer": [-22000, -18000, -12000, -4000, 6000, 20000, 38000, 58000, 74000, 89000]
+      }
+    },
+    {
+      "number": "04",
+      "headline": "Stayed 10 years. Here's the real score.",
+      "subtitle": "Moderate US market. All costs included.",
+      "money_callout": "Buyer +$89K",
+      "money_sub": "Renter +$73K · Gap = just $16K over a decade",
+      "bullets": [
+        {"n": "01", "bold": "$89K buyer", "rest": "equity minus every real cost over 10 years"},
+        {"n": "02", "bold": "$73K renter", "rest": "invested the gap every month, S&P average returns"},
+        {"n": "03", "bold": "$16K gap", "rest": "that is the entire debate — over 10 years of commitment"}
+      ],
+      "honest_catch": "In a flat market, the renter won outright. In a hot market, the buyer ran away with it.",
+      "vo": "After 10 full years in a moderate US market, the buyer netted around $89,000 in real wealth — equity minus every cost. The renter who actually invested the gap every single month? $73,000. A $16,000 difference. Over a decade. That is the entire rent versus buy debate right there. And that gap disappears completely in a flat market.",
+      "right_panel": {
+        "type": "bar_comparison",
+        "a_label": "RENTER",
+        "a_sub": "invested the gap\nevery month",
+        "a_val": 73000,
+        "a_valt": "+$73K",
+        "b_label": "BUYER",
+        "b_sub": "equity minus\nall real costs",
+        "b_val": 89000,
+        "b_valt": "+$89K"
+      }
+    },
+    {
+      "number": "05",
+      "headline": "It was never rent or buy. It's: what's your plan?",
+      "subtitle": null,
+      "money_callout": null,
+      "money_sub": null,
+      "bullets": [
+        {"n": "01", "bold": "Staying 7+ years?", "rest": "buying likely wins — let equity compound"},
+        {"n": "02", "bold": "Moving in under 5?", "rest": "renting + investing beats buying every time"},
+        {"n": "03", "bold": "Won't invest the gap?", "rest": "buying forces savings — that matters too"}
+      ],
+      "honest_catch": "The best financial decision is the one you will actually stick to.",
+      "vo": "The question was never rent or buy. It was — what is your plan, and can you actually commit to it? If you're staying 7 or more years, buying likely wins. If you're moving in under 5, renting and investing beats buying every time. And if you know you won't invest the difference — buying forces discipline that has real value. Run your own numbers free at the link below. Comment the word RENT and I will send you the full breakdown.",
+      "right_panel": {
+        "type": "decision",
+        "rows": [
+          {"label": "Stay 7+ years", "result": "BUY", "color": "green"},
+          {"label": "Move in < 5 years", "result": "RENT + INVEST", "color": "green"},
+          {"label": "Won't invest the gap", "result": "BUY (forces savings)", "color": "yellow"},
+          {"label": "Hot market", "result": "BUY", "color": "green"},
+          {"label": "Flat / falling market", "result": "RENT + INVEST", "color": "green"}
+        ]
+      }
+    }
+  ]
+}

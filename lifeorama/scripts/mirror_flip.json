@@ -1,0 +1,171 @@
+{
+  "title": "Why Do Mirrors Flip Left and Right But Not Up and Down?",
+  "description": "It's one of the oldest puzzles in physics — and almost everyone gets the answer wrong. A mirror seems to swap your left and right, yet it never flips your head and your feet. So what is it really doing? The truth isn't about left and right at all. It's about front and back, a hidden property called chirality, and the quiet trick your own brain plays every time you look at your reflection. Once you see it, you can't unsee it.\n\nChapters:\n0:00 The 2,000-year-old question\n0:35 The strange clue in the writing\n1:10 What a mirror actually flips\n2:00 Your left-handed twin\n2:40 The trick your brain plays\n3:15 The one rule that explains everything",
+  "tags": ["physics","science","mirrors","optics","chirality","how things work","educational","life o rama","why do mirrors flip","mirror paradox","science explained"],
+  "short_scenes": [0, 1, 3, 5, 6, 12, 13, 15, 17, 19, 23, 32],
+  "scenes": [
+    { "narration": "Here is a question that has puzzled people for over two thousand years.",
+      "visual": { "template": "big-statement", "text": "A 2,000-year-old puzzle" } },
+
+    { "narration": "Why does a mirror flip your left and your right, but never your top and your bottom?",
+      "visual": { "template": "labeled-diagram", "kind": "axis-cross", "caption": "THE PUZZLE",
+        "arrows": [
+          { "direction": "left", "state": "active", "label": "LEFT" },
+          { "direction": "right", "state": "active", "label": "RIGHT" },
+          { "direction": "up", "state": "dim", "label": "UP" },
+          { "direction": "down", "state": "dim", "label": "DOWN" }
+        ] } },
+
+    { "narration": "Stay with me, because the real answer is stranger than it sounds.",
+      "visual": { "template": "big-statement", "text": "Stranger than it sounds." } },
+
+    { "narration": "Stand in front of a mirror and slowly raise your right hand.",
+      "visual": { "template": "labeled-diagram", "kind": "figure-pose",
+        "figures": [ { "raisedArm": "right", "label": "YOU" } ] } },
+
+    { "narration": "The figure staring back raises what looks like its left hand instead.",
+      "visual": { "template": "labeled-diagram", "kind": "figure-pose",
+        "figures": [
+          { "raisedArm": "right", "label": "YOU" },
+          { "raisedArm": "right", "mirrored": true, "label": "YOUR REFLECTION" }
+        ] } },
+
+    { "narration": "Now hold a page of writing up to the glass.",
+      "visual": { "template": "big-statement", "text": "Hold writing to the glass." } },
+
+    { "narration": "Every word snaps into reverse, completely backwards.",
+      "visual": { "template": "compare-split", "title": "WHAT YOU SEE",
+        "left": { "label": "PAGE", "text": "SCIENCE" },
+        "right": { "label": "MIRROR", "text": "SCIENCE", "mirrorText": true } } },
+
+    { "narration": "But notice something odd — the text is reversed, yet it is not upside down.",
+      "visual": { "template": "labeled-diagram", "kind": "axis-cross", "caption": "REVERSED ≠ UPSIDE DOWN",
+        "arrows": [
+          { "direction": "left", "state": "active", "label": "REVERSED" },
+          { "direction": "right", "state": "active" },
+          { "direction": "up", "state": "dim", "label": "UNCHANGED" },
+          { "direction": "down", "state": "dim" }
+        ] } },
+
+    { "narration": "The letters flip sideways, but they still sit the right way up.",
+      "visual": { "template": "big-statement", "text": "Flipped sideways. Not upside down." } },
+
+    { "narration": "So if a mirror truly flipped left and right...",
+      "visual": { "template": "big-statement", "text": "If it flips left and right…" } },
+
+    { "narration": "...then why on earth doesn't it flip top and bottom as well?",
+      "visual": { "template": "big-statement", "text": "...why not top and bottom too?", "accent": true } },
+
+    { "narration": "The mirror is clearly treating one direction differently from the others.",
+      "visual": { "template": "labeled-diagram", "kind": "axis-cross", "caption": "ONE AXIS IS DIFFERENT",
+        "arrows": [
+          { "direction": "left", "state": "active", "label": "DIFFERENT" },
+          { "direction": "right", "state": "active" },
+          { "direction": "up", "state": "dim", "label": "SAME" },
+          { "direction": "down", "state": "dim" }
+        ] } },
+
+    { "narration": "And here is the secret it has been hiding all along.",
+      "visual": { "template": "big-statement", "text": "Here's the secret.", "accent": true } },
+
+    { "narration": "A mirror does not flip left and right.",
+      "visual": { "template": "labeled-diagram", "kind": "axis-cross", "caption": "MYTH #1",
+        "arrows": [
+          { "direction": "left", "state": "crossed", "label": "NOT LEFT" },
+          { "direction": "right", "state": "crossed", "label": "NOT RIGHT" }
+        ] } },
+
+    { "narration": "And it does not flip up and down either.",
+      "visual": { "template": "labeled-diagram", "kind": "axis-cross", "caption": "MYTH #2",
+        "arrows": [
+          { "direction": "up", "state": "crossed", "label": "NOT UP" },
+          { "direction": "down", "state": "crossed", "label": "NOT DOWN" }
+        ] } },
+
+    { "narration": "The only thing a mirror ever reverses is front and back.",
+      "visual": { "template": "labeled-diagram", "kind": "mirror-arrow", "caption": "THE REAL ANSWER",
+        "arrows": [
+          { "direction": "right", "state": "active", "label": "FRONT" },
+          { "direction": "right", "state": "dim", "label": "BACK" }
+        ] } },
+
+    { "narration": "Everything pointing toward the glass is sent pointing straight back away from it.",
+      "visual": { "template": "labeled-diagram", "kind": "mirror-arrow", "caption": "REVERSED AT THE GLASS",
+        "arrows": [
+          { "direction": "right", "state": "active", "label": "TOWARD" },
+          { "direction": "left", "state": "active", "label": "AWAY" }
+        ] } },
+
+    { "narration": "Picture a rubber glove being peeled completely inside out.",
+      "visual": { "template": "big-statement", "text": "Like a glove turned inside out." } },
+
+    { "narration": "It keeps its top and its sides, but its inside becomes its outside.",
+      "visual": { "template": "big-statement", "text": "Same outside. Flipped inside." } },
+
+    { "narration": "That single front-to-back flip is what turns a right hand into a left hand.",
+      "visual": { "template": "compare-split", "title": "RIGHT HAND → LEFT HAND",
+        "left": { "label": "RIGHT HAND", "figure": { "raisedArm": "right" } },
+        "right": { "label": "LEFT HAND", "figure": { "raisedArm": "right", "mirrored": true } } } },
+
+    { "narration": "Your reflection isn't really you — it's a perfect left-handed copy of you.",
+      "visual": { "template": "compare-split", "title": "YOU vs YOUR TWIN",
+        "left": { "label": "YOU", "figure": { "raisedArm": "right" } },
+        "right": { "label": "LEFT-HANDED TWIN", "figure": { "raisedArm": "right", "mirrored": true } } } },
+
+    { "narration": "Scientists call this property chirality — the handedness built into an object.",
+      "visual": { "template": "big-statement", "text": "CHIRALITY", "accent": true, "subtext": "Handedness built into an object." } },
+
+    { "narration": "So if the mirror only flips front to back, where does the left-right feeling come from?",
+      "visual": { "template": "big-statement", "text": "Where does ‘left-right’ come from?" } },
+
+    { "narration": "It comes from you — from the way you imagine facing your own reflection.",
+      "visual": { "template": "labeled-diagram", "kind": "figure-pose", "caption": "IT COMES FROM YOU",
+        "figures": [ { "label": "YOU, IMAGINING" } ] } },
+
+    { "narration": "To compare yourself to the image, you mentally turn yourself around to face it.",
+      "visual": { "template": "labeled-diagram", "kind": "figure-pose", "caption": "YOU MENTALLY TURN AROUND",
+        "figures": [
+          { "label": "FACING MIRROR" },
+          { "mirrored": true, "label": "TURNED TO COMPARE" }
+        ] } },
+
+    { "narration": "And when you spin around, you turn left-to-right — so left and right seem swapped.",
+      "visual": { "template": "labeled-diagram", "kind": "axis-cross", "caption": "SPIN = LEFT-RIGHT SWAP",
+        "arrows": [
+          { "direction": "left", "state": "active", "label": "SWAPPED" },
+          { "direction": "right", "state": "active", "label": "SWAPPED" }
+        ] } },
+
+    { "narration": "Don't believe me? Lie down sideways on the floor next to the mirror.",
+      "visual": { "template": "labeled-diagram", "kind": "figure-pose", "caption": "TRY THIS",
+        "figures": [ { "rotationDeg": 90, "label": "LIE DOWN SIDEWAYS" } ] } },
+
+    { "narration": "Now your reflection suddenly looks flipped top to bottom instead.",
+      "visual": { "template": "labeled-diagram", "kind": "axis-cross", "caption": "NOW IT'S UP-DOWN",
+        "arrows": [
+          { "direction": "up", "state": "active", "label": "FLIPPED" },
+          { "direction": "down", "state": "active", "label": "FLIPPED" },
+          { "direction": "left", "state": "dim" },
+          { "direction": "right", "state": "dim" }
+        ] } },
+
+    { "narration": "The mirror never changed — only the way you rotated to compare did.",
+      "visual": { "template": "big-statement", "text": "The mirror never changed.", "subtext": "Only your rotation did." } },
+
+    { "narration": "Here is the one rule that explains all of it.",
+      "visual": { "template": "big-statement", "text": "ONE RULE explains it all.", "accent": true } },
+
+    { "narration": "A mirror always reverses the one axis pointing into it — never your left, never your top.",
+      "visual": { "template": "labeled-diagram", "kind": "mirror-arrow", "caption": "THE ONE RULE",
+        "arrows": [
+          { "direction": "right", "state": "active", "label": "THE AXIS INTO IT" },
+          { "direction": "right", "state": "dim", "label": "REVERSES" }
+        ] } },
+
+    { "narration": "And once you truly see that, you will never look at your reflection the same way again.",
+      "visual": { "template": "big-statement", "text": "You’ll never see it the same way again." } },
+
+    { "narration": "If this rewired your brain even a little, subscribe — we untangle a new everyday mystery every week.",
+      "visual": { "template": "subscribe-cta", "title": "Untangle a new mystery every week" } }
+  ]
+}

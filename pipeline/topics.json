@@ -1,0 +1,30 @@
+{
+  "voice_pool": {
+    "Bill":   "pqHfZKP75CvOlQylNhV4",
+    "Brian":  "nPczCjzI2devNBz1zQrb",
+    "George": "JBFqnCBsd6RMkjVDRZzb",
+    "Daniel": "onwK4e9ZLuTAKqWW03F9"
+  },
+  "buckets": {
+    "lost_temple":   "Ruined ancient site rebuilt to glory (decay-reversal morph). 9 same-framing scenes ruin->restored.",
+    "divine_weapon": "Cinematic reveal of a mythic weapon. Building tension to a powerful reveal.",
+    "mythic_mystery":"Question-hook mystery from myth/history, framed honestly as legend.",
+    "god_portrait":  "Cinematic portrait of a deity, what they represent, building to awe.",
+    "ancient_wonder":"A real, unexplained ancient structure. Curiosity + 'how did they do this'."
+  },
+  "topics": [
+    {"bucket":"lost_temple",    "topic":"Nalanda, the world's first great university, burned down"},
+    {"bucket":"lost_temple",    "topic":"Dwarka, Krishna's golden city that sank into the sea"},
+    {"bucket":"lost_temple",    "topic":"Vijayanagara (Hampi), the lost capital of a gold empire"},
+    {"bucket":"divine_weapon",  "topic":"The Brahmastra, the weapon that could end the world"},
+    {"bucket":"divine_weapon",  "topic":"Vishnu's Sudarshan Chakra, the spinning divine disc"},
+    {"bucket":"divine_weapon",  "topic":"Shiva's Trishul, the cosmic trident"},
+    {"bucket":"mythic_mystery", "topic":"Ravana's ten heads: what they really meant"},
+    {"bucket":"mythic_mystery", "topic":"The Ram Setu bridge: man-made or natural?"},
+    {"bucket":"mythic_mystery", "topic":"Vimanas: flying machines of ancient India"},
+    {"bucket":"god_portrait",   "topic":"Shiva, the destroyer and the rebuilder"},
+    {"bucket":"god_portrait",   "topic":"Saraswati, goddess of knowledge"},
+    {"bucket":"ancient_wonder", "topic":"The Iron Pillar of Delhi that never rusts"},
+    {"bucket":"ancient_wonder", "topic":"Kailasa temple, carved top-down from one rock"}
+  ]
+}

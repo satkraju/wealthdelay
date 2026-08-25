@@ -1,0 +1,124 @@
+{
+  "brand": "forcedecoded",
+  "title": "The $95K Tech Career Nobody Talks About (No Coding Required)",
+  "description": "There's a technology career path with millions of open roles, salaries commonly listed between $95K and $120K, and no computer science degree required. It's the Salesforce ecosystem — and AI just changed everything about how you break into it. This video explains what the jobs actually are, what AI means for them, and the exact path in, step by step.\n\nThis is general career information, not professional or financial advice. Salary figures are attributed ranges from industry job reports, not guarantees. Not affiliated with Salesforce, Inc.\n\nChapters:\n0:00 The career path hiding in plain sight\n1:00 What Salesforce actually is\n2:10 The numbers — jobs and salaries\n3:20 The AI earthquake — Agentforce\n4:30 Why AI makes this career stronger, not weaker\n5:30 The exact path in\n6:40 What certifications don't tell you",
+  "tags": ["salesforce career","salesforce admin","tech career no degree","salesforce jobs","agentforce","salesforce certification","career change tech","salesforce admin 2026","how to become salesforce admin","force decoded"],
+  "scenes": [
+    {
+      "narration": "There is a tech career path with millions of open roles, salaries that regularly cross six figures, and no computer science degree required. And almost nobody outside the industry knows it exists.",
+      "visual": { "template": "big-statement", "text": "The six-figure tech career\nnobody talks about.", "accent": true }
+    },
+    {
+      "narration": "It is not coding. It is not data science. It is not cybersecurity. It is the Salesforce ecosystem. Stay with me, because A I just changed everything about it — in a way that makes right now the most interesting entry point in a decade.",
+      "visual": { "template": "big-statement", "text": "Not coding.\nNot data science.\nSomething quieter." }
+    },
+    {
+      "narration": "First, thirty seconds on what Salesforce actually is, because most people have heard the name and have no idea what it does.",
+      "visual": { "template": "big-statement", "text": "What is Salesforce,\nactually?" }
+    },
+    {
+      "narration": "Salesforce is the software that runs the customer side of the world's companies. Sales teams tracking deals. Support teams handling cases. Marketing teams sending campaigns. Banks, hospitals, airlines, governments — hundreds of thousands of organizations run their customer operations on it.",
+      "visual": { "template": "compare-split", "title": "One Platform. Every Department.", "left": { "label": "WHO USES IT", "text": "Banks. Hospitals. Airlines. Retailers. Governments." }, "right": { "label": "FOR WHAT", "text": "Sales. Support. Marketing. Every customer interaction." } }
+    },
+    {
+      "narration": "And here is the thing about a platform that big. It does not run itself. Every company using it needs people who can configure it, automate it, and keep it working. Those people are called Salesforce administrators, consultants, and developers.",
+      "visual": { "template": "big-statement", "text": "Big platform.\nSomeone has to run it.\nThat someone is well paid." }
+    },
+    {
+      "narration": "Now the numbers. Research firm I D C, in a study commissioned by Salesforce, projected nine point three million new jobs created in the Salesforce ecosystem by twenty twenty six.",
+      "visual": { "template": "big-number-callout", "pre": "IDC projection — Salesforce ecosystem", "number": "9.3M", "post": "new jobs by 2026.", "hero": true }
+    },
+    {
+      "narration": "Industry job reports commonly list United States salaries for these roles between ninety five thousand and one hundred twenty thousand dollars. Entry-level administrator roles start lower — but the ceiling for architects and consultants goes far higher.",
+      "visual": { "template": "comparison-bars", "head": "Reported US Salary Ranges (industry job boards)", "bars": [ { "label": "Entry Admin", "sub": "First role", "valueLabel": "$65–85K", "frac": 0.6, "tone": "green" }, { "label": "Experienced Admin", "sub": "2-4 years", "valueLabel": "$95–120K", "frac": 0.85, "tone": "gold" }, { "label": "Architect / Consultant", "sub": "Senior path", "valueLabel": "$140K+", "frac": 1.0, "tone": "forest" } ] }
+    },
+    {
+      "narration": "No computer science degree. The standard entry path is certification — a proctored exam you can study for in months, not years. And the study materials from Salesforce itself, on a platform called Trailhead, are free.",
+      "visual": { "template": "compare-split", "title": "The Entry Requirements", "left": { "label": "NOT REQUIRED", "text": "CS degree. Bootcamp debt. Years of coding." }, "right": { "label": "REQUIRED", "text": "A certification. Months of study. Free materials." } }
+    },
+    {
+      "narration": "So why is nobody talking about it? Because it is not glamorous. Nobody makes movies about the person who automated an insurance company's case routing. But unglamorous and well paid is a combination worth paying attention to.",
+      "visual": { "template": "big-statement", "text": "Unglamorous + well paid\nis a combination\nworth noticing.", "accent": true }
+    },
+    {
+      "narration": "Now — the part of this video that matters most. Because if you searched this topic a few years ago, everything I just said was already true. What changed is A I. And it changed this career in a way most people have completely backwards.",
+      "visual": { "template": "big-statement", "text": "Then A.I. happened.\nAnd everyone got it backwards." }
+    },
+    {
+      "narration": "In twenty twenty four, Salesforce launched Agentforce — A I agents that work inside the platform. Agents that can answer customer questions, resolve cases, and take actions on their own. The immediate reaction from people in the industry was fear.",
+      "visual": { "template": "big-statement", "text": "Agentforce.\nA.I. agents inside\nthe platform." }
+    },
+    {
+      "narration": "Will an A I agent take the administrator's job? It is the same question every knowledge worker is asking. And in this specific field, the honest answer has a twist.",
+      "visual": { "template": "big-statement", "text": "\"Will A.I. take this job?\"", "accent": true }
+    },
+    {
+      "narration": "The tasks that made up the old version of the job — resetting passwords, building basic reports, clicking through routine setup — those are exactly what A I is absorbing. If that was your whole skill set, the fear is rational.",
+      "visual": { "template": "compare-split", "title": "What A.I. Absorbs", "left": { "label": "OLD JOB TASKS", "text": "Password resets. Basic reports. Routine clicks." }, "right": { "label": "A.I. STATUS", "text": "Being automated. Right now." } }
+    },
+    {
+      "narration": "But someone has to design the agents. Decide what they are allowed to do. Connect them to the company's data safely. Test them. Govern them. Fix them when they behave badly. That is not a smaller job than the old one. It is a bigger one.",
+      "visual": { "template": "big-statement", "text": "Someone has to design,\ngovern, and fix the agents.\nThat is a bigger job." }
+    },
+    {
+      "narration": "Companies are not reducing their Salesforce usage. Industry analyses show them expanding it — into A I, analytics, and automation. The demand did not shrink. It moved up a level. From clicking to designing.",
+      "visual": { "template": "compare-split", "title": "The Shift", "left": { "label": "OLD VALUE", "text": "Knowing where to click." }, "right": { "label": "NEW VALUE", "text": "Designing systems A.I. runs." } }
+    },
+    {
+      "narration": "Salesforce responded by creating entirely new certifications — the A I Associate, and the Agentforce Specialist. These credentials did not exist two years ago. Which means, right now, almost nobody has years of experience over you.",
+      "visual": { "template": "big-statement", "text": "New A.I. certifications.\nNobody has a 10-year\nhead start on them.", "accent": true }
+    },
+    {
+      "narration": "Think about what that means. In most tech careers, you are competing with people who have a decade of experience. In the A I side of this ecosystem, the experience gap between you and the veterans is measured in months.",
+      "visual": { "template": "big-number-callout", "pre": "Your experience gap vs. veterans", "number": "Months", "post": "not decades. The field is that new.", "hero": true }
+    },
+    {
+      "narration": "So here is the exact path in. Not theory — the actual sequence people follow. Five steps.",
+      "visual": { "template": "big-statement", "text": "The exact path in.\nFive steps." }
+    },
+    {
+      "narration": "Step one. Trailhead — Salesforce's free learning platform. You build in a real practice environment from day one. No purchase, no subscription. Most people need two to three months of consistent study.",
+      "visual": { "template": "milestone-timeline", "caption": "THE PATH — PART ONE", "milestones": [ { "age": "1", "label": "Trailhead basics (free)", "tone": "green" }, { "age": "2", "label": "Practice org — build real things", "tone": "green" }, { "age": "3", "label": "Admin certification", "tone": "gold" } ] }
+    },
+    {
+      "narration": "Step two, the Administrator certification. It is the entry credential recruiters actually search for — consistently reported as the most in-demand certification in the ecosystem. This is the exam that turns your resume from invisible to interviewable.",
+      "visual": { "template": "big-statement", "text": "The Admin certification:\nfrom invisible\nto interviewable." }
+    },
+    {
+      "narration": "Step three — and this is where you separate from the crowd — stack an A I credential on top. A I Associate, then Agentforce Specialist. An administrator who can speak A I governance fluently is a different candidate than one who cannot.",
+      "visual": { "template": "milestone-timeline", "caption": "THE PATH — PART TWO", "milestones": [ { "age": "4", "label": "AI Associate cert", "tone": "gold" }, { "age": "5", "label": "Agentforce Specialist", "tone": "gold" }, { "age": "6", "label": "First role", "tone": "forest" } ] }
+    },
+    {
+      "narration": "Step four. Build proof. A free developer environment where you have actually configured automation, built flows, and set up an agent — that is a portfolio. In interviews, the person who says here is what I built beats the person who says here is what I studied.",
+      "visual": { "template": "compare-split", "title": "Certs vs. Proof", "left": { "label": "EVERYONE ELSE", "text": "\"Here's what I studied.\"" }, "right": { "label": "YOU", "text": "\"Here's what I built.\"" } }
+    },
+    {
+      "narration": "Step five. The interview. And here is the uncomfortable truth almost every certification course skips.",
+      "visual": { "template": "big-statement", "text": "Step five: the interview.\nWhere the path breaks.", "accent": true }
+    },
+    {
+      "narration": "Certifications get you the interview. They do not get you the job. Interviews in this field are scenario-based. A hiring manager says: sales reps are complaining that leads are going to the wrong people — walk me through how you would fix it. No exam prepares you for that.",
+      "visual": { "template": "big-statement", "text": "Certifications get the interview.\nScenarios get the job." }
+    },
+    {
+      "narration": "The people who get hired are the ones who practiced thinking through real scenarios — requirements, trade-offs, and the second-order effects of every configuration choice. That skill is trainable. It is just not what the exam trains.",
+      "visual": { "template": "compare-split", "title": "What Actually Gets Tested", "left": { "label": "THE EXAM", "text": "Definitions. Features. Limits." }, "right": { "label": "THE INTERVIEW", "text": "Judgment. Trade-offs. Real scenarios." } }
+    },
+    {
+      "narration": "We are going to train exactly that on this channel. Real scenarios, worked through in diagrams, the way an experienced administrator actually thinks. The next video breaks down a real interview scenario step by step — the kind that decides offers.",
+      "visual": { "template": "big-statement", "text": "This channel trains\nthe part the exam skips." }
+    },
+    {
+      "narration": "One honest disclaimer before we close. This is general career information, not a guarantee. Salary figures are attributed ranges from industry job reports. Breaking in takes months of real work, and no video changes that. What has changed is the size of the opening.",
+      "visual": { "template": "big-statement", "text": "No guarantees.\nReal work required.\nBut the opening is real." }
+    },
+    {
+      "narration": "A career where demand is measured in millions of roles, the entry materials are free, and the A I disruption created new ground where nobody has a head start. The window where that last part stays true will not stay open forever.",
+      "visual": { "template": "big-number-callout", "pre": "The A.I. reset means", "number": "Everyone\nstarts now.", "post": "Veterans and newcomers alike.", "hero": true }
+    },
+    {
+      "narration": "Subscribe if you want the scenario training — one real, worked interview scenario every week, in diagrams. Next video: the lead routing scenario that filters out half of all admin candidates. See you there.",
+      "visual": { "template": "subscribe-cta", "title": "Next: The Interview Scenario That Filters Out Half of All Candidates" }
+    }
+  ]
+}

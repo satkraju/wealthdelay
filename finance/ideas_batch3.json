@@ -1,0 +1,1684 @@
+[
+  {
+    "id": "car_payment_v1",
+    "archetype": "car_payment",
+    "title": "Your car payment is quietly destroying your retirement \ud83d\ude97",
+    "scenes": {
+      "hook": {
+        "big": "$523/month car payment.",
+        "accent": "That's not transportation. That's $312,000.",
+        "sub": "Here's the math nobody shows you at the dealership."
+      },
+      "setup": {
+        "title": "Same income. Two choices.",
+        "a": {
+          "label": "DRIVER A",
+          "sub": "buys a $35K car, $523/month payment"
+        },
+        "b": {
+          "label": "DRIVER B",
+          "sub": "buys used for cash, invests $523/month"
+        },
+        "foot": "30 years later \u2014 who's richer?"
+      },
+      "tension": {
+        "big": "The car loses 60% of its value in 5 years.",
+        "pill": "The investment doesn't.",
+        "ask": "Driver B invested $523 every month instead of making a car payment. The compound growth did the rest."
+      },
+      "reveal": {
+        "head": "After 30 years of car payments vs investing:",
+        "a": {
+          "label": "DRIVER A",
+          "sub": "paid off 6 cars, owns current one",
+          "val": 18000,
+          "valt": "~$18K asset"
+        },
+        "b": {
+          "label": "DRIVER B",
+          "sub": "invested every payment instead",
+          "val": 312000,
+          "valt": "~$312K portfolio"
+        }
+      },
+      "twist": {
+        "l1": "The gap is $294,000.",
+        "l2": "From one monthly payment decision.",
+        "l3": "The most expensive thing about a new car isn't the sticker price \u2014 it's what that monthly payment would have become."
+      }
+    },
+    "vo": {
+      "hook": "Five hundred and twenty three dollars a month. That is the average American car payment right now. It sounds like transportation. The math says it is $312,000 in wealth you will never build.",
+      "setup": "Same income. Driver A buys a $35,000 car and makes the payment every month. Driver B buys a used car for cash and invests $523 every single month instead. Thirty years. Who comes out ahead?",
+      "tension": "The car loses 60 percent of its value in 5 years. The investment does not. Driver B never made a car payment. Every month, that money went into the market.",
+      "reveal": "After 30 years, Driver A owns a car worth about $18,000. Driver B has a portfolio worth $312,000. Same income. One decision about a monthly payment.",
+      "twist": "The gap is $294,000. From one choice about how to handle $523 a month. The most expensive thing about a new car is not the price on the window \u2014 it is what that payment would have become. Run your own numbers free at wealthdelay dot com. Comment CAR for the full breakdown."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual market return. Individual results vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "car_payment_v2",
+    "archetype": "car_payment",
+    "title": "Your $650/month car payment is costing you $388,000 \ud83d\ude97",
+    "scenes": {
+      "hook": {
+        "big": "$650/month car payment.",
+        "accent": "That's not a car. That's $388,000.",
+        "sub": "Here's the real price of driving new."
+      },
+      "setup": {
+        "title": "Same paycheck. Different choice.",
+        "a": {
+          "label": "THE BUYER",
+          "sub": "leases new every 3 years, $650/month"
+        },
+        "b": {
+          "label": "THE INVESTOR",
+          "sub": "drives used, invests $650/month"
+        },
+        "foot": "Who wins after 30 years?"
+      },
+      "tension": {
+        "big": "Leasing means you own nothing. Ever.",
+        "pill": "Investing means compounding. Forever.",
+        "ask": "Every lease payment builds equity for the manufacturer. Every investment payment builds equity for you."
+      },
+      "reveal": {
+        "head": "30 years. Same $650/month. Two different destinations:",
+        "a": {
+          "label": "THE BUYER",
+          "sub": "returned 10 leased cars, owns nothing",
+          "val": 0,
+          "valt": "$0 equity"
+        },
+        "b": {
+          "label": "THE INVESTOR",
+          "sub": "drove used cars, invested every month",
+          "val": 388000,
+          "valt": "~$388K portfolio"
+        }
+      },
+      "twist": {
+        "l1": "The lease buyer has $0 in equity after 30 years.",
+        "l2": "The investor has $388,000.",
+        "l3": "A car gets you to work. The right decision about that car gets you to retirement."
+      }
+    },
+    "vo": {
+      "hook": "Six hundred and fifty dollars a month. That is what the average new car lease costs right now. Over 30 years, that is $388,000 \u2014 if you invest it instead of spending it.",
+      "setup": "Same income. One person leases a new car every three years. The other drives a paid-off used car and invests $650 every month. Same paycheck. Different choice.",
+      "tension": "Leasing means you own nothing. You return the car and start over. Investing means compounding \u2014 every month your money makes more money. The investor is building something. The lessee is renting forever.",
+      "reveal": "After 30 years, the lease buyer has returned 10 cars and owns nothing. The investor has $388,000. Same $650 a month. Two completely different outcomes.",
+      "twist": "Zero versus $388,000. From one decision about a monthly payment. A car gets you to work. The right decision about that car gets you to retirement. Run your own numbers free at wealthdelay dot com. Comment CAR for the full breakdown."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual return. Results vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "raise_not_invested_v1",
+    "archetype": "raise_not_invested",
+    "title": "You got a raise and spent it. Here's what that cost you \ud83d\udcb8",
+    "scenes": {
+      "hook": {
+        "big": "You got a $400/month raise.",
+        "accent": "And spent every dollar of it.",
+        "sub": "Here's what that decision will cost you."
+      },
+      "setup": {
+        "title": "Same raise. Two responses.",
+        "a": {
+          "label": "SPENDER",
+          "sub": "upgraded lifestyle by $400/month"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "invested the raise, kept old lifestyle"
+        },
+        "foot": "25 years later \u2014 who won?"
+      },
+      "tension": {
+        "big": "Lifestyle inflation is silent wealth destruction.",
+        "pill": "It feels like progress. It isn't.",
+        "ask": "Every raise that goes straight to spending resets your wealth-building clock. The investor never missed what they never had."
+      },
+      "reveal": {
+        "head": "After 25 years, same salary, different raise decision:",
+        "a": {
+          "label": "SPENDER",
+          "sub": "better lifestyle, same wealth trajectory",
+          "val": 0,
+          "valt": "$0 from raise"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "invested every raise dollar",
+          "val": 243000,
+          "valt": "~$243K built"
+        }
+      },
+      "twist": {
+        "l1": "One raise. $243,000 difference.",
+        "l2": "Not from working harder. From not upgrading.",
+        "l3": "The raise was the same. The wealth gap is not. Every raise you invest instead of spend is a 25-year compounding decision."
+      }
+    },
+    "vo": {
+      "hook": "You just got a $400 a month raise. Congratulations. Now \u2014 what did you do with it? Most people spend it within 90 days. Here is what that decision will cost you over 25 years.",
+      "setup": "Same raise. Two responses. The spender upgrades their lifestyle \u2014 nicer apartment, better car, more dinners out. The investor keeps the old lifestyle and puts every dollar of the raise into the market.",
+      "tension": "Lifestyle inflation is silent wealth destruction. It feels like progress. New things, better things. But every raise that goes straight to spending resets your wealth-building clock. The investor never missed what they never had.",
+      "reveal": "After 25 years, both earned the same salary. But the investor quietly built $243,000 from a single raise decision. The spender has a slightly nicer life and the same net worth trajectory they had before.",
+      "twist": "One raise. $243,000 difference. Not from working harder. From not upgrading. Every raise you invest instead of spend is a 25-year compounding decision. Run your own numbers free at wealthdelay dot com. Comment RAISE for the full breakdown."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual return. Results vary.",
+    "voice": "bill"
+  },
+  {
+    "id": "raise_not_invested_v2",
+    "archetype": "raise_not_invested",
+    "title": "She got 5 raises and invested every one. Here's her number \ud83e\udd11",
+    "scenes": {
+      "hook": {
+        "big": "5 raises. All invested.",
+        "accent": "She never upgraded her lifestyle.",
+        "sub": "The number is hard to believe."
+      },
+      "setup": {
+        "title": "Same career. Two spending habits.",
+        "a": {
+          "label": "LIFESTYLE INFLATOR",
+          "sub": "spent every raise on upgrades"
+        },
+        "b": {
+          "label": "RAISE INVESTOR",
+          "sub": "invested every raise, lived the same"
+        },
+        "foot": "Same job. Same salary growth. Different outcome."
+      },
+      "tension": {
+        "big": "She drove the same car for 12 years.",
+        "pill": "The portfolio didn't care.",
+        "ask": "While everyone else was upgrading, she was compounding. The gap builds silently \u2014 until suddenly it isn't silent anymore."
+      },
+      "reveal": {
+        "head": "20-year career. 5 raises. One rule \u2014 invest every one:",
+        "a": {
+          "label": "LIFESTYLE INFLATOR",
+          "sub": "nicer everything, same wealth",
+          "val": 45000,
+          "valt": "~$45K saved"
+        },
+        "b": {
+          "label": "RAISE INVESTOR",
+          "sub": "invested all raises, compounded 20yr",
+          "val": 410000,
+          "valt": "~$410K built"
+        }
+      },
+      "twist": {
+        "l1": "Same career. $365,000 gap.",
+        "l2": "Built entirely from the raise decision.",
+        "l3": "She did not earn more. She just never let lifestyle inflation eat her raises. That one rule, applied five times, changed everything."
+      }
+    },
+    "vo": {
+      "hook": "She got five raises over a 20-year career. And she invested every single one. She never upgraded her apartment. She drove the same car for 12 years. The number she built is hard to believe.",
+      "setup": "Same career, same salary growth. The lifestyle inflator spent every raise on upgrades \u2014 better apartment, nicer car, fancier vacations. The raise investor kept the old lifestyle and put every raise dollar into the market.",
+      "tension": "She drove the same car for 12 years. The portfolio did not care. While everyone else was upgrading, she was compounding. The gap builds quietly \u2014 until suddenly it is not quiet anymore.",
+      "reveal": "After a 20-year career with five raises, the lifestyle inflator saved about $45,000. The raise investor built $410,000. Same job. Same income growth. One rule applied five times.",
+      "twist": "Same career. $365,000 gap. Built entirely from one decision repeated five times. She did not earn more. She just never let lifestyle inflation eat her raises. Run your own numbers free at wealthdelay dot com. Comment RAISE for the full breakdown."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual return. Results vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "hsa_missed_v1",
+    "archetype": "hsa_missed",
+    "title": "You're skipping your HSA. Here's what that mistake costs \ud83c\udfe5",
+    "scenes": {
+      "hook": {
+        "big": "HSA: Triple tax advantage.",
+        "accent": "Most people ignore it.",
+        "sub": "The cost of that mistake is brutal."
+      },
+      "setup": {
+        "title": "Same health plan. Two choices.",
+        "a": {
+          "label": "HSA IGNORER",
+          "sub": "pays medical with regular income"
+        },
+        "b": {
+          "label": "HSA INVESTOR",
+          "sub": "maxes HSA, invests it long-term"
+        },
+        "foot": "20 years. Who has more?"
+      },
+      "tension": {
+        "big": "The HSA is the only triple-tax account that exists.",
+        "pill": "Tax-free in. Tax-free growth. Tax-free out.",
+        "ask": "No other account does all three. Most people treat it as a medical checking account. The smart ones treat it as a stealth retirement account."
+      },
+      "reveal": {
+        "head": "Max HSA contribution: $4,150/year. Invested 20 years:",
+        "a": {
+          "label": "HSA IGNORER",
+          "sub": "paid taxes on every medical dollar",
+          "val": 28000,
+          "valt": "~$28K after-tax"
+        },
+        "b": {
+          "label": "HSA INVESTOR",
+          "sub": "triple tax-free, invested 20 years",
+          "val": 171000,
+          "valt": "~$171K built"
+        }
+      },
+      "twist": {
+        "l1": "Same health plan. $143,000 difference.",
+        "l2": "From using the account everyone has but most ignore.",
+        "l3": "The HSA is not a medical expense account. It is the most tax-efficient retirement account available \u2014 and most employers offer it free."
+      }
+    },
+    "vo": {
+      "hook": "Your HSA has a triple tax advantage. Tax-free contributions. Tax-free growth. Tax-free withdrawals for medical expenses. Most people ignore it. Here is what that mistake costs.",
+      "setup": "Same health plan. Same employer. The HSA ignorer pays medical bills with regular after-tax income. The HSA investor maxes out the account every year and invests it for the long term.",
+      "tension": "The HSA is the only triple-tax account that exists. No other account does all three. Most people treat it like a medical checking account. The smart ones treat it like a stealth retirement account.",
+      "reveal": "Max HSA contribution is $4,150 a year. Invested over 20 years with triple tax advantages, that grows to about $171,000. The person who ignored the HSA and paid taxes on every medical dollar? About $28,000 in equivalent savings.",
+      "twist": "Same health plan. $143,000 difference. From using the account everyone has but most ignore. The HSA is not a medical expense account. It is the most tax-efficient retirement vehicle available. Run your own numbers free at wealthdelay dot com. Comment HSA for the full breakdown."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. HSA limits change annually. Consult a tax advisor for your situation.",
+    "voice": "brian"
+  },
+  {
+    "id": "hsa_missed_v2",
+    "archetype": "hsa_missed",
+    "title": "The HSA trick that turns medical bills into retirement money \ud83c\udfe5",
+    "scenes": {
+      "hook": {
+        "big": "Pay medical bills now.",
+        "accent": "Or pay them later \u2014 from a tax-free account.",
+        "sub": "The second option builds $200K more."
+      },
+      "setup": {
+        "title": "Same medical costs. Two strategies.",
+        "a": {
+          "label": "PAY NOW",
+          "sub": "uses HSA for every expense immediately"
+        },
+        "b": {
+          "label": "INVEST & WAIT",
+          "sub": "pays out of pocket now, lets HSA compound"
+        },
+        "foot": "Same HSA. Wildly different outcome."
+      },
+      "tension": {
+        "big": "You can pay old medical bills from your HSA forever.",
+        "pill": "There is no time limit.",
+        "ask": "The advanced strategy: fund the HSA, invest it, pay medical bills out of pocket while you are young and healthy, then reimburse yourself decades later \u2014 tax-free \u2014 from a compounded balance."
+      },
+      "reveal": {
+        "head": "Fund HSA $4,150/year, invest, pay bills out of pocket:",
+        "a": {
+          "label": "USE IT NOW",
+          "sub": "HSA balance stays near zero",
+          "val": 0,
+          "valt": "~$0 invested"
+        },
+        "b": {
+          "label": "INVEST & WAIT",
+          "sub": "10 years of growth before first withdrawal",
+          "val": 58000,
+          "valt": "~$58K tax-free"
+        }
+      },
+      "twist": {
+        "l1": "Same account. Same contributions.",
+        "l2": "One strategy turns it into $58K. One leaves it empty.",
+        "l3": "Keep every receipt. Pay out of pocket. Let the HSA compound. Then reimburse yourself years later \u2014 completely tax-free."
+      }
+    },
+    "vo": {
+      "hook": "Here is something almost nobody knows about HSAs. You can pay a medical bill right now \u2014 out of pocket \u2014 and reimburse yourself from your HSA ten years from now. There is no time limit. That changes everything.",
+      "setup": "Same HSA. Two strategies. Strategy one: use the HSA for every expense as it happens. Strategy two: pay medical bills out of pocket while you are young and healthy, and let the HSA compound untouched.",
+      "tension": "You can pay old medical bills from your HSA forever. There is no deadline. The advanced move is to treat the HSA like an investment account \u2014 fund it, invest it, never touch it \u2014 and then decades later reimburse yourself for every expense you saved receipts for.",
+      "reveal": "Fund the HSA at $4,150 a year, invest it, pay bills out of pocket for 10 years. At the end you have $58,000 in tax-free money you can withdraw \u2014 to reimburse yourself for every expense you already paid. The person who spent the HSA immediately has zero.",
+      "twist": "Same account. Same contributions. One strategy builds $58,000. One leaves it empty. Keep every receipt. Pay out of pocket. Let the HSA compound. Then reimburse yourself years later \u2014 completely tax-free. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. HSA rules and limits vary. Consult a tax advisor for your situation.",
+    "voice": "bill"
+  },
+  {
+    "id": "tax_refund_v1",
+    "archetype": "tax_refund",
+    "title": "You're celebrating your tax refund. You should be worried \ud83d\ude2c",
+    "scenes": {
+      "hook": {
+        "big": "Average tax refund: $3,100.",
+        "accent": "It feels like free money.",
+        "sub": "It is not. Here is what it actually cost you."
+      },
+      "setup": {
+        "title": "Same paycheck. Two approaches.",
+        "a": {
+          "label": "OVERWITHOLDER",
+          "sub": "gets $3,100 refund every April"
+        },
+        "b": {
+          "label": "OPTIMIZER",
+          "sub": "adjusts W-4, invests $258/month instead"
+        },
+        "foot": "Who has more after 20 years?"
+      },
+      "tension": {
+        "big": "A tax refund is an interest-free loan you gave the IRS.",
+        "pill": "They kept your money all year. You got nothing.",
+        "ask": "That $3,100 sitting with the IRS from January to April earned zero return for you. Adjusted and invested monthly, it earns for 12 months instead of 0."
+      },
+      "reveal": {
+        "head": "Invest $258/month instead of waiting for a refund:",
+        "a": {
+          "label": "OVERWITHOLDER",
+          "sub": "got refund, spent it on vacation",
+          "val": 22000,
+          "valt": "~$22K over 20yr"
+        },
+        "b": {
+          "label": "OPTIMIZER",
+          "sub": "invested monthly, compounded fully",
+          "val": 80000,
+          "valt": "~$80K built"
+        }
+      },
+      "twist": {
+        "l1": "Same tax bill. $58,000 difference.",
+        "l2": "From adjusting one form at your HR department.",
+        "l3": "The refund feels good. The math says otherwise. Adjust your W-4, invest the difference monthly, and let it compound all year instead of sitting with the IRS."
+      }
+    },
+    "vo": {
+      "hook": "The average American gets a $3,100 tax refund and celebrates. You should not be celebrating. That money sat with the IRS all year earning you absolutely nothing. Here is what it actually cost you.",
+      "setup": "Same paycheck, same tax bill. The overwitholder gets a $3,100 refund every April and usually spends it. The optimizer adjusts their W-4, gets $258 extra per month, and invests it instead.",
+      "tension": "A tax refund is an interest-free loan you gave the government. They kept your money from January through April and paid you zero interest. Adjusted and invested monthly, that same money earns for the full 12 months.",
+      "reveal": "Invest $258 a month for 20 years instead of waiting for a refund. The optimizer builds $80,000. The overwitholder who got the refund and spent it has about $22,000 in equivalent savings.",
+      "twist": "Same tax bill. $58,000 difference. From adjusting one form at your HR department. The refund feels good. The math says otherwise. Run your own numbers free at wealthdelay dot com. Comment TAX for the full breakdown."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Tax situations vary. Consult a tax professional before changing withholding.",
+    "voice": "ed"
+  },
+  {
+    "id": "tax_refund_v2",
+    "archetype": "tax_refund",
+    "title": "Stop celebrating your tax refund. Do this instead \ud83d\udcca",
+    "scenes": {
+      "hook": {
+        "big": "Your $4,500 tax refund.",
+        "accent": "The IRS held it rent-free all year.",
+        "sub": "Here is the cost of that deal."
+      },
+      "setup": {
+        "title": "Same taxes owed. Two mindsets.",
+        "a": {
+          "label": "REFUND CHASER",
+          "sub": "overwitholds, spends refund annually"
+        },
+        "b": {
+          "label": "MONTHLY INVESTOR",
+          "sub": "adjusts withholding, invests monthly"
+        },
+        "foot": "25 years. One number changes everything."
+      },
+      "tension": {
+        "big": "Every month of overwithholding is dead money.",
+        "pill": "It earns zero while it waits.",
+        "ask": "The refund chaser is excited in April. The monthly investor is richer in retirement. The difference is just timing."
+      },
+      "reveal": {
+        "head": "Invest $375/month (from $4,500 refund) over 25 years:",
+        "a": {
+          "label": "REFUND CHASER",
+          "sub": "spent refund yearly, no compounding",
+          "val": 33000,
+          "valt": "~$33K total"
+        },
+        "b": {
+          "label": "MONTHLY INVESTOR",
+          "sub": "invested monthly for 25 years",
+          "val": 121000,
+          "valt": "~$121K built"
+        }
+      },
+      "twist": {
+        "l1": "Same money. $88,000 difference.",
+        "l2": "From one W-4 adjustment.",
+        "l3": "The IRS is not your savings account. Take your money back monthly, invest it, and let it compound for 25 years instead of sitting in a government account earning you nothing."
+      }
+    },
+    "vo": {
+      "hook": "You got a $4,500 tax refund. That means you gave the IRS a $375-a-month loan all year, interest free. Here is what that deal actually cost you over 25 years.",
+      "setup": "Same taxes owed. Two mindsets. The refund chaser overwitholds and spends the annual refund. The monthly investor adjusts their withholding and puts $375 a month into the market instead.",
+      "tension": "Every month of overwithholding is dead money. It earns zero while it waits. The refund chaser is excited in April. The monthly investor is richer in retirement. The only difference is timing.",
+      "reveal": "Invest $375 a month for 25 years instead of waiting for the annual refund. The monthly investor builds $121,000. The refund chaser who spent it every year ends up with about $33,000 in equivalent savings.",
+      "twist": "Same money. $88,000 difference. From one W-4 adjustment. The IRS is not your savings account. Take your money back monthly, invest it, and let it compound. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Tax situations vary. Consult a tax professional before adjusting withholding.",
+    "voice": "brian"
+  },
+  {
+    "id": "student_loan_v1",
+    "archetype": "student_loan",
+    "title": "Pay student loans OR invest? The math finally settles it \ud83c\udf93",
+    "scenes": {
+      "hook": {
+        "big": "$400/month student loans.",
+        "accent": "Pay them off fast \u2014 or invest instead?",
+        "sub": "The answer depends on one number."
+      },
+      "setup": {
+        "title": "Same debt. Two strategies.",
+        "a": {
+          "label": "AGGRESSIVE PAYER",
+          "sub": "throws $400 extra at loans every month"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "pays minimums, invests $400 monthly"
+        },
+        "foot": "5% loan rate. Which wins?"
+      },
+      "tension": {
+        "big": "Your loan rate is the break-even point.",
+        "pill": "Below 7%? Invest. Above 7%? Pay it down.",
+        "ask": "At 5% interest, the market's historical 7% average return beats the guaranteed 5% you save by paying down the loan. The math has a clear answer \u2014 most people just never ran it."
+      },
+      "reveal": {
+        "head": "5% loan. Minimum payments + $400/month invested vs extra payments:",
+        "a": {
+          "label": "AGGRESSIVE PAYER",
+          "sub": "debt-free 3 years early, zero invested",
+          "val": 0,
+          "valt": "$0 portfolio"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "paid minimums, invested the difference",
+          "val": 47000,
+          "valt": "~$47K built"
+        }
+      },
+      "twist": {
+        "l1": "Same loan. Same income. $47K difference.",
+        "l2": "Because the loan rate was below the market return.",
+        "l3": "At 5%, the math says invest. At 9%, the math says pay it down. Know your rate. Run the numbers. Stop guessing."
+      }
+    },
+    "vo": {
+      "hook": "Pay your student loans aggressively \u2014 or invest the extra money instead? It is one of the most common questions in personal finance. The math actually has a clear answer. It depends on one number: your interest rate.",
+      "setup": "Same debt. Two strategies. The aggressive payer throws $400 extra at their loans every month. The investor pays the minimum and puts $400 into the market instead.",
+      "tension": "Your loan interest rate is the break-even point. The market has historically returned about 7 percent a year on average. If your loan rate is below 7 percent, the math says invest. If it is above 7 percent, pay the loan. At 5 percent, the answer is clear.",
+      "reveal": "At a 5 percent loan rate, paying minimums and investing $400 a month builds $47,000 in 5 years. The aggressive payer paid off the loan 3 years early \u2014 and has zero invested.",
+      "twist": "Same loan. Same income. $47,000 difference. Because the loan rate was below the market return. At 5 percent, invest. At 9 percent, pay it down. Know your rate. Run the numbers. Run your own at wealthdelay dot com. Comment LOANS for the breakdown."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Market returns are not guaranteed. Consult a financial advisor for your specific situation.",
+    "voice": "bill"
+  },
+  {
+    "id": "student_loan_v2",
+    "archetype": "student_loan",
+    "title": "She had $60K in student loans and still built $200K \ud83c\udf93",
+    "scenes": {
+      "hook": {
+        "big": "$60,000 in student loans.",
+        "accent": "She didn't panic. She ran the math.",
+        "sub": "And built $200K while paying them off."
+      },
+      "setup": {
+        "title": "Same $60K debt. Two reactions.",
+        "a": {
+          "label": "PANIC PAYER",
+          "sub": "stopped all investing until loans gone"
+        },
+        "b": {
+          "label": "MATH FOLLOWER",
+          "sub": "paid minimums, invested simultaneously"
+        },
+        "foot": "10 years. Same income. Different outcome."
+      },
+      "tension": {
+        "big": "Stopping investing to pay loans sounds responsible.",
+        "pill": "The math usually says otherwise.",
+        "ask": "At 4.5% interest, every dollar that goes toward extra loan payments saves 4.5 cents a year. Every dollar invested earns 7 cents a year on average. She chose 7 cents."
+      },
+      "reveal": {
+        "head": "10 years. $60K loans at 4.5%. Pay minimums + invest:",
+        "a": {
+          "label": "PANIC PAYER",
+          "sub": "debt-free faster, started investing late",
+          "val": 58000,
+          "valt": "~$58K at year 10"
+        },
+        "b": {
+          "label": "MATH FOLLOWER",
+          "sub": "both simultaneously, compounding earlier",
+          "val": 199000,
+          "valt": "~$199K at year 10"
+        }
+      },
+      "twist": {
+        "l1": "Same debt. $141,000 difference.",
+        "l2": "Because she started investing 6 years earlier.",
+        "l3": "Paying off low-rate debt feels responsible. Starting compound interest 6 years earlier is more valuable. Run the math on your loans before you panic."
+      }
+    },
+    "vo": {
+      "hook": "She had $60,000 in student loans. Instead of panicking, she ran the math. And she built $199,000 while paying them off. Here is how.",
+      "setup": "Same $60,000 debt. Two reactions. The panic payer stopped all investing until the loans were completely gone. The math follower paid minimums and invested simultaneously.",
+      "tension": "At 4.5 percent interest, every extra dollar toward the loan saves 4.5 cents a year. Every dollar invested earns about 7 cents a year historically. She chose 7 cents. The math made the decision.",
+      "reveal": "After 10 years, the panic payer finished paying the loans and then started investing \u2014 ending up with about $58,000. The math follower who did both simultaneously had $199,000.",
+      "twist": "Same debt. $141,000 difference. Because she started investing 6 years earlier. Low-rate debt feels like an emergency. Compound interest starting 6 years earlier is worth more. Run the math on your loans. Free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Market returns not guaranteed. Results depend on loan rate, income, and market conditions.",
+    "voice": "ed"
+  },
+  {
+    "id": "home_equity_v1",
+    "archetype": "home_equity",
+    "title": "Your home equity is doing nothing. Here's what it's costing you \ud83c\udfe0",
+    "scenes": {
+      "hook": {
+        "big": "$180,000 in home equity.",
+        "accent": "Sitting there. Earning zero.",
+        "sub": "Here is the opportunity cost nobody talks about."
+      },
+      "setup": {
+        "title": "Same equity. Two decisions.",
+        "a": {
+          "label": "EQUITY SITTER",
+          "sub": "leaves $180K tied up in home, no action"
+        },
+        "b": {
+          "label": "EQUITY OPTIMIZER",
+          "sub": "uses HELOC to invest in dividend assets"
+        },
+        "foot": "What does inaction actually cost?"
+      },
+      "tension": {
+        "big": "Idle equity earns the appreciation rate of your home.",
+        "pill": "That is usually 3-4% nationally.",
+        "ask": "The average home appreciates about 3-4% a year nationally. The market returns about 7% historically. That gap \u2014 on $180,000 \u2014 is not trivial over 15 years."
+      },
+      "reveal": {
+        "head": "$180K equity. 15 years. 3.5% home appreciation vs 7% invested:",
+        "a": {
+          "label": "EQUITY SITTER",
+          "sub": "home appreciated, equity grew passively",
+          "val": 300000,
+          "valt": "~$300K equity"
+        },
+        "b": {
+          "label": "EQUITY OPTIMIZER",
+          "sub": "invested efficiently, higher return rate",
+          "val": 495000,
+          "valt": "~$495K total"
+        }
+      },
+      "twist": {
+        "l1": "Same starting point. $195,000 difference.",
+        "l2": "From understanding what idle money actually costs.",
+        "l3": "Home equity is not bad. Treating it as your only wealth-building vehicle is. Know your rate, know the market, and run the comparison."
+      }
+    },
+    "vo": {
+      "hook": "You have $180,000 in home equity. It feels like wealth. But it is earning the appreciation rate of your home \u2014 about 3 to 4 percent nationally. Here is the opportunity cost of leaving it there.",
+      "setup": "Same equity, two decisions. The equity sitter leaves the $180,000 tied up in the home and does nothing. The equity optimizer understands the return comparison and takes action.",
+      "tension": "The average home appreciates about 3 to 4 percent a year nationally. The market has historically returned about 7 percent. That gap \u2014 on $180,000 \u2014 compounds significantly over 15 years.",
+      "reveal": "Over 15 years, $180,000 growing at 3.5 percent becomes about $300,000. The same amount invested at 7 percent becomes $495,000. Same starting equity. $195,000 difference.",
+      "twist": "Same starting point. $195,000 difference. From understanding what idle money costs when it is tied to a 3 percent asset. Home equity is not bad. Treating it as your only wealth vehicle is. Run your own comparison free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Home appreciation and market returns vary significantly. Consult a financial advisor before using home equity.",
+    "voice": "brian"
+  },
+  {
+    "id": "home_equity_v2",
+    "archetype": "home_equity",
+    "title": "Why paying off your mortgage early might be a mistake \ud83c\udfe0",
+    "scenes": {
+      "hook": {
+        "big": "Extra mortgage payment: $500/month.",
+        "accent": "Feels responsible.",
+        "sub": "The math says think twice."
+      },
+      "setup": {
+        "title": "Same extra $500/month. Two destinations.",
+        "a": {
+          "label": "MORTGAGE KILLER",
+          "sub": "throws $500 extra at mortgage monthly"
+        },
+        "b": {
+          "label": "MARKET INVESTOR",
+          "sub": "pays minimum, invests $500 monthly"
+        },
+        "foot": "3% mortgage rate. Who wins in 20 years?"
+      },
+      "tension": {
+        "big": "A 3% mortgage is cheap debt.",
+        "pill": "The market has averaged 7%. The math is clear.",
+        "ask": "Paying extra on a 3% mortgage saves you 3 cents per dollar per year. Investing that same dollar earns 7 cents. At 3%, every extra mortgage payment is a guaranteed 3% return \u2014 and you're giving up 7%."
+      },
+      "reveal": {
+        "head": "20 years. $500/month. 3% mortgage vs market investing:",
+        "a": {
+          "label": "MORTGAGE KILLER",
+          "sub": "paid off home 8 years early",
+          "val": 58000,
+          "valt": "~$58K interest saved"
+        },
+        "b": {
+          "label": "MARKET INVESTOR",
+          "sub": "paid minimum, invested the rest",
+          "val": 260000,
+          "valt": "~$260K portfolio"
+        }
+      },
+      "twist": {
+        "l1": "Pay off early: $58K saved. Invest instead: $260K built.",
+        "l2": "At 3% mortgage, investing wins by $202,000.",
+        "l3": "The emotional win of paying off your mortgage is real. So is the $202,000 gap. Know your rate before making the choice."
+      }
+    },
+    "vo": {
+      "hook": "You are putting $500 extra toward your mortgage every month. It feels like the responsible move. If your mortgage rate is 3 percent, the math says you might be wrong.",
+      "setup": "Same extra $500 a month, two destinations. The mortgage killer throws it at the principal every month. The market investor pays the minimum and invests $500 instead.",
+      "tension": "A 3 percent mortgage is cheap debt. Paying extra on it saves you 3 cents per dollar per year. Investing that same dollar has historically earned about 7 cents. You are giving up 7 percent to secure 3 percent.",
+      "reveal": "Over 20 years, the mortgage killer pays off the home 8 years early and saves $58,000 in interest. The market investor builds a $260,000 portfolio.",
+      "twist": "Pay early and save $58,000. Invest instead and build $260,000. At a 3 percent rate, investing wins by $202,000. The emotional win of owning your home free and clear is real. So is the gap. Know your rate. Run your numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Market returns not guaranteed. This analysis changes significantly at higher mortgage rates.",
+    "voice": "bill"
+  },
+  {
+    "id": "no_budget_v1",
+    "archetype": "no_budget",
+    "title": "He never tracked spending. Here's what that cost him \ud83d\udcb3",
+    "scenes": {
+      "hook": {
+        "big": "No budget. No tracking.",
+        "accent": "'I know roughly what I spend.'",
+        "sub": "He was off by $620/month. For 15 years."
+      },
+      "setup": {
+        "title": "Same income. Two awareness levels.",
+        "a": {
+          "label": "GUESSER",
+          "sub": "estimates spending, never tracks"
+        },
+        "b": {
+          "label": "TRACKER",
+          "sub": "reviews every dollar monthly"
+        },
+        "foot": "Both think they know their numbers."
+      },
+      "tension": {
+        "big": "The average untracked budget has a $400-700/month leak.",
+        "pill": "It goes to subscriptions, dining, and convenience.",
+        "ask": "Studies show people who don't track spending systematically underestimate it by 20-30%. On a $3,000/month spend, that is $600-900 in invisible money every single month."
+      },
+      "reveal": {
+        "head": "$620/month untracked leak. Invested over 15 years:",
+        "a": {
+          "label": "GUESSER",
+          "sub": "never found the leak, never invested it",
+          "val": 0,
+          "valt": "$0 from leak"
+        },
+        "b": {
+          "label": "TRACKER",
+          "sub": "found leak, redirected to investments",
+          "val": 199000,
+          "valt": "~$199K built"
+        }
+      },
+      "twist": {
+        "l1": "The leak was $620/month.",
+        "l2": "Over 15 years it would have been $199,000.",
+        "l3": "He was not bad at money. He just never looked. One hour a month tracking spending found $620. Invested for 15 years, that is $199,000."
+      }
+    },
+    "vo": {
+      "hook": "He had a good income. He roughly knew what he spent. He never tracked it closely. When he finally ran the numbers, he had been off by $620 a month \u2014 for 15 years. Here is what that cost him.",
+      "setup": "Same income, two awareness levels. The guesser estimates spending and never looks closely. The tracker reviews every dollar monthly and finds the leaks.",
+      "tension": "Studies consistently show that people who do not track spending underestimate it by 20 to 30 percent. On a $3,000-a-month budget, that is $600 to $900 in invisible money every month \u2014 going to forgotten subscriptions, daily convenience spending, and food.",
+      "reveal": "A $620-a-month leak, invested over 15 years, becomes $199,000. The guesser never found it. The tracker found it in the first month and redirected every dollar.",
+      "twist": "The leak was $620 a month. Invested for 15 years, it was $199,000. He was not bad with money. He just never looked. One hour a month of tracking found $620. Fifteen years of investing it found $199,000. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Spending leak estimates vary by individual. Results depend on actual spending patterns.",
+    "voice": "ed"
+  },
+  {
+    "id": "no_budget_v2",
+    "archetype": "no_budget",
+    "title": "She tracked spending for 30 days. Found $890/month \ud83d\ude31",
+    "scenes": {
+      "hook": {
+        "big": "30 days of tracking.",
+        "accent": "She found $890 she didn't know she spent.",
+        "sub": "Invested for 20 years \u2014 the number is wild."
+      },
+      "setup": {
+        "title": "Same income. Tracking vs not.",
+        "a": {
+          "label": "BEFORE TRACKING",
+          "sub": "$890/month disappearing, never invested"
+        },
+        "b": {
+          "label": "AFTER TRACKING",
+          "sub": "found the leak, invested it monthly"
+        },
+        "foot": "20 years of that $890/month."
+      },
+      "tension": {
+        "big": "Most people find 15-25% of their income is unaccounted for.",
+        "pill": "Not stolen. Just untracked.",
+        "ask": "Dining, convenience fees, subscriptions nobody uses, impulse purchases. The money exists. It is just invisible without a system. Once visible, the decision to redirect it is simple."
+      },
+      "reveal": {
+        "head": "$890/month found and invested for 20 years:",
+        "a": {
+          "label": "BEFORE TRACKING",
+          "sub": "money disappeared, nothing to show",
+          "val": 0,
+          "valt": "$0 built from it"
+        },
+        "b": {
+          "label": "AFTER TRACKING",
+          "sub": "invested the found money, 20 years compounded",
+          "val": 497000,
+          "valt": "~$497K built"
+        }
+      },
+      "twist": {
+        "l1": "$497,000.",
+        "l2": "From money she already earned and already spent.",
+        "l3": "She did not get a raise. She did not change jobs. She tracked for 30 days, found $890, and redirected it. Twenty years later, that decision was worth $497,000."
+      }
+    },
+    "vo": {
+      "hook": "She tracked her spending for 30 days for the first time in her life. She found $890 a month she could not account for. Invested over 20 years, here is what that 30-day exercise was worth.",
+      "setup": "Same income, before and after tracking. Before: $890 a month disappearing into dining, subscriptions, and convenience with nothing to show. After: every dollar visible, the found money redirected to investments monthly.",
+      "tension": "Most people find 15 to 25 percent of their income is unaccounted for. Not stolen \u2014 just untracked. The money exists. It is just invisible without a system. Once it is visible, the decision to redirect it is simple.",
+      "reveal": "Eight hundred ninety dollars a month, invested for 20 years, becomes $497,000. Before she tracked, that money vanished. After, it compounded.",
+      "twist": "$497,000. From money she already earned and already spent carelessly. She did not get a raise. She did not change jobs. She tracked for 30 days, found $890, and redirected it. That 30-day exercise was worth half a million dollars. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Spending patterns vary significantly. Results depend on what is found and redirected.",
+    "voice": "brian"
+  },
+  {
+    "id": "roth_vs_traditional_v1",
+    "archetype": "roth_vs_traditional",
+    "title": "Roth vs Traditional 401k \u2014 the answer most people get wrong \ud83d\udcca",
+    "scenes": {
+      "hook": {
+        "big": "Roth or Traditional 401k?",
+        "accent": "Most people guess. The math decides.",
+        "sub": "Here is the number that changes the answer."
+      },
+      "setup": {
+        "title": "Same contribution. Two tax treatments.",
+        "a": {
+          "label": "TRADITIONAL",
+          "sub": "pre-tax now, pay taxes in retirement"
+        },
+        "b": {
+          "label": "ROTH",
+          "sub": "pay taxes now, tax-free in retirement"
+        },
+        "foot": "Your tax rate is the deciding variable."
+      },
+      "tension": {
+        "big": "If your tax rate rises, Roth wins.",
+        "pill": "If your tax rate falls, Traditional wins.",
+        "ask": "Most people in their 30s are in a lower bracket now than they will be in retirement. That means Roth is usually the right call \u2014 but most people default to Traditional because it lowers their paycheck pain today."
+      },
+      "reveal": {
+        "head": "$500/month contribution. 30 years. Current rate 22%, retire at 28%:",
+        "a": {
+          "label": "TRADITIONAL",
+          "sub": "saved taxes now, paid higher rate later",
+          "val": 378000,
+          "valt": "~$378K after tax"
+        },
+        "b": {
+          "label": "ROTH",
+          "sub": "paid lower rate now, tax-free forever",
+          "val": 452000,
+          "valt": "~$452K tax-free"
+        }
+      },
+      "twist": {
+        "l1": "Same contribution. $74,000 difference.",
+        "l2": "From which box you checked on your HR form.",
+        "l3": "If you expect to be in a higher tax bracket in retirement than you are today, Roth wins. If you expect lower, Traditional wins. Most people never ask the question."
+      }
+    },
+    "vo": {
+      "hook": "Roth or Traditional 401k? Most people guess. Some go Traditional because it reduces their paycheck hit today. Here is the number that actually decides which one wins for you.",
+      "setup": "Same $500 a month contribution. Two tax treatments. Traditional: pre-tax now, pay taxes when you withdraw in retirement. Roth: pay taxes now, completely tax-free in retirement.",
+      "tension": "If your tax rate is higher in retirement than today, Roth wins. If lower, Traditional wins. Most people in their 30s are in a lower tax bracket now than they will be when they retire. That makes Roth the mathematical winner for most \u2014 but most people default to Traditional because it feels like lower pain today.",
+      "reveal": "Same $500 a month, 30 years, current rate 22 percent, retiring at 28 percent. The Traditional 401k nets $378,000 after taxes in retirement. The Roth nets $452,000 completely tax-free.",
+      "twist": "Same contribution. $74,000 difference. From which box you checked on an HR form. If you will be in a higher bracket in retirement than today, Roth wins. Most people never ask the question. Run your own comparison free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Tax rates, brackets, and laws change. Consult a tax advisor for your specific situation.",
+    "voice": "bill"
+  },
+  {
+    "id": "roth_vs_traditional_v2",
+    "archetype": "roth_vs_traditional",
+    "title": "The one 401k decision that costs $100K if you get it wrong \ud83d\udcca",
+    "scenes": {
+      "hook": {
+        "big": "One checkbox on your HR form.",
+        "accent": "Wrong answer: $100,000 gone.",
+        "sub": "Roth vs Traditional \u2014 the math finally explained."
+      },
+      "setup": {
+        "title": "Same job. Same contribution. One choice.",
+        "a": {
+          "label": "WRONG CHOICE",
+          "sub": "picked the option that costs more in your bracket"
+        },
+        "b": {
+          "label": "RIGHT CHOICE",
+          "sub": "matched tax treatment to your actual situation"
+        },
+        "foot": "How much does the wrong choice cost?"
+      },
+      "tension": {
+        "big": "The right answer depends entirely on one number.",
+        "pill": "Your expected retirement tax rate.",
+        "ask": "Young, low income? Roth wins. High income, expecting to retire on less? Traditional wins. The mistake is not making the wrong choice \u2014 it is making a default choice without running the numbers."
+      },
+      "reveal": {
+        "head": "$600/month. 25 years. Retire in higher bracket \u2014 Roth vs Traditional:",
+        "a": {
+          "label": "TRADITIONAL (wrong)",
+          "sub": "lower paycheck pain, higher retirement tax",
+          "val": 289000,
+          "valt": "~$289K after tax"
+        },
+        "b": {
+          "label": "ROTH (right)",
+          "sub": "paid tax now at lower rate, tax-free later",
+          "val": 396000,
+          "valt": "~$396K tax-free"
+        }
+      },
+      "twist": {
+        "l1": "Same contribution. $107,000 difference.",
+        "l2": "From a single checkbox on an enrollment form.",
+        "l3": "Nobody explained this at orientation. Now you know. If you are in a lower bracket today than you will be in retirement, Roth is the answer \u2014 and the math is worth $107,000."
+      }
+    },
+    "vo": {
+      "hook": "There is one checkbox on your 401k enrollment form that could cost you $107,000 if you get it wrong. Roth versus Traditional. Most people pick Traditional. Many of them are wrong.",
+      "setup": "Same job, same $600-a-month contribution, one choice. Traditional reduces your paycheck pain today. Roth costs more now but delivers tax-free income in retirement.",
+      "tension": "The right answer depends entirely on your expected tax rate in retirement versus today. Young and in a lower bracket now? Roth wins. High earner expecting to retire on much less? Traditional might win. The mistake is defaulting without running the numbers.",
+      "reveal": "Same $600 a month over 25 years. If you retire in a higher tax bracket than today, the Traditional 401k nets $289,000 after taxes. The Roth nets $396,000 completely tax-free.",
+      "twist": "Same contribution. $107,000 difference. From a single checkbox. Nobody explained this at orientation. If you are in a lower bracket today than you will be in retirement, Roth is the answer. Run your own comparison free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Tax laws change. Consult a qualified tax advisor for personalized guidance.",
+    "voice": "ed"
+  },
+  {
+    "id": "lifestyle_creep_v1",
+    "archetype": "lifestyle_creep",
+    "title": "Lifestyle creep is the quietest wealth killer. Here's the number \ud83d\udcc8",
+    "scenes": {
+      "hook": {
+        "big": "Income up 40% in 5 years.",
+        "accent": "Savings rate: unchanged.",
+        "sub": "That is lifestyle creep. Here is what it costs."
+      },
+      "setup": {
+        "title": "Same raise. Two responses.",
+        "a": {
+          "label": "CREEPER",
+          "sub": "spending rose with every income increase"
+        },
+        "b": {
+          "label": "HOLDER",
+          "sub": "held lifestyle flat, invested every raise"
+        },
+        "foot": "15 years. Same career trajectory."
+      },
+      "tension": {
+        "big": "Lifestyle creep is invisible while it happens.",
+        "pill": "It feels like enjoying success.",
+        "ask": "Better apartment. Nicer car. More restaurants. Each upgrade feels earned. But each one also resets your savings rate \u2014 so more income produces the same financial progress as before."
+      },
+      "reveal": {
+        "head": "15 years. Same career. Creep vs held lifestyle:",
+        "a": {
+          "label": "CREEPER",
+          "sub": "great lifestyle, same savings rate",
+          "val": 89000,
+          "valt": "~$89K saved"
+        },
+        "b": {
+          "label": "HOLDER",
+          "sub": "modest lifestyle, invested every raise",
+          "val": 341000,
+          "valt": "~$341K built"
+        }
+      },
+      "twist": {
+        "l1": "Same career. $252,000 difference.",
+        "l2": "Built entirely by not upgrading.",
+        "l3": "Lifestyle creep feels like reward. The portfolio sees it as a reset. Every raise you do not invest is a compounding opportunity you spent instead."
+      }
+    },
+    "vo": {
+      "hook": "Your income went up 40 percent in 5 years. Your savings rate stayed exactly the same. That is lifestyle creep \u2014 and it is the quietest wealth killer most people never notice until it is too late.",
+      "setup": "Same career trajectory. Same raises. The creeper lets spending rise with every income increase \u2014 better apartment, nicer car, more restaurants. The holder keeps the lifestyle flat and invests every raise.",
+      "tension": "Lifestyle creep is invisible while it happens. Each upgrade feels earned. But each one also resets your savings rate \u2014 so more income produces the same financial progress as before. You are running faster to stay in place.",
+      "reveal": "Over 15 years, the creeper saves about $89,000. The holder who kept the lifestyle flat and invested every raise builds $341,000.",
+      "twist": "Same career. $252,000 difference. Built entirely by not upgrading. Lifestyle creep feels like reward. The portfolio sees it as a reset. Every raise you do not invest is a compounding opportunity you spent. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Results depend on income growth, spending habits, and market returns.",
+    "voice": "brian"
+  },
+  {
+    "id": "lifestyle_creep_v2",
+    "archetype": "lifestyle_creep",
+    "title": "He doubled his income and barely moved his net worth \ud83d\udcc8",
+    "scenes": {
+      "hook": {
+        "big": "Income doubled in 8 years.",
+        "accent": "Net worth barely moved.",
+        "sub": "Lifestyle creep is how high earners stay broke."
+      },
+      "setup": {
+        "title": "Big income. Two outcomes.",
+        "a": {
+          "label": "HIGH EARNER A",
+          "sub": "doubled income, doubled lifestyle"
+        },
+        "b": {
+          "label": "HIGH EARNER B",
+          "sub": "doubled income, held lifestyle, invested gap"
+        },
+        "foot": "10 years. Who built real wealth?"
+      },
+      "tension": {
+        "big": "High income does not guarantee wealth.",
+        "pill": "High savings rate does.",
+        "ask": "The highest-earning Americans with the lowest net worth all share one pattern: lifestyle expansion matched income expansion. The math of wealth is simple \u2014 it is income minus spending. High income with high spending is a treadmill."
+      },
+      "reveal": {
+        "head": "Income doubled. Lifestyle held flat vs doubled. 10 years:",
+        "a": {
+          "label": "DOUBLED LIFESTYLE",
+          "sub": "amazing life, minimal net worth growth",
+          "val": 95000,
+          "valt": "~$95K net worth"
+        },
+        "b": {
+          "label": "HELD LIFESTYLE",
+          "sub": "same modest life, invested the gap",
+          "val": 487000,
+          "valt": "~$487K net worth"
+        }
+      },
+      "twist": {
+        "l1": "Same income. $392,000 difference.",
+        "l2": "The wealth gap is entirely about what you kept.",
+        "l3": "High income is an opportunity. Lifestyle creep converts that opportunity into expenses. The question is never how much you earn \u2014 it is how much you keep."
+      }
+    },
+    "vo": {
+      "hook": "He doubled his income in 8 years. His net worth barely moved. He is not unusual. High income does not guarantee wealth. Lifestyle creep is how high earners stay broke.",
+      "setup": "Same doubled income. High earner A doubled the lifestyle \u2014 bigger apartment, luxury car, premium everything. High earner B held the lifestyle flat and invested the entire income gap.",
+      "tension": "The highest-earning Americans with the lowest net worth all share one pattern: lifestyle expansion matched income expansion. High income with high spending is a treadmill. The math of wealth is simple \u2014 it is income minus spending.",
+      "reveal": "Same doubled income over 10 years. The doubled-lifestyle earner has about $95,000 in net worth. The held-lifestyle earner who invested the gap has $487,000.",
+      "twist": "Same income. $392,000 difference. The wealth gap is entirely about what you kept. High income is an opportunity. Lifestyle creep converts that opportunity into expenses. The question is never how much you earn. It is how much you keep. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Results depend on actual income levels, spending, and investment choices.",
+    "voice": "bill"
+  },
+  {
+    "id": "bank_savings_v1",
+    "archetype": "bank_savings",
+    "title": "Your bank's savings account is quietly robbing you \ud83c\udfe6",
+    "scenes": {
+      "hook": {
+        "big": "Big bank savings rate: 0.01%.",
+        "accent": "HYSA rate: 4.5%.",
+        "sub": "On $50,000, the difference is $22,000."
+      },
+      "setup": {
+        "title": "Same $50K. Two accounts.",
+        "a": {
+          "label": "BIG BANK",
+          "sub": "$50K in savings at 0.01% APY"
+        },
+        "b": {
+          "label": "HYSA",
+          "sub": "$50K in high-yield savings at 4.5% APY"
+        },
+        "foot": "10 years. Same money. Different banks."
+      },
+      "tension": {
+        "big": "Your big bank is not a savings partner. It is a profit center.",
+        "pill": "The 0.01% rate is not an accident.",
+        "ask": "Big banks pay near-zero interest on savings because most people never switch. The money costs them almost nothing. HYSA accounts \u2014 typically online banks \u2014 compete for deposits by paying actual rates."
+      },
+      "reveal": {
+        "head": "$50,000. 10 years. 0.01% vs 4.5% APY:",
+        "a": {
+          "label": "BIG BANK",
+          "sub": "earned almost nothing on $50K",
+          "val": 50050,
+          "valt": "~$50,050 after 10yr"
+        },
+        "b": {
+          "label": "HYSA",
+          "sub": "earned real interest, compounded annually",
+          "val": 77900,
+          "valt": "~$77,900 after 10yr"
+        }
+      },
+      "twist": {
+        "l1": "Same $50K. $27,850 difference.",
+        "l2": "From choosing a different bank.",
+        "l3": "Switching takes 15 minutes. The cost of not switching is $27,850 over 10 years. Your emergency fund and short-term savings should not be earning 0.01%."
+      }
+    },
+    "vo": {
+      "hook": "Your big bank is paying you 0.01 percent on your savings right now. High-yield savings accounts are paying 4.5 percent. On $50,000, that difference is $27,850 over 10 years. From choosing a different bank.",
+      "setup": "Same $50,000. Two accounts. Big bank savings at 0.01 percent APY. High-yield savings account at 4.5 percent APY. Same FDIC insurance. Same access. Different rates.",
+      "tension": "Big banks pay near-zero interest because most people never switch. The money costs them almost nothing. Online HYSA accounts compete for deposits by paying actual market rates. They can do it because they have lower overhead.",
+      "reveal": "After 10 years, $50,000 in a big bank savings account grows to about $50,050. The same $50,000 in a 4.5 percent HYSA grows to $77,900.",
+      "twist": "Same money. $27,850 difference. From a 15-minute bank switch. Your emergency fund and short-term savings are being robbed at 0.01 percent. Switching is free. Not switching costs $27,850. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. HYSA rates fluctuate with the federal funds rate. Compare current rates before switching.",
+    "voice": "ed"
+  },
+  {
+    "id": "bank_savings_v2",
+    "archetype": "bank_savings",
+    "title": "The 15-minute switch that earned her $31,000 \ud83c\udfe6",
+    "scenes": {
+      "hook": {
+        "big": "15 minutes.",
+        "accent": "One bank switch.",
+        "sub": "It earned her $31,000 she would have left on the table."
+      },
+      "setup": {
+        "title": "Same savings. One afternoon.",
+        "a": {
+          "label": "STAYED PUT",
+          "sub": "kept savings at big bank, 0.02% APY"
+        },
+        "b": {
+          "label": "SWITCHED",
+          "sub": "moved to HYSA, 4.75% APY, 15 min"
+        },
+        "foot": "Same $65,000. 10 years."
+      },
+      "tension": {
+        "big": "Inertia is the big bank's best product.",
+        "pill": "They count on you not switching.",
+        "ask": "The average American has kept their primary bank for 16 years. The big banks know this. The 0.01% rate is a bet that you will not switch. The bet usually wins. But the switch takes 15 minutes and requires no fee."
+      },
+      "reveal": {
+        "head": "$65,000. 10 years. 0.02% vs 4.75%:",
+        "a": {
+          "label": "STAYED PUT",
+          "sub": "big bank, nearly zero interest earned",
+          "val": 65130,
+          "valt": "~$65,130 after 10yr"
+        },
+        "b": {
+          "label": "SWITCHED",
+          "sub": "HYSA, full rate compounded 10 years",
+          "val": 103700,
+          "valt": "~$103,700 after 10yr"
+        }
+      },
+      "twist": {
+        "l1": "Same $65K. $38,570 difference.",
+        "l2": "The bank switch took 15 minutes.",
+        "l3": "The big bank is counting on your inertia. The cost of inertia here is $38,570. Your savings deserves to work as hard as you do."
+      }
+    },
+    "vo": {
+      "hook": "She moved $65,000 from her big bank to a high-yield savings account. It took 15 minutes. Over 10 years, that afternoon was worth $38,570.",
+      "setup": "Same $65,000. One afternoon. She stayed put at 0.02 percent APY or she switched to a HYSA at 4.75 percent. Both accounts are FDIC insured. Both have full access. One pays real interest.",
+      "tension": "Inertia is the big bank's best product. The average American has kept their primary bank for 16 years. The 0.01 percent rate is a bet that you will not switch. The bet usually wins. But the switch takes 15 minutes and costs nothing.",
+      "reveal": "$65,000 at 0.02 percent for 10 years becomes $65,130. The same amount at 4.75 percent becomes $103,700.",
+      "twist": "Same money. $38,570 difference. The bank switch took 15 minutes. The big bank counted on her inertia. The cost of inertia was $38,570. Your savings deserves to work as hard as you do. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. HYSA rates change with federal funds rate. Compare current rates at time of switching.",
+    "voice": "brian"
+  },
+  {
+    "id": "side_hustle_invested_v1",
+    "archetype": "side_hustle_invested",
+    "title": "He made $800/month side hustling and spent it all \ud83d\ude24",
+    "scenes": {
+      "hook": {
+        "big": "$800/month side hustle.",
+        "accent": "He spent every dollar.",
+        "sub": "Here is what that cost him over 15 years."
+      },
+      "setup": {
+        "title": "Same side income. Two decisions.",
+        "a": {
+          "label": "SPENDER",
+          "sub": "$800/month side hustle went to lifestyle"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "$800/month side hustle went to market"
+        },
+        "foot": "15 years. Same hustle. Different outcome."
+      },
+      "tension": {
+        "big": "Side income is a wealth accelerator \u2014 or lifestyle inflation.",
+        "pill": "It depends entirely on where it goes.",
+        "ask": "Side income is different from salary. It is extra \u2014 above your existing lifestyle. Investing it does not feel like sacrifice because you never relied on it. Spending it converts it from an accelerator into a baseline."
+      },
+      "reveal": {
+        "head": "$800/month side income. 15 years. Spent vs invested:",
+        "a": {
+          "label": "SPENDER",
+          "sub": "better lifestyle, zero wealth acceleration",
+          "val": 0,
+          "valt": "$0 from side hustle"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "invested every dollar, compounded 15yr",
+          "val": 258000,
+          "valt": "~$258K built"
+        }
+      },
+      "twist": {
+        "l1": "Same side hustle. $258,000 difference.",
+        "l2": "From where the money went on the first day.",
+        "l3": "Side income that gets invested is an accelerator. Side income that gets spent is just a higher lifestyle. The hustle was the same. The outcome was not."
+      }
+    },
+    "vo": {
+      "hook": "He built an $800-a-month side hustle and spent every dollar of it. Here is what that decision cost him over 15 years.",
+      "setup": "Same side hustle, two decisions. The spender let the $800 a month improve the lifestyle \u2014 better apartment, more travel, nicer things. The investor put every dollar into the market the day it arrived.",
+      "tension": "Side income is different from salary. It is extra \u2014 above your existing lifestyle. Investing it does not feel like sacrifice because you never relied on it. Spending it converts an accelerator into a baseline. The hustle becomes the new normal instead of the new wealth.",
+      "reveal": "After 15 years, the spender has a better lifestyle and zero wealth acceleration from the side hustle. The investor has $258,000.",
+      "twist": "Same hustle. $258,000 difference. From where the money went on day one. Side income invested is an accelerator. Side income spent is just a higher lifestyle. The hustle was the same. The outcome was not. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes consistent side income and 7% avg annual market return.",
+    "voice": "bill"
+  },
+  {
+    "id": "side_hustle_invested_v2",
+    "archetype": "side_hustle_invested",
+    "title": "The $500/month side hustle that quietly became $1M \ud83e\udd2f",
+    "scenes": {
+      "hook": {
+        "big": "$500/month side hustle.",
+        "accent": "Invested from day one.",
+        "sub": "25 years later \u2014 the number is $1 million."
+      },
+      "setup": {
+        "title": "Same $500/month. Two destinations.",
+        "a": {
+          "label": "LIFESTYLE UPGRADE",
+          "sub": "$500/month improved living standards"
+        },
+        "b": {
+          "label": "WEALTH MACHINE",
+          "sub": "$500/month invested every single month"
+        },
+        "foot": "25 years. One decision changes everything."
+      },
+      "tension": {
+        "big": "The side hustle was the same.",
+        "pill": "The destination was the difference.",
+        "ask": "Five hundred dollars a month feels small. Over 25 years at historical market returns, it becomes seven figures. The side hustle is not the hard part \u2014 deciding what to do with it is."
+      },
+      "reveal": {
+        "head": "$500/month. 25 years. Spent vs invested:",
+        "a": {
+          "label": "LIFESTYLE UPGRADE",
+          "sub": "better life, zero compound growth",
+          "val": 0,
+          "valt": "$0 from hustle"
+        },
+        "b": {
+          "label": "WEALTH MACHINE",
+          "sub": "invested monthly, compounded 25 years",
+          "val": 405000,
+          "valt": "~$405K built"
+        }
+      },
+      "twist": {
+        "l1": "$405,000.",
+        "l2": "From $500/month that already existed.",
+        "l3": "The side hustle did not make her rich. The decision about where the side hustle money went made her rich. $500 a month invested for 25 years is not a side hustle story \u2014 it is a wealth story."
+      }
+    },
+    "vo": {
+      "hook": "Five hundred dollars a month from a side hustle. Invested every month for 25 years. Here is where it ends up.",
+      "setup": "Same $500 a month, two destinations. The lifestyle upgrade improved living standards \u2014 better apartment, nicer things, more travel. The wealth machine invested every dollar the day it arrived, without exception.",
+      "tension": "Five hundred dollars a month feels small. Over 25 years at historical market returns, it grows to $405,000. The side hustle is not the hard part. Deciding what to do with the money is.",
+      "reveal": "After 25 years, the lifestyle upgrade has zero investment growth from the side hustle. The wealth machine has $405,000.",
+      "twist": "$405,000. From $500 a month that already existed. The side hustle did not make her rich. The decision about where the money went made her rich. $500 a month invested for 25 years is not a side hustle story. It is a wealth story. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes consistent monthly investment and 7% avg annual return. Results vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "impulse_investing_v1",
+    "archetype": "impulse_investing",
+    "title": "He sold during the crash. Here's how much it cost him \ud83d\udcc9",
+    "scenes": {
+      "hook": {
+        "big": "Market dropped 34%.",
+        "accent": "He sold everything.",
+        "sub": "That decision cost him $187,000."
+      },
+      "setup": {
+        "title": "Same portfolio. Two reactions.",
+        "a": {
+          "label": "PANIC SELLER",
+          "sub": "sold everything at the bottom, went to cash"
+        },
+        "b": {
+          "label": "HOLDER",
+          "sub": "held through the crash, did not react"
+        },
+        "foot": "Same starting portfolio. One decision."
+      },
+      "tension": {
+        "big": "Selling during a crash locks in the loss.",
+        "pill": "Not selling costs nothing.",
+        "ask": "Market crashes feel permanent while they are happening. Historically they are temporary. The average recovery time for a major US market crash is 2-3 years. Selling at the bottom misses the entire recovery. The market recovered. His cash did not."
+      },
+      "reveal": {
+        "head": "$100K portfolio. Sold at bottom vs held through crash:",
+        "a": {
+          "label": "PANIC SELLER",
+          "sub": "sold at -34%, bought back high, missed recovery",
+          "val": 84000,
+          "valt": "~$84K after 5yr"
+        },
+        "b": {
+          "label": "HOLDER",
+          "sub": "stayed invested, recovered and grew",
+          "val": 138000,
+          "valt": "~$138K after 5yr"
+        }
+      },
+      "twist": {
+        "l1": "Same portfolio. $54,000 difference.",
+        "l2": "From one decision made in a panic.",
+        "l3": "The crash was temporary. The sell decision was not. The market recovered in 23 months. His portfolio did not fully recover for 8 years \u2014 because he missed the rebound."
+      }
+    },
+    "vo": {
+      "hook": "The market dropped 34 percent. He sold everything. He went to cash. That one decision cost him $54,000. Here is the math.",
+      "setup": "Same $100,000 portfolio. Two reactions. The panic seller sold everything at the bottom and moved to cash. The holder did nothing \u2014 no trades, no changes, no reactions.",
+      "tension": "Selling during a crash locks in the loss. Not selling costs nothing. Market crashes feel permanent while they are happening. They are historically temporary. The average recovery from a major US market crash is 2 to 3 years. The holder waited. The panic seller missed it.",
+      "reveal": "Five years after the crash, the panic seller who sold and bought back near the top has about $84,000. The holder who did nothing has $138,000.",
+      "twist": "Same portfolio. $54,000 difference. From one decision made in a moment of panic. The crash was temporary. The sell decision was not. The market recovered in 23 months. His portfolio took 8 years. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Past market performance does not guarantee future results. Market crashes and recovery times vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "impulse_investing_v2",
+    "archetype": "impulse_investing",
+    "title": "She invested $1,000 in a hot stock tip. The math was brutal \ud83d\udcc9",
+    "scenes": {
+      "hook": {
+        "big": "Hot stock tip.",
+        "accent": "$1,000 in. $0 out.",
+        "sub": "Here is what that $1,000 would have been in an index fund."
+      },
+      "setup": {
+        "title": "Same $1,000. Two decisions.",
+        "a": {
+          "label": "STOCK PICKER",
+          "sub": "invested in a hot tip, stock went to zero"
+        },
+        "b": {
+          "label": "INDEX INVESTOR",
+          "sub": "put $1,000 in a total market index fund"
+        },
+        "foot": "20 years. The math is painful."
+      },
+      "tension": {
+        "big": "Individual stocks can go to zero. Indexes cannot.",
+        "pill": "The entire market would have to collapse.",
+        "ask": "Over any 20-year period, the US total market index has never produced a negative return. Individual stocks fail every year. The hot tip is a lottery ticket. The index fund is a bet on the entire US economy."
+      },
+      "reveal": {
+        "head": "$1,000. 20 years. Stock tip vs total market index:",
+        "a": {
+          "label": "STOCK PICKER",
+          "sub": "company failed, total loss",
+          "val": 0,
+          "valt": "$0 remaining"
+        },
+        "b": {
+          "label": "INDEX INVESTOR",
+          "sub": "total market, 20 year compound growth",
+          "val": 3870,
+          "valt": "~$3,870"
+        }
+      },
+      "twist": {
+        "l1": "Zero vs $3,870.",
+        "l2": "From the same $1,000.",
+        "l3": "The hot tip had one story. The index fund had 3,000 stories \u2014 and when one failed, 2,999 others kept going. Boring wins."
+      }
+    },
+    "vo": {
+      "hook": "She got a hot stock tip, put in $1,000, and watched it go to zero. Here is what that $1,000 would have become if she had put it in a total market index fund instead.",
+      "setup": "Same $1,000, two decisions. The stock picker followed the tip and invested in a single company. The index investor put the same amount into a total market index fund and forgot about it.",
+      "tension": "Individual stocks can go to zero. Indexes cannot \u2014 the entire US market would have to collapse. Over any 20-year period in history, the US total market index has never produced a negative return. The hot tip is a lottery ticket. The index fund is a bet on the entire US economy.",
+      "reveal": "After 20 years, the stock went to zero. The $1,000 in the total market index fund grew to $3,870.",
+      "twist": "Zero versus $3,870. From the same $1,000. The hot tip had one story. The index fund had 3,000 stories \u2014 and when one failed, 2,999 others kept going. Boring wins. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Past performance does not guarantee future results. Individual stocks carry risk of total loss.",
+    "voice": "bill"
+  },
+  {
+    "id": "divorce_cost_v1",
+    "archetype": "divorce_cost",
+    "title": "The financial cost of divorce nobody talks about \ud83d\udc94",
+    "scenes": {
+      "hook": {
+        "big": "Average divorce cost: $15,000.",
+        "accent": "That is just the lawyer.",
+        "sub": "The real number is 10 times that."
+      },
+      "setup": {
+        "title": "Same wealth. Two outcomes.",
+        "a": {
+          "label": "DIVORCE PATH",
+          "sub": "legal fees, asset split, restart costs"
+        },
+        "b": {
+          "label": "TOGETHER PATH",
+          "sub": "dual income, shared expenses, compounding"
+        },
+        "foot": "10 years after the decision."
+      },
+      "tension": {
+        "big": "Divorce resets the financial clock.",
+        "pill": "The asset split is the visible cost. The lost compounding is the invisible one.",
+        "ask": "Legal fees average $15,000. Split assets mean each party rebuilds from half. Dual income households spend 30-40% less per person than singles. The compounding advantage of shared expenses over 10 years is enormous."
+      },
+      "reveal": {
+        "head": "10 years after. Same starting wealth. Split vs together:",
+        "a": {
+          "label": "DIVORCE PATH",
+          "sub": "legal fees, half assets, single income costs",
+          "val": 190000,
+          "valt": "~$190K net worth"
+        },
+        "b": {
+          "label": "TOGETHER PATH",
+          "sub": "shared costs, dual income, compounding",
+          "val": 580000,
+          "valt": "~$580K net worth"
+        }
+      },
+      "twist": {
+        "l1": "Same starting point. $390,000 difference.",
+        "l2": "From the compounding of shared financial lives.",
+        "l3": "This is not about whether to divorce. It is about understanding the full financial cost of one of life's biggest decisions \u2014 beyond the lawyer bill."
+      }
+    },
+    "vo": {
+      "hook": "The average divorce costs $15,000 in legal fees. That is the number people focus on. The real financial cost over 10 years is closer to $390,000 when you account for everything the math reveals.",
+      "setup": "Same starting wealth, two paths. The divorce path involves legal fees, splitting assets in half, and rebuilding on a single income. The together path keeps dual income, shared expenses, and combined compounding.",
+      "tension": "Legal fees average $15,000. Split assets mean each party rebuilds from half. Dual-income households spend 30 to 40 percent less per person than singles. The compounding advantage of shared expenses over 10 years is enormous \u2014 and invisible until you run the numbers.",
+      "reveal": "Ten years after the decision, the divorce path produces a net worth of about $190,000. The together path produces $580,000.",
+      "twist": "Same starting point. $390,000 difference. From the compounding of shared financial lives. This is not about whether to divorce. It is about understanding the full financial cost beyond the lawyer bill \u2014 so you can make the decision with complete information. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Divorce costs vary enormously by jurisdiction, assets, and circumstances. Consult a family law attorney for your situation.",
+    "voice": "ed"
+  },
+  {
+    "id": "dividend_reinvest_v1",
+    "archetype": "dividend_reinvest",
+    "title": "Spending your dividends is a $200K mistake \ud83d\udcb0",
+    "scenes": {
+      "hook": {
+        "big": "Dividends: spend or reinvest?",
+        "accent": "Most people spend them.",
+        "sub": "Here is the $200,000 cost of that choice."
+      },
+      "setup": {
+        "title": "Same dividend portfolio. Two choices.",
+        "a": {
+          "label": "DIVIDEND SPENDER",
+          "sub": "takes quarterly dividends as cash income"
+        },
+        "b": {
+          "label": "DRIP INVESTOR",
+          "sub": "auto-reinvests every dividend payment"
+        },
+        "foot": "25 years. Same starting portfolio."
+      },
+      "tension": {
+        "big": "Dividends reinvested buy more shares.",
+        "pill": "More shares pay more dividends. It compounds.",
+        "ask": "A dividend reinvestment plan \u2014 DRIP \u2014 is the quietest compounding engine in investing. Each quarter, dividends buy fractional shares. Those shares pay next quarter's dividends. The snowball accelerates without you doing anything."
+      },
+      "reveal": {
+        "head": "$50K dividend portfolio. 25 years. Spend vs DRIP:",
+        "a": {
+          "label": "DIVIDEND SPENDER",
+          "sub": "took cash, portfolio grew only by appreciation",
+          "val": 271000,
+          "valt": "~$271K after 25yr"
+        },
+        "b": {
+          "label": "DRIP INVESTOR",
+          "sub": "reinvested every dividend, full compounding",
+          "val": 478000,
+          "valt": "~$478K after 25yr"
+        }
+      },
+      "twist": {
+        "l1": "Same portfolio. $207,000 difference.",
+        "l2": "From one checkbox in your brokerage account.",
+        "l3": "DRIP reinvestment is a single setting in your brokerage. Most accounts default to cash. Changing it takes 60 seconds. Over 25 years, those 60 seconds are worth $207,000."
+      }
+    },
+    "vo": {
+      "hook": "Every quarter you get dividend payments. Most investors take them as cash. Here is what reinvesting them instead would have been worth over 25 years.",
+      "setup": "Same $50,000 dividend portfolio, two choices. The dividend spender takes every quarterly payment as cash income. The DRIP investor auto-reinvests every dividend \u2014 automatically buying more shares with each payment.",
+      "tension": "Dividends reinvested buy more shares. More shares pay more dividends. It compounds. A dividend reinvestment plan, DRIP, is the quietest compounding engine in investing. Each quarter, dividends buy fractional shares. Those shares pay next quarter's dividends. The snowball builds without effort.",
+      "reveal": "After 25 years, the dividend spender's $50,000 grows to about $271,000 through appreciation alone. The DRIP investor grows to $478,000 \u2014 the same portfolio, plus 25 years of reinvested compounding.",
+      "twist": "Same portfolio. $207,000 difference. From one checkbox in your brokerage account. DRIP reinvestment is a single setting. Most accounts default to cash. Changing it takes 60 seconds. Those 60 seconds are worth $207,000. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Dividend rates and market returns vary. Results depend on portfolio composition and market conditions.",
+    "voice": "brian"
+  },
+  {
+    "id": "dividend_reinvest_v2",
+    "archetype": "dividend_reinvest",
+    "title": "The 60-second brokerage setting worth $150,000 \ud83d\udcb0",
+    "scenes": {
+      "hook": {
+        "big": "60 seconds.",
+        "accent": "One brokerage setting.",
+        "sub": "Over 20 years, it is worth $150,000."
+      },
+      "setup": {
+        "title": "Same account. One setting changes everything.",
+        "a": {
+          "label": "CASH DIVIDENDS",
+          "sub": "dividends paid to cash, sit uninvested"
+        },
+        "b": {
+          "label": "DRIP ON",
+          "rest": "dividends auto-reinvested every quarter"
+        },
+        "foot": "$75K portfolio. 20 years."
+      },
+      "tension": {
+        "big": "Cash dividends sit. Reinvested dividends compound.",
+        "pill": "The difference is whether your dividends go to work immediately.",
+        "ask": "When dividends sit in cash, they earn near zero until you manually reinvest. Most people forget. The DRIP setting removes the human from the loop entirely \u2014 every payment goes straight back into the market the same day it arrives."
+      },
+      "reveal": {
+        "head": "$75K portfolio. 20 years. Cash dividends vs DRIP:",
+        "a": {
+          "label": "CASH DIVIDENDS",
+          "sub": "dividends sat, late reinvestment or none",
+          "val": 289000,
+          "valt": "~$289K after 20yr"
+        },
+        "b": {
+          "label": "DRIP ON",
+          "sub": "every dividend reinvested immediately",
+          "val": 437000,
+          "valt": "~$437K after 20yr"
+        }
+      },
+      "twist": {
+        "l1": "Same $75K. $148,000 difference.",
+        "l2": "From removing the human from the loop.",
+        "l3": "DRIP means your dividends never sit idle. Every payment goes straight back into the market. One setting. Zero effort. $148,000 compounded."
+      }
+    },
+    "vo": {
+      "hook": "There is a setting in your brokerage account that most people never turn on. It takes 60 seconds to enable. Over 20 years, it is worth $148,000.",
+      "setup": "Same $75,000 portfolio. One setting. Cash dividends: payments go to your cash balance and sit there until you manually reinvest. DRIP on: every dividend automatically buys more shares the same day it arrives.",
+      "tension": "When dividends sit in cash, they earn near zero until you act. Most people forget. The DRIP setting removes the human from the loop entirely. Every payment goes straight back into the market the day it arrives \u2014 no delay, no forgetting, no drag.",
+      "reveal": "After 20 years, the cash dividend account grows to about $289,000. The DRIP account grows to $437,000.",
+      "twist": "Same $75,000. $148,000 difference. From removing the human from the loop. DRIP means your dividends never sit idle. One setting. Zero ongoing effort. $148,000 compounded. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Dividend rates, reinvestment timing, and market returns vary. Results depend on portfolio and market conditions.",
+    "voice": "bill"
+  },
+  {
+    "id": "401k_loan_v1",
+    "archetype": "401k_loan",
+    "title": "Taking a 401k loan is worse than it looks \ud83d\ude2c",
+    "scenes": {
+      "hook": {
+        "big": "401k loan: borrow your own money.",
+        "accent": "Sounds harmless.",
+        "sub": "The hidden cost is $95,000."
+      },
+      "setup": {
+        "title": "Same emergency. Two solutions.",
+        "a": {
+          "label": "401K BORROWER",
+          "sub": "took $20K loan from 401k at 5% interest"
+        },
+        "b": {
+          "label": "HELOC USER",
+          "sub": "used HELOC at 7%, left 401k untouched"
+        },
+        "foot": "Which costs more over 20 years?"
+      },
+      "tension": {
+        "big": "You pay yourself interest. Sounds great.",
+        "pill": "But the loaned money stops compounding.",
+        "ask": "The 401k loan interest goes back to you \u2014 but the $20,000 you removed from the market stops earning for the entire loan period. If the market returns 7% and you are paying 5% interest to yourself, you are losing 2% on $20,000 every year the money is out."
+      },
+      "reveal": {
+        "head": "$20K 401k loan. 5-year repayment. Compounding opportunity cost:",
+        "a": {
+          "label": "401K BORROWER",
+          "sub": "paid self back with interest, missed market growth",
+          "val": 195000,
+          "valt": "~$195K at retirement"
+        },
+        "b": {
+          "label": "LEFT IT IN",
+          "sub": "$20K stayed invested, compounded 20yr",
+          "val": 289000,
+          "valt": "~$289K at retirement"
+        }
+      },
+      "twist": {
+        "l1": "Same emergency handled. $94,000 difference.",
+        "l2": "From the compounding the loan missed.",
+        "l3": "The interest goes back to you \u2014 but the market return you missed does not. A 401k loan is not free money. It is a 5-year pause on $20,000 of compound growth."
+      }
+    },
+    "vo": {
+      "hook": "A 401k loan sounds like the best kind of loan. You borrow your own money and pay yourself back with interest. Here is the hidden cost nobody mentions: $94,000.",
+      "setup": "Same emergency, two solutions. One person takes a $20,000 loan from their 401k at 5 percent interest. The other finds an alternative and leaves the 401k completely untouched.",
+      "tension": "You pay yourself back with interest \u2014 that part is true. But the $20,000 you removed from the market stops compounding for the entire loan period. If the market returns 7 percent and you are paying 5 percent to yourself, you are losing 2 percent on $20,000 every year the money is out.",
+      "reveal": "After 20 years, the person who took the loan has about $195,000 at retirement. The person who left the 401k untouched has $289,000.",
+      "twist": "Same emergency handled. $94,000 difference. From the compounding the loan missed. The interest goes back to you. The market return you missed does not. A 401k loan is a 5-year pause on $20,000 of compound growth. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. 401k loan rules vary by plan. There are also tax implications if you leave your employer. Consult a financial advisor.",
+    "voice": "ed"
+  },
+  {
+    "id": "401k_loan_v2",
+    "archetype": "401k_loan",
+    "title": "She borrowed from her 401k. The real cost shocked her \ud83d\ude2c",
+    "scenes": {
+      "hook": {
+        "big": "$30,000 from her 401k.",
+        "accent": "Paid it back in 3 years.",
+        "sub": "Still cost her $140,000."
+      },
+      "setup": {
+        "title": "Same need. Same repayment. Different cost.",
+        "a": {
+          "label": "401K BORROWER",
+          "sub": "borrowed $30K, repaid over 3 years"
+        },
+        "b": {
+          "label": "LEFT IT IN",
+          "sub": "found another way, 401k untouched"
+        },
+        "foot": "25 years to retirement. What is the cost?"
+      },
+      "tension": {
+        "big": "Three years out of the market. That is the real loan term.",
+        "pill": "On $30,000, three years of 7% market growth is $6,000 gone.",
+        "ask": "Then compound that $6,000 gap for 22 more years. The $30,000 that sat out of the market for 3 years falls $140,000 behind by retirement \u2014 because compounding does not pause while you repay."
+      },
+      "reveal": {
+        "head": "$30K loan. Repaid in 3yr. 25yr to retirement:",
+        "a": {
+          "label": "401K BORROWER",
+          "sub": "repaid fully, but missed 3yr of growth",
+          "val": 321000,
+          "valt": "~$321K at retirement"
+        },
+        "b": {
+          "label": "LEFT IT IN",
+          "sub": "never interrupted, full 25yr compounding",
+          "val": 463000,
+          "valt": "~$463K at retirement"
+        }
+      },
+      "twist": {
+        "l1": "Fully repaid. Still $142,000 behind.",
+        "l2": "Because three years of compounding on $30,000 snowballs for 22 more years.",
+        "l3": "She paid herself back with interest. She just could not pay back the compounding she missed. The loan was repaid. The cost was not."
+      }
+    },
+    "vo": {
+      "hook": "She borrowed $30,000 from her 401k and paid it back in full in 3 years with interest. It still cost her $142,000. Here is why.",
+      "setup": "Same need, same repayment. She borrowed $30,000 and repaid it completely. But for 3 years, that money sat outside the market \u2014 not compounding, not growing.",
+      "tension": "Three years out of the market is the real loan term. On $30,000, three years of 7 percent market growth is $6,000 in missed gains. Then compound that $6,000 gap for 22 more years until retirement. Compounding does not pause while you repay.",
+      "reveal": "By retirement, the 401k borrower who repaid in full has $321,000. The person who left the 401k untouched has $463,000.",
+      "twist": "Fully repaid. Still $142,000 behind. Because three years of missed compounding on $30,000 snowballs for 22 more years. She paid herself back with interest. She could not pay back the compounding she missed. The loan was repaid. The cost was not. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. 401k loan rules, tax implications, and repayment terms vary by plan and circumstances.",
+    "voice": "brian"
+  }
+]

@@ -1,0 +1,23 @@
+# Rendered video output
+finance/out/
+*.mp4
+*.mp3
+*.wav
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Font files (large binary)
+*.ttf
+
+# Banner/profile images (large)
+finance/yt_banner.png
+finance/yt_profile.png
+
+# Logs
+*.log
+.DS_Store
+*.jpg
+*.png

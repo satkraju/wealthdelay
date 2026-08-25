@@ -1,0 +1,75 @@
+{
+  "title": "Waiting just 5 years to invest cost her $247,000",
+  "tool_url": "https://wealthdelay.com/investing-calculators",
+  "disclaimer": "Hypothetical: $300/month at a 7% average annual return, compounded monthly. Not financial advice — real returns vary.",
+  "scenes": [
+    {
+      "narration": "I'll start investing in a few years. That one sentence is incredibly expensive. Guess how expensive.",
+      "visual": {
+        "template": "fin-statement",
+        "hero": true,
+        "lines": [
+          { "text": "\"I'll start investing" },
+          { "text": "in a few years.\"" },
+          { "text": "That sentence is expensive.", "tone": "gold" }
+        ]
+      }
+    },
+    {
+      "narration": "Three hundred dollars a month at seven percent, both investing until sixty-five. One person starts at twenty-five. The other waits just five years and starts at thirty.",
+      "visual": {
+        "template": "milestone-timeline",
+        "caption": "$300/month at 7%, both invest to 65",
+        "milestones": [
+          { "age": "25", "label": "Starts investing — no waiting", "tone": "green" },
+          { "age": "30", "label": "Waits 5 years, then starts", "tone": "gold" },
+          { "age": "65", "label": "Both stop here", "tone": "forest" }
+        ]
+      }
+    },
+    {
+      "narration": "Just five years later. How big is the gap by sixty-five? Take a guess before the reveal.",
+      "visual": {
+        "template": "fin-statement",
+        "lines": [
+          { "text": "Just 5 years later." },
+          { "text": "How big is the gap at 65?", "tone": "gold" }
+        ]
+      }
+    },
+    {
+      "narration": "At sixty-five, the early starter has about seven hundred and eighty-seven thousand dollars. The one who waited five years? About five hundred and forty thousand.",
+      "visual": {
+        "template": "growth-curve",
+        "caption": "$300/month at 7% average return",
+        "xAxisLabel": "Age 25 to 65",
+        "curves": [
+          { "label": "Starts at 25", "endLabel": "$787k", "startFrac": 0, "tone": "green" },
+          { "label": "Starts at 30", "endLabel": "$540k", "startFrac": 0.125, "tone": "gold" }
+        ]
+      }
+    },
+    {
+      "narration": "A five year delay cost about two hundred and forty-seven thousand dollars. The best time to start was yesterday. The second best is today.",
+      "visual": {
+        "template": "big-number-callout",
+        "hero": true,
+        "pre": "A 5-year delay cost",
+        "number": "$247,000",
+        "post": "Best time to start: today."
+      }
+    },
+    {
+      "narration": "Free calculator on wealthdelay dot com. Link's below.",
+      "visual": {
+        "template": "fin-statement",
+        "hero": true,
+        "footerUrl": true,
+        "lines": [
+          { "text": "Don't wait 5 years." },
+          { "text": "Run your numbers free.", "tone": "gold" }
+        ]
+      }
+    }
+  ]
+}

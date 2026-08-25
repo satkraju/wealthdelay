@@ -1,0 +1,4179 @@
+[
+  {
+    "id": "early_stop_v1",
+    "title": "She invested for 10 years and STOPPED \u2014 still beat him \ud83d\ude33",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "compound interest",
+      "investing",
+      "early investing",
+      "personal finance",
+      "money tips",
+      "retirement"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "She invested for 10 years, then STOPPED.",
+        "accent": "He invested for 30 years straight.",
+        "sub": "Guess who has more at 65?"
+      },
+      "setup": {
+        "title": "Both put in $100/month. Same 7% return.",
+        "a": {
+          "label": "ANNA",
+          "sub": "invests 25\u201335, then stops"
+        },
+        "b": {
+          "label": "BEN",
+          "sub": "invests 35\u201365, never stops"
+        },
+        "foot": "Anna stops after 10 years. Ben keeps going for 30."
+      },
+      "tension": {
+        "big": [
+          "Anna put in $12,000 total.",
+          "Ben put in $36,000 total."
+        ],
+        "pill": "3.0x more",
+        "ask": "So Ben wins\u2026 right? Guess again."
+      },
+      "reveal": {
+        "head": "At age 65:",
+        "a": {
+          "label": "ANNA",
+          "val": 132,
+          "valt": "$132k",
+          "sub": "put in $12,000"
+        },
+        "b": {
+          "label": "BEN",
+          "val": 122,
+          "valt": "$122k",
+          "sub": "put in $36,000"
+        }
+      },
+      "twist": {
+        "l1": "Anna invested 3.0x less\u2026",
+        "l2": "\u2026and still ended with more.",
+        "l3": "Starting early beats trying harder later."
+      }
+    },
+    "vo": {
+      "hook": "Why does the person who invests for only 10 years sometimes end up richer than someone who invests for 30? Here's a true example.",
+      "setup": "Both put in 100 dollars a month at a seven percent return. Anna invests from 25 to 35, then stops forever. Ben starts at 35 and never stops.",
+      "tension": "Here's the thing. Anna only put in $12,000 total. Ben put in $36,000. 3.0 times more. So Ben wins, right? Guess again.",
+      "reveal": "At sixty-five, Anna has about $132k. Ben has about $122k. Anna wins, with way less money in.",
+      "twist": "Anna invested 3.0 times less than Ben, and still ended up with more. That's the power of starting early. Run it yourself, free calculator on wealthdelay dot com. Link's right below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "early_stop_v2",
+    "title": "She invested for 8 years and STOPPED \u2014 still beat him \ud83d\ude33",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "compound interest",
+      "investing",
+      "early investing",
+      "personal finance",
+      "money tips",
+      "retirement"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "She invested for 8 years, then STOPPED.",
+        "accent": "He invested for 35 years straight.",
+        "sub": "Guess who has more at 65?"
+      },
+      "setup": {
+        "title": "Both put in $150/month. Same 7% return.",
+        "a": {
+          "label": "ANNA",
+          "sub": "invests 22\u201330, then stops"
+        },
+        "b": {
+          "label": "BEN",
+          "sub": "invests 30\u201365, never stops"
+        },
+        "foot": "Anna stops after 8 years. Ben keeps going for 35."
+      },
+      "tension": {
+        "big": [
+          "Anna put in $14,400 total.",
+          "Ben put in $63,000 total."
+        ],
+        "pill": "4.4x more",
+        "ask": "So Ben wins\u2026 right? Guess again."
+      },
+      "reveal": {
+        "head": "At age 65:",
+        "a": {
+          "label": "ANNA",
+          "val": 205,
+          "valt": "$205k",
+          "sub": "put in $14,400"
+        },
+        "b": {
+          "label": "BEN",
+          "val": 270,
+          "valt": "$270k",
+          "sub": "put in $63,000"
+        }
+      },
+      "twist": {
+        "l1": "Anna invested 4.4x less\u2026",
+        "l2": "\u2026and still ended with more.",
+        "l3": "Starting early beats trying harder later."
+      }
+    },
+    "vo": {
+      "hook": "Why does the person who invests for only 8 years sometimes end up richer than someone who invests for 35? Here's a true example.",
+      "setup": "Both put in 150 dollars a month at a seven percent return. Anna invests from 22 to 30, then stops forever. Ben starts at 30 and never stops.",
+      "tension": "Here's the thing. Anna only put in $14,400 total. Ben put in $63,000. 4.4 times more. So Ben wins, right? Guess again.",
+      "reveal": "At sixty-five, Anna has about $205k. Ben has about $270k. Ben actually wins this time, with way less money in.",
+      "twist": "Anna invested 4.4 times less than Ben, and still ended up close behind. That's the power of starting early. Run it yourself, free calculator on wealthdelay dot com. Link's right below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "early_stop_v3",
+    "title": "She invested for 12 years and STOPPED \u2014 still beat him \ud83d\ude33",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "compound interest",
+      "investing",
+      "early investing",
+      "personal finance",
+      "money tips",
+      "retirement"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "She invested for 12 years, then STOPPED.",
+        "accent": "He invested for 29 years straight.",
+        "sub": "Guess who has more at 65?"
+      },
+      "setup": {
+        "title": "Both put in $200/month. Same 7% return.",
+        "a": {
+          "label": "ANNA",
+          "sub": "invests 24\u201336, then stops"
+        },
+        "b": {
+          "label": "BEN",
+          "sub": "invests 36\u201365, never stops"
+        },
+        "foot": "Anna stops after 12 years. Ben keeps going for 29."
+      },
+      "tension": {
+        "big": [
+          "Anna put in $28,800 total.",
+          "Ben put in $69,600 total."
+        ],
+        "pill": "2.4x more",
+        "ask": "So Ben wins\u2026 right? Guess again."
+      },
+      "reveal": {
+        "head": "At age 65:",
+        "a": {
+          "label": "ANNA",
+          "val": 320,
+          "valt": "$320k",
+          "sub": "put in $28,800"
+        },
+        "b": {
+          "label": "BEN",
+          "val": 225,
+          "valt": "$225k",
+          "sub": "put in $69,600"
+        }
+      },
+      "twist": {
+        "l1": "Anna invested 2.4x less\u2026",
+        "l2": "\u2026and still ended with more.",
+        "l3": "Starting early beats trying harder later."
+      }
+    },
+    "vo": {
+      "hook": "Why does the person who invests for only 12 years sometimes end up richer than someone who invests for 29? Here's a true example.",
+      "setup": "Both put in 200 dollars a month at a seven percent return. Anna invests from 24 to 36, then stops forever. Ben starts at 36 and never stops.",
+      "tension": "Here's the thing. Anna only put in $28,800 total. Ben put in $69,600. 2.4 times more. So Ben wins, right? Guess again.",
+      "reveal": "At sixty-five, Anna has about $320k. Ben has about $225k. Anna wins, with way less money in.",
+      "twist": "Anna invested 2.4 times less than Ben, and still ended up with more. That's the power of starting early. Run it yourself, free calculator on wealthdelay dot com. Link's right below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "early_stop_v4",
+    "title": "She invested for 15 years and STOPPED \u2014 still beat him \ud83d\ude33",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "compound interest",
+      "investing",
+      "early investing",
+      "personal finance",
+      "money tips",
+      "retirement"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "She invested for 15 years, then STOPPED.",
+        "accent": "He invested for 30 years straight.",
+        "sub": "Guess who has more at 65?"
+      },
+      "setup": {
+        "title": "Both put in $100/month. Same 7% return.",
+        "a": {
+          "label": "ANNA",
+          "sub": "invests 20\u201335, then stops"
+        },
+        "b": {
+          "label": "BEN",
+          "sub": "invests 35\u201365, never stops"
+        },
+        "foot": "Anna stops after 15 years. Ben keeps going for 30."
+      },
+      "tension": {
+        "big": [
+          "Anna put in $18,000 total.",
+          "Ben put in $36,000 total."
+        ],
+        "pill": "2.0x more",
+        "ask": "So Ben wins\u2026 right? Guess again."
+      },
+      "reveal": {
+        "head": "At age 65:",
+        "a": {
+          "label": "ANNA",
+          "val": 241,
+          "valt": "$241k",
+          "sub": "put in $18,000"
+        },
+        "b": {
+          "label": "BEN",
+          "val": 122,
+          "valt": "$122k",
+          "sub": "put in $36,000"
+        }
+      },
+      "twist": {
+        "l1": "Anna invested 2.0x less\u2026",
+        "l2": "\u2026and still ended with more.",
+        "l3": "Starting early beats trying harder later."
+      }
+    },
+    "vo": {
+      "hook": "Why does the person who invests for only 15 years sometimes end up richer than someone who invests for 30? Here's a true example.",
+      "setup": "Both put in 100 dollars a month at a seven percent return. Anna invests from 20 to 35, then stops forever. Ben starts at 35 and never stops.",
+      "tension": "Here's the thing. Anna only put in $18,000 total. Ben put in $36,000. 2.0 times more. So Ben wins, right? Guess again.",
+      "reveal": "At sixty-five, Anna has about $241k. Ben has about $122k. Anna wins, with way less money in.",
+      "twist": "Anna invested 2.0 times less than Ben, and still ended up with more. That's the power of starting early. Run it yourself, free calculator on wealthdelay dot com. Link's right below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "early_stop_v5",
+    "title": "She invested for 10 years and STOPPED \u2014 still beat him \ud83d\ude33",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "compound interest",
+      "investing",
+      "early investing",
+      "personal finance",
+      "money tips",
+      "retirement"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "She invested for 10 years, then STOPPED.",
+        "accent": "He invested for 27 years straight.",
+        "sub": "Guess who has more at 65?"
+      },
+      "setup": {
+        "title": "Both put in $250/month. Same 7% return.",
+        "a": {
+          "label": "ANNA",
+          "sub": "invests 28\u201338, then stops"
+        },
+        "b": {
+          "label": "BEN",
+          "sub": "invests 38\u201365, never stops"
+        },
+        "foot": "Anna stops after 10 years. Ben keeps going for 27."
+      },
+      "tension": {
+        "big": [
+          "Anna put in $30,000 total.",
+          "Ben put in $81,000 total."
+        ],
+        "pill": "2.7x more",
+        "ask": "So Ben wins\u2026 right? Guess again."
+      },
+      "reveal": {
+        "head": "At age 65:",
+        "a": {
+          "label": "ANNA",
+          "val": 269,
+          "valt": "$269k",
+          "sub": "put in $30,000"
+        },
+        "b": {
+          "label": "BEN",
+          "val": 239,
+          "valt": "$239k",
+          "sub": "put in $81,000"
+        }
+      },
+      "twist": {
+        "l1": "Anna invested 2.7x less\u2026",
+        "l2": "\u2026and still ended with more.",
+        "l3": "Starting early beats trying harder later."
+      }
+    },
+    "vo": {
+      "hook": "Why does the person who invests for only 10 years sometimes end up richer than someone who invests for 27? Here's a true example.",
+      "setup": "Both put in 250 dollars a month at a seven percent return. Anna invests from 28 to 38, then stops forever. Ben starts at 38 and never stops.",
+      "tension": "Here's the thing. Anna only put in $30,000 total. Ben put in $81,000. 2.7 times more. So Ben wins, right? Guess again.",
+      "reveal": "At sixty-five, Anna has about $269k. Ben has about $239k. Anna wins, with way less money in.",
+      "twist": "Anna invested 2.7 times less than Ben, and still ended up with more. That's the power of starting early. Run it yourself, free calculator on wealthdelay dot com. Link's right below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "daily_habit_v1",
+    "title": "Your daily coffee habit is quietly costing you $220k \ud83d\ude2d",
+    "tool_url": "https://wealthdelay.com/daily-habit-true-cost-calculator",
+    "tags": [
+      "money tips",
+      "compound interest",
+      "personal finance",
+      "saving money",
+      "investing",
+      "budgeting"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "That daily coffee?",
+        "accent": "It's about $6 a day.",
+        "sub": "Here's what it really costs you."
+      },
+      "setup": {
+        "title": "$6/day = $180/month, invested at 7% for 30 years.",
+        "a": {
+          "label": "SPENT",
+          "sub": "on coffee, never invested"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "same money, in the market instead"
+        },
+        "foot": "Same $180/month. One path spends it, one invests it."
+      },
+      "tension": {
+        "big": [
+          "Over 30 years you'd put in $64,800."
+        ],
+        "pill": "",
+        "ask": "That's just the cash you put in. Now the scary part."
+      },
+      "reveal": {
+        "head": "If invested instead:",
+        "a": {
+          "label": "CASH IN",
+          "val": 65,
+          "valt": "$65k",
+          "sub": "what you actually paid"
+        },
+        "b": {
+          "label": "GROWN TO",
+          "val": 220,
+          "valt": "$220k",
+          "sub": "after 30 years at 7%"
+        }
+      },
+      "twist": {
+        "l1": "That daily coffee isn't really $6.",
+        "l2": "It's $220k of your future, gone.",
+        "l3": "Small leaks sink big ships."
+      }
+    },
+    "vo": {
+      "hook": "Why does a tiny daily habit like coffee matter so much to your future net worth? Let's do the actual math.",
+      "setup": "That coffee costs around $6 a day, about $180 a month. We're going to invest that same amount at a seven percent return for 30 years.",
+      "tension": "Over 30 years, you'd put in $64,800 of your own cash. That's just the principal. Here's what it actually grows to.",
+      "reveal": "Invested instead of spent, that same money grows to about $220k.",
+      "twist": "That daily coffee isn't really costing you $6. It's costing you $220k of future wealth. Run your own number free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "daily_habit_v2",
+    "title": "Your daily takeout lunch habit is quietly costing you $340k \ud83d\ude2d",
+    "tool_url": "https://wealthdelay.com/daily-habit-true-cost-calculator",
+    "tags": [
+      "money tips",
+      "compound interest",
+      "personal finance",
+      "saving money",
+      "investing",
+      "budgeting"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "That daily takeout lunch?",
+        "accent": "It's about $14 a day.",
+        "sub": "Here's what it really costs you."
+      },
+      "setup": {
+        "title": "$14/day = $420/month, invested at 7% for 25 years.",
+        "a": {
+          "label": "SPENT",
+          "sub": "on takeout lunch, never invested"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "same money, in the market instead"
+        },
+        "foot": "Same $420/month. One path spends it, one invests it."
+      },
+      "tension": {
+        "big": [
+          "Over 25 years you'd put in $126,000."
+        ],
+        "pill": "",
+        "ask": "That's just the cash you put in. Now the scary part."
+      },
+      "reveal": {
+        "head": "If invested instead:",
+        "a": {
+          "label": "CASH IN",
+          "val": 126,
+          "valt": "$126k",
+          "sub": "what you actually paid"
+        },
+        "b": {
+          "label": "GROWN TO",
+          "val": 340,
+          "valt": "$340k",
+          "sub": "after 25 years at 7%"
+        }
+      },
+      "twist": {
+        "l1": "That daily takeout lunch isn't really $14.",
+        "l2": "It's $340k of your future, gone.",
+        "l3": "Small leaks sink big ships."
+      }
+    },
+    "vo": {
+      "hook": "Why does a tiny daily habit like takeout lunch matter so much to your future net worth? Let's do the actual math.",
+      "setup": "That takeout lunch costs around $14 a day, about $420 a month. We're going to invest that same amount at a seven percent return for 25 years.",
+      "tension": "Over 25 years, you'd put in $126,000 of your own cash. That's just the principal. Here's what it actually grows to.",
+      "reveal": "Invested instead of spent, that same money grows to about $340k.",
+      "twist": "That daily takeout lunch isn't really costing you $14. It's costing you $340k of future wealth. Run your own number free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "daily_habit_v3",
+    "title": "Your daily rideshare habit is quietly costing you $540k \ud83d\ude2d",
+    "tool_url": "https://wealthdelay.com/daily-habit-true-cost-calculator",
+    "tags": [
+      "money tips",
+      "compound interest",
+      "personal finance",
+      "saving money",
+      "investing",
+      "budgeting"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "That daily rideshare?",
+        "accent": "It's about $10 a day.",
+        "sub": "Here's what it really costs you."
+      },
+      "setup": {
+        "title": "$10/day = $300/month, invested at 7% for 35 years.",
+        "a": {
+          "label": "SPENT",
+          "sub": "on rideshare, never invested"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "same money, in the market instead"
+        },
+        "foot": "Same $300/month. One path spends it, one invests it."
+      },
+      "tension": {
+        "big": [
+          "Over 35 years you'd put in $126,000."
+        ],
+        "pill": "",
+        "ask": "That's just the cash you put in. Now the scary part."
+      },
+      "reveal": {
+        "head": "If invested instead:",
+        "a": {
+          "label": "CASH IN",
+          "val": 126,
+          "valt": "$126k",
+          "sub": "what you actually paid"
+        },
+        "b": {
+          "label": "GROWN TO",
+          "val": 540,
+          "valt": "$540k",
+          "sub": "after 35 years at 7%"
+        }
+      },
+      "twist": {
+        "l1": "That daily rideshare isn't really $10.",
+        "l2": "It's $540k of your future, gone.",
+        "l3": "Small leaks sink big ships."
+      }
+    },
+    "vo": {
+      "hook": "Why does a tiny daily habit like rideshare matter so much to your future net worth? Let's do the actual math.",
+      "setup": "That rideshare costs around $10 a day, about $300 a month. We're going to invest that same amount at a seven percent return for 35 years.",
+      "tension": "Over 35 years, you'd put in $126,000 of your own cash. That's just the principal. Here's what it actually grows to.",
+      "reveal": "Invested instead of spent, that same money grows to about $540k.",
+      "twist": "That daily rideshare isn't really costing you $10. It's costing you $540k of future wealth. Run your own number free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "daily_habit_v4",
+    "title": "Your daily vaping habit is quietly costing you $945k \ud83d\ude2d",
+    "tool_url": "https://wealthdelay.com/daily-habit-true-cost-calculator",
+    "tags": [
+      "money tips",
+      "compound interest",
+      "personal finance",
+      "saving money",
+      "investing",
+      "budgeting"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "That daily vaping?",
+        "accent": "It's about $12 a day.",
+        "sub": "Here's what it really costs you."
+      },
+      "setup": {
+        "title": "$12/day = $360/month, invested at 7% for 40 years.",
+        "a": {
+          "label": "SPENT",
+          "sub": "on vaping, never invested"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "same money, in the market instead"
+        },
+        "foot": "Same $360/month. One path spends it, one invests it."
+      },
+      "tension": {
+        "big": [
+          "Over 40 years you'd put in $172,800."
+        ],
+        "pill": "",
+        "ask": "That's just the cash you put in. Now the scary part."
+      },
+      "reveal": {
+        "head": "If invested instead:",
+        "a": {
+          "label": "CASH IN",
+          "val": 173,
+          "valt": "$173k",
+          "sub": "what you actually paid"
+        },
+        "b": {
+          "label": "GROWN TO",
+          "val": 945,
+          "valt": "$945k",
+          "sub": "after 40 years at 7%"
+        }
+      },
+      "twist": {
+        "l1": "That daily vaping isn't really $12.",
+        "l2": "It's $945k of your future, gone.",
+        "l3": "Small leaks sink big ships."
+      }
+    },
+    "vo": {
+      "hook": "Why does a tiny daily habit like vaping matter so much to your future net worth? Let's do the actual math.",
+      "setup": "That vaping costs around $12 a day, about $360 a month. We're going to invest that same amount at a seven percent return for 40 years.",
+      "tension": "Over 40 years, you'd put in $172,800 of your own cash. That's just the principal. Here's what it actually grows to.",
+      "reveal": "Invested instead of spent, that same money grows to about $945k.",
+      "twist": "That daily vaping isn't really costing you $12. It's costing you $945k of future wealth. Run your own number free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "daily_habit_v5",
+    "title": "Your daily energy drink habit is quietly costing you $183k \ud83d\ude2d",
+    "tool_url": "https://wealthdelay.com/daily-habit-true-cost-calculator",
+    "tags": [
+      "money tips",
+      "compound interest",
+      "personal finance",
+      "saving money",
+      "investing",
+      "budgeting"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "That daily energy drink?",
+        "accent": "It's about $5 a day.",
+        "sub": "Here's what it really costs you."
+      },
+      "setup": {
+        "title": "$5/day = $150/month, invested at 7% for 30 years.",
+        "a": {
+          "label": "SPENT",
+          "sub": "on energy drink, never invested"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "same money, in the market instead"
+        },
+        "foot": "Same $150/month. One path spends it, one invests it."
+      },
+      "tension": {
+        "big": [
+          "Over 30 years you'd put in $54,000."
+        ],
+        "pill": "",
+        "ask": "That's just the cash you put in. Now the scary part."
+      },
+      "reveal": {
+        "head": "If invested instead:",
+        "a": {
+          "label": "CASH IN",
+          "val": 54,
+          "valt": "$54k",
+          "sub": "what you actually paid"
+        },
+        "b": {
+          "label": "GROWN TO",
+          "val": 183,
+          "valt": "$183k",
+          "sub": "after 30 years at 7%"
+        }
+      },
+      "twist": {
+        "l1": "That daily energy drink isn't really $5.",
+        "l2": "It's $183k of your future, gone.",
+        "l3": "Small leaks sink big ships."
+      }
+    },
+    "vo": {
+      "hook": "Why does a tiny daily habit like energy drink matter so much to your future net worth? Let's do the actual math.",
+      "setup": "That energy drink costs around $5 a day, about $150 a month. We're going to invest that same amount at a seven percent return for 30 years.",
+      "tension": "Over 30 years, you'd put in $54,000 of your own cash. That's just the principal. Here's what it actually grows to.",
+      "reveal": "Invested instead of spent, that same money grows to about $183k.",
+      "twist": "That daily energy drink isn't really costing you $5. It's costing you $183k of future wealth. Run your own number free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "fee_drag_v1",
+    "title": "A 1.0% fee just cost you $93k? \ud83e\udd2f",
+    "tool_url": "https://wealthdelay.com/investment-fee-drag-calculator",
+    "tags": [
+      "index funds",
+      "fees",
+      "investing",
+      "compound interest",
+      "401k",
+      "personal finance"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "Two identical $50,000 portfolios.",
+        "accent": "One pays 1.0% in fees. One doesn't.",
+        "sub": "After 30 years, the gap is brutal."
+      },
+      "setup": {
+        "title": "Same $50,000 start. Same 7% gross return. Only the fee differs.",
+        "a": {
+          "label": "LOW FEE",
+          "sub": "0% extra fee"
+        },
+        "b": {
+          "label": "1.0% FEE",
+          "sub": "typical actively managed fund"
+        },
+        "foot": "Both grow for 30 years. Same market. Different fee."
+      },
+      "tension": {
+        "big": [
+          "A 1.0% fee sounds tiny.",
+          "Almost nothing, right?"
+        ],
+        "pill": "",
+        "ask": "Watch what it does over time."
+      },
+      "reveal": {
+        "head": "After 30 years:",
+        "a": {
+          "label": "NO FEE",
+          "val": 381,
+          "valt": "$381k",
+          "sub": "kept the full return"
+        },
+        "b": {
+          "label": "1.0% FEE",
+          "val": 287,
+          "valt": "$287k",
+          "sub": "fee compounded against you"
+        }
+      },
+      "twist": {
+        "l1": "That 1.0% fee looked tiny.",
+        "l2": "It quietly ate $93k.",
+        "l3": "Fees compound too \u2014 against you."
+      }
+    },
+    "vo": {
+      "hook": "Why does a fee of just 1.0% per year matter so much over a lifetime of investing? The number will surprise you.",
+      "setup": "Two identical $50,000 portfolios, both growing at a seven percent gross return for 30 years. One pays a 1.0 percent annual fee. One doesn't.",
+      "tension": "A 1.0 percent fee sounds tiny. Almost nothing, right? Watch what it does over 30 years.",
+      "reveal": "With no fee, the portfolio grows to about $381k. With the 1.0 percent fee, it only reaches $287k.",
+      "twist": "That tiny 1.0 percent fee quietly cost $93k of your future money. Check your own fund's fee drag free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: same starting balance and contributions, only the fee differs, at a 7% average gross annual return. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "fee_drag_v2",
+    "title": "A 1.5% fee just cost you $161k? \ud83e\udd2f",
+    "tool_url": "https://wealthdelay.com/investment-fee-drag-calculator",
+    "tags": [
+      "index funds",
+      "fees",
+      "investing",
+      "compound interest",
+      "401k",
+      "personal finance"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "Two identical $100,000 portfolios.",
+        "accent": "One pays 1.5% in fees. One doesn't.",
+        "sub": "After 30 years, the gap is brutal."
+      },
+      "setup": {
+        "title": "Same $100,000 start. Same 7% gross return. Only the fee differs.",
+        "a": {
+          "label": "LOW FEE",
+          "sub": "0% extra fee"
+        },
+        "b": {
+          "label": "1.5% FEE",
+          "sub": "typical actively managed fund"
+        },
+        "foot": "Both grow for 25 years. Same market. Different fee."
+      },
+      "tension": {
+        "big": [
+          "A 1.5% fee sounds tiny.",
+          "Almost nothing, right?"
+        ],
+        "pill": "",
+        "ask": "Watch what it does over time."
+      },
+      "reveal": {
+        "head": "After 25 years:",
+        "a": {
+          "label": "NO FEE",
+          "val": 543,
+          "valt": "$543k",
+          "sub": "kept the full return"
+        },
+        "b": {
+          "label": "1.5% FEE",
+          "val": 381,
+          "valt": "$381k",
+          "sub": "fee compounded against you"
+        }
+      },
+      "twist": {
+        "l1": "That 1.5% fee looked tiny.",
+        "l2": "It quietly ate $161k.",
+        "l3": "Fees compound too \u2014 against you."
+      }
+    },
+    "vo": {
+      "hook": "Why does a fee of just 1.5% per year matter so much over a lifetime of investing? The number will surprise you.",
+      "setup": "Two identical $100,000 portfolios, both growing at a seven percent gross return for 25 years. One pays a 1.5 percent annual fee. One doesn't.",
+      "tension": "A 1.5 percent fee sounds tiny. Almost nothing, right? Watch what it does over 25 years.",
+      "reveal": "With no fee, the portfolio grows to about $543k. With the 1.5 percent fee, it only reaches $381k.",
+      "twist": "That tiny 1.5 percent fee quietly cost $161k of your future money. Check your own fund's fee drag free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: same starting balance and contributions, only the fee differs, at a 7% average gross annual return. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "fee_drag_v3",
+    "title": "A 0.75% fee just cost you $58k? \ud83e\udd2f",
+    "tool_url": "https://wealthdelay.com/investment-fee-drag-calculator",
+    "tags": [
+      "index funds",
+      "fees",
+      "investing",
+      "compound interest",
+      "401k",
+      "personal finance"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "Two identical $25,000 portfolios.",
+        "accent": "One pays 0.75% in fees. One doesn't.",
+        "sub": "After 30 years, the gap is brutal."
+      },
+      "setup": {
+        "title": "Same $25,000 start. Same 7% gross return. Only the fee differs.",
+        "a": {
+          "label": "LOW FEE",
+          "sub": "0% extra fee"
+        },
+        "b": {
+          "label": "0.75% FEE",
+          "sub": "typical actively managed fund"
+        },
+        "foot": "Both grow for 35 years. Same market. Different fee."
+      },
+      "tension": {
+        "big": [
+          "A 0.75% fee sounds tiny.",
+          "Almost nothing, right?"
+        ],
+        "pill": "",
+        "ask": "Watch what it does over time."
+      },
+      "reveal": {
+        "head": "After 35 years:",
+        "a": {
+          "label": "NO FEE",
+          "val": 267,
+          "valt": "$267k",
+          "sub": "kept the full return"
+        },
+        "b": {
+          "label": "0.75% FEE",
+          "val": 209,
+          "valt": "$209k",
+          "sub": "fee compounded against you"
+        }
+      },
+      "twist": {
+        "l1": "That 0.75% fee looked tiny.",
+        "l2": "It quietly ate $58k.",
+        "l3": "Fees compound too \u2014 against you."
+      }
+    },
+    "vo": {
+      "hook": "Why does a fee of just 0.75% per year matter so much over a lifetime of investing? The number will surprise you.",
+      "setup": "Two identical $25,000 portfolios, both growing at a seven percent gross return for 35 years. One pays a 0.75 percent annual fee. One doesn't.",
+      "tension": "A 0.75 percent fee sounds tiny. Almost nothing, right? Watch what it does over 35 years.",
+      "reveal": "With no fee, the portfolio grows to about $267k. With the 0.75 percent fee, it only reaches $209k.",
+      "twist": "That tiny 0.75 percent fee quietly cost $58k of your future money. Check your own fund's fee drag free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: same starting balance and contributions, only the fee differs, at a 7% average gross annual return. Not financial advice \u2014 real returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "fee_drag_v4",
+    "title": "A 2.0% fee just cost you $91k? \ud83e\udd2f",
+    "tool_url": "https://wealthdelay.com/investment-fee-drag-calculator",
+    "tags": [
+      "index funds",
+      "fees",
+      "investing",
+      "compound interest",
+      "401k",
+      "personal finance"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "Two identical $75,000 portfolios.",
+        "accent": "One pays 2.0% in fees. One doesn't.",
+        "sub": "After 30 years, the gap is brutal."
+      },
+      "setup": {
+        "title": "Same $75,000 start. Same 7% gross return. Only the fee differs.",
+        "a": {
+          "label": "LOW FEE",
+          "sub": "0% extra fee"
+        },
+        "b": {
+          "label": "2.0% FEE",
+          "sub": "typical actively managed fund"
+        },
+        "foot": "Both grow for 20 years. Same market. Different fee."
+      },
+      "tension": {
+        "big": [
+          "A 2.0% fee sounds tiny.",
+          "Almost nothing, right?"
+        ],
+        "pill": "",
+        "ask": "Watch what it does over time."
+      },
+      "reveal": {
+        "head": "After 20 years:",
+        "a": {
+          "label": "NO FEE",
+          "val": 290,
+          "valt": "$290k",
+          "sub": "kept the full return"
+        },
+        "b": {
+          "label": "2.0% FEE",
+          "val": 199,
+          "valt": "$199k",
+          "sub": "fee compounded against you"
+        }
+      },
+      "twist": {
+        "l1": "That 2.0% fee looked tiny.",
+        "l2": "It quietly ate $91k.",
+        "l3": "Fees compound too \u2014 against you."
+      }
+    },
+    "vo": {
+      "hook": "Why does a fee of just 2.0% per year matter so much over a lifetime of investing? The number will surprise you.",
+      "setup": "Two identical $75,000 portfolios, both growing at a seven percent gross return for 20 years. One pays a 2.0 percent annual fee. One doesn't.",
+      "tension": "A 2.0 percent fee sounds tiny. Almost nothing, right? Watch what it does over 20 years.",
+      "reveal": "With no fee, the portfolio grows to about $290k. With the 2.0 percent fee, it only reaches $199k.",
+      "twist": "That tiny 2.0 percent fee quietly cost $91k of your future money. Check your own fund's fee drag free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: same starting balance and contributions, only the fee differs, at a 7% average gross annual return. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "fee_drag_v5",
+    "title": "A 1.0% fee just cost you $280k? \ud83e\udd2f",
+    "tool_url": "https://wealthdelay.com/investment-fee-drag-calculator",
+    "tags": [
+      "index funds",
+      "fees",
+      "investing",
+      "compound interest",
+      "401k",
+      "personal finance"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "Two identical $150,000 portfolios.",
+        "accent": "One pays 1.0% in fees. One doesn't.",
+        "sub": "After 30 years, the gap is brutal."
+      },
+      "setup": {
+        "title": "Same $150,000 start. Same 7% gross return. Only the fee differs.",
+        "a": {
+          "label": "LOW FEE",
+          "sub": "0% extra fee"
+        },
+        "b": {
+          "label": "1.0% FEE",
+          "sub": "typical actively managed fund"
+        },
+        "foot": "Both grow for 30 years. Same market. Different fee."
+      },
+      "tension": {
+        "big": [
+          "A 1.0% fee sounds tiny.",
+          "Almost nothing, right?"
+        ],
+        "pill": "",
+        "ask": "Watch what it does over time."
+      },
+      "reveal": {
+        "head": "After 30 years:",
+        "a": {
+          "label": "NO FEE",
+          "val": 1142,
+          "valt": "$1,142k",
+          "sub": "kept the full return"
+        },
+        "b": {
+          "label": "1.0% FEE",
+          "val": 862,
+          "valt": "$862k",
+          "sub": "fee compounded against you"
+        }
+      },
+      "twist": {
+        "l1": "That 1.0% fee looked tiny.",
+        "l2": "It quietly ate $280k.",
+        "l3": "Fees compound too \u2014 against you."
+      }
+    },
+    "vo": {
+      "hook": "Why does a fee of just 1.0% per year matter so much over a lifetime of investing? The number will surprise you.",
+      "setup": "Two identical $150,000 portfolios, both growing at a seven percent gross return for 30 years. One pays a 1.0 percent annual fee. One doesn't.",
+      "tension": "A 1.0 percent fee sounds tiny. Almost nothing, right? Watch what it does over 30 years.",
+      "reveal": "With no fee, the portfolio grows to about $1,142k. With the 1.0 percent fee, it only reaches $862k.",
+      "twist": "That tiny 1.0 percent fee quietly cost $280k of your future money. Check your own fund's fee drag free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: same starting balance and contributions, only the fee differs, at a 7% average gross annual return. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "wait_years_v1",
+    "title": "Waiting just 5 years to invest cost $165k \ud83d\ude2f",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "investing",
+      "procrastination",
+      "compound interest",
+      "personal finance",
+      "retirement",
+      "money tips"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "\"I'll start investing in 5 years.\"",
+        "accent": "Sounds harmless.",
+        "sub": "Here's the real price tag."
+      },
+      "setup": {
+        "title": "$200/month at 7%, starting at 25 vs 30.",
+        "a": {
+          "label": "START NOW",
+          "sub": "invests from 25 to 65"
+        },
+        "b": {
+          "label": "WAIT 5YRS",
+          "sub": "invests from 30 to 65"
+        },
+        "foot": "Same monthly amount. Just a different start date."
+      },
+      "tension": {
+        "big": [
+          "Only a 5-year delay.",
+          "Can't be that big a deal\u2026"
+        ],
+        "pill": "",
+        "ask": "Let's see what 5 years actually costs."
+      },
+      "reveal": {
+        "head": "At age 65:",
+        "a": {
+          "label": "START NOW",
+          "val": 525,
+          "valt": "$525k",
+          "sub": "40 years invested"
+        },
+        "b": {
+          "label": "WAITED",
+          "val": 360,
+          "valt": "$360k",
+          "sub": "35 years invested"
+        }
+      },
+      "twist": {
+        "l1": "Just 5 years of waiting\u2026",
+        "l2": "\u2026cost $165k at retirement.",
+        "l3": "The best time to start was today."
+      }
+    },
+    "vo": {
+      "hook": "Why does waiting just 5 years to start investing cost you so much more than 5 years' worth of contributions?",
+      "setup": "$200 a month at a seven percent return. One person starts at 25. The other waits and starts at 30. Same amount, same rate, just a later start.",
+      "tension": "It's only a 5 year delay. Can't be that big a deal, right? Let's see what it actually costs by sixty-five.",
+      "reveal": "Starting at 25, the balance grows to about $525k. Waiting until 30, it only reaches $360k.",
+      "twist": "That 5 year delay alone cost $165k at retirement. The best time to start is today. Free calculator on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "wait_years_v2",
+    "title": "Waiting just 10 years to invest cost $520k \ud83d\ude2f",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "investing",
+      "procrastination",
+      "compound interest",
+      "personal finance",
+      "retirement",
+      "money tips"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "\"I'll start investing in 10 years.\"",
+        "accent": "Sounds harmless.",
+        "sub": "Here's the real price tag."
+      },
+      "setup": {
+        "title": "$300/month at 7%, starting at 22 vs 32.",
+        "a": {
+          "label": "START NOW",
+          "sub": "invests from 22 to 65"
+        },
+        "b": {
+          "label": "WAIT 10YRS",
+          "sub": "invests from 32 to 65"
+        },
+        "foot": "Same monthly amount. Just a different start date."
+      },
+      "tension": {
+        "big": [
+          "Only a 10-year delay.",
+          "Can't be that big a deal\u2026"
+        ],
+        "pill": "",
+        "ask": "Let's see what 10 years actually costs."
+      },
+      "reveal": {
+        "head": "At age 65:",
+        "a": {
+          "label": "START NOW",
+          "val": 983,
+          "valt": "$983k",
+          "sub": "43 years invested"
+        },
+        "b": {
+          "label": "WAITED",
+          "val": 463,
+          "valt": "$463k",
+          "sub": "33 years invested"
+        }
+      },
+      "twist": {
+        "l1": "Just 10 years of waiting\u2026",
+        "l2": "\u2026cost $520k at retirement.",
+        "l3": "The best time to start was today."
+      }
+    },
+    "vo": {
+      "hook": "Why does waiting just 10 years to start investing cost you so much more than 10 years' worth of contributions?",
+      "setup": "$300 a month at a seven percent return. One person starts at 22. The other waits and starts at 32. Same amount, same rate, just a later start.",
+      "tension": "It's only a 10 year delay. Can't be that big a deal, right? Let's see what it actually costs by sixty-five.",
+      "reveal": "Starting at 22, the balance grows to about $983k. Waiting until 32, it only reaches $463k.",
+      "twist": "That 10 year delay alone cost $520k at retirement. The best time to start is today. Free calculator on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "wait_years_v3",
+    "title": "Waiting just 3 years to invest cost $64k \ud83d\ude2f",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "investing",
+      "procrastination",
+      "compound interest",
+      "personal finance",
+      "retirement",
+      "money tips"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "\"I'll start investing in 3 years.\"",
+        "accent": "Sounds harmless.",
+        "sub": "Here's the real price tag."
+      },
+      "setup": {
+        "title": "$150/month at 7%, starting at 28 vs 31.",
+        "a": {
+          "label": "START NOW",
+          "sub": "invests from 28 to 65"
+        },
+        "b": {
+          "label": "WAIT 3YRS",
+          "sub": "invests from 31 to 65"
+        },
+        "foot": "Same monthly amount. Just a different start date."
+      },
+      "tension": {
+        "big": [
+          "Only a 3-year delay.",
+          "Can't be that big a deal\u2026"
+        ],
+        "pill": "",
+        "ask": "Let's see what 3 years actually costs."
+      },
+      "reveal": {
+        "head": "At age 65:",
+        "a": {
+          "label": "START NOW",
+          "val": 314,
+          "valt": "$314k",
+          "sub": "37 years invested"
+        },
+        "b": {
+          "label": "WAITED",
+          "val": 250,
+          "valt": "$250k",
+          "sub": "34 years invested"
+        }
+      },
+      "twist": {
+        "l1": "Just 3 years of waiting\u2026",
+        "l2": "\u2026cost $64k at retirement.",
+        "l3": "The best time to start was today."
+      }
+    },
+    "vo": {
+      "hook": "Why does waiting just 3 years to start investing cost you so much more than 3 years' worth of contributions?",
+      "setup": "$150 a month at a seven percent return. One person starts at 28. The other waits and starts at 31. Same amount, same rate, just a later start.",
+      "tension": "It's only a 3 year delay. Can't be that big a deal, right? Let's see what it actually costs by sixty-five.",
+      "reveal": "Starting at 28, the balance grows to about $314k. Waiting until 31, it only reaches $250k.",
+      "twist": "That 3 year delay alone cost $64k at retirement. The best time to start is today. Free calculator on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary."
+  },
+  {
+    "id": "wait_years_v4",
+    "title": "Waiting just 7 years to invest cost $290k \ud83d\ude2f",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "investing",
+      "procrastination",
+      "compound interest",
+      "personal finance",
+      "retirement",
+      "money tips"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "\"I'll start investing in 7 years.\"",
+        "accent": "Sounds harmless.",
+        "sub": "Here's the real price tag."
+      },
+      "setup": {
+        "title": "$250/month at 7%, starting at 24 vs 31.",
+        "a": {
+          "label": "START NOW",
+          "sub": "invests from 24 to 65"
+        },
+        "b": {
+          "label": "WAIT 7YRS",
+          "sub": "invests from 31 to 65"
+        },
+        "foot": "Same monthly amount. Just a different start date."
+      },
+      "tension": {
+        "big": [
+          "Only a 7-year delay.",
+          "Can't be that big a deal\u2026"
+        ],
+        "pill": "",
+        "ask": "Let's see what 7 years actually costs."
+      },
+      "reveal": {
+        "head": "At age 65:",
+        "a": {
+          "label": "START NOW",
+          "val": 707,
+          "valt": "$707k",
+          "sub": "41 years invested"
+        },
+        "b": {
+          "label": "WAITED",
+          "val": 417,
+          "valt": "$417k",
+          "sub": "34 years invested"
+        }
+      },
+      "twist": {
+        "l1": "Just 7 years of waiting\u2026",
+        "l2": "\u2026cost $290k at retirement.",
+        "l3": "The best time to start was today."
+      }
+    },
+    "vo": {
+      "hook": "Why does waiting just 7 years to start investing cost you so much more than 7 years' worth of contributions?",
+      "setup": "$250 a month at a seven percent return. One person starts at 24. The other waits and starts at 31. Same amount, same rate, just a later start.",
+      "tension": "It's only a 7 year delay. Can't be that big a deal, right? Let's see what it actually costs by sixty-five.",
+      "reveal": "Starting at 24, the balance grows to about $707k. Waiting until 31, it only reaches $417k.",
+      "twist": "That 7 year delay alone cost $290k at retirement. The best time to start is today. Free calculator on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "wait_years_v5",
+    "title": "Waiting just 5 years to invest cost $232k \ud83d\ude2f",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "investing",
+      "procrastination",
+      "compound interest",
+      "personal finance",
+      "retirement",
+      "money tips"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "\"I'll start investing in 5 years.\"",
+        "accent": "Sounds harmless.",
+        "sub": "Here's the real price tag."
+      },
+      "setup": {
+        "title": "$400/month at 7%, starting at 30 vs 35.",
+        "a": {
+          "label": "START NOW",
+          "sub": "invests from 30 to 65"
+        },
+        "b": {
+          "label": "WAIT 5YRS",
+          "sub": "invests from 35 to 65"
+        },
+        "foot": "Same monthly amount. Just a different start date."
+      },
+      "tension": {
+        "big": [
+          "Only a 5-year delay.",
+          "Can't be that big a deal\u2026"
+        ],
+        "pill": "",
+        "ask": "Let's see what 5 years actually costs."
+      },
+      "reveal": {
+        "head": "At age 65:",
+        "a": {
+          "label": "START NOW",
+          "val": 720,
+          "valt": "$720k",
+          "sub": "35 years invested"
+        },
+        "b": {
+          "label": "WAITED",
+          "val": 488,
+          "valt": "$488k",
+          "sub": "30 years invested"
+        }
+      },
+      "twist": {
+        "l1": "Just 5 years of waiting\u2026",
+        "l2": "\u2026cost $232k at retirement.",
+        "l3": "The best time to start was today."
+      }
+    },
+    "vo": {
+      "hook": "Why does waiting just 5 years to start investing cost you so much more than 5 years' worth of contributions?",
+      "setup": "$400 a month at a seven percent return. One person starts at 30. The other waits and starts at 35. Same amount, same rate, just a later start.",
+      "tension": "It's only a 5 year delay. Can't be that big a deal, right? Let's see what it actually costs by sixty-five.",
+      "reveal": "Starting at 30, the balance grows to about $720k. Waiting until 35, it only reaches $488k.",
+      "twist": "That 5 year delay alone cost $232k at retirement. The best time to start is today. Free calculator on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "lump_sum_v1",
+    "title": "$10,000 invested 10 years earlier grew into $37k MORE \ud83d\ude31",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "lump sum investing",
+      "compound interest",
+      "investing",
+      "personal finance",
+      "money tips",
+      "wealth building"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Same $10,000. Same 7% return.",
+        "accent": "One invested 10 years earlier.",
+        "sub": "The gap by retirement is wild."
+      },
+      "setup": {
+        "title": "A one-time $10,000 investment, 30 years vs 20 years to grow.",
+        "a": {
+          "label": "EARLY",
+          "sub": "invested 30 years ago"
+        },
+        "b": {
+          "label": "LATE",
+          "sub": "invested 20 years ago"
+        },
+        "foot": "Exact same $10,000. Only the start date differs by 10 years."
+      },
+      "tension": {
+        "big": [
+          "It's the same $10,000.",
+          "How different could it really be?"
+        ],
+        "pill": "",
+        "ask": "The answer isn't small."
+      },
+      "reveal": {
+        "head": "After all those years:",
+        "a": {
+          "label": "EARLY",
+          "val": 76,
+          "valt": "$76k",
+          "sub": "30 years of growth"
+        },
+        "b": {
+          "label": "LATE",
+          "val": 39,
+          "valt": "$39k",
+          "sub": "20 years of growth"
+        }
+      },
+      "twist": {
+        "l1": "Same $10,000 invested.",
+        "l2": "10 extra years made a $37k difference.",
+        "l3": "Time in the market beats almost everything."
+      }
+    },
+    "vo": {
+      "hook": "Why does the exact same $10,000 investment end up worth wildly different amounts depending only on when you invested it?",
+      "setup": "A one-time $10,000 investment at a seven percent average annual return. One version grows for 30 years. The other grows for 20 years \u2014 10 years less.",
+      "tension": "It's the same $10,000 either way. How different could the outcome really be? The answer isn't small.",
+      "reveal": "After 30 years, the early investment is worth about $76k. The late one is worth about $39k.",
+      "twist": "Same $10,000, but 10 extra years of growth made a $37k difference. Time in the market beats almost everything. Try your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: a one-time lump sum growing at a 7% average annual return, compounded annually. Not financial advice \u2014 real returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "lump_sum_v2",
+    "title": "$5,000 invested 15 years earlier grew into $34k MORE \ud83d\ude31",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "lump sum investing",
+      "compound interest",
+      "investing",
+      "personal finance",
+      "money tips",
+      "wealth building"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Same $5,000. Same 7% return.",
+        "accent": "One invested 15 years earlier.",
+        "sub": "The gap by retirement is wild."
+      },
+      "setup": {
+        "title": "A one-time $5,000 investment, 35 years vs 20 years to grow.",
+        "a": {
+          "label": "EARLY",
+          "sub": "invested 35 years ago"
+        },
+        "b": {
+          "label": "LATE",
+          "sub": "invested 20 years ago"
+        },
+        "foot": "Exact same $5,000. Only the start date differs by 15 years."
+      },
+      "tension": {
+        "big": [
+          "It's the same $5,000.",
+          "How different could it really be?"
+        ],
+        "pill": "",
+        "ask": "The answer isn't small."
+      },
+      "reveal": {
+        "head": "After all those years:",
+        "a": {
+          "label": "EARLY",
+          "val": 53,
+          "valt": "$53k",
+          "sub": "35 years of growth"
+        },
+        "b": {
+          "label": "LATE",
+          "val": 19,
+          "valt": "$19k",
+          "sub": "20 years of growth"
+        }
+      },
+      "twist": {
+        "l1": "Same $5,000 invested.",
+        "l2": "15 extra years made a $34k difference.",
+        "l3": "Time in the market beats almost everything."
+      }
+    },
+    "vo": {
+      "hook": "Why does the exact same $5,000 investment end up worth wildly different amounts depending only on when you invested it?",
+      "setup": "A one-time $5,000 investment at a seven percent average annual return. One version grows for 35 years. The other grows for 20 years \u2014 15 years less.",
+      "tension": "It's the same $5,000 either way. How different could the outcome really be? The answer isn't small.",
+      "reveal": "After 35 years, the early investment is worth about $53k. The late one is worth about $19k.",
+      "twist": "Same $5,000, but 15 extra years of growth made a $34k difference. Time in the market beats almost everything. Try your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: a one-time lump sum growing at a 7% average annual return, compounded annually. Not financial advice \u2014 real returns vary.",
+    "voice": "bill"
+  },
+  {
+    "id": "lump_sum_v3",
+    "title": "$20,000 invested 5 years earlier grew into $31k MORE \ud83d\ude31",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "lump sum investing",
+      "compound interest",
+      "investing",
+      "personal finance",
+      "money tips",
+      "wealth building"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Same $20,000. Same 7% return.",
+        "accent": "One invested 5 years earlier.",
+        "sub": "The gap by retirement is wild."
+      },
+      "setup": {
+        "title": "A one-time $20,000 investment, 25 years vs 20 years to grow.",
+        "a": {
+          "label": "EARLY",
+          "sub": "invested 25 years ago"
+        },
+        "b": {
+          "label": "LATE",
+          "sub": "invested 20 years ago"
+        },
+        "foot": "Exact same $20,000. Only the start date differs by 5 years."
+      },
+      "tension": {
+        "big": [
+          "It's the same $20,000.",
+          "How different could it really be?"
+        ],
+        "pill": "",
+        "ask": "The answer isn't small."
+      },
+      "reveal": {
+        "head": "After all those years:",
+        "a": {
+          "label": "EARLY",
+          "val": 109,
+          "valt": "$109k",
+          "sub": "25 years of growth"
+        },
+        "b": {
+          "label": "LATE",
+          "val": 77,
+          "valt": "$77k",
+          "sub": "20 years of growth"
+        }
+      },
+      "twist": {
+        "l1": "Same $20,000 invested.",
+        "l2": "5 extra years made a $31k difference.",
+        "l3": "Time in the market beats almost everything."
+      }
+    },
+    "vo": {
+      "hook": "Why does the exact same $20,000 investment end up worth wildly different amounts depending only on when you invested it?",
+      "setup": "A one-time $20,000 investment at a seven percent average annual return. One version grows for 25 years. The other grows for 20 years \u2014 5 years less.",
+      "tension": "It's the same $20,000 either way. How different could the outcome really be? The answer isn't small.",
+      "reveal": "After 25 years, the early investment is worth about $109k. The late one is worth about $77k.",
+      "twist": "Same $20,000, but 5 extra years of growth made a $31k difference. Time in the market beats almost everything. Try your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: a one-time lump sum growing at a 7% average annual return, compounded annually. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "lump_sum_v4",
+    "title": "$15,000 invested 10 years earlier grew into $49k MORE \ud83d\ude31",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "lump sum investing",
+      "compound interest",
+      "investing",
+      "personal finance",
+      "money tips",
+      "wealth building"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Same $15,000. Same 7% return.",
+        "accent": "One invested 10 years earlier.",
+        "sub": "The gap by retirement is wild."
+      },
+      "setup": {
+        "title": "A one-time $15,000 investment, 28 years vs 18 years to grow.",
+        "a": {
+          "label": "EARLY",
+          "sub": "invested 28 years ago"
+        },
+        "b": {
+          "label": "LATE",
+          "sub": "invested 18 years ago"
+        },
+        "foot": "Exact same $15,000. Only the start date differs by 10 years."
+      },
+      "tension": {
+        "big": [
+          "It's the same $15,000.",
+          "How different could it really be?"
+        ],
+        "pill": "",
+        "ask": "The answer isn't small."
+      },
+      "reveal": {
+        "head": "After all those years:",
+        "a": {
+          "label": "EARLY",
+          "val": 100,
+          "valt": "$100k",
+          "sub": "28 years of growth"
+        },
+        "b": {
+          "label": "LATE",
+          "val": 51,
+          "valt": "$51k",
+          "sub": "18 years of growth"
+        }
+      },
+      "twist": {
+        "l1": "Same $15,000 invested.",
+        "l2": "10 extra years made a $49k difference.",
+        "l3": "Time in the market beats almost everything."
+      }
+    },
+    "vo": {
+      "hook": "Why does the exact same $15,000 investment end up worth wildly different amounts depending only on when you invested it?",
+      "setup": "A one-time $15,000 investment at a seven percent average annual return. One version grows for 28 years. The other grows for 18 years \u2014 10 years less.",
+      "tension": "It's the same $15,000 either way. How different could the outcome really be? The answer isn't small.",
+      "reveal": "After 28 years, the early investment is worth about $100k. The late one is worth about $51k.",
+      "twist": "Same $15,000, but 10 extra years of growth made a $49k difference. Time in the market beats almost everything. Try your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: a one-time lump sum growing at a 7% average annual return, compounded annually. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "lump_sum_v5",
+    "title": "$8,000 invested 20 years earlier grew into $89k MORE \ud83d\ude31",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": [
+      "lump sum investing",
+      "compound interest",
+      "investing",
+      "personal finance",
+      "money tips",
+      "wealth building"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Same $8,000. Same 7% return.",
+        "accent": "One invested 20 years earlier.",
+        "sub": "The gap by retirement is wild."
+      },
+      "setup": {
+        "title": "A one-time $8,000 investment, 40 years vs 20 years to grow.",
+        "a": {
+          "label": "EARLY",
+          "sub": "invested 40 years ago"
+        },
+        "b": {
+          "label": "LATE",
+          "sub": "invested 20 years ago"
+        },
+        "foot": "Exact same $8,000. Only the start date differs by 20 years."
+      },
+      "tension": {
+        "big": [
+          "It's the same $8,000.",
+          "How different could it really be?"
+        ],
+        "pill": "",
+        "ask": "The answer isn't small."
+      },
+      "reveal": {
+        "head": "After all those years:",
+        "a": {
+          "label": "EARLY",
+          "val": 120,
+          "valt": "$120k",
+          "sub": "40 years of growth"
+        },
+        "b": {
+          "label": "LATE",
+          "val": 31,
+          "valt": "$31k",
+          "sub": "20 years of growth"
+        }
+      },
+      "twist": {
+        "l1": "Same $8,000 invested.",
+        "l2": "20 extra years made a $89k difference.",
+        "l3": "Time in the market beats almost everything."
+      }
+    },
+    "vo": {
+      "hook": "Why does the exact same $8,000 investment end up worth wildly different amounts depending only on when you invested it?",
+      "setup": "A one-time $8,000 investment at a seven percent average annual return. One version grows for 40 years. The other grows for 20 years \u2014 20 years less.",
+      "tension": "It's the same $8,000 either way. How different could the outcome really be? The answer isn't small.",
+      "reveal": "After 40 years, the early investment is worth about $120k. The late one is worth about $31k.",
+      "twist": "Same $8,000, but 20 extra years of growth made a $89k difference. Time in the market beats almost everything. Try your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: a one-time lump sum growing at a 7% average annual return, compounded annually. Not financial advice \u2014 real returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "401k_match_v1",
+    "title": "Skipping your 401k match is leaving $152k on the table \ud83d\udcb8",
+    "tool_url": "https://wealthdelay.com/401k-contribution-calculator",
+    "tags": [
+      "401k",
+      "employer match",
+      "retirement",
+      "free money",
+      "personal finance",
+      "investing"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Your employer offers a 401k match.",
+        "accent": "Most people don't claim the full thing.",
+        "sub": "Here's what that costs."
+      },
+      "setup": {
+        "title": "$50,000 salary. Employer matches 50% on a 6% contribution.",
+        "a": {
+          "label": "YOU CONTRIBUTE",
+          "sub": "6% of salary"
+        },
+        "b": {
+          "label": "EMPLOYER MATCHES",
+          "sub": "50% of that, free"
+        },
+        "foot": "That match alone is about $1,500/year, free money."
+      },
+      "tension": {
+        "big": [
+          "Just free money sitting there.",
+          "Until you actually skip it."
+        ],
+        "pill": "",
+        "ask": "Here's the real cost of skipping it."
+      },
+      "reveal": {
+        "head": "If invested for 30 years:",
+        "a": {
+          "label": "MATCH ONLY",
+          "val": 152,
+          "valt": "$152k",
+          "sub": "just the free employer money"
+        },
+        "b": {
+          "label": "YOU SKIPPED",
+          "val": 0,
+          "valt": "$0",
+          "sub": "if you don't contribute enough to get it"
+        }
+      },
+      "twist": {
+        "l1": "That match is literally free money.",
+        "l2": "Skip it for 30 years and you lose $152k.",
+        "l3": "Always get the full match first."
+      }
+    },
+    "vo": {
+      "hook": "Why is skipping your 401k match one of the most expensive mistakes you can make early in your career?",
+      "setup": "With a $50,000 salary and an employer that matches 50 percent on a 6 percent contribution, that match alone is worth about $1,500 a year, completely free.",
+      "tension": "It's free money sitting there. Until you skip it by not contributing enough to get it. Here's what that actually costs you.",
+      "reveal": "That free match alone, invested for 30 years at seven percent, grows to about $152k.",
+      "twist": "That's free money you'd be walking away from. Always contribute enough to get the full match first. Run your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "bill"
+  },
+  {
+    "id": "401k_match_v2",
+    "title": "Skipping your 401k match is leaving $142k on the table \ud83d\udcb8",
+    "tool_url": "https://wealthdelay.com/401k-contribution-calculator",
+    "tags": [
+      "401k",
+      "employer match",
+      "retirement",
+      "free money",
+      "personal finance",
+      "investing"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Your employer offers a 401k match.",
+        "accent": "Most people don't claim the full thing.",
+        "sub": "Here's what that costs."
+      },
+      "setup": {
+        "title": "$70,000 salary. Employer matches 100% on a 3% contribution.",
+        "a": {
+          "label": "YOU CONTRIBUTE",
+          "sub": "3% of salary"
+        },
+        "b": {
+          "label": "EMPLOYER MATCHES",
+          "sub": "100% of that, free"
+        },
+        "foot": "That match alone is about $2,100/year, free money."
+      },
+      "tension": {
+        "big": [
+          "Just free money sitting there.",
+          "Until you actually skip it."
+        ],
+        "pill": "",
+        "ask": "Here's the real cost of skipping it."
+      },
+      "reveal": {
+        "head": "If invested for 25 years:",
+        "a": {
+          "label": "MATCH ONLY",
+          "val": 142,
+          "valt": "$142k",
+          "sub": "just the free employer money"
+        },
+        "b": {
+          "label": "YOU SKIPPED",
+          "val": 0,
+          "valt": "$0",
+          "sub": "if you don't contribute enough to get it"
+        }
+      },
+      "twist": {
+        "l1": "That match is literally free money.",
+        "l2": "Skip it for 25 years and you lose $142k.",
+        "l3": "Always get the full match first."
+      }
+    },
+    "vo": {
+      "hook": "Why is skipping your 401k match one of the most expensive mistakes you can make early in your career?",
+      "setup": "With a $70,000 salary and an employer that matches 100 percent on a 3 percent contribution, that match alone is worth about $2,100 a year, completely free.",
+      "tension": "It's free money sitting there. Until you skip it by not contributing enough to get it. Here's what that actually costs you.",
+      "reveal": "That free match alone, invested for 25 years at seven percent, grows to about $142k.",
+      "twist": "That's free money you'd be walking away from. Always contribute enough to get the full match first. Run your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "401k_match_v3",
+    "title": "Skipping your 401k match is leaving $180k on the table \ud83d\udcb8",
+    "tool_url": "https://wealthdelay.com/401k-contribution-calculator",
+    "tags": [
+      "401k",
+      "employer match",
+      "retirement",
+      "free money",
+      "personal finance",
+      "investing"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Your employer offers a 401k match.",
+        "accent": "Most people don't claim the full thing.",
+        "sub": "Here's what that costs."
+      },
+      "setup": {
+        "title": "$60,000 salary. Employer matches 50% on a 4% contribution.",
+        "a": {
+          "label": "YOU CONTRIBUTE",
+          "sub": "4% of salary"
+        },
+        "b": {
+          "label": "EMPLOYER MATCHES",
+          "sub": "50% of that, free"
+        },
+        "foot": "That match alone is about $1,200/year, free money."
+      },
+      "tension": {
+        "big": [
+          "Just free money sitting there.",
+          "Until you actually skip it."
+        ],
+        "pill": "",
+        "ask": "Here's the real cost of skipping it."
+      },
+      "reveal": {
+        "head": "If invested for 35 years:",
+        "a": {
+          "label": "MATCH ONLY",
+          "val": 180,
+          "valt": "$180k",
+          "sub": "just the free employer money"
+        },
+        "b": {
+          "label": "YOU SKIPPED",
+          "val": 0,
+          "valt": "$0",
+          "sub": "if you don't contribute enough to get it"
+        }
+      },
+      "twist": {
+        "l1": "That match is literally free money.",
+        "l2": "Skip it for 35 years and you lose $180k.",
+        "l3": "Always get the full match first."
+      }
+    },
+    "vo": {
+      "hook": "Why is skipping your 401k match one of the most expensive mistakes you can make early in your career?",
+      "setup": "With a $60,000 salary and an employer that matches 50 percent on a 4 percent contribution, that match alone is worth about $1,200 a year, completely free.",
+      "tension": "It's free money sitting there. Until you skip it by not contributing enough to get it. Here's what that actually costs you.",
+      "reveal": "That free match alone, invested for 35 years at seven percent, grows to about $180k.",
+      "twist": "That's free money you'd be walking away from. Always contribute enough to get the full match first. Run your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "401k_match_v4",
+    "title": "Skipping your 401k match is leaving $156k on the table \ud83d\udcb8",
+    "tool_url": "https://wealthdelay.com/401k-contribution-calculator",
+    "tags": [
+      "401k",
+      "employer match",
+      "retirement",
+      "free money",
+      "personal finance",
+      "investing"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Your employer offers a 401k match.",
+        "accent": "Most people don't claim the full thing.",
+        "sub": "Here's what that costs."
+      },
+      "setup": {
+        "title": "$90,000 salary. Employer matches 100% on a 4% contribution.",
+        "a": {
+          "label": "YOU CONTRIBUTE",
+          "sub": "4% of salary"
+        },
+        "b": {
+          "label": "EMPLOYER MATCHES",
+          "sub": "100% of that, free"
+        },
+        "foot": "That match alone is about $3,600/year, free money."
+      },
+      "tension": {
+        "big": [
+          "Just free money sitting there.",
+          "Until you actually skip it."
+        ],
+        "pill": "",
+        "ask": "Here's the real cost of skipping it."
+      },
+      "reveal": {
+        "head": "If invested for 20 years:",
+        "a": {
+          "label": "MATCH ONLY",
+          "val": 156,
+          "valt": "$156k",
+          "sub": "just the free employer money"
+        },
+        "b": {
+          "label": "YOU SKIPPED",
+          "val": 0,
+          "valt": "$0",
+          "sub": "if you don't contribute enough to get it"
+        }
+      },
+      "twist": {
+        "l1": "That match is literally free money.",
+        "l2": "Skip it for 20 years and you lose $156k.",
+        "l3": "Always get the full match first."
+      }
+    },
+    "vo": {
+      "hook": "Why is skipping your 401k match one of the most expensive mistakes you can make early in your career?",
+      "setup": "With a $90,000 salary and an employer that matches 100 percent on a 4 percent contribution, that match alone is worth about $3,600 a year, completely free.",
+      "tension": "It's free money sitting there. Until you skip it by not contributing enough to get it. Here's what that actually costs you.",
+      "reveal": "That free match alone, invested for 20 years at seven percent, grows to about $156k.",
+      "twist": "That's free money you'd be walking away from. Always contribute enough to get the full match first. Run your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "401k_match_v5",
+    "title": "Skipping your 401k match is leaving $295k on the table \ud83d\udcb8",
+    "tool_url": "https://wealthdelay.com/401k-contribution-calculator",
+    "tags": [
+      "401k",
+      "employer match",
+      "retirement",
+      "free money",
+      "personal finance",
+      "investing"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Your employer offers a 401k match.",
+        "accent": "Most people don't claim the full thing.",
+        "sub": "Here's what that costs."
+      },
+      "setup": {
+        "title": "$45,000 salary. Employer matches 50% on a 6% contribution.",
+        "a": {
+          "label": "YOU CONTRIBUTE",
+          "sub": "6% of salary"
+        },
+        "b": {
+          "label": "EMPLOYER MATCHES",
+          "sub": "50% of that, free"
+        },
+        "foot": "That match alone is about $1,350/year, free money."
+      },
+      "tension": {
+        "big": [
+          "Just free money sitting there.",
+          "Until you actually skip it."
+        ],
+        "pill": "",
+        "ask": "Here's the real cost of skipping it."
+      },
+      "reveal": {
+        "head": "If invested for 40 years:",
+        "a": {
+          "label": "MATCH ONLY",
+          "val": 295,
+          "valt": "$295k",
+          "sub": "just the free employer money"
+        },
+        "b": {
+          "label": "YOU SKIPPED",
+          "val": 0,
+          "valt": "$0",
+          "sub": "if you don't contribute enough to get it"
+        }
+      },
+      "twist": {
+        "l1": "That match is literally free money.",
+        "l2": "Skip it for 40 years and you lose $295k.",
+        "l3": "Always get the full match first."
+      }
+    },
+    "vo": {
+      "hook": "Why is skipping your 401k match one of the most expensive mistakes you can make early in your career?",
+      "setup": "With a $45,000 salary and an employer that matches 50 percent on a 6 percent contribution, that match alone is worth about $1,350 a year, completely free.",
+      "tension": "It's free money sitting there. Until you skip it by not contributing enough to get it. Here's what that actually costs you.",
+      "reveal": "That free match alone, invested for 40 years at seven percent, grows to about $295k.",
+      "twist": "That's free money you'd be walking away from. Always contribute enough to get the full match first. Run your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "bill"
+  },
+  {
+    "id": "invest_raise_v1",
+    "title": "Investing your next raise instead of spending it = $366k \ud83e\udd2f",
+    "tool_url": "https://wealthdelay.com/lifestyle-inflation-calculator",
+    "tags": [
+      "lifestyle creep",
+      "raise",
+      "investing",
+      "compound interest",
+      "personal finance",
+      "money tips"
+    ],
+    "accent": "green",
+    "scenes": {
+      "hook": {
+        "big": "You just got a raise.",
+        "accent": "It's about $300/month extra.",
+        "sub": "What you do next changes everything."
+      },
+      "setup": {
+        "title": "$300/month, invested at 7% for 30 years \u2014 vs spent on lifestyle creep.",
+        "a": {
+          "label": "INVESTED",
+          "sub": "raise goes straight into the market"
+        },
+        "b": {
+          "label": "SPENT",
+          "sub": "raise quietly absorbed into spending"
+        },
+        "foot": "Same raise. Two completely different futures."
+      },
+      "tension": {
+        "big": [
+          "It's just $300 a month.",
+          "Doesn't feel like much."
+        ],
+        "pill": "",
+        "ask": "Let it compound for a few decades."
+      },
+      "reveal": {
+        "head": "After 30 years:",
+        "a": {
+          "label": "INVESTED",
+          "val": 366,
+          "valt": "$366k",
+          "sub": "put in $108,000"
+        },
+        "b": {
+          "label": "SPENT",
+          "val": 0,
+          "valt": "$0",
+          "sub": "absorbed into lifestyle, gone"
+        }
+      },
+      "twist": {
+        "l1": "That $300 raise felt small.",
+        "l2": "Invested, it became $366k.",
+        "l3": "Lifestyle creep is the silent wealth killer."
+      }
+    },
+    "vo": {
+      "hook": "Why does investing your next raise instead of spending it matter so much more than it feels like in the moment?",
+      "setup": "Say your raise is about $300 a month extra. We're comparing investing it at seven percent for 30 years versus letting it quietly get absorbed into lifestyle creep.",
+      "tension": "It's just $300 a month. Doesn't feel like much on its own. Let it compound for a few decades though.",
+      "reveal": "Invested, that raise grows to about $366k after 30 years. Spent, it's just gone \u2014 zero left.",
+      "twist": "That raise felt small in the moment. Invested, it became $366k. Run your own raise scenario free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "invest_raise_v2",
+    "title": "Investing your next raise instead of spending it = $405k \ud83e\udd2f",
+    "tool_url": "https://wealthdelay.com/lifestyle-inflation-calculator",
+    "tags": [
+      "lifestyle creep",
+      "raise",
+      "investing",
+      "compound interest",
+      "personal finance",
+      "money tips"
+    ],
+    "accent": "green",
+    "scenes": {
+      "hook": {
+        "big": "You just got a raise.",
+        "accent": "It's about $500/month extra.",
+        "sub": "What you do next changes everything."
+      },
+      "setup": {
+        "title": "$500/month, invested at 7% for 25 years \u2014 vs spent on lifestyle creep.",
+        "a": {
+          "label": "INVESTED",
+          "sub": "raise goes straight into the market"
+        },
+        "b": {
+          "label": "SPENT",
+          "sub": "raise quietly absorbed into spending"
+        },
+        "foot": "Same raise. Two completely different futures."
+      },
+      "tension": {
+        "big": [
+          "It's just $500 a month.",
+          "Doesn't feel like much."
+        ],
+        "pill": "",
+        "ask": "Let it compound for a few decades."
+      },
+      "reveal": {
+        "head": "After 25 years:",
+        "a": {
+          "label": "INVESTED",
+          "val": 405,
+          "valt": "$405k",
+          "sub": "put in $150,000"
+        },
+        "b": {
+          "label": "SPENT",
+          "val": 0,
+          "valt": "$0",
+          "sub": "absorbed into lifestyle, gone"
+        }
+      },
+      "twist": {
+        "l1": "That $500 raise felt small.",
+        "l2": "Invested, it became $405k.",
+        "l3": "Lifestyle creep is the silent wealth killer."
+      }
+    },
+    "vo": {
+      "hook": "Why does investing your next raise instead of spending it matter so much more than it feels like in the moment?",
+      "setup": "Say your raise is about $500 a month extra. We're comparing investing it at seven percent for 25 years versus letting it quietly get absorbed into lifestyle creep.",
+      "tension": "It's just $500 a month. Doesn't feel like much on its own. Let it compound for a few decades though.",
+      "reveal": "Invested, that raise grows to about $405k after 25 years. Spent, it's just gone \u2014 zero left.",
+      "twist": "That raise felt small in the moment. Invested, it became $405k. Run your own raise scenario free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "invest_raise_v3",
+    "title": "Investing your next raise instead of spending it = $360k \ud83e\udd2f",
+    "tool_url": "https://wealthdelay.com/lifestyle-inflation-calculator",
+    "tags": [
+      "lifestyle creep",
+      "raise",
+      "investing",
+      "compound interest",
+      "personal finance",
+      "money tips"
+    ],
+    "accent": "green",
+    "scenes": {
+      "hook": {
+        "big": "You just got a raise.",
+        "accent": "It's about $200/month extra.",
+        "sub": "What you do next changes everything."
+      },
+      "setup": {
+        "title": "$200/month, invested at 7% for 35 years \u2014 vs spent on lifestyle creep.",
+        "a": {
+          "label": "INVESTED",
+          "sub": "raise goes straight into the market"
+        },
+        "b": {
+          "label": "SPENT",
+          "sub": "raise quietly absorbed into spending"
+        },
+        "foot": "Same raise. Two completely different futures."
+      },
+      "tension": {
+        "big": [
+          "It's just $200 a month.",
+          "Doesn't feel like much."
+        ],
+        "pill": "",
+        "ask": "Let it compound for a few decades."
+      },
+      "reveal": {
+        "head": "After 35 years:",
+        "a": {
+          "label": "INVESTED",
+          "val": 360,
+          "valt": "$360k",
+          "sub": "put in $84,000"
+        },
+        "b": {
+          "label": "SPENT",
+          "val": 0,
+          "valt": "$0",
+          "sub": "absorbed into lifestyle, gone"
+        }
+      },
+      "twist": {
+        "l1": "That $200 raise felt small.",
+        "l2": "Invested, it became $360k.",
+        "l3": "Lifestyle creep is the silent wealth killer."
+      }
+    },
+    "vo": {
+      "hook": "Why does investing your next raise instead of spending it matter so much more than it feels like in the moment?",
+      "setup": "Say your raise is about $200 a month extra. We're comparing investing it at seven percent for 35 years versus letting it quietly get absorbed into lifestyle creep.",
+      "tension": "It's just $200 a month. Doesn't feel like much on its own. Let it compound for a few decades though.",
+      "reveal": "Invested, that raise grows to about $360k after 35 years. Spent, it's just gone \u2014 zero left.",
+      "twist": "That raise felt small in the moment. Invested, it became $360k. Run your own raise scenario free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "invest_raise_v4",
+    "title": "Investing your next raise instead of spending it = $365k \ud83e\udd2f",
+    "tool_url": "https://wealthdelay.com/lifestyle-inflation-calculator",
+    "tags": [
+      "lifestyle creep",
+      "raise",
+      "investing",
+      "compound interest",
+      "personal finance",
+      "money tips"
+    ],
+    "accent": "green",
+    "scenes": {
+      "hook": {
+        "big": "You just got a raise.",
+        "accent": "It's about $700/month extra.",
+        "sub": "What you do next changes everything."
+      },
+      "setup": {
+        "title": "$700/month, invested at 7% for 20 years \u2014 vs spent on lifestyle creep.",
+        "a": {
+          "label": "INVESTED",
+          "sub": "raise goes straight into the market"
+        },
+        "b": {
+          "label": "SPENT",
+          "sub": "raise quietly absorbed into spending"
+        },
+        "foot": "Same raise. Two completely different futures."
+      },
+      "tension": {
+        "big": [
+          "It's just $700 a month.",
+          "Doesn't feel like much."
+        ],
+        "pill": "",
+        "ask": "Let it compound for a few decades."
+      },
+      "reveal": {
+        "head": "After 20 years:",
+        "a": {
+          "label": "INVESTED",
+          "val": 365,
+          "valt": "$365k",
+          "sub": "put in $168,000"
+        },
+        "b": {
+          "label": "SPENT",
+          "val": 0,
+          "valt": "$0",
+          "sub": "absorbed into lifestyle, gone"
+        }
+      },
+      "twist": {
+        "l1": "That $700 raise felt small.",
+        "l2": "Invested, it became $365k.",
+        "l3": "Lifestyle creep is the silent wealth killer."
+      }
+    },
+    "vo": {
+      "hook": "Why does investing your next raise instead of spending it matter so much more than it feels like in the moment?",
+      "setup": "Say your raise is about $700 a month extra. We're comparing investing it at seven percent for 20 years versus letting it quietly get absorbed into lifestyle creep.",
+      "tension": "It's just $700 a month. Doesn't feel like much on its own. Let it compound for a few decades though.",
+      "reveal": "Invested, that raise grows to about $365k after 20 years. Spent, it's just gone \u2014 zero left.",
+      "twist": "That raise felt small in the moment. Invested, it became $365k. Run your own raise scenario free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "invest_raise_v5",
+    "title": "Investing your next raise instead of spending it = $488k \ud83e\udd2f",
+    "tool_url": "https://wealthdelay.com/lifestyle-inflation-calculator",
+    "tags": [
+      "lifestyle creep",
+      "raise",
+      "investing",
+      "compound interest",
+      "personal finance",
+      "money tips"
+    ],
+    "accent": "green",
+    "scenes": {
+      "hook": {
+        "big": "You just got a raise.",
+        "accent": "It's about $400/month extra.",
+        "sub": "What you do next changes everything."
+      },
+      "setup": {
+        "title": "$400/month, invested at 7% for 30 years \u2014 vs spent on lifestyle creep.",
+        "a": {
+          "label": "INVESTED",
+          "sub": "raise goes straight into the market"
+        },
+        "b": {
+          "label": "SPENT",
+          "sub": "raise quietly absorbed into spending"
+        },
+        "foot": "Same raise. Two completely different futures."
+      },
+      "tension": {
+        "big": [
+          "It's just $400 a month.",
+          "Doesn't feel like much."
+        ],
+        "pill": "",
+        "ask": "Let it compound for a few decades."
+      },
+      "reveal": {
+        "head": "After 30 years:",
+        "a": {
+          "label": "INVESTED",
+          "val": 488,
+          "valt": "$488k",
+          "sub": "put in $144,000"
+        },
+        "b": {
+          "label": "SPENT",
+          "val": 0,
+          "valt": "$0",
+          "sub": "absorbed into lifestyle, gone"
+        }
+      },
+      "twist": {
+        "l1": "That $400 raise felt small.",
+        "l2": "Invested, it became $488k.",
+        "l3": "Lifestyle creep is the silent wealth killer."
+      }
+    },
+    "vo": {
+      "hook": "Why does investing your next raise instead of spending it matter so much more than it feels like in the moment?",
+      "setup": "Say your raise is about $400 a month extra. We're comparing investing it at seven percent for 30 years versus letting it quietly get absorbed into lifestyle creep.",
+      "tension": "It's just $400 a month. Doesn't feel like much on its own. Let it compound for a few decades though.",
+      "reveal": "Invested, that raise grows to about $488k after 30 years. Spent, it's just gone \u2014 zero left.",
+      "twist": "That raise felt small in the moment. Invested, it became $488k. Run your own raise scenario free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "bill"
+  },
+  {
+    "id": "rent_invest_v1",
+    "title": "Renting and investing the difference could beat buying by $208k \ud83c\udfe0",
+    "tool_url": "https://wealthdelay.com/rent-vs-buy-calculator",
+    "tags": [
+      "rent vs buy",
+      "real estate",
+      "investing",
+      "personal finance",
+      "compound interest",
+      "money tips"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "\"Renting is throwing away money.\"",
+        "accent": "Maybe. Maybe not.",
+        "sub": "Depends on what you do with the difference."
+      },
+      "setup": {
+        "title": "Renting costs $400 less/month than buying. Invest that gap at 7% for 20 years.",
+        "a": {
+          "label": "BUY",
+          "sub": "higher monthly cost, building home equity"
+        },
+        "b": {
+          "label": "RENT + INVEST",
+          "sub": "$400/month gap invested instead"
+        },
+        "foot": "Same housing budget. Different allocation of the difference."
+      },
+      "tension": {
+        "big": [
+          "\"Renting is just throwing money away.\"",
+          "That's the common advice."
+        ],
+        "pill": "",
+        "ask": "But what if you invested the gap?"
+      },
+      "reveal": {
+        "head": "After 20 years, that invested gap alone:",
+        "a": {
+          "label": "INVESTED GAP",
+          "val": 208,
+          "valt": "$208k",
+          "sub": "from the rent/buy cost difference"
+        },
+        "b": {
+          "label": "NOT INVESTED",
+          "val": 0,
+          "valt": "$0",
+          "sub": "if the gap is just spent"
+        }
+      },
+      "twist": {
+        "l1": "Renting isn't automatically wrong.",
+        "l2": "Investing the gap can build $208k.",
+        "l3": "It depends entirely on your discipline."
+      }
+    },
+    "vo": {
+      "hook": "Why is \"renting is throwing away money\" not always true? It depends on one specific habit.",
+      "setup": "Say renting costs $400 less a month than buying in your area. We're investing that exact difference at seven percent for 20 years.",
+      "tension": "The common advice says renting just throws money away. But what if you actually invested the monthly gap instead?",
+      "reveal": "That invested gap alone grows to about $208k after 20 years.",
+      "twist": "Renting isn't automatically the wrong move \u2014 it depends entirely on whether you actually invest the difference. Compare your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "rent_invest_v2",
+    "title": "Renting and investing the difference could beat buying by $190k \ud83c\udfe0",
+    "tool_url": "https://wealthdelay.com/rent-vs-buy-calculator",
+    "tags": [
+      "rent vs buy",
+      "real estate",
+      "investing",
+      "personal finance",
+      "compound interest",
+      "money tips"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "\"Renting is throwing away money.\"",
+        "accent": "Maybe. Maybe not.",
+        "sub": "Depends on what you do with the difference."
+      },
+      "setup": {
+        "title": "Renting costs $600 less/month than buying. Invest that gap at 7% for 15 years.",
+        "a": {
+          "label": "BUY",
+          "sub": "higher monthly cost, building home equity"
+        },
+        "b": {
+          "label": "RENT + INVEST",
+          "sub": "$600/month gap invested instead"
+        },
+        "foot": "Same housing budget. Different allocation of the difference."
+      },
+      "tension": {
+        "big": [
+          "\"Renting is just throwing money away.\"",
+          "That's the common advice."
+        ],
+        "pill": "",
+        "ask": "But what if you invested the gap?"
+      },
+      "reveal": {
+        "head": "After 15 years, that invested gap alone:",
+        "a": {
+          "label": "INVESTED GAP",
+          "val": 190,
+          "valt": "$190k",
+          "sub": "from the rent/buy cost difference"
+        },
+        "b": {
+          "label": "NOT INVESTED",
+          "val": 0,
+          "valt": "$0",
+          "sub": "if the gap is just spent"
+        }
+      },
+      "twist": {
+        "l1": "Renting isn't automatically wrong.",
+        "l2": "Investing the gap can build $190k.",
+        "l3": "It depends entirely on your discipline."
+      }
+    },
+    "vo": {
+      "hook": "Why is \"renting is throwing away money\" not always true? It depends on one specific habit.",
+      "setup": "Say renting costs $600 less a month than buying in your area. We're investing that exact difference at seven percent for 15 years.",
+      "tension": "The common advice says renting just throws money away. But what if you actually invested the monthly gap instead?",
+      "reveal": "That invested gap alone grows to about $190k after 15 years.",
+      "twist": "Renting isn't automatically the wrong move \u2014 it depends entirely on whether you actually invest the difference. Compare your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "rent_invest_v3",
+    "title": "Renting and investing the difference could beat buying by $243k \ud83c\udfe0",
+    "tool_url": "https://wealthdelay.com/rent-vs-buy-calculator",
+    "tags": [
+      "rent vs buy",
+      "real estate",
+      "investing",
+      "personal finance",
+      "compound interest",
+      "money tips"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "\"Renting is throwing away money.\"",
+        "accent": "Maybe. Maybe not.",
+        "sub": "Depends on what you do with the difference."
+      },
+      "setup": {
+        "title": "Renting costs $300 less/month than buying. Invest that gap at 7% for 25 years.",
+        "a": {
+          "label": "BUY",
+          "sub": "higher monthly cost, building home equity"
+        },
+        "b": {
+          "label": "RENT + INVEST",
+          "sub": "$300/month gap invested instead"
+        },
+        "foot": "Same housing budget. Different allocation of the difference."
+      },
+      "tension": {
+        "big": [
+          "\"Renting is just throwing money away.\"",
+          "That's the common advice."
+        ],
+        "pill": "",
+        "ask": "But what if you invested the gap?"
+      },
+      "reveal": {
+        "head": "After 25 years, that invested gap alone:",
+        "a": {
+          "label": "INVESTED GAP",
+          "val": 243,
+          "valt": "$243k",
+          "sub": "from the rent/buy cost difference"
+        },
+        "b": {
+          "label": "NOT INVESTED",
+          "val": 0,
+          "valt": "$0",
+          "sub": "if the gap is just spent"
+        }
+      },
+      "twist": {
+        "l1": "Renting isn't automatically wrong.",
+        "l2": "Investing the gap can build $243k.",
+        "l3": "It depends entirely on your discipline."
+      }
+    },
+    "vo": {
+      "hook": "Why is \"renting is throwing away money\" not always true? It depends on one specific habit.",
+      "setup": "Say renting costs $300 less a month than buying in your area. We're investing that exact difference at seven percent for 25 years.",
+      "tension": "The common advice says renting just throws money away. But what if you actually invested the monthly gap instead?",
+      "reveal": "That invested gap alone grows to about $243k after 25 years.",
+      "twist": "Renting isn't automatically the wrong move \u2014 it depends entirely on whether you actually invest the difference. Compare your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "rent_invest_v4",
+    "title": "Renting and investing the difference could beat buying by $138k \ud83c\udfe0",
+    "tool_url": "https://wealthdelay.com/rent-vs-buy-calculator",
+    "tags": [
+      "rent vs buy",
+      "real estate",
+      "investing",
+      "personal finance",
+      "compound interest",
+      "money tips"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "\"Renting is throwing away money.\"",
+        "accent": "Maybe. Maybe not.",
+        "sub": "Depends on what you do with the difference."
+      },
+      "setup": {
+        "title": "Renting costs $800 less/month than buying. Invest that gap at 7% for 10 years.",
+        "a": {
+          "label": "BUY",
+          "sub": "higher monthly cost, building home equity"
+        },
+        "b": {
+          "label": "RENT + INVEST",
+          "sub": "$800/month gap invested instead"
+        },
+        "foot": "Same housing budget. Different allocation of the difference."
+      },
+      "tension": {
+        "big": [
+          "\"Renting is just throwing money away.\"",
+          "That's the common advice."
+        ],
+        "pill": "",
+        "ask": "But what if you invested the gap?"
+      },
+      "reveal": {
+        "head": "After 10 years, that invested gap alone:",
+        "a": {
+          "label": "INVESTED GAP",
+          "val": 138,
+          "valt": "$138k",
+          "sub": "from the rent/buy cost difference"
+        },
+        "b": {
+          "label": "NOT INVESTED",
+          "val": 0,
+          "valt": "$0",
+          "sub": "if the gap is just spent"
+        }
+      },
+      "twist": {
+        "l1": "Renting isn't automatically wrong.",
+        "l2": "Investing the gap can build $138k.",
+        "l3": "It depends entirely on your discipline."
+      }
+    },
+    "vo": {
+      "hook": "Why is \"renting is throwing away money\" not always true? It depends on one specific habit.",
+      "setup": "Say renting costs $800 less a month than buying in your area. We're investing that exact difference at seven percent for 10 years.",
+      "tension": "The common advice says renting just throws money away. But what if you actually invested the monthly gap instead?",
+      "reveal": "That invested gap alone grows to about $138k after 10 years.",
+      "twist": "Renting isn't automatically the wrong move \u2014 it depends entirely on whether you actually invest the difference. Compare your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "bill"
+  },
+  {
+    "id": "rent_invest_v5",
+    "title": "Renting and investing the difference could beat buying by $610k \ud83c\udfe0",
+    "tool_url": "https://wealthdelay.com/rent-vs-buy-calculator",
+    "tags": [
+      "rent vs buy",
+      "real estate",
+      "investing",
+      "personal finance",
+      "compound interest",
+      "money tips"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "\"Renting is throwing away money.\"",
+        "accent": "Maybe. Maybe not.",
+        "sub": "Depends on what you do with the difference."
+      },
+      "setup": {
+        "title": "Renting costs $500 less/month than buying. Invest that gap at 7% for 30 years.",
+        "a": {
+          "label": "BUY",
+          "sub": "higher monthly cost, building home equity"
+        },
+        "b": {
+          "label": "RENT + INVEST",
+          "sub": "$500/month gap invested instead"
+        },
+        "foot": "Same housing budget. Different allocation of the difference."
+      },
+      "tension": {
+        "big": [
+          "\"Renting is just throwing money away.\"",
+          "That's the common advice."
+        ],
+        "pill": "",
+        "ask": "But what if you invested the gap?"
+      },
+      "reveal": {
+        "head": "After 30 years, that invested gap alone:",
+        "a": {
+          "label": "INVESTED GAP",
+          "val": 610,
+          "valt": "$610k",
+          "sub": "from the rent/buy cost difference"
+        },
+        "b": {
+          "label": "NOT INVESTED",
+          "val": 0,
+          "valt": "$0",
+          "sub": "if the gap is just spent"
+        }
+      },
+      "twist": {
+        "l1": "Renting isn't automatically wrong.",
+        "l2": "Investing the gap can build $610k.",
+        "l3": "It depends entirely on your discipline."
+      }
+    },
+    "vo": {
+      "hook": "Why is \"renting is throwing away money\" not always true? It depends on one specific habit.",
+      "setup": "Say renting costs $500 less a month than buying in your area. We're investing that exact difference at seven percent for 30 years.",
+      "tension": "The common advice says renting just throws money away. But what if you actually invested the monthly gap instead?",
+      "reveal": "That invested gap alone grows to about $610k after 30 years.",
+      "twist": "Renting isn't automatically the wrong move \u2014 it depends entirely on whether you actually invest the difference. Compare your own numbers on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "cc_minimum_v1",
+    "title": "Paying the minimum on $5,000 credit card debt took 50 years \ud83d\ude28",
+    "tool_url": "https://wealthdelay.com/credit-card-true-cost-calculator",
+    "tags": [
+      "credit card debt",
+      "debt payoff",
+      "personal finance",
+      "money tips",
+      "interest rates",
+      "minimum payment"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "$5,000 credit card balance.",
+        "accent": "22% APR. Just the minimum payment.",
+        "sub": "Guess how long it takes to pay off."
+      },
+      "setup": {
+        "title": "$5,000 at 22% APR, paying only the 2% minimum each month.",
+        "a": {
+          "label": "BALANCE",
+          "sub": "$5,000"
+        },
+        "b": {
+          "label": "APR",
+          "sub": "22% interest"
+        },
+        "foot": "Sounds manageable. The minimum is always small."
+      },
+      "tension": {
+        "big": [
+          "The minimum payment feels easy.",
+          "That's exactly the trap."
+        ],
+        "pill": "",
+        "ask": "Here's how long it actually takes."
+      },
+      "reveal": {
+        "head": "Paying only the minimum:",
+        "a": {
+          "label": "TIME TO PAY OFF",
+          "val": 50,
+          "valt": "50 yrs",
+          "sub": "just from minimum payments"
+        },
+        "b": {
+          "label": "TOTAL INTEREST",
+          "val": 33,
+          "valt": "$33k",
+          "sub": "paid on top of the balance"
+        }
+      },
+      "twist": {
+        "l1": "That $5,000 balance took 50 years to clear.",
+        "l2": "You'd pay $33k in interest alone.",
+        "l3": "Minimum payments are designed to keep you paying."
+      }
+    },
+    "vo": {
+      "hook": "Why does paying just the minimum on a credit card take so much longer than people expect?",
+      "setup": "A $5,000 balance at 22 percent APR, paying only the minimum payment each month.",
+      "tension": "The minimum payment feels small and manageable. That's exactly the trap it's designed to be.",
+      "reveal": "Paying only the minimum, it takes about 50 years to pay off, and you'd pay roughly $33k in interest on top of the original balance.",
+      "twist": "Minimum payments are designed to keep you paying as long as possible. Run your own payoff timeline free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical based on a fixed APR and a minimum payment of the stated percentage of balance (or $25, whichever is greater); actual card terms vary. Not financial advice.",
+    "voice": "brian"
+  },
+  {
+    "id": "cc_minimum_v2",
+    "title": "Paying the minimum on $8,000 credit card debt took 23 years \ud83d\ude28",
+    "tool_url": "https://wealthdelay.com/credit-card-true-cost-calculator",
+    "tags": [
+      "credit card debt",
+      "debt payoff",
+      "personal finance",
+      "money tips",
+      "interest rates",
+      "minimum payment"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "$8,000 credit card balance.",
+        "accent": "24% APR. Just the minimum payment.",
+        "sub": "Guess how long it takes to pay off."
+      },
+      "setup": {
+        "title": "$8,000 at 24% APR, paying only the 3% minimum each month.",
+        "a": {
+          "label": "BALANCE",
+          "sub": "$8,000"
+        },
+        "b": {
+          "label": "APR",
+          "sub": "24% interest"
+        },
+        "foot": "Sounds manageable. The minimum is always small."
+      },
+      "tension": {
+        "big": [
+          "The minimum payment feels easy.",
+          "That's exactly the trap."
+        ],
+        "pill": "",
+        "ask": "Here's how long it actually takes."
+      },
+      "reveal": {
+        "head": "Paying only the minimum:",
+        "a": {
+          "label": "TIME TO PAY OFF",
+          "val": 23,
+          "valt": "23 yrs",
+          "sub": "just from minimum payments"
+        },
+        "b": {
+          "label": "TOTAL INTEREST",
+          "val": 15,
+          "valt": "$15k",
+          "sub": "paid on top of the balance"
+        }
+      },
+      "twist": {
+        "l1": "That $8,000 balance took 23 years to clear.",
+        "l2": "You'd pay $15k in interest alone.",
+        "l3": "Minimum payments are designed to keep you paying."
+      }
+    },
+    "vo": {
+      "hook": "Why does paying just the minimum on a credit card take so much longer than people expect?",
+      "setup": "A $8,000 balance at 24 percent APR, paying only the minimum payment each month.",
+      "tension": "The minimum payment feels small and manageable. That's exactly the trap it's designed to be.",
+      "reveal": "Paying only the minimum, it takes about 23 years to pay off, and you'd pay roughly $15k in interest on top of the original balance.",
+      "twist": "Minimum payments are designed to keep you paying as long as possible. Run your own payoff timeline free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical based on a fixed APR and a minimum payment of the stated percentage of balance (or $25, whichever is greater); actual card terms vary. Not financial advice.",
+    "voice": "brian"
+  },
+  {
+    "id": "cc_minimum_v3",
+    "title": "Paying the minimum on $3,000 credit card debt took 31 years \ud83d\ude28",
+    "tool_url": "https://wealthdelay.com/credit-card-true-cost-calculator",
+    "tags": [
+      "credit card debt",
+      "debt payoff",
+      "personal finance",
+      "money tips",
+      "interest rates",
+      "minimum payment"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "$3,000 credit card balance.",
+        "accent": "20% APR. Just the minimum payment.",
+        "sub": "Guess how long it takes to pay off."
+      },
+      "setup": {
+        "title": "$3,000 at 20% APR, paying only the 2% minimum each month.",
+        "a": {
+          "label": "BALANCE",
+          "sub": "$3,000"
+        },
+        "b": {
+          "label": "APR",
+          "sub": "20% interest"
+        },
+        "foot": "Sounds manageable. The minimum is always small."
+      },
+      "tension": {
+        "big": [
+          "The minimum payment feels easy.",
+          "That's exactly the trap."
+        ],
+        "pill": "",
+        "ask": "Here's how long it actually takes."
+      },
+      "reveal": {
+        "head": "Paying only the minimum:",
+        "a": {
+          "label": "TIME TO PAY OFF",
+          "val": 31,
+          "valt": "31 yrs",
+          "sub": "just from minimum payments"
+        },
+        "b": {
+          "label": "TOTAL INTEREST",
+          "val": 10,
+          "valt": "$10k",
+          "sub": "paid on top of the balance"
+        }
+      },
+      "twist": {
+        "l1": "That $3,000 balance took 31 years to clear.",
+        "l2": "You'd pay $10k in interest alone.",
+        "l3": "Minimum payments are designed to keep you paying."
+      }
+    },
+    "vo": {
+      "hook": "Why does paying just the minimum on a credit card take so much longer than people expect?",
+      "setup": "A $3,000 balance at 20 percent APR, paying only the minimum payment each month.",
+      "tension": "The minimum payment feels small and manageable. That's exactly the trap it's designed to be.",
+      "reveal": "Paying only the minimum, it takes about 31 years to pay off, and you'd pay roughly $10k in interest on top of the original balance.",
+      "twist": "Minimum payments are designed to keep you paying as long as possible. Run your own payoff timeline free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical based on a fixed APR and a minimum payment of the stated percentage of balance (or $25, whichever is greater); actual card terms vary. Not financial advice.",
+    "voice": "bill"
+  },
+  {
+    "id": "cc_minimum_v4",
+    "title": "Paying the minimum on $10,000 credit card debt took 50 years \ud83d\ude28",
+    "tool_url": "https://wealthdelay.com/credit-card-true-cost-calculator",
+    "tags": [
+      "credit card debt",
+      "debt payoff",
+      "personal finance",
+      "money tips",
+      "interest rates",
+      "minimum payment"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "$10,000 credit card balance.",
+        "accent": "26% APR. Just the minimum payment.",
+        "sub": "Guess how long it takes to pay off."
+      },
+      "setup": {
+        "title": "$10,000 at 26% APR, paying only the 2% minimum each month.",
+        "a": {
+          "label": "BALANCE",
+          "sub": "$10,000"
+        },
+        "b": {
+          "label": "APR",
+          "sub": "26% interest"
+        },
+        "foot": "Sounds manageable. The minimum is always small."
+      },
+      "tension": {
+        "big": [
+          "The minimum payment feels easy.",
+          "That's exactly the trap."
+        ],
+        "pill": "",
+        "ask": "Here's how long it actually takes."
+      },
+      "reveal": {
+        "head": "Paying only the minimum:",
+        "a": {
+          "label": "TIME TO PAY OFF",
+          "val": 50,
+          "valt": "50 yrs",
+          "sub": "just from minimum payments"
+        },
+        "b": {
+          "label": "TOTAL INTEREST",
+          "val": 196,
+          "valt": "$196k",
+          "sub": "paid on top of the balance"
+        }
+      },
+      "twist": {
+        "l1": "That $10,000 balance took 50 years to clear.",
+        "l2": "You'd pay $196k in interest alone.",
+        "l3": "Minimum payments are designed to keep you paying."
+      }
+    },
+    "vo": {
+      "hook": "Why does paying just the minimum on a credit card take so much longer than people expect?",
+      "setup": "A $10,000 balance at 26 percent APR, paying only the minimum payment each month.",
+      "tension": "The minimum payment feels small and manageable. That's exactly the trap it's designed to be.",
+      "reveal": "Paying only the minimum, it takes about 50 years to pay off, and you'd pay roughly $196k in interest on top of the original balance.",
+      "twist": "Minimum payments are designed to keep you paying as long as possible. Run your own payoff timeline free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical based on a fixed APR and a minimum payment of the stated percentage of balance (or $25, whichever is greater); actual card terms vary. Not financial advice.",
+    "voice": "ed"
+  },
+  {
+    "id": "cc_minimum_v5",
+    "title": "Paying the minimum on $6,000 credit card debt took 18 years \ud83d\ude28",
+    "tool_url": "https://wealthdelay.com/credit-card-true-cost-calculator",
+    "tags": [
+      "credit card debt",
+      "debt payoff",
+      "personal finance",
+      "money tips",
+      "interest rates",
+      "minimum payment"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "$6,000 credit card balance.",
+        "accent": "22% APR. Just the minimum payment.",
+        "sub": "Guess how long it takes to pay off."
+      },
+      "setup": {
+        "title": "$6,000 at 22% APR, paying only the 3% minimum each month.",
+        "a": {
+          "label": "BALANCE",
+          "sub": "$6,000"
+        },
+        "b": {
+          "label": "APR",
+          "sub": "22% interest"
+        },
+        "foot": "Sounds manageable. The minimum is always small."
+      },
+      "tension": {
+        "big": [
+          "The minimum payment feels easy.",
+          "That's exactly the trap."
+        ],
+        "pill": "",
+        "ask": "Here's how long it actually takes."
+      },
+      "reveal": {
+        "head": "Paying only the minimum:",
+        "a": {
+          "label": "TIME TO PAY OFF",
+          "val": 18,
+          "valt": "18 yrs",
+          "sub": "just from minimum payments"
+        },
+        "b": {
+          "label": "TOTAL INTEREST",
+          "val": 9,
+          "valt": "$9k",
+          "sub": "paid on top of the balance"
+        }
+      },
+      "twist": {
+        "l1": "That $6,000 balance took 18 years to clear.",
+        "l2": "You'd pay $9k in interest alone.",
+        "l3": "Minimum payments are designed to keep you paying."
+      }
+    },
+    "vo": {
+      "hook": "Why does paying just the minimum on a credit card take so much longer than people expect?",
+      "setup": "A $6,000 balance at 22 percent APR, paying only the minimum payment each month.",
+      "tension": "The minimum payment feels small and manageable. That's exactly the trap it's designed to be.",
+      "reveal": "Paying only the minimum, it takes about 18 years to pay off, and you'd pay roughly $9k in interest on top of the original balance.",
+      "twist": "Minimum payments are designed to keep you paying as long as possible. Run your own payoff timeline free on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical based on a fixed APR and a minimum payment of the stated percentage of balance (or $25, whichever is greater); actual card terms vary. Not financial advice.",
+    "voice": "ed"
+  },
+  {
+    "id": "emergency_fund_v1",
+    "title": "Your emergency fund isn't \"wasted\" money \u2014 here's what $10,000 can still do \ud83e\udd14",
+    "tool_url": "https://wealthdelay.com/emergency-fund-calculator",
+    "tags": [
+      "emergency fund",
+      "savings",
+      "personal finance",
+      "financial security",
+      "money tips",
+      "high yield savings"
+    ],
+    "accent": "green",
+    "scenes": {
+      "hook": {
+        "big": "\"That $10,000 sitting in savings is wasted.\"",
+        "accent": "Is it really, though?",
+        "sub": "Let's check the math."
+      },
+      "setup": {
+        "title": "$10,000 emergency fund, in a high-yield account at ~4%, for 20 years.",
+        "a": {
+          "label": "IN SAVINGS",
+          "sub": "earning ~4% in a high-yield account"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "earning ~7% but not liquid in a crisis"
+        },
+        "foot": "The fund isn't doing nothing \u2014 it's doing a different job."
+      },
+      "tension": {
+        "big": [
+          "\"It's just sitting there doing nothing.\"",
+          "That's the common complaint."
+        ],
+        "pill": "",
+        "ask": "It's actually still growing."
+      },
+      "reveal": {
+        "head": "After 20 years, even at the safer rate:",
+        "a": {
+          "label": "GREW TO",
+          "val": 22,
+          "valt": "$22k",
+          "sub": "while staying liquid for emergencies"
+        },
+        "b": {
+          "label": "STARTED WITH",
+          "val": 10,
+          "valt": "$10k",
+          "sub": "the original fund"
+        }
+      },
+      "twist": {
+        "l1": "An emergency fund isn't dead money.",
+        "l2": "It still grew to $22k while protecting you.",
+        "l3": "Safety and growth aren't mutually exclusive."
+      }
+    },
+    "vo": {
+      "hook": "Why do people call an emergency fund \"wasted money\" when it's actually still working for you?",
+      "setup": "A $10,000 emergency fund sitting in a high-yield savings account earning around four percent, over 20 years.",
+      "tension": "The common complaint is that it's just sitting there doing nothing. It's actually still growing \u2014 just more safely.",
+      "reveal": "After 20 years, even at that safer rate, it grows to about $22k, while staying liquid the entire time for a real emergency.",
+      "twist": "An emergency fund isn't dead money \u2014 it's doing a different job than your investments. Compare savings vs investing accounts on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: high-yield savings rate assumed at approximately 4% APY, which varies by bank and over time. Not financial advice.",
+    "voice": "brian"
+  },
+  {
+    "id": "emergency_fund_v2",
+    "title": "Your emergency fund isn't \"wasted\" money \u2014 here's what $15,000 can still do \ud83e\udd14",
+    "tool_url": "https://wealthdelay.com/emergency-fund-calculator",
+    "tags": [
+      "emergency fund",
+      "savings",
+      "personal finance",
+      "financial security",
+      "money tips",
+      "high yield savings"
+    ],
+    "accent": "green",
+    "scenes": {
+      "hook": {
+        "big": "\"That $15,000 sitting in savings is wasted.\"",
+        "accent": "Is it really, though?",
+        "sub": "Let's check the math."
+      },
+      "setup": {
+        "title": "$15,000 emergency fund, in a high-yield account at ~4%, for 15 years.",
+        "a": {
+          "label": "IN SAVINGS",
+          "sub": "earning ~4% in a high-yield account"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "earning ~7% but not liquid in a crisis"
+        },
+        "foot": "The fund isn't doing nothing \u2014 it's doing a different job."
+      },
+      "tension": {
+        "big": [
+          "\"It's just sitting there doing nothing.\"",
+          "That's the common complaint."
+        ],
+        "pill": "",
+        "ask": "It's actually still growing."
+      },
+      "reveal": {
+        "head": "After 15 years, even at the safer rate:",
+        "a": {
+          "label": "GREW TO",
+          "val": 27,
+          "valt": "$27k",
+          "sub": "while staying liquid for emergencies"
+        },
+        "b": {
+          "label": "STARTED WITH",
+          "val": 15,
+          "valt": "$15k",
+          "sub": "the original fund"
+        }
+      },
+      "twist": {
+        "l1": "An emergency fund isn't dead money.",
+        "l2": "It still grew to $27k while protecting you.",
+        "l3": "Safety and growth aren't mutually exclusive."
+      }
+    },
+    "vo": {
+      "hook": "Why do people call an emergency fund \"wasted money\" when it's actually still working for you?",
+      "setup": "A $15,000 emergency fund sitting in a high-yield savings account earning around four percent, over 15 years.",
+      "tension": "The common complaint is that it's just sitting there doing nothing. It's actually still growing \u2014 just more safely.",
+      "reveal": "After 15 years, even at that safer rate, it grows to about $27k, while staying liquid the entire time for a real emergency.",
+      "twist": "An emergency fund isn't dead money \u2014 it's doing a different job than your investments. Compare savings vs investing accounts on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: high-yield savings rate assumed at approximately 4% APY, which varies by bank and over time. Not financial advice.",
+    "voice": "bill"
+  },
+  {
+    "id": "emergency_fund_v3",
+    "title": "Your emergency fund isn't \"wasted\" money \u2014 here's what $5,000 can still do \ud83e\udd14",
+    "tool_url": "https://wealthdelay.com/emergency-fund-calculator",
+    "tags": [
+      "emergency fund",
+      "savings",
+      "personal finance",
+      "financial security",
+      "money tips",
+      "high yield savings"
+    ],
+    "accent": "green",
+    "scenes": {
+      "hook": {
+        "big": "\"That $5,000 sitting in savings is wasted.\"",
+        "accent": "Is it really, though?",
+        "sub": "Let's check the math."
+      },
+      "setup": {
+        "title": "$5,000 emergency fund, in a high-yield account at ~4%, for 25 years.",
+        "a": {
+          "label": "IN SAVINGS",
+          "sub": "earning ~4% in a high-yield account"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "earning ~7% but not liquid in a crisis"
+        },
+        "foot": "The fund isn't doing nothing \u2014 it's doing a different job."
+      },
+      "tension": {
+        "big": [
+          "\"It's just sitting there doing nothing.\"",
+          "That's the common complaint."
+        ],
+        "pill": "",
+        "ask": "It's actually still growing."
+      },
+      "reveal": {
+        "head": "After 25 years, even at the safer rate:",
+        "a": {
+          "label": "GREW TO",
+          "val": 13,
+          "valt": "$13k",
+          "sub": "while staying liquid for emergencies"
+        },
+        "b": {
+          "label": "STARTED WITH",
+          "val": 5,
+          "valt": "$5k",
+          "sub": "the original fund"
+        }
+      },
+      "twist": {
+        "l1": "An emergency fund isn't dead money.",
+        "l2": "It still grew to $13k while protecting you.",
+        "l3": "Safety and growth aren't mutually exclusive."
+      }
+    },
+    "vo": {
+      "hook": "Why do people call an emergency fund \"wasted money\" when it's actually still working for you?",
+      "setup": "A $5,000 emergency fund sitting in a high-yield savings account earning around four percent, over 25 years.",
+      "tension": "The common complaint is that it's just sitting there doing nothing. It's actually still growing \u2014 just more safely.",
+      "reveal": "After 25 years, even at that safer rate, it grows to about $13k, while staying liquid the entire time for a real emergency.",
+      "twist": "An emergency fund isn't dead money \u2014 it's doing a different job than your investments. Compare savings vs investing accounts on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: high-yield savings rate assumed at approximately 4% APY, which varies by bank and over time. Not financial advice.",
+    "voice": "brian"
+  },
+  {
+    "id": "emergency_fund_v4",
+    "title": "Your emergency fund isn't \"wasted\" money \u2014 here's what $20,000 can still do \ud83e\udd14",
+    "tool_url": "https://wealthdelay.com/emergency-fund-calculator",
+    "tags": [
+      "emergency fund",
+      "savings",
+      "personal finance",
+      "financial security",
+      "money tips",
+      "high yield savings"
+    ],
+    "accent": "green",
+    "scenes": {
+      "hook": {
+        "big": "\"That $20,000 sitting in savings is wasted.\"",
+        "accent": "Is it really, though?",
+        "sub": "Let's check the math."
+      },
+      "setup": {
+        "title": "$20,000 emergency fund, in a high-yield account at ~4%, for 10 years.",
+        "a": {
+          "label": "IN SAVINGS",
+          "sub": "earning ~4% in a high-yield account"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "earning ~7% but not liquid in a crisis"
+        },
+        "foot": "The fund isn't doing nothing \u2014 it's doing a different job."
+      },
+      "tension": {
+        "big": [
+          "\"It's just sitting there doing nothing.\"",
+          "That's the common complaint."
+        ],
+        "pill": "",
+        "ask": "It's actually still growing."
+      },
+      "reveal": {
+        "head": "After 10 years, even at the safer rate:",
+        "a": {
+          "label": "GREW TO",
+          "val": 30,
+          "valt": "$30k",
+          "sub": "while staying liquid for emergencies"
+        },
+        "b": {
+          "label": "STARTED WITH",
+          "val": 20,
+          "valt": "$20k",
+          "sub": "the original fund"
+        }
+      },
+      "twist": {
+        "l1": "An emergency fund isn't dead money.",
+        "l2": "It still grew to $30k while protecting you.",
+        "l3": "Safety and growth aren't mutually exclusive."
+      }
+    },
+    "vo": {
+      "hook": "Why do people call an emergency fund \"wasted money\" when it's actually still working for you?",
+      "setup": "A $20,000 emergency fund sitting in a high-yield savings account earning around four percent, over 10 years.",
+      "tension": "The common complaint is that it's just sitting there doing nothing. It's actually still growing \u2014 just more safely.",
+      "reveal": "After 10 years, even at that safer rate, it grows to about $30k, while staying liquid the entire time for a real emergency.",
+      "twist": "An emergency fund isn't dead money \u2014 it's doing a different job than your investments. Compare savings vs investing accounts on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: high-yield savings rate assumed at approximately 4% APY, which varies by bank and over time. Not financial advice.",
+    "voice": "ed"
+  },
+  {
+    "id": "emergency_fund_v5",
+    "title": "Your emergency fund isn't \"wasted\" money \u2014 here's what $8,000 can still do \ud83e\udd14",
+    "tool_url": "https://wealthdelay.com/emergency-fund-calculator",
+    "tags": [
+      "emergency fund",
+      "savings",
+      "personal finance",
+      "financial security",
+      "money tips",
+      "high yield savings"
+    ],
+    "accent": "green",
+    "scenes": {
+      "hook": {
+        "big": "\"That $8,000 sitting in savings is wasted.\"",
+        "accent": "Is it really, though?",
+        "sub": "Let's check the math."
+      },
+      "setup": {
+        "title": "$8,000 emergency fund, in a high-yield account at ~4%, for 30 years.",
+        "a": {
+          "label": "IN SAVINGS",
+          "sub": "earning ~4% in a high-yield account"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "earning ~7% but not liquid in a crisis"
+        },
+        "foot": "The fund isn't doing nothing \u2014 it's doing a different job."
+      },
+      "tension": {
+        "big": [
+          "\"It's just sitting there doing nothing.\"",
+          "That's the common complaint."
+        ],
+        "pill": "",
+        "ask": "It's actually still growing."
+      },
+      "reveal": {
+        "head": "After 30 years, even at the safer rate:",
+        "a": {
+          "label": "GREW TO",
+          "val": 26,
+          "valt": "$26k",
+          "sub": "while staying liquid for emergencies"
+        },
+        "b": {
+          "label": "STARTED WITH",
+          "val": 8,
+          "valt": "$8k",
+          "sub": "the original fund"
+        }
+      },
+      "twist": {
+        "l1": "An emergency fund isn't dead money.",
+        "l2": "It still grew to $26k while protecting you.",
+        "l3": "Safety and growth aren't mutually exclusive."
+      }
+    },
+    "vo": {
+      "hook": "Why do people call an emergency fund \"wasted money\" when it's actually still working for you?",
+      "setup": "A $8,000 emergency fund sitting in a high-yield savings account earning around four percent, over 30 years.",
+      "tension": "The common complaint is that it's just sitting there doing nothing. It's actually still growing \u2014 just more safely.",
+      "reveal": "After 30 years, even at that safer rate, it grows to about $26k, while staying liquid the entire time for a real emergency.",
+      "twist": "An emergency fund isn't dead money \u2014 it's doing a different job than your investments. Compare savings vs investing accounts on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: high-yield savings rate assumed at approximately 4% APY, which varies by bank and over time. Not financial advice.",
+    "voice": "brian"
+  },
+  {
+    "id": "subscription_v1",
+    "title": "Your unused subscriptions are quietly costing you $55k \ud83d\udcf1",
+    "tool_url": "https://wealthdelay.com/streaming-subscription-cost-calculator",
+    "tags": [
+      "subscriptions",
+      "streaming",
+      "money tips",
+      "personal finance",
+      "compound interest",
+      "budgeting"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "Quick gut check:",
+        "accent": "How many subscriptions do you actually use? About $45/month average.",
+        "sub": "Here's what that costs over time."
+      },
+      "setup": {
+        "title": "$45/month in subscriptions, invested at 7% for 30 years instead.",
+        "a": {
+          "label": "SUBSCRIBED",
+          "sub": "streaming, apps, memberships"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "same money, in the market instead"
+        },
+        "foot": "Average household spends about $45/month on subscriptions."
+      },
+      "tension": {
+        "big": [
+          "Over 30 years that's $16,200 of your own cash."
+        ],
+        "pill": "",
+        "ask": "And that's before any growth."
+      },
+      "reveal": {
+        "head": "If invested instead:",
+        "a": {
+          "label": "CASH IN",
+          "val": 16,
+          "valt": "$16k",
+          "sub": "what you'd actually pay in"
+        },
+        "b": {
+          "label": "GROWN TO",
+          "val": 55,
+          "valt": "$55k",
+          "sub": "after 30 years at 7%"
+        }
+      },
+      "twist": {
+        "l1": "Subscriptions feel small individually.",
+        "l2": "Together they're quietly worth $55k.",
+        "l3": "Audit them once a year, it adds up fast."
+      }
+    },
+    "vo": {
+      "hook": "Why do subscriptions feel harmless individually but add up to a shocking number over time?",
+      "setup": "The average household spends about $45 a month on subscriptions. We're investing that same amount at seven percent for 30 years instead.",
+      "tension": "Over 30 years that's $16,200 of your own cash, and that's before any investment growth at all.",
+      "reveal": "Invested instead, that same money grows to about $55k.",
+      "twist": "Subscriptions feel small individually but together they're quietly worth $55k. Audit yours and run the math on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "bill"
+  },
+  {
+    "id": "subscription_v2",
+    "title": "Your unused subscriptions are quietly costing you $49k \ud83d\udcf1",
+    "tool_url": "https://wealthdelay.com/streaming-subscription-cost-calculator",
+    "tags": [
+      "subscriptions",
+      "streaming",
+      "money tips",
+      "personal finance",
+      "compound interest",
+      "budgeting"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "Quick gut check:",
+        "accent": "How many subscriptions do you actually use? About $60/month average.",
+        "sub": "Here's what that costs over time."
+      },
+      "setup": {
+        "title": "$60/month in subscriptions, invested at 7% for 25 years instead.",
+        "a": {
+          "label": "SUBSCRIBED",
+          "sub": "streaming, apps, memberships"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "same money, in the market instead"
+        },
+        "foot": "Average household spends about $60/month on subscriptions."
+      },
+      "tension": {
+        "big": [
+          "Over 25 years that's $18,000 of your own cash."
+        ],
+        "pill": "",
+        "ask": "And that's before any growth."
+      },
+      "reveal": {
+        "head": "If invested instead:",
+        "a": {
+          "label": "CASH IN",
+          "val": 18,
+          "valt": "$18k",
+          "sub": "what you'd actually pay in"
+        },
+        "b": {
+          "label": "GROWN TO",
+          "val": 49,
+          "valt": "$49k",
+          "sub": "after 25 years at 7%"
+        }
+      },
+      "twist": {
+        "l1": "Subscriptions feel small individually.",
+        "l2": "Together they're quietly worth $49k.",
+        "l3": "Audit them once a year, it adds up fast."
+      }
+    },
+    "vo": {
+      "hook": "Why do subscriptions feel harmless individually but add up to a shocking number over time?",
+      "setup": "The average household spends about $60 a month on subscriptions. We're investing that same amount at seven percent for 25 years instead.",
+      "tension": "Over 25 years that's $18,000 of your own cash, and that's before any investment growth at all.",
+      "reveal": "Invested instead, that same money grows to about $49k.",
+      "twist": "Subscriptions feel small individually but together they're quietly worth $49k. Audit yours and run the math on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "subscription_v3",
+    "title": "Your unused subscriptions are quietly costing you $63k \ud83d\udcf1",
+    "tool_url": "https://wealthdelay.com/streaming-subscription-cost-calculator",
+    "tags": [
+      "subscriptions",
+      "streaming",
+      "money tips",
+      "personal finance",
+      "compound interest",
+      "budgeting"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "Quick gut check:",
+        "accent": "How many subscriptions do you actually use? About $35/month average.",
+        "sub": "Here's what that costs over time."
+      },
+      "setup": {
+        "title": "$35/month in subscriptions, invested at 7% for 35 years instead.",
+        "a": {
+          "label": "SUBSCRIBED",
+          "sub": "streaming, apps, memberships"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "same money, in the market instead"
+        },
+        "foot": "Average household spends about $35/month on subscriptions."
+      },
+      "tension": {
+        "big": [
+          "Over 35 years that's $14,700 of your own cash."
+        ],
+        "pill": "",
+        "ask": "And that's before any growth."
+      },
+      "reveal": {
+        "head": "If invested instead:",
+        "a": {
+          "label": "CASH IN",
+          "val": 15,
+          "valt": "$15k",
+          "sub": "what you'd actually pay in"
+        },
+        "b": {
+          "label": "GROWN TO",
+          "val": 63,
+          "valt": "$63k",
+          "sub": "after 35 years at 7%"
+        }
+      },
+      "twist": {
+        "l1": "Subscriptions feel small individually.",
+        "l2": "Together they're quietly worth $63k.",
+        "l3": "Audit them once a year, it adds up fast."
+      }
+    },
+    "vo": {
+      "hook": "Why do subscriptions feel harmless individually but add up to a shocking number over time?",
+      "setup": "The average household spends about $35 a month on subscriptions. We're investing that same amount at seven percent for 35 years instead.",
+      "tension": "Over 35 years that's $14,700 of your own cash, and that's before any investment growth at all.",
+      "reveal": "Invested instead, that same money grows to about $63k.",
+      "twist": "Subscriptions feel small individually but together they're quietly worth $63k. Audit yours and run the math on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "subscription_v4",
+    "title": "Your unused subscriptions are quietly costing you $42k \ud83d\udcf1",
+    "tool_url": "https://wealthdelay.com/streaming-subscription-cost-calculator",
+    "tags": [
+      "subscriptions",
+      "streaming",
+      "money tips",
+      "personal finance",
+      "compound interest",
+      "budgeting"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "Quick gut check:",
+        "accent": "How many subscriptions do you actually use? About $80/month average.",
+        "sub": "Here's what that costs over time."
+      },
+      "setup": {
+        "title": "$80/month in subscriptions, invested at 7% for 20 years instead.",
+        "a": {
+          "label": "SUBSCRIBED",
+          "sub": "streaming, apps, memberships"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "same money, in the market instead"
+        },
+        "foot": "Average household spends about $80/month on subscriptions."
+      },
+      "tension": {
+        "big": [
+          "Over 20 years that's $19,200 of your own cash."
+        ],
+        "pill": "",
+        "ask": "And that's before any growth."
+      },
+      "reveal": {
+        "head": "If invested instead:",
+        "a": {
+          "label": "CASH IN",
+          "val": 19,
+          "valt": "$19k",
+          "sub": "what you'd actually pay in"
+        },
+        "b": {
+          "label": "GROWN TO",
+          "val": 42,
+          "valt": "$42k",
+          "sub": "after 20 years at 7%"
+        }
+      },
+      "twist": {
+        "l1": "Subscriptions feel small individually.",
+        "l2": "Together they're quietly worth $42k.",
+        "l3": "Audit them once a year, it adds up fast."
+      }
+    },
+    "vo": {
+      "hook": "Why do subscriptions feel harmless individually but add up to a shocking number over time?",
+      "setup": "The average household spends about $80 a month on subscriptions. We're investing that same amount at seven percent for 20 years instead.",
+      "tension": "Over 20 years that's $19,200 of your own cash, and that's before any investment growth at all.",
+      "reveal": "Invested instead, that same money grows to about $42k.",
+      "twist": "Subscriptions feel small individually but together they're quietly worth $42k. Audit yours and run the math on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "subscription_v5",
+    "title": "Your unused subscriptions are quietly costing you $61k \ud83d\udcf1",
+    "tool_url": "https://wealthdelay.com/streaming-subscription-cost-calculator",
+    "tags": [
+      "subscriptions",
+      "streaming",
+      "money tips",
+      "personal finance",
+      "compound interest",
+      "budgeting"
+    ],
+    "accent": "red",
+    "scenes": {
+      "hook": {
+        "big": "Quick gut check:",
+        "accent": "How many subscriptions do you actually use? About $50/month average.",
+        "sub": "Here's what that costs over time."
+      },
+      "setup": {
+        "title": "$50/month in subscriptions, invested at 7% for 30 years instead.",
+        "a": {
+          "label": "SUBSCRIBED",
+          "sub": "streaming, apps, memberships"
+        },
+        "b": {
+          "label": "INVESTED",
+          "sub": "same money, in the market instead"
+        },
+        "foot": "Average household spends about $50/month on subscriptions."
+      },
+      "tension": {
+        "big": [
+          "Over 30 years that's $18,000 of your own cash."
+        ],
+        "pill": "",
+        "ask": "And that's before any growth."
+      },
+      "reveal": {
+        "head": "If invested instead:",
+        "a": {
+          "label": "CASH IN",
+          "val": 18,
+          "valt": "$18k",
+          "sub": "what you'd actually pay in"
+        },
+        "b": {
+          "label": "GROWN TO",
+          "val": 61,
+          "valt": "$61k",
+          "sub": "after 30 years at 7%"
+        }
+      },
+      "twist": {
+        "l1": "Subscriptions feel small individually.",
+        "l2": "Together they're quietly worth $61k.",
+        "l3": "Audit them once a year, it adds up fast."
+      }
+    },
+    "vo": {
+      "hook": "Why do subscriptions feel harmless individually but add up to a shocking number over time?",
+      "setup": "The average household spends about $50 a month on subscriptions. We're investing that same amount at seven percent for 30 years instead.",
+      "tension": "Over 30 years that's $18,000 of your own cash, and that's before any investment growth at all.",
+      "reveal": "Invested instead, that same money grows to about $61k.",
+      "twist": "Subscriptions feel small individually but together they're quietly worth $61k. Audit yours and run the math on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical: monthly contributions at a 7% average annual return, compounded monthly. Not financial advice \u2014 real returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "social_security_v1",
+    "title": "Claiming Social Security at 70 instead of 67 \u2014 who actually wins by 85? \ud83d\udcb0",
+    "tool_url": "https://wealthdelay.com/social-security-claim-age-67-vs-70-calculator",
+    "tags": [
+      "social security",
+      "retirement",
+      "personal finance",
+      "claiming age",
+      "money tips",
+      "retirement planning"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Claim Social Security at 67?",
+        "accent": "Or wait until 70?",
+        "sub": "The breakeven math surprises most people."
+      },
+      "setup": {
+        "title": "~$2,000/month at 67 vs ~$2,480/month at 70, lived to age 85.",
+        "a": {
+          "label": "CLAIM AT 67",
+          "sub": "$2,000/month, starts sooner"
+        },
+        "b": {
+          "label": "CLAIM AT 70",
+          "sub": "$2,480/month, starts later"
+        },
+        "foot": "Waiting increases the monthly check by roughly 8% per year delayed."
+      },
+      "tension": {
+        "big": [
+          "Starting sooner means more checks.",
+          "Starting later means bigger checks."
+        ],
+        "pill": "",
+        "ask": "Who comes out ahead by age 85?"
+      },
+      "reveal": {
+        "head": "Total lifetime benefit to age 85:",
+        "a": {
+          "label": "CLAIMED AT 67",
+          "val": 432,
+          "valt": "$432k",
+          "sub": "18 years of payments"
+        },
+        "b": {
+          "label": "CLAIMED AT 70",
+          "val": 446,
+          "valt": "$446k",
+          "sub": "15 years of payments"
+        }
+      },
+      "twist": {
+        "l1": "There's no universal right answer.",
+        "l2": "At 85, the later claim wins here.",
+        "l3": "Your health and longevity matter more than the rule of thumb."
+      }
+    },
+    "vo": {
+      "hook": "Why does the \"right\" age to claim Social Security depend so heavily on how long you actually live?",
+      "setup": "Claiming at 67 pays about $2,000 a month. Waiting until 70 pays about $2,480 a month, roughly eight percent more per year delayed.",
+      "tension": "Starting sooner means more total checks. Starting later means bigger checks. Who actually comes out ahead by age 85?",
+      "reveal": "Total lifetime benefit to age 85: claiming at 67 totals about $432k. Claiming at 70 totals about $446k.",
+      "twist": "There's no universal right answer \u2014 at age 85, the later claim wins, but your own health and longevity matter more than any rule of thumb. Run your own scenario on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical based on stated benefit amounts and an approximate 8%/year delayed-retirement credit; actual benefits depend on your work history and SSA rules. Not financial advice.",
+    "voice": "bill"
+  },
+  {
+    "id": "social_security_v2",
+    "title": "Claiming Social Security at 70 instead of 67 \u2014 who actually wins by 90? \ud83d\udcb0",
+    "tool_url": "https://wealthdelay.com/social-security-claim-age-67-vs-70-calculator",
+    "tags": [
+      "social security",
+      "retirement",
+      "personal finance",
+      "claiming age",
+      "money tips",
+      "retirement planning"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Claim Social Security at 67?",
+        "accent": "Or wait until 70?",
+        "sub": "The breakeven math surprises most people."
+      },
+      "setup": {
+        "title": "~$1,800/month at 67 vs ~$2,232/month at 70, lived to age 90.",
+        "a": {
+          "label": "CLAIM AT 67",
+          "sub": "$1,800/month, starts sooner"
+        },
+        "b": {
+          "label": "CLAIM AT 70",
+          "sub": "$2,232/month, starts later"
+        },
+        "foot": "Waiting increases the monthly check by roughly 8% per year delayed."
+      },
+      "tension": {
+        "big": [
+          "Starting sooner means more checks.",
+          "Starting later means bigger checks."
+        ],
+        "pill": "",
+        "ask": "Who comes out ahead by age 90?"
+      },
+      "reveal": {
+        "head": "Total lifetime benefit to age 90:",
+        "a": {
+          "label": "CLAIMED AT 67",
+          "val": 497,
+          "valt": "$497k",
+          "sub": "23 years of payments"
+        },
+        "b": {
+          "label": "CLAIMED AT 70",
+          "val": 536,
+          "valt": "$536k",
+          "sub": "20 years of payments"
+        }
+      },
+      "twist": {
+        "l1": "There's no universal right answer.",
+        "l2": "At 90, the later claim wins here.",
+        "l3": "Your health and longevity matter more than the rule of thumb."
+      }
+    },
+    "vo": {
+      "hook": "Why does the \"right\" age to claim Social Security depend so heavily on how long you actually live?",
+      "setup": "Claiming at 67 pays about $1,800 a month. Waiting until 70 pays about $2,232 a month, roughly eight percent more per year delayed.",
+      "tension": "Starting sooner means more total checks. Starting later means bigger checks. Who actually comes out ahead by age 90?",
+      "reveal": "Total lifetime benefit to age 90: claiming at 67 totals about $497k. Claiming at 70 totals about $536k.",
+      "twist": "There's no universal right answer \u2014 at age 90, the later claim wins, but your own health and longevity matter more than any rule of thumb. Run your own scenario on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical based on stated benefit amounts and an approximate 8%/year delayed-retirement credit; actual benefits depend on your work history and SSA rules. Not financial advice.",
+    "voice": "ed"
+  },
+  {
+    "id": "social_security_v3",
+    "title": "Claiming Social Security at 70 instead of 67 \u2014 who actually wins by 82? \ud83d\udcb0",
+    "tool_url": "https://wealthdelay.com/social-security-claim-age-67-vs-70-calculator",
+    "tags": [
+      "social security",
+      "retirement",
+      "personal finance",
+      "claiming age",
+      "money tips",
+      "retirement planning"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Claim Social Security at 67?",
+        "accent": "Or wait until 70?",
+        "sub": "The breakeven math surprises most people."
+      },
+      "setup": {
+        "title": "~$2,400/month at 67 vs ~$2,976/month at 70, lived to age 82.",
+        "a": {
+          "label": "CLAIM AT 67",
+          "sub": "$2,400/month, starts sooner"
+        },
+        "b": {
+          "label": "CLAIM AT 70",
+          "sub": "$2,976/month, starts later"
+        },
+        "foot": "Waiting increases the monthly check by roughly 8% per year delayed."
+      },
+      "tension": {
+        "big": [
+          "Starting sooner means more checks.",
+          "Starting later means bigger checks."
+        ],
+        "pill": "",
+        "ask": "Who comes out ahead by age 82?"
+      },
+      "reveal": {
+        "head": "Total lifetime benefit to age 82:",
+        "a": {
+          "label": "CLAIMED AT 67",
+          "val": 432,
+          "valt": "$432k",
+          "sub": "15 years of payments"
+        },
+        "b": {
+          "label": "CLAIMED AT 70",
+          "val": 429,
+          "valt": "$429k",
+          "sub": "12 years of payments"
+        }
+      },
+      "twist": {
+        "l1": "There's no universal right answer.",
+        "l2": "At 82, the earlier claim wins here.",
+        "l3": "Your health and longevity matter more than the rule of thumb."
+      }
+    },
+    "vo": {
+      "hook": "Why does the \"right\" age to claim Social Security depend so heavily on how long you actually live?",
+      "setup": "Claiming at 67 pays about $2,400 a month. Waiting until 70 pays about $2,976 a month, roughly eight percent more per year delayed.",
+      "tension": "Starting sooner means more total checks. Starting later means bigger checks. Who actually comes out ahead by age 82?",
+      "reveal": "Total lifetime benefit to age 82: claiming at 67 totals about $432k. Claiming at 70 totals about $429k.",
+      "twist": "There's no universal right answer \u2014 at age 82, the earlier claim wins, but your own health and longevity matter more than any rule of thumb. Run your own scenario on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical based on stated benefit amounts and an approximate 8%/year delayed-retirement credit; actual benefits depend on your work history and SSA rules. Not financial advice.",
+    "voice": "brian"
+  },
+  {
+    "id": "social_security_v4",
+    "title": "Claiming Social Security at 70 instead of 67 \u2014 who actually wins by 88? \ud83d\udcb0",
+    "tool_url": "https://wealthdelay.com/social-security-claim-age-67-vs-70-calculator",
+    "tags": [
+      "social security",
+      "retirement",
+      "personal finance",
+      "claiming age",
+      "money tips",
+      "retirement planning"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Claim Social Security at 67?",
+        "accent": "Or wait until 70?",
+        "sub": "The breakeven math surprises most people."
+      },
+      "setup": {
+        "title": "~$2,200/month at 67 vs ~$2,728/month at 70, lived to age 88.",
+        "a": {
+          "label": "CLAIM AT 67",
+          "sub": "$2,200/month, starts sooner"
+        },
+        "b": {
+          "label": "CLAIM AT 70",
+          "sub": "$2,728/month, starts later"
+        },
+        "foot": "Waiting increases the monthly check by roughly 8% per year delayed."
+      },
+      "tension": {
+        "big": [
+          "Starting sooner means more checks.",
+          "Starting later means bigger checks."
+        ],
+        "pill": "",
+        "ask": "Who comes out ahead by age 88?"
+      },
+      "reveal": {
+        "head": "Total lifetime benefit to age 88:",
+        "a": {
+          "label": "CLAIMED AT 67",
+          "val": 554,
+          "valt": "$554k",
+          "sub": "21 years of payments"
+        },
+        "b": {
+          "label": "CLAIMED AT 70",
+          "val": 589,
+          "valt": "$589k",
+          "sub": "18 years of payments"
+        }
+      },
+      "twist": {
+        "l1": "There's no universal right answer.",
+        "l2": "At 88, the later claim wins here.",
+        "l3": "Your health and longevity matter more than the rule of thumb."
+      }
+    },
+    "vo": {
+      "hook": "Why does the \"right\" age to claim Social Security depend so heavily on how long you actually live?",
+      "setup": "Claiming at 67 pays about $2,200 a month. Waiting until 70 pays about $2,728 a month, roughly eight percent more per year delayed.",
+      "tension": "Starting sooner means more total checks. Starting later means bigger checks. Who actually comes out ahead by age 88?",
+      "reveal": "Total lifetime benefit to age 88: claiming at 67 totals about $554k. Claiming at 70 totals about $589k.",
+      "twist": "There's no universal right answer \u2014 at age 88, the later claim wins, but your own health and longevity matter more than any rule of thumb. Run your own scenario on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical based on stated benefit amounts and an approximate 8%/year delayed-retirement credit; actual benefits depend on your work history and SSA rules. Not financial advice.",
+    "voice": "bill"
+  },
+  {
+    "id": "social_security_v5",
+    "title": "Claiming Social Security at 70 instead of 67 \u2014 who actually wins by 90? \ud83d\udcb0",
+    "tool_url": "https://wealthdelay.com/social-security-claim-age-67-vs-70-calculator",
+    "tags": [
+      "social security",
+      "retirement",
+      "personal finance",
+      "claiming age",
+      "money tips",
+      "retirement planning"
+    ],
+    "accent": "gold",
+    "scenes": {
+      "hook": {
+        "big": "Claim Social Security at 67?",
+        "accent": "Or wait until 70?",
+        "sub": "The breakeven math surprises most people."
+      },
+      "setup": {
+        "title": "~$1,600/month at 67 vs ~$1,984/month at 70, lived to age 90.",
+        "a": {
+          "label": "CLAIM AT 67",
+          "sub": "$1,600/month, starts sooner"
+        },
+        "b": {
+          "label": "CLAIM AT 70",
+          "sub": "$1,984/month, starts later"
+        },
+        "foot": "Waiting increases the monthly check by roughly 8% per year delayed."
+      },
+      "tension": {
+        "big": [
+          "Starting sooner means more checks.",
+          "Starting later means bigger checks."
+        ],
+        "pill": "",
+        "ask": "Who comes out ahead by age 90?"
+      },
+      "reveal": {
+        "head": "Total lifetime benefit to age 90:",
+        "a": {
+          "label": "CLAIMED AT 67",
+          "val": 442,
+          "valt": "$442k",
+          "sub": "23 years of payments"
+        },
+        "b": {
+          "label": "CLAIMED AT 70",
+          "val": 476,
+          "valt": "$476k",
+          "sub": "20 years of payments"
+        }
+      },
+      "twist": {
+        "l1": "There's no universal right answer.",
+        "l2": "At 90, the later claim wins here.",
+        "l3": "Your health and longevity matter more than the rule of thumb."
+      }
+    },
+    "vo": {
+      "hook": "Why does the \"right\" age to claim Social Security depend so heavily on how long you actually live?",
+      "setup": "Claiming at 67 pays about $1,600 a month. Waiting until 70 pays about $1,984 a month, roughly eight percent more per year delayed.",
+      "tension": "Starting sooner means more total checks. Starting later means bigger checks. Who actually comes out ahead by age 90?",
+      "reveal": "Total lifetime benefit to age 90: claiming at 67 totals about $442k. Claiming at 70 totals about $476k.",
+      "twist": "There's no universal right answer \u2014 at age 90, the later claim wins, but your own health and longevity matter more than any rule of thumb. Run your own scenario on wealthdelay dot com, link below."
+    },
+    "disclaimer": "Hypothetical based on stated benefit amounts and an approximate 8%/year delayed-retirement credit; actual benefits depend on your work history and SSA rules. Not financial advice.",
+    "voice": "ed"
+  }
+]

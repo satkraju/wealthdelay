@@ -1,0 +1,88 @@
+{
+  "brand": "executor",
+  "title": "What Happens to Social Security When Someone Dies (Step by Step)",
+  "description": "When a family member dies, Social Security has strict rules — who reports the death, what happens to the final payment, a one-time $255 payment many families miss, and survivor benefits. This video walks through every step, in order, based entirely on the Social Security Administration's official guidance.\n\nOfficial sources:\n• SSA — What to do when someone dies: https://www.ssa.gov/personal-record/when-someone-dies\n• SSA — Lump-sum death payment: https://www.ssa.gov/personal-record/when-someone-dies/lump-sum-death-payment\n• SSA — Survivor benefits: https://www.ssa.gov/survivor\n• USAGov — Report a death: https://www.usa.gov/social-security-report-a-death\n\nThis is general information from official government sources, not legal or financial advice. Rules have details and exceptions — verify your situation at SSA.gov or 1-800-772-1213.\n\nChapters:\n0:00 The rules nobody teaches you\n0:50 Step 1 — Reporting the death\n2:00 Step 2 — The final payment rule\n3:30 Step 3 — The $255 payment\n5:00 Step 4 — Survivor benefits\n6:00 The checklist recap",
+  "tags": ["social security death","report death to social security","what to do when someone dies","social security death benefit","$255 death benefit","lump sum death payment","survivor benefits","executor checklist","estate settlement","when a parent dies"],
+  "scenes": [
+    {
+      "narration": "When someone you love dies, Social Security has strict rules that almost nobody teaches you. One of them takes money back out of the bank account. Another one owes your family money — and comes with a deadline.",
+      "visual": { "template": "big-statement", "text": "Social Security has rules\nnobody teaches you.", "accent": true }
+    },
+    {
+      "narration": "If you are watching this because you just lost someone — I am sorry. This video is a checklist. Four steps, in order, and everything in it comes straight from the Social Security Administration's own official guidance. Sources are linked below.",
+      "visual": { "template": "big-statement", "text": "Four steps. In order.\nAll from SSA.gov." }
+    },
+    {
+      "narration": "Step one. Reporting the death. Here is something most families do not know: in most cases, you do not have to do this yourself.",
+      "visual": { "template": "big-number-callout", "pre": "STEP", "number": "1", "post": "Reporting the death", "hero": true }
+    },
+    {
+      "narration": "Funeral homes generally report the death to Social Security. Your only job is to give the funeral director the person's Social Security number.",
+      "visual": { "template": "compare-split", "title": "Who Reports It", "left": { "label": "THE FUNERAL HOME", "text": "Reports the death\nto Social Security." }, "right": { "label": "YOUR JOB", "text": "Give them the\nSocial Security number." } }
+    },
+    {
+      "narration": "If no funeral home is involved, or you are not sure the report happened, call Social Security directly. The number is 1 800 772 1213.",
+      "visual": { "template": "big-number-callout", "pre": "No funeral home? Call SSA:", "number": "1-800-772-1213", "post": "TTY: 1-800-325-0778" }
+    },
+    {
+      "narration": "Step two. The final payment rule. This is the one that catches families off guard.",
+      "visual": { "template": "big-number-callout", "pre": "STEP", "number": "2", "post": "The final payment rule", "hero": true }
+    },
+    {
+      "narration": "Social Security benefits stop at death. And under S S A rules, any payment for the month the person died must be returned — no matter which day of the month they passed.",
+      "visual": { "template": "big-statement", "text": "The payment for the\nmonth of death\nmust go back.", "accent": true }
+    },
+    {
+      "narration": "If the money arrives by direct deposit, notify the bank as soon as possible and ask it to return the payment for the month of death — and any that arrive after. Set that money aside. Do not treat it as part of the estate.",
+      "visual": { "template": "compare-split", "title": "Direct Deposit? Do This", "left": { "label": "NOTIFY THE BANK", "text": "As soon as possible." }, "right": { "label": "ASK THEM TO RETURN", "text": "The month-of-death payment\nand anything after." } }
+    },
+    {
+      "narration": "This feels wrong to a lot of families — the person was alive most of that month. But it is the rule, and knowing it now saves you a painful surprise later.",
+      "visual": { "template": "big-statement", "text": "It feels wrong.\nIt's still the rule." }
+    },
+    {
+      "narration": "Step three. The payment in the other direction — the one Social Security owes your family. It is called the lump-sum death payment, and it is easy to miss.",
+      "visual": { "template": "big-number-callout", "pre": "STEP", "number": "3", "post": "The payment they owe YOU", "hero": true }
+    },
+    {
+      "narration": "It is a one-time payment of two hundred and fifty five dollars.",
+      "visual": { "template": "big-number-callout", "pre": "Lump-sum death payment", "number": "$255", "post": "One time. But you must claim it." }
+    },
+    {
+      "narration": "Who can receive it? First, a surviving spouse who was living with the person. A spouse living apart may still qualify if they were eligible for benefits on the person's record. And if there is no surviving spouse, a child who was eligible for benefits on that record in the month of death.",
+      "visual": { "template": "milestone-timeline", "caption": "WHO CAN CLAIM THE $255 (IN ORDER)", "milestones": [ { "age": "1st", "label": "Spouse living with them", "tone": "gold" }, { "age": "2nd", "label": "Spouse apart, if benefit-eligible", "tone": "gold" }, { "age": "3rd", "label": "Eligible child, if no spouse", "tone": "forest" } ] }
+    },
+    {
+      "narration": "And here is the deadline: you must apply within two years of the date of death. Miss it, and the payment is gone.",
+      "visual": { "template": "big-number-callout", "pre": "Deadline to apply", "number": "2 years", "post": "from the date of death.", "hero": true }
+    },
+    {
+      "narration": "You claim it with Form S S A dash eight, or simply by calling that same number — 1 800 772 1213.",
+      "visual": { "template": "compare-split", "title": "How to Claim", "left": { "label": "BY FORM", "text": "Form SSA-8" }, "right": { "label": "BY PHONE", "text": "1-800-772-1213" } }
+    },
+    {
+      "narration": "Step four. Survivor benefits. The two hundred fifty five dollars is small — but this step can matter for years.",
+      "visual": { "template": "big-number-callout", "pre": "STEP", "number": "4", "post": "Survivor benefits", "hero": true }
+    },
+    {
+      "narration": "Surviving spouses and minor children may be eligible for ongoing survivor benefits on the person's record. The amounts depend on the person's work history and your situation — so when you call Social Security, ask directly: am I eligible for survivor benefits?",
+      "visual": { "template": "big-statement", "text": "Ask them directly:\n\"Am I eligible for\nsurvivor benefits?\"", "accent": true }
+    },
+    {
+      "narration": "Let us put the whole checklist on one screen.",
+      "visual": { "template": "big-statement", "text": "The checklist." }
+    },
+    {
+      "narration": "One — the funeral home reports the death; give them the Social Security number. Two — the month-of-death payment goes back; tell the bank. Three — claim the two fifty five within two years. Four — ask about survivor benefits.",
+      "visual": { "template": "milestone-timeline", "caption": "SOCIAL SECURITY AFTER A DEATH", "milestones": [ { "age": "1", "label": "Report (give SSN)", "tone": "gold" }, { "age": "2", "label": "Return final payment", "tone": "forest" }, { "age": "3", "label": "Claim $255 (2 yrs)", "tone": "gold" }, { "age": "4", "label": "Ask: survivor benefits", "tone": "green" } ] }
+    },
+    {
+      "narration": "Everything here comes from the Social Security Administration's official guidance — the exact pages are linked in the description. This is general information, not legal or financial advice. Rules have details and exceptions, so verify your situation at S S A dot gov.",
+      "visual": { "template": "big-statement", "text": "Sources: SSA.gov — linked below.\nGeneral info, not legal advice." }
+    },
+    {
+      "narration": "This is episode one of the checklist — the paperwork nobody prepares you for, one step at a time. Next episode: the bank accounts — what actually happens to them, and the one call to make before anything else. Subscribe so it is there when you need it.",
+      "visual": { "template": "subscribe-cta", "title": "Next: What Happens to the Bank Accounts" }
+    }
+  ]
+}

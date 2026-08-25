@@ -1,0 +1,31 @@
+{
+  "title": "Mirrors don't flip left and right. Here's the truth 🪞",
+  "description": "Everyone thinks a mirror flips left and right. It doesn't — it never has. The real answer isn't about left and right at all. It's about front and back, and your own brain quietly fills in the rest. Once you see it, you can't unsee it.",
+  "tags": ["physics","science","mirrors","howthingswork","optics","education","lifeorama","mindblown","didyouknow"],
+  "scenes": [
+    { "narration": "A mirror does not flip left and right.", "prompt": "person staring intently at their own reflection in a dark ornate mirror dramatic cinematic close up" },
+    { "narration": "Everyone believes it does.", "prompt": "person raising right hand in front of a large mirror reflection raising opposite hand moody lighting" },
+    { "narration": "And everyone is wrong.", "prompt": "dramatic dark room single mirror lit by one beam of light tension cinematic" },
+    { "narration": "Watch this.", "prompt": "hand holding a page of printed text up toward a mirror in a dark room cinematic" },
+    { "narration": "Hold up some writing, and the reflection reverses.", "prompt": "closeup mirror reflection showing reversed backwards printed letters bold white on black dramatic" },
+    { "narration": "But notice — it never turns upside down.", "prompt": "mirror reflection of text reversed left to right but perfectly upright not flipped vertically science concept" },
+    { "narration": "So if a mirror really flipped left and right...", "prompt": "glowing horizontal left and right arrows across a mirror surface dark blue 3d render" },
+    { "narration": "why doesn't it flip top and bottom too?", "prompt": "glowing vertical up and down arrows on a mirror surface question mark dark dramatic 3d render" },
+    { "narration": "Here's the secret it's been hiding.", "prompt": "physics concept light rays striking a mirror and bouncing back glowing blue diagram cinematic" },
+    { "narration": "A mirror doesn't flip left, right, up, or down.", "prompt": "elegant mirror on dark background with four faint arrows all crossed out single beam of light" },
+    { "narration": "It only flips one thing — front to back.", "prompt": "single bold glowing arrow passing straight through a mirror front to back 3d physics visualization" },
+    { "narration": "Like a glove turned inside out.", "prompt": "leather glove being turned inside out mid motion close up dramatic studio lighting" },
+    { "narration": "Everything facing the mirror...", "prompt": "glowing white arrows all pointing inward toward a large mirror glass surface dark dramatic 3d render" },
+    { "narration": "now faces the opposite way.", "prompt": "glowing white arrows all pointing outward away from a mirror surface reversed direction dramatic 3d render" },
+    { "narration": "Your right hand looks like a left hand...", "prompt": "a right hand and a left hand mirrored palm to palm facing each other dramatic rim lighting" },
+    { "narration": "only because front and back got swapped.", "prompt": "person viewed from the side with glowing front and back labels swapping places 3d render dark" },
+    { "narration": "Left and right never moved at all.", "prompt": "person seen from directly above with left and right labels staying fixed beside a mirror clean 3d" },
+    { "narration": "So where does the left-right flip even come from?", "prompt": "glowing question mark floating inside an ornate mirror mysterious dark atmosphere cinematic" },
+    { "narration": "From you.", "prompt": "glowing human brain with electric neural sparks dramatic dark cinematic close up" },
+    { "narration": "You imagine turning yourself around to face the glass.", "prompt": "person rotating turning around to face a tall mirror motion blur cinematic blue light" },
+    { "narration": "And turning around is the thing that swaps left and right.", "prompt": "two identical people facing each other with left and right labels swapped glowing concept art" },
+    { "narration": "The mirror never did that.", "prompt": "single elegant mirror standing alone on a dark stage one spotlight dramatic" },
+    { "narration": "Your brain did.", "prompt": "human brain with a small mirror glowing inside it surreal concept art dark background cinematic" },
+    { "narration": "And now you can't unsee it.", "prompt": "extreme close up of a human eye reflecting a mirror dramatic cinematic lighting" }
+  ]
+}

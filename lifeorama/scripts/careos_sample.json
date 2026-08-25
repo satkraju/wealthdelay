@@ -1,0 +1,40 @@
+{
+  "brand": "careos",
+  "title": "1 in 4 Americans Has a Second Job Nobody Pays Them For",
+  "description": "63 million Americans are caring for an aging parent or sick family member — and the hardest part isn't the caring. It's the paperwork. Source: AARP/National Alliance for Caregiving, Caregiving in the U.S. 2025. General information, not medical, legal, or financial advice.",
+  "tags": ["family caregiver","aging parents","caregiver support","caregiving","eldercare","sandwich generation","care os"],
+  "scenes": [
+    {
+      "narration": "One in four adults in America is working a second job that nobody pays them for.",
+      "visual": { "template": "big-number-callout", "pre": "of American adults work", "number": "1 in 4", "post": "a second job nobody pays for.", "hero": true }
+    },
+    {
+      "narration": "Caring for an aging parent. A sick spouse. A family member who cannot manage alone anymore.",
+      "visual": { "template": "compare-split", "title": "The Second Job", "left": { "label": "DAY JOB", "text": "Meetings.\nDeadlines.\nA paycheck." }, "right": { "label": "AFTER 5PM", "text": "Mom's meds.\nDad's appointments.\nNo paycheck." } }
+    },
+    {
+      "narration": "Sixty three million Americans, according to A A R P. Twenty million more than just ten years ago.",
+      "visual": { "template": "big-number-callout", "pre": "AARP counts", "number": "63M", "post": "family caregivers. Up 20M in a decade.", "hero": true }
+    },
+    {
+      "narration": "For one in four of them, the caring alone is a full time job. Forty plus hours. Every week.",
+      "visual": { "template": "comparison-bars", "head": "Hours Per Week", "bars": [ { "label": "A full-time job", "sub": "What we call work", "valueLabel": "40 hrs", "frac": 0.95, "tone": "gold" }, { "label": "1 in 4 caregivers", "sub": "On top of everything", "valueLabel": "40+ hrs", "frac": 1.0, "tone": "forest" } ] }
+    },
+    {
+      "narration": "Half of them take a financial hit for it — savings drained, hours cut, careers paused.",
+      "visual": { "template": "big-number-callout", "pre": "Nearly", "number": "50%", "post": "suffer a financial impact from caregiving." }
+    },
+    {
+      "narration": "And here is what caregivers will tell you. The hardest part is not the caring. They love the person.",
+      "visual": { "template": "big-statement", "text": "The hardest part\nisn't the caring.", "accent": true }
+    },
+    {
+      "narration": "It is the pile. Discharge papers. Medication lists. Insurance letters. Appointment cards. And five family members texting — wait, what did the doctor say?",
+      "visual": { "template": "compare-split", "title": "What Actually Breaks People", "left": { "label": "THE CARING", "text": "Love.\nPresence.\nTime together." }, "right": { "label": "THE PILE", "text": "Discharge papers.\nMed lists.\nInsurance letters.\n\"Wait — what did the doctor say?\"" } }
+    },
+    {
+      "narration": "If that pile is your life right now — you are not failing, and you are not alone. We are building something for exactly this. Follow along.",
+      "visual": { "template": "subscribe-cta", "title": "The pile shouldn't be your second job. Follow along." }
+    }
+  ]
+}

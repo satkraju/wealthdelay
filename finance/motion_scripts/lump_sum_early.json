@@ -1,0 +1,75 @@
+{
+  "title": "$10k at 25 vs $10k at 35 — the gap is brutal",
+  "tool_url": "https://wealthdelay.com/investing-calculators",
+  "disclaimer": "Hypothetical: one-time $10,000 at a 7% average annual return, compounded monthly. Not financial advice — real returns vary.",
+  "scenes": [
+    {
+      "narration": "Same ten thousand dollars. Same investment. One ends up with double the other. The only difference is ten years.",
+      "visual": {
+        "template": "fin-statement",
+        "hero": true,
+        "lines": [
+          { "text": "Same $10,000." },
+          { "text": "Same investment." },
+          { "text": "One ends with DOUBLE.", "tone": "gold" }
+        ]
+      }
+    },
+    {
+      "narration": "Invest ten thousand dollars one time, and leave it alone until sixty-five, at seven percent. One person does it at twenty-five, the other at thirty-five. Neither adds another cent.",
+      "visual": {
+        "template": "milestone-timeline",
+        "caption": "One $10k deposit, left alone at 7%",
+        "milestones": [
+          { "age": "25", "label": "Deposits $10k, never adds more", "tone": "green" },
+          { "age": "35", "label": "Deposits $10k, never adds more", "tone": "gold" },
+          { "age": "65", "label": "Both cash out here", "tone": "forest" }
+        ]
+      }
+    },
+    {
+      "narration": "One ten thousand dollar deposit, just ten years earlier. How big is the gap by sixty-five?",
+      "visual": {
+        "template": "fin-statement",
+        "lines": [
+          { "text": "Same $10k. 10 years earlier." },
+          { "text": "How big is the gap at 65?", "tone": "gold" }
+        ]
+      }
+    },
+    {
+      "narration": "At sixty-five, the twenty-five year old's ten thousand grew to about one hundred and sixty-three thousand. The thirty-five year old? About eighty-one thousand.",
+      "visual": {
+        "template": "growth-curve",
+        "caption": "One $10k deposit, left at 7%",
+        "xAxisLabel": "Age 25 to 65",
+        "curves": [
+          { "label": "Deposit at 25", "endLabel": "$163k", "startFrac": 0, "tone": "green" },
+          { "label": "Deposit at 35", "endLabel": "$81k", "startFrac": 0.25, "tone": "gold" }
+        ]
+      }
+    },
+    {
+      "narration": "Same ten grand, same fund. Ten extra years roughly doubled it. Time is the real investor.",
+      "visual": {
+        "template": "big-number-callout",
+        "hero": true,
+        "pre": "10 extra years roughly...",
+        "number": "DOUBLED it",
+        "post": "Time is the real investor."
+      }
+    },
+    {
+      "narration": "See it yourself. Free calculator on wealthdelay dot com. Link's below.",
+      "visual": {
+        "template": "fin-statement",
+        "hero": true,
+        "footerUrl": true,
+        "lines": [
+          { "text": "See it for yourself." },
+          { "text": "Free — 60 seconds.", "tone": "gold" }
+        ]
+      }
+    }
+  ]
+}

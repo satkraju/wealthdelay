@@ -1,0 +1,74 @@
+{
+  "title": "A 1% fee doesn't sound like much. It cost $209,000.",
+  "tool_url": "https://wealthdelay.com/investment-fee-drag-calculator",
+  "disclaimer": "Hypothetical: $100,000 for 30 years at 7% before fees vs 6% after a 1% fee, compounded monthly. Not financial advice.",
+  "scenes": [
+    {
+      "narration": "A one percent fee sounds tiny. It is not. Guess what one percent actually costs you.",
+      "visual": {
+        "template": "fin-statement",
+        "hero": true,
+        "lines": [
+          { "text": "A 1% fee sounds tiny." },
+          { "text": "It's not.", "tone": "gold" },
+          { "text": "Guess what 1% really costs." }
+        ]
+      }
+    },
+    {
+      "narration": "One hundred thousand dollars, invested for thirty years. One fund charges a one percent fee. The other charges nothing. Same money, same market, one difference.",
+      "visual": {
+        "template": "milestone-timeline",
+        "caption": "$100,000 invested for 30 years",
+        "milestones": [
+          { "age": "0%", "label": "Low-cost index fund", "tone": "green" },
+          { "age": "1%", "label": "A \"typical\" fund fee", "tone": "gold" },
+          { "age": "30y", "label": "Same money, same market", "tone": "forest" }
+        ]
+      }
+    },
+    {
+      "narration": "One percent a year, for thirty years. How much does that really cost you? Most people guess way too low.",
+      "visual": {
+        "template": "fin-statement",
+        "lines": [
+          { "text": "1% a year. 30 years." },
+          { "text": "How much does that cost?", "tone": "gold" }
+        ]
+      }
+    },
+    {
+      "narration": "After thirty years, the no-fee fund leaves you about eight hundred and twelve thousand dollars. The one percent fee fund? Only about six hundred and two thousand.",
+      "visual": {
+        "template": "comparison-bars",
+        "head": "After 30 years:",
+        "bars": [
+          { "label": "0% fee", "sub": "what you keep", "valueLabel": "$812,000", "frac": 1.0, "tone": "green" },
+          { "label": "1% fee", "sub": "what you keep", "valueLabel": "$602,000", "frac": 0.74, "tone": "gold" }
+        ]
+      }
+    },
+    {
+      "narration": "That one percent quietly took about two hundred and nine thousand dollars. Fees are invisible. The damage is not.",
+      "visual": {
+        "template": "big-number-callout",
+        "hero": true,
+        "pre": "That 1% quietly took",
+        "number": "$209,000",
+        "post": "Fees are invisible. The damage isn't."
+      }
+    },
+    {
+      "narration": "Check your funds. Free calculator on wealthdelay dot com. Link's below.",
+      "visual": {
+        "template": "fin-statement",
+        "hero": true,
+        "footerUrl": true,
+        "lines": [
+          { "text": "Check your fund's fee." },
+          { "text": "Free — 60 seconds.", "tone": "gold" }
+        ]
+      }
+    }
+  ]
+}

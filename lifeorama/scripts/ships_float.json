@@ -1,0 +1,62 @@
+{
+  "title": "Why Doesn't a Steel Ship Sink?",
+  "description": "Steel sinks. So why does a 200,000-ton steel ship float without even trying? The answer has nothing to do with the metal itself — it's about a hollow shape, displaced water, and a rule that quietly works against you the moment you load on too much weight.\n\nChapters:\n0:00 A question that doesn't add up\n0:15 Same material, opposite result\n0:35 It's about the shape, not the steel\n0:55 Archimedes' rule\n1:15 Average density\n1:30 Load too much, and it flips",
+  "tags": ["physics","science","buoyancy","density","archimedes principle","ships","how things work","educational","life o rama","why ships float","science explained"],
+  "short_scenes": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+  "scenes": [
+    { "narration": "Here's a question that doesn't seem to add up.",
+      "visual": { "template": "big-statement", "text": "A question that doesn't add up." } },
+
+    { "narration": "A solid block of steel sinks instantly.",
+      "visual": { "template": "labeled-diagram", "kind": "axis-cross", "caption": "STEEL BLOCK",
+        "arrows": [
+          { "direction": "down", "state": "active", "label": "WEIGHT" },
+          { "direction": "up", "state": "dim", "label": "BUOYANCY" }
+        ] } },
+
+    { "narration": "But a steel ship floats perfectly.",
+      "visual": { "template": "labeled-diagram", "kind": "axis-cross", "caption": "STEEL SHIP",
+        "arrows": [
+          { "direction": "down", "state": "active", "label": "WEIGHT" },
+          { "direction": "up", "state": "active", "label": "BUOYANCY" }
+        ] } },
+
+    { "narration": "Same material. Opposite result. Why?",
+      "visual": { "template": "big-statement", "text": "Same material. Opposite result." } },
+
+    { "narration": "The answer has nothing to do with the steel itself.",
+      "visual": { "template": "big-statement", "text": "It's not about the steel.", "accent": true } },
+
+    { "narration": "It's about how much space that steel takes up.",
+      "visual": { "template": "big-statement", "text": "It's about the shape." } },
+
+    { "narration": "A ship's hull is mostly hollow — air, cargo space, empty rooms.",
+      "visual": { "template": "compare-split", "title": "SOLID vs HOLLOW",
+        "left": { "label": "SOLID STEEL BLOCK", "text": "SMALL VOLUME" },
+        "right": { "label": "SHIP HULL", "text": "HUGE VOLUME" } } },
+
+    { "narration": "That hollow space lets the ship displace a huge amount of water.",
+      "visual": { "template": "big-statement", "text": "It displaces a huge amount of water." } },
+
+    { "narration": "Water pushes back exactly as hard as the weight it displaced.",
+      "visual": { "template": "labeled-diagram", "kind": "mirror-arrow", "caption": "ARCHIMEDES' RULE",
+        "arrows": [
+          { "direction": "right", "state": "active", "label": "WATER DISPLACED" },
+          { "direction": "right", "state": "active", "label": "PUSH-BACK FORCE" }
+        ] } },
+
+    { "narration": "If that push-back can support the ship's full weight, it floats.",
+      "visual": { "template": "compare-split", "title": "FLOATS vs SINKS",
+        "left": { "label": "AVERAGE DENSITY < WATER", "text": "FLOATS" },
+        "right": { "label": "AVERAGE DENSITY > WATER", "text": "SINKS" } } },
+
+    { "narration": "Not the density of the steel — the average density of the whole ship.",
+      "visual": { "template": "big-statement", "text": "Average density. Not the material.", "accent": true } },
+
+    { "narration": "Load too much cargo, and that balance shifts — cross the line, and it sinks.",
+      "visual": { "template": "big-statement", "text": "Cross the line, and it sinks." } },
+
+    { "narration": "If this rewired your brain even a little, subscribe — we untangle a new everyday mystery every week.",
+      "visual": { "template": "subscribe-cta", "title": "Untangle a new mystery every week" } }
+  ]
+}

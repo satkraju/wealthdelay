@@ -1,0 +1,52 @@
+{
+  "id": "channel_trailer",
+  "title": "WealthDelay — What Every Delayed Decision Actually Costs You",
+  "cta_keyword": "NUMBERS",
+  "tool_url": "https://wealthdelay.com",
+  "tags": ["personal finance", "compound interest", "investing", "wealth building", "financial independence", "money tips", "investment fees", "cost of waiting", "wealthdelay"],
+  "disclaimer": "Simulations only — not financial advice. Numbers vary by market, timeline, and behavior. Consult a licensed advisor.",
+  "findings": [
+    {
+      "number": "01",
+      "headline": "You know you should be investing.",
+      "subtitle": "Knowing isn't the same as feeling it.",
+      "money_callout": null,
+      "money_sub": null,
+      "bullets": [
+        {"n": "01", "bold": "Fees matter", "rest": "but you've never seen the dollar amount"},
+        {"n": "02", "bold": "Time matters", "rest": "but the cost of delay feels abstract"},
+        {"n": "03", "bold": "Habits matter", "rest": "but $5 a day doesn't feel like $185,000"}
+      ],
+      "honest_catch": "Most personal finance content tells you what to do. We show you what it costs NOT to.",
+      "vo": "You know you should be investing. You know fees matter. You know time is running out. But knowing isn't the same as feeling it. Most personal finance content tells you what to do. WealthDelay shows you what it costs not to."
+    },
+    {
+      "number": "02",
+      "headline": "We run the actual simulations.",
+      "subtitle": "Real numbers. Real decisions. Real cost.",
+      "money_callout": "$185K",
+      "money_sub": "the real cost of your daily coffee habit",
+      "bullets": [
+        {"n": "01", "bold": "$185,000 gone", "rest": "from a daily $5 coffee habit over a lifetime"},
+        {"n": "02", "bold": "$209,000 gone", "rest": "from a 1% investment fee you never noticed"},
+        {"n": "03", "bold": "$247,000 gone", "rest": "from waiting just 5 years to start investing"}
+      ],
+      "honest_catch": "These aren't opinions. They're the numbers — and a free calculator so you can run your own.",
+      "vo": "WealthDelay runs the actual simulations so you can see exactly what every delayed decision costs you in real dollars. $185,000 from a daily coffee habit. $209,000 from a 1 percent fee. $247,000 from waiting just 5 years to start. These are not opinions. These are the numbers."
+    },
+    {
+      "number": "03",
+      "headline": "No fluff. Just the math.",
+      "subtitle": "One decision. One simulation. Every video.",
+      "money_callout": null,
+      "money_sub": null,
+      "bullets": [
+        {"n": "01", "bold": "One video", "rest": "one financial decision and exactly what it costs"},
+        {"n": "02", "bold": "Free calculator", "rest": "run your own numbers at wealthdelay.com"},
+        {"n": "03", "bold": "New simulation", "rest": "every single day — subscribe so you don't miss one"}
+      ],
+      "honest_catch": "Subscribe if you want to stop guessing and start knowing.",
+      "vo": "Every video on this channel takes one financial decision and shows you exactly what it costs to get it wrong. No fluff. No motivation speeches. Just the math — and a free calculator to run your own. Subscribe if you want to stop guessing and start knowing."
+    }
+  ]
+}

@@ -1,0 +1,1494 @@
+[
+  {
+    "id": "whole_life_v1",
+    "archetype": "whole_life",
+    "title": "Whole life insurance is a terrible investment. Here's the math \ud83d\udd22",
+    "scenes": {
+      "hook": {
+        "big": "Whole life: $400/month.",
+        "accent": "Term life: $28/month.",
+        "sub": "The $372 difference is worth $890,000."
+      },
+      "setup": {
+        "title": "Same coverage. Two approaches.",
+        "a": {
+          "label": "WHOLE LIFE",
+          "sub": "$400/month, permanent coverage + cash value"
+        },
+        "b": {
+          "label": "TERM + INVEST",
+          "sub": "$28/month term, invest $372 difference"
+        },
+        "foot": "30 years. Same protection. Different outcome."
+      },
+      "tension": {
+        "big": "Cash value grows at 2-4%. The market grows at 7%.",
+        "pill": "The spread costs you nearly $1M.",
+        "ask": "Whole life insurance agents pitch the cash value as a feature. The math reveals it is a drag. You are paying $372 extra per month for a savings vehicle that underperforms the market by 3-5% annually \u2014 for 30 years."
+      },
+      "reveal": {
+        "head": "30yr. $372/month invested vs whole life cash value:",
+        "a": {
+          "label": "WHOLE LIFE",
+          "sub": "cash value at 3% growth, 30 years",
+          "val": 218000,
+          "valt": "~$218K cash value"
+        },
+        "b": {
+          "label": "TERM + INVEST",
+          "sub": "$372/month in market, 7% avg, 30 years",
+          "val": 452000,
+          "valt": "~$452K portfolio"
+        }
+      },
+      "twist": {
+        "l1": "Same death benefit. $234,000 difference.",
+        "l2": "From the investment vehicle attached to the insurance.",
+        "l3": "Buy the cheapest term insurance that covers your family. Invest the difference. The math wins every time."
+      }
+    },
+    "vo": {
+      "hook": "Whole life insurance costs $400 a month. Term life with the same death benefit costs $28. The $372 difference, invested over 30 years, is $452,000. Here is the math on why whole life is almost never the right answer.",
+      "setup": "Same coverage, two approaches. Whole life at $400 a month includes a cash value component that grows over time. Term life at $28 a month covers the same death benefit \u2014 with zero cash value. The $372 difference goes to the market.",
+      "tension": "Whole life cash value grows at 2 to 4 percent. The market has historically returned about 7 percent. You are paying $372 extra per month for a savings vehicle that underperforms the market by 3 to 5 percent annually \u2014 for 30 years.",
+      "reveal": "After 30 years, the whole life cash value is about $218,000. The term-plus-invest strategy builds $452,000 in the market.",
+      "twist": "Same death benefit. $234,000 difference. From the investment vehicle attached to the insurance. Buy the cheapest term insurance that covers your family. Invest the difference. The math wins every time. Run your own numbers free at wealthdelay dot com. Comment TERM for the full breakdown."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Insurance needs vary by individual situation. Consult a licensed insurance professional.",
+    "voice": "ed"
+  },
+  {
+    "id": "whole_life_v2",
+    "archetype": "whole_life",
+    "title": "The insurance agent didn't show her this number \ud83d\udd22",
+    "scenes": {
+      "hook": {
+        "big": "She bought whole life at 35.",
+        "accent": "Her agent never ran this comparison.",
+        "sub": "The gap is $310,000."
+      },
+      "setup": {
+        "title": "Whole life vs term + invest.",
+        "a": {
+          "label": "WHOLE LIFE",
+          "sub": "$550/month, agent called it an investment"
+        },
+        "b": {
+          "label": "TERM + INVEST",
+          "sub": "$35/month term, $515 invested monthly"
+        },
+        "foot": "25 years. Same death benefit."
+      },
+      "tension": {
+        "big": "Agents earn 50-100% of year-one premiums as commission.",
+        "pill": "That incentive is not aligned with your outcome.",
+        "ask": "A $550/month whole life policy can pay the agent $3,000-$6,000 in the first year alone. The term policy pays $100. The math of commission explains why whole life gets recommended so aggressively."
+      },
+      "reveal": {
+        "head": "25yr. $515/month invested vs whole life cash value:",
+        "a": {
+          "label": "WHOLE LIFE",
+          "sub": "cash value at 3%, 25 years",
+          "val": 224000,
+          "valt": "~$224K cash value"
+        },
+        "b": {
+          "label": "TERM + INVEST",
+          "sub": "$515/month market, 7%, 25 years",
+          "val": 535000,
+          "valt": "~$535K portfolio"
+        }
+      },
+      "twist": {
+        "l1": "Same protection. $311,000 difference.",
+        "l2": "The agent's commission was the most honest number in the conversation.",
+        "l3": "This is not about bad agents. It is about misaligned incentives. Run the comparison yourself before signing anything."
+      }
+    },
+    "vo": {
+      "hook": "She was sold a $550-a-month whole life policy at 35. Her agent called it an investment and a protection plan. He did not show her what investing the difference in term coverage would have looked like. The gap is $311,000.",
+      "setup": "Same death benefit, two paths. Whole life at $550 a month with a cash value component. Term life at $35 a month with the $515 difference invested in the market every single month.",
+      "tension": "Agents earn 50 to 100 percent of year-one premiums as commission on whole life. That is $3,000 to $6,000 on a $550 policy. The term policy pays $100. The math of commission explains why whole life gets recommended so aggressively.",
+      "reveal": "After 25 years, the whole life cash value is about $224,000. The term-plus-invest strategy builds $535,000.",
+      "twist": "Same protection. $311,000 difference. The agent's commission was the most honest number in the conversation. This is not about bad agents. It is about misaligned incentives. Run the comparison before signing. Free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Insurance needs and products vary. Consult a licensed insurance professional for your situation.",
+    "voice": "brian"
+  },
+  {
+    "id": "gold_vs_index_v1",
+    "archetype": "gold_vs_index",
+    "title": "Gold vs S&P 500 \u2014 the 30-year data is clear \ud83d\udcca",
+    "scenes": {
+      "hook": {
+        "big": "$10,000 in gold. 1994.",
+        "accent": "$10,000 in S&P 500. 1994.",
+        "sub": "The gap in 2024 is $160,000."
+      },
+      "setup": {
+        "title": "Same $10K. Two stores of value.",
+        "a": {
+          "label": "GOLD",
+          "sub": "$10K in physical gold, 1994"
+        },
+        "b": {
+          "label": "S&P 500",
+          "sub": "$10K in S&P 500 index fund, 1994"
+        },
+        "foot": "30 years of real data. No simulation."
+      },
+      "tension": {
+        "big": "Gold is a store of value. Not a growth engine.",
+        "pill": "The S&P 500 is both.",
+        "ask": "Gold's appeal is emotional \u2014 it feels safe, tangible, permanent. But over 30 years it has returned about 3-4% annually. The S&P 500 has returned about 10% annually including dividends. That gap, compounded 30 times, is enormous."
+      },
+      "reveal": {
+        "head": "1994-2024. $10K gold vs $10K S&P 500:",
+        "a": {
+          "label": "GOLD",
+          "sub": "~3.5% avg annual return, 30 years",
+          "val": 28000,
+          "valt": "~$28K"
+        },
+        "b": {
+          "label": "S&P 500",
+          "sub": "~10% avg annual return with dividends, 30yr",
+          "val": 174000,
+          "valt": "~$174K"
+        }
+      },
+      "twist": {
+        "l1": "Same $10,000. $146,000 difference.",
+        "l2": "Thirty years of real market data.",
+        "l3": "Gold is a hedge. A small allocation makes sense. An all-in gold strategy versus a diversified index fund over 30 years is not even close."
+      }
+    },
+    "vo": {
+      "hook": "Ten thousand dollars in gold in 1994. Ten thousand dollars in the S&P 500 in 1994. Thirty years later, the gap is $146,000. Here is the real data.",
+      "setup": "Same $10,000, two assets. Physical gold held from 1994. S&P 500 index fund with dividends reinvested from 1994. Thirty years of actual market history.",
+      "tension": "Gold returns about 3 to 4 percent annually over long periods. The S&P 500 has returned about 10 percent annually including dividends. Gold is a store of value. The S&P 500 is a growth engine. That difference, compounded 30 times, is not subtle.",
+      "reveal": "From 1994 to 2024, $10,000 in gold grew to about $28,000. The same amount in the S&P 500 grew to about $174,000.",
+      "twist": "Same $10,000. $146,000 difference. Thirty years of real data. Gold is a hedge \u2014 a small allocation makes sense. An all-in gold strategy versus a diversified index fund over 30 years is not even close. Run your own comparison free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation uses historical averages. Past performance does not guarantee future results. Gold prices and market returns fluctuate significantly.",
+    "voice": "bill"
+  },
+  {
+    "id": "gold_vs_index_v2",
+    "archetype": "gold_vs_index",
+    "title": "If you bought gold instead of the S&P 500 in 2000 \ud83d\udcca",
+    "scenes": {
+      "hook": {
+        "big": "Year 2000. $20K to invest.",
+        "accent": "Gold felt safer after the dot-com crash.",
+        "sub": "That feeling cost $180,000."
+      },
+      "setup": {
+        "title": "Same $20K. Post dot-com crash.",
+        "a": {
+          "label": "GOLD BUYER",
+          "sub": "$20K into gold \u2014 felt safe after crash"
+        },
+        "b": {
+          "label": "INDEX INVESTOR",
+          "sub": "$20K into S&P 500, held through everything"
+        },
+        "foot": "2000-2024. 24 years of holding."
+      },
+      "tension": {
+        "big": "Gold peaked around 2012. Then mostly sideways.",
+        "pill": "The S&P 500 recovered and compounded.",
+        "ask": "After the dot-com crash, gold felt like the smart move. It even outperformed in the short term \u2014 2000 to 2012. But after 2012, gold went largely sideways while the market continued compounding. Staying in gold too long is the classic behavioral trap."
+      },
+      "reveal": {
+        "head": "2000-2024. $20K gold vs $20K S&P 500:",
+        "a": {
+          "label": "GOLD BUYER",
+          "sub": "~3.8% avg annual return, 24 years",
+          "val": 49000,
+          "valt": "~$49K"
+        },
+        "b": {
+          "label": "INDEX INVESTOR",
+          "sub": "held through crashes, compounded 24yr",
+          "val": 174000,
+          "valt": "~$174K"
+        }
+      },
+      "twist": {
+        "l1": "Same $20K. $125,000 difference.",
+        "l2": "Gold felt safer. The market was more profitable.",
+        "l3": "Fear is the most expensive emotion in investing. The safe feeling of gold cost $125,000 over 24 years."
+      }
+    },
+    "vo": {
+      "hook": "After the dot-com crash in 2000, gold felt like the safe move. If you put $20,000 into gold instead of the S&P 500 that year and held until 2024, here is what that fear cost you.",
+      "setup": "Same $20,000. Two decisions in 2000. The gold buyer chose safety after the dot-com crash. The index investor held the S&P 500 through everything \u2014 the crash, 9/11, 2008, COVID \u2014 and never sold.",
+      "tension": "Gold actually outperformed from 2000 to 2012. It felt vindicated. Then it went largely sideways while the market continued compounding. Staying in gold too long is the classic behavioral trap \u2014 the asset looks right for years, then falls dramatically behind.",
+      "reveal": "From 2000 to 2024, $20,000 in gold grew to about $49,000. The same amount in the S&P 500 grew to $174,000.",
+      "twist": "Same $20,000. $125,000 difference. Gold felt safer. The market was more profitable. Fear is the most expensive emotion in investing. That feeling cost $125,000 over 24 years. Run your own comparison free at wealthdelay dot com."
+    },
+    "disclaimer": "Historical data used. Past performance does not guarantee future results. Individual market and gold returns vary by time period.",
+    "voice": "ed"
+  },
+  {
+    "id": "bonus_invested_v1",
+    "archetype": "bonus_invested",
+    "title": "She got a $5,000 bonus and spent it. Here's the cost \ud83d\udcb0",
+    "scenes": {
+      "hook": {
+        "big": "$5,000 bonus.",
+        "accent": "Gone in a weekend.",
+        "sub": "Here is what it would have been in 20 years."
+      },
+      "setup": {
+        "title": "Same bonus. Two decisions.",
+        "a": {
+          "label": "SPENDER",
+          "sub": "bonus went to vacation and gadgets"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "bonus went straight into the market"
+        },
+        "foot": "20 years later \u2014 same bonus, different path."
+      },
+      "tension": {
+        "big": "A bonus feels like extra money. It is not.",
+        "pill": "It is a lump sum investment opportunity.",
+        "ask": "Bonuses arrive as a windfall \u2014 separate from the regular paycheck. That psychological distance makes them easy to spend. But $5,000 invested at 35 versus spent at 35 is not a $5,000 decision. It is a $19,000 decision."
+      },
+      "reveal": {
+        "head": "$5,000 bonus invested at 35. 20 years:",
+        "a": {
+          "label": "SPENDER",
+          "sub": "spent on vacation, zero invested",
+          "val": 0,
+          "valt": "$0"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "invested immediately, compounded 20yr",
+          "val": 19350,
+          "valt": "~$19K"
+        }
+      },
+      "twist": {
+        "l1": "It was not a $5,000 decision.",
+        "l2": "It was a $19,000 decision.",
+        "l3": "Every bonus is a lump sum investment opportunity disguised as a reward. The vacation was real. So is the $19,000 that did not compound for 20 years."
+      }
+    },
+    "vo": {
+      "hook": "She got a $5,000 year-end bonus and spent it on a vacation and new gadgets. Here is what that $5,000 would have been 20 years later if she had invested it instead.",
+      "setup": "Same bonus, two decisions. The spender took the windfall as a reward and spent it immediately. The investor transferred it to their brokerage the same week and never thought about it again.",
+      "tension": "Bonuses feel like extra money. Psychologically separate from the regular paycheck. That distance makes them easy to spend. But $5,000 invested at 35 is not a $5,000 decision. Compounded for 20 years, it is a $19,000 decision.",
+      "reveal": "After 20 years, the $5,000 bonus invested at 7 percent average annual return grows to $19,350. The spender has a faded memory of the vacation.",
+      "twist": "It was not a $5,000 decision. It was a $19,000 decision. Every bonus is a lump sum investment opportunity disguised as a reward. The vacation was real. So is the $19,000 that did not compound. Run your own numbers free at wealthdelay dot com. Comment BONUS for the full breakdown."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual return. Market returns vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "bonus_invested_v2",
+    "archetype": "bonus_invested",
+    "title": "He invested every annual bonus for 15 years. The result \ud83d\udcb0",
+    "scenes": {
+      "hook": {
+        "big": "$8,000 bonus every year.",
+        "accent": "Invested every single one.",
+        "sub": "15 years later \u2014 the number surprises everyone."
+      },
+      "setup": {
+        "title": "Same annual bonus. Two habits.",
+        "a": {
+          "label": "ANNUAL SPENDER",
+          "sub": "$8K bonus spent on upgrades every year"
+        },
+        "b": {
+          "label": "ANNUAL INVESTOR",
+          "sub": "$8K bonus invested every year"
+        },
+        "foot": "15 years. Same career. Same bonuses."
+      },
+      "tension": {
+        "big": "Annual bonuses are the highest-leverage investment moment of the year.",
+        "pill": "They arrive as a lump sum \u2014 deploy them as one.",
+        "ask": "Most people spend bonuses because they feel separate from income. The investor treats each one as a $8,000 lump sum deployment. Fifteen lump sums over 15 years, each compounding for a different duration, stack into something most people do not expect."
+      },
+      "reveal": {
+        "head": "$8K/year invested over 15 years at 7%:",
+        "a": {
+          "label": "ANNUAL SPENDER",
+          "sub": "better life each year, zero investment",
+          "val": 0,
+          "valt": "$0 from bonuses"
+        },
+        "b": {
+          "label": "ANNUAL INVESTOR",
+          "sub": "all 15 bonuses invested and compounded",
+          "val": 202000,
+          "valt": "~$202K built"
+        }
+      },
+      "twist": {
+        "l1": "$202,000.",
+        "l2": "From bonuses he already earned.",
+        "l3": "He did not earn more. He did not change jobs. He just treated every bonus as a deployment opportunity instead of a reward. Fifteen decisions. $202,000."
+      }
+    },
+    "vo": {
+      "hook": "He got an $8,000 bonus every year for 15 years. And he invested every single one. Here is where he ended up.",
+      "setup": "Same annual bonus, two habits. The annual spender treated each $8,000 as a reward \u2014 upgrades, travel, electronics. The annual investor deployed each one into the market the week it arrived.",
+      "tension": "Annual bonuses are the highest-leverage investment moment of the year. They arrive as a lump sum. If you invest them as a lump sum, each one compounds at full power from day one. The spender resets to zero each year. The investor stacks.",
+      "reveal": "Fifteen years of $8,000 bonuses, invested at 7 percent average annual return, grows to $202,000. The spender has 15 years of good memories and zero.",
+      "twist": "$202,000. From bonuses he already earned. He did not get a raise. He did not change jobs. He treated every bonus as a deployment instead of a reward. Fifteen decisions. $202,000. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes consistent annual bonus and 7% avg annual return. Results vary.",
+    "voice": "bill"
+  },
+  {
+    "id": "529_delay_v1",
+    "archetype": "529_delay",
+    "title": "Wait to open a 529 and you'll pay $40,000 more for college \ud83c\udf93",
+    "scenes": {
+      "hook": {
+        "big": "Open 529 at birth: $250/month.",
+        "accent": "Open 529 at age 10: $780/month.",
+        "sub": "Same college fund. Wildly different monthly cost."
+      },
+      "setup": {
+        "title": "Same college savings goal. Two start dates.",
+        "a": {
+          "label": "LATE STARTER",
+          "sub": "opened 529 at child's age 10"
+        },
+        "b": {
+          "label": "EARLY STARTER",
+          "sub": "opened 529 at child's birth"
+        },
+        "foot": "Same $120K college fund target."
+      },
+      "tension": {
+        "big": "Every year you wait doubles the monthly contribution needed.",
+        "pill": "Compound growth does not pause while you think about it.",
+        "ask": "A 10-year head start on a 529 means the account grows for an extra decade before the first tuition bill. That growth is tax-free. The late starter has to contribute 3x as much per month to hit the same goal \u2014 because they have 10 fewer years of compounding."
+      },
+      "reveal": {
+        "head": "Target: $120K college fund. Birth vs age 10:",
+        "a": {
+          "label": "LATE STARTER",
+          "sub": "needs $780/month for 8 years",
+          "val": 74880,
+          "valt": "$74,880 contributed"
+        },
+        "b": {
+          "label": "EARLY STARTER",
+          "sub": "needs $250/month for 18 years",
+          "val": 54000,
+          "valt": "$54,000 contributed"
+        }
+      },
+      "twist": {
+        "l1": "Same $120K target. Early starter pays $20,880 less.",
+        "l2": "And has triple the monthly cash flow flexibility.",
+        "l3": "The best time to open a 529 is the day the birth certificate arrives. The second best time is right now."
+      }
+    },
+    "vo": {
+      "hook": "To save $120,000 for college, you need $250 a month if you start at birth. If you wait until your child is 10, you need $780 a month. Same goal. Three times the monthly payment. Here is why.",
+      "setup": "Same college fund target, two start dates. The late starter opens the 529 when their child turns 10 and has 8 years to grow it. The early starter opens it at birth and has 18 years of tax-free compounding.",
+      "tension": "Every year you delay triples the monthly contribution needed. Compound growth does not pause while you think about it. Ten extra years of tax-free 529 growth means the market does most of the work \u2014 instead of your monthly paycheck.",
+      "reveal": "To hit $120,000, the early starter contributes $54,000 total over 18 years. The late starter contributes $74,880 over 8 years \u2014 $20,880 more \u2014 and has three times the monthly payment stress.",
+      "twist": "Same goal. The early starter pays $20,880 less. The best time to open a 529 is the day the birth certificate arrives. The second best time is right now. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. 529 returns, contribution limits, and tax treatment vary by state. Consult a financial advisor.",
+    "voice": "ed"
+  },
+  {
+    "id": "529_delay_v2",
+    "archetype": "529_delay",
+    "title": "The $150/month that saves you $60,000 in college costs \ud83c\udf93",
+    "scenes": {
+      "hook": {
+        "big": "$150/month. From birth.",
+        "accent": "No tuition panic at 17.",
+        "sub": "Here is what early compounding does to a 529."
+      },
+      "setup": {
+        "title": "Same child. Two 529 start dates.",
+        "a": {
+          "label": "START AT 5",
+          "sub": "$300/month 529 starting at child's age 5"
+        },
+        "b": {
+          "label": "START AT BIRTH",
+          "sub": "$150/month 529 starting day one"
+        },
+        "foot": "Same college fund outcome at 18."
+      },
+      "tension": {
+        "big": "Starting 5 years earlier cuts the monthly payment in half.",
+        "pill": "The account compounds for 5 extra years.",
+        "ask": "Five extra years of 529 growth, tax-free, at historical market returns means the account does the work your monthly contribution would have to do. Half the monthly payment. Same college fund. That five-year head start is the entire difference."
+      },
+      "reveal": {
+        "head": "Same $100K target. Start at birth vs age 5:",
+        "a": {
+          "label": "START AT 5",
+          "sub": "$300/month for 13 years",
+          "val": 46800,
+          "valt": "$46,800 contributed"
+        },
+        "b": {
+          "label": "START AT BIRTH",
+          "sub": "$150/month for 18 years",
+          "val": 32400,
+          "valt": "$32,400 contributed"
+        }
+      },
+      "twist": {
+        "l1": "Same $100K. Start at birth pays $14,400 less total.",
+        "l2": "Half the monthly payment. Five years earlier.",
+        "l3": "The 529 you open today is the one that works the hardest. Every year it sits unopened, the monthly payment goes up."
+      }
+    },
+    "vo": {
+      "hook": "Start a 529 at your child's birth at $150 a month. Start it at age 5 at $300 a month. Both reach the same college fund target. Half the monthly payment \u2014 from a 5-year head start.",
+      "setup": "Same $100,000 college fund target, two start dates. Starting at birth at $150 a month for 18 years. Starting at age 5 at $300 a month for 13 years.",
+      "tension": "Five extra years of 529 growth, tax-free, at historical market returns means the account does the work your monthly contribution would otherwise have to do. Half the monthly payment, because compound growth covered the gap.",
+      "reveal": "The birth-start investor contributes $32,400 total. The age-5 starter contributes $46,800. Same college fund. $14,400 difference. Half the monthly payment.",
+      "twist": "Same goal. Half the monthly payment. Five years earlier. The 529 you open today is the one that works hardest. Every year it sits unopened, the monthly payment goes up. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. 529 contribution limits, tax treatment, and returns vary by state and market conditions.",
+    "voice": "brian"
+  },
+  {
+    "id": "inheritance_invested_v1",
+    "archetype": "inheritance_invested",
+    "title": "She inherited $50,000 and spent it. Here's the real cost \ud83d\udcb8",
+    "scenes": {
+      "hook": {
+        "big": "$50,000 inheritance.",
+        "accent": "Gone in 18 months.",
+        "sub": "Here is what it would have been in 25 years."
+      },
+      "setup": {
+        "title": "Same inheritance. Two decisions.",
+        "a": {
+          "label": "SPENDER",
+          "sub": "paid off car, redid kitchen, took trip"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "invested all $50K immediately"
+        },
+        "foot": "25 years. Same windfall. Different outcome."
+      },
+      "tension": {
+        "big": "Windfalls are the highest-leverage investment moments of your life.",
+        "pill": "A lump sum invested early beats monthly contributions for decades.",
+        "ask": "A $50,000 lump sum invested at 40 has 25 years to compound at 7% before retirement. Monthly contributions of $167/month would take 30 years to produce the same result. The lump sum is 5 years of payments in a single decision."
+      },
+      "reveal": {
+        "head": "$50K invested at 40. 25 years to retirement:",
+        "a": {
+          "label": "SPENDER",
+          "sub": "spent, then invested $167/month to compensate",
+          "val": 142000,
+          "valt": "~$142K at 65"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "$50K compounded for 25 years",
+          "val": 271000,
+          "valt": "~$271K at 65"
+        }
+      },
+      "twist": {
+        "l1": "Same starting point. $129,000 difference.",
+        "l2": "Because a lump sum has 25 years to compound.",
+        "l3": "Windfalls are rare. The financial decision you make the week they arrive determines their entire future value. The kitchen was real. So is the $271,000 that did not compound."
+      }
+    },
+    "vo": {
+      "hook": "She inherited $50,000 at 40 and spent it within 18 months \u2014 car payoff, kitchen renovation, vacation. Here is what that $50,000 would have been at 65 if she had invested it instead.",
+      "setup": "Same inheritance, two decisions. The spender used the windfall on lifestyle upgrades over 18 months. The investor transferred the full $50,000 to a brokerage account the week it arrived.",
+      "tension": "Windfalls are the highest-leverage investment moments of your life. A $50,000 lump sum invested at 40 has 25 years to compound. Monthly contributions of $167 a month would take 30 years to produce the same result. The lump sum is 5 years of payments in a single decision.",
+      "reveal": "At 65, the spender who tried to compensate with monthly contributions has about $142,000. The investor who put the full inheritance in immediately has $271,000.",
+      "twist": "Same starting point. $129,000 difference. The kitchen was real. So is the $271,000 that did not compound. Windfalls are rare. The decision you make the week they arrive determines their entire future value. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual return. Results vary significantly based on investment choices and market conditions.",
+    "voice": "bill"
+  },
+  {
+    "id": "inheritance_invested_v2",
+    "archetype": "inheritance_invested",
+    "title": "What happens when you invest an inheritance vs split it \ud83d\udcb8",
+    "scenes": {
+      "hook": {
+        "big": "$80,000 inheritance.",
+        "accent": "Half spent. Half invested.",
+        "sub": "The invested half became $217,000."
+      },
+      "setup": {
+        "title": "Same $80K. Two halves. Different futures.",
+        "a": {
+          "label": "SPENT HALF",
+          "sub": "$40K on lifestyle improvements"
+        },
+        "b": {
+          "label": "INVESTED HALF",
+          "sub": "$40K into the market immediately"
+        },
+        "foot": "20 years. What does the invested half become?"
+      },
+      "tension": {
+        "big": "Half spent. Half invested. The math reveals the cost of the split.",
+        "pill": "The spent half bought things. The invested half bought time.",
+        "ask": "This is the actual psychology of most inheritance decisions \u2014 the compromise. Spend some, invest some. The simulation shows what both halves become over 20 years, so you can see the full cost of each dollar spent."
+      },
+      "reveal": {
+        "head": "$40K invested at 7% avg annual return, 20 years:",
+        "a": {
+          "label": "SPENT HALF",
+          "sub": "lifestyle upgrades, depreciated to near zero",
+          "val": 0,
+          "valt": "~$0 value remaining"
+        },
+        "b": {
+          "label": "INVESTED HALF",
+          "sub": "compounded 20 years, tax-deferred",
+          "val": 154800,
+          "valt": "~$155K at year 20"
+        }
+      },
+      "twist": {
+        "l1": "The $40K spent is gone. The $40K invested is $155K.",
+        "l2": "Every dollar spent from a windfall has a 20-year shadow cost.",
+        "l3": "The compromise is human. The math is not emotional. Knowing what each dollar becomes is the information most people do not have when they make the decision."
+      }
+    },
+    "vo": {
+      "hook": "She inherited $80,000 and did what most people do \u2014 spent half and invested half. Here is what both halves became 20 years later.",
+      "setup": "The spent half went to lifestyle improvements. The invested half went straight into a diversified market account. Same inheritance week. Two completely different 20-year trajectories.",
+      "tension": "This is the most common inheritance pattern \u2014 the compromise. Spend some, feel good. Invest some, feel responsible. The simulation shows what both halves become, so you can see the full shadow cost of each dollar that went to spending.",
+      "reveal": "Twenty years later, the spent $40,000 is worth near zero \u2014 cars depreciate, renovations age, experiences fade. The invested $40,000 grew to $155,000.",
+      "twist": "The $40K spent is gone. The $40K invested is $155,000. Every dollar spent from a windfall has a 20-year shadow cost. Knowing what each dollar becomes is the information most people do not have when they decide. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Investment returns are not guaranteed. Assumes 7% avg annual return.",
+    "voice": "ed"
+  },
+  {
+    "id": "refi_savings_v1",
+    "archetype": "refi_savings",
+    "title": "She refinanced her mortgage and invested the savings \ud83c\udfe0",
+    "scenes": {
+      "hook": {
+        "big": "Refinanced 6.5% \u2192 3.5%.",
+        "accent": "Monthly savings: $410.",
+        "sub": "She invested it. Here is the 15-year result."
+      },
+      "setup": {
+        "title": "Same refi savings. Two decisions.",
+        "a": {
+          "label": "LIFESTYLE UPGRADE",
+          "sub": "$410/month savings absorbed into spending"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "$410/month savings invested immediately"
+        },
+        "foot": "15 years. Same refinance. Different outcome."
+      },
+      "tension": {
+        "big": "A refinance creates a permanent monthly surplus.",
+        "pill": "Most people spend it. A few invest it.",
+        "ask": "The average American who refinances sees the savings disappear into lifestyle inflation within 90 days. The mortgage payment drops \u2014 the spending rises to match. The surplus evaporates without a deliberate redirect."
+      },
+      "reveal": {
+        "head": "$410/month invested for 15 years:",
+        "a": {
+          "label": "LIFESTYLE UPGRADE",
+          "sub": "savings absorbed into spending, nothing invested",
+          "val": 0,
+          "valt": "$0 built"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "$410/month invested, compounded 15yr",
+          "val": 133000,
+          "valt": "~$133K built"
+        }
+      },
+      "twist": {
+        "l1": "Same refinance. $133,000 difference.",
+        "l2": "From where the savings went in the first month.",
+        "l3": "A refinance is not just interest rate optimization. It is a monthly surplus generator. The question is whether that surplus builds wealth or lifestyle."
+      }
+    },
+    "vo": {
+      "hook": "She refinanced her mortgage from 6.5 to 3.5 percent and saved $410 a month. Then she invested every dollar of that savings instead of spending it. Here is the 15-year result.",
+      "setup": "Same refinance, two decisions. The lifestyle upgrader let the $410 savings disappear into upgraded spending within 90 days. The investor set up an automatic transfer \u2014 the day the lower payment hit, $410 went straight to the market.",
+      "tension": "The average American who refinances sees the savings disappear into lifestyle inflation within 90 days. The mortgage payment drops. The spending rises to match. The surplus evaporates without a deliberate redirect.",
+      "reveal": "After 15 years, the lifestyle upgrader has zero from the refinance. The investor has $133,000.",
+      "twist": "Same refinance. $133,000 difference. From where the savings went in the first month. A refinance is not just interest rate optimization. It is a monthly surplus generator. The question is whether that surplus builds wealth or lifestyle. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual return. Refinancing costs and break-even analysis required before refinancing.",
+    "voice": "brian"
+  },
+  {
+    "id": "refi_savings_v2",
+    "archetype": "refi_savings",
+    "title": "The refinance trick that quietly built $200K \ud83c\udfe0",
+    "scenes": {
+      "hook": {
+        "big": "Refinanced. Saved $600/month.",
+        "accent": "Invested it for 20 years.",
+        "sub": "The mortgage got cheaper. The portfolio got massive."
+      },
+      "setup": {
+        "title": "Same refi. Two uses for the savings.",
+        "a": {
+          "label": "ABSORPTION",
+          "sub": "$600/month savings spent on upgrades"
+        },
+        "b": {
+          "label": "COMPOUND",
+          "sub": "$600/month savings invested monthly"
+        },
+        "foot": "20 years. One decision changes everything."
+      },
+      "tension": {
+        "big": "A refinance creates a forced surplus if you ignore it.",
+        "pill": "Most people notice it. Then spend it.",
+        "ask": "The behavioral trick: set up the automatic investment on the same day the new mortgage payment starts. Before you adapt to having $600 more per month. Before it becomes the new normal. The investor never felt the loss because the redirect happened instantly."
+      },
+      "reveal": {
+        "head": "$600/month invested for 20 years at 7%:",
+        "a": {
+          "label": "ABSORPTION",
+          "sub": "upgraded lifestyle, zero investment",
+          "val": 0,
+          "valt": "$0 built"
+        },
+        "b": {
+          "label": "COMPOUND",
+          "sub": "$600/month invested every month",
+          "val": 314000,
+          "valt": "~$314K built"
+        }
+      },
+      "twist": {
+        "l1": "Same refinance. $314,000 difference.",
+        "l2": "Set the redirect on day one, before you adapt.",
+        "l3": "The mortgage got cheaper the day of closing. The automatic investment should start the same week. Adaptation is the enemy. Speed is the solution."
+      }
+    },
+    "vo": {
+      "hook": "Refinanced the mortgage and saved $600 a month. Invested it the same week. Twenty years later, the portfolio is $314,000 richer \u2014 from a mortgage that got cheaper.",
+      "setup": "Same refinance, two uses for the savings. The first person let $600 a month get absorbed into upgraded living within 90 days. The second set up automatic monthly investments on the same day the new mortgage payment started.",
+      "tension": "The behavioral trick is speed. Set up the automatic investment before you adapt to having $600 more per month. Before it becomes the new normal. Before it finds a home in spending. The investor never felt the loss because the redirect happened instantly.",
+      "reveal": "After 20 years, the absorption path produces zero investment from the refinance savings. The compound path produces $314,000.",
+      "twist": "Same refinance. $314,000 difference. Set the redirect on day one, before you adapt. Adaptation is the enemy. Speed is the solution. The mortgage got cheaper at closing. The automatic investment should start the same week. Free calculator at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual return. Refinancing involves closing costs and a break-even timeline. Consult a mortgage professional.",
+    "voice": "bill"
+  },
+  {
+    "id": "vacation_financed_v1",
+    "archetype": "vacation_financed",
+    "title": "Putting a vacation on a credit card is more expensive than you think \u2708\ufe0f",
+    "scenes": {
+      "hook": {
+        "big": "$5,000 vacation on credit.",
+        "accent": "Paid minimum payments.",
+        "sub": "That trip cost $11,200."
+      },
+      "setup": {
+        "title": "Same $5K vacation. Two payment strategies.",
+        "a": {
+          "label": "MINIMUM PAYER",
+          "sub": "$5K on 24% APR card, minimum payments"
+        },
+        "b": {
+          "label": "CASH BUYER",
+          "sub": "saved for 8 months, paid cash"
+        },
+        "foot": "True cost comparison."
+      },
+      "tension": {
+        "big": "Twenty-four percent APR doubles the cost of everything.",
+        "pill": "Minimum payments are designed to maximize interest.",
+        "ask": "A $5,000 balance at 24% APR with minimum payments takes 11 years to pay off and costs $6,200 in interest. The vacation costs $11,200. The cash buyer paid $5,000 and was done. The minimum payer paid $11,200 over a decade."
+      },
+      "reveal": {
+        "head": "$5K vacation. 24% APR. Minimum payment strategy:",
+        "a": {
+          "label": "MINIMUM PAYER",
+          "sub": "11 years to payoff, $6,200 interest",
+          "val": 11200,
+          "valt": "$11,200 total cost"
+        },
+        "b": {
+          "label": "CASH BUYER",
+          "sub": "saved first, paid $5,000 flat",
+          "val": 5000,
+          "valt": "$5,000 total cost"
+        }
+      },
+      "twist": {
+        "l1": "Same trip. $6,200 more from one payment method.",
+        "l2": "And 11 extra years of monthly payments.",
+        "l3": "The memories from the vacation lasted 2 weeks. The payments lasted 11 years. Save before you go."
+      }
+    },
+    "vo": {
+      "hook": "A $5,000 vacation on a 24 percent APR credit card with minimum payments does not cost $5,000. It costs $11,200 and takes 11 years to pay off. Here is the math.",
+      "setup": "Same vacation, two payment strategies. The minimum payer puts $5,000 on a 24 percent credit card and makes minimum payments every month. The cash buyer delays the trip 8 months, saves up, and pays cash.",
+      "tension": "A $5,000 balance at 24 percent APR with minimum payments takes 11 years to fully pay off and generates $6,200 in interest. The vacation cost $11,200. The cash buyer paid $5,000 and was done the day they got home.",
+      "reveal": "Total cost for the minimum payer: $11,200 over 11 years. Total cost for the cash buyer: $5,000 paid once.",
+      "twist": "Same trip. $6,200 more. From one payment method choice. The memories lasted 2 weeks. The payments lasted 11 years. Save before you go. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Credit card APRs vary. Minimum payment calculations depend on card terms and balance.",
+    "voice": "ed"
+  },
+  {
+    "id": "vacation_financed_v2",
+    "archetype": "vacation_financed",
+    "title": "The real cost of financing fun on a credit card \u2708\ufe0f",
+    "scenes": {
+      "hook": {
+        "big": "Concert, dinner, weekend trip.",
+        "accent": "All on credit. All on minimum payments.",
+        "sub": "$3,200 in purchases cost $7,100."
+      },
+      "setup": {
+        "title": "Same $3,200. Two payment habits.",
+        "a": {
+          "label": "MINIMUM PAYER",
+          "sub": "charged $3,200, paid minimums only"
+        },
+        "b": {
+          "label": "FULL PAYER",
+          "sub": "charged $3,200, paid in full that month"
+        },
+        "foot": "True cost: 22% APR, minimum payments."
+      },
+      "tension": {
+        "big": "Minimum payments are a wealth transfer to the bank.",
+        "pill": "They are designed to keep you paying as long as possible.",
+        "ask": "Credit card companies set minimum payments at the level that maximizes their interest revenue. At 22% APR, a minimum payment covers almost no principal. You are paying to borrow money you already spent."
+      },
+      "reveal": {
+        "head": "$3,200 at 22% APR. Minimum vs full payment:",
+        "a": {
+          "label": "MINIMUM PAYER",
+          "sub": "8 years to payoff, $3,900 in interest",
+          "val": 7100,
+          "valt": "$7,100 total paid"
+        },
+        "b": {
+          "label": "FULL PAYER",
+          "sub": "paid $3,200 that month, zero interest",
+          "val": 3200,
+          "valt": "$3,200 total paid"
+        }
+      },
+      "twist": {
+        "l1": "Same $3,200 in fun. $3,900 in extra cost.",
+        "l2": "Paid over 8 years for a weekend and a concert.",
+        "l3": "The full payer had the same experiences for $3,200. The minimum payer paid $7,100 and spent 8 years writing that check."
+      }
+    },
+    "vo": {
+      "hook": "Concert tickets, dinner, a weekend trip. Three thousand two hundred dollars in fun on a 22 percent APR credit card with minimum payments. Total cost: $7,100 over 8 years.",
+      "setup": "Same $3,200, two payment habits. The minimum payer charges the card and pays the minimum every month. The full payer charges the same card and pays the full balance that month.",
+      "tension": "Credit card minimum payments are designed to maximize interest revenue. At 22 percent APR, the minimum payment barely touches the principal. You are paying rent on money you already spent.",
+      "reveal": "At 22 percent APR with minimum payments, $3,200 takes 8 years to pay off and costs $3,900 in interest \u2014 $7,100 total. The full payer spent $3,200 and was done.",
+      "twist": "Same experiences. $3,900 in extra cost. Paid over 8 years for a weekend that lasted 2 days. The full payer had the same fun for $3,200. Run your own payoff numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Credit card terms, APR, and minimum payment structures vary by issuer and balance.",
+    "voice": "brian"
+  },
+  {
+    "id": "insurance_overpay_v1",
+    "archetype": "insurance_overpay",
+    "title": "You're overpaying for car insurance by $800/year \ud83d\ude97",
+    "scenes": {
+      "hook": {
+        "big": "Average overpayment: $800/year.",
+        "accent": "Most people never shop their rate.",
+        "sub": "Invested for 20 years, that is $44,000."
+      },
+      "setup": {
+        "title": "Same coverage. Two habits.",
+        "a": {
+          "label": "AUTO-RENEWER",
+          "sub": "accepts auto-renewal, never compares rates"
+        },
+        "b": {
+          "label": "ANNUAL SHOPPER",
+          "sub": "shops insurance every year, invests savings"
+        },
+        "foot": "20 years. $800/year difference."
+      },
+      "tension": {
+        "big": "Insurance companies raise rates on loyal customers.",
+        "pill": "They offer the best rates to new customers.",
+        "ask": "Insurers call it price optimization \u2014 they identify customers unlikely to switch and quietly raise premiums. The average loyal customer overpays by 10-15% versus a shopper who switches or threatens to switch annually. The fix takes 30 minutes a year."
+      },
+      "reveal": {
+        "head": "$800/year saved, invested for 20 years:",
+        "a": {
+          "label": "AUTO-RENEWER",
+          "sub": "overpaid $800/year, accepted every renewal"
+        },
+        "b": {
+          "label": "ANNUAL SHOPPER",
+          "sub": "saved $800/year, invested the difference",
+          "val": 44000,
+          "valt": "~$44K built"
+        }
+      },
+      "twist": {
+        "l1": "Thirty minutes a year. $44,000 over 20 years.",
+        "l2": "From shopping your insurance rate annually.",
+        "l3": "Insurance companies reward switchers and penalize loyalty. Thirty minutes once a year to compare rates. Twenty years of investing the savings. $44,000."
+      }
+    },
+    "vo": {
+      "hook": "The average American overpays on car insurance by $800 a year simply by not shopping their rate annually. Invested over 20 years, that is $44,000. Here is how insurers do it \u2014 and how to stop it.",
+      "setup": "Same coverage, two habits. The auto-renewer accepts every renewal without comparing rates. The annual shopper spends 30 minutes a year comparing, switches when it saves money, and invests the difference.",
+      "tension": "Insurers call it price optimization. They identify customers who are unlikely to switch and quietly raise premiums year over year. The best rates go to new customers. The worst rates go to loyal ones. It is a fee for inertia.",
+      "reveal": "Eight hundred dollars a year invested at 7 percent average annual return for 20 years grows to $44,000. The auto-renewer has a slightly more convenient life and zero.",
+      "twist": "Thirty minutes a year. $44,000 over 20 years. Insurance companies reward switchers and penalize loyalty. Shop your rate once a year. Invest the savings. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Insurance savings vary by location, driving record, and provider. Always maintain adequate coverage.",
+    "voice": "bill"
+  },
+  {
+    "id": "insurance_overpay_v2",
+    "archetype": "insurance_overpay",
+    "title": "He bundled home and auto \u2014 and overpaid $1,200/year \ud83c\udfe0",
+    "scenes": {
+      "hook": {
+        "big": "'Bundle and save.'",
+        "accent": "He bundled. He did not save.",
+        "sub": "Here is the $67,000 mistake."
+      },
+      "setup": {
+        "title": "Bundle vs shop separately.",
+        "a": {
+          "label": "BUNDLER",
+          "sub": "home + auto with one insurer, never re-shopped"
+        },
+        "b": {
+          "label": "OPTIMIZER",
+          "sub": "shopped separately, invested $1,200/year savings"
+        },
+        "foot": "25 years. Same coverage. Different habit."
+      },
+      "tension": {
+        "big": "Bundling saves money compared to the same insurer's unbundled rates.",
+        "pill": "It does not always save money compared to a competitor.",
+        "ask": "The bundle discount is real \u2014 but it is relative to the same insurer's full price. A different insurer with no bundle might still beat the bundle price by 20%. Most people bundle once and never re-shop. The insurer counts on it."
+      },
+      "reveal": {
+        "head": "$1,200/year saved, invested for 25 years:",
+        "a": {
+          "label": "BUNDLER",
+          "sub": "overpaid $1,200/year for 25 years"
+        },
+        "b": {
+          "label": "OPTIMIZER",
+          "sub": "$1,200/year invested, compounded 25yr",
+          "val": 81000,
+          "valt": "~$81K built"
+        }
+      },
+      "twist": {
+        "l1": "Same coverage. $81,000 difference.",
+        "l2": "From re-shopping insurance every year instead of assuming the bundle is best.",
+        "l3": "Bundle discounts are marketing. Shop your actual rate annually. The savings, invested for 25 years, are $81,000."
+      }
+    },
+    "vo": {
+      "hook": "He bundled his home and auto insurance at one provider and never re-shopped it. For 25 years, he overpaid $1,200 a year compared to what separate optimized policies would have cost. Here is the number.",
+      "setup": "Bundle versus shop separately. The bundler accepted the discount and renewed automatically. The optimizer shopped home and auto separately every year, found the best rate each time, and invested the $1,200 annual savings.",
+      "tension": "The bundle discount is real \u2014 but it is relative to the same insurer's full price. A competitor with no bundle might still be 20 percent cheaper. Most people bundle once and never re-shop. The insurer's renewal team is counting on exactly that.",
+      "reveal": "Twelve hundred dollars a year invested at 7 percent average annual return for 25 years grows to $81,000.",
+      "twist": "Same coverage. $81,000 difference. From re-shopping instead of assuming the bundle is best. Bundle discounts are marketing. Your actual rate is what matters. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Insurance savings vary significantly by location, provider, and coverage needs. Always maintain adequate coverage.",
+    "voice": "ed"
+  },
+  {
+    "id": "gym_unused_v1",
+    "archetype": "gym_unused",
+    "title": "The gym membership that costs you $180,000 \ud83d\udcaa",
+    "scenes": {
+      "hook": {
+        "big": "$80/month gym membership.",
+        "accent": "Goes 3 times a year.",
+        "sub": "Invested instead \u2014 30 years is $91,000."
+      },
+      "setup": {
+        "title": "Same $80/month. Two uses.",
+        "a": {
+          "label": "GUILT SUBSCRIPTION",
+          "sub": "$80/month gym, $320/visit on average"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "cancel gym, invest $80/month for 30 years"
+        },
+        "foot": "The honest math of unused memberships."
+      },
+      "tension": {
+        "big": "Gyms profit from people who pay and never come.",
+        "pill": "Forty percent of members never show up.",
+        "ask": "Gym business models are built on this: members pay for the motivation to go, not the actual visits. If everyone showed up daily, gyms could not handle the capacity. The subscription persists because canceling feels like giving up on the goal."
+      },
+      "reveal": {
+        "head": "$80/month. 30 years. Gym vs invested:",
+        "a": {
+          "label": "GUILT SUBSCRIPTION",
+          "sub": "paid $28,800 over 30 years for occasional use"
+        },
+        "b": {
+          "label": "INVESTOR",
+          "sub": "$80/month invested 30 years, 7% avg return",
+          "val": 91000,
+          "valt": "~$91K built"
+        }
+      },
+      "twist": {
+        "l1": "Not a guilt trip. A math trip.",
+        "l2": "The goal was health. The result was $28,800 spent and zero invested.",
+        "l3": "Cancel the unused membership. Find a $15/month alternative or walk outside. Invest the difference. The $91,000 is not hypothetical."
+      }
+    },
+    "vo": {
+      "hook": "The average unused gym member pays $80 a month and visits three times a year. That is $320 a visit. Invested instead for 30 years, it is $91,000. Here is the honest math.",
+      "setup": "Same $80 a month, two uses. The guilt subscription keeps paying for a gym rarely visited \u2014 because canceling feels like giving up on getting fit. The investor cancels, finds a free or cheap alternative, and puts $80 into the market every month.",
+      "tension": "Gym business models are built on non-users. Forty percent of members never show up. The subscription persists because canceling feels like failing. The gym wins when you feel too guilty to quit.",
+      "reveal": "Over 30 years, the guilt subscriber pays $28,800 for 90 visits. The investor builds $91,000.",
+      "twist": "Not a guilt trip. A math trip. The goal was health. The result was $28,800 spent. Cancel the unused membership. Find a $15 alternative. Invest the difference. The $91,000 is real. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual return. Investment results vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "gym_unused_v2",
+    "archetype": "gym_unused",
+    "title": "She had 4 unused subscriptions. The 20-year cost shocked her \ud83d\udcaa",
+    "scenes": {
+      "hook": {
+        "big": "4 unused subscriptions.",
+        "accent": "$190/month total.",
+        "sub": "Invested for 20 years \u2014 $100,000."
+      },
+      "setup": {
+        "title": "Same subscriptions. Two responses.",
+        "a": {
+          "label": "SUBSCRIPTION KEEPER",
+          "sub": "$190/month in services barely used"
+        },
+        "b": {
+          "label": "CUTTER",
+          "sub": "cancelled all 4, invested $190/month"
+        },
+        "foot": "20 years. Small cuts. Big number."
+      },
+      "tension": {
+        "big": "Subscriptions hide in plain sight.",
+        "pill": "They are designed to be easy to forget and hard to cancel.",
+        "ask": "The average American has 12 paid subscriptions and is actively aware of only 7. The five forgotten ones average $45/month. Subscriptions auto-renew specifically to exploit the gap between signing up with enthusiasm and canceling with inertia."
+      },
+      "reveal": {
+        "head": "$190/month invested for 20 years at 7%:",
+        "a": {
+          "label": "SUBSCRIPTION KEEPER",
+          "sub": "paid $45,600 over 20 years for minimal use"
+        },
+        "b": {
+          "label": "CUTTER",
+          "sub": "$190/month invested, compounded 20yr",
+          "val": 100500,
+          "valt": "~$100K built"
+        }
+      },
+      "twist": {
+        "l1": "Four subscriptions. $100,000 opportunity cost.",
+        "l2": "From services she barely knew she had.",
+        "l3": "Audit your subscriptions right now. Open your bank statement. Find everything that auto-renews. Cancel what you do not actively use weekly. Invest the difference."
+      }
+    },
+    "vo": {
+      "hook": "She audited her bank statement and found four subscriptions she barely used, totaling $190 a month. Cancelled all four. Invested the money instead. Twenty years later, those cancellations were worth $100,000.",
+      "setup": "Same $190 a month, two outcomes. The subscription keeper forgot about the services and kept paying through auto-renewal. The cutter spent 30 minutes auditing, cancelled everything unused, and automated a $190 monthly investment.",
+      "tension": "The average American has 12 paid subscriptions and is only aware of 7. The forgotten five average $45 a month. Auto-renewal is designed to exploit the gap between signing up with enthusiasm and canceling with inertia.",
+      "reveal": "After 20 years, the subscription keeper paid $45,600 for services barely used. The cutter invested $190 a month and built $100,000.",
+      "twist": "Four subscriptions. $100,000 opportunity cost. Open your bank statement right now. Find every auto-renewal. Cancel what you do not use weekly. Invest the difference. Thirty minutes, one time, $100,000 over 20 years. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual return. Results vary. Review subscriptions carefully before cancelling services you use.",
+    "voice": "bill"
+  },
+  {
+    "id": "overtime_invested_v1",
+    "archetype": "overtime_invested",
+    "title": "She worked overtime for 5 years and spent every dollar \ud83d\udcbc",
+    "scenes": {
+      "hook": {
+        "big": "$900/month in overtime.",
+        "accent": "All of it spent.",
+        "sub": "Here is the 20-year cost of that habit."
+      },
+      "setup": {
+        "title": "Same overtime. Two destinations.",
+        "a": {
+          "label": "OVERTIME SPENDER",
+          "sub": "$900/month overtime absorbed into lifestyle"
+        },
+        "b": {
+          "label": "OVERTIME INVESTOR",
+          "sub": "$900/month overtime invested immediately"
+        },
+        "foot": "20 years. Same extra work. Different outcome."
+      },
+      "tension": {
+        "big": "Overtime is the purest form of extra income.",
+        "pill": "It exists above your lifestyle. It should stay that way.",
+        "ask": "Regular salary funds your life. Overtime should fund your future. But lifestyle adapts \u2014 within months, the extra $900 becomes expected, then spent, then necessary. The investor treats overtime as untouchable. The spender treats it as salary."
+      },
+      "reveal": {
+        "head": "$900/month overtime invested for 20 years:",
+        "a": {
+          "label": "OVERTIME SPENDER",
+          "sub": "better lifestyle, overtime became baseline"
+        },
+        "b": {
+          "label": "OVERTIME INVESTOR",
+          "sub": "$900/month in market, 20yr compounding",
+          "val": 475000,
+          "valt": "~$475K built"
+        }
+      },
+      "twist": {
+        "l1": "Same extra hours. $475,000 difference.",
+        "l2": "Because she treated overtime as untouchable.",
+        "l3": "You are already doing the work. The only question is whether the extra hours go to your lifestyle or your future. At $900/month for 20 years, that decision is a $475,000 question."
+      }
+    },
+    "vo": {
+      "hook": "She worked overtime for 5 years, earning an extra $900 a month. She spent every dollar. Here is what 20 years of investing that overtime would have looked like instead.",
+      "setup": "Same overtime hours, two destinations. The overtime spender let $900 a month get absorbed into lifestyle upgrades within 90 days. The overtime investor set up an automatic investment before the lifestyle adapted.",
+      "tension": "Overtime is the purest form of extra income. It exists above your lifestyle. It should stay there. But lifestyle adapts fast \u2014 within months, the extra $900 becomes expected, then spent, then necessary. The investor treats overtime as untouchable from day one.",
+      "reveal": "Nine hundred dollars a month invested at 7 percent average annual return for 20 years grows to $475,000.",
+      "twist": "Same extra hours. $475,000 difference. You are already doing the work. The only question is whether the extra hours go to your lifestyle or your future. At $900 a month for 20 years, that decision is a $475,000 question. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes consistent overtime income and 7% avg annual return. Results vary.",
+    "voice": "ed"
+  },
+  {
+    "id": "overtime_invested_v2",
+    "archetype": "overtime_invested",
+    "title": "He worked every weekend for 3 years. Then invested it. \ud83d\udcbc",
+    "scenes": {
+      "hook": {
+        "big": "3 years of weekend work.",
+        "accent": "Every dollar invested.",
+        "sub": "What $600/month builds over 25 years."
+      },
+      "setup": {
+        "title": "Same weekend work. Two uses.",
+        "a": {
+          "label": "IMMEDIATE SPENDER",
+          "sub": "$600/month weekend income spent in real time"
+        },
+        "b": {
+          "label": "PATIENT INVESTOR",
+          "sub": "$600/month invested, never touched"
+        },
+        "foot": "25 years from first weekend shift."
+      },
+      "tension": {
+        "big": "Three years of weekend work is a temporary sacrifice.",
+        "pill": "Twenty-five years of compounding is permanent.",
+        "ask": "He worked weekends for 3 years and could have spent the money. Instead he invested it \u2014 then stopped working weekends. The 3-year sacrifice produced a 25-year compounding engine that ran without further input."
+      },
+      "reveal": {
+        "head": "$600/month invested for 3 years, then compounded 22 more:",
+        "a": {
+          "label": "IMMEDIATE SPENDER",
+          "sub": "3 years spent, nothing compounded"
+        },
+        "b": {
+          "label": "PATIENT INVESTOR",
+          "sub": "$21,600 invested, grew for 25 total years",
+          "val": 116000,
+          "valt": "~$116K at year 25"
+        }
+      },
+      "twist": {
+        "l1": "3 years of work. 25 years of compounding.",
+        "l2": "The effort stopped. The money didn't.",
+        "l3": "He worked weekends for 3 years. The investment did the next 22. A temporary sacrifice, invested immediately, converts into a permanent compounding engine."
+      }
+    },
+    "vo": {
+      "hook": "He worked every weekend for 3 years, earning $600 a month. Instead of spending it, he invested every dollar. Then he stopped working weekends. Twenty-five years later, here is where that 3-year sacrifice ended up.",
+      "setup": "Same weekend hours, two uses. The immediate spender enjoyed the extra income in real time \u2014 better dinners, more travel. The patient investor transferred every dollar to investments and treated the income as if it did not exist.",
+      "tension": "Three years of weekend work is a temporary sacrifice. Twenty-five years of compounding is permanent. The investor worked weekends for 3 years, then stopped. The investment ran for 22 more years without a single additional contribution.",
+      "reveal": "Twenty-one thousand six hundred dollars invested over 3 years, then left to compound for 22 more, grows to $116,000.",
+      "twist": "3 years of work. 25 years of compounding. The effort stopped. The money did not. A temporary sacrifice, invested immediately, converts into a permanent compounding engine. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual return over full period. Results vary.",
+    "voice": "brian"
+  },
+  {
+    "id": "wedding_debt_v1",
+    "archetype": "wedding_debt",
+    "title": "The $35,000 wedding that became a $60,000 mistake \ud83d\udc8d",
+    "scenes": {
+      "hook": {
+        "big": "$35,000 wedding on credit.",
+        "accent": "The marriage lasted 40 years.",
+        "sub": "The debt math was the real story."
+      },
+      "setup": {
+        "title": "Same wedding. Two funding approaches.",
+        "a": {
+          "label": "CREDIT FUNDED",
+          "sub": "$35K on credit cards and personal loans"
+        },
+        "b": {
+          "label": "MODEST START",
+          "sub": "$10K cash wedding, $25K invested instead"
+        },
+        "foot": "25 years. Same marriage. Different finances."
+      },
+      "tension": {
+        "big": "Starting a marriage in debt is a compounding trap in reverse.",
+        "pill": "The $35K debt costs money every month \u2014 right when compound growth should be starting.",
+        "ask": "The average American wedding costs $35,000. The average couple takes 3+ years to pay it off. Every month of debt repayment is a month of investment compounding missed. At the exact life stage where compound growth is most powerful."
+      },
+      "reveal": {
+        "head": "$25K invested at wedding vs spent on wedding. 25 years:",
+        "a": {
+          "label": "CREDIT FUNDED",
+          "sub": "3 years of debt payments, delayed investing",
+          "val": 95000,
+          "valt": "~$95K at year 25"
+        },
+        "b": {
+          "label": "MODEST START",
+          "sub": "$25K invested at year 1, 25yr compounding",
+          "val": 270000,
+          "valt": "~$270K at year 25"
+        }
+      },
+      "twist": {
+        "l1": "Same marriage. $175,000 difference in wealth.",
+        "l2": "From the wedding budget decision.",
+        "l3": "The wedding is one day. The compounding gap is 25 years. Spend on the marriage, not just the wedding."
+      }
+    },
+    "vo": {
+      "hook": "The average American wedding costs $35,000. Most couples finance a significant portion. Here is the 25-year wealth cost of a debt-funded wedding versus a modest start with the difference invested.",
+      "setup": "Same marriage, two funding approaches. The credit-funded wedding puts $35,000 on credit cards and personal loans. The modest start has a $10,000 cash wedding and invests the $25,000 difference immediately.",
+      "tension": "Starting a marriage in debt is a compounding trap in reverse. Every month of debt repayment is a month of investment compounding missed \u2014 at the exact life stage where compound growth is most powerful. The 20s and 30s are the most valuable compounding years of your financial life.",
+      "reveal": "After 25 years, the credit-funded couple who delayed investing during debt repayment has about $95,000. The modest-start couple who invested $25,000 at year one has $270,000.",
+      "twist": "Same marriage. $175,000 difference. From the wedding budget decision. The wedding is one day. The compounding gap is 25 years. Spend on the marriage, not just the wedding. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual return. Wedding and investment decisions are deeply personal and vary by individual circumstances.",
+    "voice": "bill"
+  },
+  {
+    "id": "wedding_debt_v2",
+    "archetype": "wedding_debt",
+    "title": "They spent $45K on the wedding and $0 on the honeymoon fund \ud83d\udc8d",
+    "scenes": {
+      "hook": {
+        "big": "$45,000 wedding.",
+        "accent": "Zero invested in year one.",
+        "sub": "The 30-year wealth cost of that choice."
+      },
+      "setup": {
+        "title": "Same couple. Two wedding budgets.",
+        "a": {
+          "label": "BIG WEDDING",
+          "sub": "$45K wedding, financed and paid off over 4 years"
+        },
+        "b": {
+          "label": "INVEST THE GAP",
+          "sub": "$15K wedding, $30K invested at marriage"
+        },
+        "foot": "30 years. Same couple. Different wealth."
+      },
+      "tension": {
+        "big": "Four years of debt payments killed their early compounding window.",
+        "pill": "The 20s and early 30s are the highest-value compounding years.",
+        "ask": "Compound interest does not care about the wedding. It cares about when you start. A $30,000 lump sum invested at age 28 has 37 years to compound before retirement. Four years of debt payments at the start shrinks that window permanently."
+      },
+      "reveal": {
+        "head": "$30K invested at 28 vs delayed 4yr by debt. 30yr total:",
+        "a": {
+          "label": "BIG WEDDING",
+          "sub": "4yr debt delay, then invested remainder",
+          "val": 228000,
+          "valt": "~$228K at 58"
+        },
+        "b": {
+          "label": "INVEST THE GAP",
+          "sub": "$30K at 28, 30yr full compounding",
+          "val": 364000,
+          "valt": "~$364K at 58"
+        }
+      },
+      "twist": {
+        "l1": "Same couple. $136,000 wealth gap.",
+        "l2": "From 4 years of delayed compounding.",
+        "l3": "The wedding photos look the same. The net worth does not. Start the investment the same year you start the marriage."
+      }
+    },
+    "vo": {
+      "hook": "They spent $45,000 on the wedding and nothing on their financial start. Four years of debt payments delayed their investing. Here is the 30-year cost of that delay.",
+      "setup": "Same couple, two choices. The big wedding at $45,000 financed and paid off over 4 years \u2014 zero invested during that time. The invest-the-gap approach: $15,000 wedding, $30,000 invested immediately at marriage.",
+      "tension": "The 20s and early 30s are the most valuable compounding years of your financial life. A $30,000 lump sum invested at 28 has 30 years to compound. Four years of debt payments shrink that window permanently.",
+      "reveal": "After 30 years, the big wedding couple who delayed investing has about $228,000. The invest-the-gap couple who put $30,000 in at year one has $364,000.",
+      "twist": "Same couple. $136,000 wealth gap. From four years of delayed compounding. The wedding photos look the same. The net worth does not. Start the investment the same year you start the marriage. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Assumes 7% avg annual return. Personal financial decisions around weddings depend on many individual factors.",
+    "voice": "ed"
+  },
+  {
+    "id": "side_income_tax_v1",
+    "archetype": "side_income_tax",
+    "title": "Side hustle taxes are destroying your profit. Here's the fix \ud83d\udccb",
+    "scenes": {
+      "hook": {
+        "big": "$2,000/month side hustle.",
+        "accent": "Take-home after self-employment tax: $1,460.",
+        "sub": "The 27% you're losing \u2014 and how to keep more."
+      },
+      "setup": {
+        "title": "Same side income. Two tax strategies.",
+        "a": {
+          "label": "UNOPTIMIZED",
+          "sub": "reports all income, takes no deductions"
+        },
+        "b": {
+          "label": "OPTIMIZED",
+          "sub": "solo 401k + deductions, legally keeps more"
+        },
+        "foot": "What tax strategy is worth over 20 years."
+      },
+      "tension": {
+        "big": "Self-employment tax is 15.3% on top of income tax.",
+        "pill": "A solo 401k cuts both simultaneously.",
+        "ask": "Side hustlers pay both the employee and employer share of Social Security and Medicare \u2014 15.3%. Contributing to a solo 401k reduces taxable income dollar for dollar, cutting both self-employment tax AND income tax at the same time. Most side hustlers do not know this exists."
+      },
+      "reveal": {
+        "head": "$2,000/month side income. Unoptimized vs solo 401k + deductions:",
+        "a": {
+          "label": "UNOPTIMIZED",
+          "sub": "$540/month in taxes, nothing invested pre-tax"
+        },
+        "b": {
+          "label": "OPTIMIZED",
+          "sub": "$280/month taxes, $500/month in solo 401k",
+          "val": 100,
+          "valt": "~$163K tax-free at 20yr"
+        }
+      },
+      "twist": {
+        "l1": "Same income. $260/month more kept.",
+        "l2": "Plus $500/month in a pre-tax retirement account.",
+        "l3": "A solo 401k is free to open. The tax savings are immediate. Most side hustlers leave this money with the IRS every quarter."
+      }
+    },
+    "vo": {
+      "hook": "Two thousand dollars a month from a side hustle sounds great. After self-employment tax and income tax, you take home about $1,460. Here is how to legally keep more \u2014 and invest the difference.",
+      "setup": "Same $2,000 a month side income, two tax strategies. The unoptimized approach reports everything and takes no special deductions. The optimized approach opens a solo 401k and maximizes legal deductions.",
+      "tension": "Side hustlers pay both the employee and employer share of Social Security and Medicare \u2014 15.3 percent \u2014 on top of income tax. A solo 401k contribution reduces taxable income dollar for dollar, cutting both taxes simultaneously. Most side hustlers have no idea this vehicle exists.",
+      "reveal": "The unoptimized approach pays $540 a month in taxes. The optimized approach pays $280 a month and puts $500 into a pre-tax solo 401k. Over 20 years, that solo 401k grows to about $163,000 tax-deferred.",
+      "twist": "Same income. $260 more kept per month. Plus $163,000 growing in a retirement account. A solo 401k is free to open. The tax savings are immediate. Most side hustlers are leaving this money with the IRS every quarter. Run your own numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Tax laws change. Solo 401k eligibility and limits vary. Consult a tax professional for your situation.",
+    "voice": "brian"
+  },
+  {
+    "id": "side_income_tax_v2",
+    "archetype": "side_income_tax",
+    "title": "She didn't know about quarterly taxes. The bill was brutal \ud83d\udccb",
+    "scenes": {
+      "hook": {
+        "big": "First year side hustle: $24,000.",
+        "accent": "April tax bill: $7,200.",
+        "sub": "She had $800 saved for it."
+      },
+      "setup": {
+        "title": "Same side income. Two tax awareness levels.",
+        "a": {
+          "label": "UNAWARE",
+          "sub": "no quarterly payments, huge April bill"
+        },
+        "b": {
+          "label": "PREPARED",
+          "sub": "quarterly payments, invested the tax savings"
+        },
+        "foot": "What proper tax planning changes over 5 years."
+      },
+      "tension": {
+        "big": "W-2 employees have taxes withheld automatically.",
+        "pill": "Self-employed people owe them quarterly \u2014 most find out in April.",
+        "ask": "The IRS requires quarterly estimated tax payments from self-employed earners. Missing them triggers penalties of 3-5% on top of the tax owed. Most first-year side hustlers miss at least two quarters. The prepared person sets aside taxes monthly and invests everything above the tax reserve."
+      },
+      "reveal": {
+        "head": "$24K side income. Aware vs unaware tax strategy:",
+        "a": {
+          "label": "UNAWARE",
+          "sub": "$7,200 surprise bill + $400 penalty"
+        },
+        "b": {
+          "label": "PREPARED",
+          "sub": "paid quarterly, avoided penalty, invested buffer",
+          "val": 6200,
+          "valt": "$6,200 invested from surplus"
+        }
+      },
+      "twist": {
+        "l1": "Same income. One paid $400 in penalties.",
+        "l2": "One invested $6,200.",
+        "l3": "Set aside 30% of every side hustle payment the day it arrives. Pay quarterly. Invest whatever the year-end true-up returns. The IRS penalty is the most avoidable expense in the tax code."
+      }
+    },
+    "vo": {
+      "hook": "She made $24,000 from her side hustle in year one and thought she was crushing it. Then April arrived. Tax bill: $7,200. She had $800 saved for it. Here is what tax awareness would have changed.",
+      "setup": "Same $24,000 in side income, two tax strategies. The unaware earner did not make quarterly payments and got hit with a $7,200 bill plus a $400 penalty in April. The prepared earner paid quarterly, avoided penalties, and invested the cash buffer above the tax reserve.",
+      "tension": "W-2 employees have taxes withheld automatically. Self-employed earners owe them quarterly. The IRS charges 3 to 5 percent penalties for missing payments. Most first-year side hustlers miss at least two quarters and find out about it in April.",
+      "reveal": "The unaware earner paid $7,200 in taxes plus $400 in penalties \u2014 and had to scramble to cover it. The prepared earner paid the same taxes on time, avoided the penalty, and had $6,200 left to invest from the surplus in their tax reserve.",
+      "twist": "Same income. One paid $400 in penalties. One invested $6,200. Set aside 30 percent of every side hustle payment the day it arrives. Pay quarterly. The IRS penalty is the most avoidable expense in the entire tax code. Run your numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Tax rates and self-employment rules vary. Consult a tax professional for quarterly payment guidance.",
+    "voice": "bill"
+  },
+  {
+    "id": "annuity_trap_v1",
+    "archetype": "annuity_trap",
+    "title": "The annuity your advisor sold you is costing a fortune \ud83d\udcc9",
+    "scenes": {
+      "hook": {
+        "big": "Variable annuity: 3.5% fees.",
+        "accent": "Index fund: 0.05% fees.",
+        "sub": "On $200K, the gap over 20 years is $290,000."
+      },
+      "setup": {
+        "title": "Same $200K. Two fee structures.",
+        "a": {
+          "label": "VARIABLE ANNUITY",
+          "sub": "$200K in annuity, 3.5% annual fees"
+        },
+        "b": {
+          "label": "INDEX FUND",
+          "sub": "$200K in index fund, 0.05% annual fees"
+        },
+        "foot": "20 years. Same market return. Different fees."
+      },
+      "tension": {
+        "big": "The fee gap is 3.45% per year.",
+        "pill": "On $200K, that is $6,900 a year lost to fees in year one alone.",
+        "ask": "Variable annuities are sold as tax-deferred growth vehicles. They are also some of the most fee-laden products in personal finance \u2014 mortality and expense charges, administrative fees, subaccount fees, rider fees. The total often hits 3-4% annually. An IRA or 401k with an index fund delivers the same tax deferral at 0.05%."
+      },
+      "reveal": {
+        "head": "$200K. 20 years. 7% gross return. 3.5% fees vs 0.05%:",
+        "a": {
+          "label": "VARIABLE ANNUITY",
+          "sub": "3.5% fees, net return ~3.5%",
+          "val": 396000,
+          "valt": "~$396K after 20yr"
+        },
+        "b": {
+          "label": "INDEX FUND",
+          "sub": "0.05% fees, net return ~6.95%",
+          "val": 734000,
+          "valt": "~$734K after 20yr"
+        }
+      },
+      "twist": {
+        "l1": "Same market. Same $200K. $338,000 difference.",
+        "l2": "From the fee structure attached to the investment.",
+        "l3": "An annuity has legitimate uses: guaranteed income in retirement with no investment risk. It is not a growth vehicle. If your advisor put you in a variable annuity for growth, ask why."
+      }
+    },
+    "vo": {
+      "hook": "Variable annuities charge 3 to 4 percent in annual fees. Index funds charge 0.05 percent. On $200,000 over 20 years, that fee gap is $338,000. Here is the math your advisor may not have shown you.",
+      "setup": "Same $200,000, two fee structures. Variable annuity at 3.5 percent in combined annual charges \u2014 mortality fees, administrative fees, subaccount fees. Index fund at 0.05 percent. Same market exposure, same tax deferral, one fee structure is 70 times more expensive.",
+      "tension": "Variable annuities are sold as tax-deferred growth vehicles. So is an IRA with an index fund. The difference is the fee. A 3.45 percent fee gap on $200,000 is $6,900 in year one \u2014 money that never compounds.",
+      "reveal": "After 20 years at 7 percent gross return, the variable annuity at 3.5 percent fees grows to $396,000. The index fund at 0.05 percent fees grows to $734,000.",
+      "twist": "Same market. Same $200,000. $338,000 difference. From fees. Annuities have legitimate uses \u2014 guaranteed income with no investment risk. They are not growth vehicles. If your advisor put you in one for growth, ask why. Run your own comparison free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Annuity fees, terms, and surrender charges vary significantly by product. Consult a fee-only financial advisor before any annuity decision.",
+    "voice": "ed"
+  },
+  {
+    "id": "annuity_trap_v2",
+    "archetype": "annuity_trap",
+    "title": "He tried to cancel the annuity. The surrender charge shocked him \ud83d\udcc9",
+    "scenes": {
+      "hook": {
+        "big": "Surrender charge: $18,000.",
+        "accent": "For wanting his own money back.",
+        "sub": "Here is what annuity surrender periods actually mean."
+      },
+      "setup": {
+        "title": "Same annuity investment. Two exit timelines.",
+        "a": {
+          "label": "EARLY EXIT",
+          "sub": "needed money in year 4, paid surrender charge"
+        },
+        "b": {
+          "label": "TERM COMPLETER",
+          "sub": "held 10 years, exited at end of surrender period"
+        },
+        "foot": "The liquidity trap most buyers don't know about."
+      },
+      "tension": {
+        "big": "Variable annuities lock your money for 7-10 years.",
+        "pill": "Exit early and pay 7-10% surrender charges.",
+        "ask": "Surrender periods are the clause annuity buyers skip past. They lock your principal for 7 to 10 years with declining exit penalties \u2014 often starting at 7-10% in year one, declining by 1% per year. An unexpected life event in year 4 can cost $15,000-$20,000 to access your own money."
+      },
+      "reveal": {
+        "head": "$250K annuity. Exit in year 4 vs year 10:",
+        "a": {
+          "label": "EARLY EXIT",
+          "sub": "4% surrender charge on $250K = $10,000 penalty",
+          "val": 240000,
+          "valt": "$240K after penalty"
+        },
+        "b": {
+          "label": "TERM COMPLETER",
+          "sub": "held through surrender period, full value",
+          "val": 300000,
+          "valt": "~$300K full exit"
+        }
+      },
+      "twist": {
+        "l1": "The money was his. The access cost $10,000.",
+        "l2": "Surrender charges are the hidden price of annuity liquidity.",
+        "l3": "Before buying any annuity, read the surrender schedule. If you might need the money within 10 years, an annuity is the wrong vehicle."
+      }
+    },
+    "vo": {
+      "hook": "He invested $250,000 in a variable annuity and needed some of it back in year 4. The surrender charge was $10,000. For accessing his own money. Here is what annuity surrender periods actually cost.",
+      "setup": "Same annuity, two exit timelines. The early exit happens in year 4 \u2014 a life event requires the capital. The surrender charge at year 4 is 4 percent on the full balance. The term completer holds through year 10, when the surrender period expires and the full value is accessible.",
+      "tension": "Variable annuities lock your money for 7 to 10 years with declining surrender charges \u2014 often starting at 7 to 10 percent in year one and declining by 1 percent annually. An unexpected life event in year 4 can cost $15,000 to $20,000 just to access capital you already own.",
+      "reveal": "Exiting in year 4 with a 4 percent surrender charge on $250,000 costs $10,000. Waiting until year 10 means full access to the entire balance with no penalty.",
+      "twist": "The money was his. The access cost $10,000. Surrender charges are the hidden price of annuity liquidity. Before buying any annuity, read the surrender schedule in full. If you might need the money within 10 years, an annuity is the wrong vehicle. Run your numbers free at wealthdelay dot com."
+    },
+    "disclaimer": "Simulation only \u2014 not financial advice. Annuity surrender schedules, charges, and terms vary significantly by contract. Read all documents carefully and consult a fee-only advisor.",
+    "voice": "brian"
+  }
+]

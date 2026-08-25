@@ -1,0 +1,148 @@
+{
+  "title": "Why Your Brain Is Hardwired to Keep You Poor",
+  "brand": "wiredwrong",
+  "description": "Your income isn't the problem. Your education isn't the problem. Your brain is — and it was built 200,000 years ago for a world where wealth didn't exist. Here's the neuroscience behind every financial mistake you've ever made, and the one shift that actually fixes it.\n\nThis is general information, not financial advice.\n\nChapters:\n0:00 The uncomfortable truth\n0:45 What your brain was actually built for\n2:00 Loss aversion — why losing hurts twice as much\n4:00 Hyperbolic discounting — why you choose $50 now over $100 later\n5:30 The lottery winner who lost everything\n7:00 The dopamine trap — why every win makes the next win worse\n8:15 The income level that stops making you happier\n9:30 How corporations weaponize all of this against you\n10:30 The one reframe that changes everything",
+  "tags": ["psychology of money","why people stay poor","loss aversion","behavioral economics","money psychology","financial psychology","why you cant save money","brain and money","neuroscience money","wired wrong"],
+  "scenes": [
+    {
+      "narration": "Here is something nobody in the personal finance world wants to admit.",
+      "visual": { "template": "big-statement", "text": "Nobody wants to admit this.", "accent": true }
+    },
+    {
+      "narration": "The reason you are not wealthy has nothing to do with your income. Nothing to do with your education. Nothing to do with how hard you work.",
+      "visual": { "template": "big-statement", "text": "It is not your income.\nNot your education.\nNot your effort." }
+    },
+    {
+      "narration": "It is your brain. And it was built — at the hardware level — to make sure you stay exactly where you are.",
+      "visual": { "template": "big-number-callout", "pre": "The real problem", "number": "Your Brain", "post": "Built 200,000 years ago.", "hero": true }
+    },
+    {
+      "narration": "Two hundred thousand years ago, your ancestor stood in the Savanna. No shelter. No food stored. Nothing guaranteed. The only thing keeping them alive was the ability to respond to immediate threats and secure resources right now.",
+      "visual": { "template": "big-statement", "text": "Survive today.\nForget tomorrow." }
+    },
+    {
+      "narration": "That brain is spectacular at surviving. It is catastrophically bad at building wealth.",
+      "visual": { "template": "compare-split", "title": "The Same Brain. Two Different Worlds.", "left": { "label": "SURVIVAL", "text": "Act now. Fear loss. Stay safe." }, "right": { "label": "WEALTH", "text": "Wait. Take risk. Trust the future." } }
+    },
+    {
+      "narration": "Wealth requires you to delay gratification. Take calculated risks. Trust an uncertain future over a certain present. Your ancient brain looks at that list and sees death.",
+      "visual": { "template": "big-statement", "text": "Your brain calls wealth\n— death.", "accent": true }
+    },
+    {
+      "narration": "In 1979, two psychologists named Daniel Kahneman and Amos Tversky published one of the most important papers in the history of human behavior.",
+      "visual": { "template": "big-statement", "text": "Kahneman & Tversky.\n1979.\nProspect Theory." }
+    },
+    {
+      "narration": "They found that the pain of losing one hundred dollars is psychologically twice as powerful as the pleasure of gaining one hundred dollars.",
+      "visual": { "template": "compare-split", "title": "Loss Aversion", "left": { "label": "LOSE $100", "text": "Feels like this." }, "right": { "label": "GAIN $100", "text": "Only feels like half of that." } }
+    },
+    {
+      "narration": "Losing feels twice as bad as winning feels good. Your brain is not balanced. It is not rational. It is a survival machine permanently tuned to fear loss — even when the math says take the risk.",
+      "visual": { "template": "big-number-callout", "pre": "Losses feel", "number": "2×", "post": "more painful than equivalent gains.", "hero": true }
+    },
+    {
+      "narration": "This explains almost every self-destructive financial decision you have ever made. Why you keep money in a savings account earning half a percent instead of investing it. Why you hold a losing investment for months hoping it comes back. Why you do not negotiate your salary.",
+      "visual": { "template": "big-statement", "text": "Loss aversion costs you\nhundreds of thousands\nacross a lifetime." }
+    },
+    {
+      "narration": "But loss aversion is only the first layer. Here is the second one — and this one is more disturbing.",
+      "visual": { "template": "big-statement", "text": "Layer two.\nMore disturbing.", "accent": true }
+    },
+    {
+      "narration": "Your brain has a feature called hyperbolic discounting. It means you instinctively value rewards that are close in time far more than rewards that are further away — even when the future reward is dramatically larger.",
+      "visual": { "template": "big-statement", "text": "Hyperbolic Discounting.\nClose = Real.\nFar = Fantasy." }
+    },
+    {
+      "narration": "Psychologists tested this. They asked people: would you rather have fifty dollars today, or one hundred dollars in one year? Most people chose the fifty dollars.",
+      "visual": { "template": "compare-split", "title": "What Would You Choose?", "left": { "label": "$50 TODAY", "text": "Most people chose this." }, "right": { "label": "$100 IN 1 YEAR", "text": "100% return. Rejected." } }
+    },
+    {
+      "narration": "That is a hundred percent return in twelve months. Better than any investment on earth. And the majority of people rejected it because fifty dollars is now. The future version of you — who has more, feels more secure, has options — that person is invisible to your ancient brain.",
+      "visual": { "template": "big-statement", "text": "The future you\nis invisible\nto your brain." }
+    },
+    {
+      "narration": "In 1988, a man named William Post won sixteen point two million dollars in the Pennsylvania lottery.",
+      "visual": { "template": "big-number-callout", "pre": "William Post won", "number": "$16.2M", "post": "Pennsylvania Lottery, 1988." }
+    },
+    {
+      "narration": "Within one year, he was one million dollars in debt. His brother hired a hitman to try to kill him — hoping to inherit the money. His landlady sued him for a share of the winnings.",
+      "visual": { "template": "big-statement", "text": "One year later:\n$1 million in debt.\nA hitman hired.\nLawsuits filed.", "accent": true }
+    },
+    {
+      "narration": "Within three years, he was broke. He later said: everybody dreams of winning money, but nobody realizes the nightmares that come with it.",
+      "visual": { "template": "big-statement", "text": "\"Nobody realizes\nthe nightmares\nthat come with it.\"" }
+    },
+    {
+      "narration": "The National Endowment for Financial Education estimates that seventy percent of lottery winners go broke within a few years. Not because they are stupid. Because their brain's baseline — its sense of what is normal — never upgraded to match the new number.",
+      "visual": { "template": "big-number-callout", "pre": "of lottery winners", "number": "70%", "post": "go broke within a few years.", "hero": true }
+    },
+    {
+      "narration": "The technical term is hedonic adaptation. Your brain normalizes every new level of wealth almost immediately. This is the same mechanism behind why a salary raise never feels like enough. Why the new car stops being exciting after three weeks.",
+      "visual": { "template": "big-statement", "text": "Hedonic Adaptation.\nEvery win becomes\nthe new normal." }
+    },
+    {
+      "narration": "In 2018, a team at Purdue University analyzed data from one point seven million people across one hundred and sixty four countries. They were trying to find the income level at which money stops improving your life.",
+      "visual": { "template": "big-statement", "text": "1.7 million people.\n164 countries.\nOne question." }
+    },
+    {
+      "narration": "The answer for emotional wellbeing: sixty to seventy five thousand dollars per year. For overall life satisfaction: ninety five thousand. Above those numbers — wellbeing actually slightly declined.",
+      "visual": { "template": "comparison-bars", "head": "Income vs. Happiness (Purdue, 2018)", "bars": [ { "label": "Emotional Wellbeing", "sub": "Day-to-day happiness", "valueLabel": "$60–75K", "frac": 0.75, "tone": "green" }, { "label": "Life Satisfaction", "sub": "Overall sense of purpose", "valueLabel": "$95K", "frac": 1.0, "tone": "gold" } ] }
+    },
+    {
+      "narration": "Because above that threshold, you are no longer buying security. You are buying status. And status is a race with no finish line.",
+      "visual": { "template": "big-statement", "text": "Security has a price.\nStatus has no finish line.", "accent": true }
+    },
+    {
+      "narration": "So let us put it all together. You have a brain that feels losses twice as intensely as gains. That values today over tomorrow in a ratio that destroys long-term wealth. That normalizes every win immediately and makes you chase the next level endlessly. That clings to the current situation even when change would clearly help.",
+      "visual": { "template": "big-statement", "text": "Loss aversion.\nHyperbolic discounting.\nHedonic adaptation.\nStatus spending.\n\nAll running in your head\nright now." }
+    },
+    {
+      "narration": "This is not a personal failure. This is not laziness. This is a two hundred thousand year old operating system running inside a twenty first century economic environment it was never designed for.",
+      "visual": { "template": "big-statement", "text": "200,000-year-old software.\n21st century economy.\nOf course it crashes.", "accent": true }
+    },
+    {
+      "narration": "The billionaires and the broke are running the same brain. The only difference is that the wealthy have built systems that override the default settings. Not because they are smarter. Because they automated the decision so the brain does not get a vote.",
+      "visual": { "template": "compare-split", "title": "Same Brain. Different Architecture.", "left": { "label": "MOST PEOPLE", "text": "Willpower vs. the brain.\nThe brain always wins." }, "right": { "label": "WEALTHY PEOPLE", "text": "Systems that decide for you.\nThe brain never gets a vote." } }
+    },
+    {
+      "narration": "The automatic investment that comes out before you see the paycheck. The rule that says no impulse purchase over two hundred dollars without a forty eight hour wait. The person who never checks their portfolio when the market drops. These are not discipline. They are architecture.",
+      "visual": { "template": "big-statement", "text": "Not willpower.\nArchitecture." }
+    },
+    {
+      "narration": "Stop trying to be better. Start designing for the brain you actually have. The people who build wealth are not the ones with the most willpower. They are the ones who need to use the least.",
+      "visual": { "template": "big-number-callout", "pre": "The one reframe:", "number": "Design\nfor your\nbrain.", "post": "Not against it.", "hero": true }
+    },
+    {
+      "narration": "There is one more layer. And this one is deliberate. Because corporations have known about all of this for decades. And they have built entire industries around exploiting it.",
+      "visual": { "template": "big-statement", "text": "Corporations figured\nthis out before you did.", "accent": true }
+    },
+    {
+      "narration": "Think about the last time you scrolled through your phone and felt restless, checked it again five minutes later, felt restless again. That is not a coincidence. That is dopamine engineering.",
+      "visual": { "template": "compare-split", "title": "The Engineered Loop", "left": { "label": "DOPAMINE HIT", "text": "Notification. Like. Sale alert." }, "right": { "label": "RESTLESSNESS", "text": "Boredom. Urge. Check again." } }
+    },
+    {
+      "narration": "Your brain releases a small burst of dopamine every time you get a reward signal — a notification, a sale alert, a price drop. But the release shrinks with each repetition. So you need more hits to feel the same thing. This is the exact same mechanism behind every addiction.",
+      "visual": { "template": "big-number-callout", "pre": "The same brain circuit behind", "number": "Every\nAddiction", "post": "drives your spending.", "hero": true }
+    },
+    {
+      "narration": "Amazon's one-click buy removed every friction point between the impulse and the purchase. There is no pause. No wallet to open. No time to reconsider. The friction was your defense — and they engineered it out.",
+      "visual": { "template": "big-statement", "text": "Friction was\nyour defense.\nThey removed it." }
+    },
+    {
+      "narration": "Flash sales use artificial scarcity. Countdown timers. Low stock warnings. These trigger loss aversion — your brain sees the ticking clock and thinks: if I do not act now, I will lose this opportunity. And a brain in loss-aversion mode does not think clearly.",
+      "visual": { "template": "compare-split", "title": "Loss Aversion — Weaponized", "left": { "label": "REAL THREAT", "text": "Predator. Flood. Famine." }, "right": { "label": "ENGINEERED THREAT", "text": "\"Only 3 left in stock.\"\n\"Sale ends in 00:04:23\"" } }
+    },
+    {
+      "narration": "The result is a financial environment that is systematically designed to hijack every weakness in your ancient brain. And most people navigate it with zero awareness that the game is rigged.",
+      "visual": { "template": "big-statement", "text": "The game is rigged.\nMost people don't\nknow it.", "accent": true }
+    },
+    {
+      "narration": "Now here is what I want you to sit with. If your brain cannot tell the difference between a real threat and a stock market dip — what does that mean for every other financial decision you are making right now?",
+      "visual": { "template": "big-statement", "text": "What does this mean\nfor every decision\nyou are making\nright now?", "accent": true }
+    },
+    {
+      "narration": "We will get into that next time. Because the second part of this — how corporations are now engineering your brain's weaknesses against you in ways most people never see coming — that video will change how you see every store, every app, and every sale you have ever fallen for. Subscribe so you do not miss it.",
+      "visual": { "template": "subscribe-cta", "title": "Next: How Corporations Engineer Your Brain Against You" }
+    }
+  ]
+}

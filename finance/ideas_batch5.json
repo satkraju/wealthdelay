@@ -1,0 +1,302 @@
+[
+  {
+    "id": "car_lease_v1",
+    "archetype": "car_lease",
+    "title": "Leasing a car for 10 years is a financial trap 🚗",
+    "voice": "ed",
+    "scenes": {
+      "hook": {"big": "10 years of leases.", "accent": "Zero equity at the end.", "sub": "Here is what buying and holding costs instead."},
+      "setup": {"title": "Same 10 years. Two car strategies.", "a": {"label": "SERIAL LEASER", "sub": "$550/month lease, new car every 3 years"}, "b": {"label": "BUY AND HOLD", "sub": "$550/month loan, own it, invest after payoff"}, "foot": "10 years. Same monthly payment. Different outcome."},
+      "tension": {"big": "A lease payment never ends. A loan payment does.", "pill": "After payoff, that $550 becomes an investment.", "ask": "The serial leaser pays $550 forever. The buyer pays $550 for 5 years, then the car is owned — free and clear. The freed $550 goes into the market for the remaining 5 years. The leaser gets a new car smell every 3 years. The buyer gets compounding."},
+      "reveal": {"head": "$550/month. 10 years. Lease vs buy-and-hold:", "a": {"label": "SERIAL LEASER", "sub": "paid $66,000, owns nothing"}, "b": {"label": "BUY AND HOLD", "sub": "owns car + 5yr investment from freed payment", "val": 38000, "valt": "~$38K built"}},
+      "twist": {"l1": "Same $550 a month. 10 years.", "l2": "The leaser owns nothing. The buyer owns a car and $38,000.", "l3": "A lease is renting a depreciating asset forever. A loan ends. And when it ends, the payment becomes yours."}
+    },
+    "vo": {"hook": "Ten years of car leases at $550 a month. At the end — zero equity, zero asset, just another lease payment starting up. Here is what buying and holding the same car does instead.", "setup": "Same $550 a month, two strategies. The serial leaser drives new every 3 years and always has a payment. The buyer takes a 5-year loan, pays it off, then invests the freed $550 for the next 5 years.", "tension": "A lease payment never ends. A loan payment does. After year 5, the buyer's car is free and clear — and $550 a month goes straight into the market for the remaining 5 years.", "reveal": "After 10 years, the serial leaser has paid $66,000 and owns nothing. The buyer owns a paid-off car and has $38,000 in investments from the freed monthly payment.", "twist": "Same monthly payment. One person owns nothing. One person owns a car and $38,000. A lease is renting a depreciating asset forever. A loan ends — and when it ends, the payment becomes yours. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Car costs, loan rates, and investment returns vary significantly."
+  },
+  {
+    "id": "car_lease_v2",
+    "archetype": "car_lease",
+    "title": "She always leased. Then she did the math 🚗",
+    "voice": "brian",
+    "scenes": {
+      "hook": {"big": "20 years of leases.", "accent": "$132,000 paid.", "sub": "Zero assets to show for it."},
+      "setup": {"title": "Same payments. Two timelines.", "a": {"label": "LIFETIME LEASER", "sub": "$550/month, new car every 3 yrs for 20 years"}, "b": {"label": "BUY THEN INVEST", "sub": "5yr loan, own it, invest freed payment 15 years"}, "foot": "20 years. The math is brutal for the leaser."},
+      "tension": {"big": "The lease is designed so you never stop paying.", "pill": "The dealer profits on forever payments.", "ask": "Car dealers love lessees. The monthly payment is lower, which makes the car feel affordable — but the payment never ends. A buyer exits the payment cycle after 5 years. A leaser never does. Twenty years of never exiting is $132,000 with nothing to show."},
+      "reveal": {"head": "20yr. $550/month lease vs buy-then-invest:", "a": {"label": "LIFETIME LEASER", "sub": "paid $132,000, zero equity"}, "b": {"label": "BUY THEN INVEST", "sub": "$550/month invested for 15yr after payoff", "val": 228000, "valt": "~$228K built"}},
+      "twist": {"l1": "$132,000 paid. $228,000 built. Same monthly number.", "l2": "The difference is whether the payment ends.", "l3": "Low monthly payment is the leasing industry's best marketing line. The total cost over 20 years is the number they never show you."}
+    },
+    "vo": {"hook": "She leased cars for 20 years. $550 a month, always a new car, always a payment. Total paid: $132,000. Total owned: nothing. Here is the alternative math.", "setup": "Same $550 a month, two paths. The lifetime leaser pays forever — a new lease every 3 years, no equity at any point. The buyer takes a 5-year loan, pays it off, then invests $550 a month for the remaining 15 years.", "tension": "Car dealers love lessees. The lower monthly payment makes the car feel affordable — but the payment never ends. A buyer exits the payment cycle after 5 years. The leaser never does.", "reveal": "After 20 years, the lifetime leaser has paid $132,000 and owns zero. The buy-then-invest path builds $228,000 in the market from the freed payment alone.", "twist": "$132,000 paid. $228,000 built. Same monthly number. The difference is whether the payment ever ends. Low monthly payment is the leasing industry's best marketing line. The 20-year total is the number they never show. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Lease and loan terms, car prices, and investment returns vary."
+  },
+  {
+    "id": "401k_match_v1",
+    "archetype": "401k_match",
+    "title": "Not getting the full 401k match is leaving $280,000 behind 💰",
+    "voice": "bill",
+    "scenes": {
+      "hook": {"big": "Employer match: 4% of salary.", "accent": "He contributes 2%.", "sub": "The uncaptured match costs $280,000."},
+      "setup": {"title": "Same job. Two contribution levels.", "a": {"label": "PARTIAL CONTRIBUTOR", "sub": "contributes 2%, captures half the match"}, "b": {"label": "FULL MATCHER", "sub": "contributes 4%, captures full employer match"}, "foot": "30 years. $70,000 salary. Full 4% match."},
+      "tension": {"big": "Uncaptured employer match is a 100% return left on the table.", "pill": "No other investment offers guaranteed 100% day-one return.", "ask": "An employer match is the only investment that returns 100% instantly — the employer doubles your contribution up to the match limit. Failing to contribute enough to capture it is the single most expensive financial mistake most employees make."},
+      "reveal": {"head": "4% match on $70K salary. Full vs partial capture. 30yr:", "a": {"label": "PARTIAL CONTRIBUTOR", "sub": "captures 50% of match — $1,400/yr missed"}, "b": {"label": "FULL MATCHER", "sub": "captures full $2,800/yr match, compounded 30yr", "val": 283000, "valt": "~$283K extra"}},
+      "twist": {"l1": "$1,400 a year in uncaptured match.", "l2": "Compounded 30 years: $283,000.", "l3": "The 401k match is the only investment in the world that guarantees 100% return on day one. Contribute enough to capture all of it. Every dollar of uncaptured match is a guaranteed loss."}
+    },
+    "vo": {"hook": "His employer matches 401k contributions up to 4 percent of salary. He contributes 2 percent. He captures half the match. Over 30 years, the uncaptured half costs $283,000. Here is the math.", "setup": "Same job, same salary, two contribution rates. The partial contributor puts in 2 percent and captures half the employer match. The full matcher puts in 4 percent and captures every dollar of the free money.", "tension": "An employer match is the only investment that returns 100 percent instantly. The employer doubles your contribution up to the limit — on day one. Not capturing all of it is the single most expensive financial mistake most employees make.", "reveal": "The uncaptured match is $1,400 a year. Compounded over 30 years at 7 percent, that $1,400 per year becomes $283,000.", "twist": "$1,400 a year in uncaptured match. $283,000 over 30 years. The 401k match is the only investment that guarantees 100 percent return on day one. Contribute enough to capture all of it. Every dollar left uncaptured is a guaranteed loss. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. 401k match terms vary by employer. Consult your HR or plan documents."
+  },
+  {
+    "id": "401k_match_v2",
+    "archetype": "401k_match",
+    "title": "She waited 5 years to enroll in the 401k. The cost 💰",
+    "voice": "ed",
+    "scenes": {
+      "hook": {"big": "5 years without a 401k.", "accent": "No match captured. No compounding.", "sub": "Here is the 30-year cost of a 5-year delay."},
+      "setup": {"title": "Same career. Two enrollment dates.", "a": {"label": "LATE ENROLLEE", "sub": "waited 5 years to enroll, then contributed 6%"}, "b": {"label": "DAY-ONE ENROLLEE", "sub": "enrolled on first day, contributed 6% + match"}, "foot": "35-year career. 3% employer match."},
+      "tension": {"big": "The first 5 years of a career are the highest-value compounding years.", "pill": "Money invested at 25 doubles more times than money invested at 30.", "ask": "Delaying 401k enrollment by 5 years forfeits the first 5 years of compounding — exactly the years when each dollar has the most runway. Those 5 years of missed contributions and uncaptured match never fully recover."},
+      "reveal": {"head": "6% contribution + 3% match. 5yr delay vs day-one. 35yr career:", "a": {"label": "LATE ENROLLEE", "sub": "30 years of contributions, first 5 years lost"}, "b": {"label": "DAY-ONE ENROLLEE", "sub": "35 full years, all match captured", "val": 187000, "valt": "~$187K more at retirement"}},
+      "twist": {"l1": "Same contribution rate. Same match. 5-year head start.", "l2": "$187,000 difference at retirement.", "l3": "Enrollment paperwork takes 20 minutes. Delaying it by 5 years costs $187,000. This is the most expensive procrastination in personal finance."}
+    },
+    "vo": {"hook": "She started her career and waited 5 years before enrolling in the 401k. She thought she'd start later when she earned more. The 5-year delay cost her $187,000 at retirement. Here is why.", "setup": "Same career, same contribution rate of 6 percent, same 3 percent employer match. The late enrollee waited 5 years. The day-one enrollee enrolled on the first day of work.", "tension": "The first 5 years of a career are the highest-value compounding years. Money invested at 25 has 40 years to grow. Money invested at 30 has 35 years. Each year of delay permanently shortens the compounding runway.", "reveal": "The day-one enrollee ends up with $187,000 more at retirement — from 5 extra years of contributions and match compounding.", "twist": "Same contribution rate. Same match. Five-year head start worth $187,000. Enrollment paperwork takes 20 minutes. Delaying it 5 years costs $187,000. This is the most expensive procrastination in personal finance. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. 401k terms, match rates, and investment returns vary by employer and market conditions."
+  },
+  {
+    "id": "subscription_creep_v1",
+    "archetype": "subscription_creep",
+    "title": "Subscription creep silently cost him $94,000 📱",
+    "voice": "brian",
+    "scenes": {
+      "hook": {"big": "$340/month in subscriptions.", "accent": "He thought it was $80.", "sub": "The real number over 20 years is $94,000."},
+      "setup": {"title": "Same income. Two subscription habits.", "a": {"label": "SUBSCRIPTION CREEP", "sub": "$340/month in services accumulated over years"}, "b": {"label": "INTENTIONAL SUBSCRIBER", "sub": "$80/month essential only, $260 invested"}, "foot": "20 years. The invisible expense."},
+      "tension": {"big": "Subscriptions grow by $8 at a time — imperceptibly.", "pill": "Each individual charge feels trivial. Together they are a second car payment.", "ask": "The average subscription starts at a low price and increases quietly every year. Each one feels affordable. But $340 a month across 15 services is $4,080 a year — money that grows invisibly because each charge is too small to trigger a cancellation decision."},
+      "reveal": {"head": "$260/month invested for 20 years vs spent on unused subs:", "a": {"label": "SUBSCRIPTION CREEP", "sub": "paid $81,600, received partial value"}, "b": {"label": "INTENTIONAL SUBSCRIBER", "sub": "$260/month invested, compounded 20yr", "val": 136000, "valt": "~$136K built"}},
+      "twist": {"l1": "$8 at a time. $94,000 over 20 years.", "l2": "Subscription creep is the slowest wealth drain in modern life.", "l3": "Do a bank statement audit right now. Find every auto-renewal. For each one: would you buy this again today? If no, cancel it today."}
+    },
+    "vo": {"hook": "He thought he was spending $80 a month on subscriptions. His bank statement showed $340. He had been adding services one at a time for years — $8 here, $12 there — until the total became a second car payment. Over 20 years, that $260 gap is $136,000.", "setup": "Same income, two subscription habits. The subscription creep person accumulated 15 services over 10 years, each one barely noticeable. The intentional subscriber audits annually, keeps only what they actively use, and invests the $260 difference.", "tension": "Subscriptions grow $8 at a time. Each individual charge is too small to trigger a cancellation decision. But 15 services at an average of $22 each adds up to $340 a month — money leaving the account so quietly it never gets noticed.", "reveal": "Twenty years of $260 a month invested at 7 percent average annual return: $136,000. Twenty years of subscription creep: $81,600 paid, declining value received.", "twist": "$8 at a time. $136,000 over 20 years. Do a bank statement audit right now. Every auto-renewal. For each one: would you buy this again today at this price? If no — cancel it today. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Assumes 7% avg annual return. Results vary."
+  },
+  {
+    "id": "roth_young_v1",
+    "archetype": "roth_young",
+    "title": "Opening a Roth IRA at 22 vs 32 — the $400,000 gap 📈",
+    "voice": "bill",
+    "scenes": {
+      "hook": {"big": "Open Roth at 22: $200/month.", "accent": "Open Roth at 32: $200/month.", "sub": "The 10-year head start is worth $400,000."},
+      "setup": {"title": "Same $200/month. Two start dates.", "a": {"label": "START AT 32", "sub": "$200/month Roth IRA, 33 years to retirement"}, "b": {"label": "START AT 22", "sub": "$200/month Roth IRA, 43 years to retirement"}, "foot": "Retire at 65. Same contribution. Tax-free growth."},
+      "tension": {"big": "Ten extra years of compounding tax-free is irreplaceable.", "pill": "No contribution in your 30s can buy back your 20s.", "ask": "A Roth IRA grows tax-free — every dollar that compounds inside it is never taxed again. Ten extra years of that tax-free compounding, starting at 22 instead of 32, is not a small advantage. It is a different retirement entirely."},
+      "reveal": {"head": "$200/month Roth. Start at 22 vs 32. Retire at 65:", "a": {"label": "START AT 32", "sub": "33 years compounding, tax-free", "val": 303000, "valt": "~$303K tax-free"}, "b": {"label": "START AT 22", "sub": "43 years compounding, tax-free", "val": 700000, "valt": "~$700K tax-free"}},
+      "twist": {"l1": "Same $200 a month. $397,000 difference.", "l2": "Entirely from a 10-year head start.", "l3": "The Roth IRA is the best tax deal in the US tax code. And the best time to open one is as young as possible. You cannot buy back your 20s. Open it now."}
+    },
+    "vo": {"hook": "Two hundred dollars a month in a Roth IRA starting at 22. The same $200 a month starting at 32. Same contribution, same investment, 10-year head start. At 65, the gap is $397,000 — all of it tax-free. Here is why.", "setup": "Same $200 a month, two start dates. Both contribute until 65. The 22-year-old gets 43 years of tax-free compounding. The 32-year-old gets 33 years.", "tension": "A Roth IRA grows tax-free and withdrawals in retirement are tax-free. Every dollar that compounds inside it never gets taxed again. Ten extra years of that tax-free compounding, starting at 22, is not a small advantage. It is a different retirement entirely.", "reveal": "Starting at 32, $200 a month grows to $303,000 by 65. Starting at 22, the same $200 grows to $700,000. Tax-free. Both paths.", "twist": "Same $200. $397,000 difference. From a 10-year head start. The Roth IRA is the best tax deal in the US tax code. The best time to open one was the day you turned 18. The second best time is right now. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Roth IRA contribution limits and eligibility depend on income. Consult a tax professional."
+  },
+  {
+    "id": "roth_young_v2",
+    "archetype": "roth_young",
+    "title": "The $6,500 Roth contribution you didn't make this year 📈",
+    "voice": "ed",
+    "scenes": {
+      "hook": {"big": "$6,500 Roth IRA max.", "accent": "You didn't contribute this year.", "sub": "That one missed year is $98,000 at retirement."},
+      "setup": {"title": "Same year. Two Roth decisions.", "a": {"label": "SKIPPED YEAR", "sub": "didn't contribute $6,500 this year"}, "b": {"label": "MAX CONTRIBUTOR", "sub": "contributed full $6,500 this year"}, "foot": "One missed year at age 30. Retire at 65. 35 years to compound."},
+      "tension": {"big": "Each year's Roth contribution has 35 years to compound.", "pill": "A missed year cannot be made up.", "ask": "The IRS does not allow you to go back and contribute to a prior year's Roth IRA after the deadline. A missed $6,500 contribution is permanently gone. At age 30 with 35 years to retirement, that $6,500 would grow tax-free to $98,000. Missing one year's contribution is a $98,000 decision."},
+      "reveal": {"head": "$6,500 Roth contribution at 30. 35 years to retirement:", "a": {"label": "SKIPPED YEAR", "sub": "cannot be made up, permanently missed", "val": 0, "valt": "$0 from that year"}, "b": {"label": "MAX CONTRIBUTOR", "sub": "$6,500 compounded 35yr tax-free", "val": 98000, "valt": "~$98K tax-free at 65"}},
+      "twist": {"l1": "One year. One decision. $98,000.", "l2": "And it cannot be recovered.", "l3": "Every year you max the Roth IRA, you are locking in $98,000 of tax-free future wealth. Every year you skip it, that $98,000 disappears permanently."}
+    },
+    "vo": {"hook": "You didn't max your Roth IRA this year. The $6,500 you didn't contribute at age 30 would have been $98,000 at retirement, tax-free. And it cannot be recovered. Here is why each annual Roth contribution is a $98,000 decision.", "setup": "Same year, two decisions. The skipped contributor doesn't put in the $6,500 this year — too many other things, maybe next year. The max contributor puts in all $6,500 by the April deadline.", "tension": "The IRS does not allow you to go back and contribute to a prior year's Roth after the deadline. A missed year is permanently gone. At 30, $6,500 has 35 years to compound tax-free. Skipping one year's contribution is a $98,000 decision you cannot reverse.", "reveal": "The skipped year produces zero from that contribution slot — permanently. The maxed year produces $98,000 tax-free at retirement.", "twist": "One year. One decision. $98,000. And it cannot be recovered. Every year you max the Roth, you lock in $98,000 of tax-free future wealth. Every year you skip it, that $98,000 disappears for good. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Roth IRA contribution limits and income eligibility change annually. Verify current limits with IRS.gov."
+  },
+  {
+    "id": "hsa_invested_v1",
+    "archetype": "hsa_invested",
+    "title": "The HSA investing trick almost nobody uses 🏥",
+    "voice": "brian",
+    "scenes": {
+      "hook": {"big": "HSA balance: $4,800/year.", "accent": "Most people spend it all on healthcare.", "sub": "Invested instead — 20 years is $226,000 tax-free."},
+      "setup": {"title": "Same HSA. Two strategies.", "a": {"label": "SPEND-DOWN", "sub": "use HSA for every medical expense each year"}, "b": {"label": "INVESTOR", "sub": "pay medical costs out of pocket, invest HSA"}, "foot": "Triple tax advantage: pre-tax in, grows tax-free, out tax-free for medical."},
+      "tension": {"big": "The HSA is the only triple-tax-advantaged account in the US tax code.", "pill": "Most people use it as a health debit card instead.", "ask": "Contributing to an HSA reduces taxable income. The money grows tax-free. Withdrawals for medical expenses are tax-free. No other account offers all three simultaneously. But the triple tax advantage only applies if the money is invested — not sitting in a savings account earning 0.01%."},
+      "reveal": {"head": "$4,800/year HSA invested at 7% for 20 years:", "a": {"label": "SPEND-DOWN", "sub": "used for medical expenses, zero invested", "val": 0, "valt": "$0 growth"}, "b": {"label": "INVESTOR", "sub": "invested, compounded 20yr triple tax-free", "val": 226000, "valt": "~$226K tax-free"}},
+      "twist": {"l1": "Same HSA. $226,000 difference.", "l2": "From investing instead of spending.", "l3": "Pay medical costs out of pocket when you can. Let the HSA compound. In retirement, every dollar in the HSA can be withdrawn tax-free for any medical expense. The account most people treat as a health debit card is actually one of the best retirement vehicles that exists."}
+    },
+    "vo": {"hook": "Most people with an HSA use it as a health debit card — spend the balance every year on copays and prescriptions. Investing the HSA instead and paying medical costs out of pocket builds $226,000 over 20 years, tax-free. Here is the strategy.", "setup": "Same $4,800 a year in HSA contributions, two strategies. The spend-down person uses the HSA for every medical expense. The investor pays medical costs out of pocket and leaves the HSA to compound in low-cost index funds.", "tension": "The HSA is the only triple-tax-advantaged account in the US tax code. Contributions reduce taxable income. Growth is tax-free. Withdrawals for medical expenses are tax-free. No other account offers all three. But the advantage only exists if the money is invested — not sitting idle.", "reveal": "Twenty years of $4,800 annually invested at 7 percent grows to $226,000 — completely tax-free for medical expenses in retirement.", "twist": "Same HSA. $226,000 difference. The account most people treat as a health debit card is actually one of the best retirement vehicles available. Pay what you can out of pocket. Let the HSA compound. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. HSA eligibility requires enrollment in a qualifying high-deductible health plan. Consult a tax professional."
+  },
+  {
+    "id": "market_timing_v1",
+    "archetype": "market_timing",
+    "title": "Trying to time the market cost him $312,000 📉",
+    "voice": "bill",
+    "scenes": {
+      "hook": {"big": "He pulled out before every dip.", "accent": "He also missed every recovery.", "sub": "Here is the 25-year cost of market timing."},
+      "setup": {"title": "Same $500/month. Two strategies.", "a": {"label": "MARKET TIMER", "sub": "$500/month, pulled out on fear, re-entered late"}, "b": {"label": "STEADY INVESTOR", "sub": "$500/month every month, never sold"}, "foot": "25 years. Same income. Different discipline."},
+      "tension": {"big": "Missing just the 10 best trading days cuts returns in half.", "pill": "Those 10 days happen during the most fearful moments.", "ask": "JP Morgan research shows that missing just the 10 best trading days over a 20-year period cuts returns by more than half. Those 10 days almost always cluster immediately after a market crash — when the market timer is out of the market, waiting for safety. The worst time to be in cash is the week after a crash."},
+      "reveal": {"head": "$500/month. 25 years. Steady vs timer:", "a": {"label": "MARKET TIMER", "sub": "missed 10 best days, 25yr avg return reduced", "val": 268000, "valt": "~$268K"}, "b": {"label": "STEADY INVESTOR", "sub": "invested through everything, compounded 25yr", "val": 405000, "valt": "~$405K"}},
+      "twist": {"l1": "Same amount invested. $137,000 difference.", "l2": "From missing 10 days over 25 years.", "l3": "Market timing feels like intelligence. It performs like fear. The investor who did nothing — who never sold, never panicked, never waited for safety — won by $137,000."}
+    },
+    "vo": {"hook": "He pulled out of the market before every dip. He also missed every recovery. Over 25 years, his market timing strategy underperformed staying invested by $137,000. Here is the math.", "setup": "Same $500 a month, two strategies. The market timer moved to cash when fear peaked and re-entered when confidence returned. The steady investor kept buying every single month — through crashes, corrections, and recessions.", "tension": "JP Morgan research shows that missing just the 10 best trading days over a 20-year period cuts investment returns by more than half. Those 10 days cluster immediately after crashes — exactly when the market timer is in cash, waiting for safety.", "reveal": "After 25 years, the market timer has $268,000. The steady investor has $405,000.", "twist": "Same amount invested. $137,000 difference. From missing 10 days over 25 years. Market timing feels like intelligence. It performs like fear. The investor who did nothing — who never sold, never panicked — won by $137,000. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Based on JP Morgan research concepts. Past performance does not guarantee future results."
+  },
+  {
+    "id": "market_timing_v2",
+    "archetype": "market_timing",
+    "title": "She sold during COVID. The recovery cost her $180,000 📉",
+    "voice": "ed",
+    "scenes": {
+      "hook": {"big": "Sold everything in March 2020.", "accent": "Re-entered in January 2021.", "sub": "That 9-month decision cost $180,000."},
+      "setup": {"title": "Same portfolio. Two COVID decisions.", "a": {"label": "PANIC SELLER", "sub": "sold at bottom March 2020, re-entered Jan 2021"}, "b": {"label": "HOLDER", "sub": "held through the crash, never sold"}, "foot": "Real COVID timeline. Real market data."},
+      "tension": {"big": "March 2020 was the bottom. January 2021 was near the top.", "pill": "She sold low and bought high — the most expensive possible sequence.", "ask": "The S&P 500 dropped 34% from Feb to March 2020. Then it recovered 68% through December 2020. The panic seller captured the full loss and then bought back in after the full recovery — missing the entire rebound. Selling at the bottom and buying at the top is the most destructive sequence in investing."},
+      "reveal": {"head": "$300K portfolio. Panic sold March 2020 vs held:", "a": {"label": "PANIC SELLER", "sub": "sold bottom, re-entered top, recovered partial", "val": 320000, "valt": "~$320K by end 2021"}, "b": {"label": "HOLDER", "sub": "held through full COVID crash and recovery", "val": 498000, "valt": "~$498K by end 2021"}},
+      "twist": {"l1": "Same portfolio. 9-month decision. $178,000 difference.", "l2": "From selling at the bottom and buying at the top.", "l3": "The crash felt permanent. It lasted 5 weeks. The recovery felt risky. It lasted 9 months. Every panic sell is a bet that you can time the re-entry. Almost no one does."}
+    },
+    "vo": {"hook": "She had $300,000 invested in March 2020. She sold everything at the bottom of the COVID crash and held cash until January 2021, when the market felt safer. That 9-month decision cost $178,000. Here is the real data.", "setup": "Same $300,000 portfolio, two decisions. The panic seller sold in March 2020 at the bottom of the crash and re-entered in January 2021 after the recovery. The holder did nothing — held through the 34 percent crash and the full recovery.", "tension": "The S&P 500 dropped 34 percent from February to March 2020. Then it recovered 68 percent through December 2020. The panic seller captured every dollar of the loss and missed every dollar of the recovery.", "reveal": "By end of 2021, the panic seller who missed the recovery has about $320,000. The holder who never sold has $498,000.", "twist": "Same portfolio. Nine-month decision. $178,000 difference. The crash felt permanent. It lasted 5 weeks. The recovery felt risky. It lasted 9 months. Every panic sell is a bet you can time the re-entry. Almost no one can. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation uses approximate market data for illustration. Past performance does not guarantee future results. Not financial advice."
+  },
+  {
+    "id": "pay_raise_invested_v1",
+    "archetype": "pay_raise_invested",
+    "title": "He invested every raise for 15 years. The result 💼",
+    "voice": "brian",
+    "scenes": {
+      "hook": {"big": "Every raise. Invested.", "accent": "Lifestyle never changed.", "sub": "15 years later — the number is staggering."},
+      "setup": {"title": "Same raises. Two habits.", "a": {"label": "LIFESTYLE INFLATER", "sub": "every raise upgraded lifestyle immediately"}, "b": {"label": "RAISE INVESTOR", "sub": "invested every raise, kept same lifestyle"}, "foot": "15 years. Average 3% annual raise on $65K salary."},
+      "tension": {"big": "Lifestyle inflation is invisible — it feels like progress.", "pill": "Investing the raise feels like sacrifice. It is the opposite.", "ask": "When a raise arrives, two things can happen: the lifestyle expands to match the new income, or the investment account grows. Lifestyle inflation is invisible — new restaurants, nicer things, a slightly bigger apartment. The raise investor looks no different on the outside. The difference is in the account balance."},
+      "reveal": {"head": "3% annual raise, invested in full, 15yr compounding:", "a": {"label": "LIFESTYLE INFLATER", "sub": "better life, zero additional investment"}, "b": {"label": "RAISE INVESTOR", "sub": "all raise amounts invested, compounded 15yr", "val": 178000, "valt": "~$178K built from raises alone"}},
+      "twist": {"l1": "$178,000. From money he was already earning.", "l2": "He did not work harder. He did not get lucky.", "l3": "He just refused to let his lifestyle grow with his income. For 15 years. The investment account grew instead. He now has $178,000 more than the version of himself who upgraded everything."}
+    },
+    "vo": {"hook": "Every raise for 15 years — invested immediately. Same apartment, same car, same lifestyle. At the end of 15 years, he has $178,000 in investments built entirely from raises. Here is the strategy.", "setup": "Same raises, two habits. The lifestyle inflater upgrades something with every raise — nicer food, better clothes, a larger apartment. The raise investor automates a transfer of the raise amount to investments the day the new paycheck hits.", "tension": "Lifestyle inflation feels like progress — things get better, more comfortable. Investing the raise feels like sacrifice. Over 15 years, the external difference between the two people is invisible. The account balance difference is not.", "reveal": "Fifteen years of 3 percent annual raises on a $65,000 salary, all invested and compounded at 7 percent average annual return, builds $178,000.", "twist": "$178,000. From money he was already earning. He did not work harder. He did not get lucky. He refused to let his lifestyle grow with his income for 15 years. The investment account grew instead. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Assumes consistent 3% annual raises and 7% avg annual return. Results vary."
+  },
+  {
+    "id": "pay_raise_invested_v2",
+    "archetype": "pay_raise_invested",
+    "title": "What happens when you live on last year's salary 💼",
+    "voice": "bill",
+    "scenes": {
+      "hook": {"big": "Rule: always live on last year's salary.", "accent": "Every raise goes to investments.", "sub": "20 years of this rule builds $340,000."},
+      "setup": {"title": "Same income growth. Two rules.", "a": {"label": "SPEND IT ALL", "sub": "lifestyle grows with income every year"}, "b": {"label": "ONE YEAR BEHIND", "sub": "live on last year's income, invest every raise"}, "foot": "20 years. $60K starting salary. 4% avg annual raises."},
+      "tension": {"big": "Living one year behind your income is the simplest wealth-building system.", "pill": "It requires zero discipline after the rule is set.", "ask": "The 'one year behind' rule automates the raise investment. When the new salary hits, the lifestyle does not change — it was already funded by last year's income. The raise goes directly to investments before it can become a lifestyle expectation."},
+      "reveal": {"head": "4% annual raises from $60K. 'One year behind' rule. 20yr:", "a": {"label": "SPEND IT ALL", "sub": "comfortable life, nothing extra invested"}, "b": {"label": "ONE YEAR BEHIND", "sub": "all raises invested 20yr, compounded", "val": 340000, "valt": "~$340K built"}},
+      "twist": {"l1": "$340,000. From one simple rule.", "l2": "Live on last year's salary. Invest every raise.", "l3": "The rule requires one decision and zero ongoing willpower. Set the automatic investment the day a raise hits. Never revisit it. Twenty years of this single habit builds $340,000."}
+    },
+    "vo": {"hook": "Live on last year's salary. Invest every raise the day it hits. Run this rule for 20 years on a $60,000 starting salary with average raises and you build $340,000 — from one simple decision.", "setup": "Same income growth, two rules. The spend-it-all path upgrades lifestyle with every raise — comfortable, modern, normal. The one-year-behind path keeps the lifestyle frozen at last year's income and deploys every raise directly to investments.", "tension": "The one-year-behind rule automates the investment. When the new salary hits, the lifestyle does not change because it was already funded by last year's income. The raise goes to investments before it can become an expectation.", "reveal": "Twenty years of 4 percent annual raises on a $60,000 starting salary, all invested and compounded at 7 percent, builds $340,000.", "twist": "$340,000. From one rule. Live on last year's salary. Invest every raise the day it hits. One decision. Zero ongoing willpower. Twenty years. $340,000. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Assumes 4% annual raises and 7% avg annual return. Results vary by individual income trajectory."
+  },
+  {
+    "id": "emergency_fund_cost_v1",
+    "archetype": "emergency_fund_cost",
+    "title": "No emergency fund forced her to liquidate investments 🆘",
+    "voice": "ed",
+    "scenes": {
+      "hook": {"big": "Car broke down. $4,200 repair.", "accent": "No emergency fund.", "sub": "She sold investments. The real cost was $31,000."},
+      "setup": {"title": "Same emergency. Two preparations.", "a": {"label": "NO FUND", "sub": "liquidated $4,200 from investment account"}, "b": {"label": "FUNDED", "sub": "$4,200 emergency fund, investments untouched"}, "foot": "Same emergency. 25 years of compounding difference."},
+      "tension": {"big": "Selling investments in an emergency locks in losses and kills compounding.", "pill": "The $4,200 taken out is worth $31,000 in 25 years.", "ask": "An emergency fund's purpose is not just to cover the emergency — it is to protect the investments from being liquidated at the wrong time. When you sell investments for an emergency, you often sell at a low point, pay taxes on gains, and permanently remove money that would have compounded for decades."},
+      "reveal": {"head": "$4,200 liquidated at 40 vs untouched. 25yr:", "a": {"label": "NO FUND", "sub": "$4,200 pulled out, that growth permanently lost"}, "b": {"label": "FUNDED", "sub": "$4,200 stayed invested, compounded 25yr", "val": 22750, "valt": "~$22K from that $4,200 alone"}},
+      "twist": {"l1": "A $4,200 car repair cost $22,000 in compounding.", "l2": "Because there was no emergency fund.", "l3": "The emergency fund is not savings. It is investment insurance. It keeps your portfolio intact when life breaks something."}
+    },
+    "vo": {"hook": "Her car broke down. The repair was $4,200. She had no emergency fund, so she sold $4,200 from her investment account. Twenty-five years later, that $4,200 would have been $22,000. Here is why an emergency fund is investment insurance.", "setup": "Same emergency, two preparations. The person with no fund liquidates investments at whatever price the market happens to be. The person with a funded emergency account pulls cash, investments untouched, and rebuilds the fund over the next few months.", "tension": "Selling investments in an emergency does three things wrong: it often happens at a market low, it can trigger capital gains taxes, and it permanently removes money that would have compounded for decades. The emergency fund's job is to prevent all three.", "reveal": "The $4,200 liquidated at 40 would have grown to $22,750 by age 65, compounded at 7 percent average annual return. The car repair cost $22,750 in lost compounding.", "twist": "A $4,200 repair cost $22,000 in compounding. Because there was no emergency fund. The emergency fund is not savings. It is investment insurance. It keeps the portfolio intact when life breaks something. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Assumes 7% avg annual return. Investment liquidation costs vary by account type and tax situation."
+  },
+  {
+    "id": "index_vs_active_v1",
+    "archetype": "index_vs_active",
+    "title": "Actively managed funds lost to index funds again. The math 📊",
+    "voice": "brian",
+    "scenes": {
+      "hook": {"big": "Active fund: 1.2% fees, market-beating picks.", "accent": "Index fund: 0.05% fees, market return.", "sub": "Over 30 years, the index wins by $290,000."},
+      "setup": {"title": "Same $100K. Two fund choices.", "a": {"label": "ACTIVE FUND", "sub": "$100K in actively managed fund, 1.2% expense ratio"}, "b": {"label": "INDEX FUND", "sub": "$100K in S&P 500 index, 0.05% expense ratio"}, "foot": "30 years. 7% gross market return. Same market exposure."},
+      "tension": {"big": "Over 20 years, 90% of active funds underperform their benchmark.", "pill": "You are paying 1.2% for a 90% chance of losing to a 0.05% fund.", "ask": "S&P data consistently shows that over 20-year periods, roughly 90 percent of actively managed funds underperform a simple S&P 500 index fund. The active fund manager is not adding value — they are extracting fees. The fee is certain. The outperformance is not."},
+      "reveal": {"head": "$100K. 30 years. Active 1.2% vs index 0.05%:", "a": {"label": "ACTIVE FUND", "sub": "net return ~5.8% after fees, 30yr", "val": 540000, "valt": "~$540K"}, "b": {"label": "INDEX FUND", "sub": "net return ~6.95% after fees, 30yr", "val": 755000, "valt": "~$755K"}},
+      "twist": {"l1": "Same market. Same $100K. $215,000 difference.", "l2": "From the fee gap.", "l3": "The active manager charges 1.2% to have a 90% chance of underperforming the index. The index fund charges 0.05% to match the market. The math has spoken consistently for 30 years. It is not a debate."}
+    },
+    "vo": {"hook": "An actively managed fund at 1.2 percent expense ratio versus a plain S&P 500 index fund at 0.05 percent. Same market, same $100,000. Over 30 years, the index fund wins by $215,000. Here is why this is not surprising.", "setup": "Same $100,000, two fund choices. The active fund employs managers to pick stocks and time the market, charging 1.2 percent annually. The index fund holds every stock in the S&P 500 and charges 0.05 percent.", "tension": "S&P data consistently shows that over 20-year periods, about 90 percent of actively managed funds underperform a simple index fund. The active manager is not reliably adding value — they are reliably extracting fees. The fee is certain. The outperformance is not.", "reveal": "After 30 years at 7 percent gross market return, the active fund at 1.2 percent fees builds about $540,000. The index fund at 0.05 percent fees builds $755,000.", "twist": "Same market. $215,000 difference. From the fee gap. The active manager charges 1.2 percent for a 90 percent chance of underperforming. The index charges 0.05 percent to match the market. This is not a debate. It is 30 years of consistent data. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Based on published S&P SPIVA data. Past fund performance does not guarantee future results."
+  },
+  {
+    "id": "emergency_savings_rate_v1",
+    "archetype": "emergency_savings_rate",
+    "title": "High-yield savings vs regular savings — the 10-year gap 💵",
+    "voice": "bill",
+    "scenes": {
+      "hook": {"big": "Regular savings: 0.5% APY.", "accent": "High-yield savings: 4.5% APY.", "sub": "On $25K over 10 years — $13,000 difference."},
+      "setup": {"title": "Same $25K emergency fund. Two account types.", "a": {"label": "BIG BANK SAVER", "sub": "$25K at major bank, 0.5% APY"}, "b": {"label": "HYSA USER", "sub": "$25K in high-yield savings, 4.5% APY"}, "foot": "10 years. Same emergency fund. Different bank."},
+      "tension": {"big": "Big banks pay 0.5% on savings. Online banks pay 4.5%.", "pill": "The gap is 9x. For the same FDIC-insured safety.", "ask": "Most Americans keep emergency funds at the same bank where they have their checking account. The big bank pays 0.5% APY because it can — the account is sticky and customers rarely shop it. Online high-yield savings accounts at FDIC-insured banks pay 4-5% APY. Same insurance. Nine times the return."},
+      "reveal": {"head": "$25K saved 10 years. 0.5% vs 4.5% APY:", "a": {"label": "BIG BANK SAVER", "sub": "0.5% APY, 10 years"}, "b": {"label": "HYSA USER", "sub": "4.5% APY, 10 years", "val": 13500, "valt": "$13,500 more earned"}},
+      "twist": {"l1": "Same $25K. Same FDIC insurance. $13,500 difference.", "l2": "From switching the account, not the amount.", "l3": "The big bank charges you for their brand. The online bank pays you instead. Moving your emergency fund to a high-yield savings account is a one-time 15-minute task that earns $13,500 over 10 years."}
+    },
+    "vo": {"hook": "Your emergency fund is sitting at a big bank earning 0.5 percent. A high-yield savings account at an FDIC-insured online bank pays 4.5 percent. Same safety, same liquidity. Over 10 years on $25,000, the gap is $13,500. Here is why most people never make the switch.", "setup": "Same $25,000 emergency fund, two account types. The big bank saver keeps the money where the checking account is — convenient, familiar, 0.5 percent APY. The HYSA user opens an online savings account in 15 minutes and earns 4.5 percent.", "tension": "Big banks pay 0.5 percent because the account is sticky. Customers rarely shop emergency fund rates. Online high-yield savings accounts at FDIC-insured institutions pay 4 to 5 percent. Same federal insurance. Nine times the return. The only difference is inertia.", "reveal": "After 10 years, the big bank saver earns about $1,280 in interest on $25,000. The HYSA user earns $14,800 — a $13,500 difference.", "twist": "Same $25,000. Same FDIC insurance. $13,500 difference. One 15-minute account opening. The big bank charges you for their brand. The online bank pays you instead. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. HYSA rates fluctuate with the federal funds rate. FDIC insurance limits apply. Rates shown are illustrative."
+  },
+  {
+    "id": "social_security_delay_v1",
+    "archetype": "social_security_delay",
+    "title": "Claiming Social Security at 62 vs 70 — the lifetime math 🧓",
+    "voice": "ed",
+    "scenes": {
+      "hook": {"big": "Claim at 62: $1,800/month.", "accent": "Claim at 70: $3,200/month.", "sub": "The 8-year wait is worth $350,000."},
+      "setup": {"title": "Same worker. Two claim dates.", "a": {"label": "EARLY CLAIMER", "sub": "claims at 62, $1,800/month for life"}, "b": {"label": "DELAYED CLAIMER", "sub": "claims at 70, $3,200/month for life"}, "foot": "Average life expectancy to 85. Same earnings history."},
+      "tension": {"big": "Social Security grows 8% per year from 62 to 70.", "pill": "No risk-free investment guarantees 8% annually.", "ask": "Delaying Social Security from 62 to 70 increases the monthly benefit by 77 percent. That 8 percent annual increase is guaranteed by the US government — it is inflation-adjusted and risk-free. No savings account, no bond, no CD offers a guaranteed 8 percent annual return."},
+      "reveal": {"head": "Lifetime Social Security. Claim 62 vs 70. Live to 85:", "a": {"label": "EARLY CLAIMER", "sub": "23 years × $1,800 = $496,800 lifetime"}, "b": {"label": "DELAYED CLAIMER", "sub": "15 years × $3,200 = $576,000 lifetime", "val": 79200, "valt": "$79,200 more lifetime"}},
+      "twist": {"l1": "Same earnings history. $79,200 more lifetime income.", "l2": "From waiting 8 years.", "l3": "The break-even point is around age 80. If you live past 80, delaying to 70 wins — by more each year you live. The delayed claimer's benefit is also 77% higher if their spouse inherits it."}
+    },
+    "vo": {"hook": "Claim Social Security at 62 and get $1,800 a month for life. Wait until 70 and get $3,200 a month for life. The eight-year wait is worth $79,200 in lifetime income if you live to 85 — and grows more valuable every year past that. Here is the math.", "setup": "Same earnings history, two claim dates. The early claimer takes benefits at 62 and receives $1,800 a month for 23 years. The delayed claimer waits until 70 and receives $3,200 a month for 15 years.", "tension": "Social Security grows 8 percent per year for every year you delay from 62 to 70. That 8 percent annual increase is guaranteed by the US government, inflation-adjusted, and completely risk-free. No bank account, no bond, no CD offers a guaranteed 8 percent annual return.", "reveal": "Living to 85, the early claimer receives $496,800 in total benefits. The delayed claimer receives $576,000 — $79,200 more. And the gap grows every year past 85.", "twist": "Same earnings history. $79,200 more lifetime income. From waiting 8 years. The break-even point is around age 80. If you live past 80, delaying wins. Every year past 80 adds more to the delayed claimer's advantage. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Social Security benefits depend on individual earnings history. Consult SSA.gov or a financial advisor for your specific situation."
+  },
+  {
+    "id": "no_will_cost_v1",
+    "archetype": "no_will_cost",
+    "title": "Dying without a will cost his family $67,000 📋",
+    "voice": "brian",
+    "scenes": {
+      "hook": {"big": "No will. Estate of $280,000.", "accent": "Probate court decided everything.", "sub": "His family paid $67,000 to get what was theirs."},
+      "setup": {"title": "Same estate. Two preparations.", "a": {"label": "NO WILL", "sub": "died intestate — state law and probate court decide"}, "b": {"label": "SIMPLE WILL + TRUST", "sub": "basic will and beneficiary designations in place"}, "foot": "Same $280K estate. Different cost to transfer it."},
+      "tension": {"big": "Probate court costs 3-7% of the estate plus 12-18 months.", "pill": "A basic will costs $500. Probate costs $8,000-$20,000.", "ask": "Dying without a will means the state decides who gets what — using intestate succession laws that may not match your wishes. The estate then goes through probate court, a public legal process that costs 3 to 7 percent of the estate's value plus attorney fees, court costs, and 12 to 18 months of delays."},
+      "reveal": {"head": "$280K estate. No will vs simple will:", "a": {"label": "NO WILL", "sub": "probate at 5% + fees + 14 months = $67,000 cost"}, "b": {"label": "SIMPLE WILL", "sub": "one-time $500, estate transfers in weeks", "val": 66500, "valt": "$66,500 saved"}},
+      "twist": {"l1": "$67,000 cost. $500 fix.", "l2": "A will costs $500 and takes 2 hours. Probate costs $67,000 and takes 14 months.", "l3": "The will is not for you. It is for the people you leave behind. The $67,000 probate bill came out of the inheritance your family was supposed to receive."}
+    },
+    "vo": {"hook": "He died without a will. His estate was $280,000. His family paid $67,000 in probate court costs and waited 14 months to receive what he meant to leave them. Here is what a $500 will would have prevented.", "setup": "Same $280,000 estate, two preparations. No will means the state of intestate succession law and the probate court decide who gets what, in what order, on what timeline. A simple will with beneficiary designations means assets transfer in weeks.", "tension": "Probate court costs 3 to 7 percent of the estate's value plus attorney fees, filing fees, and 12 to 18 months of delays. The estate is public record during probate. Assets are frozen until the court process is complete.", "reveal": "The $280,000 estate went through probate at an effective 5 percent rate plus attorney fees — $67,000 total. A basic will cost one-time $500 and would have transferred the estate in weeks.", "twist": "$67,000 cost. $500 fix. Two hours to write the will. Fourteen months for the family to wait without it. The will is not for you — it is for the people you leave behind. And the $67,000 came out of their inheritance. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Probate costs and processes vary significantly by state and estate complexity. Consult an estate attorney."
+  },
+  {
+    "id": "dollar_cost_avg_v1",
+    "archetype": "dollar_cost_avg",
+    "title": "Investing $500/month beats timing the market. Here's proof 📈",
+    "voice": "bill",
+    "scenes": {
+      "hook": {"big": "$500/month. Every month. No timing.", "accent": "For 20 years.", "sub": "The outcome surprises people who try to be smarter."},
+      "setup": {"title": "Same $500/month. Two execution methods.", "a": {"label": "PERFECT TIMER", "sub": "invested $500 only at every market low — perfectly"}, "b": {"label": "DCA INVESTOR", "sub": "$500 invested every month, no timing at all"}, "foot": "20 years. Which wins?"},
+      "tension": {"big": "Perfect timing beats dollar-cost averaging by less than 5%.", "pill": "Nobody times the market perfectly — making DCA the superior real-world strategy.", "ask": "Vanguard research found that even a hypothetical perfect market timer who always invested at the annual low only outperformed a simple monthly DCA investor by about 2-4% over long periods. The real world version — an imperfect timer who sometimes waits too long — underperforms DCA. Automation beats intelligence here."},
+      "reveal": {"head": "$500/month. 20 years. Perfect timer vs monthly DCA:", "a": {"label": "PERFECT TIMER", "sub": "invested at every annual low, 20yr"}, "b": {"label": "DCA INVESTOR", "sub": "$500 auto-invested every month, 20yr", "val": 252000, "valt": "~$252K — within 3% of perfect timing"}},
+      "twist": {"l1": "Perfect timing beats doing nothing by 3%.", "l2": "Imperfect timing loses to doing nothing.", "l3": "Automate $500 a month. Never think about it again. The strategy that requires zero effort beats 95% of people who try to be clever about timing."}
+    },
+    "vo": {"hook": "Five hundred dollars a month, automatically invested, every single month for 20 years — no timing, no thought, no decisions. Versus the perfect market timer who always bought at the annual low. The difference is less than 3 percent. Here is why automation wins.", "setup": "Same $500 a month, two methods. The perfect timer invests only at the lowest point of each year — a hypothetical, impossible-in-practice strategy. The DCA investor automates $500 on the first of every month and never changes anything.", "tension": "Vanguard research found that even perfect market timing outperforms dollar-cost averaging by only 2 to 4 percent over long periods. The real-world imperfect timer — who sometimes waits, sometimes second-guesses, sometimes misses the low — underperforms monthly DCA.", "reveal": "After 20 years, the perfect timer has about $260,000. The monthly DCA investor has about $252,000 — within 3 percent of impossible-to-achieve perfection.", "twist": "Perfect timing beats doing nothing by 3 percent. Imperfect timing loses to doing nothing. Automate $500 a month. Never think about it again. The strategy that requires zero effort beats 95 percent of people who try to be clever. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Based on Vanguard research concepts. Past market behavior does not guarantee future results."
+  },
+  {
+    "id": "credit_score_cost_v1",
+    "archetype": "credit_score_cost",
+    "title": "Bad credit costs $180,000 over a lifetime 💳",
+    "voice": "ed",
+    "scenes": {
+      "hook": {"big": "Credit score 620: 7.8% mortgage rate.", "accent": "Credit score 780: 6.2% mortgage rate.", "sub": "On a $350,000 mortgage — $112,000 more paid."},
+      "setup": {"title": "Same house. Same mortgage. Two credit scores.", "a": {"label": "SCORE 620", "sub": "7.8% rate on $350K 30yr mortgage"}, "b": {"label": "SCORE 780", "sub": "6.2% rate on $350K 30yr mortgage"}, "foot": "1.6% rate gap. 30 years. One mortgage."},
+      "tension": {"big": "A credit score is a price tag on everything you borrow.", "pill": "The difference between 620 and 780 follows you on every loan for life.", "ask": "A credit score does not just affect mortgage rates. It affects car loan rates, personal loan rates, credit card rates, and sometimes even insurance premiums and security deposits. The gap between a 620 and 780 score follows a person on every financial product they touch for their entire life."},
+      "reveal": {"head": "$350K mortgage. 30 years. 620 vs 780 credit score:", "a": {"label": "SCORE 620", "sub": "7.8%, total interest paid over 30yr"}, "b": {"label": "SCORE 780", "sub": "6.2%, total interest paid over 30yr", "val": 112000, "valt": "$112K more paid with low score"}},
+      "twist": {"l1": "Same house. $112,000 more paid.", "l2": "From a credit score difference.",  "l3": "A credit score is the most leveraged number in your personal finances. The difference between 620 and 780 is worth $112,000 on one mortgage alone — plus every car loan, every personal loan, every card balance for the next 30 years."}
+    },
+    "vo": {"hook": "A credit score of 620 gets a mortgage rate of 7.8 percent. A score of 780 gets 6.2 percent. On a $350,000 30-year mortgage, that 1.6 percent gap costs $112,000 in extra interest. Here is the full lifetime cost of a low credit score.", "setup": "Same $350,000 house, same 30-year mortgage, two credit scores. The 620 score pays 7.8 percent. The 780 score pays 6.2 percent. Same house, same loan size, different price for money.", "tension": "A credit score is a price tag on every dollar you ever borrow. It affects mortgage rates, car loan rates, personal loan rates, credit card rates, and sometimes insurance premiums and rental deposits. The gap between 620 and 780 follows a person on every financial product they touch for their entire adult life.", "reveal": "Over 30 years, the 620 score pays $112,000 more in mortgage interest alone. Add car loans, personal loans, and credit cards over a lifetime — the total gap easily exceeds $180,000.", "twist": "Same house. $112,000 more paid. From a number. A credit score is the most leveraged number in personal finance. Building it costs nothing but time and discipline. Neglecting it costs six figures. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. Mortgage rates fluctuate and depend on many factors beyond credit score. Rates shown are illustrative."
+  },
+  {
+    "id": "private_school_invested_v1",
+    "archetype": "private_school_invested",
+    "title": "Private school vs public school — the 12-year wealth cost 🎓",
+    "voice": "brian",
+    "scenes": {
+      "hook": {"big": "Private school: $22,000/year.", "accent": "Public school: $0/year.", "sub": "The $22K/year invested for 12 years is $516,000."},
+      "setup": {"title": "Same child. Two school choices.", "a": {"label": "PRIVATE SCHOOL", "sub": "$22K/year tuition, grades 1-12"}, "b": {"label": "PUBLIC + INVEST", "sub": "$0 tuition, $22K/year invested instead"}, "foot": "12 years. Same education outcome per studies. Very different wealth outcome."},
+      "tension": {"big": "Research consistently shows private K-12 outcomes equivalent to high-quality public schools.", "pill": "The tuition is not buying better outcomes. It is buying a feeling.", "ask": "Multiple large-scale studies including NAEP data have found that when controlling for socioeconomic factors, students in high-quality public schools achieve equivalent academic outcomes to private school students. The tuition premium is not reliably buying better educational outcomes — it is buying a brand, a network, and parental peace of mind."},
+      "reveal": {"head": "$22K/year invested for 12 years vs spent on private school:", "a": {"label": "PRIVATE SCHOOL", "sub": "paid $264,000 in tuition over 12 years"}, "b": {"label": "PUBLIC + INVEST", "sub": "$22K/year invested, compounded", "val": 516000, "valt": "~$516K built over 12yr"}},
+      "twist": {"l1": "Same child. Same outcomes per the research.", "l2": "$516,000 difference.", "l3": "This is not an argument against private school. It is the number that should be in the conversation when the decision is made. The $516,000 is real whether you see it or not."}
+    },
+    "vo": {"hook": "Private school at $22,000 a year for 12 years costs $264,000 in tuition. The same $22,000 a year invested in the market for 12 years becomes $516,000. Here is the wealth cost of the private school decision — and what the research says about the outcomes.", "setup": "Same child, two choices. Private school at $22,000 a year for grades 1 through 12. A high-quality public school at zero tuition, with the $22,000 invested annually.", "tension": "Multiple large-scale studies, including NAEP national assessment data, have found that when controlling for socioeconomic factors, high-quality public school students achieve equivalent academic outcomes to private school students. The tuition premium is not reliably buying better educational outcomes.", "reveal": "Twenty-two thousand dollars a year invested for 12 years at 7 percent average annual return grows to $516,000. The private school option costs $264,000 in tuition.", "twist": "Same child. Same academic outcomes per the research. $516,000 difference. This is not an argument against private school — it is the number that should be in the conversation before the decision is made. Run your own numbers free at wealthdelay dot com."},
+    "disclaimer": "Simulation only — not financial advice. School quality varies significantly. Educational research referenced reflects averages, not individual outcomes."
+  }
+]

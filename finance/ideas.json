@@ -1,0 +1,112 @@
+[
+  {
+    "id": "early_bird_stops",
+    "title": "She invested for 10 years and STOPPED — still beat him 😳",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": ["compound interest","investing","early investing","personal finance","money tips","retirement"],
+    "accent": "gold",
+    "scenes": {
+      "hook":   {"big": "She invested for 10 years, then STOPPED.", "accent": "He invested for 30 years straight.", "sub": "Guess who has more at 65?"},
+      "setup":  {"title": "Both put in $100/month. Same 7% return.", "a": {"label": "ANNA", "sub": "invests 25–35, then stops"}, "b": {"label": "BEN", "sub": "invests 35–65, never stops"}, "foot": "Anna stops after 10 years. Ben keeps going for 30."},
+      "tension":{"big": ["Anna put in $12k total.", "Ben put in $36k total."], "pill": "3x more", "ask": "So Ben wins… right? Guess again."},
+      "reveal": {"head": "At age 65:", "a": {"label": "ANNA", "val": 140, "valt": "$140k", "sub": "put in $12k"}, "b": {"label": "BEN", "val": 122, "valt": "$122k", "sub": "put in $36k"}},
+      "twist":  {"l1": "Anna invested 3x less…", "l2": "…and still ended with more.", "l3": "Starting early beats trying harder later."}
+    },
+    "vo": {
+      "hook": "She invested for just ten years, then stopped completely. He invested for thirty years straight. Guess who has more money at sixty-five?",
+      "setup": "Both put in one hundred dollars a month at a seven percent return. Anna invests from twenty-five to thirty-five, then stops forever. Ben starts at thirty-five and never stops.",
+      "tension": "Here's the thing. Anna only put in twelve thousand dollars total. Ben put in thirty-six thousand. Three times more. So Ben wins, right? Guess again.",
+      "reveal": "At sixty-five, Anna has about one hundred and forty thousand dollars. Ben has about one hundred and twenty-two thousand. Anna wins, with way less money in.",
+      "twist": "Anna invested three times less than Ben, and still ended up with more. That's the power of starting early. Run it yourself. Free calculator on wealthdelay dot com. Link's right below."
+    },
+    "disclaimer": "Hypothetical: $100/month at a 7% average annual return, compounded monthly. Not financial advice — real returns vary."
+  },
+  {
+    "id": "coffee_invested",
+    "title": "Your $5 coffee is really costing you $185,000 ☕",
+    "tool_url": "https://wealthdelay.com/daily-habit-true-cost-calculator",
+    "tags": ["compound interest","investing","money tips","personal finance","saving money","latte factor"],
+    "accent": "gold",
+    "scenes": {
+      "hook":   {"big": "Your daily $5 coffee…", "accent": "isn't costing you $5.", "sub": "Guess what it really costs."},
+      "setup":  {"title": "$5/day = about $152/month.", "a": {"label": "SPENT", "sub": "on coffee, every day"}, "b": {"label": "INVESTED", "sub": "same $152/month, 7%"}, "foot": "Same money. One habit. 30 years."},
+      "tension":{"big": ["What does 30 years", "of that coffee add up to?"], "pill": "30 years", "ask": "Take a guess before the reveal."},
+      "reveal": {"head": "After 30 years:", "a": {"label": "SPENT", "val": 5, "valt": "$0", "sub": "gone"}, "b": {"label": "INVESTED", "val": 185, "valt": "$185k", "sub": "you put in $55k"}},
+      "twist":  {"l1": "You'd put in about $55k…", "l2": "…and end with around $185k.", "l3": "It was never about the coffee."}
+    },
+    "vo": {
+      "hook": "Your daily five dollar coffee isn't really costing you five dollars. Guess what it actually costs.",
+      "setup": "Five dollars a day is about one hundred and fifty two dollars a month. Spend it on coffee, or invest the same amount at seven percent. Same money, one habit, thirty years.",
+      "tension": "So what does thirty years of that coffee money actually add up to? Take a guess before the reveal.",
+      "reveal": "After thirty years, the coffee is gone. But invested, that same money grows to about one hundred and eighty five thousand dollars.",
+      "twist": "You'd put in about fifty five thousand, and end with around one hundred and eighty five thousand. It was never really about the coffee. Run your own numbers. Free calculator on wealthdelay dot com. Link's below."
+    },
+    "disclaimer": "Hypothetical: $152/month at a 7% average annual return, compounded monthly. Not financial advice — real returns vary."
+  },
+  {
+    "id": "fee_drag",
+    "title": "A 1% fee doesn't sound like much. It cost $209,000.",
+    "tool_url": "https://wealthdelay.com/investment-fee-drag-calculator",
+    "tags": ["investing fees","index funds","compound interest","personal finance","expense ratio","money tips"],
+    "accent": "red",
+    "scenes": {
+      "hook":   {"big": "A 1% fee sounds tiny.", "accent": "It's not.", "sub": "Guess what 1% really costs."},
+      "setup":  {"title": "$100,000 invested for 30 years.", "a": {"label": "1% FEE", "sub": "a 'typical' fund"}, "b": {"label": "0% FEE", "sub": "a low-cost index"}, "foot": "Same $100k. Same market. One difference: the fee."},
+      "tension":{"big": ["1% a year for 30 years.", "How much does that cost you?"], "pill": "30 years", "ask": "Most people guess way too low."},
+      "reveal": {"head": "After 30 years:", "a": {"label": "1% FEE", "val": 602, "valt": "$602k", "sub": "what you keep"}, "b": {"label": "0% FEE", "val": 812, "valt": "$812k", "sub": "what you keep"}},
+      "twist":  {"l1": "That 1% quietly took…", "l2": "…about $209,000.", "l3": "Fees are invisible. The damage isn't."}
+    },
+    "vo": {
+      "hook": "A one percent fee sounds tiny. It is not. Guess what one percent actually costs you.",
+      "setup": "One hundred thousand dollars, invested for thirty years. One fund charges a one percent fee. The other charges nothing. Same money, same market, one difference.",
+      "tension": "One percent a year, for thirty years. How much does that really cost you? Most people guess way too low.",
+      "reveal": "After thirty years, the no-fee fund leaves you about eight hundred and twelve thousand dollars. The one percent fee fund? Only about six hundred and two thousand.",
+      "twist": "That one percent quietly took about two hundred and nine thousand dollars. Fees are invisible. The damage is not. Check your funds. Free calculator on wealthdelay dot com. Link's below."
+    },
+    "disclaimer": "Hypothetical: $100,000 for 30 years at 7% before fees vs 6% after a 1% fee, compounded monthly. Not financial advice."
+  },
+  {
+    "id": "wait_five_years",
+    "title": "Waiting just 5 years to invest cost her $247,000",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": ["compound interest","investing","start early","personal finance","retirement","money tips"],
+    "accent": "gold",
+    "scenes": {
+      "hook":   {"big": "“I'll start investing in a few years.”", "accent": "That sentence is expensive.", "sub": "Guess how expensive."},
+      "setup":  {"title": "$300/month at 7%, both invest to 65.", "a": {"label": "STARTS AT 25", "sub": "no waiting"}, "b": {"label": "STARTS AT 30", "sub": "waits just 5 years"}, "foot": "Only difference: a 5-year head start."},
+      "tension":{"big": ["Just 5 years later.", "How big is the gap at 65?"], "pill": "5 years", "ask": "Guess before the reveal."},
+      "reveal": {"head": "At age 65:", "a": {"label": "STARTS 25", "val": 787, "valt": "$787k", "sub": "no waiting"}, "b": {"label": "STARTS 30", "val": 540, "valt": "$540k", "sub": "waited 5 years"}},
+      "twist":  {"l1": "A 5-year delay cost…", "l2": "…about $247,000.", "l3": "The best time to start was yesterday."}
+    },
+    "vo": {
+      "hook": "I'll start investing in a few years. That one sentence is incredibly expensive. Guess how expensive.",
+      "setup": "Three hundred dollars a month at seven percent, both investing until sixty-five. One person starts at twenty-five. The other waits just five years and starts at thirty.",
+      "tension": "Just five years later. How big is the gap by sixty-five? Take a guess before the reveal.",
+      "reveal": "At sixty-five, the early starter has about seven hundred and eighty-seven thousand dollars. The one who waited five years? About five hundred and forty thousand.",
+      "twist": "A five year delay cost about two hundred and forty-seven thousand dollars. The best time to start was yesterday. The second best is today. Free calculator on wealthdelay dot com. Link's below."
+    },
+    "disclaimer": "Hypothetical: $300/month at a 7% average annual return, compounded monthly. Not financial advice — real returns vary."
+  },
+  {
+    "id": "lump_sum_early",
+    "title": "$10k at 25 vs $10k at 35 — the gap is brutal",
+    "tool_url": "https://wealthdelay.com/investing-calculators",
+    "tags": ["compound interest","investing","start early","personal finance","retirement"],
+    "accent": "gold",
+    "scenes": {
+      "hook":   {"big": "Same $10,000. Same investment.", "accent": "One ends up with DOUBLE.", "sub": "The only difference? 10 years."},
+      "setup":  {"title": "Invest $10k once, leave it until 65. 7%.", "a": {"label": "AT AGE 25", "sub": "never adds a cent"}, "b": {"label": "AT AGE 35", "sub": "never adds a cent"}, "foot": "No more deposits. Just time doing the work."},
+      "tension":{"big": ["One $10k deposit.", "10 years earlier."], "pill": "+10 years", "ask": "How big is the gap at 65?"},
+      "reveal": {"head": "At age 65:", "a": {"label": "AT 25", "val": 163, "valt": "$163k", "sub": "from one $10k"}, "b": {"label": "AT 35", "val": 81, "valt": "$81k", "sub": "from one $10k"}},
+      "twist":  {"l1": "Same $10k. Same fund.", "l2": "Ten years = roughly double.", "l3": "Time is the real investor."}
+    },
+    "vo": {
+      "hook": "Same ten thousand dollars. Same investment. One ends up with double the other. The only difference is ten years.",
+      "setup": "Invest ten thousand dollars one time, and leave it alone until sixty-five, at seven percent. One person does it at twenty-five, the other at thirty-five. Neither adds another cent.",
+      "tension": "One ten thousand dollar deposit, just ten years earlier. How big is the gap by sixty-five?",
+      "reveal": "At sixty-five, the twenty-five year old's ten thousand grew to about one hundred and sixty-three thousand. The thirty-five year old? About eighty-one thousand.",
+      "twist": "Same ten grand, same fund. Ten extra years roughly doubled it. Time is the real investor. See it yourself. Free calculator on wealthdelay dot com. Link's below."
+    },
+    "disclaimer": "Hypothetical: one-time $10,000 at a 7% average annual return, compounded monthly. Not financial advice — real returns vary."
+  }
+]

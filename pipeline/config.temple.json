@@ -1,0 +1,38 @@
+{
+  "title": "temple_restore",
+  "aspect": "9:16",
+  "veo_model": "veo-3.0-fast-generate-001",
+  "image_model": "imagen-4.0-generate-001",
+  "voice_id": "pNInz6obpgDQGcFmaJgB",
+  "morph": true,
+  "scenes": [
+    {"image": "/Users/satishkosaraju/Downloads/Ruined_ancient_South-Indian_stone_temple,_202606042256.jpeg",
+     "anim_prompt": "slow cinematic restoration timelapse, faint golden light beginning, dust rising, gradual"},
+    {"image": "/Users/satishkosaraju/Downloads/Same_temple,_faint_golden_light_202606042256.jpeg",
+     "anim_prompt": "stone cracks sealing, fallen pillars rising back into place, gradual rebuild, cinematic"},
+    {"image": "/Users/satishkosaraju/Downloads/Same_temple,_cracks_sealing,_fallen_202606042257.jpeg",
+     "anim_prompt": "temple structure completing in clean carved stone, gradual, cinematic"},
+    {"image": "/Users/satishkosaraju/Downloads/Same_temple_fully_rebuilt_in_202606042257.jpeg",
+     "anim_prompt": "vivid paint and gold leaf flooding across the carvings, gradual, cinematic"},
+    {"image": "/Users/satishkosaraju/Downloads/Same_temple_with_vivid_paint_202606042257.jpeg",
+     "anim_prompt": "transition into the temple interior sanctum, warm light, cinematic"},
+    {"image": "/Users/satishkosaraju/Downloads/Dark_temple_sanctum_filling_with_202606042257.jpeg",
+     "anim_prompt": "oil lamps igniting, smoke rising, courtyard filling with priests, cinematic"},
+    {"image": "/Users/satishkosaraju/Downloads/Temple_courtyard_filling_with_priests,_202606042257.jpeg",
+     "anim_prompt": "camera moving toward the glowing main shrine, garlands, gold, cinematic"},
+    {"image": "/Users/satishkosaraju/Downloads/Ornate_main_shrine_glowing,_decorated_202606042257.jpeg",
+     "anim_prompt": "sweeping reveal pull-back of the temple at full glory, golden light, cinematic"},
+    {"image": "/Users/satishkosaraju/Downloads/Wide_cinematic_reveal_of_the_202606042257.jpeg",
+     "anim_prompt": "final wide cinematic reveal, breathtaking, golden hour"}
+  ],
+  "voiceover_lines": [
+    "This temple has been dead for five hundred years.",
+    "But it didn't always look like this.",
+    "Watch... as time runs backwards.",
+    "The stone heals. The pillars rise. The cracks close.",
+    "Color floods back across carvings no one has seen in centuries.",
+    "The lamps light. The smoke returns. The people come home.",
+    "This is what it may have looked like when it was alive.",
+    "And almost no one alive today remembers it stood like this."
+  ]
+}

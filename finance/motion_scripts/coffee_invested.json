@@ -1,0 +1,74 @@
+{
+  "title": "Your $5 coffee is really costing you $185,000",
+  "tool_url": "https://wealthdelay.com/daily-habit-true-cost-calculator",
+  "disclaimer": "Hypothetical: $152/month at a 7% average annual return, compounded monthly. Not financial advice — real returns vary.",
+  "scenes": [
+    {
+      "narration": "Your daily five dollar coffee isn't really costing you five dollars. Guess what it actually costs.",
+      "visual": {
+        "template": "fin-statement",
+        "hero": true,
+        "lines": [
+          { "text": "Your daily $5 coffee…" },
+          { "text": "isn't costing you $5.", "tone": "gold" },
+          { "text": "Guess what it really costs." }
+        ]
+      }
+    },
+    {
+      "narration": "Five dollars a day is about one hundred and fifty two dollars a month. Spend it on coffee, or invest the same amount at seven percent. Same money, one habit, thirty years.",
+      "visual": {
+        "template": "milestone-timeline",
+        "caption": "$5/day = $152/month, for 30 years",
+        "milestones": [
+          { "age": "$5", "label": "Spent on coffee, every day", "tone": "ink" },
+          { "age": "7%", "label": "Or invested at this return", "tone": "green" },
+          { "age": "30y", "label": "Same money, one habit", "tone": "forest" }
+        ]
+      }
+    },
+    {
+      "narration": "So what does thirty years of that coffee money actually add up to? Take a guess before the reveal.",
+      "visual": {
+        "template": "fin-statement",
+        "lines": [
+          { "text": "30 years of that coffee…" },
+          { "text": "What does it add up to?", "tone": "gold" }
+        ]
+      }
+    },
+    {
+      "narration": "After thirty years, the coffee is gone. But invested, that same money grows to about one hundred and eighty five thousand dollars.",
+      "visual": {
+        "template": "growth-curve",
+        "caption": "$152/month at 7%, for 30 years",
+        "xAxisLabel": "30 years",
+        "curves": [
+          { "label": "Invested", "endLabel": "$185k", "startFrac": 0, "tone": "green" }
+        ]
+      }
+    },
+    {
+      "narration": "You'd put in about fifty five thousand, and end with around one hundred and eighty five thousand. It was never really about the coffee.",
+      "visual": {
+        "template": "big-number-callout",
+        "hero": true,
+        "pre": "You'd put in $55,000",
+        "number": "$185,000",
+        "post": "It was never about the coffee."
+      }
+    },
+    {
+      "narration": "Run your own numbers. Free calculator on wealthdelay dot com. Link's below.",
+      "visual": {
+        "template": "fin-statement",
+        "hero": true,
+        "footerUrl": true,
+        "lines": [
+          { "text": "Run your own numbers." },
+          { "text": "Free — 60 seconds.", "tone": "gold" }
+        ]
+      }
+    }
+  ]
+}

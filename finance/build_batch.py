@@ -11,13 +11,10 @@ import numpy as np
 from PIL import Image,ImageDraw,ImageFont,ImageFilter
 DIR=os.path.dirname(os.path.abspath(__file__)); OUTDIR=f"{DIR}/out"; os.makedirs(OUTDIR,exist_ok=True)
 FONTF=f"{DIR}/PlusJakartaSans.ttf"
-VOICE="en-US-BrianNeural"   # default edge-tts Brian — confident, free, unlimited (the daily workhorse)
+VOICE="en-US-BrianNeural"   # fallback edge-tts voice when Kokoro not available
 RATE="+25%"
-# Optional ElevenLabs voices for occasional "hero" videos (set "voice":"ed" in ideas.json). Quota-limited.
-EL_VOICES={"ed":"3IwIPyXc0WRkgKBE8KXP","brian":"nPczCjzI2devNBz1zQrb","bill":"pqHfZKP75CvOlQylNhV4"}
-def _el_key():
-    try: return open(os.path.expanduser("~/.config/elevenlabs/.env")).read().split("=",1)[1].strip()
-    except Exception: return None
+# Kokoro voice map — replaces ElevenLabs. Local, free, unlimited.
+KOKORO_VOICES={"ed":"am_echo","brian":"am_adam","bill":"am_michael","default":"am_echo"}
 W,H,FPS=1080,1920,30
 GREEN=(22,163,74); GREEN_D=(21,128,61); FOREST=(5,46,22); INK=(39,39,42); MUTE=(82,82,91)
 MGREEN=(134,239,172); GREY=(120,120,128); WHITE=(255,255,255); GOLD=(240,178,55); RED=(220,38,38)
@@ -30,17 +27,25 @@ def F(sz,w="Bold"):
 def run(c): subprocess.run(c,check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
 def dur(p): return float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","default=nw=1:nk=1",p],capture_output=True,text=True).stdout.strip())
 def vo(text,path,voice=None):
-    """voice=None -> free edge-tts Brian. voice in EL_VOICES (e.g. 'ed') -> ElevenLabs (quota-limited)."""
-    if voice and voice in EL_VOICES:
-        key=_el_key()
-        if not key: sys.exit("ElevenLabs key missing; can't use voice '%s'."%voice)
-        b=json.dumps({"text":text,"model_id":"eleven_multilingual_v2","voice_settings":{"stability":0.4,"similarity_boost":0.8,"style":0.4,"use_speaker_boost":True}}).encode()
-        r=urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{EL_VOICES[voice]}",data=b,headers={"xi-api-key":key,"Content-Type":"application/json"})
+    """voice=None or unknown -> edge-tts Brian. voice in KOKORO_VOICES -> Kokoro local TTS."""
+    if voice and voice in KOKORO_VOICES:
         try:
-            open(path,"wb").write(urllib.request.urlopen(r,timeout=120).read())
-        except urllib.error.HTTPError as ex:
-            sys.exit(f"ElevenLabs voice '{voice}' failed ({ex.code}): {ex.read().decode()[:200]}\n(quota likely exhausted — drop the \"voice\" flag to use free edge-tts.)")
-        return
+            from kokoro import KPipeline
+            import soundfile as sf, numpy as np, torch
+            kv=KOKORO_VOICES[voice]
+            pipeline=KPipeline(lang_code='a',repo_id='hexgrad/Kokoro-82M')
+            chunks=[]
+            for _,_,audio in pipeline(text,voice=kv,speed=1.15):
+                chunks.append(audio.numpy() if hasattr(audio,'numpy') else np.array(audio))
+            if chunks:
+                wav=np.concatenate(chunks)
+                wav_path=path.replace(".mp3",".wav")
+                sf.write(wav_path,wav,24000)
+                run(["ffmpeg","-y","-i",wav_path,"-ab","192k",path])
+                os.remove(wav_path)
+                return
+        except Exception as ex:
+            print(f"Kokoro failed ({ex}), falling back to edge-tts")
     run(["edge-tts","--voice",VOICE,"--rate",RATE,"--text",text,"--write-media",path])
 def grad(c1,c2,diag=False):
     yy,xx=np.mgrid[0:H,0:W].astype(float); t=((xx/W+yy/H)/2) if diag else (yy/H)
@@ -141,7 +146,7 @@ def render(e):
     for i,(draw,line) in enumerate(SCENES):
         png=f"{tmp}/s{i}.png"; draw(png)
         m=f"{tmp}/v{i}.mp3"; vo(line,m,e.get("voice")); wv=f"{tmp}/v{i}.wav"
-        af=["-af","atempo=1.12"] if e.get("voice") in EL_VOICES else []   # EL voices need speed-up; edge uses RATE
+        af=[]   # Kokoro speed set via pipeline speed param; edge-tts uses RATE
         run(["ffmpeg","-y","-i",m,"-ar","44100","-ac","1",*af,wv])
         d=dur(wv)+0.15; frames=int(d*FPS); zc=f"{tmp}/z{i}.mp4"
         run(["ffmpeg","-y","-loop","1","-i",png,"-vf",
